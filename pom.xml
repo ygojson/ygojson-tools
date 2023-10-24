@@ -1,0 +1,219 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.ygojson</groupId>
+    <artifactId>ygojson-tools-parent</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- VERSIONS -->
+        <!-- annotation processors -->
+        <lombok.version>1.18.28</lombok.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
+        <!-- dependencies -->
+        <jackson.bom.version>2.15.3</jackson.bom.version>
+        <okhttp.bom.version>4.12.0</okhttp.bom.version>
+        <retrofit.version>2.9.0</retrofit.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <slf4j.version>2.0.9</slf4j.version>
+        <!-- infrastructure dependencies -->
+        <spring-boot-dependencies.bom.version>3.1.5</spring-boot-dependencies.bom.version>
+        <picocli.version>4.7.5</picocli.version>
+        <nitrite.version>3.4.4</nitrite.version>
+        <logback.version>1.4.11</logback.version>
+        <!-- test dependencies -->
+        <junit.bom.version>5.10.0</junit.bom.version>
+        <assertj.bom.version>3.24.2</assertj.bom.version>
+        <approvaltests.version>22.1.0</approvaltests.version>
+        <instancio.version>2.16.0</instancio.version>
+        <!-- reporting dependencies-->
+        <jacoco.version>0.8.8</jacoco.version>
+    </properties>
+
+    <!-- common dependencies for all projects -->
+    <dependencies>
+        <!-- lombok is provided to all modules -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- TODO: add mapstruct too -->
+        <!-- logging interface should be the same -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- also provide test dependencies to all modules to have a consistent infrastructure -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.instancio</groupId>
+            <artifactId>instancio-junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- jacoco should also run on all tests to provide a coverage report -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.4.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- bom dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-dependencies.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp-bom</artifactId>
+                <version>${okhttp.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <!-- singular dependencies -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>info.picocli</groupId>
+                <artifactId>picocli-spring-boot-starter</artifactId>
+                <version>${picocli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dizitart</groupId>
+                <artifactId>nitrite</artifactId>
+                <version>${nitrite.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.h2database</groupId>
+                        <artifactId>h2-mvstore</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!--TEST DEPENDENCIES-->
+            <!-- bom dependencies -->
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-bom</artifactId>
+                <version>${assertj.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <!-- singular dependencies -->
+            <dependency>
+                <groupId>com.approvaltests</groupId>
+                <artifactId>approvaltests</artifactId>
+                <version>${approvaltests.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.instancio</groupId>
+                <artifactId>instancio-junit</artifactId>
+                <version>${instancio.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
