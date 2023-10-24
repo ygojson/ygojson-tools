@@ -17,6 +17,7 @@
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <!-- dependencies -->
         <jackson.bom.version>2.15.3</jackson.bom.version>
+        <jakarta.bom.version>10.0.0</jakarta.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
@@ -34,6 +35,10 @@
         <!-- reporting dependencies-->
         <jacoco.version>0.8.8</jacoco.version>
     </properties>
+
+    <modules>
+        <module>model</module>
+    </modules>
 
     <!-- common dependencies for all projects -->
     <dependencies>
@@ -130,6 +135,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot-dependencies.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-bom</artifactId>
+                <version>${jakarta.bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
