@@ -24,12 +24,11 @@ import lombok.experimental.SuperBuilder;
         Identifiers.KONAMI_ID_PROPERTY,
         Identifiers.PASSWORD_PROPERTY,
         Identifiers.PASSWORD_ALT_PROPERTY,
-        Identifiers.KONAMI_ID_PROPERTY
+        Identifiers.YUGIPEDIA_PAGE_ID_PROPERTY
 })
 @Getter
 @JsonPOJOBuilder
 @SuperBuilder(setterPrefix = "with", toBuilder = true)
-@NoArgsConstructor
 public class Identifiers {
 
     public static final String KONAMI_ID_PROPERTY = "konamiId";

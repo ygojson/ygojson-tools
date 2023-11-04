@@ -18,6 +18,7 @@
         <!-- dependencies -->
         <jackson.bom.version>2.15.3</jackson.bom.version>
         <jakarta.bom.version>10.0.0</jakarta.bom.version>
+        <jsonschema-generator.bom.version>4.31.1</jsonschema-generator.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
@@ -38,6 +39,7 @@
 
     <modules>
         <module>model</module>
+        <module>generator</module>
     </modules>
 
     <!-- common dependencies for all projects -->
@@ -154,6 +156,13 @@
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
                 <version>${jackson.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.github.victools</groupId>
+                <artifactId>jsonschema-generator-bom</artifactId>
+                <version>${jsonschema-generator.bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>

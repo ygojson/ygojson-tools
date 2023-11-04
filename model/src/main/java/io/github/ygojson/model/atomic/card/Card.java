@@ -6,7 +6,6 @@ import io.github.ygojson.model.enums.CardType;
 import io.github.ygojson.model.enums.LinkArrow;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
@@ -25,11 +24,11 @@ import java.util.UUID;
         Card.ID_PROPERTY,
         Card.NAME_PROPERTY,
         Card.IDENTIFIERS_PROPERTY,
-        Card.EFFECT_PROPERTY,
         Card.CARD_TYPE_PROPERTY,
         Card.SPELL_TYPE_PROPERTY,
         Card.TRAP_TYPE_PROPERTY,
         Card.MONSTER_TYPES_PROPERTY,
+        Card.EFFECT_PROPERTY,
         Card.FLAVOR_TEXT_PROPERTY,
         Card.ATTRIBUTE_PROPERTY,
         Card.ATK_PROPERTY,
@@ -52,13 +51,13 @@ public class Card {
     public static final String ID_PROPERTY = "id";
     public static final String NAME_PROPERTY = "name";
     public static final String IDENTIFIERS_PROPERTY = "identifiers";
-    public static final String EFFECT_PROPERTY = "effectText";
     public static final String CARD_TYPE_PROPERTY = "cardType";
     public static final String SPELL_TYPE_PROPERTY = "spellType";
     public static final String TRAP_TYPE_PROPERTY = "trapType";
+    public static final String MONSTER_TYPES_PROPERTY = "monsterTypes";
+    public static final String EFFECT_PROPERTY = "effectText";
     public static final String FLAVOR_TEXT_PROPERTY = "flavorText";
     public static final String ATTRIBUTE_PROPERTY = "attribute";
-    public static final String MONSTER_TYPES_PROPERTY = "monsterTypes";
     public static final String ATK_PROPERTY = "atk";
     public static final String ATK_UNDEFINED_PROPERTY = "atkUndefined";
     public static final String DEF_PROPERTY = "def";
@@ -103,23 +102,6 @@ public class Card {
     @JsonProperty(value = IDENTIFIERS_PROPERTY)
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Identifiers identifiers;
-
-    /**
-     * Effect text for the card (empty for Normal Monsters).
-     * </br>
-     * Note that the list of materials or pendulum effects are not included
-     * as they are on their own property.
-     */
-    @JsonPropertyDescription(
-            """
-            Effect text for the card (empty for Normal Monsters).
-            
-            Note that the list of materials and pendulum effects are not included as they are part of their own property.
-            """
-    )
-    @JsonProperty(value = EFFECT_PROPERTY)
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String effect;
 
     /**
      * Main card type.
@@ -171,7 +153,24 @@ public class Card {
     )
     @JsonProperty(value = MONSTER_TYPES_PROPERTY)
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    private List<@Pattern(regexp = "[a-z0-9]+") String> monsterTypes;
+    private List<@Pattern(regexp = "[a-z]+") String> monsterTypes;
+
+    /**
+     * Effect text for the card (empty for Normal Monsters).
+     * </br>
+     * Note that the list of materials or pendulum effects are not included
+     * as they are on their own property.
+     */
+    @JsonPropertyDescription(
+            """
+            Effect text for the card (empty for Normal Monsters).
+            
+            Note that the list of materials and pendulum effects are not included as they are part of their own property.
+            """
+    )
+    @JsonProperty(value = EFFECT_PROPERTY)
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String effect;
 
     /**
      * Flavor text on a normal monster.
@@ -197,7 +196,7 @@ public class Card {
             
            If the monster is an effect monster, this would be empty."""
     )
-    @Pattern(regexp = "[a-z0-9]+")
+    @Pattern(regexp = "[A-Z]+")
     @JsonProperty(value = ATTRIBUTE_PROPERTY)
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private String attribute;
@@ -298,6 +297,7 @@ public class Card {
     )
     @JsonProperty(value = LINK_ARROWS_PROPERTY)
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @Size(max = 8)
     private List<LinkArrow> linkArrows;
 
     /**
@@ -319,7 +319,7 @@ public class Card {
     @JsonProperty(value = PENDULUM_SCALE_PROPERTY)
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @PositiveOrZero
-    private Integer scale;
+    private Integer pendulumScale;
 
     /**
      * Rank of the XYZ monster.

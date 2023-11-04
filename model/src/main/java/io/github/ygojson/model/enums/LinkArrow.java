@@ -12,19 +12,19 @@ import lombok.Getter;
 @JsonClassDescription("Enum values for the arrows on link monster.")
 public enum LinkArrow {
     @JsonProperty("top-left")
-    TOP_LEFT ,
+    TOP_LEFT,
     @JsonProperty("top-center")
-    TOP_CENTER ,
+    TOP_CENTER,
     @JsonProperty("top-right")
-    TOP_RIGHT ,
+    TOP_RIGHT,
     @JsonProperty("middle-left")
-    MIDDLE_LEFT ,
+    MIDDLE_LEFT,
     @JsonProperty("middle-right")
-    MIDDLE_RIGHT ,
+    MIDDLE_RIGHT,
     @JsonProperty("bottom-left")
-    BOTTOM_LEFT ,
+    BOTTOM_LEFT,
     @JsonProperty("bottom-center")
-    BOTTOM_CENTER ,
+    BOTTOM_CENTER,
     @JsonProperty("bottom-right")
     BOTTOM_RIGHT
 }

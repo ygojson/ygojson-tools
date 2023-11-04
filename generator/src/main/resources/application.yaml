@@ -1,0 +1,10 @@
+spring:
+  banner:
+    location: "classpath:banner.txt"
+logging:
+  pattern:
+    console: "[%-5level - %d{HH:mm:ss}] - %msg%n"
+  level:
+    root: WARN
+    "io.github.ygojson.generator.infrastructure.Application": WARN
+    "io.github.ygojson.generator": INFO
