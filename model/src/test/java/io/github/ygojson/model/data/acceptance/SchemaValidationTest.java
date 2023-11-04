@@ -54,15 +54,15 @@ public class SchemaValidationTest {
                 .writeValueAsString(schema);
     }
 
-    static Stream<Class<?>> getAtomicSchemaClasses() {
+    static Stream<Class<?>> getDataSchemas() {
         return Stream.of(
             Card.class
         );
     }
 
     @ParameterizedTest
-    @MethodSource("getAtomicSchemaClasses")
-    void testAtomicSchemas(final Class<?> type) throws IOException {
+    @MethodSource("getDataSchemas")
+    void testDataSchemas(final Class<?> type) throws IOException {
         Approvals.verify(
                 toTestSchema(type),
                 Approvals.NAMES.withParameters(type.getSimpleName()));
