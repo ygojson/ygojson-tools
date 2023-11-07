@@ -7,6 +7,8 @@ import com.fasterxml.jackson.module.jsonSchema.jakarta.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.jakarta.JsonSchemaGenerator;
 import com.fasterxml.jackson.module.jsonSchema.jakarta.customProperties.ValidationSchemaFactoryWrapper;
 import io.github.ygojson.model.data.Card;
+import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.utils.JsonUtils;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -56,7 +58,7 @@ public class SchemaValidationTest {
 
     static Stream<Class<?>> getDataSchemas() {
         return Stream.of(
-            Card.class
+            Card.class, Print.class, Set.class
         );
     }
 
