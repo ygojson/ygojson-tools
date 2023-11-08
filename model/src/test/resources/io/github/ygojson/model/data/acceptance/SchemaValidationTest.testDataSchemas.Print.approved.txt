@@ -1,0 +1,34 @@
+{
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string",
+      "required" : true,
+      "format" : "uuid"
+    },
+    "cardId" : {
+      "type" : "string",
+      "required" : true,
+      "format" : "uuid"
+    },
+    "setId" : {
+      "type" : "string",
+      "required" : true,
+      "format" : "uuid"
+    },
+    "setPrefix" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+    },
+    "printNumber" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+"
+    },
+    "rarity" : {
+      "type" : "string"
+    },
+    "language" : {
+      "type" : "string"
+    }
+  }
+}
