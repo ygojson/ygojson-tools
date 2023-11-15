@@ -2,7 +2,6 @@ package io.github.ygojson.model.data.definitions;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.Set;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
