@@ -91,6 +91,29 @@
     },
     "xyzRank" : {
       "type" : "integer"
+    },
+    "localizedData" : {
+      "type" : "object",
+      "additionalProperties" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "effectText" : {
+            "type" : "string"
+          },
+          "flavorText" : {
+            "type" : "string"
+          },
+          "materials" : {
+            "type" : "string"
+          },
+          "pendulumEffect" : {
+            "type" : "string"
+          }
+        }
+      }
     }
   }
 }
