@@ -1,16 +1,27 @@
 package io.github.ygojson.model.data;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import lombok.Getter;
+import lombok.experimental.SuperBuilder;
 
 import java.time.ZonedDateTime;
 
 /**
  * Model representing the version information of the YGOJSON data.
  */
+@JsonClassDescription(
+        "Model representing the version information of the YGOJSON data."
+)
+@JsonPropertyOrder({
+        VersionInfo.VERSION_PROPERTY,
+        VersionInfo.DATE_PROPERTY
+})
+@Getter
+@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@JsonPOJOBuilder
 public class VersionInfo {
 
     public static final String VERSION_PROPERTY = "version";
