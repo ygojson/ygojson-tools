@@ -4,12 +4,14 @@
 
     <parent>
         <groupId>io.github.ygojson</groupId>
-        <artifactId>ygojson-tools-parent</artifactId>
+        <artifactId>ygojson-parent</artifactId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>ygojson-model</artifactId>
     <packaging>jar</packaging>
+
+    <name>YGOJSON Model</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

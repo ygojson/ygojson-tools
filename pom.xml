@@ -3,9 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.ygojson</groupId>
-    <artifactId>ygojson-tools-parent</artifactId>
+    <artifactId>ygojson-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <name>YGOJSON Parent</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
