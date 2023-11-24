@@ -13,25 +13,26 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- VERSIONS -->
         <!-- annotation processors -->
-        <lombok.version>1.18.28</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <!-- dependencies -->
-        <jackson.bom.version>2.15.3</jackson.bom.version>
-        <jakarta.bom.version>10.0.0</jakarta.bom.version>
+        <jackson.bom.version>2.16.0</jackson.bom.version>
+        <jakarta-jakartaee.bom.version>10.0.0</jakarta-jakartaee.bom.version>
+        <jsonschema-generator.bom.version>4.33.0</jsonschema-generator.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <slf4j.version>2.0.9</slf4j.version>
         <!-- infrastructure dependencies -->
-        <spring-boot-dependencies.bom.version>3.1.5</spring-boot-dependencies.bom.version>
+        <spring-boot-dependencies.bom.version>3.1.6</spring-boot-dependencies.bom.version>
         <picocli.version>4.7.5</picocli.version>
         <nitrite.version>3.4.4</nitrite.version>
-        <logback.version>1.4.11</logback.version>
+        <logback-classic.version>1.4.11</logback-classic.version>
         <!-- test dependencies -->
-        <junit.bom.version>5.10.0</junit.bom.version>
+        <junit.bom.version>5.10.1</junit.bom.version>
         <assertj.bom.version>3.24.2</assertj.bom.version>
-        <approvaltests.version>22.1.0</approvaltests.version>
-        <instancio.version>2.16.0</instancio.version>
+        <approvaltests.version>22.3.1</approvaltests.version>
+        <instancio-junit.version>3.6.0</instancio-junit.version>
         <!-- reporting dependencies-->
         <jacoco.version>0.8.8</jacoco.version>
     </properties>
@@ -49,7 +50,6 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- TODO: add mapstruct too -->
         <!-- logging interface should be the same -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -146,7 +146,7 @@
             <dependency>
                 <groupId>jakarta.platform</groupId>
                 <artifactId>jakarta.jakartaee-bom</artifactId>
-                <version>${jakarta.bom.version}</version>
+                <version>${jakarta-jakartaee.bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -164,6 +164,13 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>com.github.victools</groupId>
+                <artifactId>jsonschema-generator-bom</artifactId>
+                <version>${jsonschema-generator.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             <!-- singular dependencies -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -173,11 +180,21 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>${logback.version}</version>
+                <version>${logback-classic.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.retrofit2</groupId>
                 <artifactId>retrofit</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>converter-jackson</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>converter-scalars</artifactId>
                 <version>${retrofit.version}</version>
             </dependency>
             <dependency>
@@ -227,7 +244,7 @@
             <dependency>
                 <groupId>org.instancio</groupId>
                 <artifactId>instancio-junit</artifactId>
-                <version>${instancio.version}</version>
+                <version>${instancio-junit.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
