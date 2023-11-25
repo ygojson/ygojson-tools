@@ -35,6 +35,7 @@
         <assertj.bom.version>3.24.2</assertj.bom.version>
         <approvaltests.version>22.3.1</approvaltests.version>
         <instancio-junit.version>3.6.0</instancio-junit.version>
+        <jimfs.version>1.3.0</jimfs.version>
         <!-- reporting dependencies-->
         <jacoco.version>0.8.8</jacoco.version>
     </properties>
@@ -82,6 +83,12 @@
         <dependency>
             <groupId>org.instancio</groupId>
             <artifactId>instancio-junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.jimfs</groupId>
+            <artifactId>jimfs</artifactId>
+            <version>${jimfs.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
