@@ -33,13 +33,13 @@ public class GenerateDocumentationCli
 		description = "Output path for the schema files",
 		required = true
 	)
-	public Path outputPath;
+	Path outputPath;
 
 	@CommandLine.Option(
 		names = { "--schemaIdPrefix" },
 		description = "Prefix for the schema IDs (default: '${DEFAULT-VALUE}')"
 	)
-	public String schemaPrefix = "/";
+	String schemaPrefix = "/";
 
 	@CommandLine.Option(
 		names = { "--force" },
