@@ -35,6 +35,7 @@
         <assertj.bom.version>3.24.2</assertj.bom.version>
         <approvaltests.version>22.3.1</approvaltests.version>
         <instancio-junit.version>3.6.0</instancio-junit.version>
+        <jimfs.version>1.3.0</jimfs.version>
         <!-- reporting dependencies-->
         <jacoco.version>0.8.8</jacoco.version>
     </properties>
@@ -84,10 +85,49 @@
             <artifactId>instancio-junit</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.jimfs</groupId>
+            <artifactId>jimfs</artifactId>
+            <version>${jimfs.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <configuration>
+                    <java>
+                        <!-- use prettier-java -->
+                        <prettier>
+                            <devDependencies>
+                                <prettier>2.8.8</prettier>
+                                <prettier-plugin-java>2.2.0</prettier-plugin-java>
+                            </devDependencies>
+                            <config>
+                                <parser>java</parser>
+                                <useTabs>true</useTabs>
+                            </config>
+                        </prettier>
+                        <!-- other config -->
+                        <importOrder>
+                            <order>\#,java|javax,,io.github.ygojson</order>
+                        </importOrder>
+                        <endWithNewline/>
+                        <formatAnnotations/>
+                    </java>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- jacoco should also run on all tests to provide a coverage report -->
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -131,6 +171,11 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>3.4.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.diffplug.spotless</groupId>
+                    <artifactId>spotless-maven-plugin</artifactId>
+                    <version>2.40.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
