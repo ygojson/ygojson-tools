@@ -22,7 +22,7 @@ import io.github.ygojson.tools.common.YgoJsonTool;
 	includeFilters = {
 		@ComponentScan.Filter(
 			type = FilterType.ASSIGNABLE_TYPE,
-			value = {YgoJsonTool.class}
+			value = { YgoJsonTool.class }
 		),
 	}
 )

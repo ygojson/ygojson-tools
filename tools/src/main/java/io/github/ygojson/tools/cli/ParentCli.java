@@ -17,7 +17,7 @@ import picocli.CommandLine;
 	}
 )
 public final class ParentCli implements Runnable {
-	
+
 	/**
 	 * Signals an unknown error that should be fixed.
 	 * <br>
@@ -25,7 +25,6 @@ public final class ParentCli implements Runnable {
 	 * being handled properly.
 	 */
 	public static final int UNEXPECTED_ERROR_CODE = 100;
-
 
 	@CommandLine.Spec
 	CommandLine.Model.CommandSpec spec;

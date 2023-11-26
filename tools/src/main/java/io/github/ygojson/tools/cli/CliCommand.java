@@ -91,7 +91,9 @@ abstract class CliCommand<I, T extends YgoJsonTool<I>>
 		}
 	}
 
-	private CommandLine.PicocliException mapYgoJsonException(final YgoJsonToolException e) {
+	private CommandLine.PicocliException mapYgoJsonException(
+		final YgoJsonToolException e
+	) {
 		log.error(e.getMessage());
 		if (e instanceof YgoJsonToolException.InputException) {
 			return new CommandLine.ParameterException(
