@@ -2,9 +2,10 @@ package io.github.ygojson.model.data.definitions;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import io.github.ygojson.model.data.Card;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
+
+import io.github.ygojson.model.data.Card;
 
 /**
  * Identifiers associated to the {@link Card}.
@@ -19,12 +20,14 @@ import lombok.experimental.SuperBuilder;
 
 		This model is a container of third-party IDs associated with the Card (atomic)."""
 )
-@JsonPropertyOrder({
-	Identifiers.KONAMI_ID_PROPERTY,
-	Identifiers.PASSWORD_PROPERTY,
-	Identifiers.PASSWORD_ALT_PROPERTY,
-	Identifiers.YUGIPEDIA_PAGE_ID_PROPERTY
-})
+@JsonPropertyOrder(
+	{
+		Identifiers.KONAMI_ID_PROPERTY,
+		Identifiers.PASSWORD_PROPERTY,
+		Identifiers.PASSWORD_ALT_PROPERTY,
+		Identifiers.YUGIPEDIA_PAGE_ID_PROPERTY,
+	}
+)
 @Getter
 @JsonPOJOBuilder
 @SuperBuilder(setterPrefix = "with", toBuilder = true)
@@ -102,5 +105,4 @@ public class Identifiers {
 	@JsonProperty(value = YUGIPEDIA_PAGE_ID_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private Long yugipediaPageId;
-
 }

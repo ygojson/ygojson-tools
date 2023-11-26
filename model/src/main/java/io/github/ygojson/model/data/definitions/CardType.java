@@ -13,6 +13,5 @@ public enum CardType {
 	@JsonProperty("spell")
 	SPELL,
 	@JsonProperty("trap")
-	TRAP
-
+	TRAP,
 }

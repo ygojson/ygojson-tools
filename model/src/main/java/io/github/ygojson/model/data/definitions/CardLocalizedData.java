@@ -2,10 +2,10 @@ package io.github.ygojson.model.data.definitions;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import io.github.ygojson.model.data.Card;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
 
+import io.github.ygojson.model.data.Card;
 
 @JsonClassDescription(
 	"""
@@ -14,13 +14,15 @@ import lombok.experimental.SuperBuilder;
 		All translated properties match the name of the original property
 		and any missing property indicates no translation for it."""
 )
-@JsonPropertyOrder({
-	Card.NAME_PROPERTY,
-	Card.EFFECT_TEXT_PROPERTY,
-	Card.FLAVOR_TEXT_PROPERTY,
-	Card.MATERIALS_PROPERTY,
-	Card.PENDULUM_EFFECT_PROPERTY
-})
+@JsonPropertyOrder(
+	{
+		Card.NAME_PROPERTY,
+		Card.EFFECT_TEXT_PROPERTY,
+		Card.FLAVOR_TEXT_PROPERTY,
+		Card.MATERIALS_PROPERTY,
+		Card.PENDULUM_EFFECT_PROPERTY,
+	}
+)
 @Getter
 @SuperBuilder(setterPrefix = "with", toBuilder = true)
 @JsonPOJOBuilder
@@ -29,9 +31,7 @@ public class CardLocalizedData {
 	/**
 	 * Translation for {@link Card#getName()}.
 	 */
-	@JsonPropertyDescription(
-		"Name of the card (translated)"
-	)
+	@JsonPropertyDescription("Name of the card (translated)")
 	@JsonProperty(value = Card.NAME_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String name;
@@ -39,9 +39,7 @@ public class CardLocalizedData {
 	/**
 	 * Translation for {@link Card#getEffectText()}.
 	 */
-	@JsonPropertyDescription(
-		"Effect text for the card (translated)"
-	)
+	@JsonPropertyDescription("Effect text for the card (translated)")
 	@JsonProperty(value = Card.EFFECT_TEXT_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String effectText;
@@ -49,9 +47,7 @@ public class CardLocalizedData {
 	/**
 	 * Translation for {@link Card#getFlavorText()}.
 	 */
-	@JsonPropertyDescription(
-		"Flavor text on a normal monster (translated)"
-	)
+	@JsonPropertyDescription("Flavor text on a normal monster (translated)")
 	@JsonProperty(value = Card.FLAVOR_TEXT_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String flavorText;
@@ -69,11 +65,8 @@ public class CardLocalizedData {
 	/**
 	 * Translation for {@link Card#getPendulumEffect()}.
 	 */
-	@JsonPropertyDescription(
-		"Effect of the Pendulum monster (translated)"
-	)
+	@JsonPropertyDescription("Effect of the Pendulum monster (translated)")
 	@JsonProperty(value = Card.PENDULUM_EFFECT_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String pendulumEffect;
-
 }

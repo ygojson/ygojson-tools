@@ -23,5 +23,5 @@ public enum LinkArrow {
 	@JsonProperty("bottom-center")
 	BOTTOM_CENTER,
 	@JsonProperty("bottom-right")
-	BOTTOM_RIGHT
+	BOTTOM_RIGHT,
 }

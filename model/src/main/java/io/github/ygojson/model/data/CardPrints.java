@@ -1,11 +1,11 @@
 package io.github.ygojson.model.data;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
-
-import java.util.List;
 
 /**
  * Model describing the properties of a Card with all associated prints.
@@ -30,5 +30,4 @@ public class CardPrints {
 	@JsonProperty(value = PRINTS_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	public List<Print> print;
-
 }
