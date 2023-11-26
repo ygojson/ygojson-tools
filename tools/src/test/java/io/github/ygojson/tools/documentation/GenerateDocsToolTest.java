@@ -2,24 +2,20 @@ package io.github.ygojson.tools.documentation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.jimfs.Configuration;
-import com.google.common.jimfs.Jimfs;
 import io.github.ygojson.tools.common.YgoJsonToolException;
+import io.github.ygojson.tools.test.TestFilesystem;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.springframework.util.FileSystemUtils;
 
 import java.io.IOException;
-import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -35,43 +31,31 @@ class GenerateDocsToolTest {
             "versioninfo.schema.json"
     );
 
-    private static FileSystem FS;
+    private static TestFilesystem TEST_FS;
     private static ObjectMapper OBJECT_MAPPER;
 
     private GenerateDocsTool testTool;
-    private Path testPath;
 
     @BeforeAll
     static void beforeAll() {
         // use an in-memory FS to avoid writing to disk and speed up tests
-        FS = Jimfs.newFileSystem(Configuration.unix());
+        TEST_FS = TestFilesystem.init();
         OBJECT_MAPPER = new ObjectMapper();
     }
     @AfterAll
     static void afterAll() {
-        try {
-            FS.close();
-        } catch (final IOException e) {
-            log.error("Cannot close in-memory filesystem", e);
-            FS = null;
-        }
         OBJECT_MAPPER = null;
+        TEST_FS.close();
     }
 
     @BeforeEach
     void beforeEach() throws IOException {
         testTool = new GenerateDocsTool(OBJECT_MAPPER);
-        testPath = FS.getPath("/schemas/" + UUID.randomUUID() + "/");
     }
 
     @AfterEach
     void afterEach() {
-        try {
-            FileSystemUtils.deleteRecursively(testPath);
-            testPath = null;
-        } catch (final IOException e) {
-            log.error("Cannot delete in-memory path", e);
-        }
+        TEST_FS.cleanup();
     }
 
     static Stream<GenerateDocsTool.Input> invalidInputs() throws IOException {
@@ -79,7 +63,7 @@ class GenerateDocsToolTest {
                 // null directory
                 new GenerateDocsTool.Input(null, "", false),
                 // null prefix
-                new GenerateDocsTool.Input(FS.getPath("/" + UUID.randomUUID()), null, false)
+                new GenerateDocsTool.Input(TEST_FS.getTestRoot(), null, false)
         );
     }
 
@@ -113,11 +97,11 @@ class GenerateDocsToolTest {
     void given_validInput_when_executed_then_filesAreGenerated() throws Exception {
         // given
         final String prefix = "https://ygojson.github.io/";
-        final GenerateDocsTool.Input input = new GenerateDocsTool.Input(testPath, prefix, false);
+        final GenerateDocsTool.Input input = new GenerateDocsTool.Input(TEST_FS.getTestRoot(), prefix, false);
         // when
         testTool.execute(input);
         // then
-        assertSchemaOutput(prefix, testPath);
+        assertSchemaOutput(prefix, TEST_FS.getTestRoot());
     }
 
     private static void assertSchemaOutput(final String expectedPrefix, Path outputPath) throws IOException {

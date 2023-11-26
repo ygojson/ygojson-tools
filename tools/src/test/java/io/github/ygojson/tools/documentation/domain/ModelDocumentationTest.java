@@ -4,21 +4,20 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.jimfs.Configuration;
-import com.google.common.jimfs.Jimfs;
 import io.github.ygojson.tools.common.YgoJsonToolException;
+import io.github.ygojson.tools.test.TestFilesystem;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
-import org.junit.jupiter.api.*;
-import org.springframework.util.FileSystemUtils;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
-import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -27,45 +26,27 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 class ModelDocumentationTest {
 
     private static ObjectMapper OBJECT_MAPPER;
-    private static FileSystem FS;
-
-    private Path testPath;
+    private static TestFilesystem TEST_FS;
 
     @BeforeAll
     static void beforeAll() {
         // use an in-memory FS to avoid writing to disk and speed up tests
-        FS = Jimfs.newFileSystem(Configuration.unix());
+        TEST_FS = TestFilesystem.init();
         OBJECT_MAPPER = new ObjectMapper();
     }
     @AfterAll
     static void afterAll() {
-        try {
-            FS.close();
-        } catch (final IOException e) {
-            log.error("Cannot close in-memory filesystem", e);
-            FS = null;
-        }
         OBJECT_MAPPER = null;
-    }
-
-    @BeforeEach
-    void beforeEach() throws IOException {
-        testPath = FS.getPath("/schemas/" + UUID.randomUUID() + "/");
-        Files.createDirectories(testPath);
+        TEST_FS.close();
     }
 
     @AfterEach
     void afterEach() {
-        try {
-            FileSystemUtils.deleteRecursively(testPath);
-            testPath = null;
-        } catch (final IOException e) {
-            log.error("Cannot delete in-memory path", e);
-        }
+        TEST_FS.cleanup();
     }
 
     @Test
-    void given_schemaPrefixAlreadySet_when_setAgain_then_throwIllegalStateException() throws IOException {
+    void given_schemaPrefixAlreadySet_when_setAgain_then_throwIllegalStateException() {
         // given
         final ModelDocumentation modelDoc = new ModelDocumentation(SimpleModel.class, OBJECT_MAPPER);
         modelDoc.setSchemaPrefix("my-prefix");
@@ -76,13 +57,14 @@ class ModelDocumentationTest {
     }
 
     @Test
-    void given_schemaAlreadyExists_when_writeJsonSchemaToWithoutForce_then_throwException() throws IOException {
+    void given_schemaAlreadyExists_when_writeJsonSchemaToWithoutForce_then_throwException() {
         // given
         final ModelDocumentation modelDoc = new ModelDocumentation(SimpleModel.class, OBJECT_MAPPER);
-        final Path doNotOverwriteFile = testPath.resolve("simplemodel.schema.json");
-        Files.writeString(doNotOverwriteFile, "DO NOT OVERWRITE");
+        final Path doNotOverwriteFile = TEST_FS.createFileWithContent(
+                "simplemodel.schema.json",
+                "DO NOT OVERWRITE");
         // when
-        final ThrowableAssert.ThrowingCallable throwingCallable = () -> modelDoc.writeJsonSchemaTo(testPath, false);
+        final ThrowableAssert.ThrowingCallable throwingCallable = () -> modelDoc.writeJsonSchemaTo(TEST_FS.getTestRoot(), false);
         // then
         SoftAssertions.assertSoftly(softly -> {
             softly.assertThatThrownBy(throwingCallable)
@@ -95,13 +77,12 @@ class ModelDocumentationTest {
     }
 
     @Test
-    void given_schemaFilenameIsExistingDirectory_when_writeJsonSchemaToWithForce_then_throwException() throws IOException {
+    void given_schemaFilenameIsExistingDirectory_when_writeJsonSchemaToWithForce_then_throwException() {
         // given
         final ModelDocumentation modelDoc = new ModelDocumentation(SimpleModel.class, OBJECT_MAPPER);
-        final Path outputFilenamDirectory = testPath.resolve("simplemodel.schema.json");
-        Files.createDirectories(outputFilenamDirectory);
+        TEST_FS.createDir("simplemodel.schema.json");
         // when
-        final ThrowableAssert.ThrowingCallable throwingCallable = () -> modelDoc.writeJsonSchemaTo(testPath, false);
+        final ThrowableAssert.ThrowingCallable throwingCallable = () -> modelDoc.writeJsonSchemaTo(TEST_FS.getTestRoot(), false);
         // then
         assertThatThrownBy(throwingCallable)
                 .isInstanceOf(YgoJsonToolException.class);
@@ -113,7 +94,7 @@ class ModelDocumentationTest {
         final ModelDocumentation modelDoc = new ModelDocumentation(SimpleModel.class, OBJECT_MAPPER);
         modelDoc.setSchemaPrefix("simple-model-id");
         // when
-        final Path schemaPath = modelDoc.writeJsonSchemaTo(testPath, true);
+        final Path schemaPath = modelDoc.writeJsonSchemaTo(TEST_FS.getTestRoot(), true);
         final JsonNode schemaAsJsonNode = OBJECT_MAPPER.readTree(Files.readString(schemaPath));
         // then
         assertThat(schemaAsJsonNode.get("$id").textValue())
@@ -125,7 +106,7 @@ class ModelDocumentationTest {
         // given
         final ModelDocumentation modelDoc = new ModelDocumentation(SimpleModel.class, OBJECT_MAPPER);
         // when
-        final Path schemaPath = modelDoc.writeJsonSchemaTo(testPath, true);
+        final Path schemaPath = modelDoc.writeJsonSchemaTo(TEST_FS.getTestRoot(), true);
         final JsonNode schemaAsJsonNode = OBJECT_MAPPER.readTree(Files.readString(schemaPath));
         // then
         assertThat(schemaAsJsonNode.get("$schema").textValue())
@@ -137,7 +118,7 @@ class ModelDocumentationTest {
         // given
         final ModelDocumentation modelDoc = new ModelDocumentation(MapModel.class, OBJECT_MAPPER);
         // when
-        final Path schemaPath = modelDoc.writeJsonSchemaTo(testPath, true);
+        final Path schemaPath = modelDoc.writeJsonSchemaTo(TEST_FS.getTestRoot(), true);
         final JsonNode schemaAsJsonNode = OBJECT_MAPPER.readTree(Files.readString(schemaPath));
         // then
         // compare as ObjectNode to avoid order changes
