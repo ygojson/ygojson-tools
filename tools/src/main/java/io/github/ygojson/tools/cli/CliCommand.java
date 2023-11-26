@@ -80,25 +80,26 @@ abstract class CliCommand<I, T extends YgoJsonTool<I>>
 	public final Integer call() {
 		try {
 			doCall();
-			return ErrorCodes.SUCCESS;
+			return CommandLine.ExitCode.OK;
 		} catch (final YgoJsonToolException e) {
 			log.error("Finished with errors");
-			return handleYgoJsonException(e);
+			throw mapYgoJsonException(e);
 		} catch (final Exception e) {
 			log.error("Unexpected error", e);
-			return ErrorCodes.UNKNOWN;
+			// signal unexpected erorrs
+			return ParentCli.UNEXPECTED_ERROR_CODE;
 		}
 	}
 
-	private int handleYgoJsonException(final YgoJsonToolException e) {
+	private CommandLine.PicocliException mapYgoJsonException(final YgoJsonToolException e) {
 		log.error(e.getMessage());
 		if (e instanceof YgoJsonToolException.InputException) {
-			throw new CommandLine.ParameterException(
+			return new CommandLine.ParameterException(
 				getCmdSpec().commandLine(),
 				e.getMessage()
 			);
 		}
-		throw new CommandLine.ExecutionException(
+		return new CommandLine.ExecutionException(
 			getCmdSpec().commandLine(),
 			e.getMessage()
 		);

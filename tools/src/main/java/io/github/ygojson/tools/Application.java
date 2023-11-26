@@ -10,7 +10,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import picocli.CommandLine;
 
-import io.github.ygojson.tools.cli.ErrorCodes;
 import io.github.ygojson.tools.cli.ParentCli;
 import io.github.ygojson.tools.common.YgoJsonTool;
 
@@ -23,7 +22,7 @@ import io.github.ygojson.tools.common.YgoJsonTool;
 	includeFilters = {
 		@ComponentScan.Filter(
 			type = FilterType.ASSIGNABLE_TYPE,
-			value = { YgoJsonTool.class }
+			value = {YgoJsonTool.class}
 		),
 	}
 )
@@ -32,7 +31,7 @@ public class Application implements CommandLineRunner, ExitCodeGenerator {
 
 	private final CommandLine.IFactory factory;
 	private final ParentCli parentCli;
-	private int exitCode = ErrorCodes.UNKNOWN;
+	private int exitCode = ParentCli.UNEXPECTED_ERROR_CODE;
 
 	/**
 	 * Entry point for the application.
