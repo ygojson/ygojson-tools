@@ -5,5 +5,5 @@ package io.github.ygojson.model.data.acceptance;
  */
 public class PackageSettings {
 
-    public static String ApprovalBaseDirectory = "../resources";
+	public static String ApprovalBaseDirectory = "../resources";
 }

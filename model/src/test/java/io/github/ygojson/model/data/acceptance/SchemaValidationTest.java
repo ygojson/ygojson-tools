@@ -2,7 +2,7 @@ package io.github.ygojson.model.data.acceptance;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.module.jsonSchema.jakarta.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.jakarta.JsonSchemaGenerator;
 import com.fasterxml.jackson.module.jsonSchema.jakarta.customProperties.ValidationSchemaFactoryWrapper;
@@ -25,49 +25,49 @@ import java.util.stream.Stream;
  */
 public class SchemaValidationTest {
 
-    /**
-     * This class is here to avoid checking if the schema has
-     * changed only based on the documentation description and
-     * class name.
-     */
-    public abstract class JsonSchemaWithoutDescriptionMixIn {
+	/**
+	 * This class is here to avoid checking if the schema has
+	 * changed only based on the documentation description and
+	 * class name.
+	 */
+	public abstract class JsonSchemaWithoutDescriptionMixIn {
 
-        @JsonIgnore
-        @JsonProperty("id")
-        private String id;
+		@JsonIgnore
+		@JsonProperty("id")
+		private String id;
 
-        @JsonIgnore
-        @JsonProperty("description")
-        private String description;
-    }
+		@JsonIgnore
+		@JsonProperty("description")
+		private String description;
+	}
 
-    public static String toTestSchema(final Class<?> type) throws IOException {
-        final JsonSchema schema =  new JsonSchemaGenerator(
-                JsonUtils.getObjectMapper(),
-                new ValidationSchemaFactoryWrapper() // include the validation wrapper
-        ).generateSchema(type);
-        // for the schema we don't need the ObjectMapper from YGOJSON, and we need to modify it
-        // to include a mix-in
-        return new ObjectMapper() //
-                .addMixIn(JsonSchema.class, JsonSchemaWithoutDescriptionMixIn.class) //
-                .writerWithDefaultPrettyPrinter() //
-                .writeValueAsString(schema);
-    }
+	public static String toTestSchema(final Class<?> type) throws IOException {
+		final JsonSchema schema = new JsonSchemaGenerator(
+			JsonUtils.getObjectMapper(),
+			new ValidationSchemaFactoryWrapper() // include the validation wrapper
+		).generateSchema(type);
+		// for the schema we don't need the ObjectMapper from YGOJSON, and we need to modify it
+		// to include a mix-in
+		return new ObjectMapper() //
+			.addMixIn(JsonSchema.class, JsonSchemaWithoutDescriptionMixIn.class) //
+			.writerWithDefaultPrettyPrinter() //
+			.writeValueAsString(schema);
+	}
 
-    static Stream<Class<?>> getDataSchemas() {
-        return Stream.of(
-            Card.class, Print.class, Set.class, // main card models
-            CardPrints.class, // derived main models
-            VersionInfo.class // utility model
-        );
-    }
+	static Stream<Class<?>> getDataSchemas() {
+		return Stream.of(
+			Card.class, Print.class, Set.class, // main card models
+			CardPrints.class, // derived main models
+			VersionInfo.class // utility model
+		);
+	}
 
-    @ParameterizedTest
-    @MethodSource("getDataSchemas")
-    void testDataSchemas(final Class<?> type) throws IOException {
-        Approvals.verify(
-                toTestSchema(type),
-                Approvals.NAMES.withParameters(type.getSimpleName()));
-    }
+	@ParameterizedTest
+	@MethodSource("getDataSchemas")
+	void testDataSchemas(final Class<?> type) throws IOException {
+		Approvals.verify(
+			toTestSchema(type),
+			Approvals.NAMES.withParameters(type.getSimpleName()));
+	}
 
 }

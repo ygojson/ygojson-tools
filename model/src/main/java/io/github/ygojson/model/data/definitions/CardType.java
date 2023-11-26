@@ -8,11 +8,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 @JsonClassDescription("Enum values for the main card types.")
 public enum CardType {
-    @JsonProperty("monster")
-    MONSTER,
-    @JsonProperty("spell")
-    SPELL,
-    @JsonProperty("trap")
-    TRAP
+	@JsonProperty("monster")
+	MONSTER,
+	@JsonProperty("spell")
+	SPELL,
+	@JsonProperty("trap")
+	TRAP
 
 }
