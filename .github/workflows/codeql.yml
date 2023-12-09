@@ -61,10 +61,10 @@ jobs:
           # queries: security-extended,security-and-quality
 
       ## Custom: add java-17 setup to work with CodeQL
-      - name: Set up JDK 17
+      - name: ☕ Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: maven
 
