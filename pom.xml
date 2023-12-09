@@ -16,7 +16,7 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- skip variable-->
-        <skipLint>true</skipLint>
+        <skipLint>false</skipLint>
         <!-- VERSIONS -->
         <!-- annotation processors -->
         <lombok.version>1.18.30</lombok.version>
