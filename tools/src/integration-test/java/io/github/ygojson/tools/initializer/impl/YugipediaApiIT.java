@@ -1,32 +1,31 @@
-package io.github.ygojson.tools.yugipedia.api;
+package io.github.ygojson.tools.initializer.impl;
 
 import java.io.IOException;
 
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
 
+import io.github.ygojson.tools.yugipedia.api.YugipediaApi;
+import io.github.ygojson.tools.yugipedia.api.YugipediaApiMother;
 import io.github.ygojson.tools.yugipedia.api.params.Category;
 import io.github.ygojson.tools.yugipedia.api.params.PipeSeparated;
 import io.github.ygojson.tools.yugipedia.api.params.SortDirection;
 import io.github.ygojson.tools.yugipedia.api.response.QueryResponse;
 
 @Slf4j
-class YugipediaApiIntegrationTest {
+class YugipediaApiIT {
 
 	private YugipediaApi api;
 
 	@BeforeEach
 	void beforeEach() {
-		log.warn("These tests should only run on development for debugging");
 		api = YugipediaApiMother.productionClient();
 	}
 
 	@Test
-	@Disabled("should only run on development for debugging")
 	void testQueryCategoryMembersByTimestamp() throws IOException {
 		final Response<QueryResponse> cards = api
 			.queryCategoryMembersByTimestamp(
@@ -44,7 +43,6 @@ class YugipediaApiIntegrationTest {
 	}
 
 	@Test
-	@Disabled("should only run on development for debugging")
 	void testQueryRecentChanges() throws IOException {
 		final Response<QueryResponse> recentChanges = api
 			.queryRecentChanges(50, null, null)
@@ -57,7 +55,6 @@ class YugipediaApiIntegrationTest {
 	}
 
 	@Test
-	@Disabled("should only run on development for debugging")
 	void testQueryPagesByTitle() throws IOException {
 		final Response<QueryResponse> sets = api
 			.queryPagesByTitle(new PipeSeparated("LOB", "ETCO"))
