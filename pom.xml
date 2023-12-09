@@ -29,7 +29,7 @@
         <spring-boot-dependencies.bom.version>3.1.6</spring-boot-dependencies.bom.version>
         <picocli.version>4.7.5</picocli.version>
         <nitrite.version>3.4.4</nitrite.version>
-        <logback-classic.version>1.4.11</logback-classic.version>
+        <logback-classic.version>1.4.12</logback-classic.version>
         <!-- test dependencies -->
         <junit.bom.version>5.10.1</junit.bom.version>
         <assertj.bom.version>3.24.2</assertj.bom.version>
