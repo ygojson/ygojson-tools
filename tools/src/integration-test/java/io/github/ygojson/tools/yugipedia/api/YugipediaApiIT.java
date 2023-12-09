@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.initializer.impl;
+package io.github.ygojson.tools.yugipedia.api;
 
 import java.io.IOException;
 
@@ -8,8 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
 
-import io.github.ygojson.tools.yugipedia.api.YugipediaApi;
-import io.github.ygojson.tools.yugipedia.api.YugipediaApiMother;
 import io.github.ygojson.tools.yugipedia.api.params.Category;
 import io.github.ygojson.tools.yugipedia.api.params.PipeSeparated;
 import io.github.ygojson.tools.yugipedia.api.params.SortDirection;
