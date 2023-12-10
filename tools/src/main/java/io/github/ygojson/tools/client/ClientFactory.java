@@ -45,7 +45,9 @@ public class ClientFactory {
 			.addNetworkInterceptor(
 				createRateLimitInterceptor(config.name(), config.rateLimit())
 			)
-			.addNetworkInterceptor(new UserAgentInterceptor(config.userAgentMapper(info)))
+			.addNetworkInterceptor(
+				new UserAgentInterceptor(config.userAgentMapper(info))
+			)
 			.build();
 	}
 

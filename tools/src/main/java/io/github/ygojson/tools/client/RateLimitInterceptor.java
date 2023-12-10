@@ -10,7 +10,6 @@ import okhttp3.MediaType;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-
 @RequiredArgsConstructor
 class RateLimitInterceptor implements Interceptor {
 
