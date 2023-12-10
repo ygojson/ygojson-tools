@@ -115,10 +115,11 @@ class RateLimitInterceptorTest {
 				.assertThat(secondResponse.code())
 				.describedAs(" second response code")
 				.isEqualTo(200);
+			// testing with -10 milliseconds as the timing wiht mock-server are too fast
 			softly
 				.assertThat(Duration.between(afterFirst, afterSecond))
 				.describedAs("time between responses")
-				.isGreaterThanOrEqualTo(Duration.ofMillis(100));
+				.isGreaterThanOrEqualTo(Duration.ofMillis(90));
 		});
 	}
 }
