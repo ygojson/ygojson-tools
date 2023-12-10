@@ -1,10 +1,12 @@
 package io.github.ygojson.tools;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.tools.common.ApplicationInfo;
 
 /**
  * Application configuration.
@@ -23,5 +25,15 @@ public class AppConfiguration {
 	public ObjectMapper objectMapper() {
 		// use our model object-mapper
 		return JsonUtils.getObjectMapper();
+	}
+
+	// TODO: should add the variables on a different way
+	@Bean
+	public ApplicationInfo applicationInfo(
+		@Value("${application.title:ygojson-tools}") final String title,
+		@Value("${application.version:develop}") final String version,
+		@Value("${application.url:https://ygojson.github.io}") final String url
+	) {
+		return new ApplicationInfo(title, version, url);
 	}
 }
