@@ -26,12 +26,12 @@ public interface YugipediaApi {
 	 */
 	@GET(
 		"api.php?action=query" +
-			"&format=json&formatversion=2" +
-			"&redirects=true" +
-			"&prop=revisions" +
-			"&rvprop=content|timestamp" +
-			"&generator=categorymembers" +
-			"&gcmsort=timestamp"
+		"&format=json&formatversion=2" +
+		"&redirects=true" +
+		"&prop=revisions" +
+		"&rvprop=content|timestamp" +
+		"&generator=categorymembers" +
+		"&gcmsort=timestamp"
 	)
 	public Call<QueryResponse> queryCategoryMembersByTimestamp(
 		@Query("gcmtitle") Category category,
@@ -50,14 +50,14 @@ public interface YugipediaApi {
 	 */
 	@GET(
 		"api.php?action=query" +
-			"&format=json&formatversion=2" +
-			"&redirects=true" +
-			"&prop=revisions|categories" +
-			"&rvprop=content|timestamp" +
-			"&generator=recentchanges" +
-			"&grctype=new|edit|categorize" +
-			"&grctoponly=true" +
-			"&cllimit=max"
+		"&format=json&formatversion=2" +
+		"&redirects=true" +
+		"&prop=revisions|categories" +
+		"&rvprop=content|timestamp" +
+		"&generator=recentchanges" +
+		"&grctype=new|edit|categorize" +
+		"&grctoponly=true" +
+		"&cllimit=max"
 	)
 	public Call<QueryResponse> queryRecentChanges(
 		@Query("grclimit") Integer resultsPerQuery,
@@ -73,10 +73,10 @@ public interface YugipediaApi {
 	 */
 	@GET(
 		"api.php?action=query" +
-			"&format=json&formatversion=2" +
-			"&redirects=true" +
-			"&prop=revisions" +
-			"&rvprop=content|timestamp"
+		"&format=json&formatversion=2" +
+		"&redirects=true" +
+		"&prop=revisions" +
+		"&rvprop=content|timestamp"
 	)
 	public Call<QueryResponse> queryPagesByTitle(
 		@Query("titles") PipeSeparated titles
