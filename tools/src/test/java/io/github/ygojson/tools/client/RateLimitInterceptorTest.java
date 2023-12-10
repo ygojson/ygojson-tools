@@ -95,7 +95,7 @@ class RateLimitInterceptorTest {
 		throws IOException {
 		// given
 		final OkHttpClient client = new OkHttpClient.Builder()
-			.addInterceptor(createTestInterceptor(1, Duration.ofMillis(100)))
+			.addNetworkInterceptor(createTestInterceptor(1, Duration.ofMillis(100)))
 			.build();
 		warmUp(client, 3);
 
