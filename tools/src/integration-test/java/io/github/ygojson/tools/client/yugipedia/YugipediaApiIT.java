@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api;
+package io.github.ygojson.tools.client.yugipedia;
 
 import java.io.IOException;
 
@@ -8,11 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
 
-import io.github.ygojson.tools.yugipedia.api.params.Category;
-import io.github.ygojson.tools.yugipedia.api.params.PipeSeparated;
-import io.github.ygojson.tools.yugipedia.api.params.SortDirection;
-import io.github.ygojson.tools.yugipedia.api.response.Continue;
-import io.github.ygojson.tools.yugipedia.api.response.QueryResponse;
+import io.github.ygojson.tools.client.yugipedia.params.Category;
+import io.github.ygojson.tools.client.yugipedia.params.PipeSeparated;
+import io.github.ygojson.tools.client.yugipedia.params.SortDirection;
+import io.github.ygojson.tools.client.yugipedia.response.Continue;
+import io.github.ygojson.tools.client.yugipedia.response.QueryResponse;
 
 @Slf4j
 class YugipediaApiIT {
@@ -21,7 +21,7 @@ class YugipediaApiIT {
 
 	@BeforeEach
 	void beforeEach() {
-		api = YugipediaApiMother.productionClient();
+		api = YugipediaApiMother.productionTestClient();
 	}
 
 	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(final String gmcontinue) throws IOException {

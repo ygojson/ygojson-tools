@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api;
+package io.github.ygojson.tools.client.yugipedia;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -14,7 +14,7 @@ import io.github.ygojson.model.utils.JsonUtils;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class YugipediaApiMother {
 
-	public static YugipediaApi productionClient() {
+	public static YugipediaApi productionTestClient() {
 		return createClient("https://yugipedia.com", productionOkHttp());
 	}
 

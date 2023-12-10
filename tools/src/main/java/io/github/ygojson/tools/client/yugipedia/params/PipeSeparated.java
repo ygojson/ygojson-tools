@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api.params;
+package io.github.ygojson.tools.client.yugipedia.params;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public final class PipeSeparated {
 	private final List<String> values;
 
 	public PipeSeparated(final String... values) {
-		if (values == null || values.length >= 500) {
+		if (values==null || values.length >= 500) {
 			throw new IllegalArgumentException("Titles should be > 1 and <= 500");
 		}
 		this.values = List.of(values);
