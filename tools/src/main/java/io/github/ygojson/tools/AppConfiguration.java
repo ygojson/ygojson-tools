@@ -27,7 +27,7 @@ public class AppConfiguration {
 		return JsonUtils.getObjectMapper();
 	}
 
-	// TODO: should add the variables on a different way
+	// TODO: fix properties management (see https://github.com/ygojson/ygojson-tools/issues/19)
 	@Bean
 	public ApplicationInfo applicationInfo(
 		@Value("${application.title:ygojson-tools}") final String title,

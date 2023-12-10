@@ -17,7 +17,7 @@ import io.github.ygojson.tools.common.ApplicationInfo;
 @RequiredArgsConstructor
 public class ClientFactory {
 
-	private final ConcurrentHashMap<ClientConfig<?>, Retrofit> retrofitClients =
+	private final ConcurrentHashMap<String, Retrofit> retrofitClients =
 		new ConcurrentHashMap<>();
 
 	private final ObjectMapper jsonMapper;
@@ -25,8 +25,8 @@ public class ClientFactory {
 
 	public <T> T getClient(ClientConfig<T> config) {
 		final Retrofit retrofit = retrofitClients.computeIfAbsent(
-			config,
-			this::createRetrofit
+			config.name(),
+			any -> createRetrofit(config)
 		);
 		return retrofit.create(config.apiClass());
 	}
@@ -42,10 +42,10 @@ public class ClientFactory {
 
 	private OkHttpClient createHttpClient(ClientConfig<?> config) {
 		return new OkHttpClient.Builder()
-			.addInterceptor(
+			.addNetworkInterceptor(
 				createRateLimitInterceptor(config.name(), config.rateLimit())
 			)
-			.addInterceptor(new UserAgentInterceptor(config.userAgentMapper(info)))
+			.addNetworkInterceptor(new UserAgentInterceptor(config.userAgentMapper(info)))
 			.build();
 	}
 
