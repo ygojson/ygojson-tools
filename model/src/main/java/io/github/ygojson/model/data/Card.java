@@ -33,8 +33,7 @@ import io.github.ygojson.model.data.definitions.LinkArrow;
 		Card.NAME_PROPERTY,
 		Card.IDENTIFIERS_PROPERTY,
 		Card.CARD_TYPE_PROPERTY,
-		Card.SPELL_TYPE_PROPERTY,
-		Card.TRAP_TYPE_PROPERTY,
+		Card.PROPERTY_PROPERTY,
 		Card.EFFECT_TEXT_PROPERTY,
 		Card.MONSTER_TYPES_PROPERTY,
 		Card.FLAVOR_TEXT_PROPERTY,
@@ -62,8 +61,7 @@ public class Card {
 	public static final String NAME_PROPERTY = "name";
 	public static final String IDENTIFIERS_PROPERTY = "identifiers";
 	public static final String CARD_TYPE_PROPERTY = "cardType";
-	public static final String SPELL_TYPE_PROPERTY = "spellType";
-	public static final String TRAP_TYPE_PROPERTY = "trapType";
+	public static final String PROPERTY_PROPERTY = "property";
 	public static final String EFFECT_TEXT_PROPERTY = "effectText";
 	public static final String FLAVOR_TEXT_PROPERTY = "flavorText";
 	public static final String ATTRIBUTE_PROPERTY = "attribute";
@@ -118,36 +116,20 @@ public class Card {
 	private CardType cardType;
 
 	/**
-	 * Type of spell (lower-case).
+	 * Special property for the spell or trap (lower-case).
 	 * </br>
-	 * These are the types represented by the spell icon.
+	 * These are the properties represented by the spell/trap icon.
 	 */
 	@JsonPropertyDescription(
 		"""
-			Type of spell (lower case).
+			Special property for the spell or trap (lower-case).
 
-			These are the types represented by the spell icon."""
+			These are the properties represented by the spell/trap icon."""
 	)
 	@Pattern(regexp = "[a-z]+")
-	@JsonProperty(value = SPELL_TYPE_PROPERTY)
+	@JsonProperty(value = PROPERTY_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String spellType;
-
-	/**
-	 * Type of trap (lower-case).
-	 * </br>
-	 * These are the types represented by the trap icon.
-	 */
-	@JsonPropertyDescription(
-		"""
-			Type of trap (lower case).
-
-			These are the types represented by the trap icon."""
-	)
-	@Pattern(regexp = "[a-z]+")
-	@JsonProperty(value = TRAP_TYPE_PROPERTY)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String trapType;
+	private String property;
 
 	/**
 	 * Effect text for the card (empty for Normal Monsters).
