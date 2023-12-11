@@ -30,11 +30,7 @@
       "type" : "string",
       "enum" : [ "monster", "spell", "trap" ]
     },
-    "spellType" : {
-      "type" : "string",
-      "pattern" : "[a-z]+"
-    },
-    "trapType" : {
+    "property" : {
       "type" : "string",
       "pattern" : "[a-z]+"
     },
