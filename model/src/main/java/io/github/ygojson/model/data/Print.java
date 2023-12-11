@@ -30,7 +30,7 @@ import lombok.experimental.SuperBuilder;
 	}
 )
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class Print {
 

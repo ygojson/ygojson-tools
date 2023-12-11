@@ -17,7 +17,7 @@ import lombok.experimental.SuperBuilder;
 		This model contains the same properties as the Card Model with the inclusion of the print list."""
 )
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class CardPrints {
 

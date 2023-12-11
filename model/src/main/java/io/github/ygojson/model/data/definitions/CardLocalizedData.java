@@ -24,7 +24,7 @@ import io.github.ygojson.model.data.Card;
 	}
 )
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class CardLocalizedData {
 

@@ -53,7 +53,7 @@ import io.github.ygojson.model.data.definitions.LinkArrow;
 	}
 )
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class Card {
 

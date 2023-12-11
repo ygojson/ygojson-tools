@@ -17,7 +17,7 @@ import io.github.ygojson.model.data.Set;
 )
 @JsonPropertyOrder({ Set.PREFIX_PROPERTY, Set.NAME_PROPERTY })
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class SetLocalizedData {
 

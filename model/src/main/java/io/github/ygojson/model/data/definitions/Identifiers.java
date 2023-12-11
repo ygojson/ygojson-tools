@@ -30,7 +30,7 @@ import io.github.ygojson.model.data.Card;
 )
 @Getter
 @JsonPOJOBuilder
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 public class Identifiers {
 
 	public static final String KONAMI_ID_PROPERTY = "konamiId";
