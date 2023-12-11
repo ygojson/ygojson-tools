@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api.response;
+package io.github.ygojson.tools.client.yugipedia.response;
 
 import lombok.Data;
 

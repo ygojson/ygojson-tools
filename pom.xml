@@ -26,6 +26,7 @@
         <jakarta-jakartaee.bom.version>10.0.0</jakarta-jakartaee.bom.version>
         <jsonschema-generator.bom.version>4.33.0</jsonschema-generator.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
+        <resilience4j.bom.version>2.1.0</resilience4j.bom.version>
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <!-- infrastructure dependencies -->
@@ -245,6 +246,13 @@
                 <groupId>com.github.victools</groupId>
                 <artifactId>jsonschema-generator-bom</artifactId>
                 <version>${jsonschema-generator.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-bom</artifactId>
+                <version>${resilience4j.bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>

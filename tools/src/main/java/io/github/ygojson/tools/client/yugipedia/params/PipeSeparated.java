@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api.params;
+package io.github.ygojson.tools.client.yugipedia.params;
 
 import java.util.List;
 

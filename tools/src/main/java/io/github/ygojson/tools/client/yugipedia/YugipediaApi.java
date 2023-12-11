@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.yugipedia.api;
+package io.github.ygojson.tools.client.yugipedia;
 
 import java.time.ZonedDateTime;
 
@@ -6,10 +6,10 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-import io.github.ygojson.tools.yugipedia.api.params.Category;
-import io.github.ygojson.tools.yugipedia.api.params.PipeSeparated;
-import io.github.ygojson.tools.yugipedia.api.params.SortDirection;
-import io.github.ygojson.tools.yugipedia.api.response.QueryResponse;
+import io.github.ygojson.tools.client.yugipedia.params.Category;
+import io.github.ygojson.tools.client.yugipedia.params.PipeSeparated;
+import io.github.ygojson.tools.client.yugipedia.params.SortDirection;
+import io.github.ygojson.tools.client.yugipedia.response.QueryResponse;
 
 /**
  * Represents the Yugipedia API calls used by YGOJSON.
