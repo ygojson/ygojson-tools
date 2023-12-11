@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
+import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
 /**
@@ -29,7 +29,7 @@ import lombok.experimental.SuperBuilder;
 		Print.LANGUAGE_PROPERTY,
 	}
 )
-@Getter
+@Data
 @SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class Print {

@@ -2,7 +2,7 @@ package io.github.ygojson.model.data.definitions;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
 import io.github.ygojson.model.data.Card;
@@ -23,7 +23,7 @@ import io.github.ygojson.model.data.Card;
 		Card.PENDULUM_EFFECT_PROPERTY,
 	}
 )
-@Getter
+@Data
 @SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class CardLocalizedData {
