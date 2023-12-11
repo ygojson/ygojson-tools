@@ -29,5 +29,5 @@ public class CardPrints {
 	@JsonPropertyDescription("List of prints for the card")
 	@JsonProperty(value = PRINTS_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public List<Print> print;
+	public List<Print> prints;
 }
