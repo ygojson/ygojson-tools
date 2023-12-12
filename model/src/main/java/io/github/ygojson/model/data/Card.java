@@ -11,6 +11,7 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import io.github.ygojson.model.data.definitions.CardLocalizedData;
@@ -53,6 +54,7 @@ import io.github.ygojson.model.data.definitions.LinkArrow;
 	}
 )
 @Data
+@NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class Card {
