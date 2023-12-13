@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import lombok.Getter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
@@ -16,8 +17,9 @@ import lombok.experimental.SuperBuilder;
 
 		This model contains the same properties as the Card Model with the inclusion of the print list."""
 )
-@Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@Data
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class CardPrints {
 
@@ -29,5 +31,5 @@ public class CardPrints {
 	@JsonPropertyDescription("List of prints for the card")
 	@JsonProperty(value = PRINTS_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public List<Print> print;
+	public List<Print> prints;
 }

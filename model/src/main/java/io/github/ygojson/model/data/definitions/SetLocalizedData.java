@@ -3,7 +3,8 @@ package io.github.ygojson.model.data.definitions;
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import io.github.ygojson.model.data.Set;
@@ -16,8 +17,9 @@ import io.github.ygojson.model.data.Set;
 		and any missing property indicates no translation for it."""
 )
 @JsonPropertyOrder({ Set.PREFIX_PROPERTY, Set.NAME_PROPERTY })
-@Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@Data
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class SetLocalizedData {
 

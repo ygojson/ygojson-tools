@@ -17,7 +17,7 @@ import lombok.experimental.SuperBuilder;
 )
 @JsonPropertyOrder({ VersionInfo.VERSION_PROPERTY, VersionInfo.DATE_PROPERTY })
 @Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class VersionInfo {
 

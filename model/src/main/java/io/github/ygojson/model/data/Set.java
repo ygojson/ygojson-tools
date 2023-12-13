@@ -7,7 +7,8 @@ import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import io.github.ygojson.model.data.definitions.SetLocalizedData;
@@ -31,8 +32,9 @@ import io.github.ygojson.model.data.definitions.SetLocalizedData;
 		Set.LOCALIZED_DATA_PROPERTY,
 	}
 )
-@Getter
-@SuperBuilder(setterPrefix = "with", toBuilder = true)
+@Data
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 @JsonPOJOBuilder
 public class Set {
 
