@@ -10,9 +10,9 @@ import retrofit2.Response;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.Category;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.PipeSeparated;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.SortDirection;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
 
 @Slf4j
 class YugipediaApiIT {

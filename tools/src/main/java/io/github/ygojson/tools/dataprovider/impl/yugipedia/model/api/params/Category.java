@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.params;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params;
 
 import lombok.RequiredArgsConstructor;
 

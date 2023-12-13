@@ -7,9 +7,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.Category;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.PipeSeparated;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.params.SortDirection;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
 
 /**
  * Represents the Yugipedia API calls used by YGOJSON.
