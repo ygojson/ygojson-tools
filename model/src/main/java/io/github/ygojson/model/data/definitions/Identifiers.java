@@ -1,6 +1,7 @@
 package io.github.ygojson.model.data.definitions;
 
 import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -31,6 +32,7 @@ import io.github.ygojson.model.data.Card;
 @Data
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
+@JsonPOJOBuilder
 public class Identifiers {
 
 	public static final String KONAMI_ID_PROPERTY = "konamiId";
