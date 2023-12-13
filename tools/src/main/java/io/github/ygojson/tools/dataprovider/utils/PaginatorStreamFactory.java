@@ -108,10 +108,7 @@ public final class PaginatorStreamFactory {
 			if (currentPage == null) {
 				currentPage = requestNextPage(null);
 			}
-			if (currentPage.isEmpty()) {
-				return false;
-			}
-			return true;
+			return currentPage.isPresent();
 		}
 
 		@Override
