@@ -4,7 +4,7 @@ package io.github.ygojson.model.data.propertie;
  * Properties related with common fields shared
  * across models.
  */
-public class CommonProperties {
+public class IdProperties {
 
 	/**
 	 * YGOJSON ID property for the actual model.
@@ -26,7 +26,7 @@ public class CommonProperties {
 	 */
 	public static final String SET_ID = "setId";
 
-	private CommonProperties() {
+	private IdProperties() {
 		// contant class
 	}
 }
