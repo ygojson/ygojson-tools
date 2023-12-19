@@ -24,7 +24,7 @@
         <!-- dependencies -->
         <jackson.bom.version>2.16.0</jackson.bom.version>
         <jakarta-jakartaee.bom.version>10.0.0</jakarta-jakartaee.bom.version>
-        <jsonschema-generator.bom.version>4.33.0</jsonschema-generator.bom.version>
+        <jsonschema-generator.bom.version>4.33.1</jsonschema-generator.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <resilience4j.bom.version>2.1.0</resilience4j.bom.version>
         <retrofit.version>2.9.0</retrofit.version>
