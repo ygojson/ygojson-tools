@@ -14,8 +14,7 @@ import com.fasterxml.jackson.annotation.*;
 
 		This model contains the same properties as the Card Model with the inclusion of the print list."""
 )
-// TODO: this is not properly ordered on the schema file
-// TODO: investigate how to fix this
+// TODO: fix property order (see https://github.com/ygojson/ygojson-tools/issues/28)
 public class CardPrints {
 
 	public static final String PRINTS_PROPERTY = "prints";
