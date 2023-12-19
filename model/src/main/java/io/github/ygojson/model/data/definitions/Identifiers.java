@@ -5,6 +5,7 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.*;
 
 import io.github.ygojson.model.data.Card;
+import io.github.ygojson.model.data.properties.IdentifierProperties;
 
 /**
  * Identifiers associated to the {@link Card}.
@@ -21,18 +22,13 @@ import io.github.ygojson.model.data.Card;
 )
 @JsonPropertyOrder(
 	{
-		Identifiers.KONAMI_ID_PROPERTY,
-		Identifiers.PASSWORD_PROPERTY,
-		Identifiers.PASSWORD_ALT_PROPERTY,
-		Identifiers.YUGIPEDIA_PAGE_ID_PROPERTY,
+		IdentifierProperties.KONAMI_ID,
+		IdentifierProperties.PASSWORD,
+		IdentifierProperties.PASSWORD_ALT,
+		IdentifierProperties.YUGIPEDIA_PAGE_ID,
 	}
 )
 public class Identifiers {
-
-	public static final String KONAMI_ID_PROPERTY = "konamiId";
-	public static final String PASSWORD_PROPERTY = "password";
-	public static final String PASSWORD_ALT_PROPERTY = "passwordAlt";
-	public static final String YUGIPEDIA_PAGE_ID_PROPERTY = "yugipediaPageId";
 
 	private Long konamiId;
 	private Long password;
@@ -53,7 +49,7 @@ public class Identifiers {
 			The ID might not appear on the official database for some languages if it was not released yet on that location.
 			Also, cards might not have an ID if nor released at all."""
 	)
-	@JsonProperty(value = KONAMI_ID_PROPERTY)
+	@JsonProperty(value = IdentifierProperties.KONAMI_ID)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public Long getKonamiId() {
 		return konamiId;
@@ -73,7 +69,7 @@ public class Identifiers {
 
 			Note that certain cards does not have a password."""
 	)
-	@JsonProperty(value = PASSWORD_PROPERTY)
+	@JsonProperty(value = IdentifierProperties.PASSWORD)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public Long getPassword() {
 		return password;
@@ -91,7 +87,7 @@ public class Identifiers {
 
 			Examples of these are the <em>Dark Magician (Arkana)</em> and the alternative art of <em>Polymerization</em>"""
 	)
-	@JsonProperty(value = PASSWORD_ALT_PROPERTY)
+	@JsonProperty(value = IdentifierProperties.PASSWORD_ALT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public Long getPasswordAlt() {
 		return passwordAlt;
@@ -109,7 +105,7 @@ public class Identifiers {
 
 			This ID can be used on the <a href="https://yugipedia.com/api.php">Yugipedia API</a> as the <em>pageId</em> or <em>pageids</em> parameters."""
 	)
-	@JsonProperty(value = YUGIPEDIA_PAGE_ID_PROPERTY)
+	@JsonProperty(value = IdentifierProperties.YUGIPEDIA_PAGE_ID)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public Long getYugipediaPageId() {
 		return yugipediaPageId;
