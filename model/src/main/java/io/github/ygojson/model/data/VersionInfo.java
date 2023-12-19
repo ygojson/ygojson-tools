@@ -4,7 +4,6 @@ import java.time.ZonedDateTime;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 
@@ -34,7 +33,7 @@ public class VersionInfo {
 			Major version represents breaking changes on the data model and minor versions non-breaking changes.
 			Patch versions are non-breaking data updates."""
 	)
-	@NotNull @JsonProperty(value = VERSION_PROPERTY, required = true)
+	@JsonProperty(value = VERSION_PROPERTY, required = true)
 	@JsonInclude(JsonInclude.Include.ALWAYS)
 	@Pattern(regexp = "[0-9]\\.[0-9]\\.[0-9]")
 	public String getVersion() {
@@ -50,7 +49,7 @@ public class VersionInfo {
 
 			Note that as all dates in YGOJSON, the format is ISO-8601 (UTC)."""
 	)
-	@NotNull @JsonProperty(value = DATE_PROPERTY, required = true)
+	@JsonProperty(value = DATE_PROPERTY, required = true)
 	@JsonInclude(JsonInclude.Include.ALWAYS)
 	public ZonedDateTime getDate() {
 		return date;
