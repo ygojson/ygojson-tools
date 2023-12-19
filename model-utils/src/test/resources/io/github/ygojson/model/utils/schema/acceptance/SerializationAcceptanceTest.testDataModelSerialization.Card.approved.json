@@ -1,0 +1,50 @@
+{
+  "id" : "095df4ca-7856-367e-bcc9-9f73ec33651f",
+  "identifiers" : {
+    "konamiId" : 6152,
+    "password" : 5487,
+    "passwordAlt" : 8684,
+    "yugipediaPageId" : 4599
+  },
+  "name" : "AHJMYUWW",
+  "cardType" : "monster",
+  "property" : "YHUF",
+  "effectText" : "RXNFMQGE",
+  "monsterTypes" : [ "CMXGHPTEQR", "FNZDJSJ", "GWXH" ],
+  "flavorText" : "BEOAPEZSDZ",
+  "attribute" : "NSKCWAJIWS",
+  "atk" : 1862733697,
+  "atkUndefined" : true,
+  "def" : 792093345,
+  "defUndefined" : true,
+  "level" : 587265665,
+  "materials" : "PMQCXJT",
+  "pendulumEffect" : "DYXKRPV",
+  "pendulumScale" : 2038680715,
+  "linkRating" : 901762941,
+  "linkArrows" : [ "middle-left", "top-center" ],
+  "xyzRank" : 828415870,
+  "localizedData" : {
+    "de" : {
+      "name" : "XYPEDCTCM",
+      "effectText" : "ZUMETFSA",
+      "flavorText" : "EGJUEPKGO",
+      "materials" : "XAU",
+      "pendulumEffect" : "DBYFL"
+    },
+    "es" : {
+      "name" : "CILHPTA",
+      "effectText" : "OBMP",
+      "flavorText" : "DEGYRTKTC",
+      "materials" : "LQWLX",
+      "pendulumEffect" : "JPI"
+    },
+    "it" : {
+      "name" : "XIVE",
+      "effectText" : "RCITACUEF",
+      "flavorText" : "JKTXAF",
+      "materials" : "AXBDXLIXXD",
+      "pendulumEffect" : "XHJCTSAL"
+    }
+  }
+}

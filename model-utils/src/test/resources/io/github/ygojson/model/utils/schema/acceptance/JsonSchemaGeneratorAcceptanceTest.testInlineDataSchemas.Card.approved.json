@@ -1,0 +1,265 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "identifiers" : {
+      "type" : "object",
+      "properties" : {
+        "konamiId" : {
+          "type" : "integer"
+        },
+        "password" : {
+          "type" : "integer"
+        },
+        "passwordAlt" : {
+          "type" : "integer"
+        },
+        "yugipediaPageId" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "cardType" : {
+      "type" : "string",
+      "enum" : [ "monster", "spell", "trap" ]
+    },
+    "property" : {
+      "type" : "string",
+      "pattern" : "[a-z]+"
+    },
+    "effectText" : {
+      "type" : "string"
+    },
+    "monsterTypes" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "pattern" : "[a-z]+"
+      }
+    },
+    "flavorText" : {
+      "type" : "string"
+    },
+    "attribute" : {
+      "type" : "string",
+      "pattern" : "[a-z]+"
+    },
+    "atk" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "atkUndefined" : {
+      "type" : "boolean"
+    },
+    "def" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "defUndefined" : {
+      "type" : "boolean"
+    },
+    "level" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "materials" : {
+      "type" : "string"
+    },
+    "pendulumEffect" : {
+      "type" : "string"
+    },
+    "pendulumScale" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "linkRating" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "linkArrows" : {
+      "maxItems" : 8,
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "enum" : [ "top-left", "top-center", "top-right", "middle-left", "middle-right", "bottom-left", "bottom-center", "bottom-right" ]
+      }
+    },
+    "xyzRank" : {
+      "type" : "integer",
+      "minimum" : 0
+    },
+    "localizedData" : {
+      "type" : "object",
+      "properties" : {
+        "de" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "es" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "fr" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "it" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "ja" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "ko" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "pt" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "zh" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$id" : "io.github.ygojson.model.data.Card"
+}

@@ -43,6 +43,7 @@
 
     <modules>
         <module>model</module>
+        <module>model-utils</module>
         <module>tools</module>
     </modules>
 
