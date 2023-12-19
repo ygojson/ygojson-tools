@@ -13,12 +13,6 @@
     <description>YGOJSON Generator</description>
     <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.github.ygojson</groupId>
@@ -26,16 +20,9 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-generator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-module-jackson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-module-jakarta-validation</artifactId>
+            <groupId>io.github.ygojson</groupId>
+            <artifactId>ygojson-model-utils</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <!-- infrastructure -->
         <dependency>

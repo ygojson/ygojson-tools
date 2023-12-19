@@ -1,0 +1,16 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "version" : {
+      "type" : "string",
+      "pattern" : "[0-9]\\.[0-9]\\.[0-9]"
+    },
+    "date" : {
+      "type" : "string",
+      "format" : "date-time"
+    }
+  },
+  "required" : [ "version", "date" ],
+  "$id" : "io.github.ygojson.model.data.VersionInfo"
+}

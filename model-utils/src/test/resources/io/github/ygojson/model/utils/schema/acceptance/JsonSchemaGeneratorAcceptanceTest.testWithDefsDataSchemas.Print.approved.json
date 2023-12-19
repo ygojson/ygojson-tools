@@ -1,0 +1,41 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$defs" : {
+    "Language" : {
+      "type" : "string",
+      "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh" ]
+    }
+  },
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "cardId" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "setId" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "setPrefix" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+    },
+    "printNumber" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+"
+    },
+    "rarity" : {
+      "type" : "string",
+      "pattern" : "[a-z]+"
+    },
+    "language" : {
+      "$ref" : "#/$defs/Language"
+    }
+  },
+  "required" : [ "id", "cardId", "setId" ],
+  "$id" : "io.github.ygojson.model.data.Print"
+}

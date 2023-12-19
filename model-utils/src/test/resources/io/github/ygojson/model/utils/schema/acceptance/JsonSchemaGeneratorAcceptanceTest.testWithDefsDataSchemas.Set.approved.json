@@ -1,0 +1,73 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$defs" : {
+    "SetLocalizedData" : {
+      "type" : "object",
+      "properties" : {
+        "de" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "es" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "fr" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "it" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "ja" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "ko" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "pt" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "zh" : {
+          "$ref" : "#/$defs/SetText"
+        }
+      }
+    },
+    "SetText" : {
+      "type" : "object",
+      "properties" : {
+        "prefix" : {
+          "type" : "string",
+          "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "prefix" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string",
+      "pattern" : "[a-z-0-9]+"
+    },
+    "series" : {
+      "type" : "string",
+      "pattern" : "[a-z-0-9]+"
+    },
+    "localizedData" : {
+      "$ref" : "#/$defs/SetLocalizedData"
+    }
+  },
+  "required" : [ "id" ],
+  "$id" : "io.github.ygojson.model.data.Set"
+}

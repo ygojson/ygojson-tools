@@ -1,13 +1,11 @@
 package io.github.ygojson.model.data;
 
 import java.time.ZonedDateTime;
+import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
-import lombok.experimental.SuperBuilder;
 
 /**
  * Model representing the version information of the YGOJSON data.
@@ -17,12 +15,13 @@ import lombok.experimental.SuperBuilder;
 )
 @JsonPropertyOrder({ VersionInfo.VERSION_PROPERTY, VersionInfo.DATE_PROPERTY })
 @Getter
-@SuperBuilder(toBuilder = true)
-@JsonPOJOBuilder
 public class VersionInfo {
 
 	public static final String VERSION_PROPERTY = "version";
 	public static final String DATE_PROPERTY = "date";
+
+	private String version;
+	private ZonedDateTime date;
 
 	/**
 	 * Semantic Versioning of the YGOJSON data.
@@ -34,10 +33,12 @@ public class VersionInfo {
 			Major version represents breaking changes on the data model and minor versions non-breaking changes.
 			Patch versions are non-breaking data updates."""
 	)
-	@NotNull @JsonProperty(value = VERSION_PROPERTY, required = true)
+	@JsonProperty(value = VERSION_PROPERTY, required = true)
 	@JsonInclude(JsonInclude.Include.ALWAYS)
 	@Pattern(regexp = "[0-9]\\.[0-9]\\.[0-9]")
-	private String version;
+	public String getVersion() {
+		return version;
+	}
 
 	/**
 	 * Date and time in ISO-8601 (UTC) of the YGOJSON data build.
@@ -48,7 +49,31 @@ public class VersionInfo {
 
 			Note that as all dates in YGOJSON, the format is ISO-8601 (UTC)."""
 	)
-	@NotNull @JsonProperty(value = DATE_PROPERTY, required = true)
+	@JsonProperty(value = DATE_PROPERTY, required = true)
 	@JsonInclude(JsonInclude.Include.ALWAYS)
-	private ZonedDateTime date;
+	public ZonedDateTime getDate() {
+		return date;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public void setDate(ZonedDateTime date) {
+		this.date = date;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof VersionInfo that)) return false;
+		return (
+			Objects.equals(version, that.version) && Objects.equals(date, that.date)
+		);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(version, date);
+	}
 }

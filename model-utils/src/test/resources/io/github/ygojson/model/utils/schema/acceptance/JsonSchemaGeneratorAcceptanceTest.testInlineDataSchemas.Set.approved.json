@@ -1,0 +1,128 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string",
+      "format" : "uuid"
+    },
+    "prefix" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string",
+      "pattern" : "[a-z-0-9]+"
+    },
+    "series" : {
+      "type" : "string",
+      "pattern" : "[a-z-0-9]+"
+    },
+    "localizedData" : {
+      "type" : "object",
+      "properties" : {
+        "de" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "es" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "fr" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "it" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "ja" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "ko" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "pt" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "zh" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required" : [ "id" ],
+  "$id" : "io.github.ygojson.model.data.Set"
+}

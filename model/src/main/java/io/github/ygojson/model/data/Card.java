@@ -1,23 +1,22 @@
 package io.github.ygojson.model.data;
 
 import java.util.List;
-import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
-import io.github.ygojson.model.data.definitions.CardLocalizedData;
-import io.github.ygojson.model.data.definitions.CardType;
-import io.github.ygojson.model.data.definitions.Identifiers;
-import io.github.ygojson.model.data.definitions.LinkArrow;
+import io.github.ygojson.model.data.definition.CardText;
+import io.github.ygojson.model.data.definition.CardType;
+import io.github.ygojson.model.data.definition.Identifiers;
+import io.github.ygojson.model.data.definition.LinkArrow;
+import io.github.ygojson.model.data.definition.localization.CardLocalizedData;
+import io.github.ygojson.model.data.propertie.CardProperties;
+import io.github.ygojson.model.data.propertie.IdProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
 
 /**
  * Model describing the properties of a Card (atomic).
@@ -30,56 +29,71 @@ import io.github.ygojson.model.data.definitions.LinkArrow;
 )
 @JsonPropertyOrder(
 	{
-		Card.ID_PROPERTY,
-		Card.NAME_PROPERTY,
-		Card.IDENTIFIERS_PROPERTY,
-		Card.CARD_TYPE_PROPERTY,
-		Card.PROPERTY_PROPERTY,
-		Card.EFFECT_TEXT_PROPERTY,
-		Card.MONSTER_TYPES_PROPERTY,
-		Card.FLAVOR_TEXT_PROPERTY,
-		Card.ATTRIBUTE_PROPERTY,
-		Card.ATK_PROPERTY,
-		Card.ATK_UNDEFINED_PROPERTY,
-		Card.DEF_PROPERTY,
-		Card.DEF_UNDEFINED_PROPERTY,
-		Card.LEVEL_PROPERTY,
-		Card.PENDULUM_EFFECT_PROPERTY,
-		Card.PENDULUM_SCALE_PROPERTY,
-		Card.MATERIALS_PROPERTY,
-		Card.LINK_RATING_PROPERTY,
-		Card.LINK_ARROWS_PROPERTY,
-		Card.XYZ_RANK_PROPERTY,
-		Card.LOCALIZED_DATA_PROPERTY,
+		IdProperties.SELF_ID,
+		CardProperties.IDENTIFIERS,
+		CardProperties.NAME,
+		CardProperties.CARD_TYPE,
+		CardProperties.PROPERTY,
+		CardProperties.EFFECT_TEXT,
+		CardProperties.MONSTER_TYPES,
+		CardProperties.FLAVOR_TEXT,
+		CardProperties.ATTRIBUTE,
+		CardProperties.ATK,
+		CardProperties.ATK_UNDEFINED,
+		CardProperties.DEF,
+		CardProperties.DEF_UNDEFINED,
+		CardProperties.LEVEL,
+		CardProperties.MATERIALS,
+		CardProperties.PENDULUM_EFFECT,
+		CardProperties.PENDULUM_SCALE,
+		CardProperties.LINK_RATING,
+		CardProperties.LINK_ARROWS,
+		CardProperties.XYZ_RANK,
+		LanguageProperties.LOCALIZED_DATA,
 	}
 )
-@Data
-@NoArgsConstructor
-@SuperBuilder(toBuilder = true)
-@JsonPOJOBuilder
 public class Card {
 
-	public static final String ID_PROPERTY = "id";
-	public static final String NAME_PROPERTY = "name";
-	public static final String IDENTIFIERS_PROPERTY = "identifiers";
-	public static final String CARD_TYPE_PROPERTY = "cardType";
-	public static final String PROPERTY_PROPERTY = "property";
-	public static final String EFFECT_TEXT_PROPERTY = "effectText";
-	public static final String FLAVOR_TEXT_PROPERTY = "flavorText";
-	public static final String ATTRIBUTE_PROPERTY = "attribute";
-	public static final String MONSTER_TYPES_PROPERTY = "monsterTypes";
-	public static final String ATK_PROPERTY = "atk";
-	public static final String ATK_UNDEFINED_PROPERTY = "atkUndefined";
-	public static final String DEF_PROPERTY = "def";
-	public static final String DEF_UNDEFINED_PROPERTY = "defUndefined";
-	public static final String LEVEL_PROPERTY = "level";
-	public static final String MATERIALS_PROPERTY = "materials";
-	public static final String LINK_RATING_PROPERTY = "linkRating";
-	public static final String LINK_ARROWS_PROPERTY = "linkArrows";
-	public static final String PENDULUM_EFFECT_PROPERTY = "pendulumEffect";
-	public static final String PENDULUM_SCALE_PROPERTY = "pendulumScale";
-	public static final String XYZ_RANK_PROPERTY = "xyzRank";
-	public static final String LOCALIZED_DATA_PROPERTY = "localizedData";
+	// container for card text related properties
+	private CardText cardText;
+
+	private UUID id;
+	private Identifiers identifiers;
+	private CardType cardType;
+	private String property;
+	private List<String> monsterTypes;
+	private String attribute;
+	private Integer atkValue;
+	private boolean atkUndefined;
+
+	private Integer defValue;
+
+	private boolean defUndefined;
+
+	private Integer level;
+
+	private Integer linkRating;
+
+	private List<LinkArrow> linkArrows;
+
+	private Integer pendulumScale;
+
+	private Integer xyzRank;
+
+	private CardLocalizedData localizedData;
+
+	/**
+	 * Return the card-text as a whole.
+	 * <br>
+	 * Note: this method is not serialized as JSON,
+	 * as each individual getter/setter has its own field.
+	 *
+	 * @return card-text as a model
+	 */
+	@JsonIgnore // using json ignore but add the methods for the annotations+
+	public CardText getCardText() {
+		return cardText;
+	}
 
 	/**
 	 * UUID (v5) for the Card (atomic) generated by YGOJSON.
@@ -87,17 +101,11 @@ public class Card {
 	@JsonPropertyDescription(
 		"UID (v5) for the Card (atomic) generated by YGOJSON."
 	)
-	@NotNull @JsonProperty(value = ID_PROPERTY, required = true)
+	@JsonProperty(value = IdProperties.SELF_ID, required = true)
 	@JsonInclude(JsonInclude.Include.ALWAYS)
-	private UUID id;
-
-	/**
-	 * Name of the card.
-	 */
-	@JsonPropertyDescription("Name of the card")
-	@JsonProperty(value = NAME_PROPERTY)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String name;
+	public UUID getId() {
+		return id;
+	}
 
 	/**
 	 * Identifiers associated to the card.
@@ -105,17 +113,31 @@ public class Card {
 	 * See the actual model for more information.
 	 */
 	@JsonPropertyDescription("Identifiers associated to the card.")
-	@JsonProperty(value = IDENTIFIERS_PROPERTY)
+	@JsonProperty(value = CardProperties.IDENTIFIERS)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private Identifiers identifiers;
+	public Identifiers getIdentifiers() {
+		return identifiers;
+	}
+
+	/**
+	 * Name of the card.
+	 */
+	@JsonPropertyDescription("Name of the card")
+	@JsonProperty(value = CardProperties.NAME)
+	@JsonInclude(JsonInclude.Include.NON_NULL)
+	public String getName() {
+		return cardText.getName();
+	}
 
 	/**
 	 * Main card type.
 	 */
 	@JsonPropertyDescription("Main card type.")
-	@JsonProperty(value = CARD_TYPE_PROPERTY)
+	@JsonProperty(value = CardProperties.CARD_TYPE)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private CardType cardType;
+	public CardType getCardType() {
+		return cardType;
+	}
 
 	/**
 	 * Special property for the spell or trap (lower-case).
@@ -129,9 +151,11 @@ public class Card {
 			These are the properties represented by the spell/trap icon."""
 	)
 	@Pattern(regexp = "[a-z]+")
-	@JsonProperty(value = PROPERTY_PROPERTY)
+	@JsonProperty(value = CardProperties.PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String property;
+	public String getProperty() {
+		return property;
+	}
 
 	/**
 	 * Effect text for the card (empty for Normal Monsters).
@@ -146,9 +170,11 @@ public class Card {
 			Note that the list of materials and pendulum effects are not included as they are part of their own property.
 			"""
 	)
-	@JsonProperty(value = EFFECT_TEXT_PROPERTY)
+	@JsonProperty(value = CardProperties.EFFECT_TEXT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String effectText;
+	public String getEffectText() {
+		return cardText.getEffectText();
+	}
 
 	/**
 	 * Monster type(s) as an array of lower-case values.
@@ -156,9 +182,11 @@ public class Card {
 	@JsonPropertyDescription(
 		"Array of lower-case values for the monster-type line."
 	)
-	@JsonProperty(value = MONSTER_TYPES_PROPERTY)
+	@JsonProperty(value = CardProperties.MONSTER_TYPES)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private List<@Pattern(regexp = "[a-z]+") String> monsterTypes;
+	public List<@Pattern(regexp = "[a-z]+") String> getMonsterTypes() {
+		return monsterTypes;
+	}
 
 	/**
 	 * Flavor text on a normal monster.
@@ -171,9 +199,11 @@ public class Card {
 
 			If the monster is an effect monster, this would be empty."""
 	)
-	@JsonProperty(value = FLAVOR_TEXT_PROPERTY)
+	@JsonProperty(value = CardProperties.FLAVOR_TEXT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String flavorText;
+	public String getFlavorText() {
+		return cardText.getFlavorText();
+	}
 
 	/**
 	 * Attribute of monster.
@@ -185,9 +215,11 @@ public class Card {
 			If the monster is an effect monster, this would be empty."""
 	)
 	@Pattern(regexp = "[a-z]+")
-	@JsonProperty(value = ATTRIBUTE_PROPERTY)
+	@JsonProperty(value = CardProperties.ATTRIBUTE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private String attribute;
+	public String getAttribute() {
+		return attribute;
+	}
 
 	/**
 	 * Actual ATK value.
@@ -203,9 +235,11 @@ public class Card {
 			In that case, the <tt>atkUndefined</tt> property would be equal to <tt>true</tt>."""
 	)
 	@PositiveOrZero
-	@JsonProperty(value = ATK_PROPERTY)
+	@JsonProperty(value = CardProperties.ATK)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private Integer atkValue;
+	public Integer getAtkValue() {
+		return atkValue;
+	}
 
 	/**
 	 * Flag to indicate an undefined ({@code ?}) ATK value if {@code true}.
@@ -213,9 +247,11 @@ public class Card {
 	@JsonPropertyDescription(
 		"Flag indicating an undefined (<tt>?</tt>) ATK value."
 	)
-	@JsonProperty(value = ATK_UNDEFINED_PROPERTY, defaultValue = "false")
+	@JsonProperty(value = CardProperties.ATK_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	private boolean atkUndefined;
+	public boolean isAtkUndefined() {
+		return atkUndefined;
+	}
 
 	/**
 	 * Actual DEF value.
@@ -231,9 +267,11 @@ public class Card {
 			In that case, the <tt>defUndefined</tt> property would be equal to <tt>true</tt>."""
 	)
 	@PositiveOrZero
-	@JsonProperty(value = DEF_PROPERTY)
+	@JsonProperty(value = CardProperties.DEF)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private Integer defValue;
+	public Integer getDefValue() {
+		return defValue;
+	}
 
 	/**
 	 * Flag to indicate an undefined ({@code ?}) DEF value if {@code true}.
@@ -241,18 +279,22 @@ public class Card {
 	@JsonPropertyDescription(
 		"Flag indicating an undefined (<tt>?</tt>) DEF value."
 	)
-	@JsonProperty(value = DEF_UNDEFINED_PROPERTY, defaultValue = "false")
+	@JsonProperty(value = CardProperties.DEF_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	private boolean defUndefined;
+	public boolean isDefUndefined() {
+		return defUndefined;
+	}
 
 	/**
 	 * Level of the monster.
 	 */
 	@JsonPropertyDescription("Level of the monster.")
-	@JsonProperty(value = LEVEL_PROPERTY)
+	@JsonProperty(value = CardProperties.LEVEL)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@PositiveOrZero
-	private Integer level;
+	public Integer getLevel() {
+		return level;
+	}
 
 	/**
 	 * Materials for extra-deck monsters as defined on the card-text.
@@ -260,59 +302,196 @@ public class Card {
 	@JsonPropertyDescription(
 		"Materials for extra-deck monsters as defined on the card-text."
 	)
-	@JsonProperty(value = MATERIALS_PROPERTY)
+	@JsonProperty(value = CardProperties.MATERIALS)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String materials;
+	public String getMaterials() {
+		return cardText.getMaterials();
+	}
 
 	/**
 	 * Link rating of the link monster.
 	 */
 	@JsonPropertyDescription("Link rating of the link monster.")
-	@JsonProperty(value = LINK_RATING_PROPERTY)
+	@JsonProperty(value = CardProperties.LINK_RATING)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@PositiveOrZero
-	private Integer linkRating;
+	public Integer getLinkRating() {
+		return linkRating;
+	}
 
 	/**
 	 * Link arrows of the link monster.
 	 */
 	@JsonPropertyDescription("Link arrows of the link monster.")
-	@JsonProperty(value = LINK_ARROWS_PROPERTY)
+	@JsonProperty(value = CardProperties.LINK_ARROWS)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@Size(max = 8)
-	private List<LinkArrow> linkArrows;
+	public List<LinkArrow> getLinkArrows() {
+		return linkArrows;
+	}
 
 	/**
 	 * Effect of the Pendulum monster.
 	 */
 	@JsonPropertyDescription("Effect of the Pendulum monster.")
-	@JsonProperty(value = PENDULUM_EFFECT_PROPERTY)
+	@JsonProperty(value = CardProperties.PENDULUM_EFFECT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String pendulumEffect;
+	public String getPendulumEffect() {
+		return cardText.getPendulumEffect();
+	}
 
 	/**
 	 * Scale of the Pendulum monster.
 	 */
 	@JsonPropertyDescription("Scale of the Pendulum monster.")
-	@JsonProperty(value = PENDULUM_SCALE_PROPERTY)
+	@JsonProperty(value = CardProperties.PENDULUM_SCALE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@PositiveOrZero
-	private Integer pendulumScale;
+	public Integer getPendulumScale() {
+		return pendulumScale;
+	}
 
 	/**
 	 * Rank of the XYZ monster.
 	 */
 	@JsonPropertyDescription("Rank of the XYZ monster.")
-	@JsonProperty(value = XYZ_RANK_PROPERTY)
+	@JsonProperty(value = CardProperties.XYZ_RANK)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@PositiveOrZero
-	private Integer xyzRank;
+	public Integer getXyzRank() {
+		return xyzRank;
+	}
 
 	/**
 	 * Localized data for the card.
 	 */
-	@JsonPropertyDescription("Localized data for the card.")
-	@JsonProperty(value = LOCALIZED_DATA_PROPERTY)
+
+	@JsonPropertyDescription(
+		"""
+		Describes translations and locale-specific data for a card.
+
+		All translated properties match the name of the original property
+		and any missing property indicates no translation for it."""
+	)
+	@JsonProperty(value = LanguageProperties.LOCALIZED_DATA)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private Map<String, CardLocalizedData> localizedData;
+	public CardLocalizedData getLocalizedData() {
+		return localizedData;
+	}
+
+	public void setCardText(CardText cardText) {
+		this.cardText = cardText;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
+	}
+
+	public void setIdentifiers(Identifiers identifiers) {
+		this.identifiers = identifiers;
+	}
+
+	public void setCardType(CardType cardType) {
+		this.cardType = cardType;
+	}
+
+	public void setProperty(String property) {
+		this.property = property;
+	}
+
+	public void setMonsterTypes(List<String> monsterTypes) {
+		this.monsterTypes = monsterTypes;
+	}
+
+	public void setAttribute(String attribute) {
+		this.attribute = attribute;
+	}
+
+	public void setAtkValue(Integer atkValue) {
+		this.atkValue = atkValue;
+	}
+
+	public void setAtkUndefined(boolean atkUndefined) {
+		this.atkUndefined = atkUndefined;
+	}
+
+	public void setDefValue(Integer defValue) {
+		this.defValue = defValue;
+	}
+
+	public void setDefUndefined(boolean defUndefined) {
+		this.defUndefined = defUndefined;
+	}
+
+	public void setLevel(Integer level) {
+		this.level = level;
+	}
+
+	public void setLinkRating(Integer linkRating) {
+		this.linkRating = linkRating;
+	}
+
+	public void setLinkArrows(List<LinkArrow> linkArrows) {
+		this.linkArrows = linkArrows;
+	}
+
+	public void setPendulumScale(Integer pendulumScale) {
+		this.pendulumScale = pendulumScale;
+	}
+
+	public void setXyzRank(Integer xyzRank) {
+		this.xyzRank = xyzRank;
+	}
+
+	public void setLocalizedData(CardLocalizedData localizedData) {
+		this.localizedData = localizedData;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Card card)) return false;
+		return (
+			atkUndefined == card.atkUndefined &&
+			defUndefined == card.defUndefined &&
+			Objects.equals(cardText, card.cardText) &&
+			Objects.equals(id, card.id) &&
+			Objects.equals(identifiers, card.identifiers) &&
+			cardType == card.cardType &&
+			Objects.equals(property, card.property) &&
+			Objects.equals(monsterTypes, card.monsterTypes) &&
+			Objects.equals(attribute, card.attribute) &&
+			Objects.equals(atkValue, card.atkValue) &&
+			Objects.equals(defValue, card.defValue) &&
+			Objects.equals(level, card.level) &&
+			Objects.equals(linkRating, card.linkRating) &&
+			Objects.equals(linkArrows, card.linkArrows) &&
+			Objects.equals(pendulumScale, card.pendulumScale) &&
+			Objects.equals(xyzRank, card.xyzRank) &&
+			Objects.equals(localizedData, card.localizedData)
+		);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(
+			cardText,
+			id,
+			identifiers,
+			cardType,
+			property,
+			monsterTypes,
+			attribute,
+			atkValue,
+			atkUndefined,
+			defValue,
+			defUndefined,
+			level,
+			linkRating,
+			linkArrows,
+			pendulumScale,
+			xyzRank,
+			localizedData
+		);
+	}
 }
