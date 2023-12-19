@@ -1,4 +1,4 @@
-package io.github.ygojson.model.data.definitions.localization;
+package io.github.ygojson.model.data.definition.localization;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.github.ygojson.model.data.properties.LanguageProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
 
 /**
  * Helper to create localized data models.

@@ -1,8 +1,8 @@
-package io.github.ygojson.model.data.definitions.localization;
+package io.github.ygojson.model.data.definition.localization;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.github.ygojson.model.data.definitions.SetText;
+import io.github.ygojson.model.data.definition.SetText;
 
 @JsonPropertyOrder(alphabetic = true)
 public class SetLocalizedData extends AbstractLocalizedData<SetText> {}

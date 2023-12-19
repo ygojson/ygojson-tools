@@ -1,4 +1,4 @@
-package io.github.ygojson.model.data.properties;
+package io.github.ygojson.model.data.propertie;
 
 /**
  * Properties related with the language.
@@ -9,7 +9,7 @@ public class LanguageProperties {
 	 * Property for the language.
 	 * </br>
 	 * Should be used on a model if it is assinged to a language
-	 * and the type is {@link io.github.ygojson.model.data.definitions.localization.Language}.
+	 * and the type is {@link io.github.ygojson.model.data.definition.localization.Language}.
 	 */
 	public static final String LANGUAGE = "language";
 

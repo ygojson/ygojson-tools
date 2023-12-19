@@ -1,4 +1,4 @@
-package io.github.ygojson.model.data.definitions;
+package io.github.ygojson.model.data.definition;
 
 import com.fasterxml.jackson.annotation.JsonClassDescription;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -6,11 +6,11 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
-import io.github.ygojson.model.data.definitions.SetText;
-import io.github.ygojson.model.data.definitions.localization.SetLocalizedData;
-import io.github.ygojson.model.data.properties.CommonProperties;
-import io.github.ygojson.model.data.properties.LanguageProperties;
-import io.github.ygojson.model.data.properties.SetProperties;
+import io.github.ygojson.model.data.definition.SetText;
+import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
+import io.github.ygojson.model.data.propertie.CommonProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
+import io.github.ygojson.model.data.propertie.SetProperties;
 
 /**
  * Model describing the properties of a Set (atomic).

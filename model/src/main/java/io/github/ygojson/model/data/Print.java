@@ -6,10 +6,10 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
-import io.github.ygojson.model.data.definitions.localization.Language;
-import io.github.ygojson.model.data.properties.CommonProperties;
-import io.github.ygojson.model.data.properties.LanguageProperties;
-import io.github.ygojson.model.data.properties.PrintProperties;
+import io.github.ygojson.model.data.definition.localization.Language;
+import io.github.ygojson.model.data.propertie.CommonProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
+import io.github.ygojson.model.data.propertie.PrintProperties;
 
 /**
  * Model describing the properties of a Print (atomic).

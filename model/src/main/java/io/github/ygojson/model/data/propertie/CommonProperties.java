@@ -1,4 +1,4 @@
-package io.github.ygojson.model.data.properties;
+package io.github.ygojson.model.data.propertie;
 
 /**
  * Properties related with common fields shared

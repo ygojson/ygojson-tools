@@ -1,8 +1,8 @@
-package io.github.ygojson.model.data.definitions.localization;
+package io.github.ygojson.model.data.definition.localization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import io.github.ygojson.model.data.properties.LanguageProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
 
 /**
  * Enum values for the supported languages on YGOJSON.

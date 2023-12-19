@@ -1,10 +1,10 @@
-package io.github.ygojson.model.data.definitions;
+package io.github.ygojson.model.data.definition;
 
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
 
-import io.github.ygojson.model.data.properties.CardProperties;
+import io.github.ygojson.model.data.propertie.CardProperties;
 
 /**
  * Definition for the card text that can be localized.

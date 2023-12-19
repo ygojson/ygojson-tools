@@ -9,14 +9,14 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 
-import io.github.ygojson.model.data.definitions.CardText;
-import io.github.ygojson.model.data.definitions.CardType;
-import io.github.ygojson.model.data.definitions.Identifiers;
-import io.github.ygojson.model.data.definitions.LinkArrow;
-import io.github.ygojson.model.data.definitions.localization.CardLocalizedData;
-import io.github.ygojson.model.data.properties.CardProperties;
-import io.github.ygojson.model.data.properties.CommonProperties;
-import io.github.ygojson.model.data.properties.LanguageProperties;
+import io.github.ygojson.model.data.definition.CardText;
+import io.github.ygojson.model.data.definition.CardType;
+import io.github.ygojson.model.data.definition.Identifiers;
+import io.github.ygojson.model.data.definition.LinkArrow;
+import io.github.ygojson.model.data.definition.localization.CardLocalizedData;
+import io.github.ygojson.model.data.propertie.CardProperties;
+import io.github.ygojson.model.data.propertie.CommonProperties;
+import io.github.ygojson.model.data.propertie.LanguageProperties;
 
 /**
  * Model describing the properties of a Card (atomic).

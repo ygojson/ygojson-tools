@@ -7,4 +7,4 @@
  * On YGOJSON, we try to minimize the number of definitions
  * to have as flat as possible data models.
  */
-package io.github.ygojson.model.data.definitions;
+package io.github.ygojson.model.data.definition;

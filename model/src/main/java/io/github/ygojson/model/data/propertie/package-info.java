@@ -7,4 +7,4 @@
  * They can be used to deserialize the data without populating
  * the model or mapping purposes.
  */
-package io.github.ygojson.model.data.properties;
+package io.github.ygojson.model.data.propertie;
