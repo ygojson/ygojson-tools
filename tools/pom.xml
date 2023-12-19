@@ -24,18 +24,6 @@
             <artifactId>ygojson-model-utils</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-generator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-module-jackson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.victools</groupId>
-            <artifactId>jsonschema-module-jakarta-validation</artifactId>
-        </dependency>
         <!-- infrastructure -->
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
