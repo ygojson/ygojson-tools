@@ -31,6 +31,6 @@
       "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh" ]
     }
   },
-  "required" : [ "id" ],
+  "required" : [ "id", "cardId", "setId" ],
   "$id" : "io.github.ygojson.model.data.Print"
 }

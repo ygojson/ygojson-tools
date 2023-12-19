@@ -36,6 +36,6 @@
       "$ref" : "#/$defs/Language"
     }
   },
-  "required" : [ "id" ],
+  "required" : [ "id", "cardId", "setId" ],
   "$id" : "io.github.ygojson.model.data.Print"
 }
