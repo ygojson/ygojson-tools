@@ -5,10 +5,6 @@ package io.github.ygojson.model.data.properties;
  */
 public class CardProperties {
 
-	private CardProperties() {
-		// constant class
-	}
-
 	public static final String IDENTIFIERS = "identifiers";
 
 	public static final String NAME = "name";
@@ -36,4 +32,8 @@ public class CardProperties {
 
 	public static final String PENDULUM_EFFECT = "pendulumEffect";
 	public static final String XYZ_RANK = "xyzRank";
+
+	private CardProperties() {
+		// constant class
+	}
 }

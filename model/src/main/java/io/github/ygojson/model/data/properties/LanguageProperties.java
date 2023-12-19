@@ -5,10 +5,6 @@ package io.github.ygojson.model.data.properties;
  */
 public class LanguageProperties {
 
-	private LanguageProperties() {
-		// contant class
-	}
-
 	/**
 	 * Property for the language.
 	 * </br>
@@ -68,4 +64,8 @@ public class LanguageProperties {
 	 * Chinese localization property.
 	 */
 	public static final String ZH = "zh";
+
+	private LanguageProperties() {
+		// contant class
+	}
 }

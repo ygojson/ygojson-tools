@@ -6,10 +6,6 @@ package io.github.ygojson.model.data.properties;
  */
 public class CommonProperties {
 
-	private CommonProperties() {
-		// contant class
-	}
-
 	/**
 	 * YGOJSON ID property for the actual model.
 	 */
@@ -29,4 +25,8 @@ public class CommonProperties {
 	 * YGOJSON ID property for the linked set model.
 	 */
 	public static final String SET_ID = "setId";
+
+	private CommonProperties() {
+		// contant class
+	}
 }
