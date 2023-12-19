@@ -10,6 +10,7 @@ import jakarta.validation.constraints.Pattern;
 import io.github.ygojson.model.data.definitions.localization.Language;
 import io.github.ygojson.model.data.properties.CommonProperties;
 import io.github.ygojson.model.data.properties.LanguageProperties;
+import io.github.ygojson.model.data.properties.PrintProperties;
 
 /**
  * Model describing the properties of a Print (atomic).
@@ -25,17 +26,13 @@ import io.github.ygojson.model.data.properties.LanguageProperties;
 		CommonProperties.SELF_ID,
 		CommonProperties.CARD_ID,
 		CommonProperties.SET_ID,
-		Print.SET_PREFIX_PROPERTY,
-		Print.PRINT_NUMBER_PROPERTY,
-		Print.RARITY_PROPERTY,
+		PrintProperties.SET_PREFIX,
+		PrintProperties.PRINT_NUMBER,
+		PrintProperties.RARITY,
 		LanguageProperties.LANGUAGE,
 	}
 )
 public class Print {
-
-	public static final String SET_PREFIX_PROPERTY = "setPrefix";
-	public static final String PRINT_NUMBER_PROPERTY = "printNumber";
-	public static final String RARITY_PROPERTY = "rarity";
 
 	private UUID id;
 	private UUID cardId;
@@ -103,7 +100,7 @@ public class Print {
 
 			This property might differ with the prefix on the Set Model as the print-codes are often localized."""
 	)
-	@JsonProperty(value = SET_PREFIX_PROPERTY)
+	@JsonProperty(value = PrintProperties.SET_PREFIX)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@Pattern(regexp = "[a-zA-Z0-9]+-[a-zA-Z0-9]+")
 	public String getSetPrefix() {
@@ -124,7 +121,7 @@ public class Print {
 
 			It is represented as a string with left-padded zeroes, although sometimes might contain a letter."""
 	)
-	@JsonProperty(value = PRINT_NUMBER_PROPERTY)
+	@JsonProperty(value = PrintProperties.PRINT_NUMBER)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@Pattern(regexp = "[a-zA-Z0-9]+")
 	public String getPrintNumber() {
@@ -137,7 +134,7 @@ public class Print {
 	 * The rarity of the card print.
 	 */
 	@JsonPropertyDescription("Rarity of the print")
-	@JsonProperty(value = RARITY_PROPERTY)
+	@JsonProperty(value = PrintProperties.RARITY)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@Pattern(regexp = "[a-z]+")
 	public String getRarity() {
