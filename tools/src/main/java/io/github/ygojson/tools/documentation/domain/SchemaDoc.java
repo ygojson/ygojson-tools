@@ -11,7 +11,10 @@ class SchemaDoc {
 	private final String schemaPrefix;
 	private JsonSchemaGenerator generator;
 
-	private SchemaDoc(final ModelDocumentation modelDoc, final String schemaPrefix) {
+	private SchemaDoc(
+		final ModelDocumentation modelDoc,
+		final String schemaPrefix
+	) {
 		this.modelDoc = modelDoc;
 		this.schemaPrefix = schemaPrefix;
 	}
@@ -50,5 +53,4 @@ class SchemaDoc {
 		}
 		return generator;
 	}
-
 }
