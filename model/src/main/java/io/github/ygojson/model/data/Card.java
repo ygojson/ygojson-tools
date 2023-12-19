@@ -304,7 +304,7 @@ public class Card {
 	)
 	@JsonProperty(value = CardProperties.MATERIALS)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String getMaterials() {
+	public String getMaterials() {
 		return cardText.getMaterials();
 	}
 
