@@ -6,9 +6,6 @@
       "required" : true,
       "format" : "uuid"
     },
-    "name" : {
-      "type" : "string"
-    },
     "identifiers" : {
       "type" : "object",
       "properties" : {
@@ -25,6 +22,9 @@
           "type" : "integer"
         }
       }
+    },
+    "name" : {
+      "type" : "string"
     },
     "cardType" : {
       "type" : "string",
@@ -65,14 +65,14 @@
     "level" : {
       "type" : "integer"
     },
+    "materials" : {
+      "type" : "string"
+    },
     "pendulumEffect" : {
       "type" : "string"
     },
     "pendulumScale" : {
       "type" : "integer"
-    },
-    "materials" : {
-      "type" : "string"
     },
     "linkRating" : {
       "type" : "integer"
@@ -90,24 +90,54 @@
     },
     "localizedData" : {
       "type" : "object",
-      "additionalProperties" : {
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "effectText" : {
-            "type" : "string"
-          },
-          "flavorText" : {
-            "type" : "string"
-          },
-          "materials" : {
-            "type" : "string"
-          },
-          "pendulumEffect" : {
-            "type" : "string"
+      "properties" : {
+        "de" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
           }
+        },
+        "es" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "fr" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "it" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "ja" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "ko" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "pt" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
+        },
+        "zh" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:CardText"
         }
       }
     }

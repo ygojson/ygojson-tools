@@ -23,16 +23,46 @@
     },
     "localizedData" : {
       "type" : "object",
-      "additionalProperties" : {
-        "type" : "object",
-        "properties" : {
-          "prefix" : {
-            "type" : "string",
-            "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-          },
-          "name" : {
-            "type" : "string"
+      "properties" : {
+        "de" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
           }
+        },
+        "es" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "fr" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "it" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "ja" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "ko" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "pt" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
+        },
+        "zh" : {
+          "type" : "object",
+          "$ref" : "urn:jsonschema:io:github:ygojson:model:data:definitions:SetText"
         }
       }
     }

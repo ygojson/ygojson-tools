@@ -25,10 +25,12 @@
       "pattern" : "[a-zA-Z0-9]+"
     },
     "rarity" : {
-      "type" : "string"
+      "type" : "string",
+      "pattern" : "[a-z]+"
     },
     "language" : {
-      "type" : "string"
+      "type" : "string",
+      "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh" ]
     }
   }
 }
