@@ -11,7 +11,7 @@
     <artifactId>ygojson-model-utils</artifactId>
     <packaging>jar</packaging>
 
-    <name>YGOJSON Model JSON-schema</name>
+    <name>YGOJSON Model Utils</name>
 
     <dependencies>
         <dependency>
