@@ -1,10 +1,8 @@
 package io.github.ygojson.model.data.definitions;
 
+import java.util.Objects;
+
 import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
 import io.github.ygojson.model.data.Card;
 
@@ -29,16 +27,17 @@ import io.github.ygojson.model.data.Card;
 		Identifiers.YUGIPEDIA_PAGE_ID_PROPERTY,
 	}
 )
-@Data
-@NoArgsConstructor
-@SuperBuilder(toBuilder = true)
-@JsonPOJOBuilder
 public class Identifiers {
 
 	public static final String KONAMI_ID_PROPERTY = "konamiId";
 	public static final String PASSWORD_PROPERTY = "password";
 	public static final String PASSWORD_ALT_PROPERTY = "passwordAlt";
 	public static final String YUGIPEDIA_PAGE_ID_PROPERTY = "yugipediaPageId";
+
+	private Long konamiId;
+	private Long password;
+	private Long passwordAlt;
+	private Long yugipediaPageId;
 
 	/**
 	 * ID on the <a href="https://www.db.yugioh-card.com/yugiohdb/">Yu-Gi-Oh official database</a>.
@@ -56,7 +55,9 @@ public class Identifiers {
 	)
 	@JsonProperty(value = KONAMI_ID_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private Long konamiId;
+	public Long getKonamiId() {
+		return konamiId;
+	}
 
 	/**
 	 * Unique 8-digit number printed in the bottom of cards, which is the same in all languages and prints.
@@ -74,7 +75,9 @@ public class Identifiers {
 	)
 	@JsonProperty(value = PASSWORD_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private Long password;
+	public Long getPassword() {
+		return password;
+	}
 
 	/**
 	 * Unique 8-digit identifier assigned to a different print of a card on some special cases.
@@ -90,7 +93,9 @@ public class Identifiers {
 	)
 	@JsonProperty(value = PASSWORD_ALT_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private Long passwordAlt;
+	public Long getPasswordAlt() {
+		return passwordAlt;
+	}
 
 	/**
 	 * Page ID on <a href="https://yugipedia.com">Yugipedia</a>.
@@ -106,5 +111,40 @@ public class Identifiers {
 	)
 	@JsonProperty(value = YUGIPEDIA_PAGE_ID_PROPERTY)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private Long yugipediaPageId;
+	public Long getYugipediaPageId() {
+		return yugipediaPageId;
+	}
+
+	public void setKonamiId(Long konamiId) {
+		this.konamiId = konamiId;
+	}
+
+	public void setPassword(Long password) {
+		this.password = password;
+	}
+
+	public void setPasswordAlt(Long passwordAlt) {
+		this.passwordAlt = passwordAlt;
+	}
+
+	public void setYugipediaPageId(Long yugipediaPageId) {
+		this.yugipediaPageId = yugipediaPageId;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Identifiers that)) return false;
+		return (
+			Objects.equals(konamiId, that.konamiId) &&
+			Objects.equals(password, that.password) &&
+			Objects.equals(passwordAlt, that.passwordAlt) &&
+			Objects.equals(yugipediaPageId, that.yugipediaPageId)
+		);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(konamiId, password, passwordAlt, yugipediaPageId);
+	}
 }
