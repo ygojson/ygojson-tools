@@ -18,7 +18,9 @@ import org.slf4j.LoggerFactory;
 
 class UserAgentInterceptorTest {
 
-	private static final Logger log = LoggerFactory.getLogger(UserAgentInterceptorTest.class);
+	private static final Logger log = LoggerFactory.getLogger(
+		UserAgentInterceptorTest.class
+	);
 
 	private static MockWebServer MOCK_SERVER;
 

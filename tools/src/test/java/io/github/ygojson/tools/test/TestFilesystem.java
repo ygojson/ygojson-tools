@@ -17,7 +17,9 @@ import org.springframework.util.FileSystemUtils;
  */
 public class TestFilesystem {
 
-	private static final Logger log = LoggerFactory.getLogger(TestFilesystem.class);
+	private static final Logger log = LoggerFactory.getLogger(
+		TestFilesystem.class
+	);
 
 	private final FileSystem fs;
 	private Path currentTestRootDir;

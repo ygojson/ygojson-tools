@@ -25,7 +25,9 @@ import io.github.ygojson.tools.test.TestFilesystem;
 
 class GenerateDocsToolTest {
 
-	private static final Logger log = LoggerFactory.getLogger(GenerateDocsToolTest.class);
+	private static final Logger log = LoggerFactory.getLogger(
+		GenerateDocsToolTest.class
+	);
 	private static final Set<String> EXPECTED_GENERATED_SCHEMAS = Set.of(
 		"card.schema.json",
 		"set.schema.json",

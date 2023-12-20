@@ -26,7 +26,9 @@ import io.github.ygojson.tools.test.TestFilesystem;
 
 class ModelDocumentationTest {
 
-	private static final Logger log = LoggerFactory.getLogger(ModelDocumentationTest.class);
+	private static final Logger log = LoggerFactory.getLogger(
+		ModelDocumentationTest.class
+	);
 
 	private static ObjectMapper OBJECT_MAPPER;
 	private static TestFilesystem TEST_FS;
