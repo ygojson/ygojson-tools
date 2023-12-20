@@ -5,11 +5,11 @@ package io.github.ygojson.tools.common;
  */
 public class YgoJsonToolException extends RuntimeException {
 
-	public YgoJsonToolException(String message) {
+	public YgoJsonToolException(final String message) {
 		super(message);
 	}
 
-	public YgoJsonToolException(String message, Throwable cause) {
+	public YgoJsonToolException(final String message, final Throwable cause) {
 		super(message, cause);
 	}
 
@@ -18,11 +18,11 @@ public class YgoJsonToolException extends RuntimeException {
 	 */
 	public static final class InputException extends YgoJsonToolException {
 
-		public InputException(String message) {
+		public InputException(final String message) {
 			super(message);
 		}
 
-		public InputException(String message, Throwable cause) {
+		public InputException(final String message, final Throwable cause) {
 			super(message, cause);
 		}
 	}

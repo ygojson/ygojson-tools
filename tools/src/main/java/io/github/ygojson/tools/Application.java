@@ -33,7 +33,10 @@ public class Application implements CommandLineRunner, ExitCodeGenerator {
 	private final ParentCli parentCli;
 	private int exitCode = ParentCli.UNEXPECTED_ERROR_CODE;
 
-	public Application(ParentCli parentCli, CommandLine.IFactory factory) {
+	public Application(
+		final ParentCli parentCli,
+		final CommandLine.IFactory factory
+	) {
 		this.parentCli = parentCli;
 		this.factory = factory;
 	}

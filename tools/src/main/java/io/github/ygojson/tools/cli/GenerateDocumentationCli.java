@@ -21,7 +21,7 @@ public class GenerateDocumentationCli
 
 	private final GenerateDocsTool tool;
 
-	public GenerateDocumentationCli(GenerateDocsTool tool) {
+	public GenerateDocumentationCli(final GenerateDocsTool tool) {
 		this.tool = tool;
 	}
 

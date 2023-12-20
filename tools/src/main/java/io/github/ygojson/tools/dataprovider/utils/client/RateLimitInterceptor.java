@@ -13,7 +13,7 @@ class RateLimitInterceptor implements Interceptor {
 
 	private final RateLimiter rateLimiter;
 
-	public RateLimitInterceptor(RateLimiter rateLimiter) {
+	public RateLimitInterceptor(final RateLimiter rateLimiter) {
 		this.rateLimiter = rateLimiter;
 	}
 

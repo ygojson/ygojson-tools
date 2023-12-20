@@ -19,7 +19,7 @@ import io.github.ygojson.tools.common.YgoJsonToolException;
 abstract class CliCommand<I, T extends YgoJsonTool<I>>
 	implements Callable<Integer> {
 
-	private Logger log = LoggerFactory.getLogger(getClass());
+	private static final Logger log = LoggerFactory.getLogger(CliCommand.class);
 
 	/**
 	 * Builds the tool input from the command-line options.

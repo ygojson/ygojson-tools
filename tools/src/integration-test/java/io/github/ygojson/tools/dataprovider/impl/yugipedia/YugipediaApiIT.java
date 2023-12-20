@@ -76,7 +76,7 @@ class YugipediaApiIT {
 	@Test
 	void testQueryPagesByTitle() throws IOException {
 		final Response<QueryResponse> sets = api
-			.queryPagesByTitle(new PipeSeparated("LOB", "ETCO"))
+			.queryPagesByTitle(PipeSeparated.of("LOB", "ETCO"))
 			.execute();
 		log.info("Response:\n:{}", sets.body());
 		SoftAssertions.assertSoftly(softly -> {
