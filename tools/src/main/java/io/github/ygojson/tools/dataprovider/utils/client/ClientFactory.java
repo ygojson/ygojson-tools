@@ -21,7 +21,10 @@ public class ClientFactory {
 	private final ObjectMapper jsonMapper;
 	private final ApplicationInfo info;
 
-	public ClientFactory(ObjectMapper jsonMapper, ApplicationInfo info) {
+	public ClientFactory(
+		final ObjectMapper jsonMapper,
+		final ApplicationInfo info
+	) {
 		this.jsonMapper = jsonMapper;
 		this.info = info;
 	}
