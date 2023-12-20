@@ -8,25 +8,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * <br>
  * Note that not all of them are used for the same return type.
  */
-public class Continue {
+public record Continue(
+	String gcmcontinue,
 
-	private String gcmcontinue;
-
-	private String grccontinue;
+	String grccontinue,
 
 	// should use jackson annotation as it is a reserved keyword
-	@JsonProperty("continue")
-	private String continueProperty;
-
-	public String getGcmcontinue() {
-		return gcmcontinue;
-	}
-
-	public String getGrccontinue() {
-		return grccontinue;
-	}
-
+	@JsonProperty("continue") String continueProperty
+) {
+	/**
+	 * Sugar-syntax for {@link #continueProperty()}
+	 * as it is a reserved keyword.
+	 *
+	 * @return same as {@link #continueProperty()}
+	 */
 	public String getContinue() {
-		return continueProperty;
+		return continueProperty();
 	}
 }

@@ -4,20 +4,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-public class Query {
-
-	private JsonNode redirects;
-
-	private List<Page> pages;
-
+public record Query(
 	/**
 	 * Untyped redirects.
 	 */
-	public JsonNode getRedirects() {
-		return redirects;
-	}
-
-	public List<Page> getPages() {
-		return pages;
-	}
-}
+	JsonNode redirects,
+	List<Page> pages
+) {}

@@ -6,40 +6,24 @@ import com.fasterxml.jackson.databind.JsonNode;
 /**
  * Response for the Yugipedia Query API.
  */
-public class QueryResponse {
-
-	private boolean batchcomplete;
+public record QueryResponse(
+	boolean batchcomplete,
 
 	// should use jackson annotation as it is a reserved keyword
-	@JsonProperty("continue")
-	private Continue continueInfo;
-
-	private Query query;
-
-	private JsonNode warnings;
-
-	private JsonNode limits;
-
-	public boolean isBatchcomplete() {
-		return batchcomplete;
-	}
-
-	public Continue getContinue() {
-		return continueInfo;
-	}
-
-	public Query getQuery() {
-		return query;
-	}
-
+	@JsonProperty("continue") Continue continueInfo,
+	Query query,
 	/**
 	 * Untyped warnings.
 	 */
-	public JsonNode getWarnings() {
-		return warnings;
-	}
-
-	public JsonNode getLimits() {
-		return limits;
+	JsonNode warnings,
+	JsonNode limits
+) {
+	/**
+	 * Sugar-syntax for {@link #continueInfo()}.
+	 *
+	 * @return same as {@link #continueInfo()}
+	 */
+	public Continue getContinue() {
+		return continueInfo();
 	}
 }
