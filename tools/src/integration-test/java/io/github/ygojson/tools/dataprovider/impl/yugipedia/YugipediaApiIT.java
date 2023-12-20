@@ -41,9 +41,9 @@ class YugipediaApiIT {
 		SoftAssertions.assertSoftly(softly -> {
 			softly.assertThat(cards.code()).isEqualTo(200);
 			softly.assertThat(cards.body()).isNotNull();
-			softly.assertThat(cards.body().continueInfo)
+			softly.assertThat(cards.body().getContinue())
 				.isNotNull()
-				.extracting(c -> c.gcmcontinue)
+				.extracting(c -> c.getGcmcontinue())
 				.isNotNull();
 		});
 	}
@@ -51,7 +51,7 @@ class YugipediaApiIT {
 	@Test
 	void testQueryCategoryMembersByTimestampWithGmContinue() throws IOException {
 		final Response<QueryResponse> firstResponse = doExecuteTestQueryCategoryMembersByTimestamp(null);
-		final String gmcontinue = firstResponse.body().continueInfo.gcmcontinue;
+		final String gmcontinue = firstResponse.body().getContinue().getGcmcontinue();
 		final Response<QueryResponse> secondCall = doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
 		log.info("Response:\n:{}", secondCall.body());
 		SoftAssertions.assertSoftly(softly -> {

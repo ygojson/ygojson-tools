@@ -10,10 +10,23 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public class Continue {
 
-	public String gcmcontinue;
+	private String gcmcontinue;
 
-	public String grccontinue;
+	private String grccontinue;
 
+	// should use jackson annotation as it is a reserved keyword
 	@JsonProperty("continue")
-	public String continueProperty;
+	private String continueProperty;
+
+	public String getGcmcontinue() {
+		return gcmcontinue;
+	}
+
+	public String getGrccontinue() {
+		return grccontinue;
+	}
+
+	public String getContinue() {
+		return continueProperty;
+	}
 }

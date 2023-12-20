@@ -1,7 +1,5 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 
@@ -10,27 +8,38 @@ import com.fasterxml.jackson.databind.JsonNode;
  */
 public class QueryResponse {
 
-	public boolean batchcomplete;
+	private boolean batchcomplete;
 
+	// should use jackson annotation as it is a reserved keyword
 	@JsonProperty("continue")
-	public Continue continueInfo;
+	private Continue continueInfo;
 
-	public Query query;
+	private Query query;
+
+	private JsonNode warnings;
+
+	private JsonNode limits;
+
+	public boolean isBatchcomplete() {
+		return batchcomplete;
+	}
+
+	public Continue getContinue() {
+		return continueInfo;
+	}
+
+	public Query getQuery() {
+		return query;
+	}
 
 	/**
 	 * Untyped warnings.
 	 */
-	public JsonNode warnings;
-
-	public static class Query {
-
-		/**
-		 * Untyped redirects.
-		 */
-		public JsonNode redirects;
-
-		public List<Page> pages;
+	public JsonNode getWarnings() {
+		return warnings;
 	}
 
-	public JsonNode limits;
+	public JsonNode getLimits() {
+		return limits;
+	}
 }
