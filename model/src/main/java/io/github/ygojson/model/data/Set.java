@@ -8,9 +8,9 @@ import jakarta.validation.constraints.Pattern;
 
 import io.github.ygojson.model.data.definition.SetText;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
-import io.github.ygojson.model.data.propertie.IdProperties;
-import io.github.ygojson.model.data.propertie.LanguageProperties;
-import io.github.ygojson.model.data.propertie.SetProperties;
+import io.github.ygojson.model.data.property.IdProperties;
+import io.github.ygojson.model.data.property.LanguageProperties;
+import io.github.ygojson.model.data.property.SetProperties;
 
 /**
  * Model describing the properties of a Set (atomic).

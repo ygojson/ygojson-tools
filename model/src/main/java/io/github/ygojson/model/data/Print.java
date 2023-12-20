@@ -7,9 +7,9 @@ import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
 import io.github.ygojson.model.data.definition.localization.Language;
-import io.github.ygojson.model.data.propertie.IdProperties;
-import io.github.ygojson.model.data.propertie.LanguageProperties;
-import io.github.ygojson.model.data.propertie.PrintProperties;
+import io.github.ygojson.model.data.property.IdProperties;
+import io.github.ygojson.model.data.property.LanguageProperties;
+import io.github.ygojson.model.data.property.PrintProperties;
 
 /**
  * Model describing the properties of a Print (atomic).

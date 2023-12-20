@@ -3,12 +3,10 @@ package io.github.ygojson.tools.dataprovider.utils.client;
 import java.io.IOException;
 import java.util.function.Function;
 
-import lombok.RequiredArgsConstructor;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
-@RequiredArgsConstructor
 class UserAgentInterceptor implements Interceptor {
 
 	private static final String USER_AGENT_HEADER_NAME = "User-Agent";
@@ -18,6 +16,12 @@ class UserAgentInterceptor implements Interceptor {
 	// 2. provide a rotating user-agent
 	// 3. include the default user-agent (if used on network interceptor)
 	private final Function<String, String> userAgentSupplier;
+
+	public UserAgentInterceptor(
+		final Function<String, String> userAgentSupplier
+	) {
+		this.userAgentSupplier = userAgentSupplier;
+	}
 
 	@Override
 	public Response intercept(final Chain chain) throws IOException {

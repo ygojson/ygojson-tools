@@ -7,9 +7,8 @@ import java.nio.file.Path;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import io.github.ygojson.tools.common.YgoJsonToolException;
 
@@ -17,16 +16,16 @@ import io.github.ygojson.tools.common.YgoJsonToolException;
  * Domain model representing the documention
  * of a model.
  */
-@Slf4j
 public class ModelDocumentation {
 
-	@Getter
+	private static final Logger log = LoggerFactory.getLogger(
+		ModelDocumentation.class
+	);
+
 	private final Class<?> modelClass;
 
-	@Getter
 	private final String modelName;
 
-	@Getter(AccessLevel.PACKAGE)
 	private final ObjectMapper objectMapper;
 
 	private SchemaDoc schemaDoc;
@@ -38,6 +37,18 @@ public class ModelDocumentation {
 		this.modelClass = modelClass;
 		this.modelName = modelClass.getSimpleName().toLowerCase();
 		this.objectMapper = objectMapper;
+	}
+
+	public Class<?> getModelClass() {
+		return modelClass;
+	}
+
+	public String getModelName() {
+		return modelName;
+	}
+
+	ObjectMapper getObjectMapper() {
+		return objectMapper;
 	}
 
 	/**

@@ -14,9 +14,9 @@ import io.github.ygojson.model.data.definition.CardType;
 import io.github.ygojson.model.data.definition.Identifiers;
 import io.github.ygojson.model.data.definition.LinkArrow;
 import io.github.ygojson.model.data.definition.localization.CardLocalizedData;
-import io.github.ygojson.model.data.propertie.CardProperties;
-import io.github.ygojson.model.data.propertie.IdProperties;
-import io.github.ygojson.model.data.propertie.LanguageProperties;
+import io.github.ygojson.model.data.property.CardProperties;
+import io.github.ygojson.model.data.property.IdProperties;
+import io.github.ygojson.model.data.property.LanguageProperties;
 
 /**
  * Model describing the properties of a Card (atomic).

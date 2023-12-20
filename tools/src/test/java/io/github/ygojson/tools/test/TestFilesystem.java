@@ -8,20 +8,25 @@ import java.util.UUID;
 
 import com.google.common.jimfs.Configuration;
 import com.google.common.jimfs.Jimfs;
-import lombok.AccessLevel;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.FileSystemUtils;
 
 /**
  * Test filesystem with utility methods.
  */
-@Slf4j
-@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 public class TestFilesystem {
+
+	private static final Logger log = LoggerFactory.getLogger(
+		TestFilesystem.class
+	);
 
 	private final FileSystem fs;
 	private Path currentTestRootDir;
+
+	private TestFilesystem(final FileSystem fs) {
+		this.fs = fs;
+	}
 
 	/**
 	 * Initialize a new filesystem.

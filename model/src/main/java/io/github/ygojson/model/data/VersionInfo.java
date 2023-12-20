@@ -5,7 +5,6 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
 
 /**
  * Model representing the version information of the YGOJSON data.
@@ -14,7 +13,6 @@ import lombok.Getter;
 	"Model representing the version information of the YGOJSON data."
 )
 @JsonPropertyOrder({ VersionInfo.VERSION_PROPERTY, VersionInfo.DATE_PROPERTY })
-@Getter
 public class VersionInfo {
 
 	public static final String VERSION_PROPERTY = "version";

@@ -4,16 +4,18 @@ import java.io.IOException;
 
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RequestNotPermitted;
-import lombok.RequiredArgsConstructor;
 import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-@RequiredArgsConstructor
 class RateLimitInterceptor implements Interceptor {
 
 	private final RateLimiter rateLimiter;
+
+	public RateLimitInterceptor(final RateLimiter rateLimiter) {
+		this.rateLimiter = rateLimiter;
+	}
 
 	@Override
 	public Response intercept(final Chain chain) throws IOException {

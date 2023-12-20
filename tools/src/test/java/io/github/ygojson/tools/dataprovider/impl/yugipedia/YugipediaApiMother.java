@@ -1,7 +1,5 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -11,8 +9,11 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import io.github.ygojson.model.utils.JsonUtils;
 
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class YugipediaApiMother {
+
+	private YugipediaApiMother() {
+		// utility class
+	}
 
 	public static YugipediaApi productionTestClient() {
 		return createClient("https://yugipedia.com", productionOkHttp());

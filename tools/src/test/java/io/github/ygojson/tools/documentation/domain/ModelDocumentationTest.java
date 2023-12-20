@@ -12,7 +12,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.AfterAll;
@@ -23,7 +22,6 @@ import org.junit.jupiter.api.Test;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.test.TestFilesystem;
 
-@Slf4j
 class ModelDocumentationTest {
 
 	private static ObjectMapper OBJECT_MAPPER;
