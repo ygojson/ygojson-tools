@@ -8,6 +8,7 @@ import retrofit2.http.Query;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
 
@@ -35,7 +36,7 @@ public interface YugipediaApi {
 	)
 	public Call<QueryResponse> queryCategoryMembersByTimestamp(
 		@Query("gcmtitle") Category category,
-		@Query("gcmlimit") Integer resultsPerQuery,
+		@Query("gcmlimit") Limit resultsPerQuery,
 		@Query("gcmdir") SortDirection sortDir,
 		@Query("gcmcontinue") String gcmcontinue
 	);
@@ -60,7 +61,7 @@ public interface YugipediaApi {
 		"&cllimit=max"
 	)
 	public Call<QueryResponse> queryRecentChanges(
-		@Query("grclimit") Integer resultsPerQuery,
+		@Query("grclimit") Limit resultsPerQuery,
 		@Query("grcstart") ZonedDateTime startAt,
 		@Query("grccontinue") String grccontinue
 	);
