@@ -2,13 +2,9 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params;
 
 import java.util.List;
 
-import lombok.AccessLevel;
-import lombok.RequiredArgsConstructor;
-
 /**
  * Helper method to join properly multiple parameters with pipes.
  */
-@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 public final class PipeSeparated {
 
 	private final List<String> values;

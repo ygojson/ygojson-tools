@@ -8,7 +8,6 @@ import java.util.stream.IntStream;
 
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterConfig;
-import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -20,11 +19,12 @@ import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.tools.dataprovider.utils.client.RateLimitInterceptor;
-
-@Slf4j
 class RateLimitInterceptorTest {
+
+	private static final Logger log = LoggerFactory.getLogger(RateLimitInterceptorTest.class);;
 
 	private static MockWebServer MOCK_SERVER;
 

@@ -4,35 +4,32 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
-import lombok.Data;
 
 /**
  * Response for the Yugipedia Query API.
  */
-@Data
 public class QueryResponse {
 
-	private boolean batchcomplete;
+	public boolean batchcomplete;
 
 	@JsonProperty("continue")
-	private Continue continueInfo;
+	public Continue continueInfo;
 
-	private Query query;
+	public Query query;
 
 	/**
 	 * Untyped warnings.
 	 */
-	private JsonNode warnings;
+	public JsonNode warnings;
 
-	@Data
 	public static class Query {
 
 		/**
 		 * Untyped redirects.
 		 */
-		private JsonNode redirects;
+		public JsonNode redirects;
 
-		private List<Page> pages;
+		public List<Page> pages;
 	}
 
 	public JsonNode limits;

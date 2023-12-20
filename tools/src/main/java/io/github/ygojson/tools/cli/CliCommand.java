@@ -3,7 +3,8 @@ package io.github.ygojson.tools.cli;
 import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 
 import io.github.ygojson.tools.common.YgoJsonTool;
@@ -15,9 +16,10 @@ import io.github.ygojson.tools.common.YgoJsonToolException;
  * @param <I> input type
  * @param <T> tool type
  */
-@Slf4j
 abstract class CliCommand<I, T extends YgoJsonTool<I>>
 	implements Callable<Integer> {
+
+	private Logger log = LoggerFactory.getLogger(getClass());
 
 	/**
 	 * Builds the tool input from the command-line options.

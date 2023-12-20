@@ -1,16 +1,29 @@
 package io.github.ygojson.tools.common;
 
-import lombok.experimental.StandardException;
-
 /**
  * Runtime exception for the YGOJSON tools.
  */
-@StandardException
 public class YgoJsonToolException extends RuntimeException {
+
+	public YgoJsonToolException(String message) {
+		super(message);
+	}
+
+	public YgoJsonToolException(String message, Throwable cause) {
+		super(message, cause);
+	}
 
 	/**
 	 * Exception thrown when the inputs of a tool are incorrect.
 	 */
-	@StandardException
-	public static final class InputException extends YgoJsonToolException {}
+	public static final class InputException extends YgoJsonToolException {
+
+		public InputException(String message) {
+			super(message);
+		}
+
+		public InputException(String message, Throwable cause) {
+			super(message, cause);
+		}
+	}
 }
