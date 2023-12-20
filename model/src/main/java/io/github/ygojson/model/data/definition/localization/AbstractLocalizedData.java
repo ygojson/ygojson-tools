@@ -142,7 +142,7 @@ abstract class AbstractLocalizedData<T> {
 	 * @param data the data for the language
 	 */
 	public void setEs(final T data) {
-		setData(Language.JA, data);
+		setData(Language.ES, data);
 	}
 
 	/**
