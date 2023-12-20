@@ -1,0 +1,25 @@
+CardTable2[cardclass=null, name=Jinzo #7, fr_name=Jinzo N°7, de_name=Jinzo #7, it_name=Jinzo #7, es_name=Jinzo #7, ja_name={{Ruby|人|じん}}{{Ruby|造|ぞう}}{{Ruby|人|にん}}{{Ruby|間|げん}}７{{Ruby|号|ごう}}, romaji_name=Jinzōningen Nana-gō, trans_name=Android #7, base_romaji_name=null, base_trans_name=null, zh_name=null, zh_pinyin_name=null, zh_trans_name=null, ko_name=인조인간7호, ko_rr_name=null, ko_trans_name=null, alt_name=null, alt_name2=null, alt_name3=null, ja_alt_name=null, ja_alt_romaji=null, ja_alt_trans=null, image=Jinzo7-MRD-EN-C-UE-25thAnniversaryEdition.png, image2=null, card_type=Monster, property=null, attribute=DARK, character=null, types=Machine / Effect, level=2, rank=null, link_arrows=null, pendulum_scale=null, maximum_atk=null, atk=500, def=400, password=32809211, limitation_text=null, ritualcard=null, ritualmonster=null, summon=null, effect_types=Continuous, pendulum_effect_types=null, ocg_status=null, tcg_status=null, tcg_speed_duel_status=null, source_card=null, skill_activation=null, fr_skill_activation=null, de_skill_activation=null, it_skill_activation=null, pt_skill_activation=null, es_skill_activation=null, pendulum_effect=null, fr_pendulum_effect=null, de_pendulum_effect=null, it_pendulum_effect=null, pt_pendulum_effect=null, es_pendulum_effect=null, ja_pendulum_effect=null, trans_pendulum_effect=null, zh_pendulum_effect=null, ko_pendulum_effect=null, lore=This [[monster]] can [[attack]] your opponent's [[Life Points]] [[Direct attack|directly]]., fr_lore=Ce monstre peut attaquer directement les Life Points de votre adversaire., de_lore=Diese Karte kann die Life Points deines Gegners direkt angreifen., it_lore=Questo mostro può attaccare direttamente i Life Points del tuo avversario., pt_lore=Esta carta pode atacar seu oponente diretamente., es_lore=Esta carta puede atacar los Life Points de tu adversario directamente., ja_lore=このカードは相手プレイヤーを直接攻撃する事ができる。, trans_lore=null, zh_lore=null, ko_lore=이 카드는 상대를 직접 공격할 수 있다., use=null, database_id=4428, en_sets=
+DB1-EN162; Dark Beginning 1; Common
+MRD-EN035; Metal Raiders; Short Print
+MRD-EN035; Metal Raiders (25th Anniversary Edition); Common, na_sets=
+MRD-035; Metal Raiders; Short Print, eu_sets=
+MRD-E035; Metal Raiders; Short Print, au_sets=null, fr_sets=
+MRD-F035; Metal Raiders; Short Print
+MRD-FR035; Metal Raiders (25th Anniversary Edition); Common, fc_sets=null, de_sets=
+MRD-G035; Metal Raiders; Short Print
+DB1-DE162; Dark Beginning 1; Common
+MRD-DE035; Metal Raiders (25th Anniversary Edition); Common, it_sets=
+PMT-I035; Metal Raiders; Short Print
+MRD-IT035; Metal Raiders (25th Anniversary Edition); Common, pt_sets=
+PMT-P035; Metal Raiders; Short Print
+MRD-PT035; Metal Raiders (25th Anniversary Edition); Common, sp_sets=
+PMT-S035; Metal Raiders; Short Print
+DB1-SP162; Dark Beginning 1; Common
+MRD-SP035; Metal Raiders (25th Anniversary Edition); Common, jp_sets=
+; Vol.5; Common
+RB-35; Revival of Black Demons Dragon; Common
+DL2-122; Duelist Legacy Volume.2; Common
+BE1-JP162; Beginner's Edition 1; Common, ja_sets=null, ae_sets=
+MRD-035; Metal Raiders; Short Print, tc_sets=null, sc_sets=null, kr_sets=
+MRD-K035; Metal Raiders; Short Print
+BP1-KR162; Beginner's Edition 1; Common, supports=null, anti_supports=null, archseries=Jinzo (archetype), supports_archetypes=null, anti_supports_archetypes=null, related_to_archetypes=null, counter=null, action=null, stat_change=null, m_s_t=null, summoning=null, attack=Direct attacker, banished=null, life_points=null, fm_for=null, sm_for=null, misc=null, fusion_material=null, synchro_material=null, material=null]
