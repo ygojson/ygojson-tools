@@ -1,0 +1,48 @@
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Named;
+
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+
+/**
+ * Mapper to be used with other mappers for converting fields
+ * to markup strings.
+ */
+@Mapper
+public abstract class MarkupStringMapper {
+
+	/**
+	 * Maps a plain-string property into a markup string.
+	 *
+	 * @param property plainstring propoperty to map.
+	 *
+	 * @return markup string
+	 */
+	public MarkupString map(final String property) {
+		return MarkupString.of(property);
+	}
+
+	/**
+	 * Maps a plain-string property into a japanese-aware markup string.
+	 *
+	 * @param property plain-string property to map.
+	 *
+	 * @return japanese aware markup string.
+	 */
+	@Named("japanese")
+	public MarkupString mapToJapanese(final String property) {
+		return MarkupString.ofJapanese(property);
+	}
+
+	/**
+	 * Maps the markup string to a string with every markup cleanup.
+	 *
+	 * @param property property as a markup string to map..
+	 *
+	 * @return property without markup.
+	 */
+	public String map(final MarkupString property) {
+		return property.withoutMarkup();
+	}
+}
