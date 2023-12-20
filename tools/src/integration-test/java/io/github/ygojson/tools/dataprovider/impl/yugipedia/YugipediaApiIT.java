@@ -11,6 +11,7 @@ import retrofit2.Response;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
 
@@ -28,7 +29,7 @@ class YugipediaApiIT {
 	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(final String gmcontinue) throws IOException {
 		return api.queryCategoryMembersByTimestamp(
 			Category.CARDS,
-			50,
+			Limit.getDefault(),
 			SortDirection.NEWER,
 			gmcontinue
 		).execute();
@@ -64,7 +65,7 @@ class YugipediaApiIT {
 	@Test
 	void testQueryRecentChanges() throws IOException {
 		final Response<QueryResponse> recentChanges = api
-			.queryRecentChanges(50, null, null)
+			.queryRecentChanges(Limit.getDefault(), null, null)
 			.execute();
 		log.info("Response:\n:{}", recentChanges.body());
 		SoftAssertions.assertSoftly(softly -> {
