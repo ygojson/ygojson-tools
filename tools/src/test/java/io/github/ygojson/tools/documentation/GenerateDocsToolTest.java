@@ -17,17 +17,12 @@ import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.test.TestFilesystem;
 
 class GenerateDocsToolTest {
 
-	private static final Logger log = LoggerFactory.getLogger(
-		GenerateDocsToolTest.class
-	);
 	private static final Set<String> EXPECTED_GENERATED_SCHEMAS = Set.of(
 		"card.schema.json",
 		"set.schema.json",
