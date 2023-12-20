@@ -12,7 +12,6 @@ import java.util.stream.Stream;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.*;
@@ -22,7 +21,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.test.TestFilesystem;
 
-@Slf4j
 class GenerateDocsToolTest {
 
 	private static final Set<String> EXPECTED_GENERATED_SCHEMAS = Set.of(

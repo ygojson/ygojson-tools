@@ -1,4 +1,4 @@
-package io.github.ygojson.model.data.propertie;
+package io.github.ygojson.model.data.property;
 
 /**
  * Properties of the card.

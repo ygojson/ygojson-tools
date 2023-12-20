@@ -2,21 +2,22 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia;
 
 import java.io.IOException;
 
-import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import retrofit2.Response;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
 
-@Slf4j
 class YugipediaApiIT {
+
+	private static final Logger log = LoggerFactory.getLogger(YugipediaApiIT.class);
 
 	private YugipediaApi api;
 
@@ -41,9 +42,9 @@ class YugipediaApiIT {
 		SoftAssertions.assertSoftly(softly -> {
 			softly.assertThat(cards.code()).isEqualTo(200);
 			softly.assertThat(cards.body()).isNotNull();
-			softly.assertThat(cards.body().getContinueInfo())
+			softly.assertThat(cards.body().getContinue())
 				.isNotNull()
-				.extracting(Continue::getGcmcontinue)
+				.extracting(c -> c.gcmcontinue())
 				.isNotNull();
 		});
 	}
@@ -51,7 +52,7 @@ class YugipediaApiIT {
 	@Test
 	void testQueryCategoryMembersByTimestampWithGmContinue() throws IOException {
 		final Response<QueryResponse> firstResponse = doExecuteTestQueryCategoryMembersByTimestamp(null);
-		final String gmcontinue = firstResponse.body().getContinueInfo().getGcmcontinue();
+		final String gmcontinue = firstResponse.body().getContinue().gcmcontinue();
 		final Response<QueryResponse> secondCall = doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
 		log.info("Response:\n:{}", secondCall.body());
 		SoftAssertions.assertSoftly(softly -> {
@@ -76,7 +77,7 @@ class YugipediaApiIT {
 	@Test
 	void testQueryPagesByTitle() throws IOException {
 		final Response<QueryResponse> sets = api
-			.queryPagesByTitle(new PipeSeparated("LOB", "ETCO"))
+			.queryPagesByTitle(PipeSeparated.of("LOB", "ETCO"))
 			.execute();
 		log.info("Response:\n:{}", sets.body());
 		SoftAssertions.assertSoftly(softly -> {

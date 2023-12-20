@@ -4,10 +4,8 @@ import java.util.*;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Stream factory for paginated resources.
@@ -20,9 +18,15 @@ import lombok.extern.slf4j.Slf4j;
  * Retry functionality is not an objective of this class and should be
  * handled on the {@link PageHandler#getNext(Object)} if necessary.
  */
-@Slf4j
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class PaginatorStreamFactory {
+
+	private static final Logger log = LoggerFactory.getLogger(
+		PaginatorStreamFactory.class
+	);
+
+	private PaginatorStreamFactory() {
+		// do not instantiate directly
+	}
 
 	/**
 	 * Creates a stream from a defined page handler.
@@ -85,10 +89,13 @@ public final class PaginatorStreamFactory {
 		}
 	}
 
-	@RequiredArgsConstructor
 	static final class PageIterator<T> implements Iterator<T> {
 
 		private final PageHandler<T> pageHandler;
+
+		PageIterator(final PageHandler<T> pageHandler) {
+			this.pageHandler = pageHandler;
+		}
 
 		private Optional<T> currentPage;
 

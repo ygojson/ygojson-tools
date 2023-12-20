@@ -7,17 +7,18 @@ import java.util.List;
 import java.util.Set;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.model.data.Card;
 import io.github.ygojson.tools.common.YgoJsonTool;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.documentation.domain.ModelDocumentation;
 
-@Slf4j
-@RequiredArgsConstructor
 public class GenerateDocsTool implements YgoJsonTool<GenerateDocsTool.Input> {
+
+	private static final Logger log = LoggerFactory.getLogger(
+		GenerateDocsTool.class
+	);
 
 	private static final Set<Class<?>> MODEL_DOCUMENTATION_CLASSES = Set.of(
 		io.github.ygojson.model.data.Card.class,
@@ -27,6 +28,10 @@ public class GenerateDocsTool implements YgoJsonTool<GenerateDocsTool.Input> {
 	);
 
 	private final ObjectMapper objectMapper;
+
+	public GenerateDocsTool(final ObjectMapper objectMapper) {
+		this.objectMapper = objectMapper;
+	}
 
 	@Override
 	public void execute(final Input input) throws YgoJsonToolException {

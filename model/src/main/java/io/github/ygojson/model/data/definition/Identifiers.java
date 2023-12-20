@@ -5,7 +5,7 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.*;
 
 import io.github.ygojson.model.data.Card;
-import io.github.ygojson.model.data.propertie.IdentifierProperties;
+import io.github.ygojson.model.data.property.IdentifierProperties;
 
 /**
  * Identifiers associated to the {@link Card}.

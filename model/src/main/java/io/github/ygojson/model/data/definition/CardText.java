@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
 
-import io.github.ygojson.model.data.propertie.CardProperties;
+import io.github.ygojson.model.data.property.CardProperties;
 
 /**
  * Definition for the card text that can be localized.

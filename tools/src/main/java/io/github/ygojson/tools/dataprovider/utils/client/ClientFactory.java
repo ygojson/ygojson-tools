@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterConfig;
 import io.github.resilience4j.ratelimiter.RateLimiterRegistry;
-import lombok.RequiredArgsConstructor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
@@ -14,7 +13,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import io.github.ygojson.tools.common.ApplicationInfo;
 
-@RequiredArgsConstructor
 public class ClientFactory {
 
 	private final ConcurrentHashMap<String, Retrofit> retrofitClients =
@@ -22,6 +20,14 @@ public class ClientFactory {
 
 	private final ObjectMapper jsonMapper;
 	private final ApplicationInfo info;
+
+	public ClientFactory(
+		final ObjectMapper jsonMapper,
+		final ApplicationInfo info
+	) {
+		this.jsonMapper = jsonMapper;
+		this.info = info;
+	}
 
 	public <T> T getClient(ClientConfig<T> config) {
 		final Retrofit retrofit = retrofitClients.computeIfAbsent(

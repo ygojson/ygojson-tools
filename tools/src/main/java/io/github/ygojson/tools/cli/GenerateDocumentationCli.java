@@ -2,8 +2,6 @@ package io.github.ygojson.tools.cli;
 
 import java.nio.file.Path;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 
@@ -13,17 +11,19 @@ import io.github.ygojson.tools.documentation.GenerateDocsTool;
 /**
  * CLI for the {@link GenerateDocsTool}.
  */
-@Slf4j
 @Component
 @CommandLine.Command(
 	name = "documentation",
 	description = "generates the documentation for the YGOJSON models"
 )
-@RequiredArgsConstructor
 public class GenerateDocumentationCli
 	extends CliCommand<GenerateDocsTool.Input, GenerateDocsTool> {
 
 	private final GenerateDocsTool tool;
+
+	public GenerateDocumentationCli(final GenerateDocsTool tool) {
+		this.tool = tool;
+	}
 
 	@CommandLine.Spec
 	CommandLine.Model.CommandSpec spec;

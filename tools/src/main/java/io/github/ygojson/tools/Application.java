@@ -1,7 +1,7 @@
 package io.github.ygojson.tools;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +16,6 @@ import io.github.ygojson.tools.common.YgoJsonTool;
 /**
  * Entry point of the application.
  */
-@Slf4j
 @SpringBootApplication
 @ComponentScan(
 	includeFilters = {
@@ -26,12 +25,21 @@ import io.github.ygojson.tools.common.YgoJsonTool;
 		),
 	}
 )
-@RequiredArgsConstructor
 public class Application implements CommandLineRunner, ExitCodeGenerator {
+
+	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 	private final CommandLine.IFactory factory;
 	private final ParentCli parentCli;
 	private int exitCode = ParentCli.UNEXPECTED_ERROR_CODE;
+
+	public Application(
+		final ParentCli parentCli,
+		final CommandLine.IFactory factory
+	) {
+		this.parentCli = parentCli;
+		this.factory = factory;
+	}
 
 	/**
 	 * Entry point for the application.

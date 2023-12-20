@@ -2,7 +2,6 @@ package io.github.ygojson.tools.dataprovider.utils.client;
 
 import java.io.IOException;
 
-import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -14,11 +13,14 @@ import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.tools.dataprovider.utils.client.UserAgentInterceptor;
-
-@Slf4j
 class UserAgentInterceptorTest {
+
+	private static final Logger log = LoggerFactory.getLogger(
+		UserAgentInterceptorTest.class
+	);
 
 	private static MockWebServer MOCK_SERVER;
 
