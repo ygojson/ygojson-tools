@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.github.ygojson.model.data.propertie.LanguageProperties;
+import io.github.ygojson.model.data.property.LanguageProperties;
 
 /**
  * Helper to create localized data models.

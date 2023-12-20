@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
 import io.github.ygojson.model.data.Set;
-import io.github.ygojson.model.data.propertie.SetProperties;
+import io.github.ygojson.model.data.property.SetProperties;
 
 /**
  * Definition for the set text that can be localized.
