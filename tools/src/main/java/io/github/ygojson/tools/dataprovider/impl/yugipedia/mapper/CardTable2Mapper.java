@@ -45,7 +45,7 @@ public abstract class CardTable2Mapper {
 		Pattern.compile(" += ");
 
 	public CardTable2 mapWikitextToCardTable2(final String wikitext) {
-		return toCardTable2(wikitextToMap(wikitext));
+		return mapToCardTable2(wikitextToMap(wikitext));
 	}
 
 	private Map<String, String> wikitextToMap(final String wikitext) {

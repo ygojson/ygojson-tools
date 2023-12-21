@@ -1,5 +1,7 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.approvaltests.Approvals;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -13,13 +15,13 @@ class CardTable2MapperTest {
 	@MethodSource(
 		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getParseWikitextTestData"
 	)
-	void testWikitextToCardTable2(
+	void testMapWikitextToCardTable2(
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
 	) {
 		// given
 		String wikitext = wikitextTestData.wikitext();
 		// when
-		CardTable2 cardTable2 = CardTable2Mapper.INSTANCE.wikitextToCardTable2(
+		CardTable2 cardTable2 = CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(
 			wikitext
 		);
 		// then
@@ -27,5 +29,16 @@ class CardTable2MapperTest {
 			cardTable2,
 			Approvals.NAMES.withParameters(wikitextTestData.testName())
 		);
+	}
+
+	void testMapNullWikitextToCardTable2() {
+		// given
+		String wikitext = null;
+		// when
+		CardTable2 cardTable2 = CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(
+			wikitext
+		);
+		// then
+		assertThat(cardTable2).isNull();
 	}
 }
