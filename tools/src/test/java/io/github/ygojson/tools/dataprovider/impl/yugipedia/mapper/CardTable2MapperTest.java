@@ -43,8 +43,10 @@ class CardTable2MapperTest {
 		// then
 		Approvals.verify(
 			asJsonString,
-			Approvals.NAMES.withParameters(wikitextTestData.testName())
-				.forFile().withExtension(".json")
+			Approvals.NAMES
+				.withParameters(wikitextTestData.testName())
+				.forFile()
+				.withExtension(".json")
 		);
 	}
 
