@@ -44,7 +44,7 @@ public abstract class CardTable2Mapper {
 	private static final Pattern CARDTABLE2_KEY_VALUE_SPLIT_PATTERN =
 		Pattern.compile(" += ");
 
-	public CardTable2 wikitextToCardTable2(final String wikitext) {
+	public CardTable2 mapWikitextToCardTable2(final String wikitext) {
 		return toCardTable2(wikitextToMap(wikitext));
 	}
 
