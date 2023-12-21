@@ -10,11 +10,11 @@ import java.nio.file.Paths;
  */
 public class TestResourceUtils {
 
+	private static final String TEST_DATA_FOLDER = "testdata/";
+
 	private TestResourceUtils() {
 		// utility class
 	}
-
-	private static final String TEST_DATA_FOLDER = "testdata/";
 
 	/**
 	 * Gets the resource on the testdata directory.
@@ -31,13 +31,13 @@ public class TestResourceUtils {
 			final URL url =
 				TestResourceUtils.class.getClassLoader().getResource(folder);
 			if (url == null) {
-				throw new RuntimeException(
+				throw new IllegalStateException(
 					"Exception retrieving test-resource: " + folder
 				);
 			}
 			return Paths.get(url.toURI());
 		} catch (final URISyntaxException e) {
-			throw new RuntimeException("Exception retrieving test-resource", e);
+			throw new IllegalStateException("Exception retrieving test-resource", e);
 		}
 	}
 }

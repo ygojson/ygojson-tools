@@ -18,15 +18,15 @@ import io.github.ygojson.tools.test.TestResourceUtils;
  */
 public class YugipediaTestData {
 
-	private YugipediaTestData() {
-		// utility class
-	}
-
 	private static Path BASE_PATH =
 		TestResourceUtils.getTestDataResourcePathByName("yugipedia");
 
 	private static final Map<String, Path> PARSE_WIKITEXT_PAGE_DATA =
 		new HashMap<>();
+
+	private YugipediaTestData() {
+		// utility class
+	}
 
 	/**
 	 * Test data for parse wikitext page.
@@ -71,7 +71,7 @@ public class YugipediaTestData {
 						parse.get("wikitext").asText()
 					);
 				} catch (final IOException e) {
-					throw new RuntimeException(e);
+					throw new IllegalStateException("Cannot read test data", e);
 				}
 			})
 			.toList();
