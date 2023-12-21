@@ -43,4 +43,16 @@ class CardTable2MapperTest {
 		// then
 		assertThat(cardTable2).isNull();
 	}
+
+	@Test
+	void testMapArbitraryStringToCardTable2() {
+		// given
+		String wikitext = "arbitrary string";
+		// when
+		CardTable2 cardTable2 = CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(
+			wikitext
+		);
+		// then
+		assertThat(cardTable2).isNull();
+	}
 }
