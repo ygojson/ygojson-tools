@@ -1,49 +1,35 @@
-CardTable2[cardclass=null, name=null, fr_name=Fissure Dimensionnelle, de_name=Dimensionsriss, it_name=Spaccatura Dimensionale, es_name=Fisura Dimensional, ja_name={{Ruby|次|じ}}{{Ruby|元|げん}}の{{Ruby|裂|さ}}け{{Ruby|目|め}}, romaji_name=Jigen no Sakeme, trans_name=null, base_romaji_name=null, base_trans_name=null, zh_name=null, zh_pinyin_name=null, zh_trans_name=null, ko_name=차원의 틈, ko_rr_name=null, ko_trans_name=null, alt_name=null, alt_name2=null, alt_name3=null, ja_alt_name=null, ja_alt_romaji=null, ja_alt_trans=null, image=DimensionalFissure-BLMR-EN-UR-1E.png, image2=null, card_type=Spell, property=Continuous, attribute=null, character=null, types=null, level=null, rank=null, link_arrows=null, pendulum_scale=null, maximum_atk=null, atk=null, def=null, password=81674782, limitation_text=null, ritualcard=null, ritualmonster=null, summon=null, effect_types=Continuous-like, pendulum_effect_types=null, ocg_status=null, tcg_status=null, tcg_speed_duel_status=null, source_card=null, skill_activation=null, fr_skill_activation=null, de_skill_activation=null, it_skill_activation=null, pt_skill_activation=null, es_skill_activation=null, pendulum_effect=null, fr_pendulum_effect=null, de_pendulum_effect=null, it_pendulum_effect=null, pt_pendulum_effect=null, es_pendulum_effect=null, ja_pendulum_effect=null, trans_pendulum_effect=null, zh_pendulum_effect=null, ko_pendulum_effect=null, lore=Any [[Monster Card|monster]] [[sent]] to the [[GY]] is [[banish]]ed instead., fr_lore=Les monstres envoyés au Cimetière sont bannis à la place., de_lore=Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt., it_lore=Qualsiasi mostro mandato al Cimitero viene invece bandito., pt_lore=Qualquer monstro enviado para o Cemitério, em vez disso, é banido., es_lore=Cualquier monstruo mandado al Cementerio es desterrado en su lugar., ja_lore=①：このカードが魔法＆罠ゾーンに存在する限り、お互いの墓地へ送られるモンスターは墓地へは行かず除外される。, trans_lore=null, zh_lore=null, ko_lore=①: 이 카드가 마법 & 함정 존에 존재하는 한, 서로의 묘지로 보내지는 몬스터는 묘지로는 가지 않고 제외된다., use=null, database_id=6707, en_sets=
-EOJ-EN047; Enemy of Justice; Common
-SDDE-EN028; The Dark Emperor Structure Deck; Common
-CP08-EN004; Champion Pack: Game Eight; Super Rare
-LCGX-EN215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare
-RYMP-EN081; Ra Yellow Mega Pack; Secret Rare
-DUSA-EN060; Duelist Saga; Ultra Rare
-BLMR-EN088; Battles of Legend: Monstrous Revenge; Ultra Rare, na_sets=
-DR04-EN227; Dark Revelation Volume 4; Rare, eu_sets=null, au_sets=null, fr_sets=
-EOJ-FR047; Enemy of Justice; Common
-SDDE-FR028; The Dark Emperor Structure Deck; Common
-CP08-FR004; Champion Pack: Game Eight; Super Rare
-RYMP-FR081; Ra Yellow Mega Pack; Secret Rare
-DUSA-FR060; Duelist Saga; Ultra Rare
-BLMR-FR088; Battles of Legend: Monstrous Revenge; Ultra Rare, fc_sets=null, de_sets=
-EOJ-DE047; Enemy of Justice; Common
-SDDE-DE028; The Dark Emperor Structure Deck; Common
-CP08-DE004; Champion Pack: Game Eight; Super Rare
-LCGX-DE215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare
-RYMP-DE081; Ra Yellow Mega Pack; Secret Rare
-DUSA-DE060; Duelist Saga; Ultra Rare
-BLMR-DE088; Battles of Legend: Monstrous Revenge; Ultra Rare, it_sets=
-EOJ-IT047; Enemy of Justice; Common
-SDDE-IT028; The Dark Emperor Structure Deck; Common
-CP08-IT004; Champion Pack: Game Eight; Super Rare
-LCGX-IT215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare
-RYMP-IT081; Ra Yellow Mega Pack; Secret Rare
-DUSA-IT060; Duelist Saga; Ultra Rare
-BLMR-IT088; Battles of Legend: Monstrous Revenge; Ultra Rare, pt_sets=
-DUSA-PT060; Duelist Saga; Ultra Rare
-BLMR-PT088; Battles of Legend: Monstrous Revenge; Ultra Rare, sp_sets=
-EOJ-SP047; Enemy of Justice; Common
-SDDE-SP028; The Dark Emperor Structure Deck; Common
-RYMP-SP081; Ra Yellow Mega Pack; Secret Rare
-DUSA-SP060; Duelist Saga; Ultra Rare
-BLMR-SP088; Battles of Legend: Monstrous Revenge; Ultra Rare, jp_sets=
-EOJ-JP047; Enemy of Justice; Common
-EE04-JP227; Expert Edition Volume 4; Rare
-SD14-JP028; Structure Deck: Advent of the Emperor; Common
-20AP-JP035; 20th Anniversary Pack 1st Wave; Normal Parallel Rare, ja_sets=null, ae_sets=
-EOJ-AE047; Enemy of Justice; Common, tc_sets=null, sc_sets=
-ST21-SCP15; Starter Deck 2021 Special Pack; Super Rare
-23RC-SC053; Rarity Collection Quarter Century Edition; Ultra Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare, kr_sets=
-EOJ-KR047; Enemy of Justice; Common
-SD14-KR028; Structure Deck: Advent of the Emperor; Common
-HGP4-KR227; Expert Edition Volume 4; Rare
-20AP-KR035; 20th Anniversary Pack 1st Wave; Normal Parallel Rare, supports=null, anti_supports=null, archseries=null, supports_archetypes=null, anti_supports_archetypes=null, related_to_archetypes=null, counter=null, action=null, stat_change=null, m_s_t=null, summoning=null, attack=null, banished=
-* Banishes negated Summons
-* Banishes cards that would be sent to the Graveyard, life_points=null, fm_for=null, sm_for=null, misc=null, fusion_material=null, synchro_material=null, material=null]
+{
+  "fr_name" : "Fissure Dimensionnelle",
+  "de_name" : "Dimensionsriss",
+  "it_name" : "Spaccatura Dimensionale",
+  "es_name" : "Fisura Dimensional",
+  "ja_name" : "{{Ruby|次|じ}}{{Ruby|元|げん}}の{{Ruby|裂|さ}}け{{Ruby|目|め}}",
+  "romaji_name" : "Jigen no Sakeme",
+  "ko_name" : "차원의 틈",
+  "image" : "DimensionalFissure-BLMR-EN-UR-1E.png",
+  "card_type" : "Spell",
+  "property" : "Continuous",
+  "password" : "81674782",
+  "effect_types" : "Continuous-like",
+  "lore" : "Any [[Monster Card|monster]] [[sent]] to the [[GY]] is [[banish]]ed instead.",
+  "fr_lore" : "Les monstres envoyés au Cimetière sont bannis à la place.",
+  "de_lore" : "Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt.",
+  "it_lore" : "Qualsiasi mostro mandato al Cimitero viene invece bandito.",
+  "pt_lore" : "Qualquer monstro enviado para o Cemitério, em vez disso, é banido.",
+  "es_lore" : "Cualquier monstruo mandado al Cementerio es desterrado en su lugar.",
+  "ja_lore" : "①：このカードが魔法＆罠ゾーンに存在する限り、お互いの墓地へ送られるモンスターは墓地へは行かず除外される。",
+  "ko_lore" : "①: 이 카드가 마법 & 함정 존에 존재하는 한, 서로의 묘지로 보내지는 몬스터는 묘지로는 가지 않고 제외된다.",
+  "database_id" : "6707",
+  "en_sets" : "\nEOJ-EN047; Enemy of Justice; Common\nSDDE-EN028; The Dark Emperor Structure Deck; Common\nCP08-EN004; Champion Pack: Game Eight; Super Rare\nLCGX-EN215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-EN081; Ra Yellow Mega Pack; Secret Rare\nDUSA-EN060; Duelist Saga; Ultra Rare\nBLMR-EN088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "na_sets" : "\nDR04-EN227; Dark Revelation Volume 4; Rare",
+  "fr_sets" : "\nEOJ-FR047; Enemy of Justice; Common\nSDDE-FR028; The Dark Emperor Structure Deck; Common\nCP08-FR004; Champion Pack: Game Eight; Super Rare\nRYMP-FR081; Ra Yellow Mega Pack; Secret Rare\nDUSA-FR060; Duelist Saga; Ultra Rare\nBLMR-FR088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "de_sets" : "\nEOJ-DE047; Enemy of Justice; Common\nSDDE-DE028; The Dark Emperor Structure Deck; Common\nCP08-DE004; Champion Pack: Game Eight; Super Rare\nLCGX-DE215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-DE081; Ra Yellow Mega Pack; Secret Rare\nDUSA-DE060; Duelist Saga; Ultra Rare\nBLMR-DE088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "it_sets" : "\nEOJ-IT047; Enemy of Justice; Common\nSDDE-IT028; The Dark Emperor Structure Deck; Common\nCP08-IT004; Champion Pack: Game Eight; Super Rare\nLCGX-IT215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-IT081; Ra Yellow Mega Pack; Secret Rare\nDUSA-IT060; Duelist Saga; Ultra Rare\nBLMR-IT088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "pt_sets" : "\nDUSA-PT060; Duelist Saga; Ultra Rare\nBLMR-PT088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "sp_sets" : "\nEOJ-SP047; Enemy of Justice; Common\nSDDE-SP028; The Dark Emperor Structure Deck; Common\nRYMP-SP081; Ra Yellow Mega Pack; Secret Rare\nDUSA-SP060; Duelist Saga; Ultra Rare\nBLMR-SP088; Battles of Legend: Monstrous Revenge; Ultra Rare",
+  "jp_sets" : "\nEOJ-JP047; Enemy of Justice; Common\nEE04-JP227; Expert Edition Volume 4; Rare\nSD14-JP028; Structure Deck: Advent of the Emperor; Common\n20AP-JP035; 20th Anniversary Pack 1st Wave; Normal Parallel Rare",
+  "ae_sets" : "\nEOJ-AE047; Enemy of Justice; Common",
+  "sc_sets" : "\nST21-SCP15; Starter Deck 2021 Special Pack; Super Rare\n23RC-SC053; Rarity Collection Quarter Century Edition; Ultra Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare",
+  "kr_sets" : "\nEOJ-KR047; Enemy of Justice; Common\nSD14-KR028; Structure Deck: Advent of the Emperor; Common\nHGP4-KR227; Expert Edition Volume 4; Rare\n20AP-KR035; 20th Anniversary Pack 1st Wave; Normal Parallel Rare",
+  "banished" : "\n* Banishes negated Summons\n* Banishes cards that would be sent to the Graveyard"
+}

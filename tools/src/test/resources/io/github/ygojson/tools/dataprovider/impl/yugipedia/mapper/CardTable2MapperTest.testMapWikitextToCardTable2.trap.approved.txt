@@ -1,202 +1,41 @@
-CardTable2[cardclass=null, name=null, fr_name=Trappe, de_name=Fallgrube, it_name=Buco Trappola, es_name=Agujero Trampa, ja_name={{Ruby|落|お}}とし{{Ruby|穴|あな}}, romaji_name=Otoshiana, trans_name=Pitfall, base_romaji_name=null, base_trans_name=null, zh_name=null, zh_pinyin_name=null, zh_trans_name=null, ko_name=함정 속으로, ko_rr_name=Hamjeong Sok-euro, ko_trans_name=null, alt_name=null, alt_name2=null, alt_name3=null, ja_alt_name=null, ja_alt_romaji=null, ja_alt_trans=null, image=TrapHole-LOB-EN-SR-UE-25thAnniversaryEdition.png, image2=null, card_type=Trap, property=Normal, attribute=null, character=null, types=null, level=null, rank=null, link_arrows=null, pendulum_scale=null, maximum_atk=null, atk=null, def=null, password=04206964, limitation_text=null, ritualcard=null, ritualmonster=null, summon=null, effect_types=Effect, pendulum_effect_types=null, ocg_status=null, tcg_status=null, tcg_speed_duel_status=null, source_card=null, skill_activation=null, fr_skill_activation=null, de_skill_activation=null, it_skill_activation=null, pt_skill_activation=null, es_skill_activation=null, pendulum_effect=null, fr_pendulum_effect=null, de_pendulum_effect=null, it_pendulum_effect=null, pt_pendulum_effect=null, es_pendulum_effect=null, ja_pendulum_effect=null, trans_pendulum_effect=null, zh_pendulum_effect=null, ko_pendulum_effect=null, lore=When your opponent [[Normal Summon|Normal]] or [[Flip Summon]]s a [[monster]] with 1000 or more [[ATK]]: [[Target]] that monster; [[destroy]] that target., fr_lore=Lorsque votre adversaire Invoque Normalement ou par Flip un monstre avec min. 1000 ATK : ciblez le monstre ; détruisez la cible., de_lore=Wenn dein Gegner ein Monster mit 1000 oder mehr ATK als Normal- oder Flippbeschwörung beschwört: Wähle jenes Monster; zerstöre jenes gewählte Ziel., it_lore=Quando il tuo avversario Evoca Normalmente o per Scoperta un mostro con ATK 1000 o superiore: scegli come bersaglio quel mostro; distruggi quel bersaglio., pt_lore=Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo., es_lore=Cuando tu adversario Invoca de Modo Normal o por Volteo un monstruo con 1000 ATK o más: selecciona ese monstruo; destruye ese objetivo., ja_lore=①：相手が攻撃力１０００以上のモンスターの召喚・反転召喚に成功した時、そのモンスター１体を対象として発動できる。その攻撃力１０００以上のモンスターを破壊する。, trans_lore=null, zh_lore=null, ko_lore=①: 상대가 공격력 1000 이상의 몬스터의 일반 소환 / 반전 소환에 성공했을 때, 그 몬스터 1장을 대상으로 하고 발동할 수 있다. 그 공격력 1000 이상의 몬스터를 파괴한다., use=null, database_id=4836, en_sets=
-SYE-041; Starter Deck: Yugi Evolution; Common
-SKE-042; Starter Deck: Kaiba Evolution; Common
-DB1-EN118; Dark Beginning 1; Rare
-LOB-EN058; Legend of Blue Eyes White Dragon; Super Rare
-HL03-EN003; Hobby League 3 participation card C; Ultra Parallel Rare
-YSDJ-EN034; Starter Deck: Jaden Yuki; Common
-YSDS-EN032; Starter Deck: Syrus Truesdale; Common
-5DS1-EN036; Starter Deck: Yu-Gi-Oh! 5D's; Common
-DL09-EN017; Duelist League 2010 participation cards; Rare
-5DS3-EN030; Starter Deck: Duelist Toolbox; Common
-YS11-EN034; Starter Deck: Dawn of the Xyz; Common
-YS12-EN032; Starter Deck: Xyz Symphony; Common
-LCYW-EN177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare
-LCJW-EN073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-EN038; Starter Deck: Yugi Reloaded; Common
-YSKR-EN042; Starter Deck: Kaiba Reloaded; Common
-YS14-EN031; Super Starter: Space-Time Showdown; Common
-SDBT-EN028; Structure Deck: Beware of Traptrix; Common
-LOB-EN058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, na_sets=
-LOB-058; Legend of Blue Eyes White Dragon; Super Rare
-SDY-027; Starter Deck: Yugi; Common
-SDK-033; Starter Deck: Kaiba; Common
-SDJ-043; Starter Deck: Joey; Common
-SDP-041; Starter Deck: Pegasus; Common
-DLG1-EN008; Dark Legends; Common
-DT02-EN100; Duel Terminal 2; Duel Terminal Normal Parallel Rare
-YS15-ENF24; Saber Force Starter Deck; Common
-YS15-ENL24; Dark Legion Starter Deck; Common, eu_sets=
-LOB-E046; Legend of Blue Eyes White Dragon; Super Rare
-SDY-E025; Starter Deck: Yugi; Common
-SDK-E030; Starter Deck: Kaiba; Common
-RP01-EN007; Retro Pack; Common
-YS15-ENY17; 2-Player Starter Deck: Yuya & Declan; Common, au_sets=
-LOB-A058; Legend of Blue Eyes White Dragon; Super Rare
-SDY-A027; Starter Deck: Yugi; Common
-SDK-A033; Starter Deck: Kaiba; Common, fr_sets=
-LDD-F046; Legend of Blue Eyes White Dragon; Super Rare
-DDY-F025; Starter Deck: Yugi; Common
-DDK-F030; Starter Deck: Kaiba; Common
-DDJ-F043; Starter Deck: Joey; Common
-DDP-F041; Starter Deck: Pegasus; Common
-SYE-FR041; Starter Deck: Yugi Evolution; Common
-SKE-FR042; Starter Deck: Kaiba Evolution; Common
-YSDJ-FR034; Starter Deck: Jaden Yuki; Common
-YSDS-FR032; Starter Deck: Syrus Truesdale; Common
-RP01-FR007; Retro Pack; Common
-5DS1-FR036; Starter Deck: Yu-Gi-Oh! 5D's; Common
-DL09-FR017; Duelist League 2010 participation cards; Rare
-5DS3-FR030; Starter Deck: Duelist Toolbox; Common
-YS11-FR034; Starter Deck: Dawn of the Xyz; Common
-YS12-FR032; Starter Deck: Xyz Symphony; Common
-LCYW-FR177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare
-LCJW-FR073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-FR038; Starter Deck: Yugi Reloaded; Common
-YSKR-FR042; Starter Deck: Kaiba Reloaded; Common
-YS14-FR031; Super Starter: Space-Time Showdown; Common
-YS15-FRY17; 2-Player Starter Deck: Yuya & Declan; Common
-SDBT-FR028; Structure Deck: Beware of Traptrix; Common
-LOB-FR058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, fc_sets=
-LDD-C058; Legend of Blue Eyes White Dragon; Super Rare
-DDY-C027; Starter Deck: Yugi; Common
-DDK-C033; Starter Deck: Kaiba; Common, de_sets=
-LOB-G046; Legend of Blue Eyes White Dragon; Super Rare
-SDY-G025; Starter Deck: Yugi; Common
-SDK-G030; Starter Deck: Kaiba; Common
-SDJ-G043; Starter Deck: Joey; Common
-SDP-G041; Starter Deck: Pegasus; Common
-SYE-DE041; Starter Deck: Yugi Evolution; Common
-SKE-DE042; Starter Deck: Kaiba Evolution; Common
-DB1-DE118; Dark Beginning 1; Rare
-YSDJ-DE034; Starter Deck: Jaden Yuki; Common
-YSDS-DE032; Starter Deck: Syrus Truesdale; Common
-RP01-DE007; Retro Pack; Common
-5DS1-DE036; Starter Deck: Yu-Gi-Oh! 5D's; Common
-DL09-DE017; Duelist League 2010 participation cards; Rare
-5DS3-DE030; Starter Deck: Duelist Toolbox; Common
-YS11-DE034; Starter Deck: Dawn of the Xyz; Common
-YS12-DE032; Starter Deck: Xyz Symphony; Common
-LCYW-DE177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare
-LCJW-DE073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-DE038; Starter Deck: Yugi Reloaded; Common
-YSKR-DE042; Starter Deck: Kaiba Reloaded; Common
-YS14-DE031; Super Starter: Space-Time Showdown; Common
-YS15-DEY17; 2-Player Starter Deck: Yuya & Declan; Common
-SDBT-DE028; Structure Deck: Beware of Traptrix; Common
-LOB-DE058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, it_sets=
-LDD-I046; Legend of Blue Eyes White Dragon; Super Rare
-MIY-I025; Starter Deck: Yugi; Common
-MIK-I030; Starter Deck: Kaiba; Common
-MIJ-I043; Starter Deck: Joey; Common
-MIP-I041; Starter Deck: Pegasus; Common
-SYE-IT041; Starter Deck: Yugi Evolution; Common
-SKE-IT042; Starter Deck: Kaiba Evolution; Common
-YSDJ-IT034; Starter Deck: Jaden Yuki; Common
-YSDS-IT032; Starter Deck: Syrus Truesdale; Common
-RP01-IT007; Retro Pack; Common
-5DS1-IT036; Starter Deck: Yu-Gi-Oh! 5D's; Common
-DL09-IT017; Duelist League 2010 participation cards; Rare
-5DS3-IT030; Starter Deck: Duelist Toolbox; Common
-YS11-IT034; Starter Deck: Dawn of the Xyz; Common
-YS12-IT032; Starter Deck: Xyz Symphony; Common
-LCYW-IT177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare
-LCJW-IT073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-IT038; Starter Deck: Yugi Reloaded; Common
-YSKR-IT042; Starter Deck: Kaiba Reloaded; Common
-YS14-IT031; Super Starter: Space-Time Showdown; Common
-YS15-ITY17; 2-Player Starter Deck: Yuya & Declan; Common
-SDBT-IT028; Structure Deck: Beware of Traptrix; Common
-LOB-IT058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, pt_sets=
-LDB-P058; Legend of Blue Eyes White Dragon; Super Rare
-DIY-P027; Starter Deck: Yugi; Common
-DIK-P033; Starter Deck: Kaiba; Common
-DIJ-P043; Starter Deck: Joey; Common
-DIP-P041; Starter Deck: Pegasus; Common
-SYE-PT041; Starter Deck: Yugi Evolution; Common
-SKE-PT042; Starter Deck: Kaiba Evolution; Common
-LCJW-PT073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-PT038; Starter Deck: Yugi Reloaded; Common
-YSKR-PT042; Starter Deck: Kaiba Reloaded; Common
-YS14-PT031; Super Starter: Space-Time Showdown; Common
-YS15-PTY17; 2-Player Starter Deck: Yuya & Declan; Common
-SDBT-PT028; Structure Deck: Beware of Traptrix; Common
-LOB-PT058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, sp_sets=
-LDD-S058; Legend of Blue Eyes White Dragon; Super Rare
-BIY-S027; Starter Deck: Yugi; Common
-BIK-S033; Starter Deck: Kaiba; Common
-BIJ-S043; Starter Deck: Joey; Common
-BIP-S041; Starter Deck: Pegasus; Common
-SYE-SP041; Starter Deck: Yugi Evolution; Common
-SKE-SP042; Starter Deck: Kaiba Evolution; Common
-DB1-SP118; Dark Beginning 1; Rare
-YSDJ-SP034; Starter Deck: Jaden Yuki; Common
-YSDS-SP032; Starter Deck: Syrus Truesdale; Common
-5DS1-SP036; Starter Deck: Yu-Gi-Oh! 5D's; Common
-DL09-SP017; Duelist League 2010 participation cards; Rare
-5DS3-SP030; Starter Deck: Duelist Toolbox; Common
-YS11-SP034; Starter Deck: Dawn of the Xyz; Common
-YS12-SP032; Starter Deck: Xyz Symphony; Common
-LCYW-SP177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare
-LCJW-SP073; Legendary Collection 4: Joey's World Mega Pack; Common
-YSYR-SP038; Starter Deck: Yugi Reloaded; Common
-YSKR-SP042; Starter Deck: Kaiba Reloaded; Common
-YS14-SP031; Super Starter: Space-Time Showdown; Common
-YS15-SPY17; 2-Player Starter Deck: Yuya & Declan; Common
-SDBT-SP028; Structure Deck: Beware of Traptrix; Common
-LOB-SP058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare, jp_sets=
-; Vol.1; Super Rare
-; EX Starter Box; Common
-LB-57; Legend of Blue Eyes White Dragon (Japanese); Super Rare
-EX-27; EX-R Starter Box; Common
-JY-30; Structure Deck: Joey; Common
-DL2-039; Duelist Legacy Volume.2; Rare
-SY2-052; Structure Deck: Yugi Volume 2; Common
-PC2-007; World Ranking Promos: Series 2; Common, Normal Parallel Rare
-BE1-JP118; Beginner's Edition 1; Rare
-YSD2-JP034; Starter Deck 2007; Common
-YSD3-JP036; Starter Deck 2008; Common
-DT04-JP050; Duel Terminal - Demon Roar God Revival!!; Duel Terminal Normal Parallel Rare
-YSD5-JP033; Starter Deck 2010; Common
-GS03-JP018; Gold Series 2011; Common, Gold Rare
-YSD6-JP034; Starter Deck 2011; Common
-BE01-JP101; Beginner's Edition 1 (2011); Rare
-ST12-JP032; Starter Deck 2012; Common
-GDB1-JP058; The Gold Box; Gold Rare
-HD13-JPL17; Half-Deck: LIGHT; Common
-HD13-JPD17; Half-Deck: DARK; Common
-ST14-JP031; Starter Deck 2014; Common
-VS15-JPS23; Duelist Entry Deck VS; Common
-VS15-JPD24; Duelist Entry Deck VS; Common
-HD18-JPL17; Half Deck 2018: LIGHT; Common
-HD18-JPD17; Half Deck 2018: DARK; Common
-SSD2-JP017; Speed Start Deck Synchro Edition; Common
-SD45-JP028; Structure Deck: Forest of the Traptrix; Common, ja_sets=null, ae_sets=
-LOB-058; Legend of Blue Eyes White Dragon; Common
-SDY-027; Starter Deck: Yugi; Common
-SDK-033; Starter Deck: Kaiba; Common
-SSD2-AE017; Speed Start Deck Synchro Edition; Common, tc_sets=
-ST14-TC033; Duel Starter Deck; Common
-HD13-TCL17; Half-Deck: LIGHT; Common
-HD13-TCD17; Half-Deck: DARK; Common, sc_sets=null, kr_sets=
-LOB-K058; Legend of Blue Eyes White Dragon; Super Rare
-SDY-K027; Starter Deck: Yugi; Common
-SDK-K033; Starter Deck: Kaiba; Common
-SDJ-KR043; Starter Deck: Joey; Common
-SDP-KR041; Starter Deck: Pegasus; Common
-SYE-KR041; Starter Deck: Yugi Evolution; Common
-SKE-KR042; Starter Deck: Kaiba Evolution; Common
-BP1-KR118; Beginner's Edition 1; Rare
-ESP1-KR005; Expansion Pack Vol.1; Common
-YSD3-KR036; Starter Deck 2008; Common
-YSD5-KR033; Starter Deck 2010; Common
-GS03-KR018; Gold Series 2011; Common, Gold Rare
-YSD6-KR034; Starter Deck 2011; Common
-ST12-KR032; Starter Deck 2012; Common
-ST14-KR031; Starter Deck 2014; Common
-VS15-KRS23; Duelist Entry Deck VS: Saber Force; Common
-VS15-KRD24; Duelist Entry Deck VS: Dark Legion; Common
-SSD2-KR017; Speed Start Deck Synchro Edition; Common
-SD45-KR028; Structure Deck: Forest of the Traptrix; Common, supports=null, anti_supports=null, archseries=Trap Hole (archetype), supports_archetypes=null, anti_supports_archetypes=null, related_to_archetypes=null, counter=null, action=null, stat_change=null, m_s_t=
-* Destroys your opponent's Monster Cards
-* Destroys Normal Summoned Monsters, summoning=null, attack=null, banished=null, life_points=null, fm_for=null, sm_for=null, misc=null, fusion_material=null, synchro_material=null, material=null]
+{
+  "m/s/t" : "\n* Destroys your opponent's Monster Cards\n* Destroys Normal Summoned Monsters",
+  "fr_name" : "Trappe",
+  "de_name" : "Fallgrube",
+  "it_name" : "Buco Trappola",
+  "es_name" : "Agujero Trampa",
+  "ja_name" : "{{Ruby|落|お}}とし{{Ruby|穴|あな}}",
+  "romaji_name" : "Otoshiana",
+  "trans_name" : "Pitfall",
+  "ko_name" : "함정 속으로",
+  "ko_rr_name" : "Hamjeong Sok-euro",
+  "image" : "TrapHole-LOB-EN-SR-UE-25thAnniversaryEdition.png",
+  "card_type" : "Trap",
+  "property" : "Normal",
+  "password" : "04206964",
+  "effect_types" : "Effect",
+  "lore" : "When your opponent [[Normal Summon|Normal]] or [[Flip Summon]]s a [[monster]] with 1000 or more [[ATK]]: [[Target]] that monster; [[destroy]] that target.",
+  "fr_lore" : "Lorsque votre adversaire Invoque Normalement ou par Flip un monstre avec min. 1000 ATK : ciblez le monstre ; détruisez la cible.",
+  "de_lore" : "Wenn dein Gegner ein Monster mit 1000 oder mehr ATK als Normal- oder Flippbeschwörung beschwört: Wähle jenes Monster; zerstöre jenes gewählte Ziel.",
+  "it_lore" : "Quando il tuo avversario Evoca Normalmente o per Scoperta un mostro con ATK 1000 o superiore: scegli come bersaglio quel mostro; distruggi quel bersaglio.",
+  "pt_lore" : "Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo.",
+  "es_lore" : "Cuando tu adversario Invoca de Modo Normal o por Volteo un monstruo con 1000 ATK o más: selecciona ese monstruo; destruye ese objetivo.",
+  "ja_lore" : "①：相手が攻撃力１０００以上のモンスターの召喚・反転召喚に成功した時、そのモンスター１体を対象として発動できる。その攻撃力１０００以上のモンスターを破壊する。",
+  "ko_lore" : "①: 상대가 공격력 1000 이상의 몬스터의 일반 소환 / 반전 소환에 성공했을 때, 그 몬스터 1장을 대상으로 하고 발동할 수 있다. 그 공격력 1000 이상의 몬스터를 파괴한다.",
+  "database_id" : "4836",
+  "en_sets" : "\nSYE-041; Starter Deck: Yugi Evolution; Common\nSKE-042; Starter Deck: Kaiba Evolution; Common\nDB1-EN118; Dark Beginning 1; Rare\nLOB-EN058; Legend of Blue Eyes White Dragon; Super Rare\nHL03-EN003; Hobby League 3 participation card C; Ultra Parallel Rare\nYSDJ-EN034; Starter Deck: Jaden Yuki; Common\nYSDS-EN032; Starter Deck: Syrus Truesdale; Common\n5DS1-EN036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-EN017; Duelist League 2010 participation cards; Rare\n5DS3-EN030; Starter Deck: Duelist Toolbox; Common\nYS11-EN034; Starter Deck: Dawn of the Xyz; Common\nYS12-EN032; Starter Deck: Xyz Symphony; Common\nLCYW-EN177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-EN073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-EN038; Starter Deck: Yugi Reloaded; Common\nYSKR-EN042; Starter Deck: Kaiba Reloaded; Common\nYS14-EN031; Super Starter: Space-Time Showdown; Common\nSDBT-EN028; Structure Deck: Beware of Traptrix; Common\nLOB-EN058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "na_sets" : "\nLOB-058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-027; Starter Deck: Yugi; Common\nSDK-033; Starter Deck: Kaiba; Common\nSDJ-043; Starter Deck: Joey; Common\nSDP-041; Starter Deck: Pegasus; Common\nDLG1-EN008; Dark Legends; Common\nDT02-EN100; Duel Terminal 2; Duel Terminal Normal Parallel Rare\nYS15-ENF24; Saber Force Starter Deck; Common\nYS15-ENL24; Dark Legion Starter Deck; Common",
+  "eu_sets" : "\nLOB-E046; Legend of Blue Eyes White Dragon; Super Rare\nSDY-E025; Starter Deck: Yugi; Common\nSDK-E030; Starter Deck: Kaiba; Common\nRP01-EN007; Retro Pack; Common\nYS15-ENY17; 2-Player Starter Deck: Yuya & Declan; Common",
+  "au_sets" : "\nLOB-A058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-A027; Starter Deck: Yugi; Common\nSDK-A033; Starter Deck: Kaiba; Common",
+  "fr_sets" : "\nLDD-F046; Legend of Blue Eyes White Dragon; Super Rare\nDDY-F025; Starter Deck: Yugi; Common\nDDK-F030; Starter Deck: Kaiba; Common\nDDJ-F043; Starter Deck: Joey; Common\nDDP-F041; Starter Deck: Pegasus; Common\nSYE-FR041; Starter Deck: Yugi Evolution; Common\nSKE-FR042; Starter Deck: Kaiba Evolution; Common\nYSDJ-FR034; Starter Deck: Jaden Yuki; Common\nYSDS-FR032; Starter Deck: Syrus Truesdale; Common\nRP01-FR007; Retro Pack; Common\n5DS1-FR036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-FR017; Duelist League 2010 participation cards; Rare\n5DS3-FR030; Starter Deck: Duelist Toolbox; Common\nYS11-FR034; Starter Deck: Dawn of the Xyz; Common\nYS12-FR032; Starter Deck: Xyz Symphony; Common\nLCYW-FR177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-FR073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-FR038; Starter Deck: Yugi Reloaded; Common\nYSKR-FR042; Starter Deck: Kaiba Reloaded; Common\nYS14-FR031; Super Starter: Space-Time Showdown; Common\nYS15-FRY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-FR028; Structure Deck: Beware of Traptrix; Common\nLOB-FR058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "fc_sets" : "\nLDD-C058; Legend of Blue Eyes White Dragon; Super Rare\nDDY-C027; Starter Deck: Yugi; Common\nDDK-C033; Starter Deck: Kaiba; Common",
+  "de_sets" : "\nLOB-G046; Legend of Blue Eyes White Dragon; Super Rare\nSDY-G025; Starter Deck: Yugi; Common\nSDK-G030; Starter Deck: Kaiba; Common\nSDJ-G043; Starter Deck: Joey; Common\nSDP-G041; Starter Deck: Pegasus; Common\nSYE-DE041; Starter Deck: Yugi Evolution; Common\nSKE-DE042; Starter Deck: Kaiba Evolution; Common\nDB1-DE118; Dark Beginning 1; Rare\nYSDJ-DE034; Starter Deck: Jaden Yuki; Common\nYSDS-DE032; Starter Deck: Syrus Truesdale; Common\nRP01-DE007; Retro Pack; Common\n5DS1-DE036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-DE017; Duelist League 2010 participation cards; Rare\n5DS3-DE030; Starter Deck: Duelist Toolbox; Common\nYS11-DE034; Starter Deck: Dawn of the Xyz; Common\nYS12-DE032; Starter Deck: Xyz Symphony; Common\nLCYW-DE177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-DE073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-DE038; Starter Deck: Yugi Reloaded; Common\nYSKR-DE042; Starter Deck: Kaiba Reloaded; Common\nYS14-DE031; Super Starter: Space-Time Showdown; Common\nYS15-DEY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-DE028; Structure Deck: Beware of Traptrix; Common\nLOB-DE058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "it_sets" : "\nLDD-I046; Legend of Blue Eyes White Dragon; Super Rare\nMIY-I025; Starter Deck: Yugi; Common\nMIK-I030; Starter Deck: Kaiba; Common\nMIJ-I043; Starter Deck: Joey; Common\nMIP-I041; Starter Deck: Pegasus; Common\nSYE-IT041; Starter Deck: Yugi Evolution; Common\nSKE-IT042; Starter Deck: Kaiba Evolution; Common\nYSDJ-IT034; Starter Deck: Jaden Yuki; Common\nYSDS-IT032; Starter Deck: Syrus Truesdale; Common\nRP01-IT007; Retro Pack; Common\n5DS1-IT036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-IT017; Duelist League 2010 participation cards; Rare\n5DS3-IT030; Starter Deck: Duelist Toolbox; Common\nYS11-IT034; Starter Deck: Dawn of the Xyz; Common\nYS12-IT032; Starter Deck: Xyz Symphony; Common\nLCYW-IT177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-IT073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-IT038; Starter Deck: Yugi Reloaded; Common\nYSKR-IT042; Starter Deck: Kaiba Reloaded; Common\nYS14-IT031; Super Starter: Space-Time Showdown; Common\nYS15-ITY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-IT028; Structure Deck: Beware of Traptrix; Common\nLOB-IT058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "pt_sets" : "\nLDB-P058; Legend of Blue Eyes White Dragon; Super Rare\nDIY-P027; Starter Deck: Yugi; Common\nDIK-P033; Starter Deck: Kaiba; Common\nDIJ-P043; Starter Deck: Joey; Common\nDIP-P041; Starter Deck: Pegasus; Common\nSYE-PT041; Starter Deck: Yugi Evolution; Common\nSKE-PT042; Starter Deck: Kaiba Evolution; Common\nLCJW-PT073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-PT038; Starter Deck: Yugi Reloaded; Common\nYSKR-PT042; Starter Deck: Kaiba Reloaded; Common\nYS14-PT031; Super Starter: Space-Time Showdown; Common\nYS15-PTY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-PT028; Structure Deck: Beware of Traptrix; Common\nLOB-PT058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "sp_sets" : "\nLDD-S058; Legend of Blue Eyes White Dragon; Super Rare\nBIY-S027; Starter Deck: Yugi; Common\nBIK-S033; Starter Deck: Kaiba; Common\nBIJ-S043; Starter Deck: Joey; Common\nBIP-S041; Starter Deck: Pegasus; Common\nSYE-SP041; Starter Deck: Yugi Evolution; Common\nSKE-SP042; Starter Deck: Kaiba Evolution; Common\nDB1-SP118; Dark Beginning 1; Rare\nYSDJ-SP034; Starter Deck: Jaden Yuki; Common\nYSDS-SP032; Starter Deck: Syrus Truesdale; Common\n5DS1-SP036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-SP017; Duelist League 2010 participation cards; Rare\n5DS3-SP030; Starter Deck: Duelist Toolbox; Common\nYS11-SP034; Starter Deck: Dawn of the Xyz; Common\nYS12-SP032; Starter Deck: Xyz Symphony; Common\nLCYW-SP177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-SP073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-SP038; Starter Deck: Yugi Reloaded; Common\nYSKR-SP042; Starter Deck: Kaiba Reloaded; Common\nYS14-SP031; Super Starter: Space-Time Showdown; Common\nYS15-SPY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-SP028; Structure Deck: Beware of Traptrix; Common\nLOB-SP058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
+  "jp_sets" : "\n; Vol.1; Super Rare\n; EX Starter Box; Common\nLB-57; Legend of Blue Eyes White Dragon (Japanese); Super Rare\nEX-27; EX-R Starter Box; Common\nJY-30; Structure Deck: Joey; Common\nDL2-039; Duelist Legacy Volume.2; Rare\nSY2-052; Structure Deck: Yugi Volume 2; Common\nPC2-007; World Ranking Promos: Series 2; Common, Normal Parallel Rare\nBE1-JP118; Beginner's Edition 1; Rare\nYSD2-JP034; Starter Deck 2007; Common\nYSD3-JP036; Starter Deck 2008; Common\nDT04-JP050; Duel Terminal - Demon Roar God Revival!!; Duel Terminal Normal Parallel Rare\nYSD5-JP033; Starter Deck 2010; Common\nGS03-JP018; Gold Series 2011; Common, Gold Rare\nYSD6-JP034; Starter Deck 2011; Common\nBE01-JP101; Beginner's Edition 1 (2011); Rare\nST12-JP032; Starter Deck 2012; Common\nGDB1-JP058; The Gold Box; Gold Rare\nHD13-JPL17; Half-Deck: LIGHT; Common\nHD13-JPD17; Half-Deck: DARK; Common\nST14-JP031; Starter Deck 2014; Common\nVS15-JPS23; Duelist Entry Deck VS; Common\nVS15-JPD24; Duelist Entry Deck VS; Common\nHD18-JPL17; Half Deck 2018: LIGHT; Common\nHD18-JPD17; Half Deck 2018: DARK; Common\nSSD2-JP017; Speed Start Deck Synchro Edition; Common\nSD45-JP028; Structure Deck: Forest of the Traptrix; Common",
+  "ae_sets" : "\nLOB-058; Legend of Blue Eyes White Dragon; Common\nSDY-027; Starter Deck: Yugi; Common\nSDK-033; Starter Deck: Kaiba; Common\nSSD2-AE017; Speed Start Deck Synchro Edition; Common",
+  "tc_sets" : "\nST14-TC033; Duel Starter Deck; Common\nHD13-TCL17; Half-Deck: LIGHT; Common\nHD13-TCD17; Half-Deck: DARK; Common",
+  "kr_sets" : "\nLOB-K058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-K027; Starter Deck: Yugi; Common\nSDK-K033; Starter Deck: Kaiba; Common\nSDJ-KR043; Starter Deck: Joey; Common\nSDP-KR041; Starter Deck: Pegasus; Common\nSYE-KR041; Starter Deck: Yugi Evolution; Common\nSKE-KR042; Starter Deck: Kaiba Evolution; Common\nBP1-KR118; Beginner's Edition 1; Rare\nESP1-KR005; Expansion Pack Vol.1; Common\nYSD3-KR036; Starter Deck 2008; Common\nYSD5-KR033; Starter Deck 2010; Common\nGS03-KR018; Gold Series 2011; Common, Gold Rare\nYSD6-KR034; Starter Deck 2011; Common\nST12-KR032; Starter Deck 2012; Common\nST14-KR031; Starter Deck 2014; Common\nVS15-KRS23; Duelist Entry Deck VS: Saber Force; Common\nVS15-KRD24; Duelist Entry Deck VS: Dark Legion; Common\nSSD2-KR017; Speed Start Deck Synchro Edition; Common\nSD45-KR028; Structure Deck: Forest of the Traptrix; Common",
+  "archseries" : "Trap Hole (archetype)"
+}

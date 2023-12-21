@@ -1,6 +1,8 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
  * Yugipedia's Model for CardTable2.
@@ -19,6 +21,7 @@ public record CardTable2(
 	String de_name,
 	String it_name,
 	String es_name,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ja_name,
 	String romaji_name,
 	String trans_name,
@@ -67,44 +70,81 @@ public record CardTable2(
 	String it_skill_activation,
 	String pt_skill_activation,
 	String es_skill_activation,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString fr_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString de_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString it_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString pt_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString es_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ja_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString trans_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString zh_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ko_pendulum_effect,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString fr_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString de_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString it_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString pt_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString es_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ja_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString trans_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString zh_lore,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ko_lore,
 	String use,
 	String database_id,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString en_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString na_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString eu_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString au_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString fr_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString fc_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString de_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString it_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString pt_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString sp_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString jp_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ja_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString ae_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString tc_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString sc_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString kr_sets,
+	@JsonSerialize(using = ToStringSerializer.class) // ensure text with markup serialization
 	MarkupString supports,
 	@JsonProperty("anti-supports") // not valid java variable name
 	String anti_supports,
