@@ -44,6 +44,7 @@ class CardTable2MapperTest {
 		Approvals.verify(
 			asJsonString,
 			Approvals.NAMES.withParameters(wikitextTestData.testName())
+				.forFile().withExtension(".json")
 		);
 	}
 
