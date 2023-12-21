@@ -3,6 +3,7 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.approvaltests.Approvals;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -31,6 +32,7 @@ class CardTable2MapperTest {
 		);
 	}
 
+	@Test
 	void testMapNullWikitextToCardTable2() {
 		// given
 		String wikitext = null;
