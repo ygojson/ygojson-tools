@@ -1,5 +1,7 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * Yugipedia's Model for CardTable2.
  * <br>
@@ -104,17 +106,17 @@ public record CardTable2(
 	MarkupString sc_sets,
 	MarkupString kr_sets,
 	MarkupString supports,
-	//  anti-supports_archetypes - as it is not a valid name
+	@JsonProperty("anti-supports") // not valid java variable name
 	String anti_supports,
 	String archseries,
 	String supports_archetypes,
-	//  anti-supports_archetypes - as it is not a valid name
+	@JsonProperty("anti-supports_archetypes") // not valid java variable name
 	String anti_supports_archetypes,
 	String related_to_archetypes,
 	String counter,
 	String action,
 	String stat_change,
-	//  m/s/t - as it is not a valid name
+	@JsonProperty("m/s/t") // not valid java variable name
 	String m_s_t,
 	String summoning,
 	String attack,
