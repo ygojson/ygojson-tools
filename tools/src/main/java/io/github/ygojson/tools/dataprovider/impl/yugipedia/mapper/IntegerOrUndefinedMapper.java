@@ -9,7 +9,10 @@ public abstract class IntegerOrUndefinedMapper {
 
 	public abstract IntegerOrUndefined map(final String value);
 
-	public int mapToInt(final IntegerOrUndefined integerOrUndefined) {
+	public Integer mapToInt(final IntegerOrUndefined integerOrUndefined) {
+		if (integerOrUndefined == null) {
+			return null;
+		}
 		return integerOrUndefined.asInteger();
 	}
 
