@@ -17,6 +17,9 @@ public abstract class IntegerOrUndefinedMapper {
 	}
 
 	public boolean mapToUndefined(final IntegerOrUndefined integerOrUndefined) {
+		if (integerOrUndefined == null) {
+			return false;
+		}
 		return integerOrUndefined.isUndefined();
 	}
 }

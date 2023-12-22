@@ -3,9 +3,14 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
+/**
+ * Identifies an integer that can be undefined by matching '?'.
+ */
 @JsonSerialize(using = ToStringSerializer.class)
 public class IntegerOrUndefined {
-
+	/**
+	 * Undefined value for the integer string (i.e., atk/def).
+	 */
 	private static final String UNDEFINED_VALUE = "?";
 
 	private final String value;
