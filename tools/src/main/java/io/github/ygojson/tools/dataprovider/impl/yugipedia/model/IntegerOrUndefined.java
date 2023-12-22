@@ -16,7 +16,15 @@ public class IntegerOrUndefined {
 
 	private final String value;
 
+	/**
+	 * Default constructor.
+	 *
+	 * @param value non-null integer or undefined value string.
+	 */
 	public IntegerOrUndefined(final String value) {
+		if (value == null) {
+			throw new IllegalArgumentException("Value cannot be null");
+		}
 		this.value = value;
 	}
 
@@ -34,12 +42,13 @@ public class IntegerOrUndefined {
 	 * Return as an integer.
 	 *
 	 * @return integer.
+	 * @throws NumberFormatException if the value is not an integer nor undefined.
 	 */
-	public int asInteger() {
+	public int asInteger() throws NumberFormatException {
 		if (isUndefined()) {
 			return 0;
 		}
-		return Integer.valueOf(value);
+		return Integer.parseInt(value);
 	}
 
 	@Override
