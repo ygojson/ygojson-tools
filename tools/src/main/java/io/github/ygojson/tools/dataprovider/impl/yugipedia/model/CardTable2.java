@@ -20,6 +20,7 @@ public record CardTable2(
 	String fr_name,
 	String de_name,
 	String it_name,
+	String pt_name,
 	String es_name,
 	MarkupString ja_name,
 	String romaji_name,
