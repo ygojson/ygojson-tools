@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
  */
 @JsonSerialize(using = ToStringSerializer.class)
 public class IntegerOrUndefined {
+
 	/**
 	 * Undefined value for the integer string (i.e., atk/def).
 	 */
