@@ -47,7 +47,7 @@ public record CardTable2(
 	String types,
 	String level,
 	String rank,
-	String link_arrows,
+	List<String> link_arrows,
 	String pendulum_scale,
 	String maximum_atk,
 	IntegerOrUndefined atk,

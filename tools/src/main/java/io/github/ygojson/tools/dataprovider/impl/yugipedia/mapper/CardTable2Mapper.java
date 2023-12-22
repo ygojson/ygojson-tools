@@ -90,6 +90,7 @@ public abstract class CardTable2Mapper {
 	@Mapping(target = "ja_name", qualifiedByName = "japanese")
 	@Mapping(target = "ja_pendulum_effect", qualifiedByName = "japanese")
 	@Mapping(target = "ja_lore", qualifiedByName = "japanese")
+	@Mapping(target = "link_arrows", qualifiedByName = "commaSeparatedList")
 	protected abstract CardTable2 mapToCardTable2(
 		final Map<String, String> asMap
 	);

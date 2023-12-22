@@ -54,4 +54,9 @@ public abstract class MarkupStringMapper {
 	public List<MarkupString> mapToNewLineList(final String property) {
 		return map(property).splitByNewLine(true).toList();
 	}
+
+	@Named("commaSeparatedList")
+	public List<String> mapToCommaSeparatedList(final String property) {
+		return map(property).splitByComma().map(MarkupString::toString).toList();
+	}
 }

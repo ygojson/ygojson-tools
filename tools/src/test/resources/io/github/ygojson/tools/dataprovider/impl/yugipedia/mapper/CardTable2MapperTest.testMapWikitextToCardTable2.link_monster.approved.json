@@ -12,7 +12,7 @@
   "card_type" : "Monster",
   "attribute" : "DARK",
   "types" : "Fiend / Link / Effect",
-  "link_arrows" : "Middle-Left, Bottom-Center, Middle-Right",
+  "link_arrows" : [ "Middle-Left", "Bottom-Center", "Middle-Right" ],
   "atk" : "2200",
   "password" : "38342335",
   "effect_types" : "Trigger, Condition, Continuous",
