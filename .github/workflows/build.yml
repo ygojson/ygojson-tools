@@ -27,3 +27,8 @@ jobs:
         run: ./mvnw -B --no-transfer-progress spotless:check
       - name: ✅ Test & Build
         run: ./mvnw -B -DskipLint=true --no-transfer-progress install
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
