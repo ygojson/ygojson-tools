@@ -54,4 +54,14 @@ class IntegerOrUndefinedUnitTest {
 		assertThatThrownBy(throwingCallable)
 			.isInstanceOf(NumberFormatException.class);
 	}
+
+	@Test
+	void given_undefinedString_when_asInteger_thenReturnsZero() {
+		// given
+		IntegerOrUndefined integerOrUndefined = new IntegerOrUndefined("?");
+		// when
+		final int asInteger = integerOrUndefined.asInteger();
+		// then
+		assertThat(asInteger).isEqualTo(0);
+	}
 }

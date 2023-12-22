@@ -9,17 +9,24 @@ public abstract class IntegerOrUndefinedMapper {
 
 	public abstract IntegerOrUndefined map(final String value);
 
-	public Integer mapToInt(final IntegerOrUndefined integerOrUndefined) {
-		if (integerOrUndefined == null) {
+	public Integer mapToInt(final IntegerOrUndefined value) {
+		if (value == null) {
 			return null;
 		}
-		return integerOrUndefined.asInteger();
+		return value.asInteger();
 	}
 
-	public boolean mapToUndefined(final IntegerOrUndefined integerOrUndefined) {
-		if (integerOrUndefined == null) {
+	/**
+	 * Maps the value to its undefined state.
+	 *
+	 * @param value the actual value or {@code null}.
+	 *
+	 * @return the undefined state; if {@code null} returns {@code false}.
+	 */
+	public boolean mapToUndefined(final IntegerOrUndefined value) {
+		if (value == null) {
 			return false;
 		}
-		return integerOrUndefined.isUndefined();
+		return value.isUndefined();
 	}
 }
