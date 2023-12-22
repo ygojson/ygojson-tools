@@ -8,10 +8,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+
 /**
  * String that might contain markup from the Yugipedia API
  * that can be clenaup.
  */
+@JsonSerialize(using = ToStringSerializer.class)
 public final class MarkupString {
 
 	/**

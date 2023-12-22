@@ -1,5 +1,7 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
+import java.util.List;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Named;
 
@@ -44,5 +46,9 @@ public abstract class MarkupStringMapper {
 	 */
 	public String map(final MarkupString property) {
 		return property.withoutMarkup();
+	}
+
+	public List<MarkupString> mapToNewLineList(final String property) {
+		return map(property).splitByNewLine(true).toList();
 	}
 }
