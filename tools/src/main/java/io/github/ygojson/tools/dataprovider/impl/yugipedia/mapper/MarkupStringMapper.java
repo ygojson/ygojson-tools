@@ -45,6 +45,9 @@ public abstract class MarkupStringMapper {
 	 * @return property without markup.
 	 */
 	public String map(final MarkupString property) {
+		if (property == null) {
+			return null;
+		}
 		return property.withoutMarkup();
 	}
 
