@@ -16,7 +16,7 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
  * using also {@link io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString}
  * or derived models for some fields.
  */
-@Mapper(uses = MarkupStringMapper.class)
+@Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
 public abstract class CardTable2Mapper {
 
 	public static final CardTable2Mapper INSTANCE = Mappers.getMapper(
@@ -90,6 +90,7 @@ public abstract class CardTable2Mapper {
 	@Mapping(target = "ja_name", qualifiedByName = "japanese")
 	@Mapping(target = "ja_pendulum_effect", qualifiedByName = "japanese")
 	@Mapping(target = "ja_lore", qualifiedByName = "japanese")
+	@Mapping(target = "link_arrows", qualifiedByName = "commaSeparatedStringList")
 	protected abstract CardTable2 mapToCardTable2(
 		final Map<String, String> asMap
 	);
