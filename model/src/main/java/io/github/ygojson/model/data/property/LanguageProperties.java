@@ -62,6 +62,9 @@ public class LanguageProperties {
 
 	/**
 	 * Chinese localization property.
+	 * <br>
+	 * Localization in chinese can be using simplified
+	 * or traditional chinese.
 	 */
 	public static final String ZH = "zh";
 
