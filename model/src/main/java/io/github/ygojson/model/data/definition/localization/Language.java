@@ -62,5 +62,4 @@ public enum Language {
 	 */
 	@JsonProperty(value = LanguageProperties.ZH_HANT)
 	ZH_HANT,
-
 }
