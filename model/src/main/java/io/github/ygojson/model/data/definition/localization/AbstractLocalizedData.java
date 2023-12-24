@@ -121,10 +121,21 @@ abstract class AbstractLocalizedData<T> {
 	 *
 	 * @return the translation
 	 */
-	@JsonProperty(value = LanguageProperties.ZH)
+	@JsonProperty(value = LanguageProperties.ZH_HANS)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	public T getZh() {
-		return getData(Language.ZH);
+	public T getZhHans() {
+		return getData(Language.ZH_HANS);
+	}
+
+	/**
+	 * Translation for chinese
+	 *
+	 * @return the translation
+	 */
+	@JsonProperty(value = LanguageProperties.ZH_HANT)
+	@JsonInclude(JsonInclude.Include.NON_NULL)
+	public T getZhHant() {
+		return getData(Language.ZH_HANT);
 	}
 
 	/**
@@ -190,12 +201,21 @@ abstract class AbstractLocalizedData<T> {
 	}
 
 	/**
-	 * Sets the Chinese translation
+	 * Sets the Simplified Chinese translation
 	 *
 	 * @param data the data for the language
 	 */
-	public void setZh(final T data) {
-		setData(Language.ZH, data);
+	public void setZhHans(final T data) {
+		setData(Language.ZH_HANS, data);
+	}
+
+	/**
+	 * Sets the Traditional Chinese translation
+	 *
+	 * @param data the data for the language
+	 */
+	public void setZhHant(final T data) {
+		setData(Language.ZH_HANT, data);
 	}
 
 	@Override

@@ -61,12 +61,14 @@ public class LanguageProperties {
 	public static final String PT = "pt";
 
 	/**
-	 * Chinese localization property.
-	 * <br>
-	 * Localization in chinese can be using simplified
-	 * or traditional chinese.
+	 * Simplified chinese localization property.
 	 */
-	public static final String ZH = "zh";
+	public static final String ZH_HANS = "zh-Hans";
+
+	/**
+	 * Traditional chinese localization property.
+	 */
+	public static final String ZH_HANT = "zh-Hant";
 
 	private LanguageProperties() {
 		// contant class
