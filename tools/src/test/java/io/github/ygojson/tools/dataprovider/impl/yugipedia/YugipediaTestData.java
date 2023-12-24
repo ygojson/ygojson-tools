@@ -38,7 +38,7 @@ public class YugipediaTestData {
 	 */
 	public record ParseWikitextPageTestData(
 		String testName,
-		Integer pageId,
+		Long pageId,
 		String pageTitle,
 		String wikitext
 	) {}
@@ -66,7 +66,7 @@ public class YugipediaTestData {
 						.get("parse");
 					return new ParseWikitextPageTestData(
 						entry.getKey(),
-						parse.get("pageid").asInt(),
+						parse.get("pageid").asLong(),
 						parse.get("title").asText(),
 						parse.get("wikitext").asText()
 					);
@@ -77,31 +77,35 @@ public class YugipediaTestData {
 			.toList();
 	}
 
-	// to register a new test file, it should be grabbed from the yugipedia api
-	// https://yugipedia.com/api.php?action=parse&format=json&formatversion=2&prop=wikitext&page=${page_name}
-	// where page_name is the one for the card that should be used for the specific test
-	// the testName should indicate the reason the card is considered for a test
-	// and it is used as the filename for the testdata (with extension of .json)
 	static {
-		registerParseWikitextPageData("normal_monster");
-		registerParseWikitextPageData("counter_trap");
-		registerParseWikitextPageData("continuous_spell");
-		registerParseWikitextPageData("spell");
-		registerParseWikitextPageData("trap");
-		registerParseWikitextPageData("xyz_monster");
-		registerParseWikitextPageData("effect_monster");
-		registerParseWikitextPageData("link_monster");
-		registerParseWikitextPageData("pendulum_monster");
-		registerParseWikitextPageData("undefined_atk_def");
-		registerParseWikitextPageData("fusion_monster");
-		registerParseWikitextPageData("synchro_monster");
-		registerParseWikitextPageData("name_present");
+		// to register a new parse_wikitext_page file, it should be grabbed from the yugipedia api
+		// https://yugipedia.com/api.php?action=parse&format=json&formatversion=2&prop=wikitext&page=${page_name}
+		// where page_name is the one for the card that should be used for the specific test
+		// the filename should indicate the reason the card is considered for a test (with extension of .json)
+		// this method scans that folder and adds directly to the tests (failing the first time because cause it needs to be approved)
+		registerAllParseWikitextPageData();
 	}
 
-	private static void registerParseWikitextPageData(final String testName) {
-		final Path parseWikitextPage = BASE_PATH
-			.resolve("parse_wikitext_page")
-			.resolve(testName + ".json");
+	private static void registerAllParseWikitextPageData() {
+		final Path parseWikitextPageFolder = BASE_PATH.resolve(
+			"parse_wikitext_page"
+		);
+		try {
+			Files
+				.list(parseWikitextPageFolder)
+				.forEach(YugipediaTestData::registerParseWikitextPageData);
+		} catch (final IOException e) {
+			throw new IllegalStateException("Cannot register test data", e);
+		}
+	}
+
+	private static void registerParseWikitextPageData(
+		final Path parseWikitextPage
+	) {
+		final String testName = parseWikitextPage
+			.getFileName()
+			.toString()
+			.replaceAll(".json", "");
 		if (Files.notExists(parseWikitextPage)) {
 			throw new IllegalStateException(
 				"Resource not found: " + parseWikitextPage
