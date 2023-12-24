@@ -241,4 +241,26 @@ class MarkupStringUnitTest {
 		);
 		assertThat(split).isEqualTo(expected);
 	}
+
+	@Test
+	void given_fullItalicString_when_isAllItalic_then_returnTrue() {
+		// given
+		final MarkupString markupString = MarkupString.of("''All this is italic''");
+		// when
+		final boolean isAllItalic = markupString.isAllItalic();
+		// then
+		assertThat(isAllItalic).isTrue();
+	}
+
+	@Test
+	void given_italicWithPreviousText_when_isAllItalic_then_returnFalse() {
+		// given
+		final MarkupString markupString = MarkupString.of(
+			"This is a first sentence<br>''All this is italic''"
+		);
+		// when
+		final boolean isAllItalic = markupString.isAllItalic();
+		// then
+		assertThat(isAllItalic).isFalse();
+	}
 }

@@ -129,6 +129,18 @@ public final class MarkupString {
 	}
 
 	/**
+	 * Checks if the string is all in italics.
+	 *
+	 * @return {@code true} if it starts and end in italic; {@code false} otherwise.
+	 */
+	public boolean isAllItalic() {
+		if (value == null) {
+			return false;
+		}
+		return MARKUP_ITALIC_REGEX.matcher(value).matches();
+	}
+
+	/**
 	 * Splits the current markup string by new line.
 	 *
 	 * @param skipBlanks if {@code true}, skip blank lines;
