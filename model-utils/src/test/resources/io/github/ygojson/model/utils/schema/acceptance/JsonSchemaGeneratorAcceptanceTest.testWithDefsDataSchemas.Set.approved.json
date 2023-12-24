@@ -25,7 +25,10 @@
         "pt" : {
           "$ref" : "#/$defs/SetText"
         },
-        "zh" : {
+        "zh-Hans" : {
+          "$ref" : "#/$defs/SetText"
+        },
+        "zh-Hant" : {
           "$ref" : "#/$defs/SetText"
         }
       }

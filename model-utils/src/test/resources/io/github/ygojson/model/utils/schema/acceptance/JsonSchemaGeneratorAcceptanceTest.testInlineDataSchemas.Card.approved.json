@@ -238,7 +238,27 @@
             }
           }
         },
-        "zh" : {
+        "zh-Hans" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "effectText" : {
+              "type" : "string"
+            },
+            "flavorText" : {
+              "type" : "string"
+            },
+            "materials" : {
+              "type" : "string"
+            },
+            "pendulumEffect" : {
+              "type" : "string"
+            }
+          }
+        },
+        "zh-Hant" : {
           "type" : "object",
           "properties" : {
             "name" : {

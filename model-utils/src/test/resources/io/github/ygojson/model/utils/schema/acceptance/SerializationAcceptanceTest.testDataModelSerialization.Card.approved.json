@@ -25,21 +25,21 @@
   "linkArrows" : [ "middle-left", "top-center" ],
   "xyzRank" : 828415870,
   "localizedData" : {
-    "de" : {
-      "name" : "XYPEDCTCM",
-      "effectText" : "ZUMETFSA",
-      "flavorText" : "EGJUEPKGO",
-      "materials" : "XAU",
-      "pendulumEffect" : "DBYFL"
+    "pt" : {
+      "name" : "GBCUSP",
+      "effectText" : "IIAVKADE",
+      "flavorText" : "ABDIW",
+      "materials" : "HQJBH",
+      "pendulumEffect" : "YZDCC"
     },
-    "es" : {
+    "zh-Hans" : {
       "name" : "CILHPTA",
       "effectText" : "OBMP",
       "flavorText" : "DEGYRTKTC",
       "materials" : "LQWLX",
       "pendulumEffect" : "JPI"
     },
-    "it" : {
+    "zh-Hant" : {
       "name" : "XIVE",
       "effectText" : "RCITACUEF",
       "flavorText" : "JKTXAF",
