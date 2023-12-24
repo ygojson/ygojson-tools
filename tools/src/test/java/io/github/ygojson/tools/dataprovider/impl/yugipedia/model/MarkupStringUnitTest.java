@@ -263,4 +263,14 @@ class MarkupStringUnitTest {
 		// then
 		assertThat(isAllItalic).isFalse();
 	}
+
+	@Test
+	void given_nullValueMarkupString_when_isAllItalic_then_returnFalse() {
+		// given
+		final MarkupString markupString = MarkupString.of(null);
+		// when
+		final boolean isAllItalic = markupString.isAllItalic();
+		// then
+		assertThat(isAllItalic).isFalse();
+	}
 }
