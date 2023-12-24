@@ -108,7 +108,19 @@
             }
           }
         },
-        "zh" : {
+        "zh-Hans" : {
+          "type" : "object",
+          "properties" : {
+            "prefix" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
+            },
+            "name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "zh-Hant" : {
           "type" : "object",
           "properties" : {
             "prefix" : {

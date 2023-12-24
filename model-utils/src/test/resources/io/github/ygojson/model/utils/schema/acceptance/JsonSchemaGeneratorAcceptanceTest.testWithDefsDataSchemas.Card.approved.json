@@ -25,7 +25,10 @@
         "pt" : {
           "$ref" : "#/$defs/CardText"
         },
-        "zh" : {
+        "zh-Hans" : {
+          "$ref" : "#/$defs/CardText"
+        },
+        "zh-Hant" : {
           "$ref" : "#/$defs/CardText"
         }
       }

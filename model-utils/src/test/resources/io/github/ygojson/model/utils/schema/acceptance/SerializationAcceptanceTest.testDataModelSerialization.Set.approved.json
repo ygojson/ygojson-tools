@@ -5,17 +5,17 @@
   "type" : "JTGD",
   "series" : "XKRPVMWMMP",
   "localizedData" : {
-    "de" : {
-      "prefix" : "HTNSKCWA",
-      "name" : "IWSNLZXIFF"
+    "es" : {
+      "prefix" : "PTEQRGFNZ",
+      "name" : "JSJGG"
     },
     "fr" : {
-      "prefix" : "YHUF",
-      "name" : "JCMX"
-    },
-    "ko" : {
       "prefix" : "LWRKVM",
       "name" : "OZGBO"
+    },
+    "ko" : {
+      "prefix" : "YHUF",
+      "name" : "JCMX"
     }
   }
 }

@@ -28,7 +28,7 @@
     },
     "language" : {
       "type" : "string",
-      "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh" ]
+      "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh-Hans", "zh-Hant" ]
     }
   },
   "required" : [ "id", "cardId", "setId" ],
