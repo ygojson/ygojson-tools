@@ -38,7 +38,7 @@ public class YugipediaTestData {
 	 */
 	public record ParseWikitextPageTestData(
 		String testName,
-		Integer pageId,
+		Long pageId,
 		String pageTitle,
 		String wikitext
 	) {}
@@ -66,7 +66,7 @@ public class YugipediaTestData {
 						.get("parse");
 					return new ParseWikitextPageTestData(
 						entry.getKey(),
-						parse.get("pageid").asInt(),
+						parse.get("pageid").asLong(),
 						parse.get("title").asText(),
 						parse.get("wikitext").asText()
 					);
