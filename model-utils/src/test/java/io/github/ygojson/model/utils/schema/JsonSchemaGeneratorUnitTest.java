@@ -1,5 +1,7 @@
 package io.github.ygojson.model.utils.schema;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.fasterxml.jackson.annotation.JsonClassDescription;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +21,7 @@ class JsonSchemaGeneratorUnitTest {
 	}
 
 	@Test
-	void given_methodAnnotateds_when_generateInline_then_schemaContainsDescriptions() {
+	void given_methodAnnotated_when_generateInline_then_schemaContainsDescriptions() {
 		// given
 		final Class<?> type = MethodAnnotatedClass.class;
 		// when
@@ -35,6 +37,16 @@ class JsonSchemaGeneratorUnitTest {
 		});
 	}
 
+	@Test
+	void given_childAnnotation_when_generateInline_then_schemaDoesNotContainAllOf() {
+		// given
+		final Class<?> type = ParentClass.class;
+		// when
+		final ObjectNode schema = TEST_GENERATOR.generateInline(type, "test");
+		// then
+		assertThat(schema.toPrettyString()).doesNotContain("allOf");
+	}
+
 	private String getDescription(final JsonNode node) {
 		return node.get("description").textValue();
 	}
@@ -45,6 +57,30 @@ class JsonSchemaGeneratorUnitTest {
 		private String test;
 
 		@JsonPropertyDescription("My property description")
+		@JsonProperty("test")
+		public String getTest() {
+			return test;
+		}
+	}
+
+	@JsonClassDescription("Parent class description")
+	private static class ParentClass {
+
+		private ChildClass child;
+
+		@JsonPropertyDescription("Child method description")
+		@JsonProperty("child")
+		public ChildClass getChild() {
+			return child;
+		}
+	}
+
+	@JsonClassDescription("Child class description")
+	private static class ChildClass {
+
+		private String test;
+
+		@JsonPropertyDescription("Test description")
 		@JsonProperty("test")
 		public String getTest() {
 			return test;
