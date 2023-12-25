@@ -38,9 +38,6 @@
       "name" : "Buraco Armadilha",
       "effectText" : "Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo."
     },
-    "zh-Hans" : {
-      "effectText" : "對手攻擊力1000或以上的怪獸召喚／反轉召喚成功時，可選擇1隻該怪獸發動。破壞該攻擊力1000或以上的怪獸。"
-    },
     "zh-Hant" : {
       "name" : "陷坑",
       "effectText" : "對手攻擊力1000或以上的怪獸召喚／反轉召喚成功時，可選擇1隻該怪獸發動。破壞該攻擊力1000或以上的怪獸。"

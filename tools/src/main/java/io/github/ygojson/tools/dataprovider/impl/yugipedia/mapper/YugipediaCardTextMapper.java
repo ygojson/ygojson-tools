@@ -259,7 +259,7 @@ class YugipediaCardTextMapper {
 	) {
 		updateCardTextWithFullLore(
 			card,
-			() -> getZhLore(cardTable2),
+			cardTable2::sc_lore,
 			c -> c.getLocalizedData().getZhHans(),
 			cardText -> card.getLocalizedData().setZhHans(cardText)
 		);
@@ -272,21 +272,10 @@ class YugipediaCardTextMapper {
 	) {
 		updateCardTextWithFullLore(
 			card,
-			() -> getZhLore(cardTable2),
+			cardTable2::tc_lore,
 			c -> c.getLocalizedData().getZhHant(),
 			cardText -> card.getLocalizedData().setZhHant(cardText)
 		);
-	}
-
-	private MarkupString getZhLore(final CardTable2 cardTable2) {
-		MarkupString zh_lore = cardTable2.zh_lore();
-		if (zh_lore == null) {
-			zh_lore = cardTable2.sc_lore();
-		}
-		if (zh_lore == null) {
-			zh_lore = cardTable2.tc_lore();
-		}
-		return zh_lore;
 	}
 
 	/**

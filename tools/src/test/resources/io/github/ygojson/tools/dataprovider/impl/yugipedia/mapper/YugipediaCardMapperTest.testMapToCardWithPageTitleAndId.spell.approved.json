@@ -44,7 +44,7 @@
     },
     "zh-Hant" : {
       "name" : "黑洞",
-      "effectText" : "①：将场上的怪兽全部破坏。"
+      "effectText" : "破坏场上的全部怪兽。"
     }
   }
 }
