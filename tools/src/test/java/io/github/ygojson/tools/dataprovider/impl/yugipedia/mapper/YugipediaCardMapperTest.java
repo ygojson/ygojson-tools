@@ -29,7 +29,7 @@ class YugipediaCardMapperTest {
 	@MethodSource(
 		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getParseWikitextTestData"
 	)
-	void testToCard( // TODO: change name to testToCardWithUpdate
+	void testMapToCardWithPageTitleAndId(
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
 	) throws JsonProcessingException {
 		// given
