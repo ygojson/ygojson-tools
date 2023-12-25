@@ -16,7 +16,9 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
  */
 @Mapper(
 	uses = {
-		GeneralMapper.class, IntegerOrUndefinedMapper.class, YugipediaCardTextMapper.class,
+		GeneralMapper.class,
+		IntegerOrUndefinedMapper.class,
+		YugipediaCardTextMapper.class,
 	},
 	unmappedTargetPolicy = ReportingPolicy.ERROR
 )
