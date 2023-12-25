@@ -1,0 +1,53 @@
+{
+  "id" : null,
+  "identifiers" : {
+    "konamiId" : 4021,
+    "password" : 45231177,
+    "yugipediaPageId" : 142
+  },
+  "name" : "Flame Swordsman",
+  "cardType" : "monster",
+  "monsterTypes" : [ "warrior", "fusion" ],
+  "attribute" : "fire",
+  "atk" : 1800,
+  "def" : 1600,
+  "level" : 5,
+  "materials" : "\"Flame Manipulator\" + \"Masaki the Legendary Swordsman\"",
+  "localizedData" : {
+    "de" : {
+      "name" : "Flammen-Schwertkämpfer",
+      "materials" : "„Flammen-Manipulator“ + „Masaki, legendärer Schwertkämpfer“"
+    },
+    "es" : {
+      "name" : "Espadachín de la Llama",
+      "materials" : "\"Manipulador de la Llama\" + \"Masaki el Espadachín Legendario\""
+    },
+    "fr" : {
+      "name" : "Spadassin des Flammes",
+      "materials" : "\"Manipulateur de Flammes\" + \"Masaki le Spadassin Légendaire\""
+    },
+    "it" : {
+      "name" : "Spadaccino di Fuoco",
+      "materials" : "\"Signore delle Fiamme\" + \"Masaki lo Spadaccino Leggendario\""
+    },
+    "ja" : {
+      "name" : "<ruby>炎<rt>ほのお</rt></ruby>の<ruby>剣<rt>けん</rt></ruby><ruby>士<rt>し</rt></ruby>",
+      "materials" : "「炎を操る者」＋「伝説の剣豪 ＭＡＳＡＫＩ」"
+    },
+    "ko" : {
+      "name" : "화염의 검사",
+      "materials" : "\"화염의 조종자\" ＋ \"전설의 검객 마사키\""
+    },
+    "pt" : {
+      "name" : "Espadachim das Chamas",
+      "materials" : "\"Manipulador de Chamas\" + \"Masaki, o Espadachim Lendário\""
+    },
+    "zh-Hans" : {
+      "name" : "炎之剑士",
+      "materials" : "\"炎之操纵者\"＋\"传说之剑豪 MASAKI\""
+    },
+    "zh-Hant" : {
+      "materials" : "\"炎之操纵者\"＋\"传说之剑豪 MASAKI\""
+    }
+  }
+}

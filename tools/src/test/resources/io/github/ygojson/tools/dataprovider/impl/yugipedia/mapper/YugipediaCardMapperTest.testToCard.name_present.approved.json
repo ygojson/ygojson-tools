@@ -1,0 +1,46 @@
+{
+  "id" : null,
+  "identifiers" : {
+    "konamiId" : 4428,
+    "password" : 32809211,
+    "yugipediaPageId" : 3497
+  },
+  "name" : "Jinzo #7",
+  "cardType" : "monster",
+  "effectText" : "This monster can attack your opponent's Life Points directly.",
+  "monsterTypes" : [ "machine", "effect" ],
+  "attribute" : "dark",
+  "atk" : 500,
+  "def" : 400,
+  "level" : 2,
+  "localizedData" : {
+    "de" : {
+      "name" : "Jinzo #7",
+      "effectText" : "Diese Karte kann die Life Points deines Gegners direkt angreifen."
+    },
+    "es" : {
+      "name" : "Jinzo #7",
+      "effectText" : "Esta carta puede atacar los Life Points de tu adversario directamente."
+    },
+    "fr" : {
+      "name" : "Jinzo N°7",
+      "effectText" : "Ce monstre peut attaquer directement les Life Points de votre adversaire."
+    },
+    "it" : {
+      "name" : "Jinzo #7",
+      "effectText" : "Questo mostro può attaccare direttamente i Life Points del tuo avversario."
+    },
+    "ja" : {
+      "name" : "<ruby>人<rt>じん</rt></ruby><ruby>造<rt>ぞう</rt></ruby><ruby>人<rt>にん</rt></ruby><ruby>間<rt>げん</rt></ruby>７<ruby>号<rt>ごう</rt></ruby>",
+      "effectText" : "このカードは相手プレイヤーを直接攻撃する事ができる。"
+    },
+    "ko" : {
+      "name" : "인조인간7호",
+      "effectText" : "이 카드는 상대를 직접 공격할 수 있다."
+    },
+    "pt" : {
+      "name" : "Jinzo Nº 7",
+      "effectText" : "Esta carta pode atacar seu oponente diretamente."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id" : null,
+  "identifiers" : {
+    "konamiId" : 6707,
+    "password" : 81674782,
+    "yugipediaPageId" : 15582
+  },
+  "name" : "Dimensional Fissure",
+  "cardType" : "spell",
+  "property" : "continuous",
+  "effectText" : "Any monster sent to the GY is banished instead.",
+  "localizedData" : {
+    "de" : {
+      "name" : "Dimensionsriss",
+      "effectText" : "Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt."
+    },
+    "es" : {
+      "name" : "Fisura Dimensional",
+      "effectText" : "Cualquier monstruo mandado al Cementerio es desterrado en su lugar."
+    },
+    "fr" : {
+      "name" : "Fissure Dimensionnelle",
+      "effectText" : "Les monstres envoyés au Cimetière sont bannis à la place."
+    },
+    "it" : {
+      "name" : "Spaccatura Dimensionale",
+      "effectText" : "Qualsiasi mostro mandato al Cimitero viene invece bandito."
+    },
+    "ja" : {
+      "name" : "<ruby>次<rt>じ</rt></ruby><ruby>元<rt>げん</rt></ruby>の<ruby>裂<rt>さ</rt></ruby>け<ruby>目<rt>め</rt></ruby>",
+      "effectText" : "①：このカードが魔法＆罠ゾーンに存在する限り、お互いの墓地へ送られるモンスターは墓地へは行かず除外される。"
+    },
+    "ko" : {
+      "name" : "차원의 틈",
+      "effectText" : "①: 이 카드가 마법 & 함정 존에 존재하는 한, 서로의 묘지로 보내지는 몬스터는 묘지로는 가지 않고 제외된다."
+    },
+    "pt" : {
+      "name" : "Fissura Dimensional",
+      "effectText" : "Qualquer monstro enviado para o Cemitério, em vez disso, é banido."
+    },
+    "zh-Hans" : {
+      "name" : "次元的裂缝",
+      "effectText" : "①：只要此卡存在于魔法与陷阱区域，被送至双方墓地的怪兽不去墓地而直接被除外。"
+    },
+    "zh-Hant" : {
+      "effectText" : "①：只要此卡存在于魔法与陷阱区域，被送至双方墓地的怪兽不去墓地而直接被除外。"
+    }
+  }
+}
