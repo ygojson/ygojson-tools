@@ -178,6 +178,9 @@ class MarkupStringUnitTest {
 		return Stream.of(
 			Arguments.of(null, 3, List.of()),
 			Arguments.of("", 3, List.of()),
+			Arguments.of("<br />", 2, List.of()),
+			Arguments.of("<br /><br />", 2, List.of("<br />")),
+			Arguments.of("<br /><br />", 3, List.of()),
 			Arguments.of("first second", 3, List.of("first second")),
 			Arguments.of("first<br />second", 1, List.of("first<br />second")),
 			Arguments.of("first<br />second", 2, List.of("first", "second")),
