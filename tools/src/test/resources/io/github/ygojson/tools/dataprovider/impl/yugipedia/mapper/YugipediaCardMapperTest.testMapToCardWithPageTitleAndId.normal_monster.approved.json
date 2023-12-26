@@ -32,11 +32,11 @@
     },
     "ja" : {
       "name" : "ブラック・マジシャン",
-      "effectText" : "<ruby>魔<rt>ま</rt></ruby>{{ruby|法|ほう}}{{ruby|使|つか}}いとしては、<ruby>攻<rt>こう</rt></ruby>{{ruby|撃|げき}}{{ruby|力|りょく}}・<ruby>守<rt>しゅ</rt></ruby>{{ruby|備|び}}{{ruby|力|りょく}}ともに<ruby>最<rt>さい</rt></ruby>{{ruby|高|こう}}クラス。"
+      "flavorText" : "<ruby>魔<rt>ま</rt></ruby>{{ruby|法|ほう}}{{ruby|使|つか}}いとしては、<ruby>攻<rt>こう</rt></ruby>{{ruby|撃|げき}}{{ruby|力|りょく}}・<ruby>守<rt>しゅ</rt></ruby>{{ruby|備|び}}{{ruby|力|りょく}}ともに<ruby>最<rt>さい</rt></ruby>{{ruby|高|こう}}クラス。"
     },
     "ko" : {
       "name" : "블랙 매지션",
-      "effectText" : "마법사 중에서 공격력 / 수비력이 동시에 가장 높은 계급."
+      "flavorText" : "마법사 중에서 공격력 / 수비력이 동시에 가장 높은 계급."
     },
     "pt" : {
       "name" : "Mago Negro",
@@ -44,11 +44,11 @@
     },
     "zh-Hans" : {
       "name" : "黑魔导",
-      "effectText" : "作为魔法使，攻击力・守备力均为最高级别。"
+      "flavorText" : "作为魔法使，攻击力・守备力均为最高级别。"
     },
     "zh-Hant" : {
       "name" : "黒魔道士",
-      "effectText" : "魔法族中攻撃力、防守力都最彊"
+      "flavorText" : "魔法族中攻撃力、防守力都最彊"
     }
   }
 }
