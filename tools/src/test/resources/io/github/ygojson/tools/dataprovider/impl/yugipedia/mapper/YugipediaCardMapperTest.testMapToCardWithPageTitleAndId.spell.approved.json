@@ -1,0 +1,50 @@
+{
+  "id" : null,
+  "identifiers" : {
+    "konamiId" : 4342,
+    "password" : 53129443,
+    "yugipediaPageId" : 160
+  },
+  "name" : "Dark Hole",
+  "cardType" : "spell",
+  "property" : "normal",
+  "effectText" : "Destroy all monsters on the field.",
+  "localizedData" : {
+    "de" : {
+      "name" : "Schwarzes Loch",
+      "effectText" : "Zerstöre alle Monster auf dem Spielfeld."
+    },
+    "es" : {
+      "name" : "Agujero Oscuro",
+      "effectText" : "Destruye todos los monstruos en el Campo."
+    },
+    "fr" : {
+      "name" : "Trou Noir",
+      "effectText" : "Détruisez tous les monstres sur le Terrain."
+    },
+    "it" : {
+      "name" : "Buco Nero",
+      "effectText" : "Distruggi tutti i mostri sul Terreno."
+    },
+    "ja" : {
+      "name" : "ブラック・ホール",
+      "effectText" : "①：フィールドのモンスターを全て破壊する。"
+    },
+    "ko" : {
+      "name" : "블랙홀",
+      "effectText" : "①: 필드의 몬스터를 전부 파괴한다."
+    },
+    "pt" : {
+      "name" : "Buraco Negro",
+      "effectText" : "Destrua todos os monstros no campo."
+    },
+    "zh-Hans" : {
+      "name" : "黑洞",
+      "effectText" : "①：将场上的怪兽全部破坏。"
+    },
+    "zh-Hant" : {
+      "name" : "黑洞",
+      "effectText" : "破坏场上的全部怪兽。"
+    }
+  }
+}
