@@ -12,7 +12,7 @@ import io.github.ygojson.model.data.definition.LinkArrow;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 /**
- * Mapper for {@link CardTable2} related classes.
+ * Mapper for the YGOJSON {@link Card} from yugipedia {@link CardTable2} model.
  */
 @Mapper(
 	uses = {

@@ -308,9 +308,9 @@ class YugipediaCardTextMapper {
 	/**
 	 * Extracts the method to actually update the card text.
 	 *
-	 * @param loreText
-	 * @param card
-	 * @param cardText
+	 * @param loreText the full lore text.
+	 * @param card the already mapped Card.
+	 * @param cardText the cardText to update.
 	 */
 	private void doUpdateCardText(
 		final MarkupString loreText,
