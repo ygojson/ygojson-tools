@@ -66,6 +66,7 @@ class MarkupStringUnitTest {
 			Arguments.of(null, null),
 			Arguments.of("", ""),
 			Arguments.of("No markup", "No markup"), // exactly the same
+			Arguments.of("{{ruby|創|そう}}", "<ruby>創<rt>そう</rt></ruby>"), // lower case
 			Arguments.of("{{Ruby|創|そう}}", "<ruby>創<rt>そう</rt></ruby>"),
 			Arguments.of(
 				"Before{{Ruby|創|そう}}",
