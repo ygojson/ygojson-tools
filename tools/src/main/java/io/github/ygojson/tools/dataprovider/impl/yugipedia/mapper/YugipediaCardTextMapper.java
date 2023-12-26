@@ -340,9 +340,8 @@ class YugipediaCardTextMapper {
 				);
 			}
 		}
-		// process flavor if necessary: 1) all italic indicates flavor text
-		// or 2) it is a normal monster
-		if (isNormalMonster(effect, card)) {
+		// process flavor if necessary
+		if (isFlavorText(effect, card)) {
 			flavor = effect;
 			effect = null;
 		}
@@ -352,7 +351,7 @@ class YugipediaCardTextMapper {
 		cardText.setFlavorText(markupStringMapper.map(flavor));
 	}
 
-	private boolean isNormalMonster(final MarkupString effect, final Card card) {
+	private boolean isFlavorText(final MarkupString effect, final Card card) {
 		return (
 			effect != null &&
 			(
