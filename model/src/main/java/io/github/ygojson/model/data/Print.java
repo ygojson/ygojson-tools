@@ -25,8 +25,10 @@ import io.github.ygojson.model.data.property.PrintProperties;
 		IdProperties.SELF_ID,
 		IdProperties.CARD_ID,
 		IdProperties.SET_ID,
-		PrintProperties.SET_PREFIX,
-		PrintProperties.PRINT_NUMBER,
+		PrintProperties.SET_CODE,
+		PrintProperties.REGION_CODE,
+		PrintProperties.SET_NUMBER,
+		PrintProperties.FIRST_SERIES_SET,
 		PrintProperties.RARITY,
 		LanguageProperties.LANGUAGE,
 	}
@@ -36,8 +38,10 @@ public class Print {
 	private UUID id;
 	private UUID cardId;
 	private UUID setId;
-	private String setPrefix;
-	private String printNumber;
+	private String setCode;
+	private String regionCode;
+	private String setNumber;
+	private String firstSeriesSet;
 	private String rarity;
 	private Language language;
 
@@ -86,30 +90,51 @@ public class Print {
 	}
 
 	/**
-	 * Set prefix associated with this print.
+	 * Set code associated with this print.
 	 * </br>
-	 * Together with the {@link #getPrintNumber()} generates the full print-code.
+	 * Together with the {@link #getRegionCode()} and {@link #getSetNumber()} generates the full print-code.
 	 * </br>
 	 * This property might differ from the {@link Set#getPrefix()} associated for this
-	 * print, as prints-codes are often localized.
+	 * print, as set-codes are often localized.
 	 */
 	@JsonPropertyDescription(
 		"""
-			Set prefix associated with this print.
+			Set code associated with this print.
 
 			This property might differ with the prefix on the Set Model as the print-codes are often localized."""
 	)
-	@JsonProperty(value = PrintProperties.SET_PREFIX)
+	@JsonProperty(value = PrintProperties.SET_CODE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-zA-Z0-9]+-[a-zA-Z0-9]+")
-	public String getSetPrefix() {
-		return setPrefix;
+	@Pattern(regexp = "[a-zA-Z0-9]+")
+	public String getSetCode() {
+		return setCode;
+	}
+
+	/**
+	 * Set prefix associated with this print.
+	 * </br>
+	 * Together with the {@link #getSetCode()} and {@link #getSetNumber()} generates the full print-code.
+	 * </br>
+	 * This property might differ from the {@link Print#getLanguage()} associated for this
+	 * print, as the same language can be printed in different regions.
+	 */
+	@JsonPropertyDescription(
+		"""
+			Region code associated with this print.
+
+			This property might differ with the language property, as the same language can be printed in different regions."""
+	)
+	@JsonProperty(value = PrintProperties.REGION_CODE)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	@Pattern(regexp = "[a-zA-Z0-9]+")
+	public String getRegionCode() {
+		return regionCode;
 	}
 
 	/**
 	 * Number of the print within the set.
 	 * </br>
-	 * Together with the {@link #getSetPrefix()} generates the full printCode.
+	 * Together with the {@link #getRegionCode()}and {@link #getSetNumber()} generates the full print-code.
 	 * </br>
 	 * Although this property is usually a numeric with left-padded zeroes,
 	 * there are few cases where a letter is at the end (i.e., "K-Series").
@@ -120,11 +145,26 @@ public class Print {
 
 			It is represented as a string with left-padded zeroes, although sometimes might contain a letter."""
 	)
-	@JsonProperty(value = PrintProperties.PRINT_NUMBER)
+	@JsonProperty(value = PrintProperties.SET_NUMBER)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-zA-Z0-9]+")
-	public String getPrintNumber() {
-		return printNumber;
+	@Pattern(regexp = "[0-9]+")
+	public String getSetNumber() {
+		return setNumber;
+	}
+
+	/**
+	 * Set for prints on the Series 1 sets (where the full print number was not present).
+	 */
+	@JsonPropertyDescription(
+		"""
+			Series 1 set.
+
+			Note that this indicates that the print does not contain a print code number properties."""
+	)
+	@JsonProperty(value = PrintProperties.FIRST_SERIES_SET)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	public String getFirstSeriesSet() {
+		return firstSeriesSet;
 	}
 
 	/**
@@ -143,9 +183,11 @@ public class Print {
 	/**
 	 * Language of the print.
 	 * </br>
-	 * The language of the card print.
+	 * Note that it might differ from the region code.
 	 */
-	@JsonPropertyDescription("Language of the print")
+	@JsonPropertyDescription(
+		"Language of the print.\nNote that it might differ from the region code."
+	)
 	@JsonProperty(value = LanguageProperties.LANGUAGE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	public Language getLanguage() {
@@ -164,12 +206,20 @@ public class Print {
 		this.setId = setId;
 	}
 
-	public void setSetPrefix(String setPrefix) {
-		this.setPrefix = setPrefix;
+	public void setSetCode(String setCode) {
+		this.setCode = setCode;
 	}
 
-	public void setPrintNumber(String printNumber) {
-		this.printNumber = printNumber;
+	public void setRegionCode(String regionCode) {
+		this.regionCode = regionCode;
+	}
+
+	public void setSetNumber(String setNumber) {
+		this.setNumber = setNumber;
+	}
+
+	public void setFirstSeriesSet(String firstSeriesSet) {
+		this.firstSeriesSet = firstSeriesSet;
 	}
 
 	public void setRarity(String rarity) {
@@ -188,10 +238,11 @@ public class Print {
 			Objects.equals(id, print.id) &&
 			Objects.equals(cardId, print.cardId) &&
 			Objects.equals(setId, print.setId) &&
-			Objects.equals(setPrefix, print.setPrefix) &&
-			Objects.equals(printNumber, print.printNumber) &&
+			Objects.equals(setCode, print.setCode) &&
+			Objects.equals(regionCode, print.regionCode) &&
+			Objects.equals(setNumber, print.setNumber) &&
 			Objects.equals(rarity, print.rarity) &&
-			Objects.equals(language, print.language)
+			language == print.language
 		);
 	}
 
@@ -201,8 +252,9 @@ public class Print {
 			id,
 			cardId,
 			setId,
-			setPrefix,
-			printNumber,
+			setCode,
+			regionCode,
+			setNumber,
 			rarity,
 			language
 		);
