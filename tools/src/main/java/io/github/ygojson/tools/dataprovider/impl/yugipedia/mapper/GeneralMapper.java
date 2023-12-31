@@ -25,6 +25,14 @@ public abstract class GeneralMapper {
 		return value.toLowerCase();
 	}
 
+	@Named("blankStringToNull")
+	public String mapBlankStringToNull(final String value) {
+		if (value == null || value.isBlank()) {
+			return null;
+		}
+		return value;
+	}
+
 	/**
 	 * Maps a list to its size.
 	 *

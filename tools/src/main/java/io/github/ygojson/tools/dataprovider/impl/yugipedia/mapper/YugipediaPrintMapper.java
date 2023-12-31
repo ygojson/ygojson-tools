@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
@@ -42,8 +43,12 @@ public abstract class YugipediaPrintMapper {
 	private static final int LANG_GROUP = 1;
 	private static final int NUMBER_GROUP = 2;
 
+	private final GeneralMapper generalMapper = Mappers.getMapper(
+		GeneralMapper.class
+	);
+
 	public List<Print> mapToPrints(final CardTable2 cardTable2) {
-		if (cardTable2 == null || cardTable2.en_sets() == null) {
+		if (cardTable2 == null) {
 			return null;
 		}
 		return Stream
@@ -143,16 +148,18 @@ public abstract class YugipediaPrintMapper {
 		final MarkupString rarity,
 		final Language language
 	) {
+		// default card fields
 		final Print print = new Print();
+		print.setRarity(generalMapper.mapToLowerCase(rarity.toString()));
+		print.setLanguage(language);
+		// if there is no info, it is a first-series set
 		if (info == null) {
 			print.setFirstSeriesSet(setName);
 			return print;
 		}
-		print.setSetCode(info.setCode());
-		print.setRegionCode(info.regionCode());
-		print.setSetNumber(info.setNumber());
-		print.setRarity(rarity.toString().toLowerCase());
-		print.setLanguage(language);
+		print.setSetCode(generalMapper.mapBlankStringToNull(info.setCode()));
+		print.setRegionCode(generalMapper.mapBlankStringToNull(info.regionCode()));
+		print.setSetNumber(generalMapper.mapBlankStringToNull(info.setNumber()));
 		return print;
 	}
 }

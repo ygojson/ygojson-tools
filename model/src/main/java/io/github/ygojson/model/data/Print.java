@@ -241,6 +241,7 @@ public class Print {
 			Objects.equals(setCode, print.setCode) &&
 			Objects.equals(regionCode, print.regionCode) &&
 			Objects.equals(setNumber, print.setNumber) &&
+			Objects.equals(firstSeriesSet, print.firstSeriesSet) &&
 			Objects.equals(rarity, print.rarity) &&
 			language == print.language
 		);
@@ -255,8 +256,40 @@ public class Print {
 			setCode,
 			regionCode,
 			setNumber,
+			firstSeriesSet,
 			rarity,
 			language
+		);
+	}
+
+	@Override
+	public String toString() {
+		return (
+			"Print{" +
+			"id=" +
+			id +
+			", cardId=" +
+			cardId +
+			", setId=" +
+			setId +
+			", setCode='" +
+			setCode +
+			'\'' +
+			", regionCode='" +
+			regionCode +
+			'\'' +
+			", setNumber='" +
+			setNumber +
+			'\'' +
+			", firstSeriesSet='" +
+			firstSeriesSet +
+			'\'' +
+			", rarity='" +
+			rarity +
+			'\'' +
+			", language=" +
+			language +
+			'}'
 		);
 	}
 }
