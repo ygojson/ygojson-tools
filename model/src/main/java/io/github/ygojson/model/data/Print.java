@@ -25,8 +25,8 @@ import io.github.ygojson.model.data.property.PrintProperties;
 		IdProperties.SELF_ID,
 		IdProperties.CARD_ID,
 		IdProperties.SET_ID,
-		PrintProperties.SET_PREFIX,
-		PrintProperties.PRINT_NUMBER,
+		PrintProperties.PRINT_CODE,
+		PrintProperties.FIRST_SERIES_SET,
 		PrintProperties.RARITY,
 		LanguageProperties.LANGUAGE,
 	}
@@ -36,8 +36,8 @@ public class Print {
 	private UUID id;
 	private UUID cardId;
 	private UUID setId;
-	private String setPrefix;
-	private String printNumber;
+	private String printCode;
+	private String firstSeriesSet;
 	private String rarity;
 	private Language language;
 
@@ -86,45 +86,38 @@ public class Print {
 	}
 
 	/**
-	 * Set prefix associated with this print.
-	 * </br>
-	 * Together with the {@link #getPrintNumber()} generates the full print-code.
-	 * </br>
-	 * This property might differ from the {@link Set#getPrefix()} associated for this
-	 * print, as prints-codes are often localized.
+	 * Code identifying the specific print of a card.
+	 * <br>
+	 * This is composed by the set-code, the region-code and the print-number.
 	 */
 	@JsonPropertyDescription(
 		"""
-			Set prefix associated with this print.
+			Code identifying the specific print of a card.
 
-			This property might differ with the prefix on the Set Model as the print-codes are often localized."""
+			This code is composed by the set-code, region-code and set-number.
+
+			Note that this is not present in Series 1 prints."""
 	)
-	@JsonProperty(value = PrintProperties.SET_PREFIX)
+	@JsonProperty(value = PrintProperties.PRINT_CODE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@Pattern(regexp = "[a-zA-Z0-9]+-[a-zA-Z0-9]+")
-	public String getSetPrefix() {
-		return setPrefix;
+	public String getPrintCode() {
+		return printCode;
 	}
 
 	/**
-	 * Number of the print within the set.
-	 * </br>
-	 * Together with the {@link #getSetPrefix()} generates the full printCode.
-	 * </br>
-	 * Although this property is usually a numeric with left-padded zeroes,
-	 * there are few cases where a letter is at the end (i.e., "K-Series").
+	 * Set for prints on the Series 1 sets (where the full print number was not present).
 	 */
 	@JsonPropertyDescription(
 		"""
-			Number of the print within the set.
+			Name of the Series 1 set for prints on them.
 
-			It is represented as a string with left-padded zeroes, although sometimes might contain a letter."""
+			Note that this is only present on prints belonging to the Series 1 sets, as a printCode is not present there."""
 	)
-	@JsonProperty(value = PrintProperties.PRINT_NUMBER)
+	@JsonProperty(value = PrintProperties.FIRST_SERIES_SET)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-zA-Z0-9]+")
-	public String getPrintNumber() {
-		return printNumber;
+	public String getFirstSeriesSet() {
+		return firstSeriesSet;
 	}
 
 	/**
@@ -164,12 +157,12 @@ public class Print {
 		this.setId = setId;
 	}
 
-	public void setSetPrefix(String setPrefix) {
-		this.setPrefix = setPrefix;
+	public void setPrintCode(String printCode) {
+		this.printCode = printCode;
 	}
 
-	public void setPrintNumber(String printNumber) {
-		this.printNumber = printNumber;
+	public void setFirstSeriesSet(String firstSeriesSet) {
+		this.firstSeriesSet = firstSeriesSet;
 	}
 
 	public void setRarity(String rarity) {
@@ -188,10 +181,10 @@ public class Print {
 			Objects.equals(id, print.id) &&
 			Objects.equals(cardId, print.cardId) &&
 			Objects.equals(setId, print.setId) &&
-			Objects.equals(setPrefix, print.setPrefix) &&
-			Objects.equals(printNumber, print.printNumber) &&
+			Objects.equals(printCode, print.printCode) &&
+			Objects.equals(firstSeriesSet, print.firstSeriesSet) &&
 			Objects.equals(rarity, print.rarity) &&
-			Objects.equals(language, print.language)
+			language == print.language
 		);
 	}
 
@@ -201,8 +194,8 @@ public class Print {
 			id,
 			cardId,
 			setId,
-			setPrefix,
-			printNumber,
+			printCode,
+			firstSeriesSet,
 			rarity,
 			language
 		);
