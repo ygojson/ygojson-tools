@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
 
-class MarkupStringMapperTest {
+class MarkupStringMapperUnitTest {
 
 	private static MarkupStringMapper TEST_MAPPER;
 
@@ -40,7 +40,7 @@ class MarkupStringMapperTest {
 	}
 
 	@Test
-	void given_nullProperty_when_mapToNewLineList_then_returnEmtpyList() {
+	void given_nullProperty_when_mapToNewLineList_then_returnEmptyList() {
 		// given
 		final String property = null;
 		// when
@@ -50,7 +50,7 @@ class MarkupStringMapperTest {
 	}
 
 	@Test
-	void given_nullProperty_when_mapToCommaSeparatedStringList_then_returnEmtpyList() {
+	void given_nullProperty_when_mapToCommaSeparatedStringList_then_returnEmptyList() {
 		// given
 		final String property = null;
 		// when
