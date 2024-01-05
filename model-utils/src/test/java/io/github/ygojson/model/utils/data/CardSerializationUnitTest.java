@@ -14,7 +14,7 @@ import io.github.ygojson.model.utils.JsonUtils;
 public class CardSerializationUnitTest {
 
 	@Test
-	void given_cardWithNullCardText_when_serialize_then_hasText()
+	void given_cardWithNullCardText_when_serialize_then_textNotPresent()
 		throws JsonProcessingException {
 		// given
 		final Card card = Instancio
