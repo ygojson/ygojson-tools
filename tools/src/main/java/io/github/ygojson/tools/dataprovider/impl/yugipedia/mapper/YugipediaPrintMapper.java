@@ -40,6 +40,10 @@ public abstract class YugipediaPrintMapper {
 		"([a-zA-Z]+)(\\d+)"
 	);
 
+	private static final Pattern CARD_NUMBER_PATTERN = Pattern.compile(
+		"([a-zA-Z0-9]+)-([a-zA-Z]+)?([a-zA-Z]?\\d+K?)"
+	);
+
 	private static final int LANG_GROUP = 1;
 	private static final int NUMBER_GROUP = 2;
 
@@ -115,25 +119,17 @@ public abstract class YugipediaPrintMapper {
 		if (cardNumberField == null || cardNumberField.isEmpty()) {
 			return null;
 		}
-		final String[] splitCardNumber = cardNumberField.split(
-			CARD_NUMBER_SEPARATOR,
-			2
-		);
-		final String setCode = splitCardNumber[0];
-		final String printLangAndNumber = splitCardNumber[1];
-		final Matcher matcher = LANGUAGE_NUMBER_PATTERN.matcher(printLangAndNumber);
+		final Matcher cardNumberPatternMatcher = CARD_NUMBER_PATTERN.matcher(cardNumberField);
+		if (cardNumberPatternMatcher.matches()) {
+			String setCode = cardNumberPatternMatcher.group(1);
+			String regionCode = cardNumberPatternMatcher.group(2);
+			String setNumber = cardNumberPatternMatcher.group(3);
+			// TODO: handle special cases here?
 
-		final String regionCode;
-		final String setNumer;
-		if (matcher.matches()) {
-			regionCode = matcher.group(LANG_GROUP);
-			setNumer = matcher.group(NUMBER_GROUP);
-		} else {
-			regionCode = "";
-			setNumer = printLangAndNumber;
+			return new PrintInfo(setCode, regionCode, setNumber);
 		}
-
-		return new PrintInfo(setCode, regionCode, setNumer);
+		// cannot identify the print-info
+		return null;
 	}
 
 	private record PrintInfo(
