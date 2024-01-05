@@ -12,8 +12,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.tools.common.ApplicationInfo;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaConfig;
-import io.github.ygojson.tools.dataprovider.utils.client.ClientConfig;
-import io.github.ygojson.tools.dataprovider.utils.client.ClientFactory;
 
 class ClientFactoryTest {
 
