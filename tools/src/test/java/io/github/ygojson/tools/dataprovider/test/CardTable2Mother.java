@@ -1,10 +1,8 @@
 package io.github.ygojson.tools.dataprovider.test;
 
 import static org.instancio.Select.field;
-import static org.instancio.Select.fields;
 
 import org.instancio.Instancio;
-import org.instancio.TargetSelector;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
