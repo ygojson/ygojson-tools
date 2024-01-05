@@ -1,14 +1,14 @@
 package io.github.ygojson.model.data;
 
-import com.fasterxml.jackson.annotation.*;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.PositiveOrZero;
-import jakarta.validation.constraints.Size;
-
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
+
+import com.fasterxml.jackson.annotation.*;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Size;
 
 import io.github.ygojson.model.data.definition.CardText;
 import io.github.ygojson.model.data.definition.CardType;
