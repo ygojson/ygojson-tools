@@ -295,7 +295,7 @@ class YugipediaCardTextMapper {
 	) {
 		final MarkupString fullLore = fullLoreSupplier.get();
 		CardText cardText = cardTextGetter.apply(card);
-		if (fullLore == null) {
+		if (fullLore == null || fullLore.toString() == null) {
 			return;
 		}
 		if (cardText == null) {
