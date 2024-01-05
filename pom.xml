@@ -110,6 +110,7 @@
                         </importOrder>
                         <endWithNewline/>
                         <formatAnnotations/>
+                        <removeUnusedImports />
                     </java>
                 </configuration>
                 <executions>
