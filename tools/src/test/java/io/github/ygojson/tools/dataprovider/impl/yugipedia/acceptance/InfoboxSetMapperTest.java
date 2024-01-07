@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,11 +14,14 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.InfoboxSetMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.InfoboxSet;
 
 class InfoboxSetMapperTest {
 
-	private static final InfoboxSetMapper MAPPER = Mappers.getMapper(InfoboxSetMapper.class);
+	private static final InfoboxSetMapper MAPPER = Mappers.getMapper(
+		InfoboxSetMapper.class
+	);
 
 	private static ObjectMapper OBJECT_MAPPER;
 
@@ -32,7 +35,7 @@ class InfoboxSetMapperTest {
 
 	@ParameterizedTest
 	@MethodSource(
-		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getParseWikitextInfoboxSetData"
+		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getInfoboxSetParseWikitextTestData"
 	)
 	void testMapWikitextToInfoboxSet(
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
@@ -67,7 +70,7 @@ class InfoboxSetMapperTest {
 		// given
 		final String wikitext = "arbitrary string";
 		// when
-		final InfoboxSet infoboxSet =MAPPER.mapWikitextToInfoboxSet(wikitext);
+		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(wikitext);
 		// then
 		assertThat(infoboxSet).isNull();
 	}
