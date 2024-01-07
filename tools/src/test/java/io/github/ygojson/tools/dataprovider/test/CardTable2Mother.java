@@ -40,6 +40,28 @@ public class CardTable2Mother {
 			.create();
 	}
 
+	public static CardTable2 withoutSets() {
+		return Instancio
+			.of(CardTable2.class)
+			.ignore(field(CardTable2::en_sets))
+			.ignore(field(CardTable2::na_sets))
+			.ignore(field(CardTable2::eu_sets))
+			.ignore(field(CardTable2::au_sets))
+			.ignore(field(CardTable2::ae_sets))
+			.ignore(field(CardTable2::de_sets))
+			.ignore(field(CardTable2::sp_sets))
+			.ignore(field(CardTable2::fr_sets))
+			.ignore(field(CardTable2::fc_sets))
+			.ignore(field(CardTable2::it_sets))
+			.ignore(field(CardTable2::pt_sets))
+			.ignore(field(CardTable2::ja_sets))
+			.ignore(field(CardTable2::jp_sets))
+			.ignore(field(CardTable2::kr_sets))
+			.ignore(field(CardTable2::sc_sets))
+			.ignore(field(CardTable2::tc_sets))
+			.create();
+	}
+
 	/**
 	 * Generates a random {@link CardTable2} with only english sets (all other sets are empty).
 	 *

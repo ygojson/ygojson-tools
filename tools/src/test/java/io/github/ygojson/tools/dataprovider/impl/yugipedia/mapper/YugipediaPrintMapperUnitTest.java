@@ -1,10 +1,13 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.util.List;
 import java.util.stream.Stream;
 
+import org.assertj.core.api.ThrowableAssert;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -110,4 +113,36 @@ class YugipediaPrintMapperUnitTest {
 		// then
 		assertThat(actual).singleElement().isEqualTo(expected);
 	}
+
+	@Test
+	void given_CardTable2WithoutSets_when_mapToPrints_then_returnsEmptyList() {
+		// given
+		final CardTable2 cardTable2 = CardTable2Mother.withoutSets();
+		// when
+		final List<Print> actual = MAPPER.mapToPrints(cardTable2);
+		// then
+		assertThat(actual).isEmpty();
+	}
+
+	@Test
+	void given_cardTable2WithNotEnoughFields_when_mapToPrints_then_throwsIllegalStateException() {
+		// given
+		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets("No set");
+		// when
+		final ThrowableAssert.ThrowingCallable throwingCallable = () -> MAPPER.mapToPrints(cardTable2);
+		// then
+		assertThatThrownBy(throwingCallable).isInstanceOf(IllegalStateException.class);
+	}
+
+	@Test
+	void given_cardTable2WithManyFields_when_mapToPrints_then_returnCorrectPrint() {
+		// given
+		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets("MS-EN001; My set; Rare; New column");
+		// when
+		final List<Print> actual = MAPPER.mapToPrints(cardTable2);
+		// then
+		final Print expectedPrint = expectedPrint("MS-EN001", "rare", Language.EN);
+		assertThat(actual).singleElement().isEqualTo(expectedPrint);
+	}
+
 }

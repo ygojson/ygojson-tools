@@ -1,11 +1,14 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
@@ -53,5 +56,15 @@ class YugipediaPrintMapperTest {
 				.forFile()
 				.withExtension(".json")
 		);
+	}
+
+	@Test
+	void testMapNullToPrints() {
+		// given
+		final CardTable2 cardTable2 = null;
+		// when
+		final List<Print> prints = MAPPER.mapToPrints(cardTable2);
+		// then
+		assertThat(prints).isNull();
 	}
 }
