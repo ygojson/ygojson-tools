@@ -33,9 +33,8 @@ public abstract class InfoboxSetMapper {
 	/**
 	 * Split pattern fore each field on the InfoBox Set content.
 	 */
-	private static final Pattern INFOBOX_SET_FIELD_SPLIT_PATTERN = Pattern.compile(
-		"\n\\| "
-	);
+	private static final Pattern INFOBOX_SET_FIELD_SPLIT_PATTERN =
+		Pattern.compile("\n\\| ");
 
 	/**
 	 * Split pattern fore each key=value pair on the InfoBox Set content.
