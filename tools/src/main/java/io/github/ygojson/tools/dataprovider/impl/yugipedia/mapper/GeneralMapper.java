@@ -38,4 +38,12 @@ public abstract class GeneralMapper {
 		}
 		return list.size();
 	}
+
+	@Named("blankStringToNull")
+	public String mapBlankStringToNull(final String value) {
+		if (value == null || value.isBlank()) {
+			return null;
+		}
+		return value;
+	}
 }
