@@ -2,8 +2,7 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-// {{Infobox set
-// TODO: this was done pseudo-manually
+
 public record InfoboxSet(
 	String image,
 	String en_name,
@@ -13,15 +12,15 @@ public record InfoboxSet(
 	String it_name,
 	String pt_name,
 	String es_name,
-	String ja_name,
+	MarkupString ja_name,
 	String romaji_name,
 	String ja_trans_name,
 	String ko_name,
 	String ko_rr_name,
 	String sc_name,
 	String tc_name,
-	String type,
-	String series,
+	MarkupString type,
+	MarkupString series,
 	String prefix,
 	String en_prefix,
 	String na_prefix,
@@ -67,8 +66,5 @@ public record InfoboxSet(
 	String sp_lat_release_date,
 	@JsonProperty("fr/de/it/sp_release_date") String fr_de_it_sp_release_date,
 	String prev,
-	String next,
-	String lists,
-	@JsonProperty("1e_galleries") String _1e_galleries,
-	String ue_galleries //JP,AE,KR,SC\n}}\n{{Set list tabs|EN,FR,DE,IT,PT,SP,JP,AE,KR,SC}}\n\n== References ==\n<references />\n\n== External links ==\n* [https://www.yugioh-card.com/japan/products/dune/ yugioh-card.com/japan/] ''Duelist Nexus'' {{icon|ja}}\n* [https://yugioh.co.kr/product/product_info.php?product_no=273 yugioh.co.kr] ''Duelist Nexus'' {{icon|ko}}\n* [https://www.yugioh-card.com/en/products/dune/ yugioh-card.com/en/] ''Duelist Nexus''\n* [https://www.yugioh-card.com/eu/product/duelist-nexus/ yugioh-card.com/eu/] ''Duelist Nexus''\n* [https://www.yugioh-card.com/eu/fr/product/duelist-nexus/ yugioh-card.com/eu/fr/] ''Nexus du Duelliste'' {{icon|fr}}\n* [https://www.yugioh-card.com/eu/de/product/duelist-nexus/ yugioh-card.com/eu/de/] ''Duelist Nexus'' {{icon|de}}\n* [https://www.yugioh-card.com/eu/it/product/duelist-nexus/ yugioh-card.com/eu/it/] ''Nexus dei Duellanti'' {{icon|it}}\n* [https://www.yugioh-card.com/eu/es/product/duelist-nexus/ yugioh-card.com/eu/es/] ''Nexus Duelista'' {{icon|es}}\n\n{{Core Boosters}}\n[[Category:OCG Core Boosters]]
+	String next
 ) {}
