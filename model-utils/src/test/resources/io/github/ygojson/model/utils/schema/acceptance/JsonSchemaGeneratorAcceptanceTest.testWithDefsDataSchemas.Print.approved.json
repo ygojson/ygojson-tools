@@ -20,13 +20,12 @@
       "type" : "string",
       "format" : "uuid"
     },
-    "setPrefix" : {
+    "printCode" : {
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
     },
-    "printNumber" : {
-      "type" : "string",
-      "pattern" : "[a-zA-Z0-9]+"
+    "firstSeriesSet" : {
+      "type" : "string"
     },
     "rarity" : {
       "type" : "string",
