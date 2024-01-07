@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -11,6 +11,8 @@ import org.mapstruct.factory.Mappers;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.utils.JsonUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.CardTable2Mapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaCardMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 class YugipediaCardMapperTest {
@@ -45,7 +47,9 @@ class YugipediaCardMapperTest {
 		Approvals.verify(
 			asJsonString,
 			Approvals.NAMES
-				.withParameters(wikitextTestData.testName())
+				.withParameters()
+				.forFile()
+				.withBaseName("YugipediaCardMapper/" + wikitextTestData.testName())
 				.forFile()
 				.withExtension(".json")
 		);
