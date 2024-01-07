@@ -1,6 +1,7 @@
 package io.github.ygojson.model.data;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.*;
@@ -199,5 +200,18 @@ public class Print {
 			rarity,
 			language
 		);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", Print.class.getSimpleName() + "[", "]")
+			.add("id=" + id)
+			.add("cardId=" + cardId)
+			.add("setId=" + setId)
+			.add("printCode='" + printCode + "'")
+			.add("firstSeriesSet='" + firstSeriesSet + "'")
+			.add("rarity='" + rarity + "'")
+			.add("language=" + language)
+			.toString();
 	}
 }

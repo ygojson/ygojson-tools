@@ -1,9 +1,6 @@
 package io.github.ygojson.model.data;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
@@ -498,5 +495,28 @@ public class Card {
 			xyzRank,
 			localizedData
 		);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", Card.class.getSimpleName() + "[", "]")
+			.add("cardText=" + cardText)
+			.add("id=" + id)
+			.add("identifiers=" + identifiers)
+			.add("cardType=" + cardType)
+			.add("property='" + property + "'")
+			.add("monsterTypes=" + monsterTypes)
+			.add("attribute='" + attribute + "'")
+			.add("atkValue=" + atkValue)
+			.add("atkUndefined=" + atkUndefined)
+			.add("defValue=" + defValue)
+			.add("defUndefined=" + defUndefined)
+			.add("level=" + level)
+			.add("linkRating=" + linkRating)
+			.add("linkArrows=" + linkArrows)
+			.add("pendulumScale=" + pendulumScale)
+			.add("xyzRank=" + xyzRank)
+			.add("localizedData=" + localizedData)
+			.toString();
 	}
 }

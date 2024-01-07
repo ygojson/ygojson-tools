@@ -1,6 +1,7 @@
 package io.github.ygojson.model.data.definition;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -149,5 +150,16 @@ public class CardText {
 			materials,
 			pendulumEffect
 		);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", CardText.class.getSimpleName() + "[", "]")
+			.add("name='" + name + "'")
+			.add("effectText='" + effectText + "'")
+			.add("flavorText='" + flavorText + "'")
+			.add("materials='" + materials + "'")
+			.add("pendulumEffect='" + pendulumEffect + "'")
+			.toString();
 	}
 }

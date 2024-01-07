@@ -1,6 +1,7 @@
 package io.github.ygojson.model.data.definition;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -142,5 +143,15 @@ public class Identifiers {
 	@Override
 	public int hashCode() {
 		return Objects.hash(konamiId, password, passwordAlt, yugipediaPageId);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", Identifiers.class.getSimpleName() + "[", "]")
+			.add("konamiId=" + konamiId)
+			.add("password=" + password)
+			.add("passwordAlt=" + passwordAlt)
+			.add("yugipediaPageId=" + yugipediaPageId)
+			.toString();
 	}
 }

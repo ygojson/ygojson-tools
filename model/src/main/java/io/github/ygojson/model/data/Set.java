@@ -2,6 +2,7 @@ package io.github.ygojson.model.data;
 
 import java.util.Objects;
 import java.util.Optional;
+import java.util.StringJoiner;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.*;
@@ -166,5 +167,16 @@ public class Set {
 	@Override
 	public int hashCode() {
 		return Objects.hash(setTex, id, type, series, localizedData);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", Set.class.getSimpleName() + "[", "]")
+			.add("setTex=" + setTex)
+			.add("id=" + id)
+			.add("type='" + type + "'")
+			.add("series='" + series + "'")
+			.add("localizedData=" + localizedData)
+			.toString();
 	}
 }

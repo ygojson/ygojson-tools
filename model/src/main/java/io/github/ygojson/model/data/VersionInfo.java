@@ -2,6 +2,7 @@ package io.github.ygojson.model.data;
 
 import java.time.ZonedDateTime;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
@@ -73,5 +74,13 @@ public class VersionInfo {
 	@Override
 	public int hashCode() {
 		return Objects.hash(version, date);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", VersionInfo.class.getSimpleName() + "[", "]")
+			.add("version='" + version + "'")
+			.add("date=" + date)
+			.toString();
 	}
 }
