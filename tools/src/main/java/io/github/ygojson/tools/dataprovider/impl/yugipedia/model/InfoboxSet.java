@@ -2,7 +2,6 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 public record InfoboxSet(
 	String image,
 	String en_name,
