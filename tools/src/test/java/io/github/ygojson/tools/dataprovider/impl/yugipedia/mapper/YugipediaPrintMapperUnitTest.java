@@ -129,20 +129,23 @@ class YugipediaPrintMapperUnitTest {
 		// given
 		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets("No set");
 		// when
-		final ThrowableAssert.ThrowingCallable throwingCallable = () -> MAPPER.mapToPrints(cardTable2);
+		final ThrowableAssert.ThrowingCallable throwingCallable = () ->
+			MAPPER.mapToPrints(cardTable2);
 		// then
-		assertThatThrownBy(throwingCallable).isInstanceOf(IllegalStateException.class);
+		assertThatThrownBy(throwingCallable)
+			.isInstanceOf(IllegalStateException.class);
 	}
 
 	@Test
 	void given_cardTable2WithManyFields_when_mapToPrints_then_returnCorrectPrint() {
 		// given
-		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets("MS-EN001; My set; Rare; New column");
+		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets(
+			"MS-EN001; My set; Rare; New column"
+		);
 		// when
 		final List<Print> actual = MAPPER.mapToPrints(cardTable2);
 		// then
 		final Print expectedPrint = expectedPrint("MS-EN001", "rare", Language.EN);
 		assertThat(actual).singleElement().isEqualTo(expectedPrint);
 	}
-
 }
