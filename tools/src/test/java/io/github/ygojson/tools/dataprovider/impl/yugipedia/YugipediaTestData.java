@@ -21,7 +21,11 @@ public class YugipediaTestData {
 	private static Path BASE_PATH =
 		TestResourceUtils.getTestDataResourcePathByName("yugipedia");
 
-	private static final Map<String, Path> PARSE_WIKITEXT_PAGE_DATA =
+	private static final Path PARSE_WIKITEXT_PAGE_PATH = BASE_PATH.resolve(
+		"parse_wikitext_page"
+	);
+
+	private static final Map<String, Path> CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA =
 		new HashMap<>();
 
 	private YugipediaTestData() {
@@ -44,15 +48,25 @@ public class YugipediaTestData {
 	) {}
 
 	/**
-	 * Get all the parse wikitext page test data.
+	 * Get all the CardTable2 parse wikitext page test data.
 	 * <br>
 	 * This contains similar information to a single query page on yugipedia,
 	 * including a test name indicating why this test is useful.
 	 *
-	 * @return list of current test data.s
+	 * @return list of current test data.
+	 *
+	 * @see io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2
 	 */
-	public static List<ParseWikitextPageTestData> getParseWikitextTestData() {
-		return PARSE_WIKITEXT_PAGE_DATA
+	public static List<ParseWikitextPageTestData> getCardTable2ParseWikitextTestData() {
+		return getRegisteredParseWikitextPageTestData(
+			CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA
+		);
+	}
+
+	private static List<ParseWikitextPageTestData> getRegisteredParseWikitextPageTestData(
+		final Map<String, Path> registry
+	) {
+		return registry
 			.entrySet()
 			.stream()
 			.map(entry -> {
@@ -83,24 +97,31 @@ public class YugipediaTestData {
 		// where page_name is the one for the card that should be used for the specific test
 		// the filename should indicate the reason the card is considered for a test (with extension of .json)
 		// this method scans that folder and adds directly to the tests (failing the first time because cause it needs to be approved)
-		registerAllParseWikitextPageData();
+		registerAllParseWikitextPageData(
+			"cardtable2",
+			CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA
+		);
 	}
 
-	private static void registerAllParseWikitextPageData() {
-		final Path parseWikitextPageFolder = BASE_PATH.resolve(
-			"parse_wikitext_page"
+	private static void registerAllParseWikitextPageData(
+		final String pathName,
+		final Map<String, Path> registry
+	) {
+		final Path parseWikitextPageFolder = PARSE_WIKITEXT_PAGE_PATH.resolve(
+			pathName
 		);
 		try {
 			Files
 				.list(parseWikitextPageFolder)
-				.forEach(YugipediaTestData::registerParseWikitextPageData);
+				.forEach(path -> registerParseWikitextPageData(path, registry));
 		} catch (final IOException e) {
 			throw new IllegalStateException("Cannot register test data", e);
 		}
 	}
 
 	private static void registerParseWikitextPageData(
-		final Path parseWikitextPage
+		final Path parseWikitextPage,
+		final Map<String, Path> registry
 	) {
 		final String testName = parseWikitextPage
 			.getFileName()
@@ -111,6 +132,6 @@ public class YugipediaTestData {
 				"Resource not found: " + parseWikitextPage
 			);
 		}
-		PARSE_WIKITEXT_PAGE_DATA.put(testName, parseWikitextPage);
+		registry.put(testName, parseWikitextPage);
 	}
 }

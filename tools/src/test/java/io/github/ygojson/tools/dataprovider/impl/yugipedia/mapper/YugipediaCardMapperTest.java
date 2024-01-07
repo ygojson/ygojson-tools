@@ -27,7 +27,7 @@ class YugipediaCardMapperTest {
 
 	@ParameterizedTest
 	@MethodSource(
-		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getParseWikitextTestData"
+		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getCardTable2ParseWikitextTestData"
 	)
 	void testMapToCardWithPageTitleAndId(
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
