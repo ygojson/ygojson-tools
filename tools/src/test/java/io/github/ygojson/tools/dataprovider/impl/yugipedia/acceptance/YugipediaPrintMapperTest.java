@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
 import java.util.List;
 
@@ -13,6 +13,8 @@ import org.mapstruct.factory.Mappers;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.utils.JsonUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.CardTable2Mapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaPrintMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 class YugipediaPrintMapperTest {
@@ -29,7 +31,7 @@ class YugipediaPrintMapperTest {
 
 	@ParameterizedTest
 	@MethodSource(
-		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getParseWikitextTestData"
+		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getCardTable2ParseWikitextTestData"
 	)
 	void testMapToPrints(
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
@@ -45,7 +47,9 @@ class YugipediaPrintMapperTest {
 		Approvals.verify(
 			asJsonString,
 			Approvals.NAMES
-				.withParameters(wikitextTestData.testName())
+				.withParameters()
+				.forFile()
+				.withBaseName("YugipediaPrintMapper/" + wikitextTestData.testName())
 				.forFile()
 				.withExtension(".json")
 		);
