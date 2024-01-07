@@ -45,6 +45,7 @@ public record InfoboxSet(
 	String vendor_edition,
 	String order_number,
 	String size,
+	String width,
 	MarkupString cover_card,
 	String en_database_id,
 	String fr_database_id,

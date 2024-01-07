@@ -28,6 +28,9 @@ public class YugipediaTestData {
 	private static final Map<String, Path> CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA =
 		new HashMap<>();
 
+	private static final Map<String, Path> INFOBOX_SET_PARSE_WIKITEXT_PAGE_DATA =
+		new HashMap<>();
+
 	private YugipediaTestData() {
 		// utility class
 	}
@@ -60,6 +63,12 @@ public class YugipediaTestData {
 	public static List<ParseWikitextPageTestData> getCardTable2ParseWikitextTestData() {
 		return getRegisteredParseWikitextPageTestData(
 			CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA
+		);
+	}
+
+	public static List<ParseWikitextPageTestData> getInfoboxSetParseWikitextTestData() {
+		return getRegisteredParseWikitextPageTestData(
+			INFOBOX_SET_PARSE_WIKITEXT_PAGE_DATA
 		);
 	}
 
@@ -100,6 +109,10 @@ public class YugipediaTestData {
 		registerAllParseWikitextPageData(
 			"cardtable2",
 			CARDTABLE2_PARSE_WIKITEXT_PAGE_DATA
+		);
+		registerAllParseWikitextPageData(
+			"infobox_set",
+			INFOBOX_SET_PARSE_WIKITEXT_PAGE_DATA
 		);
 	}
 
