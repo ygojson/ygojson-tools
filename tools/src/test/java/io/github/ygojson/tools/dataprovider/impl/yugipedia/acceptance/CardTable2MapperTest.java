@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,6 +13,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.CardTable2Mapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 class CardTable2MapperTest {
@@ -44,7 +45,9 @@ class CardTable2MapperTest {
 		Approvals.verify(
 			asJsonString,
 			Approvals.NAMES
-				.withParameters(wikitextTestData.testName())
+				.withParameters()
+				.forFile()
+				.withBaseName("CardTable2Mapper/" + wikitextTestData.testName())
 				.forFile()
 				.withExtension(".json")
 		);
