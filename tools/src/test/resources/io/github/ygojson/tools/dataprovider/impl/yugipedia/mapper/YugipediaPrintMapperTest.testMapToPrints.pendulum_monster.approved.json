@@ -1,0 +1,57 @@
+[ {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-EN001",
+  "rarity" : "ultra rare",
+  "language" : "en"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-DE001",
+  "rarity" : "ultra rare",
+  "language" : "de"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-SP001",
+  "rarity" : "ultra rare",
+  "language" : "es"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-FR001",
+  "rarity" : "ultra rare",
+  "language" : "fr"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-IT001",
+  "rarity" : "ultra rare",
+  "language" : "it"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-JP001",
+  "rarity" : "ultra rare",
+  "language" : "ja"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-KR001",
+  "rarity" : "ultra rare",
+  "language" : "ko"
+}, {
+  "id" : null,
+  "cardId" : null,
+  "setId" : null,
+  "printCode" : "SR08-PT001",
+  "rarity" : "ultra rare",
+  "language" : "pt"
+} ]
