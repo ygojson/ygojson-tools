@@ -2,6 +2,7 @@ package io.github.ygojson.model.data;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -55,5 +56,13 @@ public class CardPrints {
 	@Override
 	public int hashCode() {
 		return Objects.hash(card, prints);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", CardPrints.class.getSimpleName() + "[", "]")
+			.add("card=" + card)
+			.add("prints=" + prints)
+			.toString();
 	}
 }

@@ -1,6 +1,7 @@
 package io.github.ygojson.model.data.definition;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
@@ -67,5 +68,13 @@ public class SetText {
 	@Override
 	public int hashCode() {
 		return Objects.hash(prefix, name);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", SetText.class.getSimpleName() + "[", "]")
+			.add("prefix='" + prefix + "'")
+			.add("name='" + name + "'")
+			.toString();
 	}
 }

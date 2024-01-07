@@ -1,9 +1,6 @@
 package io.github.ygojson.model.data.definition.localization;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -229,5 +226,12 @@ abstract class AbstractLocalizedData<T> {
 	@Override
 	public int hashCode() {
 		return Objects.hash(languageMap);
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", this.getClass().getSimpleName() + "[", "]")
+			.add("languageMap=" + languageMap)
+			.toString();
 	}
 }
