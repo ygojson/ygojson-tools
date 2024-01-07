@@ -2,6 +2,7 @@ package io.github.ygojson.model.data;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.*;
@@ -88,11 +89,15 @@ public class Card {
 	 * Note: this method is not serialized as JSON,
 	 * as each individual getter/setter has its own field.
 	 *
-	 * @return card-text as a model
+	 * @return card-text as a model; might be {@code null}
 	 */
 	@JsonIgnore // using json ignore but add the methods for the annotations+
 	public CardText getCardText() {
 		return cardText;
+	}
+
+	private Optional<CardText> getOptionalCardText() {
+		return Optional.ofNullable(cardText);
 	}
 
 	/**
@@ -126,7 +131,7 @@ public class Card {
 	@JsonProperty(value = CardProperties.NAME)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public String getName() {
-		return cardText.getName();
+		return getOptionalCardText().map(CardText::getName).orElse(null);
 	}
 
 	/**
@@ -173,7 +178,7 @@ public class Card {
 	@JsonProperty(value = CardProperties.EFFECT_TEXT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public String getEffectText() {
-		return cardText.getEffectText();
+		return getOptionalCardText().map(CardText::getEffectText).orElse(null);
 	}
 
 	/**
@@ -202,7 +207,7 @@ public class Card {
 	@JsonProperty(value = CardProperties.FLAVOR_TEXT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public String getFlavorText() {
-		return cardText.getFlavorText();
+		return getOptionalCardText().map(CardText::getFlavorText).orElse(null);
 	}
 
 	/**
@@ -305,7 +310,7 @@ public class Card {
 	@JsonProperty(value = CardProperties.MATERIALS)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public String getMaterials() {
-		return cardText.getMaterials();
+		return getOptionalCardText().map(CardText::getMaterials).orElse(null);
 	}
 
 	/**
@@ -337,7 +342,7 @@ public class Card {
 	@JsonProperty(value = CardProperties.PENDULUM_EFFECT)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public String getPendulumEffect() {
-		return cardText.getPendulumEffect();
+		return getOptionalCardText().map(CardText::getPendulumEffect).orElse(null);
 	}
 
 	/**
