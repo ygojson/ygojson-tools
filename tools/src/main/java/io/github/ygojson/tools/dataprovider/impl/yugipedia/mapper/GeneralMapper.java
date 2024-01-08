@@ -38,4 +38,19 @@ public abstract class GeneralMapper {
 		}
 		return list.size();
 	}
+
+	/**
+	 * Maps a blank string to {@code null}.
+	 *
+	 * @param value the input string
+	 *
+	 * @return {@code null} if the input string is blank; the input string otherwise.
+	 */
+	@Named("blankStringToNull")
+	public String mapBlankStringToNull(final String value) {
+		if (value == null || value.isBlank()) {
+			return null;
+		}
+		return value;
+	}
 }
