@@ -13,6 +13,9 @@ import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
 
+/**
+ * Mapper for the YGOJSON {@link Print} from yugipedia {@link CardTable2} model.
+ */
 @Mapper(
 	uses = { GeneralMapper.class },
 	unmappedTargetPolicy = ReportingPolicy.ERROR
@@ -25,9 +28,18 @@ public abstract class YugipediaPrintMapper {
 	private static final int CARD_NUMBER_FIELD = 0;
 	// 2nd field: setName (useful for the firstSeries cards withut printCode)
 	private static final int SET_NAME_FIELD = 1;
-	// 3rd filed: rarity list
-	private static final int RARITY_FIELD = 2;
+	// 3rd field: rarity list
+	private static final int RARITY_LIST_FIELD = 2;
 
+	/**
+	 * Maps to the YGOJSON Print model the yugipedia relevant information.
+	 *
+	 * @param cardTable2 the CardTable2 model
+	 *
+	 * @return list of prints contained in the CardTable2 model;
+	 * 		   {@code null} if cardTable2 is {@code null};
+	 * 		   empty list if no prints are present
+	 */
 	public List<Print> mapToPrints(final CardTable2 cardTable2) {
 		if (cardTable2 == null) {
 			return null;
@@ -86,7 +98,7 @@ public abstract class YugipediaPrintMapper {
 		final String cardNumber = fields.get(CARD_NUMBER_FIELD).toString();
 		final String setName = fields.get(SET_NAME_FIELD).toString();
 		final Stream<MarkupString> rarities = fields
-			.get(RARITY_FIELD)
+			.get(RARITY_LIST_FIELD)
 			.splitByComma();
 
 		return rarities
@@ -96,6 +108,14 @@ public abstract class YugipediaPrintMapper {
 			.map(this::mapPrint);
 	}
 
+	/**
+	 * Container to store the relevant information about the card print from {@link CardTable2}.
+	 *
+	 * @param cardNumber card number printed on the card
+	 * @param setName the name of the set
+	 * @param language the language of the card
+	 * @param rarity the rarity of the card
+	 */
 	protected record PrintInfo(
 		String cardNumber,
 		String setName,
