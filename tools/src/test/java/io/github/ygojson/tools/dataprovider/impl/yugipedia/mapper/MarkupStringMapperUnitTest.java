@@ -30,11 +30,11 @@ class MarkupStringMapperUnitTest {
 	}
 
 	@Test
-	void given_nullProperty_when_mapToJapanese_then_returnObject() {
+	void given_nullProperty_when_mapToMaybeRubyCharacters_then_returnObject() {
 		// given
 		final String property = null;
 		// when
-		final MarkupString result = TEST_MAPPER.mapToJapanese(property);
+		final MarkupString result = TEST_MAPPER.mapToMaybeRubyCharacters(property);
 		// then
 		assertThat(result).isNotNull().extracting(MarkupString::toString).isNull();
 	}

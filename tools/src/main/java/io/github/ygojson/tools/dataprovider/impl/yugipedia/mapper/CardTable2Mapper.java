@@ -37,7 +37,7 @@ public abstract class CardTable2Mapper {
 	private static final int CARDTABLE2_CONTENT_GROUP = 1;
 
 	/**
-	 * Split pattern fore each fiel on the CardTable2 content.
+	 * Split pattern fore each field on the CardTable2 content.
 	 */
 	private static final Pattern CARDTABLE2_FIELD_SPLIT_PATTERN = Pattern.compile(
 		"\n\\| "
@@ -87,9 +87,12 @@ public abstract class CardTable2Mapper {
 	// card_type model is only used for non-monster types regarding the documentation
 	// thus set the default value for easier downstream processing and being explicit about it
 	@Mapping(target = "card_type", defaultValue = "Monster")
-	@Mapping(target = "ja_name", qualifiedByName = "japanese")
-	@Mapping(target = "ja_pendulum_effect", qualifiedByName = "japanese")
-	@Mapping(target = "ja_lore", qualifiedByName = "japanese")
+	@Mapping(target = "ja_name", qualifiedByName = "rubyCharacters")
+	@Mapping(target = "ja_pendulum_effect", qualifiedByName = "rubyCharacters")
+	@Mapping(target = "ja_lore", qualifiedByName = "rubyCharacters")
+	@Mapping(target = "ko_name", qualifiedByName = "rubyCharacters")
+	@Mapping(target = "ko_pendulum_effect", qualifiedByName = "rubyCharacters")
+	@Mapping(target = "ko_lore", qualifiedByName = "rubyCharacters")
 	@Mapping(target = "link_arrows", qualifiedByName = "commaSeparatedStringList")
 	protected abstract CardTable2 mapToCardTable2(
 		final Map<String, String> asMap

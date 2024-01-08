@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
  * String that might contain markup from the Yugipedia API
- * that can be clenaup.
+ * that can be cleanup.
  */
 @JsonSerialize(using = ToStringSerializer.class)
 public final class MarkupString {
@@ -31,13 +31,13 @@ public final class MarkupString {
 
 	/**
 	 * Creates a new instance from the given string that might
-	 * contain some japanese-specific markup too.
+	 * contain some ruby-characters-specific markup too.
 	 *
 	 * @param value string value with possible markup.
 	 *
-	 * @return new instance (japanese-aware).
+	 * @return new instance (ruby-characters-aware).
 	 */
-	public static MarkupString ofJapanese(final String value) {
+	public static MarkupString ofMaybeRubyCharacters(final String value) {
 		return new MarkupString(value, true);
 	}
 
@@ -88,10 +88,10 @@ public final class MarkupString {
 	private static final String MARKUP_ITALIC_REPLACEMENT = "$1";
 
 	/**
-	 * Pattern for japanese ruby syntax on the Yugipedia markup format.
+	 * Pattern for japanese/korean/etc. ruby syntax on the Yugipedia markup format.
 	 */
 	private static final Pattern MARKUP_RUBY_REGEX = Pattern.compile(
-		"\\{\\{Ruby\\|(.*?)\\|(.*?)}}",
+		"\\{\\{Ruby\\|(.*?)\\|(.*?)(\\|.*?)?}}", // third optional group is for the ignored lang part
 		Pattern.CASE_INSENSITIVE
 	);
 
@@ -105,7 +105,7 @@ public final class MarkupString {
 	private static final int MARKUP_RUBY_MATCH_GROUP_FURIGANA = 2;
 
 	/**
-	 * Message format string for the HTML forma of japanese ruby.
+	 * Message format string for the HTML ruby-syntax (for japanese/korean/etc.).
 	 * <br>
 	 * The firs argument is the ruby kanji part and the second is the ruby furigana part.
 	 */
@@ -113,11 +113,14 @@ public final class MarkupString {
 		"<ruby>{0}<rt>{1}</rt></ruby>";
 
 	private final String value;
-	private final boolean expectedJapanese;
+	private final boolean expectedRubyCharacters;
 
-	private MarkupString(final String value, final boolean expectedJapanese) {
+	private MarkupString(
+		final String value,
+		final boolean expectedRubyCharacters
+	) {
 		this.value = value;
-		this.expectedJapanese = expectedJapanese;
+		this.expectedRubyCharacters = expectedRubyCharacters;
 	}
 
 	private Stream<MarkupString> splitByPattern(final Pattern pattern) {
@@ -126,7 +129,7 @@ public final class MarkupString {
 		}
 		return pattern
 			.splitAsStream(value)
-			.map(value -> new MarkupString(value, this.expectedJapanese));
+			.map(value -> new MarkupString(value, this.expectedRubyCharacters));
 	}
 
 	/**
@@ -188,15 +191,15 @@ public final class MarkupString {
 		return Arrays
 			.stream(MARKUP_BREAK_PATTERN.split(value, maxItems))
 			.filter(item -> !item.isEmpty()) // remove empty lines
-			.map(value -> new MarkupString(value, this.expectedJapanese))
+			.map(value -> new MarkupString(value, this.expectedRubyCharacters))
 			.toList();
 	}
 
 	/**
 	 * Returns as a string where all the markup have been removed.
 	 * <br>
-	 * Note that for japanese, this might not be true, as the ruby-encoding
-	 * would be returned in the html-form.
+	 * Note that for ruby-characters-aware markup, this might not be true,
+	 * as the ruby-encoding would be returned in the html-form.
 	 *
 	 * @return the string without (or with minimum required) markup.
 	 */
@@ -205,8 +208,8 @@ public final class MarkupString {
 			return value;
 		}
 		String cleanup = value;
-		if (expectedJapanese) {
-			cleanup = replaceJapaneseRubyByTags(cleanup);
+		if (expectedRubyCharacters) {
+			cleanup = replaceRubyCharactersByTags(cleanup);
 		}
 		// first remove internal links
 		cleanup =
@@ -223,7 +226,7 @@ public final class MarkupString {
 		return MARKUP_BREAK_PATTERN.matcher(cleanup).replaceAll("\n");
 	}
 
-	private String replaceJapaneseRubyByTags(final String text) {
+	private String replaceRubyCharactersByTags(final String text) {
 		final Matcher matcher = MARKUP_RUBY_REGEX.matcher(text);
 		final StringBuilder result = new StringBuilder();
 		while (matcher.find()) {
@@ -253,13 +256,13 @@ public final class MarkupString {
 		if (this == o) return true;
 		if (!(o instanceof MarkupString that)) return false;
 		return (
-			expectedJapanese == that.expectedJapanese &&
+			expectedRubyCharacters == that.expectedRubyCharacters &&
 			Objects.equals(value, that.value)
 		);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(value, expectedJapanese);
+		return Objects.hash(value, expectedRubyCharacters);
 	}
 }
