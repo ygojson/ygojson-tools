@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.CardTable2Mapper;
@@ -18,6 +19,7 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 class CardTable2MapperTest {
 
+	private static CardTable2Mapper MAPPER;
 	private static ObjectMapper OBJECT_MAPPER;
 
 	@BeforeAll
@@ -26,6 +28,7 @@ class CardTable2MapperTest {
 			new ObjectMapper()
 				.enable(SerializationFeature.INDENT_OUTPUT)
 				.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+		MAPPER = Mappers.getMapper(CardTable2Mapper.class);
 	}
 
 	@ParameterizedTest
@@ -38,8 +41,7 @@ class CardTable2MapperTest {
 		// given
 		final String wikitext = wikitextTestData.wikitext();
 		// when
-		final CardTable2 cardTable2 =
-			CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(wikitext);
+		final CardTable2 cardTable2 = MAPPER.mapWikitextToCardTable2(wikitext);
 		final String asJsonString = OBJECT_MAPPER.writeValueAsString(cardTable2);
 		// then
 		Approvals.verify(
@@ -58,8 +60,7 @@ class CardTable2MapperTest {
 		// given
 		final String wikitext = null;
 		// when
-		final CardTable2 cardTable2 =
-			CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(wikitext);
+		final CardTable2 cardTable2 = MAPPER.mapWikitextToCardTable2(wikitext);
 		// then
 		assertThat(cardTable2).isNull();
 	}
@@ -69,8 +70,7 @@ class CardTable2MapperTest {
 		// given
 		final String wikitext = "arbitrary string";
 		// when
-		final CardTable2 cardTable2 =
-			CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(wikitext);
+		final CardTable2 cardTable2 = MAPPER.mapWikitextToCardTable2(wikitext);
 		// then
 		assertThat(cardTable2).isNull();
 	}

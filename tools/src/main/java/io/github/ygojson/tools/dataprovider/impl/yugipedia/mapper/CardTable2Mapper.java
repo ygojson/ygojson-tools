@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
@@ -18,10 +17,6 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
  */
 @Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
 public abstract class CardTable2Mapper {
-
-	public static final CardTable2Mapper INSTANCE = Mappers.getMapper(
-		CardTable2Mapper.class
-	);
 
 	/**
 	 * Pattern for the CardTable2 content
@@ -61,7 +56,7 @@ public abstract class CardTable2Mapper {
 		return mapToCardTable2(wikitextToMap(wikitext));
 	}
 
-	private Map<String, String> wikitextToMap(final String wikitext) {
+	protected Map<String, String> wikitextToMap(final String wikitext) {
 		if (wikitext == null) {
 			return null;
 		}

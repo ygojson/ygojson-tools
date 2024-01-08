@@ -19,12 +19,14 @@ class YugipediaCardMapperTest {
 
 	private static ObjectWriter OBJECT_WRITER;
 	private static YugipediaCardMapper MAPPER;
+	private static CardTable2Mapper CARDTABLE2_MAPPER;
 
 	@BeforeAll
 	static void beforeAll() {
 		OBJECT_WRITER =
 			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
 		MAPPER = Mappers.getMapper(YugipediaCardMapper.class);
+		CARDTABLE2_MAPPER = Mappers.getMapper(CardTable2Mapper.class);
 	}
 
 	@ParameterizedTest
@@ -38,8 +40,9 @@ class YugipediaCardMapperTest {
 		final String wikitext = wikitextTestData.wikitext();
 		final String pageTitle = wikitextTestData.pageTitle();
 		final Long pageId = wikitextTestData.pageId();
-		final CardTable2 cardTable2 =
-			CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(wikitext);
+		final CardTable2 cardTable2 = CARDTABLE2_MAPPER.mapWikitextToCardTable2(
+			wikitext
+		);
 		// when
 		final Card card = MAPPER.mapToCard(cardTable2, pageTitle, pageId);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(card);
