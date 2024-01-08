@@ -24,12 +24,14 @@ class YugipediaPrintMapperTest {
 
 	private static ObjectWriter OBJECT_WRITER;
 	private static YugipediaPrintMapper MAPPER;
+	private static CardTable2Mapper CARDTABLE2_MAPPER;
 
 	@BeforeAll
 	static void beforeAll() {
 		OBJECT_WRITER =
 			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
 		MAPPER = Mappers.getMapper(YugipediaPrintMapper.class);
+		CARDTABLE2_MAPPER = Mappers.getMapper(CardTable2Mapper.class);
 	}
 
 	@ParameterizedTest
@@ -41,8 +43,9 @@ class YugipediaPrintMapperTest {
 	) throws JsonProcessingException {
 		// given
 		final String wikitext = wikitextTestData.wikitext();
-		final CardTable2 cardTable2 =
-			CardTable2Mapper.INSTANCE.mapWikitextToCardTable2(wikitext);
+		final CardTable2 cardTable2 = CARDTABLE2_MAPPER.mapWikitextToCardTable2(
+			wikitext
+		);
 		// when
 		final List<Print> card = MAPPER.mapToPrints(cardTable2);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(card);

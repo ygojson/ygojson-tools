@@ -11,6 +11,7 @@
   "ko_name" : "스타더스트 드래곤",
   "ko_rr_name" : "Seutadeoseuteu Deuraegon",
   "image" : "\n1; StardustDragon-TN23-EN-QCScR-LE.png; StardustDragon-MADU-EN-VG-artwork.png\n2; StardustDragon-DUPO-EN-UR-LE.png;    StardustDragon-OW-2.png\n3; StardustDragon-CCC1-JP-NPR.png",
+  "current_image" : "1",
   "card_type" : "Monster",
   "attribute" : "WIND",
   "types" : "Dragon / Synchro / Effect",
@@ -40,8 +41,11 @@
   "sc_sets" : [ "TRC1-SC005; The Rarity Collection; Extra Secret Rare", "SD28-SC044; Structure Deck: Synchron Extreme; Common" ],
   "kr_sets" : [ "TDGS-KR040; The Duelist Genesis; Ultra Rare, Ultimate Rare, Holographic Rare", "DP08-KR014; Duelist Pack: Yusei; Super Rare", "DP00-KRSE1; Duelist Pack: Yugi Special Edition; Secret Rare", "GS04-KR009; Gold Series 2012; Common, Gold Rare", "TRC1-KR005; The Rarity Collection; Extra Secret Rare", "CHBI-KRBS3; Chronicle Binder; Extra Secret Rare", "SP19-KR026; Special Pack Vol.3; Secret Rare, Extra Secret Rare", "PAC1-KR006; Prismatic Art Collection; Normal Parallel Rare, Secret Rare, Prismatic Secret Rare", "SYP1-KR106; Synergy Pack 01: Syncro Acceleration; Common, Secret Rare, Quarter Century Secret Rare", "GPC1-KR004; Gopizza x Yu-Gi-Oh! Official Card Game Collaboration Campaign; Normal Parallel Rare" ],
   "archseries" : "\n* Signer Dragon\n* Stardust (archetype)",
+  "related_to_archseries" : "\n*/Assault Mode\n* Cosmic Synchro Monster\n* Duel Dragon\n* Majestic\n* Malefic\n* Signature move\n* Synchro (archetype)",
   "action" : "Tributes itself for cost",
   "summoning" : "\n* 1 or more non-Tuner Synchro Materials\n* Does not require specific Synchro Materials\n* Special Summons itself from your Graveyard",
   "sm_for" : "\n* Majestic Star Dragon\n* Shooting Star Dragon",
-  "misc" : "Cover card"
+  "misc" : "Cover card",
+  "materials" : "1 Tuner + 1 or more non-Tuner monsters",
+  "ygo_sets" : "\n'''[[Pack 49 (YGOO-BP)|Pack 49]]'''"
 }

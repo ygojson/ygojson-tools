@@ -40,5 +40,8 @@
   "ae_sets" : [ "LOB-058; Legend of Blue Eyes White Dragon; Common", "SDY-027; Starter Deck: Yugi; Common", "SDK-033; Starter Deck: Kaiba; Common", "SSD2-AE017; Speed Start Deck Synchro Edition; Common" ],
   "tc_sets" : [ "ST14-TC033; Duel Starter Deck; Common", "HD13-TCL17; Half-Deck: LIGHT; Common", "HD13-TCD17; Half-Deck: DARK; Common" ],
   "kr_sets" : [ "LOB-K058; Legend of Blue Eyes White Dragon; Super Rare", "SDY-K027; Starter Deck: Yugi; Common", "SDK-K033; Starter Deck: Kaiba; Common", "SDJ-KR043; Starter Deck: Joey; Common", "SDP-KR041; Starter Deck: Pegasus; Common", "SYE-KR041; Starter Deck: Yugi Evolution; Common", "SKE-KR042; Starter Deck: Kaiba Evolution; Common", "BP1-KR118; Beginner's Edition 1; Rare", "ESP1-KR005; Expansion Pack Vol.1; Common", "YSD3-KR036; Starter Deck 2008; Common", "YSD5-KR033; Starter Deck 2010; Common", "GS03-KR018; Gold Series 2011; Common, Gold Rare", "YSD6-KR034; Starter Deck 2011; Common", "ST12-KR032; Starter Deck 2012; Common", "ST14-KR031; Starter Deck 2014; Common", "VS15-KRS23; Duelist Entry Deck VS: Saber Force; Common", "VS15-KRD24; Duelist Entry Deck VS: Dark Legion; Common", "SSD2-KR017; Speed Start Deck Synchro Edition; Common", "SD45-KR028; Structure Deck: Forest of the Traptrix; Common" ],
-  "archseries" : "Trap Hole (archetype)"
+  "archseries" : "Trap Hole (archetype)",
+  "ntr_sets" : "\n'''[[Shadows in the Labyrinth (NTR-BP)|Shadows in the Labyrinth]]''' ([[Rare]])",
+  "ygo_sets" : "\n'''[[Pack 2 (YGOO-BP)|Pack 2]]'''",
+  "gx03_sets" : "\n'''[[Established Chaos (GX03-BP)|Established Chaos]]''' ([[Super Rare]])"
 }
