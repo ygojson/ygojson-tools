@@ -36,11 +36,11 @@ class MarkupStringUnitTest {
 	@ParameterizedTest
 	@MethodSource("consideredMarkups")
 	void given_consideredMarkupfromString_when_withoutMarkup_then_correctlyCleanup(
-		final String maybeJapanese,
+		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
 		// given
-		final MarkupString markupString = MarkupString.of(maybeJapanese);
+		final MarkupString markupString = MarkupString.of(maybeMaybeRubyCharacters);
 		// when
 		final String withoutMarkup = markupString.withoutMarkup();
 		// then
@@ -49,12 +49,14 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("consideredMarkups")
-	void given_consideredMarkupfromJapaneseString_when_withoutMarkup_then_correctlyCleanup(
-		final String maybeJapanese,
+	void given_consideredMarkupfromMaybeRubyCharactersString_when_withoutMarkup_then_correctlyCleanup(
+		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
 		// given
-		final MarkupString markupString = MarkupString.ofJapanese(maybeJapanese);
+		final MarkupString markupString = MarkupString.ofMaybeRubyCharacters(
+			maybeMaybeRubyCharacters
+		);
 		// when
 		final String withoutMarkup = markupString.withoutMarkup();
 		// then
@@ -93,12 +95,14 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("rubyMarkupProvider")
-	void given_fromJapaneseString_when_withoutMarkup_then_correctlyCleanup(
-		final String maybeJapanese,
+	void given_fromMaybeRubyCharactersString_when_withoutMarkup_then_correctlyCleanup(
+		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
 		// given
-		final MarkupString markupString = MarkupString.ofJapanese(maybeJapanese);
+		final MarkupString markupString = MarkupString.ofMaybeRubyCharacters(
+			maybeMaybeRubyCharacters
+		);
 		// when
 		final String withoutMarkup = markupString.withoutMarkup();
 		// then
@@ -107,22 +111,22 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("rubyMarkupProvider")
-	void given_wrongfromStringForJapanese_when_withoutMarkup_then_sameString(
-		final String maybeJapanese,
+	void given_wrongfromStringForMaybeRubyCharacters_when_withoutMarkup_then_sameString(
+		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
 		// given
-		final MarkupString markupString = MarkupString.of(maybeJapanese);
+		final MarkupString markupString = MarkupString.of(maybeMaybeRubyCharacters);
 		// when
 		final String withoutMarkup = markupString.withoutMarkup();
 		// then
-		assertThat(withoutMarkup).isEqualTo(maybeJapanese);
+		assertThat(withoutMarkup).isEqualTo(maybeMaybeRubyCharacters);
 	}
 
 	@Test
-	void given_fromJapaneseStringWithRubyInsideMarkup_when_withoutMarkup_then_cleanupAndWithRubyTags() {
+	void given_fromMaybeRubyCharactersStringWithRubyInsideMarkup_when_withoutMarkup_then_cleanupAndWithRubyTags() {
 		// given
-		final MarkupString markupString = MarkupString.ofJapanese(
+		final MarkupString markupString = MarkupString.ofMaybeRubyCharacters(
 			"[[{{Ruby|kanji1|furigana1}}]]<br />''{{Ruby|kanji2|furigana2}}''"
 		);
 		// when

@@ -26,15 +26,15 @@ public abstract class MarkupStringMapper {
 	}
 
 	/**
-	 * Maps a plain-string property into a japanese-aware markup string.
+	 * Maps a plain-string property into a ruby-characters-aware markup string.
 	 *
 	 * @param property plain-string property to map.
 	 *
-	 * @return japanese aware markup string.
+	 * @return ruby-characters aware markup string.
 	 */
-	@Named("japanese")
-	public MarkupString mapToJapanese(final String property) {
-		return MarkupString.ofJapanese(property);
+	@Named("rubyCharacters")
+	public MarkupString mapToMaybeRubyCharacters(final String property) {
+		return MarkupString.ofMaybeRubyCharacters(property);
 	}
 
 	/**

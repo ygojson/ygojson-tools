@@ -87,7 +87,7 @@ class YugipediaCardTextMapper {
 	protected CardText mapKoCardText(final CardTable2 cardTable2) {
 		return mapToCardText(
 			cardTable2,
-			CardTable2::ko_name,
+			ct2 -> markupStringMapper.map(ct2.ko_name()),
 			CardTable2::ko_pendulum_effect
 		);
 	}
