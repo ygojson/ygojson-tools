@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
  * String that might contain markup from the Yugipedia API
- * that can be clenaup.
+ * that can be cleanup.
  */
 @JsonSerialize(using = ToStringSerializer.class)
 public final class MarkupString {

@@ -20,7 +20,7 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
 /**
  * Mapper for all {@link CardText} fields.
  * <br>
- * Includes named mapeprs and after-mappings for all main and language-specific fields.
+ * Includes named mappers and after-mappings for all main and language-specific fields.
  */
 @Mapper
 class YugipediaCardTextMapper {
@@ -121,9 +121,9 @@ class YugipediaCardTextMapper {
 
 	/**
 	 * Main method to map to the CardText model,
-	 * which can be used indpendently of the language.
+	 * which can be used independently of the language.
 	 *
-	 * @param cardTable2 the yugipedia CardTable2 model..
+	 * @param cardTable2 the Yugipedia CardTable2 model.
 	 * @param nameGetter getter for the actual name in the mapped language.
 	 * @param pendulumEffectGetter getter for the actual pendulum effect in the mapped language.
 	 *
@@ -280,7 +280,7 @@ class YugipediaCardTextMapper {
 
 	/**
 	 * Main method to update the CardText model,
-	 * which can be used indpendently of the language.
+	 * which can be used independently of the language.
 	 *
 	 * @param card the already mapped Card.
 	 * @param fullLoreSupplier supplier for the lore (coming from the CardTable2 language-specific field).

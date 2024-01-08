@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Yugipedia's Model for CardTable2.
  * <br>
  * {@link MarkupString} is used where markup content might be present.
- * The rest of fileds are typed as {@link String} to prevent issues
+ * The rest of fields are typed as {@link String} to prevent issues
  * while typing values with special markers (i.e., atk/def values as '?'
  * cannot be typed as a numeric).
  *

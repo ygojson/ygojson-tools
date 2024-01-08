@@ -37,7 +37,7 @@ public abstract class CardTable2Mapper {
 	private static final int CARDTABLE2_CONTENT_GROUP = 1;
 
 	/**
-	 * Split pattern fore each fiel on the CardTable2 content.
+	 * Split pattern fore each field on the CardTable2 content.
 	 */
 	private static final Pattern CARDTABLE2_FIELD_SPLIT_PATTERN = Pattern.compile(
 		"\n\\| "

@@ -17,7 +17,7 @@ public abstract class MarkupStringMapper {
 	/**
 	 * Maps a plain-string property into a markup string.
 	 *
-	 * @param property plainstring propoperty to map.
+	 * @param property plain string property to map.
 	 *
 	 * @return markup string
 	 */

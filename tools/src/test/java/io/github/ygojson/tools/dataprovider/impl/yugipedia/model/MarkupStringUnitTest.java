@@ -35,7 +35,7 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("consideredMarkups")
-	void given_consideredMarkupfromString_when_withoutMarkup_then_correctlyCleanup(
+	void given_consideredMarkupFromString_when_withoutMarkup_then_correctlyCleanup(
 		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
@@ -49,7 +49,7 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("consideredMarkups")
-	void given_consideredMarkupfromMaybeRubyCharactersString_when_withoutMarkup_then_correctlyCleanup(
+	void given_consideredMarkupFromMaybeRubyCharactersString_when_withoutMarkup_then_correctlyCleanup(
 		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
@@ -111,7 +111,7 @@ class MarkupStringUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("rubyMarkupProvider")
-	void given_wrongfromStringForMaybeRubyCharacters_when_withoutMarkup_then_sameString(
+	void given_wrongFromStringForMaybeRubyCharacters_when_withoutMarkup_then_sameString(
 		final String maybeMaybeRubyCharacters,
 		final String expected
 	) {
@@ -227,7 +227,7 @@ class MarkupStringUnitTest {
 	}
 
 	@Test
-	void given_stringWithComman_when_splitByComma_then_correctSplit() {
+	void given_stringWithComma_when_splitByComma_then_correctSplit() {
 		// given
 		final MarkupString markupString = MarkupString.of("first, second");
 		// when
