@@ -83,6 +83,10 @@ class MarkupStringUnitTest {
 			Arguments.of( // real case
 				"{{Ruby|創|そう}}{{Ruby|聖|せい}}{{Ruby|魔|ま}}{{Ruby|導|どう}}{{Ruby|王|おう}} エンディミオン",
 				"<ruby>創<rt>そう</rt></ruby><ruby>聖<rt>せい</rt></ruby><ruby>魔<rt>ま</rt></ruby><ruby>導<rt>どう</rt></ruby><ruby>王<rt>おう</rt></ruby> エンディミオン"
+			),
+			Arguments.of( // real case - korean
+				"{{Ruby|ＳＴＡＲＴＥＲ ＤＥＣＫ|조이 덱|lang=ko}} —페가수스 편—",
+				"<ruby>ＳＴＡＲＴＥＲ ＤＥＣＫ<rt>조이 덱</rt></ruby> —페가수스 편—"
 			)
 		);
 	}
