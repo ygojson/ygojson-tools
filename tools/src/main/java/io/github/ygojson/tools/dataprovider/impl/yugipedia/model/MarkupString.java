@@ -112,6 +112,10 @@ public final class MarkupString {
 	private static final String HTML_RUBY_MESSAGE_FORMAT =
 		"<ruby>{0}<rt>{1}</rt></ruby>";
 
+	private static final Pattern MARKUP_HTML_COMMENT_REGEX = Pattern.compile(
+		"<!--.*?-->"
+	);
+
 	private final String value;
 	private final boolean expectedRubyCharacters;
 
@@ -211,6 +215,7 @@ public final class MarkupString {
 		if (expectedRubyCharacters) {
 			cleanup = replaceRubyCharactersByTags(cleanup);
 		}
+		cleanup = removeHtmlComments(cleanup);
 		// first remove internal links
 		cleanup =
 			MARKUP_INTERNAL_LINK_REGEX
@@ -239,6 +244,16 @@ public final class MarkupString {
 		}
 		matcher.appendTail(result);
 		return result.isEmpty() ? text : result.toString();
+	}
+
+	private String removeHtmlComments(final String text) {
+		final Matcher matcher = MARKUP_HTML_COMMENT_REGEX.matcher(text);
+		final StringBuilder result = new StringBuilder();
+		while (matcher.find()) {
+			matcher.appendReplacement(result, "");
+		}
+		matcher.appendTail(result);
+		return result.toString();
 	}
 
 	/**
