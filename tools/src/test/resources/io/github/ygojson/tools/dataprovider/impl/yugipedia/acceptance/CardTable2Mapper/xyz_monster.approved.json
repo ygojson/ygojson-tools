@@ -41,5 +41,6 @@
   "action" : "Transfers",
   "stat_change" : "\n* This card gains ATK\n* This card gains DEF",
   "summoning" : "\n* 4 Xyz Materials\n* Does not require specific Xyz Materials\n* Special Summons itself from your Extra Deck\n* Special Summon by its own condition once per turn\n* Xyz Evolution",
-  "misc" : "Limited activations"
+  "misc" : "Limited activations",
+  "materials" : "4 Level 4 monsters"
 }

@@ -37,10 +37,14 @@
   "jp_sets" : [ "POTD-JP034; Power of the Duelist; Ultra Rare, Ultimate Rare", "DP04-JP013; Duelist Pack: Zane Truesdale; Rare", "DT13-JP032; Duel Terminal - Sacred Star Knights!!; Duel Terminal Rare Parallel Rare", "DE01-JP026; Duelist Edition Volume 1; Ultra Rare", "SD41-JP042; Structure Deck: Cyber Style's Successor; Normal Parallel Rare", "HC01-JP017; History Archive Collection; Normal Parallel Rare, Secret Rare, Ultimate Rare", "????-JP001; Yu-Gi-Oh! Quarter Century Summonscene Selection Blu-ray & DVD promotional card; Quarter Century Secret Rare" ],
   "kr_sets" : [ "POTD-KR034; Power of the Duelist; Ultra Rare, Ultimate Rare", "DP04-KR013; Duelist Pack: Zane Truesdale; Rare", "PC01-KR027; Precious Pack Volume 1; Ultra Rare", "SD41-KR042; Structure Deck: Cyber Style's Successor; Normal Parallel Rare", "HC01-KR017; History Archive Collection; Normal Parallel Rare, Secret Rare, Ultimate Rare" ],
   "supports" : "Machine",
+  "mentions" : "Cyber Dragon",
   "archseries" : "Chimeratech",
+  "related_to_archseries" : "\n* Cyber Dragon (archetype)\n* Signature move",
   "action" : "\n* Activates upon Fusion Summon\n* Sends from your field to your Graveyard",
   "stat_change" : "\n* Changes own ATK value\n* Changes own DEF value\n* Changes original ATK\n* Changes original DEF",
   "summoning" : "\n* 2+ Fusion Materials\n* Requires specific Effect Monsters as Fusion Materials\n* Requires Type specific Fusion Materials\n* Nomi",
   "attack" : "Can make multiple attacks on monsters",
-  "fusion_material" : "\n* Cyber Dragon"
+  "materials" : "\"Cyber Dragon\" + 1 or more Machine-Type monsters",
+  "fusion_material" : "\n* Cyber Dragon",
+  "ygo_sets" : "\n'''[[Pack 41 (YGOO-BP)|Pack 41]]'''"
 }

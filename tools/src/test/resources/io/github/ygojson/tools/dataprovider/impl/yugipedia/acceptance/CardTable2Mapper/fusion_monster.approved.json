@@ -40,9 +40,11 @@
   "sc_sets" : [ "MGP6-SC133; Mega Pack 06; Ultra Rare, Secret Rare, Prismatic Secret Rare" ],
   "kr_sets" : [ "BODE-KR039; Burst of Destiny; Ultra Rare, Ultimate Rare, Secret Rare, Prismatic Secret Rare", "BODE-KR039; Burst of Destiny +1 Bonus Pack; Ultra Rare, Prismatic Secret Rare" ],
   "archseries" : "\n* HERO\n* Destiny HERO",
+  "related_to_archseries" : "Elemental HERO",
   "supports_archetypes" : "\n* HERO\n* Destiny HERO",
   "action" : "\n* Activates if destroyed by battle\n* Activates if destroyed by card effect",
   "stat_change" : "Your opponent's monsters lose ATK",
   "summoning" : "\n* 2 Fusion Materials\n* Requires Level specific Fusion Materials\n* Requires archetype specific Fusion Materials\n* Special Summons from your Graveyard",
-  "misc" : "\n* Only once per turn\n* Standby Phase Activation"
+  "misc" : "\n* Only once per turn\n* Standby Phase Activation",
+  "materials" : "1 Level 6 or higher \"HERO\" monster + 1 \"Destiny HERO\" monster"
 }
