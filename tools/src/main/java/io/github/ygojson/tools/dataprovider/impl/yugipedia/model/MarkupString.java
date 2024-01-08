@@ -42,6 +42,11 @@ public final class MarkupString {
 	}
 
 	/**
+	 * UFF-8 Byte Order Mark (BOM)
+	 */
+	private static final char UTF8_BOM = '\uFEFF';
+
+	/**
 	 * New line pattern.
 	 */
 	private static final Pattern NEW_LINE_PATTERN = Pattern.compile("\n");
@@ -212,6 +217,10 @@ public final class MarkupString {
 			return value;
 		}
 		String cleanup = value;
+		// replace special BOM-char marker
+		if (cleanup.charAt(0) == UTF8_BOM) {
+			cleanup = cleanup.substring(1);
+		}
 		if (expectedRubyCharacters) {
 			cleanup = replaceRubyCharactersByTags(cleanup);
 		}
