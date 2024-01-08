@@ -4,6 +4,7 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
@@ -40,6 +41,11 @@ public final class MarkupString {
 	public static MarkupString ofMaybeRubyCharacters(final String value) {
 		return new MarkupString(value, true);
 	}
+
+	/**
+	 * UFF-8 Byte Order Mark (BOM)
+	 */
+	private static final char UTF8_BOM = '\uFEFF';
 
 	/**
 	 * New line pattern.
@@ -111,6 +117,10 @@ public final class MarkupString {
 	 */
 	private static final String HTML_RUBY_MESSAGE_FORMAT =
 		"<ruby>{0}<rt>{1}</rt></ruby>";
+
+	private static final Pattern MARKUP_HTML_COMMENT_REGEX = Pattern.compile(
+		"<!--.*?-->"
+	);
 
 	private final String value;
 	private final boolean expectedRubyCharacters;
@@ -208,37 +218,61 @@ public final class MarkupString {
 			return value;
 		}
 		String cleanup = value;
-		if (expectedRubyCharacters) {
-			cleanup = replaceRubyCharactersByTags(cleanup);
+		// replace special BOM-char marker
+		if (cleanup.charAt(0) == UTF8_BOM) {
+			cleanup = cleanup.substring(1);
 		}
+		if (expectedRubyCharacters) {
+			cleanup =
+				replaceRecursively(
+					cleanup,
+					MARKUP_RUBY_REGEX,
+					MarkupString::formatRubyHtmlFromMatcher
+				);
+		}
+		// replace HTML
+		cleanup =
+			replaceRecursively(cleanup, MARKUP_HTML_COMMENT_REGEX, matcher -> "");
 		// first remove internal links
 		cleanup =
-			MARKUP_INTERNAL_LINK_REGEX
-				.matcher(cleanup)
-				.replaceAll(MARKUP_INTERNAL_LINK_REPLACEMENT);
+			replaceAll(
+				cleanup,
+				MARKUP_INTERNAL_LINK_REGEX,
+				MARKUP_INTERNAL_LINK_REPLACEMENT
+			);
 		// then remove italic
 		cleanup =
-			MARKUP_ITALIC_REGEX
-				.matcher(cleanup)
-				.replaceAll(MARKUP_ITALIC_REPLACEMENT);
-
+			replaceAll(cleanup, MARKUP_ITALIC_REGEX, MARKUP_ITALIC_REPLACEMENT);
 		// finally remove line-breaks
-		return MARKUP_BREAK_PATTERN.matcher(cleanup).replaceAll("\n");
+		return replaceAll(cleanup, MARKUP_BREAK_PATTERN, "\n");
 	}
 
-	private String replaceRubyCharactersByTags(final String text) {
-		final Matcher matcher = MARKUP_RUBY_REGEX.matcher(text);
+	private static String replaceRecursively(
+		final String text,
+		Pattern pattern,
+		Function<Matcher, String> replaceFunction
+	) {
+		final Matcher matcher = pattern.matcher(text);
 		final StringBuilder result = new StringBuilder();
 		while (matcher.find()) {
-			final String kanji = matcher.group(MARKUP_RUBY_MATCH_GROUP_KANJI);
-			final String furigana = matcher.group(MARKUP_RUBY_MATCH_GROUP_FURIGANA);
-			matcher.appendReplacement(
-				result,
-				MessageFormat.format(HTML_RUBY_MESSAGE_FORMAT, kanji, furigana)
-			);
+			matcher.appendReplacement(result, replaceFunction.apply(matcher));
 		}
 		matcher.appendTail(result);
-		return result.isEmpty() ? text : result.toString();
+		return result.toString();
+	}
+
+	private static String formatRubyHtmlFromMatcher(final Matcher matcher) {
+		final String kanji = matcher.group(MARKUP_RUBY_MATCH_GROUP_KANJI);
+		final String furigana = matcher.group(MARKUP_RUBY_MATCH_GROUP_FURIGANA);
+		return MessageFormat.format(HTML_RUBY_MESSAGE_FORMAT, kanji, furigana);
+	}
+
+	private static String replaceAll(
+		final String text,
+		final Pattern pattern,
+		final String replacement
+	) {
+		return pattern.matcher(text).replaceAll(replacement);
 	}
 
 	/**
