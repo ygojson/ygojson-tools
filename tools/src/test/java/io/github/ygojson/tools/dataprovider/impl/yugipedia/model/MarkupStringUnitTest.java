@@ -30,10 +30,22 @@ class MarkupStringUnitTest {
 			Arguments.of("Before''Italic''", "BeforeItalic"),
 			Arguments.of("''Italic''After", "ItalicAfter"),
 			Arguments.of("''Italic''Middle''Italic''", "ItalicMiddleItalic"),
-			Arguments.of("Before HTML-comment<!-- some comment-->", "Before HTML-comment"),
-			Arguments.of("<!-- some comment-->After HTML-comment", "After HTML-comment"),
-			Arguments.of("<!-- some comment-->Middle HTML-comment<!--other comment-->", "Middle HTML-comment"),
-			Arguments.of("Before <!--comment1-->Middle <!--comment2-->After", "Before Middle After"),
+			Arguments.of(
+				"Before HTML-comment<!-- some comment-->",
+				"Before HTML-comment"
+			),
+			Arguments.of(
+				"<!-- some comment-->After HTML-comment",
+				"After HTML-comment"
+			),
+			Arguments.of(
+				"<!-- some comment-->Middle HTML-comment<!--other comment-->",
+				"Middle HTML-comment"
+			),
+			Arguments.of(
+				"Before <!--comment1-->Middle <!--comment2-->After",
+				"Before Middle After"
+			),
 			Arguments.of("\ufeffBOM-string", "BOM-string")
 		);
 	}
