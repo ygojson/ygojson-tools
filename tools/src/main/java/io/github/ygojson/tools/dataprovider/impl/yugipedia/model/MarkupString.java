@@ -91,7 +91,7 @@ public final class MarkupString {
 	 * Pattern for japanese ruby syntax on the Yugipedia markup format.
 	 */
 	private static final Pattern MARKUP_RUBY_REGEX = Pattern.compile(
-		"\\{\\{Ruby\\|(.*?)\\|(.*?)}}",
+		"\\{\\{Ruby\\|(.*?)\\|(.*?)(\\|.*?)?}}", // third optional group is for the ignored lang part
 		Pattern.CASE_INSENSITIVE
 	);
 
