@@ -1,6 +1,5 @@
 {
   "fr/de/it/sp_release_date" : "July 27, 2023",
-  "image" : "DUNE-BoosterEN.png",
   "en_name" : "Duelist Nexus",
   "fr_name" : "Nexus du Duelliste",
   "de_name" : "Duelist Nexus",
@@ -17,12 +16,8 @@
   "prefix" : "DUNE",
   "order_number" : "",
   "size" : "* 81 (JP, KR)\n* 100 (''TCG'')\n* 121 (AE, SC)",
+  "image" : "DUNE-BoosterEN.png",
   "cover_card" : "Cosmic Quasar Dragon",
-  "ja_database_id" : "1000009000000",
-  "ko_database_id" : "1010001272000",
-  "ae_database_id" : "5000001301000",
-  "sc_database_id" : "3000001272000",
-  "database_id" : "2000001272000",
   "jp_release_date" : "April 22, 2023",
   "ae_release_date" : "December 16, 2023",
   "na_release_date" : "July 28, 2023",
@@ -31,6 +26,11 @@
   "sc_release_date" : "August 19, 2023",
   "kr_release_date" : "June 24, 2023",
   "pt_release_date" : "July 27, 2023",
+  "database_id" : "2000001272000",
+  "ja_database_id" : "1000009000000",
+  "ko_database_id" : "1010001272000",
+  "ae_database_id" : "5000001301000",
+  "sc_database_id" : "3000001272000",
   "prev" : "Cyberstorm Access",
   "next" : "Age of Overlord"
 }
