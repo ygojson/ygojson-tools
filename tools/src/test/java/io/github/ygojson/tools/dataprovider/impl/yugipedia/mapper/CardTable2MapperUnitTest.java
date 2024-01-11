@@ -11,11 +11,15 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.WikitextTemplateMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 import io.github.ygojson.tools.dataprovider.test.ModelTestUtils;
 
 class CardTable2MapperUnitTest {
 
+	private static WikitextTemplateMapper WIKITEXT_MAPPER = Mappers.getMapper(
+		WikitextTemplateMapper.class
+	);
 	private static CardTable2Mapper MAPPER;
 
 	@BeforeAll
@@ -32,7 +36,9 @@ class CardTable2MapperUnitTest {
 	) {
 		// given
 		final String wikitext = wikitextTestData.wikitext();
-		final Map<String, String> wikitextMap = MAPPER.wikitextToMap(wikitext);
+		final Map<String, String> wikitextMap = WIKITEXT_MAPPER.mapCardTable2Template(
+			wikitext
+		);
 		// when
 		final CardTable2 cardTable2 = MAPPER.mapToCardTable2(wikitextMap);
 		// then

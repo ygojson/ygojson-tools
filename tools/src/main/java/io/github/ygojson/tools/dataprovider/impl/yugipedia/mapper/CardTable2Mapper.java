@@ -1,13 +1,12 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.WikitextTemplateMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 
 /**
@@ -18,31 +17,8 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
 @Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
 public abstract class CardTable2Mapper {
 
-	/**
-	 * Pattern for the CardTable2 content
-	 */
-	private static final Pattern CARDTABLE2_CONTENT_PATTERN = Pattern.compile(
-		"(?s).*\\{\\{CardTable2(.*)\n}}",
-		Pattern.DOTALL
-	);
-
-	/**
-	 * Group on the {@link #CARDTABLE2_CONTENT_PATTERN} where the content is.
-	 */
-	private static final int CARDTABLE2_CONTENT_GROUP = 1;
-
-	/**
-	 * Split pattern fore each field on the CardTable2 content.
-	 */
-	private static final Pattern CARDTABLE2_FIELD_SPLIT_PATTERN = Pattern.compile(
-		"\n\\| "
-	);
-
-	/**
-	 * Split pattern fore each key=value pair on the CardTable2 content.
-	 */
-	private static final Pattern CARDTABLE2_KEY_VALUE_SPLIT_PATTERN =
-		Pattern.compile(" += ");
+	private final WikitextTemplateMapper wikitextTemplateMapper =
+		Mappers.getMapper(WikitextTemplateMapper.class);
 
 	/**
 	 * Maps a wikitext String with a possibly existing CardTable2
@@ -53,24 +29,7 @@ public abstract class CardTable2Mapper {
 	 * @return parsed model; {@code null} if CardTable2 markup is not present.
 	 */
 	public CardTable2 mapWikitextToCardTable2(final String wikitext) {
-		return mapToCardTable2(wikitextToMap(wikitext));
-	}
-
-	protected Map<String, String> wikitextToMap(final String wikitext) {
-		if (wikitext == null) {
-			return null;
-		}
-		final Matcher matcher = CARDTABLE2_CONTENT_PATTERN.matcher(wikitext);
-		if (!matcher.matches()) {
-			// no card table is present on the wikitext
-			return null;
-		}
-		final String cardTableContent = matcher.group(CARDTABLE2_CONTENT_GROUP);
-		return CARDTABLE2_FIELD_SPLIT_PATTERN
-			.splitAsStream(cardTableContent)
-			.skip(1) // the first contains only an empty string
-			.map(val -> CARDTABLE2_KEY_VALUE_SPLIT_PATTERN.split(val, 2))
-			.collect(Collectors.toMap(val -> val[0], val -> val[1]));
+		return mapToCardTable2(wikitextTemplateMapper.mapCardTable2Template(wikitext));
 	}
 
 	@Mapping(target = "anti_supports", source = "anti-supports")
