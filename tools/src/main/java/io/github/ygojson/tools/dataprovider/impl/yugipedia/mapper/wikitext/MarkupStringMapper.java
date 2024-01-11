@@ -1,11 +1,11 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
 import java.util.List;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Named;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Mapper to be used with other mappers for converting fields

@@ -9,7 +9,7 @@
   "sc_name" : "炎之剑士",
   "ko_name" : "화염의 검사",
   "ko_rr_name" : "Hwayeom-ui Geomsa",
-  "image" : "\n1; FlameSwordsman-SBC1-EN-C-1E.png; FlameSwordsman-MADU-EN-VG-artwork.png\n2; FlameSwordsman-MIL1-EN-R-1E.png; FlameSwordsman-TF05-JP-VG-2-artwork.png",
+  "image" : "1; FlameSwordsman-SBC1-EN-C-1E.png; FlameSwordsman-MADU-EN-VG-artwork.png\n2; FlameSwordsman-MIL1-EN-R-1E.png; FlameSwordsman-TF05-JP-VG-2-artwork.png",
   "current_image" : "1",
   "card_type" : "Monster",
   "attribute" : "FIRE",
@@ -43,14 +43,14 @@
   "ae_sets" : [ "LOB-003; Legend of Blue Eyes White Dragon; Super Rare" ],
   "sc_sets" : [ "FRP1-SCA01; Fusion Ready Pack A; Super Parallel Rare" ],
   "kr_sets" : [ "LOB-K003; Legend of Blue Eyes White Dragon; Super Rare", "BP1-KR100; Beginner's Edition 1; Rare", "SDJ-KR024; Starter Deck: Joey; Common", "15AX-KRM37; Duelist Road -Piece of Memory- Side: Yugi Muto; Common, Millennium Rare" ],
-  "mentions" : "\n* Flame Manipulator\n* Masaki the Legendary Swordsman",
+  "mentions" : "* Flame Manipulator\n* Masaki the Legendary Swordsman",
   "archseries" : "Flame Swordsman (series)",
   "related_to_archseries" : "Dark Magician (archetype)",
-  "summoning" : "\n* 2 Fusion Materials\n* Requires only specific Normal Monsters as Fusion Materials",
+  "summoning" : "* 2 Fusion Materials\n* Requires only specific Normal Monsters as Fusion Materials",
   "fm_for" : "Dark Flare Knight",
   "misc" : "Non-Effect Monster",
   "materials" : "\"Flame Manipulator\" + \"Masaki the Legendary Swordsman\"",
-  "fusion_material" : "\n* Flame Manipulator\n* Masaki the Legendary Swordsman",
-  "ygo_sets" : "\n'''[[Pack 4 (YGOO-BP)|Pack 4]]'''",
-  "gx03_sets" : "\n'''[[Legend of the White Dragon (GX03-BP)|Legend of the White Dragon]]''' ([[Rare]])"
+  "fusion_material" : "* Flame Manipulator\n* Masaki the Legendary Swordsman",
+  "ygo_sets" : "'''[[Pack 4 (YGOO-BP)|Pack 4]]'''",
+  "gx03_sets" : "'''[[Legend of the White Dragon (GX03-BP)|Legend of the White Dragon]]''' ([[Rare]])"
 }

@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext;
 
 import java.text.MessageFormat;
 import java.util.Arrays;

@@ -11,6 +11,7 @@ import java.util.Map;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.test.TestResourceUtils;
 
 /**
@@ -58,7 +59,7 @@ public class YugipediaTestData {
 	 *
 	 * @return list of current test data.
 	 *
-	 * @see io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2
+	 * @see CardTable2
 	 */
 	public static List<ParseWikitextPageTestData> getCardTable2ParseWikitextTestData() {
 		return getRegisteredParseWikitextPageTestData(

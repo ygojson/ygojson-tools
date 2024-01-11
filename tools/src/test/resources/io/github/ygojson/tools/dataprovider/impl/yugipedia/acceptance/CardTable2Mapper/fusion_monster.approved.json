@@ -1,5 +1,5 @@
 {
-  "m/s/t" : "\n* Destroys your Monster Cards\n* Destroys your Spell Cards\n* Destroys your Trap Cards\n* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards",
+  "m/s/t" : "* Destroys your Monster Cards\n* Destroys your Spell Cards\n* Destroys your Trap Cards\n* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards",
   "fr_name" : "Exécuteur Phœnix Destructeur - HÉROS de la Destinée",
   "de_name" : "Schicksals-HELD - Destroyer Phoenix Enforcer",
   "it_name" : "Distruttore Fenice Sorvegliante - EROE del Destino",
@@ -39,12 +39,12 @@
   "jp_sets" : [ "BODE-JP039; Burst of Destiny; Ultra Rare, Ultimate Rare, Secret Rare, Prismatic Secret Rare", "BODE-JP039; Burst of Destiny +1 Bonus Pack; Ultra Rare, Prismatic Secret Rare" ],
   "sc_sets" : [ "MGP6-SC133; Mega Pack 06; Ultra Rare, Secret Rare, Prismatic Secret Rare" ],
   "kr_sets" : [ "BODE-KR039; Burst of Destiny; Ultra Rare, Ultimate Rare, Secret Rare, Prismatic Secret Rare", "BODE-KR039; Burst of Destiny +1 Bonus Pack; Ultra Rare, Prismatic Secret Rare" ],
-  "archseries" : "\n* HERO\n* Destiny HERO",
+  "archseries" : "* HERO\n* Destiny HERO",
   "related_to_archseries" : "Elemental HERO",
-  "supports_archetypes" : "\n* HERO\n* Destiny HERO",
-  "action" : "\n* Activates if destroyed by battle\n* Activates if destroyed by card effect",
+  "supports_archetypes" : "* HERO\n* Destiny HERO",
+  "action" : "* Activates if destroyed by battle\n* Activates if destroyed by card effect",
   "stat_change" : "Your opponent's monsters lose ATK",
-  "summoning" : "\n* 2 Fusion Materials\n* Requires Level specific Fusion Materials\n* Requires archetype specific Fusion Materials\n* Special Summons from your Graveyard",
-  "misc" : "\n* Only once per turn\n* Standby Phase Activation",
+  "summoning" : "* 2 Fusion Materials\n* Requires Level specific Fusion Materials\n* Requires archetype specific Fusion Materials\n* Special Summons from your Graveyard",
+  "misc" : "* Only once per turn\n* Standby Phase Activation",
   "materials" : "1 Level 6 or higher \"HERO\" monster + 1 \"Destiny HERO\" monster"
 }

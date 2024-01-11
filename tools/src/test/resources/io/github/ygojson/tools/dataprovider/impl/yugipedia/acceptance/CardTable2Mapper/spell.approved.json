@@ -44,8 +44,8 @@
   "sc_sets" : [ "ST20-SC022; Starter Deck 2020; Common", "23RC-SC048; Rarity Collection Quarter Century Edition; Super Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare" ],
   "kr_sets" : [ "LOB-K052; Legend of Blue Eyes White Dragon; Super Rare", "SDY-K022; Starter Deck: Yugi; Common", "SDK-K022; Starter Deck: Kaiba; Common", "BP1-KR113; Beginner's Edition 1; Super Rare", "SDJ-KR026; Starter Deck: Joey; Common", "SDP-KR026; Starter Deck: Pegasus; Common", "SYE-KR026; Starter Deck: Yugi Evolution; Common", "GS03-KR012; Gold Series 2011; Common, Gold Rare", "SD23-KR030; Structure Deck: Roar of the Sea Emperor; Common", "DS13-KRD30; Duelist Set: Version Dark Returner; Common", "AE03-KR001; Advanced Event Pack 2014 Vol.1; Secret Rare", "ST14-KRA06; Starter Deck 2014 Enhancement Pack; Common", "VS15-KRS14; Duelist Entry Deck VS: Saber Force; Normal Parallel Rare", "VS15-KRD15; Duelist Entry Deck VS: Dark Legion; Normal Parallel Rare", "SPDS-KR042; Booster SP: Destiny Soldiers; Common, Normal Parallel Rare", "ST17-KR023; Starter Deck 2017; Common", "ST18-KR024; Starter Deck 2018; Normal Parallel Rare" ],
   "archseries" : "Hole",
-  "ntr_sets" : "\n'''[[Chosen Warrior (NTR-BP)|Chosen Warrior]]''' ([[Super Rare]])",
+  "ntr_sets" : "'''[[Chosen Warrior (NTR-BP)|Chosen Warrior]]''' ([[Super Rare]])",
   "ygo_lore" : "Destroy all monsters on the field.",
-  "gx03_sets" : "\n'''[[Other Cards (GX03-BP)|Other Cards]]'''",
+  "gx03_sets" : "'''[[Other Cards (GX03-BP)|Other Cards]]'''",
   "gx03_status" : "Forbidden"
 }

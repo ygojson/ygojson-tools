@@ -14,8 +14,9 @@ import org.mapstruct.factory.Mappers;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardText;
 import io.github.ygojson.model.utils.data.CardUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Mapper for all {@link CardText} fields.

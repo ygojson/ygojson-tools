@@ -10,8 +10,8 @@ import org.mapstruct.ReportingPolicy;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Mapper for the YGOJSON {@link Print} from yugipedia {@link CardTable2} model.

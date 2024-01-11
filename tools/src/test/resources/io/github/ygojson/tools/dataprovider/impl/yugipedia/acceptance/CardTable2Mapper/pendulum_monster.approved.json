@@ -1,5 +1,5 @@
 {
-  "m/s/t" : "\n* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Cannot be targeted by card effects\n* Cannot be destroyed by card effects",
+  "m/s/t" : "* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Cannot be targeted by card effects\n* Cannot be destroyed by card effects",
   "fr_name" : "Endymion, le Puissant Maître de Magie",
   "de_name" : "Endymion, der mächtige Meister der Magie",
   "it_name" : "Endymion, il Magnifico Maestro della Magia",
@@ -47,10 +47,10 @@
   "jp_sets" : [ "SR08-JP001; Structure Deck R: Lord of Magician; Ultra Rare" ],
   "kr_sets" : [ "SR08-KR001; Structure Deck R: Lord of Magician; Ultra Rare" ],
   "supports" : "Normal Spell Card",
-  "archseries" : "\n* Endymion\n* Prophecy",
+  "archseries" : "* Endymion\n* Prophecy",
   "related_to_archseries" : "Magistus",
-  "counter" : "\n* Spell Counter\n* Removes counters for cost\n* Places counters on itself",
-  "action" : "\n* Activates if destroyed by battle\n* Returns from your field to your hand\n* Adds from Deck to hand",
+  "counter" : "* Spell Counter\n* Removes counters for cost\n* Places counters on itself",
+  "action" : "* Activates if destroyed by battle\n* Returns from your field to your hand\n* Adds from Deck to hand",
   "summoning" : "Special Summons itself from your Pendulum Zone",
-  "misc" : "\n* Only once per turn\n* Limited activations\n* Cover card"
+  "misc" : "* Only once per turn\n* Limited activations\n* Cover card"
 }

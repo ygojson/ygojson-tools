@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.instancio.Instancio;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Mother for {@link CardTable2} test data.
