@@ -1,5 +1,5 @@
 {
-  "m/s/t" : "\n* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Destroys Monster Cards\n* Destroys negated Summons",
+  "m/s/t" : "* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Destroys Monster Cards\n* Destroys negated Summons",
   "fr_name" : "Jugement Solennel",
   "de_name" : "Feierliches Urteil",
   "it_name" : "Giudizio Solenne",
@@ -12,7 +12,7 @@
   "tc_name" : "神之宣告",
   "ko_name" : "신의 심판",
   "ko_rr_name" : "Sin-ui Simpan",
-  "image" : "\n1;   SolemnJudgment-LART-EN-UR-LE.png; SolemnJudgment-MADU-JP-VG-artwork.png\n1.1; SolemnJudgment-SR14-EN-C-1E.png;  SolemnJudgment-MADU-EN-VG-artwork.png",
+  "image" : "1;   SolemnJudgment-LART-EN-UR-LE.png; SolemnJudgment-MADU-JP-VG-artwork.png\n1.1; SolemnJudgment-SR14-EN-C-1E.png;  SolemnJudgment-MADU-EN-VG-artwork.png",
   "current_image" : "1.1",
   "card_type" : "Trap",
   "property" : "Counter",
@@ -43,8 +43,8 @@
   "sc_sets" : [ "ST20-SC031; Starter Deck 2020; Common", "DBSS-SC045; Deck Build Pack: Secret Slayers; Common, Normal Parallel Rare", "SD28-SC040; Structure Deck: Synchron Extreme; Common", "23RC-SC071; Rarity Collection Quarter Century Edition; Ultra Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare" ],
   "kr_sets" : [ "MRD-K127; Metal Raiders; Ultra Rare", "BP2-KR073; Beginner's Edition 2; Super Rare", "SD14-KR034; Structure Deck: Advent of the Emperor; Common", "GS02-KR018; Gold Series 2010; Common, Gold Rare", "SD20-KR038; Structure Deck: Lost Sanctuary; Common", "AE01-KR004; Advanced Event Pack 2013 Vol.1; Secret Rare", "SD28-KR039; Structure Deck: Synchron Extreme; Common", "SR05-KR037; Structure Deck R: Surge of Divine Light; Common", "LEC1-KR095; 20th Anniversary Legend Collection; Super Parallel Rare, Secret Rare", "DBSS-KR045; Deck Build Pack: Secret Slayers; Common, Normal Parallel Rare", "LART-KR014; The Lost Art Promotion Vol.2; Ultra Rare" ],
   "archseries" : "Solemn",
-  "summoning" : "\n* Negates Normal Summons\n* Negates Flip Summons\n* Negates Special Summons",
-  "life_points" : "\n* Halves the player's LP\n* Pays Life Points for cost",
-  "ntr_sets" : "\n'''[[Cursed Darkness (NTR-BP)|Cursed Darkness]]''' ([[Super Rare]])",
-  "ygo_sets" : "\n'''[[Pack 10 (YGOO-BP)|Pack 10]]'''"
+  "summoning" : "* Negates Normal Summons\n* Negates Flip Summons\n* Negates Special Summons",
+  "life_points" : "* Halves the player's LP\n* Pays Life Points for cost",
+  "ntr_sets" : "'''[[Cursed Darkness (NTR-BP)|Cursed Darkness]]''' ([[Super Rare]])",
+  "ygo_sets" : "'''[[Pack 10 (YGOO-BP)|Pack 10]]'''"
 }

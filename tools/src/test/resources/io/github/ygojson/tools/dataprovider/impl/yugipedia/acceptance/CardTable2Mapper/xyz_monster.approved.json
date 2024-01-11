@@ -1,5 +1,5 @@
 {
-  "m/s/t" : "\n* Destroys face-up Monster Cards\n* Destroys face-up Spell Cards\n* Destroys face-up Trap Cards",
+  "m/s/t" : "* Destroys face-up Monster Cards\n* Destroys face-up Spell Cards\n* Destroys face-up Trap Cards",
   "fr_name" : "Drident du Zoodiaque",
   "de_name" : "Zoodiak-Drachzack",
   "it_name" : "Zoodiaco Dridente",
@@ -39,8 +39,8 @@
   "archseries" : "Zoodiac",
   "supports_archetypes" : "Zoodiac",
   "action" : "Transfers",
-  "stat_change" : "\n* This card gains ATK\n* This card gains DEF",
-  "summoning" : "\n* 4 Xyz Materials\n* Does not require specific Xyz Materials\n* Special Summons itself from your Extra Deck\n* Special Summon by its own condition once per turn\n* Xyz Evolution",
+  "stat_change" : "* This card gains ATK\n* This card gains DEF",
+  "summoning" : "* 4 Xyz Materials\n* Does not require specific Xyz Materials\n* Special Summons itself from your Extra Deck\n* Special Summon by its own condition once per turn\n* Xyz Evolution",
   "misc" : "Limited activations",
   "materials" : "4 Level 4 monsters"
 }

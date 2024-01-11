@@ -46,7 +46,7 @@
   "kr_sets" : [ "NECH-KR021; The New Challengers; Rare", "20AP-KR098; 20th Anniversary Pack 2nd Wave; Normal Parallel Rare", "LVP1-KR062; LINK VRAINS Pack; Common" ],
   "archseries" : "Qli",
   "supports_archetypes" : "Qli",
-  "action" : "\n* Effect that cannot be negated\n* Adds from Deck to hand",
+  "action" : "* Effect that cannot be negated\n* Adds from Deck to hand",
   "summoning" : "Restricts the player's Special Summons to archetype specific monsters",
   "life_points" : "Pays Life Points for cost",
   "misc" : "Limited activations"

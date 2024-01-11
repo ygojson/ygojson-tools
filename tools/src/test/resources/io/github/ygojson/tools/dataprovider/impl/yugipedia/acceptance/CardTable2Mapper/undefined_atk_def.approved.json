@@ -39,12 +39,12 @@
   "supports" : "Machine",
   "mentions" : "Cyber Dragon",
   "archseries" : "Chimeratech",
-  "related_to_archseries" : "\n* Cyber Dragon (archetype)\n* Signature move",
-  "action" : "\n* Activates upon Fusion Summon\n* Sends from your field to your Graveyard",
-  "stat_change" : "\n* Changes own ATK value\n* Changes own DEF value\n* Changes original ATK\n* Changes original DEF",
-  "summoning" : "\n* 2+ Fusion Materials\n* Requires specific Effect Monsters as Fusion Materials\n* Requires Type specific Fusion Materials\n* Nomi",
+  "related_to_archseries" : "* Cyber Dragon (archetype)\n* Signature move",
+  "action" : "* Activates upon Fusion Summon\n* Sends from your field to your Graveyard",
+  "stat_change" : "* Changes own ATK value\n* Changes own DEF value\n* Changes original ATK\n* Changes original DEF",
+  "summoning" : "* 2+ Fusion Materials\n* Requires specific Effect Monsters as Fusion Materials\n* Requires Type specific Fusion Materials\n* Nomi",
   "attack" : "Can make multiple attacks on monsters",
   "materials" : "\"Cyber Dragon\" + 1 or more Machine-Type monsters",
-  "fusion_material" : "\n* Cyber Dragon",
-  "ygo_sets" : "\n'''[[Pack 41 (YGOO-BP)|Pack 41]]'''"
+  "fusion_material" : "* Cyber Dragon",
+  "ygo_sets" : "'''[[Pack 41 (YGOO-BP)|Pack 41]]'''"
 }

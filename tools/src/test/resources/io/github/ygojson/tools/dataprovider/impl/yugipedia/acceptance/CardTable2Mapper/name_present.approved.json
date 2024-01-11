@@ -40,10 +40,10 @@
   "kr_sets" : [ "MRD-K035; Metal Raiders; Short Print", "BP1-KR162; Beginner's Edition 1; Common" ],
   "archseries" : "Jinzo (archetype)",
   "attack" : "Direct attacker",
-  "ntr_sets" : "\n'''[[Mechanical Trap Power (NTR-BP)|Mechanical Trap Power]]''' ([[Common]])",
-  "ygo_sets" : "\n'''[[Pack 10 (YGOO-BP)|Pack 10]]'''",
+  "ntr_sets" : "'''[[Mechanical Trap Power (NTR-BP)|Mechanical Trap Power]]''' ([[Common]])",
+  "ygo_sets" : "'''[[Pack 10 (YGOO-BP)|Pack 10]]'''",
   "gx1_dp" : "1000",
   "gx1_lore" : "This monster may attack your opponent's Life Points directly.",
   "gx1_number" : "0187",
-  "gx1_sets" : "\n'''[[Basic 1-C (GX1-BP)|Basic 1-C]]''' ([[Common]])\n'''[[Invitation to the Dark (GX1-BP)|Invitation to the Dark]]''' ([[Common]])\n'''[[The Machines (GX1-BP)|The Machines]]''' ([[Common]])\n'''[[Dorothy's Gift (GX1-BP)|Dorothy's Gift]]''' ([[Common]])"
+  "gx1_sets" : "'''[[Basic 1-C (GX1-BP)|Basic 1-C]]''' ([[Common]])\n'''[[Invitation to the Dark (GX1-BP)|Invitation to the Dark]]''' ([[Common]])\n'''[[The Machines (GX1-BP)|The Machines]]''' ([[Common]])\n'''[[Dorothy's Gift (GX1-BP)|Dorothy's Gift]]''' ([[Common]])"
 }
