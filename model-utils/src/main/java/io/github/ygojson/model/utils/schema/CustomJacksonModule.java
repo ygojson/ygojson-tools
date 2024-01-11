@@ -15,7 +15,8 @@ class CustomJacksonModule extends JacksonModule {
 			JacksonOption.RESPECT_JSONPROPERTY_ORDER,
 			JacksonOption.INCLUDE_ONLY_JSONPROPERTY_ANNOTATED_METHODS,
 			JacksonOption.RESPECT_JSONPROPERTY_REQUIRED,
-			JacksonOption.FLATTENED_ENUMS_FROM_JSONPROPERTY
+			JacksonOption.FLATTENED_ENUMS_FROM_JSONPROPERTY,
+			JacksonOption.FLATTENED_ENUMS_FROM_JSONVALUE
 		);
 		this.addDescription = addDescription;
 	}
