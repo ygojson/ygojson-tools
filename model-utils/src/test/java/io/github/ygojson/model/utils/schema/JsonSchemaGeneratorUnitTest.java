@@ -1,5 +1,11 @@
 package io.github.ygojson.model.utils.schema;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonClassDescription;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -8,6 +14,9 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import io.github.ygojson.model.data.definition.localization.Region;
+import io.github.ygojson.model.utils.test.RegionTestModel;
 
 class JsonSchemaGeneratorUnitTest {
 
@@ -33,6 +42,28 @@ class JsonSchemaGeneratorUnitTest {
 				.assertThat(getDescription(schema.get("properties").get("test")))
 				.isEqualTo("My property description");
 		});
+	}
+
+	@Test
+	void give_regionTestModel_when_generateSchemaInline_then_schemaContainsEnums() {
+		// given
+		final Class<?> type = RegionTestModel.class;
+		// when
+		final ObjectNode schema = TEST_GENERATOR.generateInline(type, "test");
+		// then
+		final List<String> schemaEnumValues = new ArrayList<>();
+		schema
+			.get("properties")
+			.get("regionCode")
+			.get("enum")
+			.iterator()
+			.forEachRemaining(node -> schemaEnumValues.add(node.asText()));
+		final String[] expectedEnumValues = Arrays
+			.stream(Region.values())
+			.map(Region::asCodeString)
+			.toArray(String[]::new);
+
+		assertThat(schemaEnumValues).containsExactlyInAnyOrder(expectedEnumValues);
 	}
 
 	private String getDescription(final JsonNode node) {
