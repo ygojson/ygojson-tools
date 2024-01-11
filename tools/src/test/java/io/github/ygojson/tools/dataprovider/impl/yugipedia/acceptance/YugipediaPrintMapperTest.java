@@ -16,9 +16,9 @@ import org.mapstruct.factory.Mappers;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.utils.JsonUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.CardTable2Mapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaPrintMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.CardTable2Mapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 class YugipediaPrintMapperTest {
 

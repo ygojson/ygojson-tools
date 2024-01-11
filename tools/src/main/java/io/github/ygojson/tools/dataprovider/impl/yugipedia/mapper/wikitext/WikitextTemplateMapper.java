@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 import org.mapstruct.Mapper;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 @Mapper
 public abstract class WikitextTemplateMapper {

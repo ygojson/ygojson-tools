@@ -9,7 +9,7 @@ import org.mapstruct.*;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardType;
 import io.github.ygojson.model.data.definition.LinkArrow;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 /**
  * Mapper for the YGOJSON {@link Card} from yugipedia {@link CardTable2} model.

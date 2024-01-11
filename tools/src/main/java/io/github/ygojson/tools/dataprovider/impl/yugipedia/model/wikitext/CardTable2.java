@@ -1,8 +1,10 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.IntegerOrUndefined;
 
 /**
  * Yugipedia's Model for CardTable2.

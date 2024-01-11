@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
 import java.util.Map;
 
@@ -6,12 +6,12 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.WikitextTemplateMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.InfoboxSet;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Maps a wikitext String to a {@link InfoboxSet} model,
- * using also {@link io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString}
+ * using also {@link MarkupString}
  * or derived models for some fields.
  */
 @Mapper(uses = { MarkupStringMapper.class })
@@ -29,7 +29,9 @@ public abstract class InfoboxSetMapper {
 	 * @return parsed model; {@code null} if InfoBox Set markup is not present.
 	 */
 	public InfoboxSet mapWikitextToInfoboxSet(final String wikitext) {
-		return mapToInfoboxSet(wikitextTemplateMapper.mapInfoboxSetTemplate(wikitext));
+		return mapToInfoboxSet(
+			wikitextTemplateMapper.mapInfoboxSetTemplate(wikitext)
+		);
 	}
 
 	@Mapping(target = "ja_name", qualifiedByName = "rubyCharacters")

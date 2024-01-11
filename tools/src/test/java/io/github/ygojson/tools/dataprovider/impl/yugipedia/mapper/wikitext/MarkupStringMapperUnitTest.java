@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 class MarkupStringMapperUnitTest {
 

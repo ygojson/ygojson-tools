@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

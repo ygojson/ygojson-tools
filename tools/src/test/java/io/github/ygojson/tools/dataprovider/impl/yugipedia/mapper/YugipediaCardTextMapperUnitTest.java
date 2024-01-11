@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardText;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.test.CardTable2Mother;
 
 class YugipediaCardTextMapperUnitTest {

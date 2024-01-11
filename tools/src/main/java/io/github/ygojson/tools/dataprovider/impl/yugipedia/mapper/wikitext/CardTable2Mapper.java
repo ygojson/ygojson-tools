@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
+package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
 import java.util.Map;
 
@@ -6,12 +6,13 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.WikitextTemplateMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.IntegerOrUndefinedMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
 /**
  * Maps a wikitext String to a {@link CardTable2} model,
- * using also {@link io.github.ygojson.tools.dataprovider.impl.yugipedia.model.MarkupString}
+ * using also {@link MarkupString}
  * or derived models for some fields.
  */
 @Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
@@ -29,7 +30,9 @@ public abstract class CardTable2Mapper {
 	 * @return parsed model; {@code null} if CardTable2 markup is not present.
 	 */
 	public CardTable2 mapWikitextToCardTable2(final String wikitext) {
-		return mapToCardTable2(wikitextTemplateMapper.mapCardTable2Template(wikitext));
+		return mapToCardTable2(
+			wikitextTemplateMapper.mapCardTable2Template(wikitext)
+		);
 	}
 
 	@Mapping(target = "anti_supports", source = "anti-supports")

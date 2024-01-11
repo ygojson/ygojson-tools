@@ -14,8 +14,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.InfoboxSetMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.InfoboxSet;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.InfoboxSetMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 
 class InfoboxSetMapperTest {
 
