@@ -1,14 +1,12 @@
 package io.github.ygojson.model.data;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.StringJoiner;
-import java.util.UUID;
+import java.util.*;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
-import io.github.ygojson.model.data.definition.SetText;
+import io.github.ygojson.model.data.definition.SetInfo;
+import io.github.ygojson.model.data.definition.localization.Region;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
 import io.github.ygojson.model.data.property.IdProperties;
 import io.github.ygojson.model.data.property.LanguageProperties;
@@ -26,8 +24,10 @@ import io.github.ygojson.model.data.property.SetProperties;
 @JsonPropertyOrder(
 	{
 		IdProperties.SELF_ID,
-		SetProperties.PREFIX,
 		SetProperties.NAME,
+		SetProperties.NAME_ALT,
+		SetProperties.SET_CODE,
+		SetProperties.REGION_CODES,
 		SetProperties.TYPE,
 		SetProperties.SERIES,
 		LanguageProperties.LOCALIZED_DATA,
@@ -36,27 +36,27 @@ import io.github.ygojson.model.data.property.SetProperties;
 public class Set {
 
 	// container for set text related properties
-	private SetText setTex;
+	private SetInfo setInfo;
 	private UUID id;
 	private String type;
 	private String series;
 	private SetLocalizedData localizedData;
 
 	/**
-	 * Return the set-text as a whole.
+	 * Return the set-info as a whole.
 	 * <br>
 	 * Note: this method is not serialized as JSON,
 	 * as each individual getter/setter has its own field.
 	 *
-	 * @return card-text as a model
+	 * @return set-info as a model
 	 */
 	@JsonIgnore // using json ignore but add the methods for the annotations+
-	public SetText getSetText() {
-		return setTex;
+	public SetInfo getSetInfo() {
+		return setInfo;
 	}
 
-	private Optional<SetText> getOptionalSetText() {
-		return Optional.ofNullable(setTex);
+	private Optional<SetInfo> getOptionalSetInfo() {
+		return Optional.ofNullable(setInfo);
 	}
 
 	/**
@@ -72,24 +72,44 @@ public class Set {
 	}
 
 	/**
-	 * Prefix of the set in English (if available).
+	 * Name of the set.
 	 */
-	@JsonPropertyDescription("Prefix of the set in English (if available).")
-	@JsonProperty(value = SetProperties.PREFIX)
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-zA-Z0-9]+-[a-zA-Z0-9]+")
-	public String getPrefix() {
-		return getOptionalSetText().map(SetText::getPrefix).orElse(null);
-	}
-
-	/**
-	 * Name of the set in English (if available).
-	 */
-	@JsonPropertyDescription("Name of the set in English (if available).")
+	@JsonPropertyDescription("Name of the set.")
 	@JsonProperty(value = SetProperties.NAME)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	public String getName() {
-		return getOptionalSetText().map(SetText::getName).orElse(null);
+		return getOptionalSetInfo().map(SetInfo::getName).orElse(null);
+	}
+
+	/**
+	 * Alternate name of the set.
+	 */
+	@JsonPropertyDescription("Alternate name of the set.")
+	@JsonProperty(value = SetProperties.NAME_ALT)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	public String getNameAlt() {
+		return getOptionalSetInfo().map(SetInfo::getNameAlt).orElse(null);
+	}
+
+	/**
+	 * Set code.
+	 */
+	@JsonPropertyDescription("Set code.")
+	@JsonProperty(value = SetProperties.SET_CODE)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	@Pattern(regexp = "[a-z-0-9]+")
+	public String getSetCode() {
+		return getOptionalSetInfo().map(SetInfo::getSetCode).orElse(null);
+	}
+
+	/**
+	 * List of region codes for the set.
+	 */
+	@JsonPropertyDescription("List of region codes for the set.")
+	@JsonProperty(value = SetProperties.REGION_CODES)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	public List<Region> getRegionCodes() {
+		return getOptionalSetInfo().map(SetInfo::getRegionCodes).orElse(null);
 	}
 
 	/**
@@ -131,8 +151,8 @@ public class Set {
 	}
 
 	@JsonIgnore // required for the jsonschema generator to be sure that it is not serialized
-	public void setSetTex(SetText setTex) {
-		this.setTex = setTex;
+	public void setSetInfo(SetInfo setInfo) {
+		this.setInfo = setInfo;
 	}
 
 	public void setId(UUID id) {
@@ -156,7 +176,7 @@ public class Set {
 		if (this == o) return true;
 		if (!(o instanceof Set set)) return false;
 		return (
-			Objects.equals(setTex, set.setTex) &&
+			Objects.equals(setInfo, set.setInfo) &&
 			Objects.equals(id, set.id) &&
 			Objects.equals(type, set.type) &&
 			Objects.equals(series, set.series) &&
@@ -166,13 +186,13 @@ public class Set {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(setTex, id, type, series, localizedData);
+		return Objects.hash(setInfo, id, type, series, localizedData);
 	}
 
 	@Override
 	public String toString() {
 		return new StringJoiner(", ", Set.class.getSimpleName() + "[", "]")
-			.add("setTex=" + setTex)
+			.add("setInfo=" + setInfo)
 			.add("id=" + id)
 			.add("type='" + type + "'")
 			.add("series='" + series + "'")
