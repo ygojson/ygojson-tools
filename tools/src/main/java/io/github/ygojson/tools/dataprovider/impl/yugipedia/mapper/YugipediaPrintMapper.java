@@ -6,9 +6,11 @@ import java.util.stream.Stream;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.ReportingPolicy;
 
+import io.github.ygojson.model.data.FullPrint;
 import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.data.Set;
+import io.github.ygojson.model.data.definition.SetText;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -17,8 +19,8 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
  * Mapper for the YGOJSON {@link Print} from yugipedia {@link CardTable2} model.
  */
 @Mapper(
-	uses = { GeneralMapper.class },
-	unmappedTargetPolicy = ReportingPolicy.ERROR
+	uses = { GeneralMapper.class }//,
+	//unmappedTargetPolicy = ReportingPolicy.ERROR
 )
 public abstract class YugipediaPrintMapper {
 
@@ -41,6 +43,14 @@ public abstract class YugipediaPrintMapper {
 	 * 		   empty list if no prints are present
 	 */
 	public List<Print> mapToPrints(final CardTable2 cardTable2) {
+		return mapToFullPrintsStream(cardTable2).map(FullPrint::getPrint).toList();
+	}
+
+	public List<FullPrint> mapToFullPrints(final CardTable2 cardTable2) {
+		return mapToFullPrintsStream(cardTable2).toList();
+	}
+
+	private Stream<FullPrint> mapToFullPrintsStream(final CardTable2 cardTable2) {
 		if (cardTable2 == null) {
 			return null;
 		}
@@ -63,11 +73,10 @@ public abstract class YugipediaPrintMapper {
 				cardTable2SetsToPrints(cardTable2.sc_sets(), Language.ZH_HANS),
 				cardTable2SetsToPrints(cardTable2.tc_sets(), Language.ZH_HANT)
 			)
-			.flatMap(i -> i)
-			.toList();
+			.flatMap(i -> i);
 	}
 
-	private Stream<Print> cardTable2SetsToPrints(
+	private Stream<FullPrint> cardTable2SetsToPrints(
 		final List<MarkupString> markupString,
 		final Language language
 	) {
@@ -80,7 +89,7 @@ public abstract class YugipediaPrintMapper {
 			.filter(Objects::nonNull);
 	}
 
-	private Stream<Print> singleLineToRarityPrints(
+	private Stream<FullPrint> singleLineToRarityPrints(
 		final MarkupString cardTable2PrintLine,
 		final Language language
 	) {
@@ -105,7 +114,7 @@ public abstract class YugipediaPrintMapper {
 			.map(rarity ->
 				new PrintInfo(cardNumber, setName, language, rarity.toString())
 			)
-			.map(this::mapPrint);
+			.map(this::mapFullPrint);
 	}
 
 	/**
@@ -127,6 +136,11 @@ public abstract class YugipediaPrintMapper {
 		}
 	}
 
+	@Mapping(target = "card", ignore = true)
+	@Mapping(target = "set", source = ".")
+	@Mapping(target = "print", source = ".")
+	protected abstract FullPrint mapFullPrint(final PrintInfo info);
+
 	@Mapping(target = "id", ignore = true)
 	@Mapping(target = "cardId", ignore = true)
 	@Mapping(target = "setId", ignore = true)
@@ -146,4 +160,10 @@ public abstract class YugipediaPrintMapper {
 		qualifiedByName = "toLowerCase"
 	)
 	protected abstract Print mapPrint(final PrintInfo info);
+
+	@Mapping(target = "setTex", source = ".")
+	protected abstract Set mapSet(final PrintInfo info);
+
+	@Mapping(target = "name", source = "setName")
+	protected abstract SetText mapSetText(final PrintInfo info);
 }
