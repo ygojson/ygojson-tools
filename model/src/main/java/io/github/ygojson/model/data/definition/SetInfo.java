@@ -18,7 +18,7 @@ import io.github.ygojson.model.data.property.SetProperties;
  */
 @JsonClassDescription(
 	"""
-		Describes set text that can be localized.
+		Describes set information that can be localized.
 
 		Only set information that is not an enum is included."""
 )
@@ -63,7 +63,7 @@ public class SetInfo {
 	@JsonPropertyDescription("Set code.")
 	@JsonProperty(value = SetProperties.SET_CODE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-z-0-9]+")
+	@Pattern(regexp = "[a-zA-Z0-9]+")
 	public String getSetCode() {
 		return setCode;
 	}

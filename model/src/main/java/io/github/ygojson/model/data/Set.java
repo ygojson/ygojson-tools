@@ -97,7 +97,7 @@ public class Set {
 	@JsonPropertyDescription("Set code.")
 	@JsonProperty(value = SetProperties.SET_CODE)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@Pattern(regexp = "[a-z-0-9]+")
+	@Pattern(regexp = "[a-zA-Z0-9]+")
 	public String getSetCode() {
 		return getOptionalSetInfo().map(SetInfo::getSetCode).orElse(null);
 	}
