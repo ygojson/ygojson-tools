@@ -24,7 +24,8 @@ import io.github.ygojson.model.data.property.SetProperties;
 	{
 		SetProperties.NAME,
 		SetProperties.NAME_ALT,
-		SetProperties.SET_CODE
+		SetProperties.SET_CODE,
+		SetProperties.SET_CODE_ALT,
 	}
 )
 public class SetInfo {
@@ -32,6 +33,7 @@ public class SetInfo {
 	private String name;
 	private String nameAlt;
 	private String setCode;
+	private String setCodeAlt;
 
 	/**
 	 * Name of the set.
@@ -64,6 +66,17 @@ public class SetInfo {
 		return setCode;
 	}
 
+	/**
+	 * Alternate set code.
+	 */
+	@JsonPropertyDescription("Alternate set code.")
+	@JsonProperty(value = SetProperties.SET_CODE_ALT)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	@Pattern(regexp = "[a-zA-Z0-9]+")
+	public String getSetCodeAlt() {
+		return setCodeAlt;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -76,6 +89,10 @@ public class SetInfo {
 		this.setCode = setCode;
 	}
 
+	public void setSetCodeAlt(String setCodeAlt) {
+		this.setCodeAlt = setCodeAlt;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -83,13 +100,14 @@ public class SetInfo {
 		return (
 			Objects.equals(name, setInfo.name) &&
 			Objects.equals(nameAlt, setInfo.nameAlt) &&
-			Objects.equals(setCode, setInfo.setCode)
+			Objects.equals(setCode, setInfo.setCode) &&
+			Objects.equals(setCodeAlt, setInfo.setCodeAlt)
 		);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, nameAlt, setCode);
+		return Objects.hash(name, nameAlt, setCode, setCodeAlt);
 	}
 
 	@Override
@@ -98,6 +116,7 @@ public class SetInfo {
 			.add("name='" + name + "'")
 			.add("nameAlt='" + nameAlt + "'")
 			.add("setCode='" + setCode + "'")
+			.add("setCodeAlt='" + setCodeAlt + "'")
 			.toString();
 	}
 }

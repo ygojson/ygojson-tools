@@ -26,6 +26,7 @@ public class SetSerializationUnitTest {
 				"name",
 				"nameAlt",
 				"setCode",
+				"setCodeAlt",
 				"releaseDate"
 			);
 	}

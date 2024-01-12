@@ -29,6 +29,7 @@ import io.github.ygojson.model.data.property.SetProperties;
 		SetProperties.NAME,
 		SetProperties.NAME_ALT,
 		SetProperties.SET_CODE,
+		SetProperties.SET_CODE_ALT,
 		SetProperties.TYPE,
 		SetProperties.SERIES,
 		LanguageProperties.LOCALIZED_DATA,
@@ -101,6 +102,17 @@ public class Set {
 	@Pattern(regexp = "[a-zA-Z0-9]+")
 	public String getSetCode() {
 		return getOptionalSetInfo().map(SetInfo::getSetCode).orElse(null);
+	}
+
+	/**
+	 * Alternate set code.
+	 */
+	@JsonPropertyDescription("Alternate set code.")
+	@JsonProperty(value = SetProperties.SET_CODE_ALT)
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	@Pattern(regexp = "[a-zA-Z0-9]+")
+	public String getSetCodeAlt() {
+		return getOptionalSetInfo().map(SetInfo::getSetCodeAlt).orElse(null);
 	}
 
 	/**
