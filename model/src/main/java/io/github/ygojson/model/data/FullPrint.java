@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.*;
 		This model contains the same properties as the Print Model with the inclusion of corresponding Card and Set."""
 )
 public class FullPrint {
+
 	public static final String CARD_PROPERTY = "card";
 	public static final String SET_PROPERTY = "set";
 
@@ -75,7 +76,11 @@ public class FullPrint {
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (!(o instanceof FullPrint that)) return false;
-        return Objects.equals(card, that.card) && Objects.equals(set, that.set) && Objects.equals(print, that.print);
+		return (
+			Objects.equals(card, that.card) &&
+			Objects.equals(set, that.set) &&
+			Objects.equals(print, that.print)
+		);
 	}
 
 	@Override
