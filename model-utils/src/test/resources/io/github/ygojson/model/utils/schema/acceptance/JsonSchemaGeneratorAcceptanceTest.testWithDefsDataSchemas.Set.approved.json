@@ -16,7 +16,7 @@
         },
         "setCode" : {
           "type" : "string",
-          "pattern" : "[a-z-0-9]+"
+          "pattern" : "[a-zA-Z0-9]+"
         },
         "regionCodes" : {
           "type" : "array",
@@ -73,7 +73,7 @@
     },
     "setCode" : {
       "type" : "string",
-      "pattern" : "[a-z-0-9]+"
+      "pattern" : "[a-zA-Z0-9]+"
     },
     "regionCodes" : {
       "type" : "array",
