@@ -13,6 +13,10 @@
         "setCode" : {
           "type" : "string",
           "pattern" : "[a-zA-Z0-9]+"
+        },
+        "setCodeAlt" : {
+          "type" : "string",
+          "pattern" : "[a-zA-Z0-9]+"
         }
       }
     },
@@ -62,6 +66,10 @@
       "type" : "string"
     },
     "setCode" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+"
+    },
+    "setCodeAlt" : {
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+"
     },
