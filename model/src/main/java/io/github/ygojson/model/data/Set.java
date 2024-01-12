@@ -1,12 +1,14 @@
 package io.github.ygojson.model.data;
 
-import java.util.*;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.StringJoiner;
+import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
 import io.github.ygojson.model.data.definition.SetInfo;
-import io.github.ygojson.model.data.definition.localization.Region;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
 import io.github.ygojson.model.data.property.IdProperties;
 import io.github.ygojson.model.data.property.LanguageProperties;
@@ -27,7 +29,6 @@ import io.github.ygojson.model.data.property.SetProperties;
 		SetProperties.NAME,
 		SetProperties.NAME_ALT,
 		SetProperties.SET_CODE,
-		SetProperties.REGION_CODES,
 		SetProperties.TYPE,
 		SetProperties.SERIES,
 		LanguageProperties.LOCALIZED_DATA,
@@ -100,16 +101,6 @@ public class Set {
 	@Pattern(regexp = "[a-zA-Z0-9]+")
 	public String getSetCode() {
 		return getOptionalSetInfo().map(SetInfo::getSetCode).orElse(null);
-	}
-
-	/**
-	 * List of region codes for the set.
-	 */
-	@JsonPropertyDescription("List of region codes for the set.")
-	@JsonProperty(value = SetProperties.REGION_CODES)
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public List<Region> getRegionCodes() {
-		return getOptionalSetInfo().map(SetInfo::getRegionCodes).orElse(null);
 	}
 
 	/**

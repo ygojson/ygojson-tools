@@ -8,7 +8,6 @@ public class SetProperties {
 	public static final String NAME = "name";
 	public static final String NAME_ALT = "nameAlt";
 	public static final String SET_CODE = "setCode";
-	public static final String REGION_CODES = "regionCodes";
 	public static final String TYPE = "type";
 	public static final String SERIES = "series";
 

@@ -1,13 +1,11 @@
 package io.github.ygojson.model.data.definition;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.validation.constraints.Pattern;
 
-import io.github.ygojson.model.data.definition.localization.Region;
 import io.github.ygojson.model.data.property.SetProperties;
 
 /**
@@ -26,8 +24,7 @@ import io.github.ygojson.model.data.property.SetProperties;
 	{
 		SetProperties.NAME,
 		SetProperties.NAME_ALT,
-		SetProperties.SET_CODE,
-		SetProperties.REGION_CODES,
+		SetProperties.SET_CODE
 	}
 )
 public class SetInfo {
@@ -35,7 +32,6 @@ public class SetInfo {
 	private String name;
 	private String nameAlt;
 	private String setCode;
-	private List<Region> regionCodes;
 
 	/**
 	 * Name of the set.
@@ -68,16 +64,6 @@ public class SetInfo {
 		return setCode;
 	}
 
-	/**
-	 * List of region codes for the set.
-	 */
-	@JsonPropertyDescription("List of region codes for the set.")
-	@JsonProperty(value = SetProperties.REGION_CODES)
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public List<Region> getRegionCodes() {
-		return regionCodes;
-	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -90,10 +76,6 @@ public class SetInfo {
 		this.setCode = setCode;
 	}
 
-	public void setRegionCodes(List<Region> regionCodes) {
-		this.regionCodes = regionCodes;
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -101,14 +83,13 @@ public class SetInfo {
 		return (
 			Objects.equals(name, setInfo.name) &&
 			Objects.equals(nameAlt, setInfo.nameAlt) &&
-			Objects.equals(setCode, setInfo.setCode) &&
-			Objects.equals(regionCodes, setInfo.regionCodes)
+			Objects.equals(setCode, setInfo.setCode)
 		);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, nameAlt, setCode, regionCodes);
+		return Objects.hash(name, nameAlt, setCode);
 	}
 
 	@Override
@@ -117,7 +98,6 @@ public class SetInfo {
 			.add("name='" + name + "'")
 			.add("nameAlt='" + nameAlt + "'")
 			.add("setCode='" + setCode + "'")
-			.add("regionCodes=" + regionCodes)
 			.toString();
 	}
 }
