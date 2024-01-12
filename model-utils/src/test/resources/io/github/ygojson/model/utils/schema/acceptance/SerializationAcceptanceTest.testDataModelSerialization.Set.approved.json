@@ -1,21 +1,23 @@
 {
-  "id" : "b38892d6-d204-3397-b598-f3d9d93273e1",
-  "prefix" : "AHJMYUWW",
-  "name" : "RXNFMQGE",
-  "type" : "JTGD",
-  "series" : "XKRPVMWMMP",
+  "id" : "f4ef6429-97c8-303d-ba1a-74caf525fec0",
+  "name" : "AHJMYUWW",
+  "nameAlt" : "RXNFMQGE",
+  "setCode" : "BEOAPEZSDZ",
+  "setCodeAlt" : "PMQCXJT",
+  "type" : "WRK",
+  "series" : "MEOZGBOQAY",
   "localizedData" : {
-    "es" : {
-      "prefix" : "PTEQRGFNZ",
-      "name" : "JSJGG"
+    "de" : {
+      "name" : "SKCWAJIWSN",
+      "nameAlt" : "ZXIFFLO",
+      "setCode" : "REZETUK",
+      "setCodeAlt" : "WHTWXIVE"
     },
-    "fr" : {
-      "prefix" : "LWRKVM",
-      "name" : "OZGBO"
-    },
-    "ko" : {
-      "prefix" : "YHUF",
-      "name" : "JCMX"
+    "zh-Hans" : {
+      "name" : "OJCMXGH",
+      "nameAlt" : "TEQR",
+      "setCode" : "FNZDJSJ",
+      "setCodeAlt" : "GWXH"
     }
   }
 }

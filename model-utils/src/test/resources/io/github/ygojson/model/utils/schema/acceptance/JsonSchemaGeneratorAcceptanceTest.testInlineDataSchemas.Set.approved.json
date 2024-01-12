@@ -6,12 +6,19 @@
       "type" : "string",
       "format" : "uuid"
     },
-    "prefix" : {
-      "type" : "string",
-      "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-    },
     "name" : {
       "type" : "string"
+    },
+    "nameAlt" : {
+      "type" : "string"
+    },
+    "setCode" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+"
+    },
+    "setCodeAlt" : {
+      "type" : "string",
+      "pattern" : "[a-zA-Z0-9]+"
     },
     "type" : {
       "type" : "string",
@@ -27,108 +34,171 @@
         "de" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "es" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "fr" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "it" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "ja" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "ko" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "pt" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "zh-Hans" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         },
         "zh-Hant" : {
           "type" : "object",
           "properties" : {
-            "prefix" : {
-              "type" : "string",
-              "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
-            },
             "name" : {
               "type" : "string"
+            },
+            "nameAlt" : {
+              "type" : "string"
+            },
+            "setCode" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
+            },
+            "setCodeAlt" : {
+              "type" : "string",
+              "pattern" : "[a-zA-Z0-9]+"
             }
           }
         }
