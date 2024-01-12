@@ -1,10 +1,6 @@
 {
   "$schema" : "https://json-schema.org/draft/2019-09/schema",
   "$defs" : {
-    "Region" : {
-      "type" : "string",
-      "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-    },
     "SetInfo" : {
       "type" : "object",
       "properties" : {
@@ -17,12 +13,6 @@
         "setCode" : {
           "type" : "string",
           "pattern" : "[a-zA-Z0-9]+"
-        },
-        "regionCodes" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/$defs/Region"
-          }
         }
       }
     },
@@ -74,12 +64,6 @@
     "setCode" : {
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+"
-    },
-    "regionCodes" : {
-      "type" : "array",
-      "items" : {
-        "$ref" : "#/$defs/Region"
-      }
     },
     "type" : {
       "type" : "string",

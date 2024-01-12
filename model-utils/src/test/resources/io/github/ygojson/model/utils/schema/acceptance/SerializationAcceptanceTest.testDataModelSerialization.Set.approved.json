@@ -1,35 +1,30 @@
 {
-  "id" : "8c848046-a8f1-3b60-8632-49fa50cef980",
+  "id" : "4f8b38c9-a4ae-351a-8e56-21c2a7258922",
   "name" : "AHJMYUWW",
   "nameAlt" : "RXNFMQGE",
   "setCode" : "BEOAPEZSDZ",
-  "regionCodes" : [ "SP", "EN", "I", "SC" ],
-  "type" : "PYLW",
+  "type" : "WMMPMPYLW",
   "series" : "KVMEOZG",
   "localizedData" : {
-    "it" : {
-      "name" : "XBDXLIXXDW",
-      "nameAlt" : "HJCTSALR",
-      "setCode" : "GBCUSP",
-      "regionCodes" : [ "SC", "I" ]
+    "de" : {
+      "name" : "RRCITAC",
+      "nameAlt" : "EFYJKTXA",
+      "setCode" : "WAXBDXLI"
     },
-    "ja" : {
-      "name" : "GOXXAUIDB",
-      "nameAlt" : "FLWYCILHPT",
-      "setCode" : "OOBMPLDEGY",
-      "regionCodes" : [ "C", "I", "C" ]
+    "pt" : {
+      "name" : "FFLOPREZ",
+      "nameAlt" : "TUKWWH",
+      "setCode" : "WXI"
     },
     "zh-Hans" : {
       "name" : "AYHUFOJC",
       "nameAlt" : "XGHP",
-      "setCode" : "EQRGFN",
-      "regionCodes" : [ "JA", "JA", "A", "JA", "SC", "FR" ]
+      "setCode" : "EQRGFN"
     },
     "zh-Hant" : {
-      "name" : "VERR",
-      "nameAlt" : "ITA",
-      "setCode" : "UEFYJKT",
-      "regionCodes" : [ "EN", "IT" ]
+      "name" : "JSJGG",
+      "nameAlt" : "XHTNSKCWAJ",
+      "setCode" : "WSNLZ"
     }
   }
 }

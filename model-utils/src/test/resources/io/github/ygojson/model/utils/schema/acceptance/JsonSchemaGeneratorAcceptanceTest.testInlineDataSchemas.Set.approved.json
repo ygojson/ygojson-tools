@@ -16,13 +16,6 @@
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+"
     },
-    "regionCodes" : {
-      "type" : "array",
-      "items" : {
-        "type" : "string",
-        "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-      }
-    },
     "type" : {
       "type" : "string",
       "pattern" : "[a-z-0-9]+"
@@ -46,13 +39,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -68,13 +54,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -90,13 +69,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -112,13 +84,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -134,13 +99,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -156,13 +114,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -178,13 +129,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -200,13 +144,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         },
@@ -222,13 +159,6 @@
             "setCode" : {
               "type" : "string",
               "pattern" : "[a-zA-Z0-9]+"
-            },
-            "regionCodes" : {
-              "type" : "array",
-              "items" : {
-                "type" : "string",
-                "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
-              }
             }
           }
         }
