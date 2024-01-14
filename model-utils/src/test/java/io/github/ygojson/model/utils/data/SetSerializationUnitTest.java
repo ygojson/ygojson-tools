@@ -2,6 +2,7 @@ package io.github.ygojson.model.utils.data;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.instancio.Select.all;
+import static org.instancio.Select.field;
 
 import java.util.List;
 
@@ -26,7 +27,9 @@ public class SetSerializationUnitTest {
 	void given_setWithNullSetText_when_serialize_then_textNotPresent()
 		throws JsonProcessingException {
 		// given
-		final Set set = Instancio.of(Set.class).ignore(all(SetInfo.class)).create();
+		final var instancioBuilder = Instancio.of(Set.class);
+		FIELDS_TO_EXCLUDE.forEach(f -> instancioBuilder.ignore(field(f)));
+		final Set set = instancioBuilder.ignore(all(SetInfo.class)).create();
 		// when
 		final String value = JsonUtils.getObjectMapper().writeValueAsString(set);
 		// then
