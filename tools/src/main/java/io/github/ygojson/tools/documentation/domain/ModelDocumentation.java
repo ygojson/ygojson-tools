@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 
 /**
- * Domain model representing the documention
+ * Domain model representing the documentation
  * of a model.
  */
 public class ModelDocumentation {
@@ -47,10 +47,6 @@ public class ModelDocumentation {
 		return modelName;
 	}
 
-	ObjectMapper getObjectMapper() {
-		return objectMapper;
-	}
-
 	/**
 	 * Sets the schema prefix.
 	 *
@@ -77,7 +73,7 @@ public class ModelDocumentation {
 	 *
 	 * @return returns the file where the JSON-schema was written
 	 *
-	 * @throws IOException if there is an problem writing the schema file.
+	 * @throws YgoJsonToolException if there is a problem writing the schema file.
 	 */
 	public Path writeJsonSchemaTo(final Path outputDir, final boolean force)
 		throws YgoJsonToolException {
