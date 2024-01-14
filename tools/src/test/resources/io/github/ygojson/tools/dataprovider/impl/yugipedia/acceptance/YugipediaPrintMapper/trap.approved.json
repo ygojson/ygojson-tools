@@ -1,1414 +1,808 @@
 [ {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-041",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-042",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DB1-EN118",
   "rarity" : "rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-EN058",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HL03-EN003",
   "rarity" : "ultra parallel rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDJ-EN034",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDS-EN032",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS1-EN036",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL09-EN017",
   "rarity" : "rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS3-EN030",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS11-EN034",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS12-EN032",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCYW-EN177",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-EN073",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-EN038",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-EN042",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-EN031",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-EN028",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-EN058",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-058",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-027",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-033",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDJ-043",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDP-041",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DLG1-EN008",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DT02-EN100",
   "rarity" : "duel terminal normal parallel rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-ENF24",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-ENL24",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-E046",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-E025",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-E030",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RP01-EN007",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-ENY17",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-A058",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-A027",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-A033",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-058",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-027",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-033",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SSD2-AE017",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-G046",
   "rarity" : "super rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-G025",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-G030",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDJ-G043",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDP-G041",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-DE041",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-DE042",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DB1-DE118",
   "rarity" : "rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDJ-DE034",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDS-DE032",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RP01-DE007",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS1-DE036",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL09-DE017",
   "rarity" : "rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS3-DE030",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS11-DE034",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS12-DE032",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCYW-DE177",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-DE073",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-DE038",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-DE042",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-DE031",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-DEY17",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-DE028",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-DE058",
   "rarity" : "super rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LDD-S058",
   "rarity" : "super rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BIY-S027",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BIK-S033",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BIJ-S043",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BIP-S041",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-SP041",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-SP042",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DB1-SP118",
   "rarity" : "rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDJ-SP034",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDS-SP032",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS1-SP036",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL09-SP017",
   "rarity" : "rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS3-SP030",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS11-SP034",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS12-SP032",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCYW-SP177",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-SP073",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-SP038",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-SP042",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-SP031",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-SPY17",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-SP028",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-SP058",
   "rarity" : "super rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LDD-F046",
   "rarity" : "super rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDY-F025",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDK-F030",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDJ-F043",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDP-F041",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-FR041",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-FR042",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDJ-FR034",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDS-FR032",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RP01-FR007",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS1-FR036",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL09-FR017",
   "rarity" : "rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS3-FR030",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS11-FR034",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS12-FR032",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCYW-FR177",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-FR073",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-FR038",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-FR042",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-FR031",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-FRY17",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-FR028",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-FR058",
   "rarity" : "super rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LDD-C058",
   "rarity" : "super rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDY-C027",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DDK-C033",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LDD-I046",
   "rarity" : "super rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MIY-I025",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MIK-I030",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MIJ-I043",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MIP-I041",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-IT041",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-IT042",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDJ-IT034",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSDS-IT032",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RP01-IT007",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS1-IT036",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL09-IT017",
   "rarity" : "rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "5DS3-IT030",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS11-IT034",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS12-IT032",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCYW-IT177",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-IT073",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-IT038",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-IT042",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-IT031",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-ITY17",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-IT028",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-IT058",
   "rarity" : "super rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "firstSeriesSet" : "Vol.1",
   "rarity" : "super rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "firstSeriesSet" : "EX Starter Box",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LB-57",
   "rarity" : "super rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "EX-27",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "JY-30",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DL2-039",
   "rarity" : "rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SY2-052",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PC2-007",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PC2-007",
   "rarity" : "normal parallel rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BE1-JP118",
   "rarity" : "rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD2-JP034",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD3-JP036",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DT04-JP050",
   "rarity" : "duel terminal normal parallel rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD5-JP033",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GS03-JP018",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GS03-JP018",
   "rarity" : "gold rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD6-JP034",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BE01-JP101",
   "rarity" : "rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ST12-JP032",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GDB1-JP058",
   "rarity" : "gold rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD13-JPL17",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD13-JPD17",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ST14-JP031",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "VS15-JPS23",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "VS15-JPD24",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD18-JPL17",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD18-JPD17",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SSD2-JP017",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD45-JP028",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-K058",
   "rarity" : "super rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDY-K027",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDK-K033",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDJ-KR043",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDP-KR041",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-KR041",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-KR042",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BP1-KR118",
   "rarity" : "rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ESP1-KR005",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD3-KR036",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD5-KR033",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GS03-KR018",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GS03-KR018",
   "rarity" : "gold rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSD6-KR034",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ST12-KR032",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ST14-KR031",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "VS15-KRS23",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "VS15-KRD24",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SSD2-KR017",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD45-KR028",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LDB-P058",
   "rarity" : "super rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DIY-P027",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DIK-P033",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DIJ-P043",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DIP-P041",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SYE-PT041",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SKE-PT042",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCJW-PT073",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSYR-PT038",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YSKR-PT042",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS14-PT031",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "YS15-PTY17",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-PT028",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LOB-PT058",
   "rarity" : "super rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "ST14-TC033",
   "rarity" : "common",
   "language" : "zh-Hant"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD13-TCL17",
   "rarity" : "common",
   "language" : "zh-Hant"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HD13-TCD17",
   "rarity" : "common",
   "language" : "zh-Hant"

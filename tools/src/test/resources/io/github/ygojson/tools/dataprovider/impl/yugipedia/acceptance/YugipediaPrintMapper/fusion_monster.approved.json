@@ -1,231 +1,132 @@
 [ {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-EN039",
   "rarity" : "secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-EN100",
   "rarity" : "starlight rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-EN209",
   "rarity" : "prismatic secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-DE039",
   "rarity" : "secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-DE100",
   "rarity" : "starlight rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-DE209",
   "rarity" : "prismatic secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-SP039",
   "rarity" : "secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-SP100",
   "rarity" : "starlight rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-SP209",
   "rarity" : "prismatic secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-FR039",
   "rarity" : "secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-FR100",
   "rarity" : "starlight rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-FR209",
   "rarity" : "prismatic secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-IT039",
   "rarity" : "secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-IT100",
   "rarity" : "starlight rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-IT209",
   "rarity" : "prismatic secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "ultimate rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "prismatic secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-JP039",
   "rarity" : "prismatic secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "ultimate rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "prismatic secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-KR039",
   "rarity" : "prismatic secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "BODE-PT039",
   "rarity" : "secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTE-PT100",
   "rarity" : "starlight rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-PT209",
   "rarity" : "prismatic secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MGP6-SC133",
   "rarity" : "ultra rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MGP6-SC133",
   "rarity" : "secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MGP6-SC133",
   "rarity" : "prismatic secret rare",
   "language" : "zh-Hans"

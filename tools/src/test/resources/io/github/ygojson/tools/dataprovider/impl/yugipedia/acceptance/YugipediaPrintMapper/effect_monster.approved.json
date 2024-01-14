@@ -1,1141 +1,652 @@
 [ {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-EN036",
   "rarity" : "secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-EN080",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-EN047",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-EN019",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-EN077",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-EN003",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-EN011",
   "rarity" : "premium gold rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-EN257",
   "rarity" : "prismatic secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-EN014",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-EN014",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "super rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "platinum secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "quarter century secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "ultimate rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-EN008",
   "rarity" : "collector's rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-DE036",
   "rarity" : "secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-DE080",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-DE047",
   "rarity" : "super rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-DE019",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-DE077",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-DE003",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-DE011",
   "rarity" : "premium gold rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-DE257",
   "rarity" : "prismatic secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-DE014",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-DE014",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "super rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "platinum secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "quarter century secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "ultimate rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-DE008",
   "rarity" : "collector's rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-SP036",
   "rarity" : "secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-SP080",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-SP047",
   "rarity" : "super rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-SP019",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-SP077",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-SP003",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-SP011",
   "rarity" : "premium gold rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-SP257",
   "rarity" : "prismatic secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-SP014",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-SP014",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "super rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "platinum secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "quarter century secret rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "ultimate rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-SP008",
   "rarity" : "collector's rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-FR036",
   "rarity" : "secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-FR080",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-FR047",
   "rarity" : "super rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-FR019",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-FR077",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-FR003",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-FR011",
   "rarity" : "premium gold rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-FR257",
   "rarity" : "prismatic secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-FR014",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-FR014",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "super rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "platinum secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "quarter century secret rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "ultimate rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-FR008",
   "rarity" : "collector's rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-IT036",
   "rarity" : "secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-IT080",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-IT047",
   "rarity" : "super rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-IT019",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-IT077",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-IT003",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-IT011",
   "rarity" : "premium gold rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-IT257",
   "rarity" : "prismatic secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-IT014",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-IT014",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "super rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "platinum secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "quarter century secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "ultimate rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-IT008",
   "rarity" : "collector's rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-JP036",
   "rarity" : "super rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-JP036",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC02-JP009",
   "rarity" : "ultimate rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC02-JP009",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC02-JP009",
   "rarity" : "collector's rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD35-JP019",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "20TH-JPC85",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "20TH-JPC85",
   "rarity" : "20th secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-JP010",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-JP010",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-JP010",
   "rarity" : "collector's rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-JP010",
   "rarity" : "premium gold rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-JP016",
   "rarity" : "super rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-JP016",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-JP016",
   "rarity" : "prismatic secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD44-JP014",
   "rarity" : "common",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "ultimate rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "collector's rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "extra secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "quarter century secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-JP009",
   "rarity" : "holographic rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-KR036",
   "rarity" : "super rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-KR036",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC02-KR009",
   "rarity" : "ultimate rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC02-KR009",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD35-KR019",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEC1-KR085",
   "rarity" : "extra secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEC1-KR085",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-KR010",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-KR010",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-KR010",
   "rarity" : "extra secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-KR010",
   "rarity" : "prismatic secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-KR016",
   "rarity" : "super rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-KR016",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PAC1-KR016",
   "rarity" : "prismatic secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD44-KR014",
   "rarity" : "common",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "ultimate rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "collector's rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "extra secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "quarter century secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC04-KR009",
   "rarity" : "hgr",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MACR-PT036",
   "rarity" : "secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCKC-PT080",
   "rarity" : "ultra rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SHVA-PT047",
   "rarity" : "super rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDSB-PT019",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUPO-PT077",
   "rarity" : "ultra rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DUDE-PT003",
   "rarity" : "ultra rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MAGO-PT011",
   "rarity" : "premium gold rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "MP22-PT257",
   "rarity" : "prismatic secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCB-PT014",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDBT-PT014",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "super rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "ultra rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "platinum secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "quarter century secret rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "ultimate rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RA01-PT008",
   "rarity" : "collector's rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD35-SC019",
   "rarity" : "common",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-SC010",
   "rarity" : "ultra rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-SC010",
   "rarity" : "secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-SC010",
   "rarity" : "extra secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RC03-SC010",
   "rarity" : "premium gold rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "22RC-SC009",
   "rarity" : "ultimate rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "22RC-SC009",
   "rarity" : "secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "22RC-SC009",
   "rarity" : "collector's rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "TM02-SC097",
   "rarity" : "rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "ultra rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "ultimate rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "collector's rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "extra secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "quarter century secret rare",
   "language" : "zh-Hans"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "23RC-SC013",
   "rarity" : "holographic rare",
   "language" : "zh-Hans"
