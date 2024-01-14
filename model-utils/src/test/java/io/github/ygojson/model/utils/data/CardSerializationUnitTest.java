@@ -51,4 +51,39 @@ public class CardSerializationUnitTest {
 		// then
 		assertThat(value).contains(FIELDS_TO_EXCLUDE);
 	}
+
+	@Test
+	void given_cardWithEmptyProperty_when_serialize_then_propertyNotPresent()
+		throws JsonProcessingException {
+		// given
+		final Card card = new Card();
+		card.setProperty("");
+		// when
+		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
+		// then
+		assertThat(value).isEqualTo("{}");
+	}
+
+	@Test
+	void given_cardWithEmptyMonsterTypes_when_serialize_then_monsterTyepsNotPresent()
+		throws JsonProcessingException {
+		// given
+		final Card card = new Card();
+		card.setMonsterTypes(List.of());
+		// when
+		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
+		// then
+		assertThat(value).isEqualTo("{}");
+	}
+
+	@Test
+	void given_cardWithNullMonsterTypes_when_serialize_then_monsterTyepsNotPresent()
+		throws JsonProcessingException {
+		// given
+		final Card card = new Card();
+		// when
+		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
+		// then
+		assertThat(value).isEqualTo("{}");
+	}
 }
