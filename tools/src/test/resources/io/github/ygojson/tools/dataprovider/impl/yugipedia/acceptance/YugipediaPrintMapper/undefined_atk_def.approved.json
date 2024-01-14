@@ -1,581 +1,332 @@
 [ {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-EN034",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-EN034",
   "rarity" : "ultimate rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-EN013",
   "rarity" : "rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GLD1-EN029",
   "rarity" : "gold rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCGX-EN183",
   "rarity" : "secret rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RYMP-EN061",
   "rarity" : "rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-EN043",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-EN043",
   "rarity" : "starfoil rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-EN056",
   "rarity" : "gold rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-ENB27",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-EN042",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-ENG22",
   "rarity" : "common",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DT07-EN032",
   "rarity" : "duel terminal rare parallel rare",
   "language" : "en"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-DE034",
   "rarity" : "ultra rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-DE034",
   "rarity" : "ultimate rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-DE013",
   "rarity" : "rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GLD1-DE029",
   "rarity" : "gold rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCGX-DE183",
   "rarity" : "secret rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RYMP-DE061",
   "rarity" : "rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-DE043",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-DE043",
   "rarity" : "starfoil rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-DE056",
   "rarity" : "gold rare",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-DEB27",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-DE042",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-DEG22",
   "rarity" : "common",
   "language" : "de"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-SP034",
   "rarity" : "ultra rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-SP034",
   "rarity" : "ultimate rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-SP013",
   "rarity" : "rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GLD1-SP029",
   "rarity" : "gold rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RYMP-SP061",
   "rarity" : "rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-SP043",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-SP043",
   "rarity" : "starfoil rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-SP056",
   "rarity" : "gold rare",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-SPB27",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-SP042",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-SPG22",
   "rarity" : "common",
   "language" : "es"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-FR034",
   "rarity" : "ultra rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-FR034",
   "rarity" : "ultimate rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-FR013",
   "rarity" : "rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GLD1-FR029",
   "rarity" : "gold rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RYMP-FR061",
   "rarity" : "rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-FR043",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-FR043",
   "rarity" : "starfoil rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-FR056",
   "rarity" : "gold rare",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-FRB27",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-FR042",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-FRG22",
   "rarity" : "common",
   "language" : "fr"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-IT034",
   "rarity" : "ultra rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-IT034",
   "rarity" : "ultimate rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-IT013",
   "rarity" : "rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "GLD1-IT029",
   "rarity" : "gold rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LCGX-IT183",
   "rarity" : "secret rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "RYMP-IT061",
   "rarity" : "rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-IT043",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-IT043",
   "rarity" : "starfoil rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-IT056",
   "rarity" : "gold rare",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-ITB27",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-IT042",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-ITG22",
   "rarity" : "common",
   "language" : "it"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-JP034",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-JP034",
   "rarity" : "ultimate rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-JP013",
   "rarity" : "rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DT13-JP032",
   "rarity" : "duel terminal rare parallel rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DE01-JP026",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD41-JP042",
   "rarity" : "normal parallel rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-JP017",
   "rarity" : "normal parallel rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-JP017",
   "rarity" : "secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-JP017",
   "rarity" : "ultimate rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "????-JP001",
   "rarity" : "quarter century secret rare",
   "language" : "ja"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-KR034",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "POTD-KR034",
   "rarity" : "ultimate rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "DP04-KR013",
   "rarity" : "rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PC01-KR027",
   "rarity" : "ultra rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SD41-KR042",
   "rarity" : "normal parallel rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-KR017",
   "rarity" : "normal parallel rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-KR017",
   "rarity" : "secret rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "HC01-KR017",
   "rarity" : "ultimate rare",
   "language" : "ko"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-PT043",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SP14-PT043",
   "rarity" : "starfoil rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "PGLD-PT056",
   "rarity" : "gold rare",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "LEDD-PTB27",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SDCS-PT042",
   "rarity" : "common",
   "language" : "pt"
 }, {
-  "id" : null,
-  "cardId" : null,
-  "setId" : null,
   "printCode" : "SGX1-PTG22",
   "rarity" : "common",
   "language" : "pt"

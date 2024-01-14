@@ -18,6 +18,7 @@ import io.github.ygojson.model.data.property.LanguageProperties;
  * @param <T> type of the localized model.
  */
 @JsonPropertyOrder(alphabetic = true)
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 abstract class AbstractLocalizedData<T> {
 
 	private final Map<Language, T> languageMap = new HashMap<>();
@@ -42,7 +43,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.DE)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getDe() {
 		return getData(Language.DE);
 	}
@@ -53,7 +53,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.ES)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getEs() {
 		return getData(Language.ES);
 	}
@@ -64,7 +63,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.FR)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getFr() {
 		return getData(Language.FR);
 	}
@@ -75,7 +73,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.IT)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getIt() {
 		return getData(Language.IT);
 	}
@@ -86,7 +83,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.JA)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getJa() {
 		return getData(Language.JA);
 	}
@@ -97,7 +93,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.KO)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getKo() {
 		return getData(Language.KO);
 	}
@@ -108,7 +103,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.PT)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getPt() {
 		return getData(Language.PT);
 	}
@@ -119,7 +113,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.ZH_HANS)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getZhHans() {
 		return getData(Language.ZH_HANS);
 	}
@@ -130,7 +123,6 @@ abstract class AbstractLocalizedData<T> {
 	 * @return the translation
 	 */
 	@JsonProperty(value = LanguageProperties.ZH_HANT)
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public T getZhHant() {
 		return getData(Language.ZH_HANT);
 	}
