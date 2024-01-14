@@ -40,7 +40,7 @@ class SchemaDoc {
 	 */
 	public ObjectNode generateSchema() {
 		return getGenerator()
-			.generateWithDefs(modelDoc.getModelClass(), getFullSchemaId());
+			.generateWithDefs(modelDoc.getDataModelSchema(), getFullSchemaId());
 	}
 
 	public String getSchemaFilename() {

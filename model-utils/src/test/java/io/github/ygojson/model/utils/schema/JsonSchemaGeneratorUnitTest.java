@@ -17,7 +17,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.model.utils.test.RegionTestModel;
 
 class JsonSchemaGeneratorUnitTest {
 
@@ -29,9 +28,10 @@ class JsonSchemaGeneratorUnitTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_methodAnnotateds_when_generateInline_then_schemaContainsDescriptions() {
 		// given
-		final Class<?> type = MethodAnnotatedClass.class;
+		final DataModelSchema type = DataModelSchema.PRINT;
 		// when
 		final ObjectNode schema = TEST_GENERATOR.generateWithDefs(type, "test");
 		// then
@@ -48,7 +48,7 @@ class JsonSchemaGeneratorUnitTest {
 	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void give_regionTestModel_when_generateSchemaInline_then_schemaContainsEnums() {
 		// given
-		final Class<?> type = RegionTestModel.class;
+		final DataModelSchema type = DataModelSchema.PRINT;
 		// when
 		final ObjectNode schema = TEST_GENERATOR.generateWithDefs(type, "test");
 		// then

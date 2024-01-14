@@ -42,14 +42,14 @@ public final class JsonSchemaGenerator {
 	}
 
 	public ObjectNode generateWithDefs(
-		final Class<?> type,
+		final DataModelSchema type,
 		final String modelId
 	) {
 		return getGenerator(
 			YgoJsonOptionPreset.YGOJSON_WITH_DEFS,
-			scope -> idResolver(type, modelId, scope)
+			scope -> idResolver(type.modelClass, modelId, scope)
 		)
-			.generateSchema(type);
+			.generateSchema(type.modelClass);
 	}
 
 	// TODO: maybe cache the generator instance to re-use

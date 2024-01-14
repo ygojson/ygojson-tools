@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.github.ygojson.model.utils.schema.DataModelSchema;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 
 /**
@@ -22,7 +23,7 @@ public class ModelDocumentation {
 		ModelDocumentation.class
 	);
 
-	private final Class<?> modelClass;
+	private final DataModelSchema dataModel;
 
 	private final String modelName;
 
@@ -31,16 +32,16 @@ public class ModelDocumentation {
 	private SchemaDoc schemaDoc;
 
 	public ModelDocumentation(
-		final Class<?> modelClass,
+		final DataModelSchema dataModel,
 		final ObjectMapper objectMapper
 	) {
-		this.modelClass = modelClass;
-		this.modelName = modelClass.getSimpleName().toLowerCase();
+		this.dataModel = dataModel;
+		this.modelName = dataModel.getName().toLowerCase();
 		this.objectMapper = objectMapper;
 	}
 
-	public Class<?> getModelClass() {
-		return modelClass;
+	public DataModelSchema getDataModelSchema() {
+		return dataModel;
 	}
 
 	public String getModelName() {

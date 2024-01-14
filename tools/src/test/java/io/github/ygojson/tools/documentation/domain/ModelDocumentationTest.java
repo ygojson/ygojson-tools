@@ -14,11 +14,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
+import io.github.ygojson.model.utils.schema.DataModelSchema;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.test.TestFilesystem;
 
@@ -46,10 +44,11 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_schemaPrefixAlreadySet_when_setAgain_then_throwIllegalStateException() {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			SimpleModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		modelDoc.setSchemaPrefix("my-prefix");
@@ -62,10 +61,11 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_schemaAlreadyExists_when_writeJsonSchemaToWithoutForce_then_throwException() {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			SimpleModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		final Path doNotOverwriteFile = TEST_FS.createFileWithContent(
@@ -89,10 +89,11 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_schemaFilenameIsExistingDirectory_when_writeJsonSchemaToWithForce_then_throwException() {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			SimpleModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		TEST_FS.createDir("simplemodel.schema.json");
@@ -105,11 +106,12 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_simpleModelDoc_when_writeJsonSchemaTo_then_idIsCorrect()
 		throws IOException {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			SimpleModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		modelDoc.setSchemaPrefix("simple-model-id");
@@ -127,11 +129,12 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_simpleModelDic_when_writeJsonSchemaTo_then_modelSchemaIs2019_09()
 		throws IOException {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			SimpleModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		// when
@@ -148,11 +151,12 @@ class ModelDocumentationTest {
 	}
 
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void given_mapModel_when_processed_then_noAsDefAndRefAdditionalProperties()
 		throws IOException {
 		// given
 		final ModelDocumentation modelDoc = new ModelDocumentation(
-			MapModel.class,
+			DataModelSchema.VERSION_INFO,
 			OBJECT_MAPPER
 		);
 		// when

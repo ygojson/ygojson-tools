@@ -3,13 +3,14 @@ package io.github.ygojson.tools.documentation;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.github.ygojson.model.utils.schema.DataModelSchema;
 import io.github.ygojson.tools.common.YgoJsonTool;
 import io.github.ygojson.tools.common.YgoJsonToolException;
 import io.github.ygojson.tools.documentation.domain.ModelDocumentation;
@@ -18,13 +19,6 @@ public class GenerateDocsTool implements YgoJsonTool<GenerateDocsTool.Input> {
 
 	private static final Logger log = LoggerFactory.getLogger(
 		GenerateDocsTool.class
-	);
-
-	private static final Set<Class<?>> MODEL_DOCUMENTATION_CLASSES = Set.of(
-		io.github.ygojson.model.data.Card.class,
-		io.github.ygojson.model.data.Set.class,
-		io.github.ygojson.model.data.Print.class,
-		io.github.ygojson.model.data.VersionInfo.class
 	);
 
 	private final ObjectMapper objectMapper;
@@ -41,8 +35,7 @@ public class GenerateDocsTool implements YgoJsonTool<GenerateDocsTool.Input> {
 
 	private void doExecute(final Input input) throws YgoJsonToolException {
 		log.info("Starting model documentation");
-		final List<ModelDocumentation> modelDocs = MODEL_DOCUMENTATION_CLASSES
-			.stream()
+		final List<ModelDocumentation> modelDocs = Arrays.stream(DataModelSchema.values())
 			.map(modelClass ->
 				new ModelDocumentation(modelClass, objectMapper)
 					.setSchemaPrefix(input.schemaIdPrefix())

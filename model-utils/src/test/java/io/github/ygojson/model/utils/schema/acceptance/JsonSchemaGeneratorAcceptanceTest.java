@@ -5,8 +5,9 @@ import java.io.IOException;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.EnumSource;
 
+import io.github.ygojson.model.utils.schema.DataModelSchema;
 import io.github.ygojson.model.utils.schema.JsonSchemaGenerator;
 
 class JsonSchemaGeneratorAcceptanceTest {
@@ -20,15 +21,14 @@ class JsonSchemaGeneratorAcceptanceTest {
 		generator = JsonSchemaGenerator.createInstance(false);
 	}
 
+
 	@ParameterizedTest
-	@MethodSource(
-		"io.github.ygojson.model.utils.test.ModelTestData#getMainModels"
-	)
-	void testWithDefsDataSchemas(final Class<?> type) throws IOException {
+	@EnumSource(value = DataModelSchema.class)
+	void testWithDefsDataSchemas(final DataModelSchema dataModel) throws IOException {
 		Approvals.verify(
-			generator.generateWithDefs(type, type.getName()).toPrettyString(),
+			generator.generateWithDefs(dataModel, dataModel.getModelClassName()).toPrettyString(),
 			Approvals.NAMES
-				.withParameters(type.getSimpleName())
+				.withParameters(dataModel.getName())
 				.forFile()
 				.withExtension(".json")
 		);
