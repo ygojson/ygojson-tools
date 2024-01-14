@@ -125,9 +125,8 @@ class PaginatorStreamFactoryUnitTest {
 				pagesQueue.poll()
 			);
 			// when
-			final List<String> pages = new ArrayList<>();
 			while (iterator.hasNext()) {
-				pages.add(iterator.next());
+				iterator.next();
 			}
 			final ThrowableAssert.ThrowingCallable callable = iterator::next;
 			// then
