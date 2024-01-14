@@ -67,9 +67,9 @@ public abstract class YugipediaCardMapper {
 		source = "types",
 		qualifiedByName = "monsterTypes"
 	)
-	@Mapping(target = "atkValue", source = "atk")
+	@Mapping(target = "atk", source = "atk")
 	@Mapping(target = "atkUndefined", source = "atk")
-	@Mapping(target = "defValue", source = "def")
+	@Mapping(target = "def", source = "def")
 	@Mapping(target = "defUndefined", source = "def")
 	@Mapping(target = "linkArrows", source = "link_arrows")
 	@Mapping(target = "linkRating", source = "link_arrows")

@@ -32,8 +32,8 @@ class IntegerOrUndefinedMapperUnitTest {
 		// given
 		final IntegerOrUndefined nullValue = null;
 		// when
-		boolean result = TEST_MAPPER.mapToUndefined(nullValue);
+		Boolean result = TEST_MAPPER.mapToUndefined(nullValue);
 		// then
-		assertThat(result).isFalse();
+		assertThat(result).isNull();
 	}
 }

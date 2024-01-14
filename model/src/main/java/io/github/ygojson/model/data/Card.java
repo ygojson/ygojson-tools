@@ -61,12 +61,12 @@ public class Card {
 	private String property;
 	private List<String> monsterTypes;
 	private String attribute;
-	private Integer atkValue;
-	private boolean atkUndefined;
+	private Integer atk;
+	private Boolean atkUndefined;
 
-	private Integer defValue;
+	private Integer def;
 
-	private boolean defUndefined;
+	private Boolean defUndefined;
 
 	private Integer level;
 
@@ -239,8 +239,8 @@ public class Card {
 	@PositiveOrZero
 	@JsonProperty(value = CardProperties.ATK)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public Integer getAtkValue() {
-		return atkValue;
+	public Integer getAtk() {
+		return atk;
 	}
 
 	/**
@@ -251,7 +251,7 @@ public class Card {
 	)
 	@JsonProperty(value = CardProperties.ATK_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	public boolean isAtkUndefined() {
+	public Boolean isAtkUndefined() {
 		return atkUndefined;
 	}
 
@@ -271,8 +271,8 @@ public class Card {
 	@PositiveOrZero
 	@JsonProperty(value = CardProperties.DEF)
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	public Integer getDefValue() {
-		return defValue;
+	public Integer getDef() {
+		return def;
 	}
 
 	/**
@@ -283,7 +283,7 @@ public class Card {
 	)
 	@JsonProperty(value = CardProperties.DEF_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	public boolean isDefUndefined() {
+	public Boolean isDefUndefined() {
 		return defUndefined;
 	}
 
@@ -409,19 +409,19 @@ public class Card {
 		this.attribute = attribute;
 	}
 
-	public void setAtkValue(Integer atkValue) {
-		this.atkValue = atkValue;
+	public void setAtk(Integer atk) {
+		this.atk = atk;
 	}
 
-	public void setAtkUndefined(boolean atkUndefined) {
+	public void setAtkUndefined(Boolean atkUndefined) {
 		this.atkUndefined = atkUndefined;
 	}
 
-	public void setDefValue(Integer defValue) {
-		this.defValue = defValue;
+	public void setDef(Integer def) {
+		this.def = def;
 	}
 
-	public void setDefUndefined(boolean defUndefined) {
+	public void setDefUndefined(Boolean defUndefined) {
 		this.defUndefined = defUndefined;
 	}
 
@@ -463,8 +463,8 @@ public class Card {
 			Objects.equals(property, card.property) &&
 			Objects.equals(monsterTypes, card.monsterTypes) &&
 			Objects.equals(attribute, card.attribute) &&
-			Objects.equals(atkValue, card.atkValue) &&
-			Objects.equals(defValue, card.defValue) &&
+			Objects.equals(atk, card.atk) &&
+			Objects.equals(def, card.def) &&
 			Objects.equals(level, card.level) &&
 			Objects.equals(linkRating, card.linkRating) &&
 			Objects.equals(linkArrows, card.linkArrows) &&
@@ -484,9 +484,9 @@ public class Card {
 			property,
 			monsterTypes,
 			attribute,
-			atkValue,
+			atk,
 			atkUndefined,
-			defValue,
+			def,
 			defUndefined,
 			level,
 			linkRating,
@@ -507,9 +507,9 @@ public class Card {
 			.add("property='" + property + "'")
 			.add("monsterTypes=" + monsterTypes)
 			.add("attribute='" + attribute + "'")
-			.add("atkValue=" + atkValue)
+			.add("atk=" + atk)
 			.add("atkUndefined=" + atkUndefined)
-			.add("defValue=" + defValue)
+			.add("def=" + def)
 			.add("defUndefined=" + defUndefined)
 			.add("level=" + level)
 			.add("linkRating=" + linkRating)
