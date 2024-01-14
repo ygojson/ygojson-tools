@@ -133,8 +133,6 @@ class PaginatorStreamFactoryUnitTest {
 			// then
 			assertThatThrownBy(callable).isInstanceOf(NoSuchElementException.class);
 		}
-
-		void given_exceptionHandler_when_iteratorFails_then_handlerProcessException() {}
 	}
 
 	@Test
