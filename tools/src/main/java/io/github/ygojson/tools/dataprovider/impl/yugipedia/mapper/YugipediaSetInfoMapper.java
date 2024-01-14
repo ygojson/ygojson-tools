@@ -7,10 +7,10 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import org.mapstruct.Mapper;
-import org.mapstruct.Named;
+import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.data.definition.localization.Region;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
@@ -26,9 +26,12 @@ public abstract class YugipediaSetInfoMapper {
 		MarkupStringMapper.class
 	);
 
-	@Named("mainSetInfo")
-	protected SetInfo mapToMainSetInfo(final InfoboxSet infoboxSet) {
-		return mapToSetInfo(
+	@AfterMapping
+	protected void updateMainSetInfo(
+		final InfoboxSet infoboxSet,
+		@MappingTarget final Set set
+	) {
+		final SetInfo setInfo = mapToSetInfo(
 			infoboxSet, // the infoboxSet
 			InfoboxSet::en_name,
 			InfoboxSet::en_name_2,
@@ -41,6 +44,16 @@ public abstract class YugipediaSetInfoMapper {
 					model.oc_prefix()
 				)
 		);
+		setMainSetInfo(set, setInfo);
+	}
+
+	private void setMainSetInfo(final Set set, final SetInfo setInfo) {
+		if (setInfo != null) {
+			set.setName(setInfo.getName());
+			set.setNameAlt(setInfo.getNameAlt());
+			set.setSetCode(setInfo.getSetCode());
+			set.setSetCode(setInfo.getSetCode());
+		}
 	}
 
 	@Named("esSetInfo")
