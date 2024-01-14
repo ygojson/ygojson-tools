@@ -21,12 +21,12 @@ public abstract class IntegerOrUndefinedMapper {
 	 *
 	 * @param value the actual value or {@code null}.
 	 *
-	 * @return the undefined state; if {@code null} returns {@code false}.
+	 * @return {@code true} if the value is undefined; if {@code null} otherwise.
 	 */
-	public boolean mapToUndefined(final IntegerOrUndefined value) {
-		if (value == null) {
-			return false;
+	public Boolean mapToUndefined(final IntegerOrUndefined value) {
+		if (value == null || !value.isUndefined()) {
+			return null;
 		}
-		return value.isUndefined();
+		return true;
 	}
 }
