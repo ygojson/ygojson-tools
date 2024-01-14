@@ -60,7 +60,7 @@ class JsonSchemaGeneratorUnitTest {
 			.forEachRemaining(node -> schemaEnumValues.add(node.asText()));
 		final String[] expectedEnumValues = Arrays
 			.stream(Region.values())
-			.map(Region::asCodeString)
+			.map(Region::value)
 			.toArray(String[]::new);
 
 		assertThat(schemaEnumValues).containsExactlyInAnyOrder(expectedEnumValues);
