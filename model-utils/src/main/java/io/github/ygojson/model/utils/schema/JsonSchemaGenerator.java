@@ -58,7 +58,7 @@ public final class JsonSchemaGenerator {
 		final Function<TypeScope, String> idResolver
 	) {
 		final SchemaGeneratorConfigBuilder builder =
-			new SchemaGeneratorConfigBuilder(SchemaVersion.DRAFT_2019_09, preset);
+			new SchemaGeneratorConfigBuilder(SchemaVersion.DRAFT_7, preset);
 		// jackson & jakarta
 		builder
 			.withObjectMapper(JsonUtils.getObjectMapper())

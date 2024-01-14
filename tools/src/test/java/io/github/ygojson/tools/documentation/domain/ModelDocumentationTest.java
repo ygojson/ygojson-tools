@@ -144,7 +144,7 @@ class ModelDocumentationTest {
 		);
 		// then
 		assertThat(schemaAsJsonNode.get("$schema").textValue())
-			.isEqualTo("https://json-schema.org/draft/2019-09/schema");
+			.isEqualTo("http://json-schema.org/draft-07/schema#");
 	}
 
 	@Test
@@ -192,7 +192,7 @@ class ModelDocumentationTest {
 			"""
                 {
                   "$id": "/mapmodel.schema.json",
-                  "$schema": "https://json-schema.org/draft/2019-09/schema",
+                  "$schema": "http://json-schema.org/draft-07/schema#",
                   "type": "object",
                   "properties": {
                     "map_value": {

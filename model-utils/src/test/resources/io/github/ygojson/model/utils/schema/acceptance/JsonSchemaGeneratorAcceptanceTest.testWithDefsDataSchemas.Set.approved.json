@@ -1,6 +1,6 @@
 {
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "$defs" : {
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "definitions" : {
     "SetInfo" : {
       "type" : "object",
       "properties" : {
@@ -24,31 +24,31 @@
       "type" : "object",
       "properties" : {
         "de" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "es" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "fr" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "it" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "ja" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "ko" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "pt" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "zh-Hans" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         },
         "zh-Hant" : {
-          "$ref" : "#/$defs/SetInfo"
+          "$ref" : "#/definitions/SetInfo"
         }
       }
     }
@@ -82,7 +82,7 @@
       "pattern" : "[a-z-0-9]+"
     },
     "localizedData" : {
-      "$ref" : "#/$defs/SetLocalizedData"
+      "$ref" : "#/definitions/SetLocalizedData"
     }
   },
   "required" : [ "id" ],

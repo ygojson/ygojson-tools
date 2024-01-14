@@ -1,6 +1,6 @@
 {
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "$defs" : {
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "definitions" : {
     "Language" : {
       "type" : "string",
       "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh-Hans", "zh-Hant" ]
@@ -32,7 +32,7 @@
       "pattern" : "[a-z]+"
     },
     "language" : {
-      "$ref" : "#/$defs/Language"
+      "$ref" : "#/definitions/Language"
     }
   },
   "required" : [ "id", "cardId", "setId" ],
