@@ -48,8 +48,8 @@ class IntegerOrUndefinedUnitTest {
 		// given
 		IntegerOrUndefined integerOrUndefined = new IntegerOrUndefined("NaN");
 		// when
-		final ThrowableAssert.ThrowingCallable throwingCallable = () ->
-			integerOrUndefined.asInteger();
+		final ThrowableAssert.ThrowingCallable throwingCallable =
+			integerOrUndefined::asInteger;
 		// then
 		assertThatThrownBy(throwingCallable)
 			.isInstanceOf(NumberFormatException.class);
