@@ -73,7 +73,8 @@ public final class JsonSchemaGenerator {
 			.with(new CustomJacksonModule(addDescription))
 			.with(
 				new JakartaValidationModule(
-					JakartaValidationOption.INCLUDE_PATTERN_EXPRESSIONS
+					JakartaValidationOption.INCLUDE_PATTERN_EXPRESSIONS,
+					JakartaValidationOption.NOT_NULLABLE_FIELD_IS_REQUIRED
 				)
 			);
 		// types and fields customization
