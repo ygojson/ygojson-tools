@@ -24,20 +24,6 @@ class JsonSchemaGeneratorAcceptanceTest {
 	@MethodSource(
 		"io.github.ygojson.model.utils.test.ModelTestData#getMainModels"
 	)
-	void testInlineDataSchemas(final Class<?> type) throws IOException {
-		Approvals.verify(
-			generator.generateInline(type, type.getName()).toPrettyString(),
-			Approvals.NAMES
-				.withParameters(type.getSimpleName())
-				.forFile()
-				.withExtension(".json")
-		);
-	}
-
-	@ParameterizedTest
-	@MethodSource(
-		"io.github.ygojson.model.utils.test.ModelTestData#getMainModels"
-	)
 	void testWithDefsDataSchemas(final Class<?> type) throws IOException {
 		Approvals.verify(
 			generator.generateWithDefs(type, type.getName()).toPrettyString(),

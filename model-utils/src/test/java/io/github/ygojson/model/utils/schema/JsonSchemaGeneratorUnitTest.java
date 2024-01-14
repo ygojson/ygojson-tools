@@ -32,7 +32,7 @@ class JsonSchemaGeneratorUnitTest {
 		// given
 		final Class<?> type = MethodAnnotatedClass.class;
 		// when
-		final ObjectNode schema = TEST_GENERATOR.generateInline(type, "test");
+		final ObjectNode schema = TEST_GENERATOR.generateWithDefs(type, "test");
 		// then
 		SoftAssertions.assertSoftly(softly -> {
 			softly
@@ -49,7 +49,7 @@ class JsonSchemaGeneratorUnitTest {
 		// given
 		final Class<?> type = RegionTestModel.class;
 		// when
-		final ObjectNode schema = TEST_GENERATOR.generateInline(type, "test");
+		final ObjectNode schema = TEST_GENERATOR.generateWithDefs(type, "test");
 		// then
 		final List<String> schemaEnumValues = new ArrayList<>();
 		schema

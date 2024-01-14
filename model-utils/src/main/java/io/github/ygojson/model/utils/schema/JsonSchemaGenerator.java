@@ -41,14 +41,6 @@ public final class JsonSchemaGenerator {
 		return new JsonSchemaGenerator(addDescription);
 	}
 
-	public ObjectNode generateInline(final Class<?> type, final String modelId) {
-		return getGenerator(
-			YgoJsonOptionPreset.YGOJSON_INLINE,
-			scope -> idResolver(type, modelId, scope)
-		)
-			.generateSchema(type);
-	}
-
 	public ObjectNode generateWithDefs(
 		final Class<?> type,
 		final String modelId
