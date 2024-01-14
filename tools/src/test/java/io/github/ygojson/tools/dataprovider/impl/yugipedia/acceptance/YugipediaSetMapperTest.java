@@ -44,7 +44,7 @@ class YugipediaSetMapperTest {
 			wikitext
 		);
 		// when
-		final Set set = MAPPER.mapToSet(infoboxSet);
+		final Set set = MAPPER.mapToSet(infoboxSet, pageTitle);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(set);
 		// then
 		Approvals.verify(
