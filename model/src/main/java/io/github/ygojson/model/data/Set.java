@@ -35,7 +35,7 @@ import io.github.ygojson.model.data.property.SetProperties;
 		LanguageProperties.LOCALIZED_DATA,
 	}
 )
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Set {
 
 	// container for set text related properties
