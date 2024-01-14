@@ -1,0 +1,41 @@
+$schema: http://json-schema.org/draft-07/schema#
+$id: localization/language.schema
+title: Language Model
+description: |
+  Supported languages in YGOJSON following the IETF BCP 47 standard format.
+javaType: io.github.ygojson.model.data.definition.localization.Language
+type: string
+enum:
+  - en
+  - de
+  - es
+  - fr
+  - it
+  - ja
+  - ko
+  - pt
+  - 'zh-Hans'
+  - 'zh-Hant'
+javaEnums:
+  - name: 'EN'
+    title: English
+    description: |
+      Default language of YGOJSON
+  - name: 'DE'
+    title: German
+  - name: 'ES'
+    title: Spanish
+  - name: 'FR'
+    title: French
+  - name: 'IT'
+    title: Italian
+  - name: 'JA'
+    title: Japanese
+  - name: 'KO'
+    title: Korean
+  - name: 'PT'
+    title: Portuguese
+  - name: 'ZH_HANS'
+    title: Simplified Chinese
+  - name: 'ZH_HANT'
+    title: Traditional Chinese
