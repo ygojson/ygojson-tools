@@ -104,8 +104,7 @@
     "monsterTypes" : {
       "type" : "array",
       "items" : {
-        "type" : "string",
-        "pattern" : "[a-z]+"
+        "type" : "string"
       }
     },
     "flavorText" : {

@@ -2,6 +2,7 @@ package io.github.ygojson.model.utils.data;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.instancio.Select.all;
+import static org.instancio.Select.field;
 
 import java.util.List;
 
@@ -27,10 +28,9 @@ public class CardSerializationUnitTest {
 	void given_cardWithNullCardText_when_serialize_then_textNotPresent()
 		throws JsonProcessingException {
 		// given
-		final Card card = Instancio
-			.of(Card.class)
-			.ignore(all(CardText.class))
-			.create();
+		final var instancioBuilder = Instancio.of(Card.class);
+		FIELDS_TO_EXCLUDE.forEach(f -> instancioBuilder.ignore(field(f)));
+		final Card card = instancioBuilder.ignore(all(CardText.class)).create();
 		// when
 		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
 		// then
@@ -45,7 +45,6 @@ public class CardSerializationUnitTest {
 			.of(Card.class)
 			.ignore(all(CardText.class))
 			.create();
-		card.setCardText(Instancio.create(CardText.class));
 		// when
 		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
 		// then

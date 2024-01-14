@@ -40,9 +40,9 @@ class YugipediaCardTextMapperUnitTest {
 		);
 		final Card emptyCard = new Card();
 		// when
-		MAPPER.updateCardText(cardTable2, emptyCard);
+		MAPPER.updateMainCardText(cardTable2, emptyCard);
 		// then
-		assertThat(emptyCard.getCardText()).isNull();
+		assertThat(emptyCard).isEqualTo(new Card());
 	}
 
 	@Test
@@ -55,10 +55,10 @@ class YugipediaCardTextMapperUnitTest {
 		);
 		final Card emptyCard = new Card();
 		// when
-		MAPPER.updateCardText(cardTable2, emptyCard);
+		MAPPER.updateMainCardText(cardTable2, emptyCard);
 		// then
-		final CardText expected = new CardText();
-		expected.setEffectText("Lore Ipsum");
-		assertThat(emptyCard.getCardText()).isEqualTo(expected);
+		final Card expectedCard = new Card();
+		expectedCard.setEffectText("Lore Ipsum");
+		assertThat(emptyCard).isEqualTo(expectedCard);
 	}
 }
