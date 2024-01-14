@@ -1,6 +1,7 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -150,16 +151,30 @@ class YugipediaCardTextMapper {
 	}
 
 	@AfterMapping
-	protected void updateCardText(
+	protected void updateMainCardText(
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
+		final CardText cardText = Optional
+			.ofNullable(mapToMainCardText(cardTable2))
+			.orElse(new CardText());
 		updateCardTextWithFullLore(
 			card,
 			cardTable2::lore,
-			Card::getCardText,
-			card::setCardText
+			c -> cardText,
+			any -> {} // NO-OP as it is ensured that it is always present
 		);
+		setMainCardText(card, cardText);
+	}
+
+	private void setMainCardText(final Card card, final CardText cardText) {
+		if (cardText != null) {
+			card.setName(cardText.getName());
+			card.setEffectText(cardText.getEffectText());
+			card.setFlavorText(cardText.getFlavorText());
+			card.setMaterials(cardText.getMaterials());
+			card.setPendulumEffect(cardText.getPendulumEffect());
+		}
 	}
 
 	@AfterMapping

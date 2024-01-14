@@ -56,9 +56,13 @@ public abstract class YugipediaCardMapper {
 	 * @return the card
 	 */
 	@Mapping(target = "id", ignore = true) // IDs are not added here
+	@Mapping(target = "name", ignore = true) // CardText properties are added on the CardTextMapper
+	@Mapping(target = "flavorText", ignore = true)
+	@Mapping(target = "effectText", ignore = true)
+	@Mapping(target = "pendulumEffect", ignore = true)
+	@Mapping(target = "materials", ignore = true)
 	@Mapping(target = "identifiers.konamiId", source = "database_id")
 	@Mapping(target = "identifiers.password", source = "password")
-	@Mapping(target = "cardText", source = ".", qualifiedByName = "mainCardText")
 	@Mapping(target = "cardType", source = "card_type")
 	@Mapping(target = "attribute", qualifiedByName = "toLowerCase")
 	@Mapping(target = "property", qualifiedByName = "toLowerCase")
@@ -137,7 +141,7 @@ public abstract class YugipediaCardMapper {
 		final Long yugipediaPageId
 	) {
 		if (card.getName() == null) {
-			card.getCardText().setName(name);
+			card.setName(name);
 		}
 		card.getIdentifiers().setYugipediaPageId(yugipediaPageId);
 	}
