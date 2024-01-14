@@ -38,4 +38,53 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
+                    <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
+                    <targetPackage>io.github.ygojson.model</targetPackage>
+                    <sourceType>yamlschema</sourceType>
+                    <annotationStyle>jackson2</annotationStyle>
+                    <includeAdditionalProperties>false</includeAdditionalProperties>
+                    <!-- TODO: requires something at the jsonschema2pojo level to have he jakarta annotation -->
+                    <includeGeneratedAnnotation>false</includeGeneratedAnnotation>
+                    <useJakartaValidation>true</useJakartaValidation>
+                    <includeJsr303Annotations>true</includeJsr303Annotations>
+                    <includeHashcodeAndEquals>true</includeHashcodeAndEquals>
+                    <includeToString>true</includeToString>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-models</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
