@@ -38,7 +38,6 @@ public class SetSerializationUnitTest {
 		throws JsonProcessingException {
 		// given
 		final Set set = Instancio.of(Set.class).ignore(all(SetInfo.class)).create();
-		set.setSetInfo(Instancio.create(SetInfo.class));
 		// when
 		final String value = JsonUtils.getObjectMapper().writeValueAsString(set);
 		// then
