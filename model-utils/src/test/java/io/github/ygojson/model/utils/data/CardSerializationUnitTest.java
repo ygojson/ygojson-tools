@@ -45,7 +45,6 @@ public class CardSerializationUnitTest {
 			.of(Card.class)
 			.ignore(all(CardText.class))
 			.create();
-		card.setCardText(Instancio.create(CardText.class));
 		// when
 		final String value = JsonUtils.getObjectMapper().writeValueAsString(card);
 		// then
