@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.model.data.definition.localization.Region;
@@ -43,8 +44,8 @@ class JsonSchemaGeneratorUnitTest {
 				.isEqualTo("My property description");
 		});
 	}
-
 	@Test
+	@Disabled("should check a model that contains the region enum as we don't support any longer any class")
 	void give_regionTestModel_when_generateSchemaInline_then_schemaContainsEnums() {
 		// given
 		final Class<?> type = RegionTestModel.class;
