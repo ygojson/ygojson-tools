@@ -62,11 +62,11 @@ public class Card {
 	private List<String> monsterTypes;
 	private String attribute;
 	private Integer atkValue;
-	private boolean atkUndefined;
+	private Boolean atkUndefined;
 
 	private Integer defValue;
 
-	private boolean defUndefined;
+	private Boolean defUndefined;
 
 	private Integer level;
 
@@ -251,7 +251,7 @@ public class Card {
 	)
 	@JsonProperty(value = CardProperties.ATK_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	public boolean isAtkUndefined() {
+	public Boolean isAtkUndefined() {
 		return atkUndefined;
 	}
 
@@ -283,7 +283,7 @@ public class Card {
 	)
 	@JsonProperty(value = CardProperties.DEF_UNDEFINED, defaultValue = "false")
 	@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-	public boolean isDefUndefined() {
+	public Boolean isDefUndefined() {
 		return defUndefined;
 	}
 
@@ -413,7 +413,7 @@ public class Card {
 		this.atkValue = atkValue;
 	}
 
-	public void setAtkUndefined(boolean atkUndefined) {
+	public void setAtkUndefined(Boolean atkUndefined) {
 		this.atkUndefined = atkUndefined;
 	}
 
@@ -421,7 +421,7 @@ public class Card {
 		this.defValue = defValue;
 	}
 
-	public void setDefUndefined(boolean defUndefined) {
+	public void setDefUndefined(Boolean defUndefined) {
 		this.defUndefined = defUndefined;
 	}
 
