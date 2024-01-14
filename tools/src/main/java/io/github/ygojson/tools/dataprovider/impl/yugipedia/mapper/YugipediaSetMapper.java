@@ -16,14 +16,33 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Infobo
 )
 public abstract class YugipediaSetMapper {
 
+	/**
+	 * Maps to the YGOJSON Set model the Yugipedia relevant information.
+	 *
+	 * @param infoboxSet the InfoboxSet model
+	 * @param name name to be used if none is present (the page-title)
+	 *
+	 * @return the set
+	 */
+	public Set mapToSet(final InfoboxSet infoboxSet, final String name) {
+		final Set set = mapToSet(infoboxSet);
+		if (set.getName() == null) {
+			set.setName(name);
+		}
+		return set;
+	}
+
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "name", ignore = true) // SetInfo properties are added on the YugipediaSetInfoMapper
+	@Mapping(target = "nameAlt", ignore = true)
+	@Mapping(target = "setCode", ignore = true)
+	@Mapping(target = "setCodeAlt", ignore = true)
 	@Mapping(target = "type", source = "type", qualifiedByName = "toLowerCase")
 	@Mapping(
 		target = "series",
 		source = "series",
 		qualifiedByName = "toLowerCase"
 	)
-	@Mapping(target = "setInfo", source = ".", qualifiedByName = "mainSetInfo")
 	@Mapping(
 		target = "localizedData.de",
 		source = ".",
