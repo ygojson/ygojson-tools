@@ -10,6 +10,7 @@ import org.mapstruct.ReportingPolicy;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -31,6 +32,8 @@ public abstract class YugipediaPrintMapper {
 	private static final int SET_NAME_FIELD = 1;
 	// 3rd field: rarity list
 	private static final int RARITY_LIST_FIELD = 2;
+
+	private final CardNumberMapper cardNumberMapper = new CardNumberMapper();
 
 	/**
 	 * Maps to the YGOJSON Print model the yugipedia relevant information.
@@ -84,56 +87,51 @@ public abstract class YugipediaPrintMapper {
 				"Expected at least 3 fields per card-set print but found: " + fields
 			);
 		}
-		final String cardNumber = fields.get(CARD_NUMBER_FIELD).toString();
+		final String cardNumberString = fields.get(CARD_NUMBER_FIELD).toString();
 		final String setName = fields.get(SET_NAME_FIELD).toString();
 		final Stream<MarkupString> rarities = fields
 			.get(RARITY_LIST_FIELD)
 			.splitByComma();
 		final Language language = langRegion.getLanguage();
-
-		return rarities
-			.map(rarity ->
-				new PrintInfo(cardNumber, setName, language, rarity.toString())
-			)
-			.map(this::mapPrint);
-	}
-
-	/**
-	 * Container to store the relevant information about the card print from {@link CardTable2}.
-	 *
-	 * @param cardNumber card number printed on the card
-	 * @param setName the name of the set
-	 * @param language the language of the card
-	 * @param rarity the rarity of the card
-	 */
-	protected record PrintInfo(
-		String cardNumber,
-		String setName,
-		Language language,
-		String rarity
-	) {
-		boolean isFirstSeries() {
-			return cardNumber == null || cardNumber.isBlank();
+		// card without known print-number
+		final CardNumber cardNumber;
+		if (cardNumberString == null || cardNumberString.isBlank()) {
+			// in this case, the card-number is just having the code as the setName
+			cardNumber = new CardNumber(null, setName, null, null, null, null);
+		} else {
+			cardNumber =
+				cardNumberMapper.mapPrintCodeToCardNumber(cardNumberString, langRegion);
 		}
+
+		return rarities.map(rarity ->
+			mapToPrint(cardNumber, language, rarity.toString())
+		);
 	}
 
 	@Mapping(target = "id", ignore = true)
 	@Mapping(target = "cardId", ignore = true)
 	@Mapping(target = "setId", ignore = true)
-	@Mapping(target = "setCode", ignore = true)
-	@Mapping(target = "printNumberPrefix", ignore = true)
-	@Mapping(target = "printNumber", ignore = true)
-	@Mapping(target = "printNumberSuffix", ignore = true)
-	@Mapping(target = "regionCode", ignore = true)
+	@Mapping(target = "printCode", source = "cardNumber.stringValue")
+	@Mapping(target = "setCode", source = "cardNumber.setCode")
 	@Mapping(
-		target = "printCode",
-		source = "cardNumber",
-		qualifiedByName = "blankStringToNull"
+		target = "printNumberPrefix",
+		source = "cardNumber.printNumberPrefix"
 	)
+	@Mapping(target = "printNumber", source = "cardNumber.printNumber")
+	@Mapping(
+		target = "printNumberSuffix",
+		source = "cardNumber.printNumberSuffix"
+	)
+	@Mapping(target = "regionCode", source = "cardNumber.regionCode")
+	@Mapping(target = "language", source = "language")
 	@Mapping(
 		target = "rarity",
 		source = "rarity",
 		qualifiedByName = "toLowerCase"
 	)
-	protected abstract Print mapPrint(final PrintInfo info);
+	protected abstract Print mapToPrint(
+		final CardNumber cardNumber,
+		final Language language,
+		final String rarity
+	);
 }
