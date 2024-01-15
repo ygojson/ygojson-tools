@@ -120,6 +120,11 @@ public abstract class YugipediaPrintMapper {
 	@Mapping(target = "id", ignore = true)
 	@Mapping(target = "cardId", ignore = true)
 	@Mapping(target = "setId", ignore = true)
+	@Mapping(target = "setCode", ignore = true)
+	@Mapping(target = "printNumberPrefix", ignore = true)
+	@Mapping(target = "printNumber", ignore = true)
+	@Mapping(target = "printNumberSuffix", ignore = true)
+	@Mapping(target = "regionCode", ignore = true)
 	@Mapping(
 		target = "printCode",
 		source = "cardNumber",
