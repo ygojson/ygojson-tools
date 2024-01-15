@@ -3,6 +3,11 @@
   "cardId" : "a040ed69-8df0-3ab6-ad10-15c416785a25",
   "setId" : "e44cd828-48e0-30eb-b1fe-f77038269f5e",
   "printCode" : "PMPYLWRK",
-  "rarity" : "MEOZGBOQAY",
-  "language" : "ja"
+  "setCode" : "MEOZGBOQAY",
+  "printNumberSuffix" : "UFOJ",
+  "printNumber" : 1059,
+  "printNumberPrefix" : "XGHP",
+  "rarity" : "EQRGFN",
+  "language" : "zh-Hant",
+  "regionCode" : "JA"
 }

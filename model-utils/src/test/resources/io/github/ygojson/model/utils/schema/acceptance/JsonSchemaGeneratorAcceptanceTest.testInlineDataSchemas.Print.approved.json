@@ -18,6 +18,18 @@
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
     },
+    "setCode" : {
+      "type" : "string"
+    },
+    "printNumberSuffix" : {
+      "type" : "string"
+    },
+    "printNumber" : {
+      "type" : "integer"
+    },
+    "printNumberPrefix" : {
+      "type" : "string"
+    },
     "rarity" : {
       "type" : "string",
       "pattern" : "[a-z]+"
@@ -25,6 +37,10 @@
     "language" : {
       "type" : "string",
       "enum" : [ "en", "de", "es", "fr", "it", "ja", "ko", "pt", "zh-Hans", "zh-Hant" ]
+    },
+    "regionCode" : {
+      "type" : "string",
+      "enum" : [ "EN", "E", "A", "F", "FR", "C", "G", "DE", "I", "IT", "P", "PT", "S", "SP", "JP", "JA", "AE", "K", "KR", "TC", "SC", "" ]
     }
   },
   "required" : [ "id", "cardId", "setId" ],
