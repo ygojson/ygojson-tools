@@ -29,11 +29,6 @@
       "type": "string",
       "pattern": "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
     },
-    "firstSeriesSet": {
-      "title": "Name of the Series 1 set associated to this Print",
-      "description": "Note that this is only present on Prints belonging to Series 1 sets, as printCode is not present on that case",
-      "type": "string"
-    },
     "rarity": {
       "title": "Rarity of the Print (lower-case)",
       "type": "string",
