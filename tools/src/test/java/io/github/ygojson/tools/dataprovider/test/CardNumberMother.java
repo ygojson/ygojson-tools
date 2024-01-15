@@ -12,6 +12,22 @@ public class CardNumberMother {
 		// cannot be instantiated - mother class
 	}
 
+	public static CardNumber ofUnknownSetCode(
+		final String stringValue,
+		final Region region,
+		final Integer printNumber
+	) {
+		return new CardNumber(stringValue, null, region, null, printNumber, null);
+	}
+
+	public static CardNumber ofUnknownPrintNumber(
+		final String stringValue,
+		final Region region,
+		final String setCode
+	) {
+		return new CardNumber(stringValue, setCode, region, null, null, null);
+	}
+
 	public static CardNumber ofPrefix(
 		final String stringValue,
 		final String setCode,
