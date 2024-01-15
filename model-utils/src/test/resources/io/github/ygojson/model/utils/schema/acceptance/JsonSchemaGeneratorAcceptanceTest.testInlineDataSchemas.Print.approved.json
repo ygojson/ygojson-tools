@@ -18,9 +18,6 @@
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
     },
-    "firstSeriesSet" : {
-      "type" : "string"
-    },
     "rarity" : {
       "type" : "string",
       "pattern" : "[a-z]+"
