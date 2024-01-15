@@ -263,7 +263,7 @@
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
-  "firstSeriesSet" : "Oversized Gift for 7000 People",
+  "setCode" : "Oversized Gift for 7000 People",
   "rarity" : "ultra rare",
   "language" : "en"
 }, {
@@ -999,11 +999,11 @@
   "rarity" : "quarter century secret rare",
   "language" : "it"
 }, {
-  "firstSeriesSet" : "Vol.1",
+  "setCode" : "Vol.1",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "EX Starter Box",
+  "setCode" : "EX Starter Box",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
@@ -1115,7 +1115,7 @@
   "rarity" : "millennium rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "20th Anniversary Duelist Box",
+  "setCode" : "20th Anniversary Duelist Box",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
@@ -1183,7 +1183,7 @@
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "\"Dark Magician\" Special Card",
+  "setCode" : "\"Dark Magician\" Special Card",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
@@ -1463,7 +1463,7 @@
   "rarity" : "prismatic secret rare",
   "language" : "zh-Hans"
 }, {
-  "firstSeriesSet" : "\"Dark Magician\" Giveaway for 1000 People!",
+  "setCode" : "\"Dark Magician\" Giveaway for 1000 People!",
   "rarity" : "ultra rare",
   "language" : "zh-Hant"
 } ]

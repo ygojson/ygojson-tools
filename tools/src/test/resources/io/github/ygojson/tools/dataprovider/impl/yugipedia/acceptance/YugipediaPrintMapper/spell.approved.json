@@ -687,11 +687,11 @@
   "rarity" : "common",
   "language" : "it"
 }, {
-  "firstSeriesSet" : "Vol.1",
+  "setCode" : "Vol.1",
   "rarity" : "super rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "EX Starter Box",
+  "setCode" : "EX Starter Box",
   "rarity" : "common",
   "language" : "ja"
 }, {
