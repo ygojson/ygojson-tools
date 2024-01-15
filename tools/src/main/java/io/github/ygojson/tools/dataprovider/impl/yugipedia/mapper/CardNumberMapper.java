@@ -3,7 +3,7 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.mapstruct.Mapper;
+import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.definition.localization.Region;
@@ -11,7 +11,7 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 
 @Mapper
-public class CardNumberMapper {
+public abstract class CardNumberMapper {
 
 	/**
 	 * Pattern to split the set-code from the rest of the print-number/set-suffix.
@@ -22,7 +22,7 @@ public class CardNumberMapper {
 	 * Pattern to divide the print-code to prefix, number and suffix.
 	 */
 	private static final Pattern PRINT_CODE_PATTERN = Pattern.compile(
-		"(\\D*)(\\d+)(\\D*)"
+		"(\\D*)(\\d*)(\\D*)"
 	);
 
 	/**
@@ -42,6 +42,63 @@ public class CardNumberMapper {
 		GeneralMapper.class
 	);
 
+	@Named("unknownToNull")
+	protected String mapUnknownToNull(final String value) {
+		final String mappedValue = generalMapper.mapBlankStringToNull(value);
+		if (mappedValue != null && mappedValue.contains("?")) {
+			return null;
+		}
+		return mappedValue;
+	}
+
+	@Mapping(
+		target = "stringValue",
+		source = "stringValue",
+		qualifiedByName = "unknownToNull"
+	)
+	@Mapping(
+		target = "setCode",
+		source = "setCode",
+		qualifiedByName = "unknownToNull"
+	)
+	@Mapping(
+		target = "printNumberPrefix",
+		source = "printNumberPrefix",
+		qualifiedByName = "unknownToNull"
+	)
+	@Mapping(
+		target = "printNumberSuffix",
+		source = "printNumberSuffix",
+		qualifiedByName = "unknownToNull"
+	)
+	protected abstract CardNumber copyWithoutUnknowns(
+		final CardNumber cardNumber
+	);
+
+	@Mapping(target = "printNumber", ignore = true)
+	protected abstract CardNumber mapWithUnknownPrintNumber(
+		final CardNumber cardNumber
+	);
+
+	@AfterMapping
+	protected CardNumber updateCardNumber(
+		final CardNumber originalCardNumber,
+		@MappingTarget final CardNumber updatedCardNumber
+	) {
+		if (originalCardNumber.equals(updatedCardNumber)) {
+			return originalCardNumber;
+		}
+		// this indicates an unknown print/set
+		if (updatedCardNumber.stringValue() == null) {
+			// TODO: mark somehow the CardNumber
+			final Integer printNumber = updatedCardNumber.printNumber();
+			if (printNumber != null && printNumber == 0) {
+				return mapWithUnknownPrintNumber(updatedCardNumber);
+			}
+		}
+		return updatedCardNumber;
+	}
+
 	/**
 	 * Maps the set-prefix to a CardNumber.
 	 *
@@ -54,10 +111,18 @@ public class CardNumberMapper {
 		final String setPrefix,
 		final YugipediaLanguageRegion region
 	) {
-		if (setPrefix == null || setPrefix.isBlank()) {
+		final CardNumber cardNumber = mapInternalToCardNumber(setPrefix, region);
+		return copyWithoutUnknowns(cardNumber);
+	}
+
+	private CardNumber mapInternalToCardNumber(
+		final String value,
+		final YugipediaLanguageRegion region
+	) {
+		if (value == null || value.isBlank()) {
 			return CardNumber.NONE;
 		}
-		final String[] setCodeSplit = SET_CODE_SPLIT_PATTERN.split(setPrefix, 2);
+		final String[] setCodeSplit = SET_CODE_SPLIT_PATTERN.split(value, 2);
 		final String setCode = generalMapper.mapBlankStringToNull(setCodeSplit[0]);
 		Region regionCode = Region.NONE;
 		String printNumberPrefix = null;
@@ -71,7 +136,7 @@ public class CardNumberMapper {
 		}
 		printNumberPrefix = generalMapper.mapBlankStringToNull(printNumberPrefix);
 		return new CardNumber(
-			setPrefix,
+			value,
 			setCode,
 			regionCode,
 			printNumberPrefix,
@@ -93,7 +158,7 @@ public class CardNumberMapper {
 		final YugipediaLanguageRegion region
 	) {
 		// map first as a set-prefix to re-use the functionality
-		final CardNumber initialMapping = mapSetPrefixToCardNumber(
+		final CardNumber initialMapping = mapInternalToCardNumber(
 			cardNumber,
 			region
 		);
@@ -115,7 +180,7 @@ public class CardNumberMapper {
 			number = printNumber;
 			suffix = null;
 		}
-		return new CardNumber(
+		final CardNumber mapped = new CardNumber(
 			initialMapping.stringValue(),
 			initialMapping.setCode(),
 			initialMapping.regionCode(),
@@ -123,6 +188,7 @@ public class CardNumberMapper {
 			generalMapper.mapToNullableInteger(number),
 			generalMapper.mapBlankStringToNull(suffix)
 		);
+		return copyWithoutUnknowns(mapped);
 	}
 
 	private static Region toRegionCode(
