@@ -40,6 +40,22 @@ public abstract class GeneralMapper {
 	}
 
 	/**
+	 * Maps a string to an integer or to a {@code null}.
+	 *
+	 * @param value the value to map
+	 *
+	 * @return {@code null} if the value is {@code null} or blank;
+	 * 			{@link Integer#valueOf(String)} otherwise.
+	 */
+	@Named("nullableInteger")
+	protected Integer mapToNullableInteger(final String value) {
+		if (value == null || value.isBlank()) {
+			return null;
+		}
+		return Integer.valueOf(value);
+	}
+
+	/**
 	 * Maps a blank string to {@code null}.
 	 *
 	 * @param value the input string
