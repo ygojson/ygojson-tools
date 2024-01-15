@@ -13,19 +13,17 @@ public class CardNumberMother {
 	}
 
 	public static CardNumber ofUnknownSetCode(
-		final String stringValue,
 		final Region region,
 		final Integer printNumber
 	) {
-		return new CardNumber(stringValue, null, region, null, printNumber, null);
+		return new CardNumber(null, null, region, null, printNumber, null);
 	}
 
 	public static CardNumber ofUnknownPrintNumber(
-		final String stringValue,
 		final Region region,
 		final String setCode
 	) {
-		return new CardNumber(stringValue, setCode, region, null, null, null);
+		return new CardNumber(null, setCode, region, null, null, null);
 	}
 
 	public static CardNumber ofPrefix(

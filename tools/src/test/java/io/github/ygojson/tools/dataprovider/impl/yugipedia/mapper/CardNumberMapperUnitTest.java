@@ -72,17 +72,17 @@ class CardNumberMapperUnitTest {
 	private static Stream<Arguments> unknownPrintCodes() {
 		return Stream.of(
 			Arguments.of(
-				CardNumberMother.ofUnknownPrintNumber("???-EN???", Region.EN, null),
+				CardNumberMother.ofUnknownPrintNumber(Region.EN, null),
 				"???-EN???",
 				YugipediaLanguageRegion.EN
 			),
 			Arguments.of(
-				CardNumberMother.ofUnknownSetCode("????-JP001", Region.JP, 1),
+				CardNumberMother.ofUnknownSetCode(Region.JP, 1),
 				"????-JP001",
 				YugipediaLanguageRegion.JP
 			),
 			Arguments.of(
-				CardNumberMother.ofUnknownPrintNumber("STP7-EN0??", Region.EN, "STP7"),
+				CardNumberMother.ofUnknownPrintNumber(Region.EN, "STP7"),
 				"STP7-EN0??",
 				YugipediaLanguageRegion.EN
 			)
@@ -91,17 +91,19 @@ class CardNumberMapperUnitTest {
 
 	@ParameterizedTest
 	@MethodSource("unknownPrintCodes")
-	void given_unknownPrintCode_when_mapPrintCodeToCardNumber_then_cardNumberNone() {
-		// given
-		final String printCode = "????-EN???"; // format of unknown printCode in Yugipedia
+	void given_unknownPrintCode_when_mapPrintCodeToCardNumber_then_cardNumberNone(
+		final CardNumber expected,
+		final String printCode,
+		final YugipediaLanguageRegion languageRegion
+	) {
+		// given - params
 		// when
 		final CardNumber actual = MAPPER.mapPrintCodeToCardNumber(
 			printCode,
-			YugipediaLanguageRegion.EN
+			languageRegion
 		);
 		// then
-		assertThat(actual)
-			.isEqualTo(new CardNumber(printCode, null, null, null, null, null));
+		assertThat(actual).isEqualTo(expected);
 	}
 
 	static Stream<Arguments> printCodes() {
