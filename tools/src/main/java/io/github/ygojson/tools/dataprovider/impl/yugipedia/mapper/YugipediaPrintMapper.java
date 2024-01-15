@@ -10,6 +10,7 @@ import org.mapstruct.ReportingPolicy;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
@@ -45,44 +46,32 @@ public abstract class YugipediaPrintMapper {
 			return null;
 		}
 		return Stream
-			.of(
-				cardTable2SetsToPrints(cardTable2.en_sets(), Language.EN),
-				cardTable2SetsToPrints(cardTable2.na_sets(), Language.EN),
-				cardTable2SetsToPrints(cardTable2.eu_sets(), Language.EN),
-				cardTable2SetsToPrints(cardTable2.au_sets(), Language.EN),
-				cardTable2SetsToPrints(cardTable2.ae_sets(), Language.EN),
-				cardTable2SetsToPrints(cardTable2.de_sets(), Language.DE),
-				cardTable2SetsToPrints(cardTable2.sp_sets(), Language.ES),
-				cardTable2SetsToPrints(cardTable2.fr_sets(), Language.FR),
-				cardTable2SetsToPrints(cardTable2.fc_sets(), Language.FR),
-				cardTable2SetsToPrints(cardTable2.it_sets(), Language.IT),
-				cardTable2SetsToPrints(cardTable2.ja_sets(), Language.JA),
-				cardTable2SetsToPrints(cardTable2.jp_sets(), Language.JA),
-				cardTable2SetsToPrints(cardTable2.kr_sets(), Language.KO),
-				cardTable2SetsToPrints(cardTable2.pt_sets(), Language.PT),
-				cardTable2SetsToPrints(cardTable2.sc_sets(), Language.ZH_HANS),
-				cardTable2SetsToPrints(cardTable2.tc_sets(), Language.ZH_HANT)
+			.of(YugipediaLanguageRegion.values())
+			.flatMap(langRegion ->
+				cardTable2SetsToPrints(
+					langRegion.getCardTable2Prints(cardTable2),
+					langRegion
+				)
 			)
-			.flatMap(i -> i)
 			.toList();
 	}
 
 	private Stream<Print> cardTable2SetsToPrints(
 		final List<MarkupString> markupString,
-		final Language language
+		final YugipediaLanguageRegion langRegion
 	) {
 		if (markupString == null) {
 			return Stream.empty();
 		}
 		return markupString
 			.stream()
-			.flatMap(line -> singleLineToRarityPrints(line, language))
+			.flatMap(line -> singleLineToRarityPrints(line, langRegion))
 			.filter(Objects::nonNull);
 	}
 
 	private Stream<Print> singleLineToRarityPrints(
 		final MarkupString cardTable2PrintLine,
-		final Language language
+		final YugipediaLanguageRegion langRegion
 	) {
 		if (cardTable2PrintLine == null) {
 			return null;
@@ -100,6 +89,7 @@ public abstract class YugipediaPrintMapper {
 		final Stream<MarkupString> rarities = fields
 			.get(RARITY_LIST_FIELD)
 			.splitByComma();
+		final Language language = langRegion.getLanguage();
 
 		return rarities
 			.map(rarity ->
