@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import retrofit2.Response;
 
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
@@ -44,7 +45,7 @@ class YugipediaApiIT {
 			softly.assertThat(cards.body()).isNotNull();
 			softly.assertThat(cards.body().getContinue())
 				.isNotNull()
-				.extracting(c -> c.gcmcontinue())
+				.extracting(Continue::gcmcontinue)
 				.isNotNull();
 		});
 	}

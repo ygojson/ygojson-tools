@@ -1,6 +1,6 @@
 /**
- * Contains the Data Models.
- * </br>
+ * Contains the generated Data Models.
+ * <br>
  * Data Models are those that exists independently
  * and only related between them by IDs.
  */
