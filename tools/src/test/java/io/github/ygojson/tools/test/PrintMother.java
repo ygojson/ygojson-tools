@@ -16,7 +16,7 @@ public class PrintMother {
 	/**
 	 * Creates a {@link Print}.
 	 */
-	private static Print of(
+	public static Print of(
 		final String cardNumber,
 		final String setCode,
 		final Integer printNumber,
@@ -37,7 +37,7 @@ public class PrintMother {
 	/**
 	 * Creates a first-series {@link Print}.
 	 */
-	private static Print firstSeriesOf(
+	public static Print firstSeriesOf(
 		final String setName,
 		final String rarity,
 		final Language language
@@ -52,7 +52,7 @@ public class PrintMother {
 	/**
 	 * Creates a special {@link Print}.
 	 */
-	private static Print ofSpecialPrint(
+	public static Print specialOf(
 		final String cardNumber,
 		final String setCode,
 		final String printPrefix,
@@ -76,7 +76,7 @@ public class PrintMother {
 	/**
 	 * Creates a K-series {@link Print}.
 	 */
-	private static Print kSeriesOf(
+	public static Print kSeriesOf(
 		final String cardNumber,
 		final String setCode,
 		final Integer printNumber,
