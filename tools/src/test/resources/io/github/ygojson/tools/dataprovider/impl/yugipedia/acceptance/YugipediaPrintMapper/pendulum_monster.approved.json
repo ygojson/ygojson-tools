@@ -1,33 +1,57 @@
 [ {
   "printCode" : "SR08-EN001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "SR08-DE001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "SR08-SP001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "SR08-FR001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "SR08-IT001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "SR08-JP001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "SR08-KR001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "SR08-PT001",
+  "setCode" : "SR08",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 } ]
