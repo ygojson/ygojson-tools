@@ -29,9 +29,23 @@
       "type": "string",
       "pattern": "[a-zA-Z0-9]+-[a-zA-Z0-9]+"
     },
-    "firstSeriesSet": {
-      "title": "Name of the Series 1 set associated to this Print",
-      "description": "Note that this is only present on Prints belonging to Series 1 sets, as printCode is not present on that case",
+    "setCode": {
+      "title": "Code, abbreviation or name of the Set this print belongs to",
+      "description": "Set code or abbreviation of the set\nNote that for cards without printCode, this is the name of the set (i.e., for Series 1)",
+      "type": "string"
+    },
+    "printNumberSuffix": {
+      "title": "Suffix for the printNumber",
+      "description": "For some sets, the printNumber might have a suffix (i.e., K-Series)",
+      "type": "string"
+    },
+    "printNumber": {
+      "title": "Print number, usually the order on the set",
+      "type": "integer"
+    },
+    "printNumberPrefix": {
+      "title": "Prefix for the printNumber",
+      "description": "Some sets include a prefix on the printNumber to indicate a sub-set.\nAlso, special editions and/or promotional cards have a prefix to indicate that they are not from the original set",
       "type": "string"
     },
     "rarity": {
@@ -40,7 +54,12 @@
       "pattern": "[a-z]+"
     },
     "language": {
+      "title": "Language of the print",
       "$ref": "language.schema.json"
+    },
+    "regionCode": {
+      "title": "Region code of the print",
+      "$ref": "region.schema.json"
     }
   },
   "required": [
