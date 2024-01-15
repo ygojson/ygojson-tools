@@ -46,7 +46,7 @@ class YugipediaPrintMapperUnitTest {
 			),
 			// single letter (for some localization)
 			Arguments.of(
-				 PrintMother.of(
+				PrintMother.of(
 					"BIP-S001",
 					"BIP",
 					1,
