@@ -26,8 +26,11 @@ public class PrintMother {
 	) {
 		final Print print = new Print();
 		print.setPrintCode(cardNumber);
+		print.setSetCode(setCode);
+		print.setPrintNumber(printNumber);
 		print.setRarity(rarity);
 		print.setLanguage(language);
+		print.setRegionCode(region);
 		return print;
 	}
 
@@ -66,6 +69,7 @@ public class PrintMother {
 			language,
 			region
 		);
+		print.setPrintNumberPrefix(printPrefix);
 		return print;
 	}
 
@@ -88,6 +92,7 @@ public class PrintMother {
 			language,
 			region
 		);
+		print.setPrintNumberSuffix("K");
 		return print;
 	}
 }

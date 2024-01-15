@@ -1,333 +1,594 @@
 [ {
   "printCode" : "POTD-EN034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "POTD-EN034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "DP04-EN013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "GLD1-EN029",
+  "setCode" : "GLD1",
+  "printNumber" : 29,
   "rarity" : "gold rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "LCGX-EN183",
+  "setCode" : "LCGX",
+  "printNumber" : 183,
   "rarity" : "secret rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "RYMP-EN061",
+  "setCode" : "RYMP",
+  "printNumber" : 61,
   "rarity" : "rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "SP14-EN043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "SP14-EN043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "PGLD-EN056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "LEDD-ENB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "SDCS-EN042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "SGX1-ENG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "DT07-EN032",
+  "setCode" : "DT07",
+  "printNumber" : 32,
   "rarity" : "duel terminal rare parallel rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "POTD-DE034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "POTD-DE034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "DP04-DE013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "GLD1-DE029",
+  "setCode" : "GLD1",
+  "printNumber" : 29,
   "rarity" : "gold rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "LCGX-DE183",
+  "setCode" : "LCGX",
+  "printNumber" : 183,
   "rarity" : "secret rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "RYMP-DE061",
+  "setCode" : "RYMP",
+  "printNumber" : 61,
   "rarity" : "rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "SP14-DE043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "SP14-DE043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "PGLD-DE056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "LEDD-DEB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "SDCS-DE042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "SGX1-DEG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "POTD-SP034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "POTD-SP034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "DP04-SP013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "GLD1-SP029",
+  "setCode" : "GLD1",
+  "printNumber" : 29,
   "rarity" : "gold rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "RYMP-SP061",
+  "setCode" : "RYMP",
+  "printNumber" : 61,
   "rarity" : "rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "SP14-SP043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "SP14-SP043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "PGLD-SP056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "LEDD-SPB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "SDCS-SP042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "SGX1-SPG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "POTD-FR034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "POTD-FR034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "DP04-FR013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "GLD1-FR029",
+  "setCode" : "GLD1",
+  "printNumber" : 29,
   "rarity" : "gold rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "RYMP-FR061",
+  "setCode" : "RYMP",
+  "printNumber" : 61,
   "rarity" : "rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "SP14-FR043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "SP14-FR043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "PGLD-FR056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "LEDD-FRB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "SDCS-FR042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "SGX1-FRG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "POTD-IT034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "POTD-IT034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "DP04-IT013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "GLD1-IT029",
+  "setCode" : "GLD1",
+  "printNumber" : 29,
   "rarity" : "gold rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "LCGX-IT183",
+  "setCode" : "LCGX",
+  "printNumber" : 183,
   "rarity" : "secret rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "RYMP-IT061",
+  "setCode" : "RYMP",
+  "printNumber" : 61,
   "rarity" : "rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "SP14-IT043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "SP14-IT043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "PGLD-IT056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "LEDD-ITB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "SDCS-IT042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "SGX1-ITG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "POTD-JP034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "POTD-JP034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "DP04-JP013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "DT13-JP032",
+  "setCode" : "DT13",
+  "printNumber" : 32,
   "rarity" : "duel terminal rare parallel rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "DE01-JP026",
+  "setCode" : "DE01",
+  "printNumber" : 26,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "SD41-JP042",
+  "setCode" : "SD41",
+  "printNumber" : 42,
   "rarity" : "normal parallel rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "HC01-JP017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "normal parallel rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "HC01-JP017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "HC01-JP017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "ultimate rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "????-JP001",
+  "setCode" : "????",
+  "printNumber" : 1,
   "rarity" : "quarter century secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "POTD-KR034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "POTD-KR034",
+  "setCode" : "POTD",
+  "printNumber" : 34,
   "rarity" : "ultimate rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "DP04-KR013",
+  "setCode" : "DP04",
+  "printNumber" : 13,
   "rarity" : "rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "PC01-KR027",
+  "setCode" : "PC01",
+  "printNumber" : 27,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "SD41-KR042",
+  "setCode" : "SD41",
+  "printNumber" : 42,
   "rarity" : "normal parallel rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "HC01-KR017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "normal parallel rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "HC01-KR017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "secret rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "HC01-KR017",
+  "setCode" : "HC01",
+  "printNumber" : 17,
   "rarity" : "ultimate rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "SP14-PT043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "common",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "SP14-PT043",
+  "setCode" : "SP14",
+  "printNumber" : 43,
   "rarity" : "starfoil rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "PGLD-PT056",
+  "setCode" : "PGLD",
+  "printNumber" : 56,
   "rarity" : "gold rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "LEDD-PTB27",
+  "setCode" : "LEDD",
+  "printNumber" : 27,
+  "printNumberPrefix" : "B",
   "rarity" : "common",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "SDCS-PT042",
+  "setCode" : "SDCS",
+  "printNumber" : 42,
   "rarity" : "common",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "SGX1-PTG22",
+  "setCode" : "SGX1",
+  "printNumber" : 22,
+  "printNumberPrefix" : "G",
   "rarity" : "common",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 } ]
