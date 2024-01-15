@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "versioninfo.schema",
+  "title": "Version Information Data Model",
+  "description": "Model representing the version information of the YGOJSON data\n",
+  "javaType": "io.github.ygojson.model.data.VersionInfo",
+  "type": "object",
+  "properties": {
+    "version": {
+      "title": "Semantic Version of the YGOJSON data and files",
+      "description": "Semantic Version representing:\n<ul>\n  <li>Major: breaking changes in Data Model(s)</li>\n  <li>Minor: non-breaking changes in Data Model(s)</li>\n  <li>Patch: non-breaking data updates</li>\n</ul>\n",
+      "type": "string",
+      "pattern": "[0-9]\\.[0-9]\\.[0-9]"
+    },
+    "date": {
+      "title": "Date and time of the YGOJSON data build (ISO-8601 UTC)",
+      "type": "string",
+      "format": "date-time",
+      "existingJavaType": "java.time.ZonedDateTime"
+    }
+  },
+  "required": [
+    "version",
+    "date"
+  ]
+}

@@ -47,7 +47,7 @@
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
                     <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
                     <targetPackage>io.github.ygojson.model</targetPackage>
-                    <sourceType>yamlschema</sourceType>
+                    <sourceType>jsonschema</sourceType>
                     <annotationStyle>jackson2</annotationStyle>
                     <includeAdditionalProperties>false</includeAdditionalProperties>
                     <!-- TODO: requires something at the jsonschema2pojo level to have he jakarta annotation -->
