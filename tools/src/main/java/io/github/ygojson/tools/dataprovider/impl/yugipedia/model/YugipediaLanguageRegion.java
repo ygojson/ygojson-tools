@@ -34,7 +34,13 @@ public enum YugipediaLanguageRegion {
 		Region.EN,
 		Region.E
 	),
-	AU(CardTable2::au_sets, any -> List.of(), Language.EN, Region.EN, Region.A), // AU does not have sets
+	AU(
+		CardTable2::au_sets,
+		any -> List.of(), // AU does not have sets
+		Language.EN,
+		Region.EN,
+		Region.A
+	),
 	AE(
 		CardTable2::ae_sets,
 		prefixGetter(InfoboxSet::ae_prefix),
@@ -115,26 +121,6 @@ public enum YugipediaLanguageRegion {
 		Region.TC
 	);
 
-	private static Function<InfoboxSet, List<String>> prefixGetter(
-		final Function<InfoboxSet, String> prefixGetter
-	) {
-		return infoboxSet -> {
-			final String prefix = prefixGetter.apply(infoboxSet);
-			return prefix == null ? List.of() : List.of(prefix);
-		};
-	}
-
-	private static Function<InfoboxSet, List<String>> prefixesGetters(
-		final Function<InfoboxSet, String>... prefixGetters
-	) {
-		return infoboxSet ->
-			Stream
-				.of(prefixGetters)
-				.map(getter -> getter.apply(infoboxSet))
-				.filter(Objects::nonNull)
-				.toList();
-	}
-
 	private final Function<CardTable2, List<MarkupString>> printsGetter;
 	private final Function<InfoboxSet, List<String>> setPrefixesGetters;
 	private final Language language;
@@ -166,5 +152,25 @@ public enum YugipediaLanguageRegion {
 
 	public Region[] getAcceptedRegions() {
 		return acceptedRegions;
+	}
+
+	private static Function<InfoboxSet, List<String>> prefixGetter(
+		final Function<InfoboxSet, String> prefixGetter
+	) {
+		return infoboxSet -> {
+			final String prefix = prefixGetter.apply(infoboxSet);
+			return prefix == null ? List.of() : List.of(prefix);
+		};
+	}
+
+	private static Function<InfoboxSet, List<String>> prefixesGetters(
+		final Function<InfoboxSet, String>... prefixGetters
+	) {
+		return infoboxSet ->
+			Stream
+				.of(prefixGetters)
+				.map(getter -> getter.apply(infoboxSet))
+				.filter(Objects::nonNull)
+				.toList();
 	}
 }
