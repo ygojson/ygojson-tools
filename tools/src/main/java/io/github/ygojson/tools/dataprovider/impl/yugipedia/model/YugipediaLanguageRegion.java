@@ -36,7 +36,7 @@ public enum YugipediaLanguageRegion {
 	),
 	AU(
 		CardTable2::au_sets,
-		any -> List.of(), // AU does not have sets
+		any -> null, // AU does not have sets
 		Language.EN,
 		Region.EN,
 		Region.A
@@ -159,18 +159,20 @@ public enum YugipediaLanguageRegion {
 	) {
 		return infoboxSet -> {
 			final String prefix = prefixGetter.apply(infoboxSet);
-			return prefix == null ? List.of() : List.of(prefix);
+			return prefix == null ? null : List.of(prefix);
 		};
 	}
 
 	private static Function<InfoboxSet, List<String>> prefixesGetters(
 		final Function<InfoboxSet, String>... prefixGetters
 	) {
-		return infoboxSet ->
-			Stream
+		return infoboxSet -> {
+			final List<String> prefixes = Stream
 				.of(prefixGetters)
 				.map(getter -> getter.apply(infoboxSet))
 				.filter(Objects::nonNull)
 				.toList();
+			return prefixes.isEmpty() ? null : prefixes;
+		};
 	}
 }
