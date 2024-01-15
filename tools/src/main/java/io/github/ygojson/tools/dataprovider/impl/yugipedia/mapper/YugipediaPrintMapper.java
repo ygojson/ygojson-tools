@@ -126,11 +126,6 @@ public abstract class YugipediaPrintMapper {
 		qualifiedByName = "blankStringToNull"
 	)
 	@Mapping(
-		target = "firstSeriesSet",
-		source = "setName",
-		conditionExpression = "java(info.isFirstSeries())"
-	)
-	@Mapping(
 		target = "rarity",
 		source = "rarity",
 		qualifiedByName = "toLowerCase"

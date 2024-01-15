@@ -30,7 +30,6 @@ class YugipediaPrintMapperUnitTest {
 		final Language language
 	) {
 		final Print print = new Print();
-		print.setFirstSeriesSet(setName);
 		print.setRarity(rarity);
 		print.setLanguage(language);
 		return print;
