@@ -125,8 +125,12 @@ public abstract class YugipediaPrintMapper {
 		source = "cardNumber",
 		qualifiedByName = "blankStringToNull"
 	)
+	@Mapping(target = "printNumberSuffix", ignore = true)
+	@Mapping(target = "printNumber", ignore = true)
+	@Mapping(target = "printNumberPrefix", ignore = true)
+	@Mapping(target = "regionCode", ignore = true)
 	@Mapping(
-		target = "firstSeriesSet",
+		target = "setCode",
 		source = "setName",
 		conditionExpression = "java(info.isFirstSeries())"
 	)
