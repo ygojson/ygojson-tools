@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
+import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
@@ -33,7 +34,9 @@ public abstract class YugipediaPrintMapper {
 	// 3rd field: rarity list
 	private static final int RARITY_LIST_FIELD = 2;
 
-	private final CardNumberMapper cardNumberMapper = new CardNumberMapper();
+	private final CardNumberMapper cardNumberMapper = Mappers.getMapper(
+		CardNumberMapper.class
+	);
 
 	/**
 	 * Maps to the YGOJSON Print model the yugipedia relevant information.
