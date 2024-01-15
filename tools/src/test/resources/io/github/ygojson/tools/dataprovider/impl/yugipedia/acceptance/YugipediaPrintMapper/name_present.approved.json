@@ -1,96 +1,162 @@
 [ {
   "printCode" : "DB1-EN162",
+  "setCode" : "DB1",
+  "printNumber" : 162,
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MRD-EN035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MRD-EN035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MRD-035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
   "language" : "en"
 }, {
   "printCode" : "MRD-E035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "E"
 }, {
   "printCode" : "MRD-035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
   "language" : "en"
 }, {
   "printCode" : "MRD-G035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "G"
 }, {
   "printCode" : "DB1-DE162",
+  "setCode" : "DB1",
+  "printNumber" : 162,
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "MRD-DE035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "PMT-S035",
+  "setCode" : "PMT",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "S"
 }, {
   "printCode" : "DB1-SP162",
+  "setCode" : "DB1",
+  "printNumber" : 162,
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "MRD-SP035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "MRD-F035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "F"
 }, {
   "printCode" : "MRD-FR035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "PMT-I035",
+  "setCode" : "PMT",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "I"
 }, {
   "printCode" : "MRD-IT035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
+  "setCode" : "Vol.5",
   "rarity" : "common",
   "language" : "ja"
 }, {
   "printCode" : "RB-35",
+  "setCode" : "RB",
+  "printNumber" : 35,
   "rarity" : "common",
   "language" : "ja"
 }, {
   "printCode" : "DL2-122",
+  "setCode" : "DL2",
+  "printNumber" : 122,
   "rarity" : "common",
   "language" : "ja"
 }, {
   "printCode" : "BE1-JP162",
+  "setCode" : "BE1",
+  "printNumber" : 162,
   "rarity" : "common",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "MRD-K035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "K"
 }, {
   "printCode" : "BP1-KR162",
+  "setCode" : "BP1",
+  "printNumber" : 162,
   "rarity" : "common",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "PMT-P035",
+  "setCode" : "PMT",
+  "printNumber" : 35,
   "rarity" : "short print",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "P"
 }, {
   "printCode" : "MRD-PT035",
+  "setCode" : "MRD",
+  "printNumber" : 35,
   "rarity" : "common",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 } ]

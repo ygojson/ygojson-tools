@@ -1,97 +1,169 @@
 [ {
   "printCode" : "RATE-EN053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MP17-EN208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MAGO-EN036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "RATE-DE053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "MP17-DE208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "MAGO-DE036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "RATE-SP053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "MP17-SP208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "MAGO-SP036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "RATE-FR053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "MP17-FR208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "MAGO-FR036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "RATE-IT053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "MP17-IT208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "MAGO-IT036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "RATE-JP053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "RATE-JP053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "RATE-JP053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "ultimate rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "RATE-KR053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "RATE-KR053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "RATE-KR053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "ultimate rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "RATE-PT053",
+  "setCode" : "RATE",
+  "printNumber" : 53,
   "rarity" : "secret rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "MP17-PT208",
+  "setCode" : "MP17",
+  "printNumber" : 208,
   "rarity" : "secret rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "MAGO-PT036",
+  "setCode" : "MAGO",
+  "printNumber" : 36,
   "rarity" : "premium gold rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 } ]

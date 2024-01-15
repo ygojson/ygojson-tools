@@ -1,133 +1,232 @@
 [ {
   "printCode" : "BODE-EN039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "POTE-EN100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "MP22-EN209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "en"
+  "language" : "en",
+  "regionCode" : "EN"
 }, {
   "printCode" : "BODE-DE039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "POTE-DE100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "MP22-DE209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "de"
+  "language" : "de",
+  "regionCode" : "DE"
 }, {
   "printCode" : "BODE-SP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "POTE-SP100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "MP22-SP209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "es"
+  "language" : "es",
+  "regionCode" : "SP"
 }, {
   "printCode" : "BODE-FR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "POTE-FR100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "MP22-FR209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "fr"
+  "language" : "fr",
+  "regionCode" : "FR"
 }, {
   "printCode" : "BODE-IT039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "POTE-IT100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "MP22-IT209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "it"
+  "language" : "it",
+  "regionCode" : "IT"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultimate rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "prismatic secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultra rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-JP039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "prismatic secret rare",
-  "language" : "ja"
+  "language" : "ja",
+  "regionCode" : "JP"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultimate rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "prismatic secret rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "ultra rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-KR039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "prismatic secret rare",
-  "language" : "ko"
+  "language" : "ko",
+  "regionCode" : "KR"
 }, {
   "printCode" : "BODE-PT039",
+  "setCode" : "BODE",
+  "printNumber" : 39,
   "rarity" : "secret rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "POTE-PT100",
+  "setCode" : "POTE",
+  "printNumber" : 100,
   "rarity" : "starlight rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "MP22-PT209",
+  "setCode" : "MP22",
+  "printNumber" : 209,
   "rarity" : "prismatic secret rare",
-  "language" : "pt"
+  "language" : "pt",
+  "regionCode" : "PT"
 }, {
   "printCode" : "MGP6-SC133",
+  "setCode" : "MGP6",
+  "printNumber" : 133,
   "rarity" : "ultra rare",
-  "language" : "zh-Hans"
+  "language" : "zh-Hans",
+  "regionCode" : "SC"
 }, {
   "printCode" : "MGP6-SC133",
+  "setCode" : "MGP6",
+  "printNumber" : 133,
   "rarity" : "secret rare",
-  "language" : "zh-Hans"
+  "language" : "zh-Hans",
+  "regionCode" : "SC"
 }, {
   "printCode" : "MGP6-SC133",
+  "setCode" : "MGP6",
+  "printNumber" : 133,
   "rarity" : "prismatic secret rare",
-  "language" : "zh-Hans"
+  "language" : "zh-Hans",
+  "regionCode" : "SC"
 } ]
