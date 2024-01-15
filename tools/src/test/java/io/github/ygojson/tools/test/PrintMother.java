@@ -40,7 +40,7 @@ public class PrintMother {
 		final Language language
 	) {
 		final Print print = new Print();
-		print.setFirstSeriesSet(setName);
+		print.setSetCode(setName);
 		print.setRarity(rarity);
 		print.setLanguage(language);
 		return print;

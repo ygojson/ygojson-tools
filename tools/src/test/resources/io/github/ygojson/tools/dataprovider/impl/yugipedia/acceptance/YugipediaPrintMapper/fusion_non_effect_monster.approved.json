@@ -211,15 +211,15 @@
   "rarity" : "secret rare",
   "language" : "it"
 }, {
-  "firstSeriesSet" : "Starter Box: Theatrical Release",
+  "setCode" : "Starter Box: Theatrical Release",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "Starter Box",
+  "setCode" : "Starter Box",
   "rarity" : "ultra rare",
   "language" : "ja"
 }, {
-  "firstSeriesSet" : "Official Guide Starter Book promotional card",
+  "setCode" : "Official Guide Starter Book promotional card",
   "rarity" : "ultra secret rare",
   "language" : "ja"
 }, {
