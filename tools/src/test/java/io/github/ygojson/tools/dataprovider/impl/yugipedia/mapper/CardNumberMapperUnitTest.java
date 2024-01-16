@@ -69,6 +69,43 @@ class CardNumberMapperUnitTest {
 			.isEqualTo(new CardNumber(printCode, "AAAA", Region.EN, "SP", 0, "S"));
 	}
 
+	private static Stream<Arguments> unreleasedPrintCodes() {
+		return Stream.of(
+			Arguments.of(
+				CardNumberMother.ofUnreleasedPrintNumber(Region.EN, null),
+				"???-EN???",
+				YugipediaLanguageRegion.EN
+			),
+			Arguments.of(
+				CardNumberMother.ofUnreleasedSetCode(Region.JP, 1),
+				"????-JP001",
+				YugipediaLanguageRegion.JP
+			),
+			Arguments.of(
+				CardNumberMother.ofUnreleasedPrintNumber(Region.EN, "STP7"),
+				"STP7-EN0??",
+				YugipediaLanguageRegion.EN
+			)
+		);
+	}
+
+	@ParameterizedTest
+	@MethodSource("unreleasedPrintCodes")
+	void given_unreleasedPrintCode_when_mapPrintCodeToCardNumber_then_cardNumberNone(
+		final CardNumber expected,
+		final String printCode,
+		final YugipediaLanguageRegion languageRegion
+	) {
+		// given - params
+		// when
+		final CardNumber actual = MAPPER.mapPrintCodeToCardNumber(
+			printCode,
+			languageRegion
+		);
+		// then
+		assertThat(actual).isEqualTo(expected);
+	}
+
 	static Stream<Arguments> printCodes() {
 		return Stream.of(
 			// Series 1 have its onw test cause it provides a CardNumber.NONE
