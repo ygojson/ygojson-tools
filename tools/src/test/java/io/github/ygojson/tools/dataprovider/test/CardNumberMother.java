@@ -12,14 +12,14 @@ public class CardNumberMother {
 		// cannot be instantiated - mother class
 	}
 
-	public static CardNumber ofUnknownSetCode(
+	public static CardNumber ofUnreleasedSetCode(
 		final Region region,
 		final Integer printNumber
 	) {
 		return new CardNumber(null, null, region, null, printNumber, null);
 	}
 
-	public static CardNumber ofUnknownPrintNumber(
+	public static CardNumber ofUnreleasedPrintNumber(
 		final Region region,
 		final String setCode
 	) {

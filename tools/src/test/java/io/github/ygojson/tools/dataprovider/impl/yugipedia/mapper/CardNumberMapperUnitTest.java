@@ -69,20 +69,20 @@ class CardNumberMapperUnitTest {
 			.isEqualTo(new CardNumber(printCode, "AAAA", Region.EN, "SP", 0, "S"));
 	}
 
-	private static Stream<Arguments> unknownPrintCodes() {
+	private static Stream<Arguments> unreleasedPrintCodes() {
 		return Stream.of(
 			Arguments.of(
-				CardNumberMother.ofUnknownPrintNumber(Region.EN, null),
+				CardNumberMother.ofUnreleasedPrintNumber(Region.EN, null),
 				"???-EN???",
 				YugipediaLanguageRegion.EN
 			),
 			Arguments.of(
-				CardNumberMother.ofUnknownSetCode(Region.JP, 1),
+				CardNumberMother.ofUnreleasedSetCode(Region.JP, 1),
 				"????-JP001",
 				YugipediaLanguageRegion.JP
 			),
 			Arguments.of(
-				CardNumberMother.ofUnknownPrintNumber(Region.EN, "STP7"),
+				CardNumberMother.ofUnreleasedPrintNumber(Region.EN, "STP7"),
 				"STP7-EN0??",
 				YugipediaLanguageRegion.EN
 			)
@@ -90,8 +90,8 @@ class CardNumberMapperUnitTest {
 	}
 
 	@ParameterizedTest
-	@MethodSource("unknownPrintCodes")
-	void given_unknownPrintCode_when_mapPrintCodeToCardNumber_then_cardNumberNone(
+	@MethodSource("unreleasedPrintCodes")
+	void given_unreleasedPrintCode_when_mapPrintCodeToCardNumber_then_cardNumberNone(
 		final CardNumber expected,
 		final String printCode,
 		final YugipediaLanguageRegion languageRegion

@@ -42,8 +42,8 @@ public abstract class CardNumberMapper {
 		GeneralMapper.class
 	);
 
-	@Named("unknownToNull")
-	protected String mapUnknownToNull(final String value) {
+	@Named("unreleasedToNull")
+	protected String mapUnreleasedToNull(final String value) {
 		final String mappedValue = generalMapper.mapBlankStringToNull(value);
 		if (mappedValue != null && mappedValue.contains("?")) {
 			return null;
@@ -54,29 +54,29 @@ public abstract class CardNumberMapper {
 	@Mapping(
 		target = "stringValue",
 		source = "stringValue",
-		qualifiedByName = "unknownToNull"
+		qualifiedByName = "unreleasedToNull"
 	)
 	@Mapping(
 		target = "setCode",
 		source = "setCode",
-		qualifiedByName = "unknownToNull"
+		qualifiedByName = "unreleasedToNull"
 	)
 	@Mapping(
 		target = "printNumberPrefix",
 		source = "printNumberPrefix",
-		qualifiedByName = "unknownToNull"
+		qualifiedByName = "unreleasedToNull"
 	)
 	@Mapping(
 		target = "printNumberSuffix",
 		source = "printNumberSuffix",
-		qualifiedByName = "unknownToNull"
+		qualifiedByName = "unreleasedToNull"
 	)
-	protected abstract CardNumber copyWithoutUnknowns(
+	protected abstract CardNumber copyWithoutUnreleasedFields(
 		final CardNumber cardNumber
 	);
 
 	@Mapping(target = "printNumber", ignore = true)
-	protected abstract CardNumber mapWithUnknownPrintNumber(
+	protected abstract CardNumber mapWithUnreleasedPrintNumber(
 		final CardNumber cardNumber
 	);
 
@@ -88,12 +88,11 @@ public abstract class CardNumberMapper {
 		if (originalCardNumber.equals(updatedCardNumber)) {
 			return originalCardNumber;
 		}
-		// this indicates an unknown print/set
+		// this indicates an unreleased print/set
 		if (updatedCardNumber.stringValue() == null) {
-			// TODO: mark somehow the CardNumber
 			final Integer printNumber = updatedCardNumber.printNumber();
 			if (printNumber != null && printNumber == 0) {
-				return mapWithUnknownPrintNumber(updatedCardNumber);
+				return mapWithUnreleasedPrintNumber(updatedCardNumber);
 			}
 		}
 		return updatedCardNumber;
@@ -112,7 +111,7 @@ public abstract class CardNumberMapper {
 		final YugipediaLanguageRegion region
 	) {
 		final CardNumber cardNumber = mapInternalToCardNumber(setPrefix, region);
-		return copyWithoutUnknowns(cardNumber);
+		return copyWithoutUnreleasedFields(cardNumber);
 	}
 
 	private CardNumber mapInternalToCardNumber(
@@ -188,7 +187,7 @@ public abstract class CardNumberMapper {
 			generalMapper.mapToNullableInteger(number),
 			generalMapper.mapBlankStringToNull(suffix)
 		);
-		return copyWithoutUnknowns(mapped);
+		return copyWithoutUnreleasedFields(mapped);
 	}
 
 	private static Region toRegionCode(
