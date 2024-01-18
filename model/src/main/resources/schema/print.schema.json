@@ -34,18 +34,18 @@
       "description": "Set code or abbreviation of the set\nNote that for cards without printCode, this is the name of the set (i.e., for Series 1)",
       "type": "string"
     },
-    "printNumberSuffix": {
-      "title": "Suffix for the printNumber",
-      "description": "For some sets, the printNumber might have a suffix (i.e., K-Series)",
+    "printNumberPrefix": {
+      "title": "Prefix for the printNumber",
+      "description": "Some sets include a prefix on the printNumber to indicate a sub-set.\nAlso, special editions and/or promotional cards have a prefix to indicate that they are not from the original set",
       "type": "string"
     },
     "printNumber": {
       "title": "Print number, usually the order on the set",
       "type": "integer"
     },
-    "printNumberPrefix": {
-      "title": "Prefix for the printNumber",
-      "description": "Some sets include a prefix on the printNumber to indicate a sub-set.\nAlso, special editions and/or promotional cards have a prefix to indicate that they are not from the original set",
+    "printNumberSuffix": {
+      "title": "Suffix for the printNumber",
+      "description": "For some sets, the printNumber might have a suffix (i.e., K-Series)",
       "type": "string"
     },
     "rarity": {
