@@ -638,16 +638,16 @@
 }, {
   "printCode" : "20TH-JPC85",
   "setCode" : "20TH",
-  "printNumber" : 85,
   "printNumberPrefix" : "C",
+  "printNumber" : 85,
   "rarity" : "secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20TH-JPC85",
   "setCode" : "20TH",
-  "printNumber" : 85,
   "printNumberPrefix" : "C",
+  "printNumber" : 85,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"

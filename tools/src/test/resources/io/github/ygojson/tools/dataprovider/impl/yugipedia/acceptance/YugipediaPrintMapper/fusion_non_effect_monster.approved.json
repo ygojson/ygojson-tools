@@ -29,8 +29,8 @@
 }, {
   "printCode" : "SS02-ENB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -44,16 +44,16 @@
 }, {
   "printCode" : "SBC1-ENB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "SBC1-ENB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -148,8 +148,8 @@
 }, {
   "printCode" : "SS02-DEB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -163,16 +163,16 @@
 }, {
   "printCode" : "SBC1-DEB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "SBC1-DEB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -214,8 +214,8 @@
 }, {
   "printCode" : "SS02-SPB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -229,16 +229,16 @@
 }, {
   "printCode" : "SBC1-SPB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "SBC1-SPB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -280,8 +280,8 @@
 }, {
   "printCode" : "SS02-FRB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -295,16 +295,16 @@
 }, {
   "printCode" : "SBC1-FRB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "SBC1-FRB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -353,8 +353,8 @@
 }, {
   "printCode" : "SS02-ITB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -368,16 +368,16 @@
 }, {
   "printCode" : "SBC1-ITB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "SBC1-ITB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -422,16 +422,16 @@
 }, {
   "printCode" : "15AX-JPM37",
   "setCode" : "15AX",
-  "printNumber" : 37,
   "printNumberPrefix" : "M",
+  "printNumber" : 37,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "15AX-JPM37",
   "setCode" : "15AX",
-  "printNumber" : 37,
   "printNumberPrefix" : "M",
+  "printNumber" : 37,
   "rarity" : "millennium rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -459,16 +459,16 @@
 }, {
   "printCode" : "15AX-KRM37",
   "setCode" : "15AX",
-  "printNumber" : 37,
   "printNumberPrefix" : "M",
+  "printNumber" : 37,
   "rarity" : "common",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "15AX-KRM37",
   "setCode" : "15AX",
-  "printNumber" : 37,
   "printNumberPrefix" : "M",
+  "printNumber" : 37,
   "rarity" : "millennium rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -503,8 +503,8 @@
 }, {
   "printCode" : "SS02-PTB20",
   "setCode" : "SS02",
-  "printNumber" : 20,
   "printNumberPrefix" : "B",
+  "printNumber" : 20,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -518,24 +518,24 @@
 }, {
   "printCode" : "SBC1-PTB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "SBC1-PTB22",
   "setCode" : "SBC1",
-  "printNumber" : 22,
   "printNumberPrefix" : "B",
+  "printNumber" : 22,
   "rarity" : "secret rare",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "FRP1-SCA01",
   "setCode" : "FRP1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "super parallel rare",
   "language" : "zh-Hans",
   "regionCode" : "SC"

@@ -309,8 +309,8 @@
 }, {
   "printCode" : "ST21-SCP15",
   "setCode" : "ST21",
-  "printNumber" : 15,
   "printNumberPrefix" : "P",
+  "printNumber" : 15,
   "rarity" : "super rare",
   "language" : "zh-Hans",
   "regionCode" : "SC"

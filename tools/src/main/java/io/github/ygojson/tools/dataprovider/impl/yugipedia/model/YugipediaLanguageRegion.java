@@ -36,7 +36,7 @@ public enum YugipediaLanguageRegion {
 	),
 	AU(
 		CardTable2::au_sets,
-		any -> null, // AU does not have sets
+		prefixGetter(InfoboxSet::oc_prefix),
 		Language.EN,
 		Region.EN,
 		Region.A

@@ -57,8 +57,8 @@
 }, {
   "printCode" : "SHSP-ENSE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -135,16 +135,16 @@
 }, {
   "printCode" : "CR01-AES03",
   "setCode" : "CR01",
-  "printNumber" : 3,
   "printNumberPrefix" : "S",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "AE"
 }, {
   "printCode" : "CR01-AES03",
   "setCode" : "CR01",
-  "printNumber" : 3,
   "printNumberPrefix" : "S",
+  "printNumber" : 3,
   "rarity" : "quarter century secret rare",
   "language" : "en",
   "regionCode" : "AE"
@@ -214,8 +214,8 @@
 }, {
   "printCode" : "SHSP-DESE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -334,8 +334,8 @@
 }, {
   "printCode" : "SHSP-SPSE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -454,8 +454,8 @@
 }, {
   "printCode" : "SHSP-FRSE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -574,8 +574,8 @@
 }, {
   "printCode" : "SHSP-ITSE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -722,24 +722,24 @@
 }, {
   "printCode" : "20TH-JPBS3",
   "setCode" : "20TH",
-  "printNumber" : 3,
   "printNumberPrefix" : "BS",
+  "printNumber" : 3,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20CP-JPT06",
   "setCode" : "20CP",
-  "printNumber" : 6,
   "printNumberPrefix" : "T",
+  "printNumber" : 6,
   "rarity" : "secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20CP-JPT06",
   "setCode" : "20CP",
-  "printNumber" : 6,
   "printNumberPrefix" : "T",
+  "printNumber" : 6,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -802,8 +802,8 @@
 }, {
   "printCode" : "DP00-KRSE1",
   "setCode" : "DP00",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -831,8 +831,8 @@
 }, {
   "printCode" : "CHBI-KRBS3",
   "setCode" : "CHBI",
-  "printNumber" : 3,
   "printNumberPrefix" : "BS",
+  "printNumber" : 3,
   "rarity" : "extra secret rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -902,8 +902,8 @@
 }, {
   "printCode" : "SHSP-PTSE1",
   "setCode" : "SHSP",
-  "printNumber" : 1,
   "printNumberPrefix" : "SE",
+  "printNumber" : 1,
   "rarity" : "super rare",
   "language" : "pt",
   "regionCode" : "PT"

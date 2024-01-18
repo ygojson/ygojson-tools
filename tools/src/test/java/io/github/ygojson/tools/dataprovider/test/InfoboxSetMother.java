@@ -23,6 +23,7 @@ public class InfoboxSetMother {
 			.ignore(field(InfoboxSet::na_prefix))
 			.ignore(field(InfoboxSet::eu_prefix))
 			.ignore(field(InfoboxSet::ae_prefix))
+			.ignore(field(InfoboxSet::oc_prefix))
 			.ignore(field(InfoboxSet::de_prefix))
 			.ignore(field(InfoboxSet::sp_prefix))
 			.ignore(field(InfoboxSet::fr_prefix))

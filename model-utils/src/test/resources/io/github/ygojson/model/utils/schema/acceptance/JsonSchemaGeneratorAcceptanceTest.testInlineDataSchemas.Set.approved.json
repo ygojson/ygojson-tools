@@ -20,6 +20,9 @@
       "type" : "string",
       "pattern" : "[a-zA-Z0-9]+"
     },
+    "printNumberPrefix" : {
+      "type" : "string"
+    },
     "type" : {
       "type" : "string",
       "pattern" : "[a-z-0-9]+"

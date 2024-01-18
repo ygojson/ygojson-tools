@@ -4,62 +4,63 @@
   "nameAlt" : "ZSPMQCXJT",
   "setCode" : "DYXKRPV",
   "setCodeAlt" : "WMMPMPYLW",
-  "type" : "KVMEOZG",
-  "series" : "OQA",
+  "printNumberPrefix" : "KVMEOZG",
+  "type" : "OQA",
+  "series" : "HUFOJC",
   "localizedData" : {
     "de" : {
-      "name" : "HUFOJC",
-      "nameAlt" : "XGHP",
-      "setCode" : "EQRGFN",
-      "setCodeAlt" : "DJS"
+      "name" : "XGHP",
+      "nameAlt" : "EQRGFN",
+      "setCode" : "DJS",
+      "setCodeAlt" : "GGWXHTNS"
     },
     "es" : {
-      "name" : "GGWXHTNS",
-      "nameAlt" : "CWAJI",
-      "setCode" : "SNLZX",
-      "setCodeAlt" : "FFLOPREZ"
+      "name" : "CWAJI",
+      "nameAlt" : "SNLZX",
+      "setCode" : "FFLOPREZ",
+      "setCodeAlt" : "TUKWWH"
     },
     "fr" : {
-      "name" : "TUKWWH",
-      "nameAlt" : "WXI",
-      "setCode" : "ERRC",
-      "setCodeAlt" : "TACUEFY"
+      "name" : "WXI",
+      "nameAlt" : "ERRC",
+      "setCode" : "TACUEFY",
+      "setCodeAlt" : "KTXAF"
     },
     "it" : {
-      "name" : "KTXAF",
-      "nameAlt" : "AXBDXLIXXD",
-      "setCode" : "XHJCTSAL",
-      "setCodeAlt" : "MGBCUSPZ"
+      "name" : "AXBDXLIXXD",
+      "nameAlt" : "XHJCTSAL",
+      "setCode" : "MGBCUSPZ",
+      "setCodeAlt" : "IAVKADEXAB"
     },
     "ja" : {
-      "name" : "IAVKADEXAB",
-      "nameAlt" : "IWXHQJB",
-      "setCode" : "GYZ",
-      "setCodeAlt" : "CCBEX"
+      "name" : "IWXHQJB",
+      "nameAlt" : "GYZ",
+      "setCode" : "CCBEX",
+      "setCodeAlt" : "PEDCT"
     },
     "ko" : {
-      "name" : "PEDCT",
-      "nameAlt" : "MVZUMETFSA",
-      "setCode" : "EGJUEPKGO",
-      "setCodeAlt" : "XAU"
+      "name" : "MVZUMETFSA",
+      "nameAlt" : "EGJUEPKGO",
+      "setCode" : "XAU",
+      "setCodeAlt" : "DBYFL"
     },
     "pt" : {
-      "name" : "DBYFL",
-      "nameAlt" : "YCILHPTA",
-      "setCode" : "OBMP",
-      "setCodeAlt" : "DEGYRTKTC"
+      "name" : "YCILHPTA",
+      "nameAlt" : "OBMP",
+      "setCode" : "DEGYRTKTC",
+      "setCodeAlt" : "LQWLX"
     },
     "zh-Hans" : {
-      "name" : "LQWLX",
-      "nameAlt" : "JPI",
-      "setCode" : "CJARSZB",
-      "setCodeAlt" : "UOJ"
+      "name" : "JPI",
+      "nameAlt" : "CJARSZB",
+      "setCode" : "UOJ",
+      "setCodeAlt" : "IMCBOLZHE"
     },
     "zh-Hant" : {
-      "name" : "IMCBOLZHE",
-      "nameAlt" : "RQJLB",
-      "setCode" : "ORREPNH",
-      "setCodeAlt" : "AGXQYGANB"
+      "name" : "RQJLB",
+      "nameAlt" : "ORREPNH",
+      "setCode" : "AGXQYGANB",
+      "setCodeAlt" : "PTJTIZ"
     }
   }
 }

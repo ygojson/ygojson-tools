@@ -91,16 +91,16 @@
 }, {
   "printCode" : "YGLD-ENA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "YGLD-ENC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -121,8 +121,8 @@
 }, {
   "printCode" : "LDK2-ENY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -136,16 +136,16 @@
 }, {
   "printCode" : "MVP1-ENGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "MVP1-ENG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -166,16 +166,16 @@
 }, {
   "printCode" : "LEDD-ENA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "SS01-ENA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -196,24 +196,24 @@
 }, {
   "printCode" : "MVP1-ENSV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "MVP1-ENS54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "SS04-ENA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -304,16 +304,16 @@
 }, {
   "printCode" : "SBC1-ENA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "SBC1-ENA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -412,8 +412,8 @@
 }, {
   "printCode" : "MVP1-ENSE3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SE",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -485,8 +485,8 @@
 }, {
   "printCode" : "2015-JPP02",
   "setCode" : "2015",
-  "printNumber" : 2,
   "printNumberPrefix" : "JPP",
+  "printNumber" : 2,
   "rarity" : "millennium rare",
   "language" : "en"
 }, {
@@ -590,16 +590,16 @@
 }, {
   "printCode" : "YGLD-DEA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "YGLD-DEC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -627,8 +627,8 @@
 }, {
   "printCode" : "LDK2-DEY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -642,16 +642,16 @@
 }, {
   "printCode" : "MVP1-DEGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "MVP1-DEG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -672,8 +672,8 @@
 }, {
   "printCode" : "LEDD-DEA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -694,8 +694,8 @@
 }, {
   "printCode" : "SS01-DEA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -716,24 +716,24 @@
 }, {
   "printCode" : "MVP1-DESV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "MVP1-DES54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "SS04-DEA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -810,16 +810,16 @@
 }, {
   "printCode" : "SBC1-DEA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "SBC1-DEA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret",
   "language" : "de",
   "regionCode" : "DE"
@@ -917,16 +917,16 @@
 }, {
   "printCode" : "YGLD-SPA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "YGLD-SPC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -954,8 +954,8 @@
 }, {
   "printCode" : "LDK2-SPY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -969,16 +969,16 @@
 }, {
   "printCode" : "MVP1-SPGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "MVP1-SPG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -999,16 +999,16 @@
 }, {
   "printCode" : "LEDD-SPA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "SS01-SPA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -1029,24 +1029,24 @@
 }, {
   "printCode" : "MVP1-SPSV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "MVP1-SPS54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "SS04-SPA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -1123,16 +1123,16 @@
 }, {
   "printCode" : "SBC1-SPA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "SBC1-SPA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -1223,16 +1223,16 @@
 }, {
   "printCode" : "YGLD-FRA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "YGLD-FRC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1260,8 +1260,8 @@
 }, {
   "printCode" : "LDK2-FRY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1275,16 +1275,16 @@
 }, {
   "printCode" : "MVP1-FRGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "MVP1-FRG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1305,8 +1305,8 @@
 }, {
   "printCode" : "LEDD-FRA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1320,8 +1320,8 @@
 }, {
   "printCode" : "SS01-FRA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1342,24 +1342,24 @@
 }, {
   "printCode" : "MVP1-FRSV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "MVP1-FRS54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "SS04-FRA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1436,16 +1436,16 @@
 }, {
   "printCode" : "SBC1-FRA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "SBC1-FRA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1564,16 +1564,16 @@
 }, {
   "printCode" : "YGLD-ITA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "YGLD-ITC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -1601,8 +1601,8 @@
 }, {
   "printCode" : "LDK2-ITY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1616,16 +1616,16 @@
 }, {
   "printCode" : "MVP1-ITGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "MVP1-ITG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -1646,8 +1646,8 @@
 }, {
   "printCode" : "LEDD-ITA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1661,8 +1661,8 @@
 }, {
   "printCode" : "SS01-ITA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1683,24 +1683,24 @@
 }, {
   "printCode" : "MVP1-ITSV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "MVP1-ITS54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "SS04-ITA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1777,16 +1777,16 @@
 }, {
   "printCode" : "SBC1-ITA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "SBC1-ITA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret",
   "language" : "it",
   "regionCode" : "IT"
@@ -1885,16 +1885,16 @@
 }, {
   "printCode" : "15AY-JPA03",
   "setCode" : "15AY",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "15AY-JPC09",
   "setCode" : "15AY",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1908,16 +1908,16 @@
 }, {
   "printCode" : "15AX-JPY01",
   "setCode" : "15AX",
-  "printNumber" : 1,
   "printNumberPrefix" : "Y",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "15AX-JPY01",
   "setCode" : "15AX",
-  "printNumber" : 1,
   "printNumberPrefix" : "Y",
+  "printNumber" : 1,
   "rarity" : "millennium rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1973,8 +1973,8 @@
 }, {
   "printCode" : "2018-JPP02",
   "setCode" : "2018",
-  "printNumber" : 2,
   "printNumberPrefix" : "P",
+  "printNumber" : 2,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1999,40 +1999,40 @@
 }, {
   "printCode" : "20TH-JPBS1",
   "setCode" : "20TH",
-  "printNumber" : 1,
   "printNumberPrefix" : "BS",
+  "printNumber" : 1,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20TH-JPC57",
   "setCode" : "20TH",
-  "printNumber" : 57,
   "printNumberPrefix" : "C",
+  "printNumber" : 57,
   "rarity" : "ultra parallel rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20TH-JPC57",
   "setCode" : "20TH",
-  "printNumber" : 57,
   "printNumberPrefix" : "C",
+  "printNumber" : 57,
   "rarity" : "secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "20CP-JPS01",
   "setCode" : "20CP",
-  "printNumber" : 1,
   "printNumberPrefix" : "S",
+  "printNumber" : 1,
   "rarity" : "20th secret rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "LGB1-JPS01",
   "setCode" : "LGB1",
-  "printNumber" : 1,
   "printNumberPrefix" : "S",
+  "printNumber" : 1,
   "rarity" : "premium gold rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -2081,16 +2081,16 @@
 }, {
   "printCode" : "DR01-JPA01",
   "setCode" : "DR01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "DR01-JPA01",
   "setCode" : "DR01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "ultra rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -2227,8 +2227,8 @@
 }, {
   "printCode" : "15AY-KRA03",
   "setCode" : "15AY",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -2242,24 +2242,24 @@
 }, {
   "printCode" : "15AY-KRC09",
   "setCode" : "15AY",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "15AY-KRA03",
   "setCode" : "15AY",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "CHBI-KRBS1",
   "setCode" : "CHBI",
-  "printNumber" : 1,
   "printNumberPrefix" : "BS",
+  "printNumber" : 1,
   "rarity" : "extra secret rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -2280,32 +2280,32 @@
 }, {
   "printCode" : "15AX-KRY01",
   "setCode" : "15AX",
-  "printNumber" : 1,
   "printNumberPrefix" : "Y",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "15AX-KRY01",
   "setCode" : "15AX",
-  "printNumber" : 1,
   "printNumberPrefix" : "Y",
+  "printNumber" : 1,
   "rarity" : "millennium rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "LGB1-KRS01",
   "setCode" : "LGB1",
-  "printNumber" : 1,
   "printNumberPrefix" : "S",
+  "printNumber" : 1,
   "rarity" : "premium gold rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "LGB1-KRGE1",
   "setCode" : "LGB1",
-  "printNumber" : 1,
   "printNumberPrefix" : "GE",
+  "printNumber" : 1,
   "rarity" : "premium gold rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -2382,16 +2382,16 @@
 }, {
   "printCode" : "YGLD-PTA03",
   "setCode" : "YGLD",
-  "printNumber" : 3,
   "printNumberPrefix" : "A",
+  "printNumber" : 3,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "YGLD-PTC09",
   "setCode" : "YGLD",
-  "printNumber" : 9,
   "printNumberPrefix" : "C",
+  "printNumber" : 9,
   "rarity" : "ultra rare",
   "language" : "pt",
   "regionCode" : "PT"
@@ -2419,8 +2419,8 @@
 }, {
   "printCode" : "LDK2-PTY10",
   "setCode" : "LDK2",
-  "printNumber" : 10,
   "printNumberPrefix" : "Y",
+  "printNumber" : 10,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -2434,16 +2434,16 @@
 }, {
   "printCode" : "MVP1-PTGV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "GV",
+  "printNumber" : 3,
   "rarity" : "gold secret rare",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "MVP1-PTG54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "G",
+  "printNumber" : 54,
   "rarity" : "gold rare",
   "language" : "pt",
   "regionCode" : "PT"
@@ -2464,16 +2464,16 @@
 }, {
   "printCode" : "LEDD-PTA01",
   "setCode" : "LEDD",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "SS01-PTA01",
   "setCode" : "SS01",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -2494,24 +2494,24 @@
 }, {
   "printCode" : "MVP1-PTSV3",
   "setCode" : "MVP1",
-  "printNumber" : 3,
   "printNumberPrefix" : "SV",
+  "printNumber" : 3,
   "rarity" : "ultra rare",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "MVP1-PTS54",
   "setCode" : "MVP1",
-  "printNumber" : 54,
   "printNumberPrefix" : "S",
+  "printNumber" : 54,
   "rarity" : "secret rare",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "SS04-PTA01",
   "setCode" : "SS04",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -2574,16 +2574,16 @@
 }, {
   "printCode" : "SBC1-PTA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "SBC1-PTA01",
   "setCode" : "SBC1",
-  "printNumber" : 1,
   "printNumberPrefix" : "A",
+  "printNumber" : 1,
   "rarity" : "secret rare",
   "language" : "pt",
   "regionCode" : "PT"

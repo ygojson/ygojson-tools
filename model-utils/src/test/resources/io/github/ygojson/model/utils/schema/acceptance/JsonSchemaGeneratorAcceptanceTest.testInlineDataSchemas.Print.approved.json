@@ -21,13 +21,13 @@
     "setCode" : {
       "type" : "string"
     },
-    "printNumberSuffix" : {
+    "printNumberPrefix" : {
       "type" : "string"
     },
     "printNumber" : {
       "type" : "integer"
     },
-    "printNumberPrefix" : {
+    "printNumberSuffix" : {
       "type" : "string"
     },
     "rarity" : {
