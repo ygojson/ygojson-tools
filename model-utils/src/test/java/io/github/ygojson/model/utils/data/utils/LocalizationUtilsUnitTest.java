@@ -134,6 +134,7 @@ class LocalizationUtilsUnitTest {
 			language,
 			card
 		);
+		assertThat(localizedCardText).isNull();
 	}
 
 	@ParameterizedTest

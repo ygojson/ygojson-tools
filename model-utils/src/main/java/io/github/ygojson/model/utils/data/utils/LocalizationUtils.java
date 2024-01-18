@@ -81,6 +81,9 @@ public class LocalizationUtils {
 				localizedData,
 				SetLocalizedData::getZhHant
 			);
+			default -> throw new UnsupportedOperationException(
+				"Language not supported: " + language
+			);
 		};
 	}
 
@@ -107,6 +110,9 @@ public class LocalizationUtils {
 				card,
 				cardText,
 				CardLocalizedData::setZhHant
+			);
+			default -> throw new UnsupportedOperationException(
+				"Language not supported: " + language
 			);
 		}
 	}
@@ -135,6 +141,9 @@ public class LocalizationUtils {
 				setInfo,
 				SetLocalizedData::setZhHant
 			);
+			default -> throw new UnsupportedOperationException(
+				"Language not supported: " + language
+			);
 		}
 	}
 
@@ -144,14 +153,12 @@ public class LocalizationUtils {
 	 * @param set the set to update
 	 * @param setInfo the set info to use
 	 */
-	public static void setAsMainLanguage(final Set set, SetInfo setInfo) {
-		if (setInfo == null) {
-			setInfo = new SetInfo();
-		}
-		set.setName(setInfo.getName());
-		set.setNameAlt(setInfo.getNameAlt());
-		set.setSetCode(setInfo.getSetCode());
-		set.setSetCodeAlt(setInfo.getSetCodeAlt());
+	public static void setAsMainLanguage(final Set set, final SetInfo setInfo) {
+		final SetInfo toSet = setInfo == null ? new SetInfo() : setInfo;
+		set.setName(toSet.getName());
+		set.setNameAlt(toSet.getNameAlt());
+		set.setSetCode(toSet.getSetCode());
+		set.setSetCodeAlt(toSet.getSetCodeAlt());
 	}
 
 	/**
@@ -160,15 +167,16 @@ public class LocalizationUtils {
 	 * @param card the card to update
 	 * @param cardText the card text to use
 	 */
-	public static void setAsMainLanguage(final Card card, CardText cardText) {
-		if (cardText == null) {
-			cardText = new CardText();
-		}
-		card.setName(cardText.getName());
-		card.setFlavorText(cardText.getFlavorText());
-		card.setEffectText(cardText.getEffectText());
-		card.setPendulumEffect(cardText.getPendulumEffect());
-		card.setMaterials(cardText.getMaterials());
+	public static void setAsMainLanguage(
+		final Card card,
+		final CardText cardText
+	) {
+		final CardText toSet = cardText == null ? new CardText() : cardText;
+		card.setName(toSet.getName());
+		card.setFlavorText(toSet.getFlavorText());
+		card.setEffectText(toSet.getEffectText());
+		card.setPendulumEffect(toSet.getPendulumEffect());
+		card.setMaterials(toSet.getMaterials());
 	}
 
 	private static void setLocalizedSetInfo(
