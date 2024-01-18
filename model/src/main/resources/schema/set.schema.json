@@ -32,6 +32,11 @@
       "type": "string",
       "pattern": "[a-zA-Z0-9]+"
     },
+    "printNumberPrefix": {
+      "title": "Prefix for the printNumber",
+      "description": "Special editions and/or promotional cards have a prefix to indicate that they are not from the original set.\nNote that for sub-sets (i.e., several decks on one set) also include a prefix on the printNumber but this doesn't identify the set",
+      "type": "string"
+    },
     "type": {
       "title": "Type of the Set (lower-case)",
       "type": "string",
