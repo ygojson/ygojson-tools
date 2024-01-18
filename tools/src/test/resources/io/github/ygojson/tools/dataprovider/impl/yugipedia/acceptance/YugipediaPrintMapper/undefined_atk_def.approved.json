@@ -64,8 +64,8 @@
 }, {
   "printCode" : "LEDD-ENB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -79,8 +79,8 @@
 }, {
   "printCode" : "SGX1-ENG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -157,8 +157,8 @@
 }, {
   "printCode" : "LEDD-DEB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -172,8 +172,8 @@
 }, {
   "printCode" : "SGX1-DEG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -236,8 +236,8 @@
 }, {
   "printCode" : "LEDD-SPB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -251,8 +251,8 @@
 }, {
   "printCode" : "SGX1-SPG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -315,8 +315,8 @@
 }, {
   "printCode" : "LEDD-FRB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -330,8 +330,8 @@
 }, {
   "printCode" : "SGX1-FRG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -401,8 +401,8 @@
 }, {
   "printCode" : "LEDD-ITB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -416,8 +416,8 @@
 }, {
   "printCode" : "SGX1-ITG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -569,8 +569,8 @@
 }, {
   "printCode" : "LEDD-PTB27",
   "setCode" : "LEDD",
-  "printNumber" : 27,
   "printNumberPrefix" : "B",
+  "printNumber" : 27,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -584,8 +584,8 @@
 }, {
   "printCode" : "SGX1-PTG22",
   "setCode" : "SGX1",
-  "printNumber" : 22,
   "printNumberPrefix" : "G",
+  "printNumber" : 22,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"

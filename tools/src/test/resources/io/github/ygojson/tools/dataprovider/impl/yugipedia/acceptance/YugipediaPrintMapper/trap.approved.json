@@ -176,16 +176,16 @@
 }, {
   "printCode" : "YS15-ENF24",
   "setCode" : "YS15",
-  "printNumber" : 24,
   "printNumberPrefix" : "F",
+  "printNumber" : 24,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "YS15-ENL24",
   "setCode" : "YS15",
-  "printNumber" : 24,
   "printNumberPrefix" : "L",
+  "printNumber" : 24,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -220,8 +220,8 @@
 }, {
   "printCode" : "YS15-ENY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -421,8 +421,8 @@
 }, {
   "printCode" : "YS15-DEY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -583,8 +583,8 @@
 }, {
   "printCode" : "YS15-SPY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -745,8 +745,8 @@
 }, {
   "printCode" : "YS15-FRY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -928,8 +928,8 @@
 }, {
   "printCode" : "YS15-ITY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1077,16 +1077,16 @@
 }, {
   "printCode" : "HD13-JPL17",
   "setCode" : "HD13",
-  "printNumber" : 17,
   "printNumberPrefix" : "L",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "HD13-JPD17",
   "setCode" : "HD13",
-  "printNumber" : 17,
   "printNumberPrefix" : "D",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1100,32 +1100,32 @@
 }, {
   "printCode" : "VS15-JPS23",
   "setCode" : "VS15",
-  "printNumber" : 23,
   "printNumberPrefix" : "S",
+  "printNumber" : 23,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "VS15-JPD24",
   "setCode" : "VS15",
-  "printNumber" : 24,
   "printNumberPrefix" : "D",
+  "printNumber" : 24,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "HD18-JPL17",
   "setCode" : "HD18",
-  "printNumber" : 17,
   "printNumberPrefix" : "L",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "HD18-JPD17",
   "setCode" : "HD18",
-  "printNumber" : 17,
   "printNumberPrefix" : "D",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1258,16 +1258,16 @@
 }, {
   "printCode" : "VS15-KRS23",
   "setCode" : "VS15",
-  "printNumber" : 23,
   "printNumberPrefix" : "S",
+  "printNumber" : 23,
   "rarity" : "common",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "VS15-KRD24",
   "setCode" : "VS15",
-  "printNumber" : 24,
   "printNumberPrefix" : "D",
+  "printNumber" : 24,
   "rarity" : "common",
   "language" : "ko",
   "regionCode" : "KR"
@@ -1365,8 +1365,8 @@
 }, {
   "printCode" : "YS15-PTY17",
   "setCode" : "YS15",
-  "printNumber" : 17,
   "printNumberPrefix" : "Y",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
@@ -1394,16 +1394,16 @@
 }, {
   "printCode" : "HD13-TCL17",
   "setCode" : "HD13",
-  "printNumber" : 17,
   "printNumberPrefix" : "L",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "zh-Hant",
   "regionCode" : "TC"
 }, {
   "printCode" : "HD13-TCD17",
   "setCode" : "HD13",
-  "printNumber" : 17,
   "printNumberPrefix" : "D",
+  "printNumber" : 17,
   "rarity" : "common",
   "language" : "zh-Hant",
   "regionCode" : "TC"

@@ -84,8 +84,8 @@
 }, {
   "printCode" : "YS14-ENA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -127,16 +127,16 @@
 }, {
   "printCode" : "LEHD-ENB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "LEHD-ENC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "en",
   "regionCode" : "EN"
@@ -215,16 +215,16 @@
 }, {
   "printCode" : "YS15-ENF13",
   "setCode" : "YS15",
-  "printNumber" : 13,
   "printNumberPrefix" : "F",
+  "printNumber" : 13,
   "rarity" : "shatterfoil rare",
   "language" : "en",
   "regionCode" : "EN"
 }, {
   "printCode" : "YS15-ENL14",
   "setCode" : "YS15",
-  "printNumber" : 14,
   "printNumberPrefix" : "L",
+  "printNumber" : 14,
   "rarity" : "shatterfoil rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -252,8 +252,8 @@
 }, {
   "printCode" : "YS15-ENY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "en",
   "regionCode" : "EN"
@@ -418,8 +418,8 @@
 }, {
   "printCode" : "YS14-DEA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -440,8 +440,8 @@
 }, {
   "printCode" : "YS15-DEY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "de",
   "regionCode" : "DE"
@@ -476,16 +476,16 @@
 }, {
   "printCode" : "LEHD-DEB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "de",
   "regionCode" : "DE"
 }, {
   "printCode" : "LEHD-DEC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "de",
   "regionCode" : "DE"
@@ -646,8 +646,8 @@
 }, {
   "printCode" : "YS14-SPA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -668,8 +668,8 @@
 }, {
   "printCode" : "YS15-SPY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "es",
   "regionCode" : "SP"
@@ -697,16 +697,16 @@
 }, {
   "printCode" : "LEHD-SPB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "es",
   "regionCode" : "SP"
 }, {
   "printCode" : "LEHD-SPC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "es",
   "regionCode" : "SP"
@@ -860,8 +860,8 @@
 }, {
   "printCode" : "YS14-FRA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -882,8 +882,8 @@
 }, {
   "printCode" : "YS15-FRY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "fr",
   "regionCode" : "FR"
@@ -918,16 +918,16 @@
 }, {
   "printCode" : "LEHD-FRB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "fr",
   "regionCode" : "FR"
 }, {
   "printCode" : "LEHD-FRC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "fr",
   "regionCode" : "FR"
@@ -1102,8 +1102,8 @@
 }, {
   "printCode" : "YS14-ITA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -1124,8 +1124,8 @@
 }, {
   "printCode" : "YS15-ITY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "it",
   "regionCode" : "IT"
@@ -1160,16 +1160,16 @@
 }, {
   "printCode" : "LEHD-ITB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "it",
   "regionCode" : "IT"
 }, {
   "printCode" : "LEHD-ITC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "it",
   "regionCode" : "IT"
@@ -1304,40 +1304,40 @@
 }, {
   "printCode" : "ST12-JPP02",
   "setCode" : "ST12",
-  "printNumber" : 2,
   "printNumberPrefix" : "P",
+  "printNumber" : 2,
   "rarity" : "normal parallel rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "DS13-JPD30",
   "setCode" : "DS13",
-  "printNumber" : 30,
   "printNumberPrefix" : "D",
+  "printNumber" : 30,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "ST14-JPA06",
   "setCode" : "ST14",
-  "printNumber" : 6,
   "printNumberPrefix" : "A",
+  "printNumber" : 6,
   "rarity" : "common",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "VS15-JPS14",
   "setCode" : "VS15",
-  "printNumber" : 14,
   "printNumberPrefix" : "S",
+  "printNumber" : 14,
   "rarity" : "normal parallel rare",
   "language" : "ja",
   "regionCode" : "JP"
 }, {
   "printCode" : "VS15-JPD15",
   "setCode" : "VS15",
-  "printNumber" : 15,
   "printNumberPrefix" : "D",
+  "printNumber" : 15,
   "rarity" : "normal parallel rare",
   "language" : "ja",
   "regionCode" : "JP"
@@ -1456,8 +1456,8 @@
 }, {
   "printCode" : "DS13-KRD30",
   "setCode" : "DS13",
-  "printNumber" : 30,
   "printNumberPrefix" : "D",
+  "printNumber" : 30,
   "rarity" : "common",
   "language" : "ko",
   "regionCode" : "KR"
@@ -1471,24 +1471,24 @@
 }, {
   "printCode" : "ST14-KRA06",
   "setCode" : "ST14",
-  "printNumber" : 6,
   "printNumberPrefix" : "A",
+  "printNumber" : 6,
   "rarity" : "common",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "VS15-KRS14",
   "setCode" : "VS15",
-  "printNumber" : 14,
   "printNumberPrefix" : "S",
+  "printNumber" : 14,
   "rarity" : "normal parallel rare",
   "language" : "ko",
   "regionCode" : "KR"
 }, {
   "printCode" : "VS15-KRD15",
   "setCode" : "VS15",
-  "printNumber" : 15,
   "printNumberPrefix" : "D",
+  "printNumber" : 15,
   "rarity" : "normal parallel rare",
   "language" : "ko",
   "regionCode" : "KR"
@@ -1586,8 +1586,8 @@
 }, {
   "printCode" : "YS14-PTA10",
   "setCode" : "YS14",
-  "printNumber" : 10,
   "printNumberPrefix" : "A",
+  "printNumber" : 10,
   "rarity" : "ultra rare",
   "language" : "pt",
   "regionCode" : "PT"
@@ -1608,8 +1608,8 @@
 }, {
   "printCode" : "YS15-PTY12",
   "setCode" : "YS15",
-  "printNumber" : 12,
   "printNumberPrefix" : "Y",
+  "printNumber" : 12,
   "rarity" : "super rare",
   "language" : "pt",
   "regionCode" : "PT"
@@ -1637,16 +1637,16 @@
 }, {
   "printCode" : "LEHD-PTB21",
   "setCode" : "LEHD",
-  "printNumber" : 21,
   "printNumberPrefix" : "B",
+  "printNumber" : 21,
   "rarity" : "ultra rare",
   "language" : "pt",
   "regionCode" : "PT"
 }, {
   "printCode" : "LEHD-PTC15",
   "setCode" : "LEHD",
-  "printNumber" : 15,
   "printNumberPrefix" : "C",
+  "printNumber" : 15,
   "rarity" : "common",
   "language" : "pt",
   "regionCode" : "PT"
