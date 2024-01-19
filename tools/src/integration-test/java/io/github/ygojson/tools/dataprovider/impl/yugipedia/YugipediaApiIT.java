@@ -3,6 +3,7 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia;
 import org.junit.jupiter.api.BeforeAll;
 
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.AbstractYugipediaApiTest;
+import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaApiMother;
 
 class YugipediaApiIT extends AbstractYugipediaApiTest {
 
