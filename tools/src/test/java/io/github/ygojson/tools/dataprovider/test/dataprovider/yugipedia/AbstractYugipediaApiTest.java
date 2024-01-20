@@ -154,7 +154,7 @@ public abstract class AbstractYugipediaApiTest {
 		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
 			softly.assertThat(sets.body()).isNotNull();
-			softly.assertThat(setsts.body().batchcomplete()).isTrue();
+			softly.assertThat(sets.body().batchcomplete()).isTrue();
 		});
 	}
 }
