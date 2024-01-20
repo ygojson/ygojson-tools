@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia;
+package io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia;
 
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -8,6 +8,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
 
 public class YugipediaApiMother {
 
@@ -17,6 +18,10 @@ public class YugipediaApiMother {
 
 	public static YugipediaApi productionTestClient() {
 		return createClient("https://yugipedia.com", productionOkHttp());
+	}
+
+	public static YugipediaApi mockTestClient(final String mockedUrl) {
+		return createClient(mockedUrl, new OkHttpClient.Builder().build());
 	}
 
 	private static OkHttpClient productionOkHttp() {
