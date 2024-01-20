@@ -3,7 +3,6 @@ package io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
 import java.io.IOException;
-import java.time.ZonedDateTime;
 
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
@@ -37,11 +36,7 @@ public abstract class AbstractYugipediaApiTest {
 		String grccontinue
 	) throws IOException {
 		return getApi()
-			.queryRecentChanges(
-				Limit.getDefault(),
-				null,
-				grccontinue
-			)
+			.queryRecentChanges(Limit.getDefault(), null, grccontinue)
 			.execute();
 	}
 
@@ -94,7 +89,8 @@ public abstract class AbstractYugipediaApiTest {
 		// given
 		final String grccontinue = null;
 		// when
-		final Response<QueryResponse> recentChanges = doExecuteTestQueryRecentChanges(grccontinue);
+		final Response<QueryResponse> recentChanges =
+			doExecuteTestQueryRecentChanges(grccontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(recentChanges.code()).isEqualTo(200);
@@ -106,14 +102,18 @@ public abstract class AbstractYugipediaApiTest {
 	void given_consecutive3calls_when_queryRecentChanges_then_responseOk()
 		throws IOException {
 		// given
-		final ZonedDateTime startAt = null;
 		String grccontinue = null;
 		// when
-		final Response<QueryResponse> firstResponse = doExecuteTestQueryRecentChanges(grccontinue);
+		final Response<QueryResponse> firstResponse =
+			doExecuteTestQueryRecentChanges(grccontinue);
 		grccontinue = firstResponse.body().getContinue().grccontinue();
-		final Response<QueryResponse> secondCall = doExecuteTestQueryRecentChanges(grccontinue);
+		final Response<QueryResponse> secondCall = doExecuteTestQueryRecentChanges(
+			grccontinue
+		);
 		grccontinue = secondCall.body().getContinue().grccontinue();
-		final Response<QueryResponse> thirdCall = doExecuteTestQueryRecentChanges(grccontinue);
+		final Response<QueryResponse> thirdCall = doExecuteTestQueryRecentChanges(
+			grccontinue
+		);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(secondCall.code()).isEqualTo(200);
@@ -154,7 +154,7 @@ public abstract class AbstractYugipediaApiTest {
 		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
 			softly.assertThat(sets.body()).isNotNull();
-			softly.assertThat(sets.body().batchcomplete()).isTrue();
+			softly.assertThat(setsts.body().batchcomplete()).isTrue();
 		});
 	}
 }
