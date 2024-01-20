@@ -44,7 +44,7 @@ In addition, the request path (without the host) is provided as a reference on w
   GET /api.php?action=query&format=json&formatversion=2&redirects=true&generator=pages&prop=revisions&rvprop=content|timestamp
   ```
 
-* File: `94ffcf19-10e8-3079-987e-c96a9f837ec7.json`
+* File: `94ffcf19-10e8-3079-987e-c96a9f837ec7.json` - 20/01/2024
   ```
   GET https://yugipedia.com/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=LOB%7CETCO
   ```
