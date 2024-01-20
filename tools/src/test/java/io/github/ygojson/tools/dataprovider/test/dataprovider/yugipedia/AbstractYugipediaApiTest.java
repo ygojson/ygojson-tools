@@ -1,8 +1,10 @@
 package io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia;
 
-import java.io.IOException;
+import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
-import org.assertj.core.api.SoftAssertions;
+import java.io.IOException;
+import java.time.ZonedDateTime;
+
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
 
@@ -32,10 +34,15 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	@Test
-	void testQueryCategoryMembersByTimestamp() throws IOException {
+	void given_firstCall_when_queryCategoryMembersByTimestamp_then_responseOk()
+		throws IOException {
+		// given
+		final String gmcontinue = null;
+		// when
 		final Response<QueryResponse> cards =
-			doExecuteTestQueryCategoryMembersByTimestamp(null);
-		SoftAssertions.assertSoftly(softly -> {
+			doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
+		// then
+		assertSoftly(softly -> {
 			softly.assertThat(cards.code()).isEqualTo(200);
 			softly.assertThat(cards.body()).isNotNull();
 			softly
@@ -47,7 +54,9 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	@Test
-	void testQueryCategoryMembersByTimestampWithGmContinue() throws IOException {
+	void given_consecutive3calls_when_queryCategoryMembersByTimestamp_then_responseOk()
+		throws IOException {
+		// given/when
 		final Response<QueryResponse> firstResponse =
 			doExecuteTestQueryCategoryMembersByTimestamp(null);
 		String gmcontinue = firstResponse.body().getContinue().gcmcontinue();
@@ -56,7 +65,8 @@ public abstract class AbstractYugipediaApiTest {
 		gmcontinue = secondCall.body().getContinue().gcmcontinue();
 		final Response<QueryResponse> thirdCall =
 			doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
-		SoftAssertions.assertSoftly(softly -> {
+		// then
+		assertSoftly(softly -> {
 			softly.assertThat(secondCall.code()).isEqualTo(200);
 			softly.assertThat(secondCall.body()).isNotNull();
 			softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
@@ -67,24 +77,81 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	@Test
-	void testQueryRecentChanges() throws IOException {
+	void given_firstCall_when_queryRecentChanges_then_responseOk()
+		throws IOException {
+		// given
+		final ZonedDateTime startAt = null;
+		final String grccontinue = null;
+		// when
 		final Response<QueryResponse> recentChanges = getApi()
-			.queryRecentChanges(Limit.getDefault(), null, null)
+			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
 			.execute();
-		SoftAssertions.assertSoftly(softly -> {
+		// then
+		assertSoftly(softly -> {
 			softly.assertThat(recentChanges.code()).isEqualTo(200);
 			softly.assertThat(recentChanges.body()).isNotNull();
 		});
 	}
 
 	@Test
-	void testQueryPagesByTitle() throws IOException {
-		final Response<QueryResponse> sets = getApi()
-			.queryPagesByTitle(PipeSeparated.of("LOB", "ETCO"))
+	void given_consecutive3calls_when_queryRecentChanges_then_responseOk()
+		throws IOException {
+		// given
+		final ZonedDateTime startAt = null;
+		String grccontinue = null;
+		// when
+		final Response<QueryResponse> firstResponse = getApi()
+			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
 			.execute();
-		SoftAssertions.assertSoftly(softly -> {
+		grccontinue = firstResponse.body().getContinue().grccontinue();
+		final Response<QueryResponse> secondCall = getApi()
+			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
+			.execute();
+		grccontinue = secondCall.body().getContinue().grccontinue();
+		final Response<QueryResponse> thirdCall = getApi()
+			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
+			.execute();
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(secondCall.code()).isEqualTo(200);
+			softly.assertThat(secondCall.body()).isNotNull();
+			softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
+			softly.assertThat(thirdCall.code()).isEqualTo(200);
+			softly.assertThat(thirdCall.body()).isNotNull();
+			softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+		});
+	}
+
+	@Test
+	void given_callWithTitles_when_queryPagesByTitle_then_responseOk()
+		throws IOException {
+		// given
+		final PipeSeparated titles = PipeSeparated.of("LOB", "ETCO");
+		// when
+		final Response<QueryResponse> sets = getApi()
+			.queryPagesByTitle(titles)
+			.execute();
+		// then
+		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
 			softly.assertThat(sets.body()).isNotNull();
+		});
+	}
+
+	@Test
+	void given_callWithoutTitles_when_queryPagesByTitle_then_responseOk()
+		throws IOException {
+		// given
+		final PipeSeparated titles = null;
+		// when
+		final Response<QueryResponse> sets = getApi()
+			.queryPagesByTitle(null)
+			.execute();
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(sets.code()).isEqualTo(200);
+			softly.assertThat(sets.body()).isNotNull();
+			softly.assertThat(sets.body().batchcomplete()).isTrue();
 		});
 	}
 }
