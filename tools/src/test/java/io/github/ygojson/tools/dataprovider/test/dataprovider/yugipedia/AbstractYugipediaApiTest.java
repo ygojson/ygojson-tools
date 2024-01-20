@@ -3,6 +3,8 @@ package io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
 import java.io.IOException;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
@@ -35,8 +37,15 @@ public abstract class AbstractYugipediaApiTest {
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		String grccontinue
 	) throws IOException {
+		return doExecuteTestQueryRecentChanges(null, grccontinue);
+	}
+
+	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
+		final ZonedDateTime startAt,
+		final String grccontinue
+	) throws IOException {
 		return getApi()
-			.queryRecentChanges(Limit.getDefault(), null, grccontinue)
+			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
 			.execute();
 	}
 
@@ -122,6 +131,31 @@ public abstract class AbstractYugipediaApiTest {
 			softly.assertThat(thirdCall.code()).isEqualTo(200);
 			softly.assertThat(thirdCall.body()).isNotNull();
 			softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+		});
+	}
+
+	@Test
+	void given_callWithStartAtDateTime_when_queryRecentChanges_then_responseOk()
+		throws IOException {
+		// given
+		final ZonedDateTime startAt = ZonedDateTime.of(
+			2024,
+			1,
+			1,
+			0,
+			0,
+			0,
+			0,
+			ZoneOffset.UTC
+		);
+		final String grccontinue = null;
+		// when
+		final Response<QueryResponse> recentChanges =
+			doExecuteTestQueryRecentChanges(startAt, grccontinue);
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(recentChanges.code()).isEqualTo(200);
+			softly.assertThat(recentChanges.body()).isNotNull();
 		});
 	}
 
