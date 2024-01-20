@@ -21,14 +21,26 @@ public abstract class AbstractYugipediaApiTest {
 	protected abstract YugipediaApi getApi();
 
 	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(
-		final String gmcontinue
+		final String grccontinue
 	) throws IOException {
 		return getApi()
 			.queryCategoryMembersByTimestamp(
 				Category.CARDS,
 				Limit.getDefault(),
 				SortDirection.NEWER,
-				gmcontinue
+				grccontinue
+			)
+			.execute();
+	}
+
+	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
+		String grccontinue
+	) throws IOException {
+		return getApi()
+			.queryRecentChanges(
+				Limit.getDefault(),
+				null,
+				grccontinue
 			)
 			.execute();
 	}
@@ -80,12 +92,9 @@ public abstract class AbstractYugipediaApiTest {
 	void given_firstCall_when_queryRecentChanges_then_responseOk()
 		throws IOException {
 		// given
-		final ZonedDateTime startAt = null;
 		final String grccontinue = null;
 		// when
-		final Response<QueryResponse> recentChanges = getApi()
-			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
-			.execute();
+		final Response<QueryResponse> recentChanges = doExecuteTestQueryRecentChanges(grccontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(recentChanges.code()).isEqualTo(200);
@@ -100,17 +109,11 @@ public abstract class AbstractYugipediaApiTest {
 		final ZonedDateTime startAt = null;
 		String grccontinue = null;
 		// when
-		final Response<QueryResponse> firstResponse = getApi()
-			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
-			.execute();
+		final Response<QueryResponse> firstResponse = doExecuteTestQueryRecentChanges(grccontinue);
 		grccontinue = firstResponse.body().getContinue().grccontinue();
-		final Response<QueryResponse> secondCall = getApi()
-			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
-			.execute();
+		final Response<QueryResponse> secondCall = doExecuteTestQueryRecentChanges(grccontinue);
 		grccontinue = secondCall.body().getContinue().grccontinue();
-		final Response<QueryResponse> thirdCall = getApi()
-			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
-			.execute();
+		final Response<QueryResponse> thirdCall = doExecuteTestQueryRecentChanges(grccontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(secondCall.code()).isEqualTo(200);
@@ -145,7 +148,7 @@ public abstract class AbstractYugipediaApiTest {
 		final PipeSeparated titles = null;
 		// when
 		final Response<QueryResponse> sets = getApi()
-			.queryPagesByTitle(null)
+			.queryPagesByTitle(titles)
 			.execute();
 		// then
 		assertSoftly(softly -> {
