@@ -24,7 +24,7 @@ import io.github.ygojson.tools.test.TestResourceUtils;
  */
 public class YugipediaMockServer implements Closeable {
 
-	private static final String BASE_RESOURCE_FOLDER = "yugipedia/requests/";
+	private static final String BASE_RESOURCE_FOLDER = "yugipedia/mockserver/";
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private final MockWebServer server;
