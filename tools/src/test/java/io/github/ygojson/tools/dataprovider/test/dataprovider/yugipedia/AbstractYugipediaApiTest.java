@@ -12,10 +12,7 @@ import retrofit2.Response;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.*;
 
 public abstract class AbstractYugipediaApiTest {
 
@@ -41,7 +38,7 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
-		final ZonedDateTime startAt,
+		final Timestamp startAt,
 		final String grccontinue
 	) throws IOException {
 		return getApi()
@@ -151,7 +148,7 @@ public abstract class AbstractYugipediaApiTest {
 		final String grccontinue = null;
 		// when
 		final Response<QueryResponse> recentChanges =
-			doExecuteTestQueryRecentChanges(startAt, grccontinue);
+			doExecuteTestQueryRecentChanges(Timestamp.of(startAt), grccontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(recentChanges.code()).isEqualTo(200);
