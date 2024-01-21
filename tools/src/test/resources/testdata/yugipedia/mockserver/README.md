@@ -37,6 +37,11 @@ In addition, the request path (without the host) is provided as a reference on w
   GET /api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions|categories&rvprop=content|timestamp&generator=recentchanges&grctype=new|edit|categorize&grctoponly=true&cllimit=max&grclimit=10&grccontinue=20240120022338%7C4675720
   ```
 
+* File: `67a629a6-9382-3b72-911c-cff00dfa55b5.json` - 21/01/2024
+  ```
+  GET /api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions|categories&rvprop=content|timestamp&generator=recentchanges&grctype=new|edit|categorize&grctoponly=true&cllimit=max&grclimit=10&grcstart=2024-01-01T00%3A00%3A00Z
+  ```
+
 ## queryPagesByTitle
 
 * File: `cf797f99-25fd-3695-87c4-78e14cf0fe66.json` - batchcomplete (no titles), should be always the same
