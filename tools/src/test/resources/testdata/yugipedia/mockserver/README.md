@@ -53,3 +53,8 @@ In addition, the request path (without the host) is provided as a reference on w
   ```
   GET https://yugipedia.com/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=LOB%7CETCO
   ```
+
+* File: `b36f61f5-0725-3ba7-ba4a-0045ea5e1108.json` - missing title, should be always the same
+  ```
+  GET /api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=Does%20not%20exists
+  ```
