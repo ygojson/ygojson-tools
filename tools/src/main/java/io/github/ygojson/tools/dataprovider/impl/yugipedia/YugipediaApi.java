@@ -41,6 +41,7 @@ public interface YugipediaApi {
 	 *
 	 * @param resultsPerQuery the number of results per-query.
 	 * @param startAt         initial date to start requesting rencent changes.
+	 * @param endAt           final date to stop requesting rencent changes.
 	 * @param grccontinue     continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
 	 */
@@ -58,6 +59,7 @@ public interface YugipediaApi {
 	public Call<QueryResponse> queryRecentChanges(
 		@Query("grclimit") Limit resultsPerQuery,
 		@Query("grcstart") Timestamp startAt,
+		@Query("grcend") Timestamp endAt,
 		@Query("grccontinue") String grccontinue
 	);
 

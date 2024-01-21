@@ -34,15 +34,16 @@ public abstract class AbstractYugipediaApiTest {
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		String grccontinue
 	) throws IOException {
-		return doExecuteTestQueryRecentChanges(null, grccontinue);
+		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
 	}
 
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		final Timestamp startAt,
+		final Timestamp endAt,
 		final String grccontinue
 	) throws IOException {
 		return getApi()
-			.queryRecentChanges(Limit.getDefault(), startAt, grccontinue)
+			.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
 			.execute();
 	}
 
@@ -148,7 +149,7 @@ public abstract class AbstractYugipediaApiTest {
 		final String grccontinue = null;
 		// when
 		final Response<QueryResponse> recentChanges =
-			doExecuteTestQueryRecentChanges(Timestamp.of(startAt), grccontinue);
+			doExecuteTestQueryRecentChanges(Timestamp.of(startAt), null, grccontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(recentChanges.code()).isEqualTo(200);
