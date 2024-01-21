@@ -173,6 +173,22 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	@Test
+	void given_callWithNotExistentTitle_when_queryPagesByTitle_then_responseOk()
+		throws IOException {
+		// given
+		final PipeSeparated titles = PipeSeparated.of("Does not exists");
+		// when
+		final Response<QueryResponse> sets = getApi()
+			.queryPagesByTitle(titles)
+			.execute();
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(sets.code()).isEqualTo(200);
+			softly.assertThat(sets.body()).isNotNull();
+		});
+	}
+
+	@Test
 	void given_callWithoutTitles_when_queryPagesByTitle_then_responseOk()
 		throws IOException {
 		// given
