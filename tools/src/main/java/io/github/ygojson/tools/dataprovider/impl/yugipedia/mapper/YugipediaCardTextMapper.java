@@ -1,8 +1,6 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -14,7 +12,9 @@ import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardText;
+import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.utils.data.CardUtils;
+import io.github.ygojson.model.utils.data.utils.LocalizationUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -155,26 +155,10 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		final CardText cardText = Optional
-			.ofNullable(mapToMainCardText(cardTable2))
-			.orElse(new CardText());
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::lore,
-			c -> cardText,
-			any -> {} // NO-OP as it is ensured that it is always present
-		);
-		setMainCardText(card, cardText);
-	}
-
-	private void setMainCardText(final Card card, final CardText cardText) {
-		if (cardText != null) {
-			card.setName(cardText.getName());
-			card.setEffectText(cardText.getEffectText());
-			card.setFlavorText(cardText.getFlavorText());
-			card.setMaterials(cardText.getMaterials());
-			card.setPendulumEffect(cardText.getPendulumEffect());
-		}
+		// set the initial card text
+		LocalizationUtils.setAsMainLanguage(card, mapToMainCardText(cardTable2));
+		// update the cardText and set it
+		updateCardTextWithFullLore(card, cardTable2::lore, Language.EN);
 	}
 
 	@AfterMapping
@@ -182,12 +166,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::es_lore,
-			c -> c.getLocalizedData().getEs(),
-			cardText -> card.getLocalizedData().setEs(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::es_lore, Language.ES);
 	}
 
 	@AfterMapping
@@ -195,12 +174,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::de_lore,
-			c -> c.getLocalizedData().getDe(),
-			cardText -> card.getLocalizedData().setDe(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::de_lore, Language.DE);
 	}
 
 	@AfterMapping
@@ -208,12 +182,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::fr_lore,
-			c -> c.getLocalizedData().getFr(),
-			cardText -> card.getLocalizedData().setFr(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::fr_lore, Language.FR);
 	}
 
 	@AfterMapping
@@ -221,12 +190,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::it_lore,
-			c -> c.getLocalizedData().getIt(),
-			cardText -> card.getLocalizedData().setIt(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::it_lore, Language.IT);
 	}
 
 	@AfterMapping
@@ -234,12 +198,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::ja_lore,
-			c -> c.getLocalizedData().getJa(),
-			cardText -> card.getLocalizedData().setJa(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::ja_lore, Language.JA);
 	}
 
 	@AfterMapping
@@ -247,12 +206,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::ko_lore,
-			c -> c.getLocalizedData().getKo(),
-			cardText -> card.getLocalizedData().setKo(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::ko_lore, Language.KO);
 	}
 
 	@AfterMapping
@@ -260,12 +214,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::pt_lore,
-			c -> c.getLocalizedData().getPt(),
-			cardText -> card.getLocalizedData().setPt(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::pt_lore, Language.PT);
 	}
 
 	@AfterMapping
@@ -273,12 +222,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::sc_lore,
-			c -> c.getLocalizedData().getZhHans(),
-			cardText -> card.getLocalizedData().setZhHans(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::sc_lore, Language.ZH_HANS);
 	}
 
 	@AfterMapping
@@ -286,12 +230,7 @@ class YugipediaCardTextMapper {
 		final CardTable2 cardTable2,
 		@MappingTarget final Card card
 	) {
-		updateCardTextWithFullLore(
-			card,
-			cardTable2::tc_lore,
-			c -> c.getLocalizedData().getZhHant(),
-			cardText -> card.getLocalizedData().setZhHant(cardText)
-		);
+		updateCardTextWithFullLore(card, cardTable2::tc_lore, Language.ZH_HANT);
 	}
 
 	/**
@@ -300,25 +239,23 @@ class YugipediaCardTextMapper {
 	 *
 	 * @param card the already mapped Card.
 	 * @param fullLoreSupplier supplier for the lore (coming from the CardTable2 language-specific field).
-	 * @param cardTextGetter getter for the CardText to update (main or language specific).
-	 * @param cardTextSetter setter for the CardText to add if it wasn't present (main or language specific).
+	 * @param language the language to set the CardText in.
 	 */
 	private void updateCardTextWithFullLore(
 		final Card card,
 		final Supplier<MarkupString> fullLoreSupplier,
-		final Function<Card, CardText> cardTextGetter,
-		final Consumer<CardText> cardTextSetter
+		final Language language
 	) {
 		final MarkupString fullLore = fullLoreSupplier.get();
-		CardText cardText = cardTextGetter.apply(card);
+		CardText cardText = LocalizationUtils.getLocalizedData(language, card);
 		if (fullLore == null || fullLore.toString() == null) {
 			return;
 		}
 		if (cardText == null) {
 			cardText = new CardText();
-			cardTextSetter.accept(cardText);
 		}
 		doUpdateCardText(fullLoreSupplier.get(), card, cardText);
+		LocalizationUtils.setLocalizedData(card, cardText, language);
 	}
 
 	/**
