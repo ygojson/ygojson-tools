@@ -11,13 +11,22 @@ import io.github.ygojson.model.data.definition.localization.CardLocalizedData;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
 
+/**
+ * Utility methods to work with localized data.
+ * <br>
+ * <em>WARNING:</em> the main language considered in this class is {@link Language#EN}.
+ * In the case of requesting the localized data for the main-language, if the localized
+ * object is modified, they won't be reflected into the original object. Nevertheless,
+ * for the other languages changes would be modified on the original object.
+ */
 public class LocalizationUtils {
 
 	/**
 	 * Gets the localized {@link CardText} for the card.
 	 * <br>
 	 * Note that for {@link Language#EN} a populated {@link CardText} is returned
-	 * where changes will not affect the set.
+	 * where changes will not affect the original object. For other languages,
+	 * the original object will be modified if the returned object is changed.
 	 *
 	 * @param language language to get.
 	 * @param card card to extract the localized information.
@@ -53,7 +62,8 @@ public class LocalizationUtils {
 	 * Gets the localized {@link SetInfo} for the set.
 	 * <br>
 	 * Note that for {@link Language#EN} a populated {@link SetInfo} is returned
-	 * where changes will not affect the set.
+	 * where changes will not affect the original object. For other languages,
+	 * the original object will be modified if the returned object is changed.
 	 *
 	 * @param language language to get.
 	 * @param set set to extract the localized information.
@@ -87,6 +97,16 @@ public class LocalizationUtils {
 		};
 	}
 
+	/**
+	 * Sets the localized data for a card.
+	 * <br>
+	 * Note that for the main language, same behavior as
+	 * {@link #setAsMainLanguage(Card, CardText)} is expected.
+	 *
+	 * @param card the card to update
+	 * @param cardText the card-text to set
+	 * @param language the localization language
+	 */
 	public static void setLocalizedData(
 		final Card card,
 		final CardText cardText,
@@ -117,6 +137,16 @@ public class LocalizationUtils {
 		}
 	}
 
+	/**
+	 * Sets the localized data for a set.
+	 * <br>
+	 * Note that for the main language, same behavior as
+	 * {@link #setAsMainLanguage(Set, SetInfo)} is expected.
+	 *
+	 * @param set the set to update
+	 * @param setInfo the set-info to set
+	 * @param language the localization language
+	 */
 	public static void setLocalizedData(
 		final Set set,
 		final SetInfo setInfo,
