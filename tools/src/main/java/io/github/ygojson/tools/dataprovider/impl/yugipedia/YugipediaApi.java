@@ -1,16 +1,11 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia;
 
-import java.time.ZonedDateTime;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.*;
 
 /**
  * Represents the Yugipedia API calls used by YGOJSON.
@@ -46,6 +41,7 @@ public interface YugipediaApi {
 	 *
 	 * @param resultsPerQuery the number of results per-query.
 	 * @param startAt         initial date to start requesting rencent changes.
+	 * @param endAt           final date to stop requesting rencent changes.
 	 * @param grccontinue     continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
 	 */
@@ -62,7 +58,8 @@ public interface YugipediaApi {
 	)
 	public Call<QueryResponse> queryRecentChanges(
 		@Query("grclimit") Limit resultsPerQuery,
-		@Query("grcstart") ZonedDateTime startAt,
+		@Query("grcstart") Timestamp startAt,
+		@Query("grcend") Timestamp endAt,
 		@Query("grccontinue") String grccontinue
 	);
 

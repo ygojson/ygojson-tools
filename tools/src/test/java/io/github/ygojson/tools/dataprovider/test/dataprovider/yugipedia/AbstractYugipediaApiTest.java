@@ -3,6 +3,8 @@ package io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
 import java.io.IOException;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
@@ -10,10 +12,7 @@ import retrofit2.Response;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Category;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.PipeSeparated;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.SortDirection;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.*;
 
 public abstract class AbstractYugipediaApiTest {
 
@@ -35,8 +34,16 @@ public abstract class AbstractYugipediaApiTest {
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		String grccontinue
 	) throws IOException {
+		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
+	}
+
+	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
+		final Timestamp startAt,
+		final Timestamp endAt,
+		final String grccontinue
+	) throws IOException {
 		return getApi()
-			.queryRecentChanges(Limit.getDefault(), null, grccontinue)
+			.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
 			.execute();
 	}
 
@@ -126,10 +133,51 @@ public abstract class AbstractYugipediaApiTest {
 	}
 
 	@Test
+	void given_callWithStartAtDateTime_when_queryRecentChanges_then_responseOk()
+		throws IOException {
+		// given
+		final ZonedDateTime startAt = ZonedDateTime.of(
+			2024,
+			1,
+			1,
+			0,
+			0,
+			0,
+			0,
+			ZoneOffset.UTC
+		);
+		final String grccontinue = null;
+		// when
+		final Response<QueryResponse> recentChanges =
+			doExecuteTestQueryRecentChanges(Timestamp.of(startAt), null, grccontinue);
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(recentChanges.code()).isEqualTo(200);
+			softly.assertThat(recentChanges.body()).isNotNull();
+		});
+	}
+
+	@Test
 	void given_callWithTitles_when_queryPagesByTitle_then_responseOk()
 		throws IOException {
 		// given
 		final PipeSeparated titles = PipeSeparated.of("LOB", "ETCO");
+		// when
+		final Response<QueryResponse> sets = getApi()
+			.queryPagesByTitle(titles)
+			.execute();
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(sets.code()).isEqualTo(200);
+			softly.assertThat(sets.body()).isNotNull();
+		});
+	}
+
+	@Test
+	void given_callWithNotExistentTitle_when_queryPagesByTitle_then_responseOk()
+		throws IOException {
+		// given
+		final PipeSeparated titles = PipeSeparated.of("Does not exists");
 		// when
 		final Response<QueryResponse> sets = getApi()
 			.queryPagesByTitle(titles)
