@@ -1,0 +1,29 @@
+{
+  "name" : "The Lost Millennium",
+  "setCode" : "TLM",
+  "type" : "booster pack",
+  "series" : "core booster",
+  "localizedData" : {
+    "de" : {
+      "name" : "The Lost Millennium"
+    },
+    "es" : {
+      "name" : "El Milenio Perdido"
+    },
+    "fr" : {
+      "name" : "Le Millenaire Perdu"
+    },
+    "it" : {
+      "name" : "Il Millennio Perduto"
+    },
+    "ja" : {
+      "name" : "ザ・ロスト・ミレニアム"
+    },
+    "ko" : {
+      "name" : "잃어버린 천년"
+    },
+    "pt" : {
+      "name" : "O Milênio Perdido"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name" : "Yugi's Legendary Decks",
+  "setCode" : "YGLD",
+  "type" : "collector's set",
+  "localizedData" : {
+    "de" : {
+      "name" : "Yugi's Legendary Decks"
+    },
+    "es" : {
+      "name" : "Barajas Legendarias de Yugi"
+    },
+    "fr" : {
+      "name" : "Decks Légendaires de Yugi"
+    },
+    "it" : {
+      "name" : "I Deck Leggendari di Yugi"
+    },
+    "pt" : {
+      "name" : "Decks Lendários do Yugi"
+    }
+  }
+}

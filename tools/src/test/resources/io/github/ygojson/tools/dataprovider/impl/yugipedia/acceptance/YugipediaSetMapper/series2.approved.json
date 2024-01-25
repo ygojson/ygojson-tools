@@ -1,0 +1,11 @@
+{
+  "name" : "Magic Ruler",
+  "type" : "booster pack",
+  "series" : "core booster",
+  "localizedData" : {
+    "ja" : {
+      "name" : "<ruby>Ｍａｇｉｃ Ｒｕｌｅｒ<rt>マジック・ルーラー</rt></ruby> －<ruby>魔<rt>ま</rt></ruby><ruby>法<rt>ほう</rt></ruby>の<ruby>支<rt>し</rt></ruby><ruby>配<rt>はい</rt></ruby><ruby>者<rt>しゃ</rt></ruby>－",
+      "setCode" : "MR"
+    }
+  }
+}

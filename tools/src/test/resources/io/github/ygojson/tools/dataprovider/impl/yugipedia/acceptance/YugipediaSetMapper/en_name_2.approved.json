@@ -1,0 +1,28 @@
+{
+  "name" : "Spell Ruler",
+  "nameAlt" : "Magic Ruler",
+  "setCode" : "SRL",
+  "setCodeAlt" : "MRL",
+  "type" : "booster pack",
+  "series" : "core booster",
+  "localizedData" : {
+    "de" : {
+      "name" : "Spell Ruler"
+    },
+    "es" : {
+      "name" : "Señor de Hechizos",
+      "setCode" : "SDH"
+    },
+    "fr" : {
+      "name" : "Le Maître des Magies",
+      "setCode" : "MDM"
+    },
+    "it" : {
+      "name" : "Sovrano della Magia",
+      "setCode" : "SDM"
+    },
+    "ko" : {
+      "name" : "마법의 지배자"
+    }
+  }
+}
