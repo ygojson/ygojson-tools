@@ -3,6 +3,12 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Timestamp parameter for Yugipedia API.
+ * <br>
+ * Contains some convenience factory-methods to create yugipedia-formatted
+ * timestamps.
+ */
 public class Timestamp {
 
 	private String stringValue;
@@ -27,7 +33,7 @@ public class Timestamp {
 	 *
 	 * @return timestamp
 	 */
-	public static Timestamp of(ZonedDateTime zonedDateTime) {
+	public static Timestamp of(final ZonedDateTime zonedDateTime) {
 		final String timestamp = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(
 			zonedDateTime
 		);
