@@ -3,6 +3,8 @@ package io.github.ygojson.model.utils.data.utils;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.instancio.Select.all;
 
+import java.util.List;
+
 import org.instancio.Instancio;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,6 +19,15 @@ import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
 
 class LocalizationUtilsUnitTest {
+
+	@Test
+	void when_nonNullLanguages_then_doesNotContainEn() {
+		// when
+		final List<Language> nonMainLanguages =
+			LocalizationUtils.getNonMainLanguages();
+		// then
+		assertThat(nonMainLanguages).doesNotContain(Language.EN);
+	}
 
 	@ParameterizedTest
 	@EnumSource(Language.class)

@@ -51,9 +51,8 @@ public abstract class YugipediaSetInfoMapper {
 		);
 		LocalizationUtils.setAsMainLanguage(set, setInfo);
 		// cleanup duplicated non-main info
-		Arrays
-			.stream(Language.values())
-			.filter(language -> language != Language.EN) // TODO: this can go to language utils
+		LocalizationUtils
+			.getNonMainLanguages()
 			.forEach(language -> {
 				cleanupDuplicated(set, setInfo, language);
 			});
