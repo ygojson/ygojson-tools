@@ -1,5 +1,7 @@
 package io.github.ygojson.model.utils.data.utils;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
@@ -20,6 +22,20 @@ import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
  * for the other languages changes would be modified on the original object.
  */
 public class LocalizationUtils {
+
+	private static final List<Language> NON_MAIN_LANGUAGES = Arrays
+		.stream(Language.values())
+		.filter(language -> language != Language.EN)
+		.toList();
+
+	/**
+	 * Gets the languages that are not considered the main one.
+	 *
+	 * @return the list of non-main languages.
+	 */
+	public static List<Language> getNonMainLanguages() {
+		return NON_MAIN_LANGUAGES;
+	}
 
 	/**
 	 * Gets the localized {@link CardText} for the card.
