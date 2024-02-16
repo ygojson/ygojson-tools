@@ -13,6 +13,8 @@ public record Continue(
 
 	String grccontinue,
 
+	String geicontinue,
+
 	// should use jackson annotation as it is a reserved keyword
 	@JsonProperty("continue") String continueProperty
 ) {

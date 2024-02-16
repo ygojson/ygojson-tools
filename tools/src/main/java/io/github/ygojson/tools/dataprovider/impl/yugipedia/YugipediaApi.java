@@ -37,6 +37,28 @@ public interface YugipediaApi {
 	);
 
 	/**
+	 * Query all the pages on containing a given template.
+	 *
+	 * @param template template to request.
+	 * @param resultsPerQuery the number of results per-query.
+	 * @param geicontinue continue token (if {@code null} initial request.
+	 * @return the typed JSON response.
+	 */
+	@GET(
+		"api.php?action=query" +
+		"&format=json&formatversion=2" +
+		"&redirects=true" +
+		"&prop=revisions" +
+		"&rvprop=content|timestamp" +
+		"&generator=embeddedin"
+	)
+	public Call<QueryResponse> queryPagesWithTemplate(
+		@Query("geititle") Template template,
+		@Query("geilimit") Limit resultsPerQuery,
+		@Query("geicontinue") String geicontinue
+	);
+
+	/**
 	 * Query all recent changes from the API.
 	 *
 	 * @param resultsPerQuery the number of results per-query.
