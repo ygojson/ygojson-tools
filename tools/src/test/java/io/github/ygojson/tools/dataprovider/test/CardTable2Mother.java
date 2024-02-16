@@ -5,6 +5,7 @@ import static org.instancio.Select.field;
 import java.util.List;
 
 import org.instancio.Instancio;
+import org.instancio.InstancioApi;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -16,6 +17,13 @@ public class CardTable2Mother {
 
 	private CardTable2Mother() {
 		// cannot be instantiated - mother class
+	}
+
+	private static InstancioApi<CardTable2> instacioWithValidNumerics() {
+		return Instancio
+			.of(CardTable2.class)
+			.set(field("database_id"), "329840923742")
+			.set(field("password"), "324236423");
 	}
 
 	/**
@@ -32,17 +40,21 @@ public class CardTable2Mother {
 		final String pendulumEffect,
 		final String lore
 	) {
-		return Instancio
-			.of(CardTable2.class)
+		return instacioWithValidNumerics()
 			.set(field("name"), name)
 			.set(field("pendulum_effect"), pendulumEffect)
 			.set(field("lore"), MarkupString.of(lore))
 			.create();
 	}
 
+	public static CardTable2 withCardType(final String cardType) {
+		return instacioWithValidNumerics()
+			.set(field("card_type"), cardType)
+			.create();
+	}
+
 	public static CardTable2 withoutSets() {
-		return Instancio
-			.of(CardTable2.class)
+		return instacioWithValidNumerics()
 			.ignore(field(CardTable2::en_sets))
 			.ignore(field(CardTable2::na_sets))
 			.ignore(field(CardTable2::eu_sets))
@@ -70,8 +82,7 @@ public class CardTable2Mother {
 	 * @return a random {@link CardTable2} with fixed data.
 	 */
 	public static CardTable2 withOnlyEnSets(final String enSets) {
-		return Instancio
-			.of(CardTable2.class)
+		return instacioWithValidNumerics()
 			.set(field(CardTable2::en_sets), List.of(MarkupString.of(enSets)))
 			.ignore(field(CardTable2::na_sets))
 			.ignore(field(CardTable2::eu_sets))
@@ -99,8 +110,7 @@ public class CardTable2Mother {
 	 * @return a random {@link CardTable2} with fixed data.
 	 */
 	public static CardTable2 withOnlySpSets(final String spSets) {
-		return Instancio
-			.of(CardTable2.class)
+		return instacioWithValidNumerics()
 			.ignore(field(CardTable2::en_sets))
 			.ignore(field(CardTable2::na_sets))
 			.ignore(field(CardTable2::eu_sets))
@@ -128,8 +138,7 @@ public class CardTable2Mother {
 	 * @return a random {@link CardTable2} with fixed data.
 	 */
 	public static CardTable2 withOnlyJaSets(final String jaSets) {
-		return Instancio
-			.of(CardTable2.class)
+		return instacioWithValidNumerics()
 			.ignore(field(CardTable2::en_sets))
 			.ignore(field(CardTable2::na_sets))
 			.ignore(field(CardTable2::eu_sets))
