@@ -15,6 +15,7 @@ import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.utils.data.utils.LocalizationUtils;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
@@ -249,7 +250,7 @@ public abstract class YugipediaSetInfoMapper {
 				setInfo.setSetCode(setCodes.getFirst());
 				setInfo.setSetCodeAlt(setCodes.get(1));
 			}
-			default -> throw new IllegalStateException(
+			default -> throw new YugipediaException(
 				"More than 2 set codes for set: " + setInfo
 			);
 		}
