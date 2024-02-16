@@ -114,6 +114,31 @@ class YugipediaPrintMapperUnitTest {
 					Region.EN
 				),
 				CardTable2Mother.withOnlyEnSets("TLM-EN035K; ; Ultra Rare")
+			),
+			// unreleased
+			// TODO: should we really consider these unreleased cards?
+			Arguments.of(
+				PrintMother.of(null, null, null, null, Language.EN, Region.EN),
+				CardTable2Mother.withOnlyEnSets("????-EN0??; Unknown Set; ")
+			),
+			Arguments.of(
+				PrintMother.of(null, "RA02", null, null, Language.EN, Region.EN),
+				CardTable2Mother.withOnlyEnSets(
+					"RA02-EN???; 25th Anniversary Rarity Collection II; "
+				)
+			),
+			Arguments.of(
+				PrintMother.of(
+					null,
+					"RA02",
+					null,
+					"super rare",
+					Language.EN,
+					Region.EN
+				),
+				CardTable2Mother.withOnlyEnSets(
+					"RA02-EN???; 25th Anniversary Rarity Collection II; Super Rare"
+				)
 			)
 		);
 	}
@@ -170,5 +195,23 @@ class YugipediaPrintMapperUnitTest {
 			Region.EN
 		);
 		assertThat(actual).singleElement().isEqualTo(expectedPrint);
+	}
+
+	@Test
+	void given_cardTable2WithPrintWithSeveralRarities_wwhen_mapToPrints_then_returnAll() {
+		// given
+		final CardTable2 cardTable2 = CardTable2Mother.withOnlyEnSets(
+			"MS-EN001; My set; Common, Rare"
+		);
+		// when
+		final List<Print> actual = MAPPER.mapToPrints(cardTable2);
+		// then
+		final List<Print> expected = Stream
+			.of("common", "rare")
+			.map(rarity ->
+				PrintMother.of("MS-EN001", "MS", 1, rarity, Language.EN, Region.EN)
+			)
+			.toList();
+		assertThat(actual).isEqualTo(expected);
 	}
 }
