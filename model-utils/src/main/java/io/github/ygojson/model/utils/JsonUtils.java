@@ -29,7 +29,7 @@ public class JsonUtils {
 	 *
 	 * @return object-mapper configured to be used with YGOJSON.
 	 */
-	private static ObjectMapper createObjectMapper() {
+	public static ObjectMapper createObjectMapper() {
 		final ObjectMapper mapper = new ObjectMapper();
 		mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 		mapper.registerModule(new JavaTimeModule());

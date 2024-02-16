@@ -24,6 +24,7 @@
         <jsonschema-generator.bom.version>4.33.1</jsonschema-generator.bom.version>
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <resilience4j.bom.version>2.2.0</resilience4j.bom.version>
+        <uuid-creator.version>5.3.7</uuid-creator.version>
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <!-- infrastructure dependencies -->
@@ -263,6 +264,18 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>com.github.f4b6a3</groupId>
+                <artifactId>uuid-creator</artifactId>
+                <version>${uuid-creator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dizitart</groupId>
+                <artifactId>nitrite-bom</artifactId>
+                <version>${nitrite.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             <!-- singular dependencies -->
             <dependency>
                 <groupId>com.squareup.retrofit2</groupId>
@@ -288,17 +301,6 @@
                 <groupId>info.picocli</groupId>
                 <artifactId>picocli-spring-boot-starter</artifactId>
                 <version>${picocli.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.dizitart</groupId>
-                <artifactId>nitrite</artifactId>
-                <version>${nitrite.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.h2database</groupId>
-                        <artifactId>h2-mvstore</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <!--TEST DEPENDENCIES-->
             <!-- singular dependencies -->

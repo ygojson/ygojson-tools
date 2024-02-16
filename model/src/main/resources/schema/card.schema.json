@@ -204,7 +204,8 @@
       "enum": [
         "monster",
         "spell",
-        "trap"
+        "trap",
+        "non-game"
       ]
     },
     "identifiers": {
