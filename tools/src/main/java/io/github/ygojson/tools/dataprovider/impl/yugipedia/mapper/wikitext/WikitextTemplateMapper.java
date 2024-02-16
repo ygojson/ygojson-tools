@@ -7,8 +7,6 @@ import java.util.stream.Collectors;
 
 import org.mapstruct.Mapper;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
-
 @Mapper
 public abstract class WikitextTemplateMapper {
 
@@ -51,11 +49,11 @@ public abstract class WikitextTemplateMapper {
 
 	/**
 	 * Maps a wikitext String with a possibly existing CardTable2
-	 * markup into a {@link CardTable2}.
+	 * markup into a Map with the found properties.
 	 *
 	 * @param wikitext wikitext to parse
 	 *
-	 * @return parsed model; {@code null} if CardTable2 markup is not present.
+	 * @return parsed properties; {@code null} if CardTable2 markup is not present.
 	 */
 	public Map<String, String> mapCardTable2Template(final String wikitext) {
 		return wikitextToMap(
@@ -65,6 +63,14 @@ public abstract class WikitextTemplateMapper {
 		);
 	}
 
+	/**
+	 * Maps a wikitext String with a possibly existing InfoBoxSet
+	 * markup into a Map with the found properties.
+	 *
+	 * @param wikitext wikitext to parse
+	 *
+	 * @return parsed properties; {@code null} if InfoBoxSet markup is not present.
+	 */
 	public Map<String, String> mapInfoboxSetTemplate(final String wikitext) {
 		return wikitextToMap(
 			INFOBOX_SET_CONTENT_PATTERN,
