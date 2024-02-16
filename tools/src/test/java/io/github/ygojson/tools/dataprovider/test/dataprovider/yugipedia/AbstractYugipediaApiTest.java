@@ -31,6 +31,14 @@ public abstract class AbstractYugipediaApiTest {
 			.execute();
 	}
 
+	private Response<QueryResponse> doExecuteTestQueryPagesWithTemplate(
+		final String geicontinue
+	) throws IOException {
+		return getApi()
+			.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue)
+			.execute();
+	}
+
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		String grccontinue
 	) throws IOException {
@@ -79,6 +87,50 @@ public abstract class AbstractYugipediaApiTest {
 		gmcontinue = secondCall.body().getContinue().gcmcontinue();
 		final Response<QueryResponse> thirdCall =
 			doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(secondCall.code()).isEqualTo(200);
+			softly.assertThat(secondCall.body()).isNotNull();
+			softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
+			softly.assertThat(thirdCall.code()).isEqualTo(200);
+			softly.assertThat(thirdCall.body()).isNotNull();
+			softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+		});
+	}
+
+	@Test
+	void given_firstCall_when_queryPagesWithTemplate_then_responseOk()
+		throws IOException {
+		// given
+		final String geicontinue = null;
+		// when
+		final Response<QueryResponse> sets = doExecuteTestQueryPagesWithTemplate(
+			geicontinue
+		);
+		// then
+		assertSoftly(softly -> {
+			softly.assertThat(sets.code()).isEqualTo(200);
+			softly.assertThat(sets.body()).isNotNull();
+			softly
+				.assertThat(sets.body().getContinue())
+				.isNotNull()
+				.extracting(Continue::geicontinue)
+				.isNotNull();
+		});
+	}
+
+	@Test
+	void given_consecutive3calls_when_queryPagesWithTemplate_then_responseOk()
+		throws IOException {
+		// given/when
+		final Response<QueryResponse> firstResponse =
+			doExecuteTestQueryPagesWithTemplate(null);
+		String geicontinue = firstResponse.body().getContinue().geicontinue();
+		final Response<QueryResponse> secondCall =
+			doExecuteTestQueryPagesWithTemplate(geicontinue);
+		geicontinue = secondCall.body().getContinue().geicontinue();
+		final Response<QueryResponse> thirdCall =
+			doExecuteTestQueryPagesWithTemplate(geicontinue);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(secondCall.code()).isEqualTo(200);
