@@ -9,6 +9,7 @@ import org.mapstruct.*;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardType;
 import io.github.ygojson.model.data.definition.LinkArrow;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 /**
@@ -188,6 +189,11 @@ public abstract class YugipediaCardMapper {
 	 * @return enum value
 	 */
 	protected CardType toCardTypeEnum(final String cardType) {
-		return CardType.valueOf(cardType.toUpperCase());
+		try {
+			return CardType.fromValue(cardType.toLowerCase());
+		} catch (final IllegalArgumentException e) {
+			// should not happen
+			throw new YugipediaException("Invalid card type: " + cardType);
+		}
 	}
 }
