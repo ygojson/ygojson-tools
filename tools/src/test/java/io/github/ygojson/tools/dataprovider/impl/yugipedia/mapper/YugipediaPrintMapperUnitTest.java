@@ -149,8 +149,7 @@ class YugipediaPrintMapperUnitTest {
 		final ThrowableAssert.ThrowingCallable throwingCallable = () ->
 			MAPPER.mapToPrints(cardTable2);
 		// then
-		assertThatThrownBy(throwingCallable)
-			.isInstanceOf(YugipediaException.class);
+		assertThatThrownBy(throwingCallable).isInstanceOf(YugipediaException.class);
 	}
 
 	@Test
