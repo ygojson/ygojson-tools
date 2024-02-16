@@ -15,6 +15,7 @@ import io.github.ygojson.model.data.definition.CardText;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.utils.data.CardUtils;
 import io.github.ygojson.model.utils.data.utils.LocalizationUtils;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -288,7 +289,7 @@ class YugipediaCardTextMapper {
 					effect = null;
 				}
 				case 0 -> {} // do nothing if the actual string is null/empty
-				default -> throw new IllegalStateException(
+				default -> throw new YugipediaException(
 					"should not happen: splitByBreak should return 0-2 items"
 				);
 			}

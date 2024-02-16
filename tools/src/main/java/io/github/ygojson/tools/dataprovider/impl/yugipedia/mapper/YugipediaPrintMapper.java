@@ -11,6 +11,7 @@ import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
@@ -86,7 +87,7 @@ public abstract class YugipediaPrintMapper {
 			.splitBySemicolon()
 			.toList();
 		if (fields.size() < EXPECTED_FIELD_NUMBER) {
-			throw new IllegalStateException(
+			throw new YugipediaException(
 				"Expected at least 3 fields per card-set print but found: " + fields
 			);
 		}

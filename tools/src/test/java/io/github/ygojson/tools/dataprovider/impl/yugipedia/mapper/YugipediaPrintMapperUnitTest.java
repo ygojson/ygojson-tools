@@ -16,6 +16,7 @@ import org.mapstruct.factory.Mappers;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.data.definition.localization.Region;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.test.CardTable2Mother;
 import io.github.ygojson.tools.test.PrintMother;
@@ -148,8 +149,7 @@ class YugipediaPrintMapperUnitTest {
 		final ThrowableAssert.ThrowingCallable throwingCallable = () ->
 			MAPPER.mapToPrints(cardTable2);
 		// then
-		assertThatThrownBy(throwingCallable)
-			.isInstanceOf(IllegalStateException.class);
+		assertThatThrownBy(throwingCallable).isInstanceOf(YugipediaException.class);
 	}
 
 	@Test
