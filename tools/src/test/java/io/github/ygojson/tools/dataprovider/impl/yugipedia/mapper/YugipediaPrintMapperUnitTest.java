@@ -116,7 +116,8 @@ class YugipediaPrintMapperUnitTest {
 				CardTable2Mother.withOnlyEnSets("TLM-EN035K; ; Ultra Rare")
 			),
 			// unreleased
-			// TODO: should we really consider these unreleased cards?
+			// FIXME - decide if we should really keep this kind of prints as only a link between card-set
+			// FIXME - https://github.com/ygojson/ygojson-tools/issues/5
 			Arguments.of(
 				PrintMother.of(null, null, null, null, Language.EN, Region.EN),
 				CardTable2Mother.withOnlyEnSets("????-EN0??; Unknown Set; ")
