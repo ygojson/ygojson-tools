@@ -26,6 +26,7 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
 )
 public abstract class YugipediaPrintMapper {
 
+	private static final int MINIMUM_FIELD_NUMBER = 2;
 	private static final int EXPECTED_FIELD_NUMBER = 3;
 
 	// 1st field: cardNumber - out printCode
@@ -86,16 +87,14 @@ public abstract class YugipediaPrintMapper {
 		final List<MarkupString> fields = cardTable2PrintLine
 			.splitBySemicolon()
 			.toList();
-		if (fields.size() < EXPECTED_FIELD_NUMBER) {
+		final int fieldNumber = fields.size();
+		if (fieldNumber < MINIMUM_FIELD_NUMBER) {
 			throw new YugipediaException(
 				"Expected at least 3 fields per card-set print but found: " + fields
 			);
 		}
 		final String cardNumberString = fields.get(CARD_NUMBER_FIELD).toString();
 		final String setName = fields.get(SET_NAME_FIELD).toString();
-		final Stream<MarkupString> rarities = fields
-			.get(RARITY_LIST_FIELD)
-			.splitByComma();
 		final Language language = langRegion.getLanguage();
 		// card without known print-number
 		final CardNumber cardNumber;
@@ -106,7 +105,13 @@ public abstract class YugipediaPrintMapper {
 			cardNumber =
 				cardNumberMapper.mapPrintCodeToCardNumber(cardNumberString, langRegion);
 		}
-
+		if (fieldNumber < EXPECTED_FIELD_NUMBER) {
+			// TODO: log a warning here as no rerity is found??
+			return Stream.of(mapToPrint(cardNumber, language, null));
+		}
+		final Stream<MarkupString> rarities = fields
+			.get(RARITY_LIST_FIELD)
+			.splitByComma();
 		return rarities.map(rarity ->
 			mapToPrint(cardNumber, language, rarity.toString())
 		);
