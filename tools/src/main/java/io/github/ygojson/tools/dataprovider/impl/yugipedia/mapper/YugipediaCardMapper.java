@@ -192,7 +192,6 @@ public abstract class YugipediaCardMapper {
 		try {
 			return CardType.fromValue(cardType.toLowerCase());
 		} catch (final IllegalArgumentException e) {
-			// should not happen
 			throw new YugipediaException("Invalid card type: " + cardType);
 		}
 	}
