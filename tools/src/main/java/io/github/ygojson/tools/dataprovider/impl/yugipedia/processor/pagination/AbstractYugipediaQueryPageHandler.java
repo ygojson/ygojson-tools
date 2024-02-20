@@ -3,8 +3,6 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination
 import java.io.IOException;
 import java.text.MessageFormat;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import retrofit2.Call;
 import retrofit2.Response;
 
@@ -21,7 +19,6 @@ import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 abstract class AbstractYugipediaQueryPageHandler<T>
 	implements PaginatorStreamFactory.PageHandler<QueryResponse> {
 
-	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private final YugipediaApi api;
 
 	AbstractYugipediaQueryPageHandler(final YugipediaApi api) {
