@@ -267,6 +267,8 @@
                 <groupId>org.dizitart</groupId>
                 <artifactId>nitrite-bom</artifactId>
                 <version>${nitrite.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
             <!-- singular dependencies -->
             <dependency>
