@@ -1,30 +1,28 @@
 package io.github.ygojson.tools.dataprovider.impl.repository.nitrite;
 
-import java.util.Optional;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-
+import io.github.ygojson.tools.dataprovider.domain.repository.RepositoryException;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.collection.FindOptions;
 import org.dizitart.no2.exceptions.NitriteException;
 import org.dizitart.no2.filters.Filter;
 import org.dizitart.no2.filters.FluentFilter;
 import org.dizitart.no2.repository.Cursor;
-import org.dizitart.no2.repository.EntityDecorator;
 import org.dizitart.no2.repository.ObjectRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.tools.dataprovider.domain.repository.RepositoryException;
+import java.util.Optional;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class NitriteRepository<T> implements AutoCloseable {
 
 	private final Logger log = LoggerFactory.getLogger(NitriteRepository.class);
 
 	private final Nitrite nitrite;
-	private final EntityDecorator<T> entityDecorator;
+	private final InternalModelEntityDecorator<T> entityDecorator;
 
-	public NitriteRepository(final Nitrite nitrite, final EntityDecorator<T> entityDecorator) {
+	public NitriteRepository(final Nitrite nitrite, final InternalModelEntityDecorator<T> entityDecorator) {
 		this.nitrite = nitrite;
 		this.entityDecorator = entityDecorator;
 	}
@@ -66,53 +64,38 @@ public class NitriteRepository<T> implements AutoCloseable {
 
 	private Stream<T> findAll(final FindOptions options) {
 		try {
-			return StreamSupport.stream(getRepository(nitrite).find(options).spliterator(), false);
+			return cursorToStream(getRepository(nitrite).find(options));
 		} catch (final NitriteException e) {
 			log.error("Failed to find all entities", e);
 			throw new RepositoryException("Failed to find all entities", e);
 		}
 	}
 
-	private Cursor<T> internalFindBy(final Filter filter, final FindOptions options) {
+	private Cursor<T> internalFindBy(final Filter filter) {
 		try {
-			return getRepository(nitrite).find(filter, options);
-		} catch (final NitriteException e) {
-			log.error("Failed to find entity by {} with options {}", filter, options, e);
-			throw new RepositoryException("Failed to find entity by " + filter, e);
-		}
-	}
-
-	public Optional<T> findFirstBy(final String property, final Object value) throws RepositoryException {
-		assertNotNull(property, "property cannot be null");
-		assertNotNull(value, "value cannot be null");
-		return findFirstBy(FluentFilter.where(property).eq(value));
-	}
-
-	public Optional<T> findFirstBy(final Filter filter) throws RepositoryException {
-		assertNotNull(filter, "filter cannot be null");
-		try {
-			final T found = internalFindBy(filter, null).firstOrNull();
-			return Optional.ofNullable(found);
-		} catch (final NitriteException e) {
-			log.error("Failed to find first entity by {}", filter, e);
-			throw new RepositoryException("Failed to find first entity by " + filter, e);
-		}
-	}
-
-	public Stream<T> findBy(final String property, final Object value) throws RepositoryException {
-		assertNotNull(property, "property cannot be null");
-		assertNotNull(value, "value cannot be null");
-		return findBy(FluentFilter.where(property).eq(value));
-	}
-
-	public Stream<T> findBy(final Filter filter) throws RepositoryException {
-		assertNotNull(filter, "filter cannot be null");
-		try {
-			return StreamSupport.stream(internalFindBy(filter, null).spliterator(), false);
+			return getRepository(nitrite).find(filter);
 		} catch (final NitriteException e) {
 			log.error("Failed to find entity by {}", filter, e);
 			throw new RepositoryException("Failed to find entity by " + filter, e);
 		}
+	}
+
+	public Optional<T> findFirstModelBy(final String property, final Object value) throws RepositoryException {
+		assertNotNull(property, "property cannot be null");
+		assertNotNull(value, "value cannot be null");
+		final T entity = internalFindBy(FluentFilter.where(entityDecorator.getModelProperty(property)).eq(value)).firstOrNull();
+		return Optional.ofNullable(entity);
+	}
+
+	public Stream<T> findModelBy(final String property, final Object value) throws RepositoryException {
+		assertNotNull(property, "property cannot be null");
+		assertNotNull(value, "value cannot be null");
+		final Cursor<T> cursor = internalFindBy(FluentFilter.where(entityDecorator.getModelProperty(property)).eq(value));
+		return cursorToStream(cursor);
+	}
+
+	private Stream<T> cursorToStream(final Cursor<T> cursor) {
+		return StreamSupport.stream(cursor.spliterator(), false);
 	}
 
 	public void update(T entity) throws RepositoryException {

@@ -1,10 +1,11 @@
-package io.github.ygojson.tools.dataprovider.domain.repository;
+package io.github.ygojson.tools.dataprovider.domain.repository.set;
+
+import io.github.ygojson.model.data.Set;
+import io.github.ygojson.tools.dataprovider.domain.repository.RepositoryException;
 
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Stream;
-
-import io.github.ygojson.model.data.Set;
 
 public interface SetRepository extends AutoCloseable {
 
@@ -18,16 +19,16 @@ public interface SetRepository extends AutoCloseable {
 	 * @throws RepositoryException if the same set if the {@link Set#getId()}
 	 *                             is {@code null} or already present in the repository.
 	 */
-	void save(Set set) throws RepositoryException;
+	void save(SetEntity entity) throws RepositoryException;
 
 	/**
 	 * Search all the sets in the repository.
 	 *
 	 * @return all the sets
 	 */
-	Stream<Set> findAll();
+	Stream<SetEntity> findAll();
 
-	Optional<Set> findById(UUID id);
+	Optional<SetEntity> findById(UUID id);
 
 	/**
 	 * Search a set by name.
@@ -38,17 +39,17 @@ public interface SetRepository extends AutoCloseable {
 	 *
 	 * @return set if found; {@link Optional#empty()} otherwise.
 	 */
-	Optional<Set> findByName(String name);
+	Optional<SetEntity> findByName(String name);
 
 	/**
 	 * Search a set by set-code.
 	 * <br>
-	 * Includes {@link Set#getSetCode()} ()} and {@link Set#getSetCodeAlt()}.
+	 * Includes {@link Set#getSetCode()} and {@link Set#getSetCodeAlt()}.
 	 *
 	 * @param code the set-code to search for.
 	 *
 	 * @return set if found; {@link Optional#empty()} otherwise.
 	 */
-	Optional<Set> findBySetCode(String code);
+	Optional<SetEntity> findBySetCode(String code);
 
 }

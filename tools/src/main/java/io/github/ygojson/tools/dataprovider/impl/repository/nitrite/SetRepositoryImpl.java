@@ -1,23 +1,28 @@
 package io.github.ygojson.tools.dataprovider.impl.repository.nitrite;
 
-import static io.github.ygojson.tools.dataprovider.impl.repository.nitrite.SetEntityDecorator.SetWrapper;
-import static io.github.ygojson.tools.dataprovider.impl.repository.nitrite.SetEntityDecorator.getProperty;
+import io.github.ygojson.tools.dataprovider.domain.repository.set.SetEntity;
+import io.github.ygojson.tools.dataprovider.domain.repository.set.SetRepository;
+import org.dizitart.no2.Nitrite;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Stream;
 
-import org.dizitart.no2.Nitrite;
-
-import io.github.ygojson.model.data.Set;
-import io.github.ygojson.tools.dataprovider.domain.repository.SetRepository;
-
 public class SetRepositoryImpl implements SetRepository {
 
-	private final NitriteRepository<SetWrapper> nitriteRepository;
+	private final NitriteRepository<SetEntity> nitriteRepository;
 
 	public SetRepositoryImpl(final Nitrite nitrite) {
-		this.nitriteRepository = new NitriteRepository<>(nitrite, new SetEntityDecorator());
+		this.nitriteRepository = new NitriteRepository<>(nitrite, new InternalModelEntityDecorator<>(
+			SetEntity.class,
+			"set",
+			List.of(
+				"name",
+				"nameAlt",
+				"setCode",
+				"setCodeAlt"
+			)));
 	}
 
 	@Override
@@ -26,36 +31,32 @@ public class SetRepositoryImpl implements SetRepository {
 	}
 
 	@Override
-	public void save(Set set) {
-		nitriteRepository.insert(new SetWrapper(set));
+	public void save(SetEntity entity) {
+		nitriteRepository.insert(entity);
 	}
 
 	@Override
-	public Stream<Set> findAll() {
-		return nitriteRepository.findAll()
-			.map(SetWrapper::set);
+	public Stream<SetEntity> findAll() {
+		return nitriteRepository.findAll();
 	}
 
 	@Override
-	public Optional<Set> findById(UUID id) {
-		return nitriteRepository.findFirstBy(getProperty("id"), id)
-			.map(SetWrapper::set);
+	public Optional<SetEntity> findById(UUID id) {
+		return nitriteRepository.findFirstModelBy("set.id", id);
 	}
 
 	@Override
-	public Optional<Set> findByName(String name) {
+	public Optional<SetEntity> findByName(String name) {
 		return nitriteRepository
-			.findFirstBy(getProperty("name"), name)
-			.or(() -> nitriteRepository.findFirstBy(getProperty("nameAlt"), name))
-			.map(SetWrapper::set);
+			.findFirstModelBy("set.name", name)
+			.or(() -> nitriteRepository.findFirstModelBy("set.nameAlt", name));
 	}
 
 	@Override
-	public Optional<Set> findBySetCode(String code) {
+	public Optional<SetEntity> findBySetCode(String code) {
 		return nitriteRepository
-			.findFirstBy(getProperty("setCode"), code)
-			.or(() -> nitriteRepository.findFirstBy(getProperty("setCodeAlt"), code))
-			.map(SetWrapper::set);
+			.findFirstModelBy("set.setCode", code)
+			.or(() -> nitriteRepository.findFirstModelBy("set.setCodeAlt", code));
 	}
 
 	@Override

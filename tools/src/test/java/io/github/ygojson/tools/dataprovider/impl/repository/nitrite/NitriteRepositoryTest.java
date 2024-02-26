@@ -1,18 +1,8 @@
 package io.github.ygojson.tools.dataprovider.impl.repository.nitrite;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.instancio.Select.field;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
+import io.github.ygojson.tools.dataprovider.domain.repository.RepositoryException;
 import org.assertj.core.api.ThrowableAssert;
 import org.dizitart.no2.Nitrite;
-import org.dizitart.no2.common.mapper.JacksonMapperModule;
 import org.dizitart.no2.index.IndexType;
 import org.dizitart.no2.repository.EntityDecorator;
 import org.dizitart.no2.repository.EntityId;
@@ -24,7 +14,15 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.tools.dataprovider.domain.repository.RepositoryException;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.instancio.Select.field;
 
 class NitriteRepositoryTest {
 
@@ -34,7 +32,7 @@ class NitriteRepositoryTest {
 
 	@BeforeEach
 	void beforeEach() {
-		final Nitrite nitrite = Nitrite.builder().loadModule(new JacksonMapperModule()).openOrCreate();
+		final Nitrite nitrite = NitriteBaseBuilderFactory.create().openOrCreate();
 		nitriteRepository = new NitriteRepository<>(nitrite, new TestEntityDecorator());
 	}
 
@@ -111,7 +109,7 @@ class NitriteRepositoryTest {
 		final TestEntity testEntity = Instancio.create(TestEntity.class);
 		nitriteRepository.insert(testEntity);
 		// when
-		final Optional<TestEntity> testEntityFound = nitriteRepository.findFirstBy("id", testEntity.id);
+		final Optional<TestEntity> testEntityFound = nitriteRepository.findFirstModelBy("id", testEntity.id);
 		// then
 		assertThat(testEntityFound)
 			.get()
@@ -124,13 +122,13 @@ class NitriteRepositoryTest {
 		final TestEntity testEntity = Instancio.create(TestEntity.class);
 		nitriteRepository.insert(testEntity);
 		// when
-		final Optional<TestEntity> testEntityFound = nitriteRepository.findFirstBy("id", UUID.randomUUID());
+		final Optional<TestEntity> testEntityFound = nitriteRepository.findFirstModelBy("id", UUID.randomUUID());
 		// then
 		assertThat(testEntityFound).isEmpty();
 	}
 
 	@Test
-	void given_severalExistingEntities_when_findBy_then_entityIsReturned() {
+	void given_severalExistingEntities_when_findBy_then_entitiesAreReturned() {
 		// given
 		final String stringValue = "Test String To Find";
 		IntStream.range(0, 10)
@@ -138,7 +136,7 @@ class NitriteRepositoryTest {
 					.set(field("stringValue"), stringValue).create())
 			   .forEach(nitriteRepository::insert);
 		// when
-		final Stream<TestEntity> testEntityFound = nitriteRepository.findBy("stringValue", stringValue);
+		final Stream<TestEntity> testEntityFound = nitriteRepository.findModelBy("stringValue", stringValue);
 		// then
 		assertThat(testEntityFound)
 			.hasSize(10)
@@ -185,7 +183,6 @@ class NitriteRepositoryTest {
 		public List<EntityIndex> getIndexFields() {
 			return List.of(
 				new EntityIndex(IndexType.UNIQUE, "id"),
-				new EntityIndex(IndexType.FULL_TEXT, "stringValue"),
 				new EntityIndex(IndexType.NON_UNIQUE, "stringValue"),
 				new EntityIndex(IndexType.NON_UNIQUE, "integerValue")
 			);

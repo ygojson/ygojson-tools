@@ -1,14 +1,12 @@
 package io.github.ygojson.tools.dataprovider.domain.repository;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.instancio.Select.field;
-
-import java.util.Optional;
-
+import io.github.ygojson.model.data.Set;
+import io.github.ygojson.tools.dataprovider.domain.repository.set.SetEntity;
+import io.github.ygojson.tools.dataprovider.domain.repository.set.SetRepository;
+import io.github.ygojson.tools.dataprovider.impl.repository.nitrite.NitriteBaseBuilderFactory;
+import io.github.ygojson.tools.dataprovider.impl.repository.nitrite.SetRepositoryImpl;
 import org.assertj.core.api.ThrowableAssert;
 import org.dizitart.no2.Nitrite;
-import org.dizitart.no2.common.mapper.JacksonMapperModule;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,8 +14,13 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.ygojson.model.data.Set;
-import io.github.ygojson.tools.dataprovider.impl.repository.nitrite.SetRepositoryImpl;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.util.Optional;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.instancio.Select.field;
 
 class SetRepositoryImplTest {
 
@@ -27,7 +30,7 @@ class SetRepositoryImplTest {
 
 	@BeforeEach
 	void beforeEach() {
-		final Nitrite nitrite = Nitrite.builder().loadModule(new JacksonMapperModule()).openOrCreate();
+		final Nitrite nitrite = NitriteBaseBuilderFactory.create().openOrCreate();
 		setNitriteRepository = new SetRepositoryImpl(nitrite);
 	}
 
@@ -43,21 +46,21 @@ class SetRepositoryImplTest {
 	@Test
 	void given_emptySetRepository_when_saveSet_thenRepositoryCountIsOne() {
 		// given
-		final Set set = Instancio.create(Set.class);
+		final SetEntity entity = Instancio.create(SetEntity.class);
 		// when
-		setNitriteRepository.save(set);
+		setNitriteRepository.save(entity);
 		// then
 		assertThat(setNitriteRepository.count()).isEqualTo(1);
 	}
 
 	@Test
-	void given_emptySetRepository_when_saveSetWithoutId_then_throwsRepositoryException() {
+	void given_emptySetRepository_when_saveSetWithoutInternalUUID_then_throwsRepositoryException() {
 		// given
-		final Set set = Instancio.of(Set.class)
-			.set(field("id"), null)
+		final SetEntity entity = Instancio.of(SetEntity.class)
+			.set(field("_uuid"), null)
 			.create();
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(set);
+		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(entity);
 		// then
 		assertThatThrownBy(callable).isInstanceOf(RepositoryException.class);
 	}
@@ -66,10 +69,33 @@ class SetRepositoryImplTest {
 	@Test
 	void given_setWasSaved_when_saveSameSet_then_throwsRepositoryException() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(set);
+		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(entity);
+		// then
+		assertThatThrownBy(callable).isInstanceOf(RepositoryException.class);
+	}
+
+	@Test
+	void given_setWasSaved_when_saveSetWithSameInternalUUID_then_throwsRepositoryException() {
+		// given
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
+		final SetEntity withSameInternalUUID = new SetEntity(entity._uuid(), new Set(), ZonedDateTime.now(ZoneOffset.UTC));
+		// when
+		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(withSameInternalUUID);
+		// then
+		assertThatThrownBy(callable).isInstanceOf(RepositoryException.class);
+	}
+
+	@Test
+	void given_setWasSaved_when_saveSameSetWithDifferentUUID_then_throwsRepositoryException() {
+		// given
+		final Set set = Instancio.create(Set.class);
+		setNitriteRepository.save(new SetEntity(set));
+		// when
+		final ThrowableAssert.ThrowingCallable callable = () -> setNitriteRepository.save(new SetEntity(set));
 		// then
 		assertThatThrownBy(callable).isInstanceOf(RepositoryException.class);
 	}
@@ -77,36 +103,36 @@ class SetRepositoryImplTest {
 	@Test
 	void given_setWasSaved_when_findByNameWithName_then_returnCorrectSet() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findByName(set.getName());
+		final Optional<SetEntity> foundSet = setNitriteRepository.findByName(entity.set().getName());
 		// then
 		assertThat(foundSet)
 			.get()
-			.isEqualTo(set);
+			.isEqualTo(entity);
 	}
 
 	@Test
 	void given_setWasSaved_when_findByNameWithAltName_then_returnCorrectSet() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findByName(set.getNameAlt());
+		final Optional<SetEntity> foundSet = setNitriteRepository.findByName(entity.set().getNameAlt());
 		// then
 		assertThat(foundSet)
 			.get()
-			.isEqualTo(set);
+			.isEqualTo(entity);
 	}
 
 	@Test
 	void given_setWasSaved_when_findByNameWithNotPresent_then_returnEmpty() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findByName("test");
+		final Optional<SetEntity> foundSet = setNitriteRepository.findByName("test");
 		// then
 		assertThat(foundSet)
 			.isEmpty();
@@ -115,36 +141,36 @@ class SetRepositoryImplTest {
 	@Test
 	void given_setWasSaved_when_findBySetCodeWithSetCode_then_returnCorrectSet() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findBySetCode(set.getSetCode());
+		final Optional<SetEntity> foundSet = setNitriteRepository.findBySetCode(entity.set().getSetCode());
 		// then
 		assertThat(foundSet)
 			.get()
-			.isEqualTo(set);
+			.isEqualTo(entity);
 	}
 
 	@Test
 	void given_setWasSaved_when_findBySetCodeWithAltSetCode_then_returnCorrectSet() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findBySetCode(set.getSetCodeAlt());
+		final Optional<SetEntity> foundSet = setNitriteRepository.findBySetCode(entity.set().getSetCodeAlt());
 		// then
 		assertThat(foundSet)
 			.get()
-			.isEqualTo(set);
+			.isEqualTo(entity);
 	}
 
 	@Test
 	void given_setWasSaved_when_findBySetCodeWithNotPresentSetCode_then_returnEmpty() {
 		// given
-		final Set set = Instancio.create(Set.class);
-		setNitriteRepository.save(set);
+		final SetEntity entity = Instancio.create(SetEntity.class);
+		setNitriteRepository.save(entity);
 		// when
-		final Optional<Set> foundSet = setNitriteRepository.findBySetCode("test");
+		final Optional<SetEntity> foundSet = setNitriteRepository.findBySetCode("test");
 		// then
 		assertThat(foundSet)
 			.isEmpty();

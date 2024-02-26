@@ -1,12 +1,13 @@
 package io.github.ygojson.tools;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.tools.common.ApplicationInfo;
+import io.github.ygojson.tools.dataprovider.impl.repository.nitrite.NitriteBaseBuilderFactory;
+import org.dizitart.no2.Nitrite;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import io.github.ygojson.model.utils.JsonUtils;
-import io.github.ygojson.tools.common.ApplicationInfo;
 
 /**
  * Application configuration.
@@ -35,5 +36,11 @@ public class AppConfiguration {
 		@Value("${application.url:https://ygojson.github.io}") final String url
 	) {
 		return new ApplicationInfo(title, version, url);
+	}
+
+	@Bean
+	public Nitrite nitrite() {
+		return NitriteBaseBuilderFactory.create()
+			.openOrCreate();
 	}
 }
