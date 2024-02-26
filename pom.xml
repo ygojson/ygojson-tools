@@ -27,6 +27,7 @@
         <retrofit.version>2.9.0</retrofit.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <!-- infrastructure dependencies -->
+        <uuid-creator.version>5.3.7</uuid-creator.version>
         <spring-boot-dependencies.bom.version>3.2.2</spring-boot-dependencies.bom.version>
         <picocli.version>4.7.5</picocli.version>
         <nitrite.bom.version>4.2.1</nitrite.bom.version>
@@ -295,6 +296,11 @@
                 <groupId>info.picocli</groupId>
                 <artifactId>picocli-spring-boot-starter</artifactId>
                 <version>${picocli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.f4b6a3</groupId>
+                <artifactId>uuid-creator</artifactId>
+                <version>${uuid-creator.version}</version>
             </dependency>
             <!--TEST DEPENDENCIES-->
             <!-- singular dependencies -->
