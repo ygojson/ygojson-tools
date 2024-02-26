@@ -1,18 +1,19 @@
 package io.github.ygojson.tools.dataprovider.domain.uuid;
 
-import io.github.ygojson.model.data.Card;
-import io.github.ygojson.model.data.Print;
-import io.github.ygojson.model.data.Set;
-import org.assertj.core.api.ThrowableAssert;
-import org.instancio.Instancio;
-import org.junit.jupiter.api.Test;
-
-import java.util.UUID;
-
 import static io.github.ygojson.tools.dataprovider.domain.uuid.YgojsonIDGenerator.YgojsonID;
 import static io.github.ygojson.tools.dataprovider.test.YgojsonIDTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
+import java.util.UUID;
+
+import org.assertj.core.api.ThrowableAssert;
+import org.instancio.Instancio;
+import org.junit.jupiter.api.Test;
+
+import io.github.ygojson.model.data.Card;
+import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.data.Set;
 
 class YgojsonIDGeneratorTest {
 
@@ -41,10 +42,10 @@ class YgojsonIDGeneratorTest {
 		// given
 		Card card = null;
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> idGenerator.generate(card);
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			idGenerator.generate(card);
 		// then
-		assertThatThrownBy(callable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(callable).isInstanceOf(IllegalArgumentException.class);
 	}
 
 	@Test
@@ -53,10 +54,10 @@ class YgojsonIDGeneratorTest {
 		Card card = new Card();
 		card.setId(UUID.randomUUID());
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> idGenerator.generate(card);
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			idGenerator.generate(card);
 		// then
-		assertThatThrownBy(callable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(callable).isInstanceOf(IllegalArgumentException.class);
 	}
 
 	@Test
@@ -64,10 +65,10 @@ class YgojsonIDGeneratorTest {
 		// given
 		Set set = null;
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> idGenerator.generate(set);
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			idGenerator.generate(set);
 		// then
-		assertThatThrownBy(callable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(callable).isInstanceOf(IllegalArgumentException.class);
 	}
 
 	@Test
@@ -76,10 +77,10 @@ class YgojsonIDGeneratorTest {
 		Set set = new Set();
 		set.setId(UUID.randomUUID());
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> idGenerator.generate(set);
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			idGenerator.generate(set);
 		// then
-		assertThatThrownBy(callable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(callable).isInstanceOf(IllegalArgumentException.class);
 	}
 
 	@Test
@@ -87,10 +88,10 @@ class YgojsonIDGeneratorTest {
 		// given
 		Print print = null;
 		// when
-		final ThrowableAssert.ThrowingCallable callable = () -> idGenerator.generate(print);
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			idGenerator.generate(print);
 		// then
-		assertThatThrownBy(callable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(callable).isInstanceOf(IllegalArgumentException.class);
 	}
 
 	@Test
@@ -100,8 +101,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(card);
 		// then
-		assertThat(id.isRandom())
-			.isTrue();
+		assertThat(id.isRandom()).isTrue();
 	}
 
 	@Test
@@ -112,8 +112,7 @@ class YgojsonIDGeneratorTest {
 		final YgojsonID id = idGenerator.generate(card);
 		final YgojsonID id2 = idGenerator.generate(card);
 		// then
-		assertThat(id)
-			.isNotEqualTo(id2);
+		assertThat(id).isNotEqualTo(id2);
 	}
 
 	@Test
@@ -123,8 +122,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(card);
 		// then
-		assertThat(id.isRandom())
-			.isFalse();
+		assertThat(id.isRandom()).isFalse();
 	}
 
 	@Test
@@ -135,8 +133,7 @@ class YgojsonIDGeneratorTest {
 		final YgojsonID id = idGenerator.generate(card);
 		final YgojsonID id2 = idGenerator.generate(card);
 		// then
-		assertThat(id)
-			.isEqualTo(id2);
+		assertThat(id).isEqualTo(id2);
 	}
 
 	@Test
@@ -147,8 +144,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(card);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_CARD_ID);
+		assertThat(id).isEqualTo(TEST_CARD_ID);
 	}
 
 	@Test
@@ -159,8 +155,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(card);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_CARD_ID);
+		assertThat(id).isEqualTo(TEST_CARD_ID);
 	}
 
 	@Test
@@ -171,8 +166,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(set);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_SET_ID);
+		assertThat(id).isEqualTo(TEST_SET_ID);
 	}
 
 	@Test
@@ -183,8 +177,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(set);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_SET_ID);
+		assertThat(id).isEqualTo(TEST_SET_ID);
 	}
 
 	@Test
@@ -195,8 +188,7 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(print);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_PRINT_ID);
+		assertThat(id).isEqualTo(TEST_PRINT_ID);
 	}
 
 	@Test
@@ -207,8 +199,6 @@ class YgojsonIDGeneratorTest {
 		// when
 		final YgojsonID id = idGenerator.generate(print);
 		// then
-		assertThat(id)
-			.isEqualTo(TEST_PRINT_ID);
+		assertThat(id).isEqualTo(TEST_PRINT_ID);
 	}
-
 }

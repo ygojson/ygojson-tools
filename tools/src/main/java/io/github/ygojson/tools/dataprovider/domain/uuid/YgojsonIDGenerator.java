@@ -1,17 +1,18 @@
 package io.github.ygojson.tools.dataprovider.domain.uuid;
 
-import com.github.f4b6a3.uuid.alt.GUID;
-import io.github.ygojson.model.data.Card;
-import io.github.ygojson.model.data.Print;
-import io.github.ygojson.model.data.Set;
-import io.github.ygojson.model.data.definition.Identifiers;
-
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Stream;
+
+import com.github.f4b6a3.uuid.alt.GUID;
+
+import io.github.ygojson.model.data.Card;
+import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.data.Set;
+import io.github.ygojson.model.data.definition.Identifiers;
 
 /**
  * Generator for IDs for YGOJSON.
@@ -27,8 +28,7 @@ public class YgojsonIDGenerator {
 	 * @param id the generated ID
 	 * @param isRandom if the ID is randomly generated instead of using the defined IDs.
 	 */
-	public record YgojsonID(UUID id, boolean isRandom) {
-	}
+	public record YgojsonID(UUID id, boolean isRandom) {}
 
 	private enum Namespace {
 		CARD("ygojon/card"),
@@ -47,7 +47,11 @@ public class YgojsonIDGenerator {
 		}
 	}
 
-	private <T> void checkRequirements(final T object, Function<T, UUID> idGetter, final String name) {
+	private <T> void checkRequirements(
+		final T object,
+		Function<T, UUID> idGetter,
+		final String name
+	) {
 		if (object == null) {
 			throw new IllegalArgumentException(name + " shouldn't be null");
 		}
@@ -66,7 +70,8 @@ public class YgojsonIDGenerator {
 	 */
 	public YgojsonID generate(final Card card) {
 		checkRequirements(card, Card::getId, "Card");
-		return generateInternal(Namespace.CARD,
+		return generateInternal(
+			Namespace.CARD,
 			// TODO: should we consider other fields too?
 			Stream.of(
 				getOrNull(card.getIdentifiers(), Identifiers::getKonamiId),
@@ -85,13 +90,11 @@ public class YgojsonIDGenerator {
 	 */
 	public YgojsonID generate(final Set set) {
 		checkRequirements(set, Set::getId, "Set");
-		return generateInternal(Namespace.SET,
+		return generateInternal(
+			Namespace.SET,
 			// TODO: should we consider other fields too?
 			// TODO: maybe we need to consider if it is TCG/OCG only
-			Stream.of(
-				set.getName(),
-				set.getSetCode()
-			)
+			Stream.of(set.getName(), set.getSetCode())
 		);
 	}
 
@@ -105,21 +108,24 @@ public class YgojsonIDGenerator {
 	 */
 	public YgojsonID generate(final Print print) {
 		checkRequirements(print, Print::getId, "Print");
-		return generateInternal(Namespace.PRINT,
+		return generateInternal(
+			Namespace.PRINT,
 			// TODO: should we consider other fields too?
-			Stream.of(
-				print.getPrintCode(),
-				print.getCardId(),
-				print.getSetId()
-			)
+			Stream.of(print.getPrintCode(), print.getCardId(), print.getSetId())
 		);
 	}
 
-	private <T> Object getOrNull(final T object, final Function<T, Object> getter) {
+	private <T> Object getOrNull(
+		final T object,
+		final Function<T, Object> getter
+	) {
 		return object == null ? null : getter.apply(object);
 	}
 
-	private YgojsonID generateInternal(Namespace namespace, Stream<Object> fields) {
+	private YgojsonID generateInternal(
+		Namespace namespace,
+		Stream<Object> fields
+	) {
 		final AtomicInteger nullFields = new AtomicInteger(0);
 		final List<String> fieldsAsString = fields
 			.peek(field -> {
@@ -136,5 +142,4 @@ public class YgojsonIDGenerator {
 		final UUID id = namespace.generateV5(String.join("/", fieldsAsString));
 		return new YgojsonID(id, false);
 	}
-
 }
