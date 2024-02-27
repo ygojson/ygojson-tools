@@ -1,11 +1,11 @@
 package io.github.ygojson.tools.dataprovider.test;
 
+import java.util.UUID;
+
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.Identifiers;
-
-import java.util.UUID;
 
 public class YgojsonIDTestData {
 
