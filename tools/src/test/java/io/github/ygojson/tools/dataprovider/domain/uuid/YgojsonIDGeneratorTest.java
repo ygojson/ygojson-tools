@@ -1,6 +1,5 @@
 package io.github.ygojson.tools.dataprovider.domain.uuid;
 
-import static io.github.ygojson.tools.dataprovider.domain.uuid.YgojsonIDGenerator.YgojsonID;
 import static io.github.ygojson.tools.dataprovider.test.YgojsonIDTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -95,34 +94,38 @@ class YgojsonIDGeneratorTest {
 	}
 
 	@Test
-	void given_emptyCard_when_generateID_then_returnRandomUUID() {
+	void given_emptyCard_when_generateID_then_returnNilUUID() {
 		// given
 		Card card = new Card();
 		// when
-		final YgojsonID id = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
 		// then
-		assertThat(id.isRandom()).isTrue();
+		assertThat(id.toString()).isEqualTo("00000000-0000-0000-0000-000000000000");
 	}
 
 	@Test
-	void given_emptyCard_when_generateIdTwice_then_uuidIsDifferent() {
+	void given_emptyCard_when_generateIdTwice_then_bothAreNil() {
 		// given
 		Card card = new Card();
 		// when
-		final YgojsonID id = idGenerator.generate(card);
-		final YgojsonID id2 = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
+		final UUID id2 = idGenerator.generate(card);
 		// then
-		assertThat(id).isNotEqualTo(id2);
+		assertThat(id)
+			.isEqualTo(id2)
+			.extracting(UUID::toString)
+			.isEqualTo("00000000-0000-0000-0000-000000000000");
 	}
 
 	@Test
-	void given_completeCard_when_generateId_then_returnNonRandomUUID() {
+	void given_completeCard_when_generateId_then_returnNonNilUUID() {
 		// given
 		Card card = randomCardWithoutId();
 		// when
-		final YgojsonID id = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
 		// then
-		assertThat(id.isRandom()).isFalse();
+		assertThat(id.toString())
+			.isNotEqualTo("00000000-0000-0000-0000-000000000000");
 	}
 
 	@Test
@@ -130,8 +133,8 @@ class YgojsonIDGeneratorTest {
 		// given
 		Card card = randomCardWithoutId();
 		// when
-		final YgojsonID id = idGenerator.generate(card);
-		final YgojsonID id2 = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
+		final UUID id2 = idGenerator.generate(card);
 		// then
 		assertThat(id).isEqualTo(id2);
 	}
@@ -142,7 +145,7 @@ class YgojsonIDGeneratorTest {
 		Card card = new Card();
 		updateCardWithTestData(card);
 		// when
-		final YgojsonID id = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
 		// then
 		assertThat(id).isEqualTo(TEST_CARD_ID);
 	}
@@ -153,7 +156,7 @@ class YgojsonIDGeneratorTest {
 		Card card = randomCardWithoutId();
 		updateCardWithTestData(card);
 		// when
-		final YgojsonID id = idGenerator.generate(card);
+		final UUID id = idGenerator.generate(card);
 		// then
 		assertThat(id).isEqualTo(TEST_CARD_ID);
 	}
@@ -164,7 +167,7 @@ class YgojsonIDGeneratorTest {
 		Set set = new Set();
 		updateSetWithTestData(set);
 		// when
-		final YgojsonID id = idGenerator.generate(set);
+		final UUID id = idGenerator.generate(set);
 		// then
 		assertThat(id).isEqualTo(TEST_SET_ID);
 	}
@@ -175,9 +178,20 @@ class YgojsonIDGeneratorTest {
 		Set set = randomSetWithoutId();
 		updateSetWithTestData(set);
 		// when
-		final YgojsonID id = idGenerator.generate(set);
+		final UUID id = idGenerator.generate(set);
 		// then
 		assertThat(id).isEqualTo(TEST_SET_ID);
+	}
+
+	@Test
+	void given_completeSet_when_generateId_then_returnNonNilUUID() {
+		// given
+		Set set = randomSetWithoutId();
+		// when
+		final UUID id = idGenerator.generate(set);
+		// then
+		assertThat(id.toString())
+			.isNotEqualTo("00000000-0000-0000-0000-000000000000");
 	}
 
 	@Test
@@ -186,7 +200,7 @@ class YgojsonIDGeneratorTest {
 		Print print = new Print();
 		updatePrintWithTestData(print);
 		// when
-		final YgojsonID id = idGenerator.generate(print);
+		final UUID id = idGenerator.generate(print);
 		// then
 		assertThat(id).isEqualTo(TEST_PRINT_ID);
 	}
@@ -197,8 +211,19 @@ class YgojsonIDGeneratorTest {
 		Print print = randomPrintWithoutId();
 		updatePrintWithTestData(print);
 		// when
-		final YgojsonID id = idGenerator.generate(print);
+		final UUID id = idGenerator.generate(print);
 		// then
 		assertThat(id).isEqualTo(TEST_PRINT_ID);
+	}
+
+	@Test
+	void given_completePrint_when_generateId_then_returnNonNilUUID() {
+		// given
+		Print print = randomPrintWithoutId();
+		// when
+		final UUID id = idGenerator.generate(print);
+		// then
+		assertThat(id.toString())
+			.isNotEqualTo("00000000-0000-0000-0000-000000000000");
 	}
 }

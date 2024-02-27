@@ -19,22 +19,12 @@ import io.github.ygojson.model.data.definition.Identifiers;
  */
 public class YgojsonIDGenerator {
 
-	/**
-	 * Container for the result of the generation of the ID.
-	 * <br>
-	 * This is required to inform the caller if the generated ID is random
-	 * or based on data.
-	 *
-	 * @param id the generated ID
-	 * @param isRandom if the ID is randomly generated instead of using the defined IDs.
-	 */
-	public record YgojsonID(UUID id, boolean isRandom) {}
+	public static final UUID NIL_UUID = GUID.NIL.toUUID();
 
 	private enum Namespace {
 		CARD("ygojon/card"),
 		SET("ygojson/set"),
-		PRINT("ygojson/print"),
-		TEMPORARY("ygojson/temp");
+		PRINT("ygojson/print");
 
 		private final GUID namespaceGuid;
 
@@ -68,11 +58,10 @@ public class YgojsonIDGenerator {
 	 * @return the generated ID for a card.
 	 * @throws IllegalArgumentException if the card is {@code null} or the ID is already present.
 	 */
-	public YgojsonID generate(final Card card) {
+	public UUID generate(final Card card) {
 		checkRequirements(card, Card::getId, "Card");
 		return generateInternal(
 			Namespace.CARD,
-			// TODO: should we consider other fields too?
 			Stream.of(
 				getOrNull(card.getIdentifiers(), Identifiers::getKonamiId),
 				getOrNull(card.getIdentifiers(), Identifiers::getPassword)
@@ -88,13 +77,12 @@ public class YgojsonIDGenerator {
 	 * @return the generated ID for a set.
 	 * @throws IllegalArgumentException if the set is {@code null} or the ID is already present.
 	 */
-	public YgojsonID generate(final Set set) {
+	public UUID generate(final Set set) {
 		checkRequirements(set, Set::getId, "Set");
 		return generateInternal(
 			Namespace.SET,
-			// TODO: should we consider other fields too?
-			// TODO: maybe we need to consider if it is TCG/OCG only
-			Stream.of(set.getName(), set.getSetCode())
+			// FIXME: https://github.com/ygojson/ygojson-tools/issues/113 - should handle OCG/TCG exclusive sets with same name
+			Stream.of(set.getName(), set.getSetCode(), set.getPrintNumberPrefix())
 		);
 	}
 
@@ -106,12 +94,12 @@ public class YgojsonIDGenerator {
 	 * @return the generated ID for a print.
 	 * @throws IllegalArgumentException if the print is {@code null} or the ID is already present.
 	 */
-	public YgojsonID generate(final Print print) {
+	public UUID generate(final Print print) {
 		checkRequirements(print, Print::getId, "Print");
 		return generateInternal(
 			Namespace.PRINT,
-			// TODO: should we consider other fields too?
-			Stream.of(print.getPrintCode(), print.getCardId(), print.getSetId())
+			// FIXME: https://github.com/ygojson/ygojson-tools/issues/112 - should handle problematic prints
+			Stream.of(print.getPrintCode(), print.getRarity())
 		);
 	}
 
@@ -122,10 +110,7 @@ public class YgojsonIDGenerator {
 		return object == null ? null : getter.apply(object);
 	}
 
-	private YgojsonID generateInternal(
-		Namespace namespace,
-		Stream<Object> fields
-	) {
+	private UUID generateInternal(Namespace namespace, Stream<Object> fields) {
 		final AtomicInteger nullFields = new AtomicInteger(0);
 		final List<String> fieldsAsString = fields
 			.peek(field -> {
@@ -137,9 +122,8 @@ public class YgojsonIDGenerator {
 			.toList();
 		// random UUID on the namespace if there is no information at all
 		if (nullFields.get() == fieldsAsString.size()) {
-			return new YgojsonID(UUID.randomUUID(), true);
+			return NIL_UUID;
 		}
-		final UUID id = namespace.generateV5(String.join("/", fieldsAsString));
-		return new YgojsonID(id, false);
+		return namespace.generateV5(String.join("/", fieldsAsString));
 	}
 }
