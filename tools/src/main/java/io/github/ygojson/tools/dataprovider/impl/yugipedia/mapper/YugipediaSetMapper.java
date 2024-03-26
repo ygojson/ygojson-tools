@@ -26,7 +26,7 @@ public abstract class YugipediaSetMapper {
 	 */
 	public Set mapToSet(final InfoboxSet infoboxSet, final String name) {
 		final Set set = mapToSet(infoboxSet);
-		if (set.getName() == null) {
+		if (set.getName() == null || set.getName().isEmpty()) {
 			set.setName(name);
 		}
 		return set;

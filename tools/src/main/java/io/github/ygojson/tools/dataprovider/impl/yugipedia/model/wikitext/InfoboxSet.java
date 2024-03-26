@@ -47,6 +47,7 @@ public record InfoboxSet(
 	MarkupString main_set,
 	MarkupString sneak_peek,
 	MarkupString premiere,
+	MarkupString medium,
 	@JsonProperty("2-pack_set") MarkupString two_pack_set,
 	MarkupString vendor_edition,
 	MarkupString special_edition,
@@ -87,6 +88,7 @@ public record InfoboxSet(
 	String ean,
 	String upc,
 	String postfix,
+	MarkupString appears_in_video_games,
 	MarkupString prev,
 	MarkupString curr,
 	MarkupString next
