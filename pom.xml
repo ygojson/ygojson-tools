@@ -31,6 +31,7 @@
         <spring-boot-dependencies.bom.version>3.2.2</spring-boot-dependencies.bom.version>
         <picocli.version>4.7.5</picocli.version>
         <nitrite.bom.version>4.2.1</nitrite.bom.version>
+        <sweble-wikitext.version>3.1.9</sweble-wikitext.version>
         <!-- test dependencies -->
         <approvaltests.version>22.3.3</approvaltests.version>
         <instancio-junit.version>4.3.1</instancio-junit.version>
@@ -301,6 +302,11 @@
                 <groupId>com.github.f4b6a3</groupId>
                 <artifactId>uuid-creator</artifactId>
                 <version>${uuid-creator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.sweble.wikitext</groupId>
+                <artifactId>swc-parser-lazy</artifactId>
+                <version>${sweble-wikitext.version}</version>
             </dependency>
             <!--TEST DEPENDENCIES-->
             <!-- singular dependencies -->
