@@ -1,4 +1,4 @@
-package io.github.ygojson.model.utils.data.utils;
+package io.github.ygojson.model.utils;
 
 import java.util.Arrays;
 import java.util.List;

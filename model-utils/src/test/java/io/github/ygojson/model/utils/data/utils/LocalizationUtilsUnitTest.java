@@ -17,6 +17,7 @@ import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.data.definition.localization.CardLocalizedData;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.data.definition.localization.SetLocalizedData;
+import io.github.ygojson.model.utils.LocalizationUtils;
 
 class LocalizationUtilsUnitTest {
 

@@ -9,6 +9,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import io.github.ygojson.model.data.Card;
+import io.github.ygojson.model.utils.CardUtils;
 
 class CardUtilsUnitTest {
 
