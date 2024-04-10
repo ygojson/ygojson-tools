@@ -13,7 +13,7 @@ import picocli.CommandLine;
 	name = "ygojson-tools",
 	description = "tools for generate, document and explore the YGOJSON data",
 	subcommands = {
-		CommandLine.HelpCommand.class, GenerateDocumentationCli.class,
+		// TODO: add sub-commands
 	}
 )
 public final class ParentCli implements Runnable {
