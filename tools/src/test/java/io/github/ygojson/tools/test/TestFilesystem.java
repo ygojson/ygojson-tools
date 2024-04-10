@@ -1,16 +1,16 @@
 package io.github.ygojson.tools.test;
 
+import com.google.common.jimfs.Configuration;
+import com.google.common.jimfs.Jimfs;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
-
-import com.google.common.jimfs.Configuration;
-import com.google.common.jimfs.Jimfs;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.util.FileSystemUtils;
+import java.util.stream.Stream;
 
 /**
  * Test filesystem with utility methods.
@@ -93,8 +93,16 @@ public class TestFilesystem {
 	 */
 	public synchronized void cleanup() {
 		if (currentTestRootDir != null) {
-			try {
-				FileSystemUtils.deleteRecursively(currentTestRootDir);
+			try (Stream<Path> rootDirWalk = Files.walk(currentTestRootDir)) {
+				rootDirWalk
+					.sorted()
+					.forEach(p -> {
+						try {
+							Files.delete(p);
+						} catch (IOException e) {
+							log.error("Unable to delete on test filesystem cleanup: " + p, e);
+						}
+					});
 			} catch (IOException e) {
 				log.error("Unable to cleanup the test filesystem", e);
 			}
