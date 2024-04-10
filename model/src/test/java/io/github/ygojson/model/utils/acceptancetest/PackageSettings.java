@@ -1,4 +1,4 @@
-package io.github.ygojson.model.utils.schema.acceptance;
+package io.github.ygojson.model.utils.acceptancetest;
 
 /**
  * Settings for the approval tests configuration.

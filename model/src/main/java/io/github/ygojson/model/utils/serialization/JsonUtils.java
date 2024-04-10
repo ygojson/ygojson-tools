@@ -1,4 +1,4 @@
-package io.github.ygojson.model.utils;
+package io.github.ygojson.model.utils.serialization;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

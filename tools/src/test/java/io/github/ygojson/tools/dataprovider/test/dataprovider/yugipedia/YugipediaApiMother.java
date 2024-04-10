@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.model.utils.serialization.JsonUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
 
 public class YugipediaApiMother {

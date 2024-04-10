@@ -8,7 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.model.utils.serialization.JsonUtils;
 import io.github.ygojson.model.utils.test.RegionTestModel;
 
 public class RegionSerializationUnitTest {

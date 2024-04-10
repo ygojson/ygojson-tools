@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.model.utils.serialization.JsonUtils;
 import io.github.ygojson.tools.common.ApplicationInfo;
 
 /**

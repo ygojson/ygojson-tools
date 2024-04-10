@@ -1,4 +1,4 @@
-package io.github.ygojson.model.utils.data;
+package io.github.ygojson.model.utils.data.utils.serialization;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.instancio.Select.all;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
-import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.model.utils.serialization.JsonUtils;
 
 public class SetSerializationUnitTest {
 

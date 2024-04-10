@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.model.data.definition.localization.Language;
-import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.model.utils.serialization.JsonUtils;
 import io.github.ygojson.model.utils.test.ModelTestData;
 
 public abstract class AbstractLocalizedDataUnitTest<T> {
