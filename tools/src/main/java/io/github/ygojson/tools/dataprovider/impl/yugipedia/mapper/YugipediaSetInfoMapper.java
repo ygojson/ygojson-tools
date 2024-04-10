@@ -1,16 +1,5 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Stream;
-
-import org.mapstruct.AfterMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.Named;
-import org.mapstruct.factory.Mappers;
-
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.data.definition.localization.Language;
@@ -20,6 +9,16 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.Marku
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
+import org.mapstruct.AfterMapping;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
+import org.mapstruct.Named;
+import org.mapstruct.factory.Mappers;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 @Mapper
 public abstract class YugipediaSetInfoMapper {
@@ -126,7 +125,7 @@ public abstract class YugipediaSetInfoMapper {
 	protected SetInfo mapJaSetInfo(final InfoboxSet infoboxSet) {
 		return mapToSetInfo(
 			infoboxSet, // the infoboxSet
-			model -> markupStringMapper.map(model.ja_name()),
+			model -> null, // markupStringMapper.map(model.ja_name()),
 			NO_ALT_NAME,
 			YugipediaLanguageRegion.JP,
 			YugipediaLanguageRegion.JA
@@ -137,7 +136,7 @@ public abstract class YugipediaSetInfoMapper {
 	protected SetInfo mapKoSetInfo(final InfoboxSet infoboxSet) {
 		return mapToSetInfo(
 			infoboxSet, // the infoboxSet
-			model -> markupStringMapper.map(model.ko_name()),
+			model -> null, // markupStringMapper.map(model.ko_name()),
 			NO_ALT_NAME,
 			YugipediaLanguageRegion.KO
 		);

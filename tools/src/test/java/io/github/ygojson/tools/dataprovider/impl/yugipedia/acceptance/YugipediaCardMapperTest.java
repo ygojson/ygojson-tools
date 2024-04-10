@@ -41,6 +41,7 @@ class YugipediaCardMapperTest {
 		final String pageTitle = wikitextTestData.pageTitle();
 		final Long pageId = wikitextTestData.pageId();
 		final CardTable2 cardTable2 = CARDTABLE2_MAPPER.mapWikitextToCardTable2(
+			pageTitle,
 			wikitext
 		);
 		// when

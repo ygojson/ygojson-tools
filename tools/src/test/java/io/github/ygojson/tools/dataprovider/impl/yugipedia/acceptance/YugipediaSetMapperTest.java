@@ -40,6 +40,7 @@ class YugipediaSetMapperTest {
 		final String wikitext = wikitextTestData.wikitext();
 		final String pageTitle = wikitextTestData.pageTitle();
 		final InfoboxSet infoboxSet = INFOBOXSET_MAPPER.mapWikitextToInfoboxSet(
+			pageTitle,
 			wikitext
 		);
 		// when

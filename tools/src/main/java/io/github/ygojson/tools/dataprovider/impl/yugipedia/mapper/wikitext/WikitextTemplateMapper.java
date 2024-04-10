@@ -1,16 +1,18 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.parser.YugipediaWikitextParser;
+import org.mapstruct.Mapper;
+
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import org.mapstruct.Mapper;
-
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
-
 @Mapper
 public abstract class WikitextTemplateMapper {
+
+	private YugipediaWikitextParser parserMapper = new YugipediaWikitextParser();
 
 	/**
 	 * Pattern for the CardTable2 content

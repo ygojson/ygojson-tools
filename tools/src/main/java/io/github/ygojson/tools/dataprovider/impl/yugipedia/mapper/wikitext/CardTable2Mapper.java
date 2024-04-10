@@ -1,14 +1,14 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext;
 
-import java.util.Map;
-
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
-
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.IntegerOrUndefinedMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.parser.ParsedWikitext;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.parser.YugipediaWikitextParser;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+import java.util.Map;
 
 /**
  * Maps a wikitext String to a {@link CardTable2} model,
@@ -18,8 +18,8 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
 @Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
 public abstract class CardTable2Mapper {
 
-	private final WikitextTemplateMapper wikitextTemplateMapper =
-		Mappers.getMapper(WikitextTemplateMapper.class);
+	// TODO: should be injected and/or created as a mapper?
+	private final YugipediaWikitextParser parser = new YugipediaWikitextParser();
 
 	/**
 	 * Maps a wikitext String with a possibly existing CardTable2
@@ -29,10 +29,10 @@ public abstract class CardTable2Mapper {
 	 *
 	 * @return parsed model; {@code null} if CardTable2 markup is not present.
 	 */
-	public CardTable2 mapWikitextToCardTable2(final String wikitext) {
-		return mapToCardTable2(
-			wikitextTemplateMapper.mapCardTable2Template(wikitext)
-		);
+	public CardTable2 mapWikitextToCardTable2(final String title, final String wikitext) {
+		// TODO: we should use the title here to override the name if not present?
+		final ParsedWikitext parsedWikitext = parser.parse(title, wikitext);
+		return mapToCardTable2(parsedWikitext.getTemplateMap("CardTable2"));
 	}
 
 	@Mapping(target = "anti_supports", source = "anti-supports")

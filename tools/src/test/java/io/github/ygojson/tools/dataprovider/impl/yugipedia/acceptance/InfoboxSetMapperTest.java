@@ -1,11 +1,12 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.InfoboxSetMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -13,9 +14,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.InfoboxSetMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class InfoboxSetMapperTest {
 
@@ -41,9 +40,10 @@ class InfoboxSetMapperTest {
 		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
 	) throws JsonProcessingException {
 		// given
+		final String title = wikitextTestData.pageTitle();
 		final String wikitext = wikitextTestData.wikitext();
 		// when
-		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(wikitext);
+		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(title, wikitext);
 		final String asJsonString = OBJECT_MAPPER.writeValueAsString(infoboxSet);
 		// then
 		Approvals.verify(
@@ -60,9 +60,10 @@ class InfoboxSetMapperTest {
 	@Test
 	void testMapNullWikitextToInfoboxSet() {
 		// given
+		final String title = null;
 		final String wikitext = null;
 		// when
-		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(wikitext);
+		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(title, wikitext);
 		// then
 		assertThat(infoboxSet).isNull();
 	}
@@ -70,9 +71,10 @@ class InfoboxSetMapperTest {
 	@Test
 	void testMapArbitraryStringToinfoboxSet() {
 		// given
+		final String title = "title";
 		final String wikitext = "arbitrary string";
 		// when
-		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(wikitext);
+		final InfoboxSet infoboxSet = MAPPER.mapWikitextToInfoboxSet(title, wikitext);
 		// then
 		assertThat(infoboxSet).isNull();
 	}

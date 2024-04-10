@@ -1,11 +1,13 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.List;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.utils.JsonUtils;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaPrintMapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.CardTable2Mapper;
+import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -13,12 +15,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.model.data.Print;
-import io.github.ygojson.model.utils.JsonUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaPrintMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.CardTable2Mapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class YugipediaPrintMapperTest {
 
@@ -43,7 +42,9 @@ class YugipediaPrintMapperTest {
 	) throws JsonProcessingException {
 		// given
 		final String wikitext = wikitextTestData.wikitext();
+		final String title = wikitextTestData.pageTitle();
 		final CardTable2 cardTable2 = CARDTABLE2_MAPPER.mapWikitextToCardTable2(
+			title,
 			wikitext
 		);
 		// when
