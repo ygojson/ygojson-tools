@@ -1,16 +1,16 @@
 package io.github.ygojson.tools.test;
 
-import com.google.common.jimfs.Configuration;
-import com.google.common.jimfs.Jimfs;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
 import java.util.stream.Stream;
+
+import com.google.common.jimfs.Configuration;
+import com.google.common.jimfs.Jimfs;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Test filesystem with utility methods.
