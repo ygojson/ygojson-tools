@@ -3,7 +3,7 @@ package io.github.ygojson.tools.dataprovider.utils.client;
 import java.time.Duration;
 import java.util.function.Function;
 
-import io.github.ygojson.tools.common.ApplicationInfo;
+import io.github.ygojson.application.ApplicationInfo;
 
 public interface ClientConfig<T> {
 	record RateLimit(int maxRequest, Duration duration) {}

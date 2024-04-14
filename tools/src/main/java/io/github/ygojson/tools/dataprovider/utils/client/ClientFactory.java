@@ -11,7 +11,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-import io.github.ygojson.tools.common.ApplicationInfo;
+import io.github.ygojson.application.ApplicationInfo;
 
 public class ClientFactory {
 

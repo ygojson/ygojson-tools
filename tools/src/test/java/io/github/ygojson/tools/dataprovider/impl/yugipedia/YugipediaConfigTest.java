@@ -12,7 +12,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import io.github.ygojson.tools.common.ApplicationInfo;
+import io.github.ygojson.application.ApplicationInfo;
 import io.github.ygojson.tools.dataprovider.utils.client.ClientConfig;
 
 class YugipediaConfigTest {

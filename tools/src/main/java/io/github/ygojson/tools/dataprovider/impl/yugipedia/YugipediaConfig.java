@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-import io.github.ygojson.tools.common.ApplicationInfo;
+import io.github.ygojson.application.ApplicationInfo;
 import io.github.ygojson.tools.dataprovider.utils.client.ClientConfig;
 
 public class YugipediaConfig implements ClientConfig<YugipediaApi> {
