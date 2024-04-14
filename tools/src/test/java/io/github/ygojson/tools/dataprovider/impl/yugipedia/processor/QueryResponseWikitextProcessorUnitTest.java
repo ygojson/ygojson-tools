@@ -11,10 +11,10 @@ import java.util.stream.Stream;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.Test;
 
+import io.github.ygojson.application.yugipedia.client.response.Page;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
+import io.github.ygojson.application.yugipedia.client.response.Revision;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Page;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Revision;
 
 class QueryResponseWikitextProcessorUnitTest {
 

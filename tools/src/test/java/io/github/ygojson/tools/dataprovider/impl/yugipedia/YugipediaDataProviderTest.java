@@ -14,9 +14,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import io.github.ygojson.application.yugipedia.client.params.Limit;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.tools.dataprovider.DataProviderException;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaApiMother;
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaMockServer;
 

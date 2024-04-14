@@ -7,8 +7,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
 
 public class YugipediaApiMother {
 
@@ -16,11 +16,11 @@ public class YugipediaApiMother {
 		// utility class
 	}
 
-	public static YugipediaApi productionTestClient() {
+	public static YugipediaClient productionTestClient() {
 		return createClient("https://yugipedia.com", productionOkHttp());
 	}
 
-	public static YugipediaApi mockTestClient(final String mockedUrl) {
+	public static YugipediaClient mockTestClient(final String mockedUrl) {
 		return createClient(mockedUrl, new OkHttpClient.Builder().build());
 	}
 
@@ -33,7 +33,7 @@ public class YugipediaApiMother {
 			.build();
 	}
 
-	private static YugipediaApi createClient(
+	private static YugipediaClient createClient(
 		final String baseUrl,
 		final OkHttpClient okHttpClient
 	) {
@@ -45,7 +45,7 @@ public class YugipediaApiMother {
 				JacksonConverterFactory.create(JsonUtils.getObjectMapper())
 			)
 			.build();
-		return retrofit.create(YugipediaApi.class);
+		return retrofit.create(YugipediaClient.class);
 	}
 
 	private static final Interceptor WAIT_2_SECONDS_ON_PRODUCTION = chain -> {

@@ -6,9 +6,9 @@ import java.text.MessageFormat;
 import retrofit2.Call;
 import retrofit2.Response;
 
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 import io.github.ygojson.tools.dataprovider.DataProviderException;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
 import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 
 /**
@@ -19,9 +19,9 @@ import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 abstract class AbstractYugipediaQueryPageHandler<T>
 	implements PaginatorStreamFactory.PageHandler<QueryResponse> {
 
-	private final YugipediaApi api;
+	private final YugipediaClient api;
 
-	AbstractYugipediaQueryPageHandler(final YugipediaApi api) {
+	AbstractYugipediaQueryPageHandler(final YugipediaClient api) {
 		this.api = api;
 	}
 
@@ -42,7 +42,7 @@ abstract class AbstractYugipediaQueryPageHandler<T>
 	 * @return the query response call object
 	 */
 	protected abstract Call<QueryResponse> callApi(
-		final YugipediaApi api,
+		final YugipediaClient api,
 		final T continueToken
 	);
 

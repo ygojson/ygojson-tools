@@ -1,7 +1,6 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params;
+package io.github.ygojson.application.yugipedia.client.params;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;

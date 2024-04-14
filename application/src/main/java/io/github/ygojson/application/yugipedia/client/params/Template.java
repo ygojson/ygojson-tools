@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params;
+package io.github.ygojson.application.yugipedia.client.params;
 
 public enum Template {
 	SETS("Infobox_set");

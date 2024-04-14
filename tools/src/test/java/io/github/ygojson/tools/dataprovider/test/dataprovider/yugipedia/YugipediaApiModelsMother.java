@@ -9,10 +9,10 @@ import java.util.List;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.instancio.Instancio;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Page;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Query;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Revision;
+import io.github.ygojson.application.yugipedia.client.response.Page;
+import io.github.ygojson.application.yugipedia.client.response.Query;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
+import io.github.ygojson.application.yugipedia.client.response.Revision;
 
 public class YugipediaApiModelsMother {
 

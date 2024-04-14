@@ -2,14 +2,14 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination
 
 import retrofit2.Call;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Template;
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
+import io.github.ygojson.application.yugipedia.client.params.Limit;
+import io.github.ygojson.application.yugipedia.client.params.Template;
+import io.github.ygojson.application.yugipedia.client.response.Continue;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
 /**
- * Handles consequent queries to the {@link YugipediaApi#queryPagesWithTemplate(Template, Limit, String)}.
+ * Handles consequent queries to the {@link YugipediaClient#queryPagesWithTemplate(Template, Limit, String)}.
  */
 class TemplatePageHandler extends AbstractYugipediaQueryPageHandler<String> {
 
@@ -17,7 +17,7 @@ class TemplatePageHandler extends AbstractYugipediaQueryPageHandler<String> {
 	private final Limit limit;
 
 	TemplatePageHandler(
-		final YugipediaApi api,
+		final YugipediaClient api,
 		final Template template,
 		final Limit limit
 	) {
@@ -37,7 +37,7 @@ class TemplatePageHandler extends AbstractYugipediaQueryPageHandler<String> {
 
 	@Override
 	protected Call<QueryResponse> callApi(
-		YugipediaApi api,
+		YugipediaClient api,
 		String continueToken
 	) {
 		return api.queryPagesWithTemplate(template, limit, continueToken);

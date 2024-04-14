@@ -1,16 +1,16 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia;
+package io.github.ygojson.application.yugipedia.client;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.*;
+import io.github.ygojson.application.yugipedia.client.params.*;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
 /**
- * Represents the Yugipedia API calls used by YGOJSON.
+ * Yugipedia Client with methods specific to YGOJSON.
  */
-public interface YugipediaApi {
+public interface YugipediaClient {
 	/**
 	 * Query all the pages on a given category sorted by timestamp.
 	 *

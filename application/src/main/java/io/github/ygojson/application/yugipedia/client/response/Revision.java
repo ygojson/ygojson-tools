@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api;
+package io.github.ygojson.application.yugipedia.client.response;
 
 import java.time.ZonedDateTime;
 

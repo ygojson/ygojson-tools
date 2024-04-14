@@ -2,21 +2,21 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination
 
 import java.util.stream.Stream;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Limit;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.Template;
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
+import io.github.ygojson.application.yugipedia.client.params.Limit;
+import io.github.ygojson.application.yugipedia.client.params.Template;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 
 /**
- * Stream factory for {@link YugipediaApi} query methods.
+ * Stream factory for {@link YugipediaClient} query methods.
  */
 public class YugipediaStreamFactory {
 
-	private final YugipediaApi yugipediaApi;
+	private final YugipediaClient yugipediaClient;
 
-	public YugipediaStreamFactory(final YugipediaApi yugipediaApi) {
-		this.yugipediaApi = yugipediaApi;
+	public YugipediaStreamFactory(final YugipediaClient yugipediaClient) {
+		this.yugipediaClient = yugipediaClient;
 	}
 
 	/**
@@ -28,7 +28,7 @@ public class YugipediaStreamFactory {
 	 */
 	public Stream<QueryResponse> ofSets(final Limit limit) {
 		return PaginatorStreamFactory.create(
-			new TemplatePageHandler(yugipediaApi, Template.SETS, limit)
+			new TemplatePageHandler(yugipediaClient, Template.SETS, limit)
 		);
 	}
 }

@@ -9,14 +9,14 @@ import java.time.ZonedDateTime;
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaApi;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.Continue;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.QueryResponse;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.api.params.*;
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
+import io.github.ygojson.application.yugipedia.client.params.*;
+import io.github.ygojson.application.yugipedia.client.response.Continue;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
-public abstract class AbstractYugipediaApiTest {
+public abstract class AbstractYugipediaClientTest {
 
-	protected abstract YugipediaApi getApi();
+	protected abstract YugipediaClient getApi();
 
 	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(
 		final String grccontinue

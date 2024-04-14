@@ -8,8 +8,9 @@ import java.util.stream.Stream;
 
 import io.github.ygojson.application.ApplicationInfo;
 import io.github.ygojson.application.util.http.ClientConfig;
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 
-public class YugipediaConfig implements ClientConfig<YugipediaApi> {
+public class YugipediaConfig implements ClientConfig<YugipediaClient> {
 
 	@Override
 	public String name() {
@@ -17,8 +18,8 @@ public class YugipediaConfig implements ClientConfig<YugipediaApi> {
 	}
 
 	@Override
-	public Class<YugipediaApi> clientClass() {
-		return YugipediaApi.class;
+	public Class<YugipediaClient> clientClass() {
+		return YugipediaClient.class;
 	}
 
 	@Override

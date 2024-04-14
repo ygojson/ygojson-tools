@@ -1,13 +1,14 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia;
 
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import org.junit.jupiter.api.BeforeAll;
 
-import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.AbstractYugipediaApiTest;
+import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.AbstractYugipediaClientTest;
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaApiMother;
 
-class YugipediaApiIT extends AbstractYugipediaApiTest {
+class YugipediaClientIT extends AbstractYugipediaClientTest {
 
-	private static YugipediaApi PROD_API;
+	private static YugipediaClient PROD_API;
 
 	@BeforeAll
 	static void beforeAll() {
@@ -16,7 +17,7 @@ class YugipediaApiIT extends AbstractYugipediaApiTest {
 
 
 	@Override
-	protected YugipediaApi getApi() {
+	protected YugipediaClient getApi() {
 		return PROD_API;
 	}
 }
