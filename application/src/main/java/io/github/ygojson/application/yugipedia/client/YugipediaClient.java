@@ -4,6 +4,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
+import io.github.ygojson.application.util.http.ClientConfig;
 import io.github.ygojson.application.yugipedia.client.params.*;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
@@ -11,6 +12,15 @@ import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
  * Yugipedia Client with methods specific to YGOJSON.
  */
 public interface YugipediaClient {
+	/**
+	 * Gets the configuration for the Yugipedia client.
+	 *
+	 * @return the configuration for the Yugipedia client.
+	 */
+	static ClientConfig<YugipediaClient> getConfig() {
+		return new Config();
+	}
+
 	/**
 	 * Query all the pages on a given category sorted by timestamp.
 	 *

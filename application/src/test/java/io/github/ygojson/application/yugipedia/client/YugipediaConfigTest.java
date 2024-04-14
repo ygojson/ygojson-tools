@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia;
+package io.github.ygojson.application.yugipedia.client;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -20,7 +20,7 @@ class YugipediaConfigTest {
 	@Test
 	void given_configuration_when_rateLimit_then_isLargerThan1PerSecond() {
 		// given
-		final YugipediaConfig config = new YugipediaConfig();
+		final Config config = new Config();
 		// when
 		final ClientConfig.RateLimit limit = config.rateLimit();
 		// then
@@ -64,7 +64,7 @@ class YugipediaConfigTest {
 		final String expectedAgent
 	) {
 		// given
-		final Function<String, String> userAgentMapper = new YugipediaConfig()
+		final Function<String, String> userAgentMapper = new Config()
 			.userAgentMapper(info);
 		// when
 		final String userAgent = userAgentMapper.apply(originalAgent);
