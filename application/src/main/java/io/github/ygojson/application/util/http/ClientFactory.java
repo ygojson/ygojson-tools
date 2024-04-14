@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.utils.client;
+package io.github.ygojson.application.util.http;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -13,6 +13,11 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import io.github.ygojson.application.ApplicationInfo;
 
+/**
+ * Factory for HTTP-clients used by YGOJSON.
+ * <br>
+ * The factory contains a single client for a specific configuration.
+ */
 public class ClientFactory {
 
 	private final ConcurrentHashMap<String, Retrofit> retrofitClients =
@@ -21,6 +26,12 @@ public class ClientFactory {
 	private final ObjectMapper jsonMapper;
 	private final ApplicationInfo info;
 
+	/**
+	 * Initialize the client factory.
+	 *
+	 * @param jsonMapper the JSON mapper for the clients to convert the responses.
+	 * @param info the application information to use for user-agents.
+	 */
 	public ClientFactory(
 		final ObjectMapper jsonMapper,
 		final ApplicationInfo info
@@ -29,12 +40,19 @@ public class ClientFactory {
 		this.info = info;
 	}
 
+	/**
+	 * Gets the client for the configuration.
+	 *
+	 * @param config the configuration.
+	 * @return the client.
+	 * @param <T> type of the client.
+	 */
 	public <T> T getClient(ClientConfig<T> config) {
 		final Retrofit retrofit = retrofitClients.computeIfAbsent(
 			config.name(),
 			any -> createRetrofit(config)
 		);
-		return retrofit.create(config.apiClass());
+		return retrofit.create(config.clientClass());
 	}
 
 	private Retrofit createRetrofit(ClientConfig<?> config) {

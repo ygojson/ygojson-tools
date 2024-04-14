@@ -11,34 +11,36 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.application.ApplicationInfo;
+import io.github.ygojson.application.util.http.ClientConfig;
+import io.github.ygojson.application.util.http.ClientFactory;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaConfig;
 
 class ClientFactoryTest {
 
-	private static ClientFactory CLIENT_FACTORY;
+	private static ClientFactory SERVICE_FACTORY;
 
 	@BeforeAll
 	static void beforeAll() {
-		CLIENT_FACTORY =
+		SERVICE_FACTORY =
 			new ClientFactory(
 				new ObjectMapper(),
 				new ApplicationInfo("test", "test", "test")
 			);
 	}
 
-	public static Stream<Arguments> availableClients() {
+	public static Stream<Arguments> availableServices() {
 		return Stream.of(Arguments.of(new YugipediaConfig()));
 	}
 
-	@MethodSource("availableClients")
+	@MethodSource("availableServices")
 	@ParameterizedTest
-	void given_availableClients_when_createClient_then_apiClassIsProvided(
+	void given_availableServices_when_getService_then_serviceClassIsProvided(
 		final ClientConfig<?> config
 	) {
 		// given - factory
 		// when
-		final Object client = CLIENT_FACTORY.getClient(config);
+		final Object client = SERVICE_FACTORY.getClient(config);
 		// then
-		assertThat(client).isInstanceOf(config.apiClass());
+		assertThat(client).isInstanceOf(config.clientClass());
 	}
 }

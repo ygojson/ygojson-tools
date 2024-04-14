@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.utils.client;
+package io.github.ygojson.application.util.http;
 
 import java.io.IOException;
 import java.util.function.Function;

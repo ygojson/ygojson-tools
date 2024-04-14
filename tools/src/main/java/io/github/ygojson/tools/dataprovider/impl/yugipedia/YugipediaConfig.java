@@ -7,7 +7,7 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 import io.github.ygojson.application.ApplicationInfo;
-import io.github.ygojson.tools.dataprovider.utils.client.ClientConfig;
+import io.github.ygojson.application.util.http.ClientConfig;
 
 public class YugipediaConfig implements ClientConfig<YugipediaApi> {
 
@@ -17,7 +17,7 @@ public class YugipediaConfig implements ClientConfig<YugipediaApi> {
 	}
 
 	@Override
-	public Class<YugipediaApi> apiClass() {
+	public Class<YugipediaApi> clientClass() {
 		return YugipediaApi.class;
 	}
 
