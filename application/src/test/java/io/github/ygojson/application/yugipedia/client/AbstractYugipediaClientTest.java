@@ -1,16 +1,18 @@
 package io.github.ygojson.application.yugipedia.client;
 
-import io.github.ygojson.application.yugipedia.client.params.*;
-import io.github.ygojson.application.yugipedia.client.response.Continue;
-import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
-import org.junit.jupiter.api.Test;
-import retrofit2.Response;
+import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
 import java.io.IOException;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 
-import static org.assertj.core.api.SoftAssertions.assertSoftly;
+import org.junit.jupiter.api.Test;
+import retrofit2.Call;
+import retrofit2.Response;
+
+import io.github.ygojson.application.yugipedia.client.params.*;
+import io.github.ygojson.application.yugipedia.client.response.Continue;
+import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
 public abstract class AbstractYugipediaClientTest {
 
@@ -18,25 +20,33 @@ public abstract class AbstractYugipediaClientTest {
 
 	protected abstract void logResponse(final Response<?> response);
 
+	private <T> Response<T> callWithLog(final Call<T> call) throws IOException {
+		final Response<T> response = call.execute();
+		logResponse(response);
+		return response;
+	}
+
 	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(
 		final String grccontinue
 	) throws IOException {
-		return getClient()
-			.queryCategoryMembersByTimestamp(
-				Category.CARDS,
-				Limit.getDefault(),
-				SortDirection.NEWER,
-				grccontinue
-			)
-			.execute();
+		return callWithLog(
+			getClient()
+				.queryCategoryMembersByTimestamp(
+					Category.CARDS,
+					Limit.getDefault(),
+					SortDirection.NEWER,
+					grccontinue
+				)
+		);
 	}
 
 	private Response<QueryResponse> doExecuteTestQueryPagesWithTemplate(
 		final String geicontinue
 	) throws IOException {
-		return getClient()
-			.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue)
-			.execute();
+		return callWithLog(
+			getClient()
+				.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue)
+		);
 	}
 
 	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
@@ -50,9 +60,16 @@ public abstract class AbstractYugipediaClientTest {
 		final Timestamp endAt,
 		final String grccontinue
 	) throws IOException {
-		return getClient()
-			.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
-			.execute();
+		return callWithLog(
+			getClient()
+				.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
+		);
+	}
+
+	private Response<QueryResponse> doExecuteQueryPagesByTitle(
+		final PipeSeparated titles
+	) throws IOException {
+		return callWithLog(getClient().queryPagesByTitle(titles));
 	}
 
 	@Test
@@ -215,9 +232,7 @@ public abstract class AbstractYugipediaClientTest {
 		// given
 		final PipeSeparated titles = PipeSeparated.of("LOB", "ETCO");
 		// when
-		final Response<QueryResponse> sets = getClient()
-			.queryPagesByTitle(titles)
-			.execute();
+		final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
@@ -231,9 +246,7 @@ public abstract class AbstractYugipediaClientTest {
 		// given
 		final PipeSeparated titles = PipeSeparated.of("Does not exists");
 		// when
-		final Response<QueryResponse> sets = getClient()
-			.queryPagesByTitle(titles)
-			.execute();
+		final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
@@ -247,9 +260,7 @@ public abstract class AbstractYugipediaClientTest {
 		// given
 		final PipeSeparated titles = null;
 		// when
-		final Response<QueryResponse> sets = getClient()
-			.queryPagesByTitle(titles)
-			.execute();
+		final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
 		// then
 		assertSoftly(softly -> {
 			softly.assertThat(sets.code()).isEqualTo(200);
