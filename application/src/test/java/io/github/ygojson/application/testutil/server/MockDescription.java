@@ -1,8 +1,8 @@
 package io.github.ygojson.application.testutil.server;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Record representing the format of the mock-server mocks.json file

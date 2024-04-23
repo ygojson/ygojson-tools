@@ -1,16 +1,5 @@
 package io.github.ygojson.application.testutil.server;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import io.github.ygojson.application.testutil.TestResourceUtil;
-import okhttp3.mockwebserver.Dispatcher;
-import okhttp3.mockwebserver.MockResponse;
-import okhttp3.mockwebserver.MockWebServer;
-import okhttp3.mockwebserver.RecordedRequest;
-import org.jetbrains.annotations.NotNull;
-import org.slf4j.Logger;
-
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.IOException;
@@ -21,6 +10,18 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import okhttp3.mockwebserver.Dispatcher;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
+import okhttp3.mockwebserver.RecordedRequest;
+import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+
+import io.github.ygojson.application.testutil.TestResourceUtil;
 
 /**
  * Mocked server where mocks are described on a mocks.json file.
@@ -62,19 +63,18 @@ public class MockedServer extends Dispatcher implements Closeable {
 		final Path mocksFile = TestResourceUtil.getTestDataResourcePathByName(
 			baseFolder + "/" + MOCKS_JSON
 		);
-		try (
-			final BufferedReader reader = Files.newBufferedReader(mocksFile)
-		) {
+		try (final BufferedReader reader = Files.newBufferedReader(mocksFile)) {
 			new ObjectMapper()
 				.registerModule(new JavaTimeModule())
 				.readValue(reader, new TypeReference<List<MockDescription>>() {})
 				.forEach(mock -> this.mockByRequest.put(mock.request(), mock));
-			log.info("Loaded {} mock-responses from {}", this.mockByRequest.size(), MOCKS_JSON);
-		} catch (final IOException e) {
-			throw new IllegalStateException(
-				"Cannot read " + mocksFile,
-				e
+			log.info(
+				"Loaded {} mock-responses from {}",
+				this.mockByRequest.size(),
+				MOCKS_JSON
 			);
+		} catch (final IOException e) {
+			throw new IllegalStateException("Cannot read " + mocksFile, e);
 		}
 	}
 
@@ -87,7 +87,10 @@ public class MockedServer extends Dispatcher implements Closeable {
 		if (recordedRequest.getPath() == null) {
 			return createErrorResponse(500);
 		}
-		final String request = URLDecoder.decode(recordedRequest.getPath(), StandardCharsets.UTF_8);
+		final String request = URLDecoder.decode(
+			recordedRequest.getPath(),
+			StandardCharsets.UTF_8
+		);
 		final MockDescription mock = mockByRequest.get(request);
 		log.info("Request: {}", request);
 
