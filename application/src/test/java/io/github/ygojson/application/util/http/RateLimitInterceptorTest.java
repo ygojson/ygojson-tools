@@ -1,16 +1,11 @@
 package io.github.ygojson.application.util.http;
 
-import java.io.IOException;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.stream.IntStream;
-
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterConfig;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import okhttp3.ResponseBody;
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -21,6 +16,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.IntStream;
 
 class RateLimitInterceptorTest {
 
@@ -78,8 +79,8 @@ class RateLimitInterceptorTest {
 		IntStream
 			.range(0, calls)
 			.forEach(any -> {
-				try {
-					doRequest(client).body();
+				try(ResponseBody body = doRequest(client).body()) {
+					// do nothing with the response (just try to deserialize)
 				} catch (IOException e) {
 					log.error("warm-up request error");
 				}
