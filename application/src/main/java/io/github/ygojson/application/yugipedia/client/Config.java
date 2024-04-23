@@ -1,13 +1,13 @@
 package io.github.ygojson.application.yugipedia.client;
 
-import io.github.ygojson.application.ApplicationInfo;
-import io.github.ygojson.application.util.http.ClientConfig;
-
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Stream;
+
+import io.github.ygojson.application.ApplicationInfo;
+import io.github.ygojson.application.util.http.ClientConfig;
 
 class Config implements ClientConfig<YugipediaClient> {
 
