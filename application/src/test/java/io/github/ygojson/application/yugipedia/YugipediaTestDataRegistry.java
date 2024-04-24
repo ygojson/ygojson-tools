@@ -12,7 +12,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.ygojson.application.testutil.TestResourceUtil;
-import io.github.ygojson.application.yugipedia.model.CardTable2;
 
 /**
  * Singleton test-helper containing some yugipedia models.
@@ -66,8 +65,6 @@ public class YugipediaTestDataRegistry {
 	 * including a test name indicating why this test is useful.
 	 *
 	 * @return list of current test data.
-	 *
-	 * @see CardTable2
 	 */
 	public synchronized List<WikitextPageTestCase> getCardTable2WikitextTestCase() {
 		if (cardTable2Cache == null) {
