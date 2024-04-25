@@ -9,6 +9,10 @@ import org.mapstruct.Mapper;
 
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
+/**
+ * @deprecated - would be remove in favor of the {@link io.github.ygojson.application.yugipedia.parser.YugipediaParser}
+ */
+@Deprecated
 @Mapper
 public abstract class WikitextTemplateMapper {
 

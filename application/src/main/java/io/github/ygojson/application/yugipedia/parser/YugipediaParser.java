@@ -16,8 +16,7 @@ public interface YugipediaParser {
 	 * @return a YugipediaParser for cards
 	 */
 	static YugipediaParser createCardParser() {
-		// TODO: implement
-		return null;
+		return new CardParser(new PropertyParser());
 	}
 
 	/**
@@ -26,8 +25,7 @@ public interface YugipediaParser {
 	 * @return a YugipediaParser for sets
 	 */
 	static YugipediaParser createSetParser() {
-		// TODO: implement
-		return null;
+		return new SetParser(new PropertyParser());
 	}
 
 	/**

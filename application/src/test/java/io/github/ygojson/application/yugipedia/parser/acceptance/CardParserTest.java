@@ -5,7 +5,6 @@ import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -13,7 +12,6 @@ import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
 import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
-@Disabled
 class CardParserTest {
 
 	private static YugipediaParser PARSER;
