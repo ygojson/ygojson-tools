@@ -19,7 +19,9 @@
   "pt_database_id" : "18809001",
   "pt_name" : "Decks Lendários do Yugi",
   "pt_release_date" : "November 13, 2015",
-  "size" : "133",
+  "size" : [
+    "133"
+  ],
   "sp-lat_release_date" : "November 13, 2015",
   "type" : "Collector's Set"
 }

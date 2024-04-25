@@ -27,6 +27,9 @@
   "pt_release_date" : "April 30, 2020",
   "romaji_name" : "Etāniti Kōdo",
   "series" : "Core Booster",
-  "size" : "* 80 (OCG)\n* 101 (TCG)",
+  "size" : [
+    "80 (OCG)",
+    "101 (TCG)"
+  ],
   "type" : "Booster Pack"
 }

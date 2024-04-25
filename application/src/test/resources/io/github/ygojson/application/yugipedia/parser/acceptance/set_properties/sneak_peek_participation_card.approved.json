@@ -17,6 +17,8 @@
   "prefix" : "ANPR",
   "prev" : "Raging Battle Sneak Peek Participation Card",
   "series" : "Sneak Peek Participation Cards",
-  "size" : "1",
+  "size" : [
+    "1"
+  ],
   "type" : "Participation card"
 }

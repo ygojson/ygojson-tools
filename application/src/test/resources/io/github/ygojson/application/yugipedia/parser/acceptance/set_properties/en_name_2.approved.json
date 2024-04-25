@@ -36,7 +36,10 @@
   "other_sets" : "Spell Ruler promotional cards",
   "prev" : "Metal Raiders",
   "series" : "Core Booster",
-  "size" : "* 104\n* 131 (E, F, G, I)",
+  "size" : [
+    "104",
+    "131 (E, F, G, I)"
+  ],
   "sp_prefix" : "SDH-S",
   "sp_release_date" : "September 1, 2004",
   "type" : "Booster pack"

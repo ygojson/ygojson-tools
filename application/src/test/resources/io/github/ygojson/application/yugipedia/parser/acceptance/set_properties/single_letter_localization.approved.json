@@ -33,7 +33,9 @@
   "pt_name" : "Deck Inicial do Pegasus",
   "pt_prefix" : "DIP-P",
   "pt_release_date" : "2004",
-  "size" : "50",
+  "size" : [
+    "50"
+  ],
   "sp_prefix" : "BIP-S",
   "sp_release_date" : "June 2004",
   "type" : "Starter Deck"

@@ -9,6 +9,8 @@
   "order_number" : "",
   "romaji_name" : "Boryūmu Wan",
   "series" : "Core Booster",
-  "size" : "40",
+  "size" : [
+    "40"
+  ],
   "type" : "Booster Pack"
 }

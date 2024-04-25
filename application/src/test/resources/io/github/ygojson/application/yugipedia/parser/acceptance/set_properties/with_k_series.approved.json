@@ -36,7 +36,9 @@
   "pt_release_date" : "June 1, 2005",
   "romaji_name" : "Za Rosuto Mireniamu",
   "series" : "Core Booster",
-  "size" : "60",
+  "size" : [
+    "60"
+  ],
   "sneak_peek" : "yes",
   "sp_prefix" : "TLM-SP",
   "special_edition" : "yes",

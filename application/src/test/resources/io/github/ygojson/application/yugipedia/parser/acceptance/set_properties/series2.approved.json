@@ -10,7 +10,8 @@
   "prev" : "Vol.7",
   "romaji_name" : "Majikku Rūrā - Mahō no Shihaisha -",
   "series" : "Core Booster",
-  "size" : "50",
-  "type" : "Booster Pack",
-  "width" : ""
+  "size" : [
+    "50"
+  ],
+  "type" : "Booster Pack"
 }

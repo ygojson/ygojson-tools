@@ -10,6 +10,8 @@
   "prev" : "Pharaonic Guardian (Japanese)",
   "romaji_name" : "Aratanaru Shihaisha",
   "series" : "Core Booster",
-  "size" : "50",
+  "size" : [
+    "50"
+  ],
   "type" : "Booster Pack"
 }

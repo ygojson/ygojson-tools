@@ -1,5 +1,6 @@
 package io.github.ygojson.application.yugipedia.parser;
 
+import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
@@ -21,19 +22,28 @@ class InfoboxSetParser extends TemplateParser {
 	 */
 	private static final int INFOBOX_SET_CONTENT_GROUP = 1;
 
+	// ignoring width property (not sure for what it is used, but found once)
+	private static Set<String> IGNORED_PROPERTIES = Set.of("width");
+
+	private static final Set<String> BULLETED_LIST_PROPERTIES = Set.of("size");
+
 	protected InfoboxSetParser(PropertyParser parser) {
 		super(parser, INFOBOX_SET_CONTENT_PATTERN, INFOBOX_SET_CONTENT_GROUP);
 	}
 
 	@Override
 	protected boolean ignoreProperty(String property) {
-		// TODO: ignore some properties
+		if (IGNORED_PROPERTIES.contains(property)) {
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	protected PropertyParser.Type getPropertyType(String property) {
-		// TODO: handle some special properties
+		if (BULLETED_LIST_PROPERTIES.contains(property)) {
+			return PropertyParser.Type.BULLETED_LIST;
+		}
 		return PropertyParser.Type.TEXT;
 	}
 }

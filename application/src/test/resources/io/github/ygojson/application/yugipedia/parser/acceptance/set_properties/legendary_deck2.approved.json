@@ -20,7 +20,9 @@
   "pt_database_id" : "18810002",
   "pt_name" : "Decks Lendários II",
   "pt_release_date" : "October 7, 2016",
-  "size" : "135",
+  "size" : [
+    "135"
+  ],
   "sp-lat_release_date" : "October 7, 2016",
   "type" : "Collector's Set"
 }

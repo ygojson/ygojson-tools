@@ -30,7 +30,10 @@
   "prev" : "Raging Battle",
   "romaji_name" : "Enshento Purofeshī",
   "series" : "Core Booster",
-  "size" : "* 80 (OCG)\n* 100 (TCG)",
+  "size" : [
+    "80 (OCG)",
+    "100 (TCG)"
+  ],
   "sneak_peek" : "yes",
   "special_edition" : "yes",
   "type" : "Booster Pack"
