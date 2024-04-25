@@ -1,14 +1,14 @@
 {
-  "next" : "Vol.2",
-  "image" : "V1-BoosterJP.jpg",
-  "size" : "40",
-  "series" : "Core Booster",
-  "ja_database_id" : "1101000",
-  "order_number" : "",
-  "en_name" : "Vol.1",
-  "jp_release_date" : "February 4, 1999",
-  "ja_name" : "{{Ruby|Ｖｏｌ．|ボリューム}}１",
-  "type" : "[[Booster Pack]]",
   "cover_card" : "[[Blue-Eyes White Dragon]]",
-  "romaji_name" : "Boryūmu Wan"
+  "en_name" : "Vol.1",
+  "image" : "V1-BoosterJP.jpg",
+  "ja_database_id" : "1101000",
+  "ja_name" : "{{Ruby|Ｖｏｌ．|ボリューム}}１",
+  "jp_release_date" : "February 4, 1999",
+  "next" : "Vol.2",
+  "order_number" : "",
+  "romaji_name" : "Boryūmu Wan",
+  "series" : "Core Booster",
+  "size" : "40",
+  "type" : "[[Booster Pack]]"
 }

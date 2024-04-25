@@ -19,8 +19,7 @@ class ParseVerifier {
 		objectMapper =
 			new ObjectMapper()
 				.enable(SerializationFeature.INDENT_OUTPUT)
-				.enable(SerializationFeature.INDENT_OUTPUT)
-				//.enable(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS)
+				.enable(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS)
 				.setSerializationInclusion(JsonInclude.Include.NON_NULL)
 				.setDefaultPrettyPrinter(prettyPrinter);
 	}
