@@ -1,6 +1,6 @@
 {
   "2-pack_set" : "yes",
-  "cover_card" : "[[Ancient Fairy Dragon]]",
+  "cover_card" : "Ancient Fairy Dragon",
   "de_database_id" : "21108003",
   "de_name" : "Ancient Prophecy",
   "en_database_id" : "11108003",
@@ -25,7 +25,7 @@
   "next" : "Stardust Overdrive",
   "oc_release_date" : "",
   "order_number" : "605",
-  "other_sets" : "''Ancient Prophecy Plus''",
+  "other_sets" : "Ancient Prophecy Plus",
   "prefix" : "ANPR",
   "prev" : "Raging Battle",
   "romaji_name" : "Enshento Purofeshī",
@@ -33,5 +33,5 @@
   "size" : "* 80 (OCG)\n* 100 (TCG)",
   "sneak_peek" : "yes",
   "special_edition" : "yes",
-  "type" : "[[Booster Pack]]"
+  "type" : "Booster Pack"
 }

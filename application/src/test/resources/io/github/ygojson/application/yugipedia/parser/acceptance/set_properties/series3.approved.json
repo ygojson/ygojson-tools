@@ -1,9 +1,9 @@
 {
-  "cover_card" : "[[Helpoemer]]",
+  "cover_card" : "Helpoemer",
   "ean" : "4-988602-088892",
   "image" : "301-BoosterJP.png",
   "ja_database_id" : "1105000",
-  "ja_name" : "{{Ruby|新|あら}}たなる{{Ruby|支|し}}{{Ruby|配|はい}}{{Ruby|者|しゃ}}",
+  "ja_name" : "<ruby>新<rt>あら</rt></ruby>たなる<ruby>支<rt>し</rt></ruby><ruby>配<rt>はい</rt></ruby><ruby>者<rt>しゃ</rt></ruby>",
   "jp_prefix" : "301",
   "jp_release_date" : "May 16, 2002",
   "next" : "Advent of Union",
@@ -11,5 +11,5 @@
   "romaji_name" : "Aratanaru Shihaisha",
   "series" : "Core Booster",
   "size" : "50",
-  "type" : "[[Booster Pack]]"
+  "type" : "Booster Pack"
 }

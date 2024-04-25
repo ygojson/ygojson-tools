@@ -27,7 +27,7 @@
   "ko_name" : "블랙홀",
   "ko_rr_name" : "Beullaek-hol",
   "kr_sets" : "LOB-K052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-K022; Starter Deck: Yugi; Common\nSDK-K022; Starter Deck: Kaiba; Common\nBP1-KR113; Beginner's Edition 1; Super Rare\nSDJ-KR026; Starter Deck: Joey; Common\nSDP-KR026; Starter Deck: Pegasus; Common\nSYE-KR026; Starter Deck: Yugi Evolution; Common\nGS03-KR012; Gold Series 2011; Common, Gold Rare\nSD23-KR030; Structure Deck: Roar of the Sea Emperor; Common\nDS13-KRD30; Duelist Set: Version Dark Returner; Common\nAE03-KR001; Advanced Event Pack 2014 Vol.1; Secret Rare\nST14-KRA06; Starter Deck 2014 Enhancement Pack; Common\nVS15-KRS14; Duelist Entry Deck VS: Saber Force; Normal Parallel Rare\nVS15-KRD15; Duelist Entry Deck VS: Dark Legion; Normal Parallel Rare\nSPDS-KR042; Booster SP: Destiny Soldiers; Common, Normal Parallel Rare\nST17-KR023; Starter Deck 2017; Common\nST18-KR024; Starter Deck 2018; Normal Parallel Rare",
-  "lore" : "[[Destroy]] all [[monster]]s on the [[field]].",
+  "lore" : "Destroy all monsters on the field.",
   "m/s/t" : "Destroys Monster Cards",
   "na_sets" : "LOB-052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-022; Starter Deck: Yugi; Common\nSDK-022; Starter Deck: Kaiba; Common\nSDJ-026; Starter Deck: Joey; Common\nSDP-026; Starter Deck: Pegasus; Common\nYS15-ENF13; Saber Force Starter Deck; Shatterfoil Rare\nYS15-ENL14; Dark Legion Starter Deck; Shatterfoil Rare",
   "password" : "53129443",

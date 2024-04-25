@@ -1,8 +1,8 @@
 {
   "ae_database_id" : "5000000027000",
   "ae_prefix" : "TLM-AE",
-  "ae_release_date" : "January 19, 2006<!-- https://web.archive.org/web/20060516192034im_/http:/www.konamistyle.jp/ecitem/item25308.html -->",
-  "cover_card" : "[[Ancient Gear Golem]]",
+  "ae_release_date" : "January 19, 2006",
+  "cover_card" : "Ancient Gear Golem",
   "de_database_id" : "21104002",
   "de_name" : "The Lost Millennium",
   "en_database_id" : "11104002",
@@ -21,11 +21,11 @@
   "it_prefix" : "TLM-IT",
   "ja_database_id" : "1107003",
   "ja_name" : "ザ・ロスト・ミレニアム",
-  "jp_release_date" : "February 24, 2005<!--http://z7.invisionfree.com/dmcentral/ar/t194.htm -->",
+  "jp_release_date" : "February 24, 2005",
   "ko_database_id" : "71104003",
   "ko_name" : "잃어버린 천년",
   "ko_rr_name" : "Ilh-eobeorin Cheonnyeon",
-  "kr_release_date" : "August 29, 2006<!-- http://www.yugioh.co.kr/01/01_03.php and http://www.yugioh.co.kr/card/board.php?board=booster -->",
+  "kr_release_date" : "August 29, 2006",
   "next" : "Cybernetic Revolution",
   "order_number" : "404",
   "prefix" : "TLM",
@@ -40,6 +40,6 @@
   "sneak_peek" : "yes",
   "sp_prefix" : "TLM-SP",
   "special_edition" : "yes",
-  "type" : "[[Booster Pack]]",
+  "type" : "Booster Pack",
   "vendor_edition" : "yes"
 }
