@@ -10,7 +10,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
 /**
  * Mapper to be used with other mappers for converting fields
  * to markup strings.
+ *
+ * @deprecated - would be removed in favor of the {@link io.github.ygojson.application.yugipedia.parser.YugipediaParser}
  */
+@Deprecated
 @Mapper
 public abstract class MarkupStringMapper {
 

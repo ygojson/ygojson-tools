@@ -15,7 +15,10 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 /**
  * String that might contain markup from the Yugipedia API
  * that can be cleanup.
+ *
+ * @deprecated - would be removed in favor of the {@link io.github.ygojson.application.yugipedia.parser.YugipediaParser}
  */
+@Deprecated
 @JsonSerialize(using = ToStringSerializer.class)
 public final class MarkupString {
 
