@@ -1,6 +1,7 @@
 package io.github.ygojson.application.yugipedia.parser;
 
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
@@ -28,6 +29,11 @@ class CardTable2Parser extends TemplateParser {
 		Pattern.compile("^gx[0-9]+_.*")
 	);
 
+	private static final Set<String> COMMA_LIST_PROPERTIES = Set.of(
+		"link_arrows",
+		"effect_types"
+	);
+
 	/**
 	 * Default constructor.
 	 *
@@ -48,7 +54,10 @@ class CardTable2Parser extends TemplateParser {
 	}
 
 	@Override
-	protected PropertyParser.Type getPropertyType(String property) {
+	protected PropertyParser.Type getPropertyType(final String property) {
+		if (COMMA_LIST_PROPERTIES.contains(property)) {
+			return PropertyParser.Type.COMMA_LIST;
+		}
 		// TODO: handle some special properties
 		return PropertyParser.Type.TEXT;
 	}

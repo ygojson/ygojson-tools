@@ -6,7 +6,9 @@
   "de_lore" : "Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt.",
   "de_name" : "Dimensionsriss",
   "de_sets" : "EOJ-DE047; Enemy of Justice; Common\nSDDE-DE028; The Dark Emperor Structure Deck; Common\nCP08-DE004; Champion Pack: Game Eight; Super Rare\nLCGX-DE215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-DE081; Ra Yellow Mega Pack; Secret Rare\nDUSA-DE060; Duelist Saga; Ultra Rare\nBLMR-DE088; Battles of Legend: Monstrous Revenge; Ultra Rare",
-  "effect_types" : "Continuous-like",
+  "effect_types" : [
+    "Continuous-like"
+  ],
   "en_sets" : "EOJ-EN047; Enemy of Justice; Common\nSDDE-EN028; The Dark Emperor Structure Deck; Common\nCP08-EN004; Champion Pack: Game Eight; Super Rare\nLCGX-EN215; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-EN081; Ra Yellow Mega Pack; Secret Rare\nDUSA-EN060; Duelist Saga; Ultra Rare\nBLMR-EN088; Battles of Legend: Monstrous Revenge; Ultra Rare",
   "es_lore" : "Cualquier monstruo mandado al Cementerio es desterrado en su lugar.",
   "es_name" : "Fisura Dimensional",

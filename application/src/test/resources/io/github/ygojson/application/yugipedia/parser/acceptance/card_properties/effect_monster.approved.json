@@ -9,7 +9,10 @@
   "de_name" : "Aschenblüte & Freudiger Frühling",
   "de_sets" : "MACR-DE036; Maximum Crisis; Secret Rare\nLCKC-DE080; Legendary Collection Kaiba Mega Pack; Ultra Rare\nSHVA-DE047; Shadows in Valhalla; Super Rare\nSDSB-DE019; Structure Deck: Soulburner; Common\nDUPO-DE077; Duel Power; Ultra Rare\nDUDE-DE003; Duel Devastator; Ultra Rare\nMAGO-DE011; Maximum Gold; Premium Gold Rare\nMP22-DE257; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare\nSDCB-DE014; Structure Deck: Legend of the Crystal Beasts; Common\nSDBT-DE014; Structure Deck: Beware of Traptrix; Common\nRA01-DE008; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
   "def" : "1800",
-  "effect_types" : "Quick, Condition",
+  "effect_types" : [
+    "Quick",
+    "Condition"
+  ],
   "en_sets" : "MACR-EN036; Maximum Crisis; Secret Rare\nLCKC-EN080; Legendary Collection Kaiba Mega Pack; Ultra Rare\nSHVA-EN047; Shadows in Valhalla; Super Rare\nSDSB-EN019; Structure Deck: Soulburner; Common\nDUPO-EN077; Duel Power; Ultra Rare\nDUDE-EN003; Duel Devastator; Ultra Rare\nMAGO-EN011; Maximum Gold; Premium Gold Rare\nMP22-EN257; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare\nSDCB-EN014; Structure Deck: Legend of the Crystal Beasts; Common\nSDBT-EN014; Structure Deck: Beware of Traptrix; Common\nRA01-EN008; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
   "es_lore" : "Cuando es activada una carta o efecto que incluya cualquiera de estos efectos (Efecto Rápido): puedes descartar esta carta; niega ese efecto.\n● Añadir a la mano una carta en el Deck.\n● Invocar de Modo Especial desde el Deck.\n● Mandar al Cementerio una carta en el Deck.\nSólo puedes usar este efecto de \"Flor de Ceniza & Primavera Feliz\" una vez por turno.",
   "es_name" : "Flor de Ceniza & Primavera Feliz",

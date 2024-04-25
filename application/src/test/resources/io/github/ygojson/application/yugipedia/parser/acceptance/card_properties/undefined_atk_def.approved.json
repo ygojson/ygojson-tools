@@ -9,7 +9,12 @@
   "de_name" : "Chimeratech-Überdrache",
   "de_sets" : "POTD-DE034; Power of the Duelist; Ultra Rare, Ultimate Rare\nDP04-DE013; Duelist Pack: Zane Truesdale; Rare\nGLD1-DE029; Gold Series; Gold Rare\nLCGX-DE183; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-DE061; Ra Yellow Mega Pack; Rare\nSP14-DE043; Star Pack 2014; Common, Starfoil Rare\nPGLD-DE056; Premium Gold; Gold Rare\nLEDD-DEB27; Legendary Dragon Decks; Common\nSDCS-DE042; Structure Deck: Cyber Strike; Common\nSGX1-DEG22; Speed Duel GX: Duel Academy Box; Common",
   "def" : "?",
-  "effect_types" : "Summoning condition, Trigger, Continuous, Continuous",
+  "effect_types" : [
+    "Summoning condition",
+    "Trigger",
+    "Continuous",
+    "Continuous"
+  ],
   "en_sets" : "POTD-EN034; Power of the Duelist; Ultra Rare, Ultimate Rare\nDP04-EN013; Duelist Pack: Zane Truesdale; Rare\nGLD1-EN029; Gold Series; Gold Rare\nLCGX-EN183; Legendary Collection 2: The Duel Academy Years Mega Pack; Secret Rare\nRYMP-EN061; Ra Yellow Mega Pack; Rare\nSP14-EN043; Star Pack 2014; Common, Starfoil Rare\nPGLD-EN056; Premium Gold; Gold Rare\nLEDD-ENB27; Legendary Dragon Decks; Common\nSDCS-EN042; Structure Deck: Cyber Strike; Common\nSGX1-ENG22; Speed Duel GX: Duel Academy Box; Common",
   "es_lore" : "\"Ciber Dragón\" + 1+ monstruos Máquina\nDebe ser Invocado por Fusión. Si esta carta es Invocada por Fusión: manda al Cementerio todas las demás cartas que controles. El ATK/DEF originales de esta carta se convierten, cada uno, en el número de Materiales de Fusión que utilizaste para su Invocación por Fusión x 800. Cada Battle Phase, esta carta puede atacar los monstruos de tu adversario hasta tantas veces como Materiales de Fusión usados para su Invocación por Fusión.",
   "es_name" : "Súper Dragón Chimeratech",

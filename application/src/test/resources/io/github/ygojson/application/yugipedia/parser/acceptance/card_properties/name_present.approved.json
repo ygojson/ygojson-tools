@@ -9,7 +9,9 @@
   "de_name" : "Jinzo #7",
   "de_sets" : "MRD-G035; Metal Raiders; Short Print\nDB1-DE162; Dark Beginning 1; Common\nMRD-DE035; Metal Raiders (25th Anniversary Edition); Common",
   "def" : "400",
-  "effect_types" : "Continuous",
+  "effect_types" : [
+    "Continuous"
+  ],
   "en_sets" : "DB1-EN162; Dark Beginning 1; Common\nMRD-EN035; Metal Raiders; Short Print\nMRD-EN035; Metal Raiders (25th Anniversary Edition); Common",
   "es_lore" : "Esta carta puede atacar los Life Points de tu adversario directamente.",
   "es_name" : "Jinzo #7",

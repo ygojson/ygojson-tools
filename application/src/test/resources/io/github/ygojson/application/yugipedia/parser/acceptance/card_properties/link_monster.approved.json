@@ -8,7 +8,11 @@
   "de_lore" : "2+ Monster mit unterschiedlichen Namen\nFalls diese Karte als Linkbeschwörung beschworen wird: Du kannst 1 Karte abwerfen und dann 1 Karte auf dem Spielfeld wählen; mische sie ins Deck, dann, falls diese Karte kreuzgelinkt war, als dieser Effekt aktiviert wurde, kannst du 1 Karte ziehen. Du kannst diesen Effekt von „Albtraumritter Einhorn“ nur einmal pro Spielzug verwenden. Solange kreuzgelinkte „Albtraumritter“-Monster auf dem Spielfeld liegen, ziehe für dein normales Ziehen in deiner Draw Phase 1 Karte für jeden unterschiedlichen Kartennamen unter jenen kreuzgelinkten „Albtraumritter“-Monstern, anstatt nur 1 Karte zu ziehen.",
   "de_name" : "Albtraumritter Einhorn",
   "de_sets" : "FLOD-DE047; Flames of Destruction; Secret Rare\nMP19-DE028; 2019 Gold Sarcophagus Tin Mega Pack; Ultra Rare\nGEIM-DE050; Genesis Impact; Rare, Collector's Rare\nMGED-DE034; Maximum Gold: El Dorado; Premium Gold Rare\nRA01-DE043; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
-  "effect_types" : "Trigger, Condition, Continuous",
+  "effect_types" : [
+    "Trigger",
+    "Condition",
+    "Continuous"
+  ],
   "en_sets" : "FLOD-EN047; Flames of Destruction; Secret Rare\nMP19-EN028; 2019 Gold Sarcophagus Tin Mega Pack; Ultra Rare\nGEIM-EN050; Genesis Impact; Rare, Collector's Rare\nMGED-EN034; Maximum Gold: El Dorado; Premium Gold Rare\nRA01-EN043; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
   "es_lore" : "2+ monstruos con nombres diferentes\nSi esta carta es Invocada por Enlace: puedes descartar 1 carta, y después selecciona 1 carta en el Campo; barájala al Deck y después, si esta carta fue co-enlazada cuando este efecto fue activado, puedes robar 1 carta. Sólo puedes usar este efecto de \"Caballero de Pesadilla Unicornio\" una vez por turno. Mientras haya monstruos \"Caballero de Pesadilla\" co-enlazados en el Campo, en tu robo normal de tu Draw Phase roba 1 carta por cada nombre de carta diferente entre esos monstruos \"Caballero de Pesadilla\" co-enlazados, en lugar de robar sólo 1 carta.",
   "es_name" : "Caballero de Pesadilla Unicornio",
@@ -26,7 +30,11 @@
   "ko_name" : "트로이메어 유니콘",
   "ko_rr_name" : "Teuroime-eo Yunikon",
   "kr_sets" : "FLOD-KR047; Flames of Destruction; Super Rare, Secret Rare\nRC04-KR044; Rarity Collection Quarter Century Edition; Ultra Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare",
-  "link_arrows" : "Middle-Left, Bottom-Center, Middle-Right",
+  "link_arrows" : [
+    "Middle-Left",
+    "Bottom-Center",
+    "Middle-Right"
+  ],
   "lore" : "2+ monsters with different names\nIf this card is Link Summoned: You can discard 1 card, then target 1 card on the field; shuffle it into the Deck, then, if this card was co-linked when this effect was activated, you can draw 1 card. You can only use this effect of \"Knightmare Unicorn\" once per turn. While any co-linked \"Knightmare\" monsters are on the field, for your normal draw in your Draw Phase, draw 1 card for each different card name among those co-linked \"Knightmare\" monsters, instead of drawing just 1 card.",
   "material" : "2+ monsters with different names",
   "misc" : "* Co-link\n* Only once per turn",

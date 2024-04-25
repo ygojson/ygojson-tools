@@ -2,6 +2,7 @@ package io.github.ygojson.application.yugipedia.parser.acceptance;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -15,7 +16,7 @@ class ParseVerifier {
 
 	ParseVerifier() {
 		final DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
-		//prettyPrinter.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+		prettyPrinter.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
 		objectMapper =
 			new ObjectMapper()
 				.enable(SerializationFeature.INDENT_OUTPUT)

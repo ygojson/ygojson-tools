@@ -10,7 +10,11 @@
   "de_pendulum_effect" : "Du kannst 6 Zauberzählmarken von deiner Spielfeldseite entfernen; beschwöre diese Karte als Spezialbeschwörung von der Pendelzone, dann zähle die Anzahl der Karten, die du kontrollierst und die eine Zauberzählmarke haben können, zerstöre bis zu so viele Karten auf dem Spielfeld und falls du dies tust, lege Zauberzählmarken in Höhe der Anzahl der zerstörten Karten auf diese Karte. Du kannst diesen Effekt von „Endymion, der mächtige Meister der Magie“ nur einmal pro Spielzug verwenden.",
   "de_sets" : "SR08-DE001; Structure Deck: Order of the Spellcasters; Ultra Rare",
   "def" : "1700",
-  "effect_types" : "Quick, Continuous, Trigger",
+  "effect_types" : [
+    "Quick",
+    "Continuous",
+    "Trigger"
+  ],
   "en_sets" : "SR08-EN001; Structure Deck: Order of the Spellcasters; Ultra Rare",
   "es_lore" : "Una vez por turno, cuando una Carta Mágica/de Trampa o efecto es activado (Efecto Rápido): puedes devolver a la mano 1 carta que controles con un Contador Mágico y, si lo haces, niega la activación, y, si haces eso, destrúyela. Después, puedes poner en esta carta la misma cantidad de Contadores Mágicos que tenía la carta devuelta. Mientras esta carta tenga un Contador Mágico, tu adversario no puede seleccionarla con efectos de cartas, y además no puede ser destruida por los efectos de cartas de tu adversario. Cuando esta carta con un Contador Mágico es destruida en batalla: puedes añadir a tu mano 1 Mágica Normal en tu Deck.",
   "es_name" : "Endimión, el Poderoso Maestro de Magia",

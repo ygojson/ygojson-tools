@@ -8,7 +8,12 @@
   "de_name" : "Schicksals-HELD - Destroyer Phoenix Enforcer",
   "de_sets" : "BODE-DE039; Burst of Destiny; Secret Rare\nPOTE-DE100; Power of the Elements; Starlight Rare\nMP22-DE209; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare",
   "def" : "2100",
-  "effect_types" : "Continuous, Condition, Quick, Trigger",
+  "effect_types" : [
+    "Continuous",
+    "Condition",
+    "Quick",
+    "Trigger"
+  ],
   "en_sets" : "BODE-EN039; Burst of Destiny; Secret Rare\nPOTE-EN100; Power of the Elements; Starlight Rare\nMP22-EN209; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare",
   "es_lore" : "1 monstruo \"HÉROE\" de Nivel 6 o mayor + 1 monstruo \"HÉROE del Destino\"\nLos monstruos que controla tu adversario pierden 200 ATK por cada carta \"HÉROE\" en tu Cementerio. Sólo puedes usar cada uno de los siguientes efectos de \"HÉROE del Destino - Phoenix Enforcer Destructor\" una vez por turno. (Efecto Rápido): puedes destruir 1 carta que controles y 1 carta en el Campo. Si esta carta es destruida en batalla o por el efecto de una carta: puedes activar este efecto; Invoca de Modo Especial, desde tu Cementerio, 1 monstruo \"HÉROE del Destino\" durante la Standby Phase del próximo turno.",
   "es_name" : "HÉROE del Destino - Phoenix Enforcer Destructor",

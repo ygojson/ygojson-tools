@@ -10,7 +10,10 @@
   "de_name" : "Sternenstaubdrache",
   "de_sets" : "CT05-DE001; Collectible Tins 2008 Wave 1; Secret Rare\nTDGS-DE040; The Duelist Genesis; Ultra Rare, Ultimate Rare, Ghost Rare\nDP08-DE014; Duelist Pack: Yusei; Super Rare\nGLD3-DE037; Gold Series 3; Gold Rare\nCT07-DE021; Collectible Tins 2010 Wave 2; Super Rare\nTU06-DE007; Turbo Pack: Booster Six; Rare\nAC11-DE024; Yu-Gi-Oh! Advent Calendar; Secret Rare\nSHSP-DESE1; Shadow Specters: Special Edition; Super Rare\nPGLD-DE076; Premium Gold; Gold Rare\nLC5D-DE031; Legendary Collection 5D's Mega Pack; Common, Ultra Rare\nDUPO-DE103; Duel Power; Ultra Rare\nTOCH-DE050; Toon Chaos; Rare, Collector's Rare\nDAMA-DE100; Dawn of Majesty; Starlight Rare\nTN23-DE016; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
   "def" : "2000",
-  "effect_types" : "Quick, Trigger",
+  "effect_types" : [
+    "Quick",
+    "Trigger"
+  ],
   "en_sets" : "CT05-EN001; Collectible Tins 2008 Wave 1; Secret Rare\nTDGS-EN040; The Duelist Genesis; Ultra Rare, Ultimate Rare, Ghost Rare\nDP08-EN014; Duelist Pack: Yusei; Super Rare\nGLD3-EN037; Gold Series 3; Gold Rare\nCT07-EN021; Collectible Tins 2010 Wave 2; Super Rare\nTU06-EN007; Turbo Pack: Booster Six; Rare\nSHSP-ENSE1; Shadow Specters: Special Edition; Super Rare\nPGLD-EN076; Premium Gold; Gold Rare\nLC5D-EN031; Legendary Collection 5D's Mega Pack; Common, Ultra Rare\nDUPO-EN103; Duel Power; Ultra Rare\nTOCH-EN050; Toon Chaos; Rare, Collector's Rare\nDAMA-EN100; Dawn of Majesty; Starlight Rare\nTN23-EN016; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
   "es_lore" : "1 Cantante + 1+ monstruos que no sean Cantantes\nCuando es activada una carta o efecto que fuera a destruir una o más cartas en el Campo (Efecto Rápido): puedes Sacrificar esta carta; niega la activación y, si lo haces, destruye la carta. Durante la End Phase, si este turno este efecto fue activado (y no fue negado): puedes Invocar esta carta de Modo Especial desde tu Cementerio.",
   "es_name" : "Dragón de Polvo de Estrellas",
