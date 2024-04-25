@@ -30,7 +30,6 @@
   "lore" : "When a [[monster]](s) would be [[Summon]]ed, OR a [[Spell Card|Spell]]/[[Trap Card]] is [[activate]]d: [[Pay]] half your [[LP]]; [[negate]] the Summon or activation, and if you do, [[destroy]] that card.",
   "m/s/t" : "* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Destroys Monster Cards\n* Destroys negated Summons",
   "na_sets" : "MRD-127; Metal Raiders; Ultra Rare\nDLG1-EN046; Dark Legends; Super Rare",
-  "ntr_sets" : "'''[[Cursed Darkness (NTR-BP)|Cursed Darkness]]''' ([[Super Rare]])",
   "password" : "41420027",
   "property" : "Counter",
   "pt_lore" : "Quando um ou mais monstros seriam Invocados OU um Card de Magia/Armadilha for ativado: pague metade dos seus PV; negue a Invocação ou ativação e, se isso acontecer, destrua esse card.",
@@ -45,6 +44,5 @@
   "tc_lore" : "可以支付一半的生命点数进行发动。使魔法/陷阱卡的发动、怪兽的召唤/反转召唤/特殊召唤中的其中1项无效并破坏。",
   "tc_name" : "神之宣告",
   "tc_sets" : "SP01-TC060; Starter Pack Volume 1; Super Rare",
-  "trans_name" : "God's Judgment",
-  "ygo_sets" : "'''[[Pack 10 (YGOO-BP)|Pack 10]]'''"
+  "trans_name" : "God's Judgment"
 }

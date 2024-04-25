@@ -16,7 +16,6 @@
   "fr_lore" : "Lorsque votre adversaire Invoque Normalement ou par Flip un monstre avec min. 1000 ATK : ciblez le monstre ; détruisez la cible.",
   "fr_name" : "Trappe",
   "fr_sets" : "LDD-F046; Legend of Blue Eyes White Dragon; Super Rare\nDDY-F025; Starter Deck: Yugi; Common\nDDK-F030; Starter Deck: Kaiba; Common\nDDJ-F043; Starter Deck: Joey; Common\nDDP-F041; Starter Deck: Pegasus; Common\nSYE-FR041; Starter Deck: Yugi Evolution; Common\nSKE-FR042; Starter Deck: Kaiba Evolution; Common\nYSDJ-FR034; Starter Deck: Jaden Yuki; Common\nYSDS-FR032; Starter Deck: Syrus Truesdale; Common\nRP01-FR007; Retro Pack; Common\n5DS1-FR036; Starter Deck: Yu-Gi-Oh! 5D's; Common\nDL09-FR017; Duelist League 2010 participation cards; Rare\n5DS3-FR030; Starter Deck: Duelist Toolbox; Common\nYS11-FR034; Starter Deck: Dawn of the Xyz; Common\nYS12-FR032; Starter Deck: Xyz Symphony; Common\nLCYW-FR177; Legendary Collection 3: Yugi's World Mega Pack; Ultra Rare\nLCJW-FR073; Legendary Collection 4: Joey's World Mega Pack; Common\nYSYR-FR038; Starter Deck: Yugi Reloaded; Common\nYSKR-FR042; Starter Deck: Kaiba Reloaded; Common\nYS14-FR031; Super Starter: Space-Time Showdown; Common\nYS15-FRY17; 2-Player Starter Deck: Yuya & Declan; Common\nSDBT-FR028; Structure Deck: Beware of Traptrix; Common\nLOB-FR058; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare",
-  "gx03_sets" : "'''[[Established Chaos (GX03-BP)|Established Chaos]]''' ([[Super Rare]])",
   "image" : "TrapHole-LOB-EN-SR-UE-25thAnniversaryEdition.png",
   "it_lore" : "Quando il tuo avversario Evoca Normalmente o per Scoperta un mostro con ATK 1000 o superiore: scegli come bersaglio quel mostro; distruggi quel bersaglio.",
   "it_name" : "Buco Trappola",
@@ -31,7 +30,6 @@
   "lore" : "When your opponent [[Normal Summon|Normal]] or [[Flip Summon]]s a [[monster]] with 1000 or more [[ATK]]: [[Target]] that monster; [[destroy]] that target.",
   "m/s/t" : "* Destroys your opponent's Monster Cards\n* Destroys Normal Summoned Monsters",
   "na_sets" : "LOB-058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-027; Starter Deck: Yugi; Common\nSDK-033; Starter Deck: Kaiba; Common\nSDJ-043; Starter Deck: Joey; Common\nSDP-041; Starter Deck: Pegasus; Common\nDLG1-EN008; Dark Legends; Common\nDT02-EN100; Duel Terminal 2; Duel Terminal Normal Parallel Rare\nYS15-ENF24; Saber Force Starter Deck; Common\nYS15-ENL24; Dark Legion Starter Deck; Common",
-  "ntr_sets" : "'''[[Shadows in the Labyrinth (NTR-BP)|Shadows in the Labyrinth]]''' ([[Rare]])",
   "password" : "04206964",
   "property" : "Normal",
   "pt_lore" : "Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo.",
@@ -42,6 +40,5 @@
   "tc_lore" : "對手攻擊力1000或以上的怪獸召喚／反轉召喚成功時，可選擇1隻該怪獸發動。破壞該攻擊力1000或以上的怪獸。",
   "tc_name" : "陷坑",
   "tc_sets" : "ST14-TC033; Duel Starter Deck; Common\nHD13-TCL17; Half-Deck: LIGHT; Common\nHD13-TCD17; Half-Deck: DARK; Common",
-  "trans_name" : "Pitfall",
-  "ygo_sets" : "'''[[Pack 2 (YGOO-BP)|Pack 2]]'''"
+  "trans_name" : "Pitfall"
 }

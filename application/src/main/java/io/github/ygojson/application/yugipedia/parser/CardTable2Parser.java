@@ -1,5 +1,6 @@
 package io.github.ygojson.application.yugipedia.parser;
 
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**
@@ -17,6 +18,16 @@ class CardTable2Parser extends TemplateParser {
 	// Group on the CARDTABLE2_CONTENT_PATTERN where the actual content is
 	private static final int CARDTABLE2_CONTENT_GROUP = 1;
 
+	// IGNORE VIDEO GAME PROPERTIES AS THEY ARE DEPRECATED
+	// WE CANNOT RELY ON THEM DUE TO THAT INFORMATION
+	// TODO: maybe contribute to yugipedia to remove for pages where we find them
+	private static List<Pattern> IGNORED_PATTERNS = List.of(
+		Pattern.compile("^dar_.*"),
+		Pattern.compile("^ntr_.*"),
+		Pattern.compile("^ygo_.*"),
+		Pattern.compile("^gx[0-9]+_.*")
+	);
+
 	/**
 	 * Default constructor.
 	 *
@@ -28,8 +39,12 @@ class CardTable2Parser extends TemplateParser {
 
 	@Override
 	protected boolean ignoreProperty(String property) {
-		// TODO: ignore some properties
-		return false;
+		return IGNORED_PATTERNS
+			.stream()
+			.map(pattern -> pattern.matcher(property).find())
+			.filter(val -> val)
+			.findAny()
+			.orElse(false);
 	}
 
 	@Override

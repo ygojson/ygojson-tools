@@ -44,6 +44,5 @@
   "summoning" : "* 2+ Fusion Materials\n* Requires specific Effect Monsters as Fusion Materials\n* Requires Type specific Fusion Materials\n* Nomi",
   "supports" : "Machine",
   "tcg_speed_duel_status" : "Unlimited",
-  "types" : "Machine / Fusion / Effect",
-  "ygo_sets" : "'''[[Pack 41 (YGOO-BP)|Pack 41]]'''"
+  "types" : "Machine / Fusion / Effect"
 }

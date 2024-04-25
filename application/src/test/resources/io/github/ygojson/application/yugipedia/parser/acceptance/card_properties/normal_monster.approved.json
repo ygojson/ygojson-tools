@@ -34,7 +34,6 @@
   "level" : "7",
   "lore" : "''The ultimate [[Spellcaster|wizard]] in terms of [[ATK|attack]] and [[DEF|defense]].''",
   "na_sets" : "LOB-005; Legend of Blue Eyes White Dragon; Ultra Rare\nDDS-002; Yu-Gi-Oh! Dark Duel Stories promotional cards; Prismatic Secret Rare\nSDY-006; Starter Deck: Yugi; Ultra Rare\nBPT-001; Booster Pack Collectors Tins 2002; Secret Rare\nBPT-007; Collectible Tins 2003; Secret Rare\nPCY-004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nJUMP-EN049; Shonen Jump Vol. 9, Issue 4 promotional card; Ultra Rare\nDTP1-EN002; Duel Terminal - Preview Wave 1; Duel Terminal Rare Parallel Rare\nDLG1-EN004; Dark Legends; Rare\nDTP1-EN002; Duel Terminal - Preview Wave 2; Duel Terminal Rare Parallel Rare\nDT01-EN002; Duel Terminal 1; Duel Terminal Rare Parallel Rare\nJMPS-EN003; WSJ Jump Pack Fall 2016 promotional card; Ultra Rare\nYUCB-EN001; Yugi's Collector Box; Ultra Rare\nMVP1-ENSE3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition; Ultra Rare",
-  "ntr_sets" : "'''[[Magician's Soul (NTR-BP)|Magician's Soul]]''' ([[Ultra Rare]])\n'''[[Magician's Soul (NTR-BP)|Magician's Soul]]''' ([[Ultra Rare]])",
   "password" : "46986414",
   "pt_lore" : "''O mago definitivo em termos de ataque e defesa.''",
   "pt_name" : "Mago Negro",
@@ -51,7 +50,5 @@
   "tcg_speed_duel_status" : "Unlimited",
   "trans_lore" : "''As a Magic User, Attack and Defense Power are both the highest class.''",
   "trans_name" : "Black Magician",
-  "types" : "Spellcaster / Normal",
-  "ygo_lore" : "''The ultimate wizard in terms of attack and defense.''",
-  "ygo_sets" : "'''[[Pack 2 (YGOO-BP)|Pack 2]]'''"
+  "types" : "Spellcaster / Normal"
 }

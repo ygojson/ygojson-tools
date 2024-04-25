@@ -16,8 +16,6 @@
   "fr_lore" : "Détruisez tous les monstres sur le Terrain.",
   "fr_name" : "Trou Noir",
   "fr_sets" : "LDD-F041; Legend of Blue Eyes White Dragon; Super Rare\nDDY-F020; Starter Deck: Yugi; Common\nDDK-F021; Starter Deck: Kaiba; Common\nDDJ-F026; Starter Deck: Joey; Common\nDDP-F026; Starter Deck: Pegasus; Common\nSYE-FR026; Starter Deck: Yugi Evolution; Common\nTU04-FR017; Turbo Pack: Booster Four; Common\nTU05-FR001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-FR037; Gold Series: Haunted Mine; Gold Rare\nSDWA-FR023; Samurai Warlords Structure Deck; Common\nLCYW-FR053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-FR031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-FR283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-FR028; Starter Deck: Kaiba Reloaded; Common\nYSYR-FR025; Starter Deck: Yugi Reloaded; Common\nYS14-FRA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-FR024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-FR089; Premium Gold: Return of the Bling; Gold Rare\nYS15-FRY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDEM3-FR012; Demo Deck 2016; Common\nDESO-FR042; Destiny Soldiers; Super Rare\nYS17-FR023; Starter Deck: Link Strike; Common\nYS18-FR025; Starter Deck: Codebreaker; Common\nLEHD-FRB21; Legendary Hero Decks; Ultra Rare\nLEHD-FRC15; Legendary Hero Decks; Common\nOP12-FR022; OTS Tournament Pack 12; Common\nLOB-FR052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-FR086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-FR023; OTS Tournament Pack 23; Common\nSR14-FR030; Structure Deck: Fire Kings; Common",
-  "gx03_sets" : "'''[[Other Cards (GX03-BP)|Other Cards]]'''",
-  "gx03_status" : "Forbidden",
   "image" : "DarkHole-SR14-EN-C-1E.png",
   "it_lore" : "Distruggi tutti i mostri sul Terreno.",
   "it_name" : "Buco Nero",
@@ -32,7 +30,6 @@
   "lore" : "[[Destroy]] all [[monster]]s on the [[field]].",
   "m/s/t" : "Destroys Monster Cards",
   "na_sets" : "LOB-052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-022; Starter Deck: Yugi; Common\nSDK-022; Starter Deck: Kaiba; Common\nSDJ-026; Starter Deck: Joey; Common\nSDP-026; Starter Deck: Pegasus; Common\nYS15-ENF13; Saber Force Starter Deck; Shatterfoil Rare\nYS15-ENL14; Dark Legion Starter Deck; Shatterfoil Rare",
-  "ntr_sets" : "'''[[Chosen Warrior (NTR-BP)|Chosen Warrior]]''' ([[Super Rare]])",
   "password" : "53129443",
   "property" : "Normal",
   "pt_lore" : "Destrua todos os monstros no campo.",
@@ -46,6 +43,5 @@
   "tc_lore" : "破坏场上的全部怪兽。",
   "tc_name" : "黑洞",
   "tc_sets" : "SP02-TC037; Starter Pack Volume 2; Ultra Rare",
-  "trans_name" : "Black Hole",
-  "ygo_lore" : "Destroy all monsters on the field."
+  "trans_name" : "Black Hole"
 }

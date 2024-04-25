@@ -20,7 +20,6 @@
   "fr_name" : "Spadassin des Flammes",
   "fr_sets" : "MDM-F111; Spell Ruler; Common\nDDJ-F024; Starter Deck: Joey; Common\nRP01-FR002; Retro Pack; Common\nLCJW-FR053; Legendary Collection 4: Joey's World Mega Pack; Common\nMIL1-FR038; Millennium Pack; Rare\nSS02-FRB20; Speed Duel Starter Decks: Duelists of Tomorrow; Common\nLOB-FR003; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nSBC1-FRB22; Speed Duel: Streets of Battle City; Common, Secret Rare",
   "fusion_material" : "* Flame Manipulator\n* Masaki the Legendary Swordsman",
-  "gx03_sets" : "'''[[Legend of the White Dragon (GX03-BP)|Legend of the White Dragon]]''' ([[Rare]])",
   "image" : "1; FlameSwordsman-SBC1-EN-C-1E.png; FlameSwordsman-MADU-EN-VG-artwork.png\n2; FlameSwordsman-MIL1-EN-R-1E.png; FlameSwordsman-TF05-JP-VG-2-artwork.png",
   "it_lore" : "\"Signore delle Fiamme\" + \"Masaki lo Spadaccino Leggendario\"",
   "it_name" : "Spadaccino di Fuoco",
@@ -50,6 +49,5 @@
   "sp_sets" : "LDD-S003; Legend of Blue Eyes White Dragon; Super Rare\nBIJ-S024; Starter Deck: Joey; Common\nDB1-SP100; Dark Beginning 1; Rare\nLCJW-SP053; Legendary Collection 4: Joey's World Mega Pack; Common\nMIL1-SP038; Millennium Pack; Rare\nSS02-SPB20; Speed Duel Starter Decks: Duelists of Tomorrow; Common\nLOB-SP003; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nSBC1-SPB22; Speed Duel: Streets of Battle City; Common, Secret Rare",
   "summoning" : "* 2 Fusion Materials\n* Requires only specific Normal Monsters as Fusion Materials",
   "tcg_speed_duel_status" : "Unlimited",
-  "types" : "Warrior / Fusion",
-  "ygo_sets" : "'''[[Pack 4 (YGOO-BP)|Pack 4]]'''"
+  "types" : "Warrior / Fusion"
 }
