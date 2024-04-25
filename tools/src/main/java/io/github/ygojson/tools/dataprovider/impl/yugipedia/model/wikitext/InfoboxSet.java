@@ -2,6 +2,10 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @deprecated - would be removed in favor of a map of {@link io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty}
+ */
+@Deprecated
 public record InfoboxSet(
 	String en_name,
 	String en_name_2,

@@ -15,7 +15,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.IntegerOrUndefi
  * cannot be typed as a numeric).
  *
  * @see <a href=https://yugipedia.com/wiki/Template:CardTable2>CardTable2</a>
+ *
+ * @deprecated - would be removed in favor of a map of {@link io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty}
  */
+@Deprecated
 public record CardTable2(
 	String cardclass,
 	String name,
