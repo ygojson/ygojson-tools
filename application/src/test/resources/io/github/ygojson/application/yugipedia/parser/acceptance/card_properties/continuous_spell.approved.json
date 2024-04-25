@@ -1,6 +1,9 @@
 {
   "ae_sets" : "EOJ-AE047; Enemy of Justice; Common",
-  "banished" : "* Banishes negated Summons\n* Banishes cards that would be sent to the Graveyard",
+  "banished" : [
+    "Banishes negated Summons",
+    "Banishes cards that would be sent to the Graveyard"
+  ],
   "card_type" : "Spell",
   "database_id" : "6707",
   "de_lore" : "Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt.",
@@ -32,7 +35,9 @@
   "pt_lore" : "Qualquer monstro enviado para o Cemitério, em vez disso, é banido.",
   "pt_name" : "Fissura Dimensional",
   "pt_sets" : "DUSA-PT060; Duelist Saga; Ultra Rare\nBLMR-PT088; Battles of Legend: Monstrous Revenge; Ultra Rare",
-  "related_to_archseries" : "D.D.",
+  "related_to_archseries" : [
+    "D.D."
+  ],
   "romaji_name" : "Jigen no Sakeme",
   "sc_lore" : "①：只要此卡存在于魔法与陷阱区域，被送至双方墓地的怪兽不去墓地而直接被除外。",
   "sc_name" : "次元的裂缝",

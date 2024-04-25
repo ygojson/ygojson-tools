@@ -1,6 +1,11 @@
 {
-  "action" : "* Activates from your hand\n* Discards itself for cost",
-  "archseries" : "Yo-kai Girl",
+  "action" : [
+    "Activates from your hand",
+    "Discards itself for cost"
+  ],
+  "archseries" : [
+    "Yo-kai Girl"
+  ],
   "atk" : "0",
   "attribute" : "FIRE",
   "current_image" : "1",
@@ -32,8 +37,14 @@
   "kr_sets" : "MACR-KR036; Maximum Crisis; Super Rare, Secret Rare\nRC02-KR009; Rarity Collection 20th Anniversary Edition; Ultimate Rare, Secret Rare\nSD35-KR019; Structure Deck: Soulburner; Common\nLEC1-KR085; 20th Anniversary Legend Collection; Extra Secret Rare, Secret Rare\nRC03-KR010; Rarity Collection Premium Gold Edition; Ultra Rare, Secret Rare, Extra Secret Rare, Prismatic Secret Rare\nPAC1-KR016; Prismatic Art Collection; Super Rare, Secret Rare, Prismatic Secret Rare\nSD44-KR014; Structure Deck: Legend of the Crystals; Common\nRC04-KR009; Rarity Collection Quarter Century Edition; Ultra Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare, HGR",
   "level" : "3",
   "lore" : "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\n● Add a card from the Deck to the hand.\n● Special Summon from the Deck.\n● Send a card from the Deck to the GY.\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
-  "m/s/t" : "* Negates the effects of Effect Monsters\n* Negates the effects of Spell Cards\n* Negates the effects of Trap Cards",
-  "misc" : "* Only once per turn",
+  "m/s/t" : [
+    "Negates the effects of Effect Monsters",
+    "Negates the effects of Spell Cards",
+    "Negates the effects of Trap Cards"
+  ],
+  "misc" : [
+    "Only once per turn"
+  ],
   "password" : "14558127",
   "pt_lore" : "Quando um card ou efeito for ativado que inclua qualquer um desses efeitos (Efeito Rápido): você pode descartar este card; negue o efeito.\n● Adicionar um card do Deck à mão.\n● Invocar por Invocação-Especial do Deck.\n● Enviar um card do Deck para o Cemitério.\nVocê só pode usar este efeito de \"Florescer de Cinzas & Primavera Feliz\" uma vez por turno.",
   "pt_name" : "Florescer de Cinzas & Primavera Feliz",

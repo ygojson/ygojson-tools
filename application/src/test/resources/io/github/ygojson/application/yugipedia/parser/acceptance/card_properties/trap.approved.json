@@ -1,6 +1,8 @@
 {
   "ae_sets" : "LOB-058; Legend of Blue Eyes White Dragon; Common\nSDY-027; Starter Deck: Yugi; Common\nSDK-033; Starter Deck: Kaiba; Common\nSSD2-AE017; Speed Start Deck Synchro Edition; Common",
-  "archseries" : "Trap Hole (archetype)",
+  "archseries" : [
+    "Trap Hole (archetype)"
+  ],
   "au_sets" : "LOB-A058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-A027; Starter Deck: Yugi; Common\nSDK-A033; Starter Deck: Kaiba; Common",
   "card_type" : "Trap",
   "database_id" : "4836",
@@ -30,7 +32,10 @@
   "ko_rr_name" : "Hamjeong Sok-euro",
   "kr_sets" : "LOB-K058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-K027; Starter Deck: Yugi; Common\nSDK-K033; Starter Deck: Kaiba; Common\nSDJ-KR043; Starter Deck: Joey; Common\nSDP-KR041; Starter Deck: Pegasus; Common\nSYE-KR041; Starter Deck: Yugi Evolution; Common\nSKE-KR042; Starter Deck: Kaiba Evolution; Common\nBP1-KR118; Beginner's Edition 1; Rare\nESP1-KR005; Expansion Pack Vol.1; Common\nYSD3-KR036; Starter Deck 2008; Common\nYSD5-KR033; Starter Deck 2010; Common\nGS03-KR018; Gold Series 2011; Common, Gold Rare\nYSD6-KR034; Starter Deck 2011; Common\nST12-KR032; Starter Deck 2012; Common\nST14-KR031; Starter Deck 2014; Common\nVS15-KRS23; Duelist Entry Deck VS: Saber Force; Common\nVS15-KRD24; Duelist Entry Deck VS: Dark Legion; Common\nSSD2-KR017; Speed Start Deck Synchro Edition; Common\nSD45-KR028; Structure Deck: Forest of the Traptrix; Common",
   "lore" : "When your opponent Normal or Flip Summons a monster with 1000 or more ATK: Target that monster; destroy that target.",
-  "m/s/t" : "* Destroys your opponent's Monster Cards\n* Destroys Normal Summoned Monsters",
+  "m/s/t" : [
+    "Destroys your opponent's Monster Cards",
+    "Destroys Normal Summoned Monsters"
+  ],
   "na_sets" : "LOB-058; Legend of Blue Eyes White Dragon; Super Rare\nSDY-027; Starter Deck: Yugi; Common\nSDK-033; Starter Deck: Kaiba; Common\nSDJ-043; Starter Deck: Joey; Common\nSDP-041; Starter Deck: Pegasus; Common\nDLG1-EN008; Dark Legends; Common\nDT02-EN100; Duel Terminal 2; Duel Terminal Normal Parallel Rare\nYS15-ENF24; Saber Force Starter Deck; Common\nYS15-ENL24; Dark Legion Starter Deck; Common",
   "password" : "04206964",
   "property" : "Normal",

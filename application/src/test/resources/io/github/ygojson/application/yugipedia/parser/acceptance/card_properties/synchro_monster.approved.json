@@ -1,7 +1,12 @@
 {
-  "action" : "Tributes itself for cost",
+  "action" : [
+    "Tributes itself for cost"
+  ],
   "ae_sets" : "CR01-AE012; Creation Pack 01; Ultra Rare, Secret Rare\nCR01-AES03; Creation Pack 01 +1 Bonus Pack; Ultra Rare, Quarter Century Secret Rare",
-  "archseries" : "* Signer Dragon\n* Stardust (archetype)",
+  "archseries" : [
+    "Signer Dragon",
+    "Stardust (archetype)"
+  ],
   "atk" : "2500",
   "attribute" : "WIND",
   "current_image" : "1",
@@ -33,20 +38,44 @@
   "kr_sets" : "TDGS-KR040; The Duelist Genesis; Ultra Rare, Ultimate Rare, Holographic Rare\nDP08-KR014; Duelist Pack: Yusei; Super Rare\nDP00-KRSE1; Duelist Pack: Yugi Special Edition; Secret Rare\nGS04-KR009; Gold Series 2012; Common, Gold Rare\nTRC1-KR005; The Rarity Collection; Extra Secret Rare\nCHBI-KRBS3; Chronicle Binder; Extra Secret Rare\nSP19-KR026; Special Pack Vol.3; Secret Rare, Extra Secret Rare\nPAC1-KR006; Prismatic Art Collection; Normal Parallel Rare, Secret Rare, Prismatic Secret Rare\nSYP1-KR106; Synergy Pack 01: Syncro Acceleration; Common, Secret Rare, Quarter Century Secret Rare\nGPC1-KR004; Gopizza x Yu-Gi-Oh! Official Card Game Collaboration Campaign; Normal Parallel Rare",
   "level" : "8",
   "lore" : "1 Tuner + 1+ non-Tuner monsters\nWhen a card or effect is activated that would destroy a card(s) on the field (Quick Effect): You can Tribute this card; negate the activation, and if you do, destroy it. During the End Phase, if this effect was activated this turn (and was not negated): You can Special Summon this card from your GY.",
-  "m/s/t" : "* Negates the activation of Effect Monster's effect\n* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards",
+  "m/s/t" : [
+    "Negates the activation of Effect Monster's effect",
+    "Negates the activation of Spell Cards",
+    "Negates the activation of Trap Cards",
+    "Destroys Monster Cards",
+    "Destroys Spell Cards",
+    "Destroys Trap Cards"
+  ],
   "materials" : "1 Tuner + 1 or more non-Tuner monsters",
-  "misc" : "Cover card",
+  "misc" : [
+    "Cover card"
+  ],
   "password" : "44508094",
   "pt_lore" : "1 Regulador + 1+ monstros não-Reguladores\nQuando um card ou efeito que destruiria um ou mais cards no campo for ativado (Efeito Rápido): você pode oferecer este card como Tributo; negue a ativação e, se isso acontecer, destrua-o. Durante a Fase Final, se este efeito foi ativado neste turno (e não foi negado): você pode Invocar este card por Invocação-Especial do seu Cemitério.",
   "pt_name" : "Dragão da Poeira Estelar",
   "pt_sets" : "SHSP-PTSE1; Shadow Specters: Special Edition; Super Rare\nPGLD-PT076; Premium Gold; Gold Rare\nLC5D-PT031; Legendary Collection 5D's Mega Pack; Common, Ultra Rare\nDUPO-PT103; Duel Power; Ultra Rare\nTOCH-PT050; Toon Chaos; Rare, Collector's Rare\nDAMA-PT100; Dawn of Majesty; Starlight Rare\nTN23-PT016; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
-  "related_to_archseries" : "*/Assault Mode\n* Cosmic Synchro Monster\n* Duel Dragon\n* Majestic\n* Malefic\n* Signature move\n* Synchro (archetype)",
+  "related_to_archseries" : [
+    "/Assault Mode",
+    "Cosmic Synchro Monster",
+    "Duel Dragon",
+    "Majestic",
+    "Malefic",
+    "Signature move",
+    "Synchro (archetype)"
+  ],
   "romaji_name" : "Sutādasuto Doragon",
   "sc_lore" : "协调＋1只以上协调以外的怪兽\n①：破坏场上的卡之魔法・陷阱・怪兽的效果发动时，解放此卡可以发动。将该发动无效并破坏。②：适用此卡的①效果的回合的结束阶段可以发动。将为发动该效果解放的此卡从墓地特殊召唤。",
   "sc_name" : "星尘龙",
   "sc_sets" : "TRC1-SC005; The Rarity Collection; Extra Secret Rare\nSD28-SC044; Structure Deck: Synchron Extreme; Common",
-  "sm_for" : "* Majestic Star Dragon\n* Shooting Star Dragon",
+  "sm_for" : [
+    "Majestic Star Dragon",
+    "Shooting Star Dragon"
+  ],
   "sp_sets" : "CT05-SP001; Collectible Tins 2008 Wave 1; Secret Rare\nTDGS-SP040; The Duelist Genesis; Ultra Rare, Ultimate Rare, Ghost Rare\nDP08-SP014; Duelist Pack: Yusei; Super Rare\nGLD3-SP037; Gold Series 3; Gold Rare\nCT07-SP021; Collectible Tins 2010 Wave 2; Super Rare\nTU06-SP007; Turbo Pack: Booster Six; Rare\nSHSP-SPSE1; Shadow Specters: Special Edition; Super Rare\nPGLD-SP076; Premium Gold; Gold Rare\nLC5D-SP031; Legendary Collection 5D's Mega Pack; Common, Ultra Rare\nDUPO-SP103; Duel Power; Ultra Rare\nTOCH-SP050; Toon Chaos; Rare, Collector's Rare\nDAMA-SP100; Dawn of Majesty; Starlight Rare\nTN23-SP016; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
-  "summoning" : "* 1 or more non-Tuner Synchro Materials\n* Does not require specific Synchro Materials\n* Special Summons itself from your Graveyard",
+  "summoning" : [
+    "1 or more non-Tuner Synchro Materials",
+    "Does not require specific Synchro Materials",
+    "Special Summons itself from your Graveyard"
+  ],
   "types" : "Dragon / Synchro / Effect"
 }

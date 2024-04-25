@@ -1,6 +1,10 @@
 {
-  "action" : "Transfers",
-  "archseries" : "Zoodiac",
+  "action" : [
+    "Transfers"
+  ],
+  "archseries" : [
+    "Zoodiac"
+  ],
   "atk" : "?",
   "attribute" : "EARTH",
   "database_id" : "12788",
@@ -31,9 +35,15 @@
   "ko_rr_name" : "Sip-isu Deuransia",
   "kr_sets" : "RATE-KR053; Raging Tempest; Ultra Rare, Secret Rare, Ultimate Rare",
   "lore" : "4 Level 4 monsters\nOnce per turn, you can also Xyz Summon \"Zoodiac Drident\" by using 1 \"Zoodiac\" monster you control with a different name as material. (Transfer its materials to this card.) Gains ATK/DEF equal to the ATK/DEF of all \"Zoodiac\" monsters attached to it as material. Once per turn (Quick Effect): You can detach 1 material from this card, then target 1 face-up card on the field; destroy it.",
-  "m/s/t" : "* Destroys face-up Monster Cards\n* Destroys face-up Spell Cards\n* Destroys face-up Trap Cards",
+  "m/s/t" : [
+    "Destroys face-up Monster Cards",
+    "Destroys face-up Spell Cards",
+    "Destroys face-up Trap Cards"
+  ],
   "materials" : "4 Level 4 monsters",
-  "misc" : "Limited activations",
+  "misc" : [
+    "Limited activations"
+  ],
   "password" : "48905153",
   "pt_lore" : "4 monstros de Nível 4\nUma vez por turno, você também pode Invocar \"Dridente Zoodíaco\" por Invocação-Xyz ao usar 1 monstro \"Zoodíaco(a)\" que você controla com um nome diferente como matéria. (Transfira as matérias dele para este card.) Ganha ATK/DEF igual ao ATK/DEF de todos os monstros \"Zoodíaco(a)\" associados a ele como matéria. Uma vez por turno (Efeito Rápido): você pode desassociar 1 matéria deste card e, depois, escolha 1 card com a face para cima no campo; destrua-o.",
   "pt_name" : "Dridente Zoodíaco",
@@ -41,9 +51,20 @@
   "rank" : "4",
   "romaji_name" : "Jūnishishi Doranshia",
   "sp_sets" : "RATE-SP053; Raging Tempest; Secret Rare\nMP17-SP208; 2017 Mega-Tin Mega Pack; Secret Rare\nMAGO-SP036; Maximum Gold; Premium Gold Rare",
-  "stat_change" : "* This card gains ATK\n* This card gains DEF",
-  "summoning" : "* 4 Xyz Materials\n* Does not require specific Xyz Materials\n* Special Summons itself from your Extra Deck\n* Special Summon by its own condition once per turn\n* Xyz Evolution",
-  "supports_archetypes" : "Zoodiac",
+  "stat_change" : [
+    "This card gains ATK",
+    "This card gains DEF"
+  ],
+  "summoning" : [
+    "4 Xyz Materials",
+    "Does not require specific Xyz Materials",
+    "Special Summons itself from your Extra Deck",
+    "Special Summon by its own condition once per turn",
+    "Xyz Evolution"
+  ],
+  "supports_archetypes" : [
+    "Zoodiac"
+  ],
   "trans_name" : "Drancia of the Twelve Zodiac Beasts",
   "types" : "Beast-Warrior / Xyz / Effect"
 }

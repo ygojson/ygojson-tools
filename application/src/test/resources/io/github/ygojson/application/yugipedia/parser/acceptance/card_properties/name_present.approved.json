@@ -1,8 +1,12 @@
 {
   "ae_sets" : "MRD-035; Metal Raiders; Short Print",
-  "archseries" : "Jinzo (archetype)",
+  "archseries" : [
+    "Jinzo (archetype)"
+  ],
   "atk" : "500",
-  "attack" : "Direct attacker",
+  "attack" : [
+    "Direct attacker"
+  ],
   "attribute" : "DARK",
   "database_id" : "4428",
   "de_lore" : "Diese Karte kann die Life Points deines Gegners direkt angreifen.",

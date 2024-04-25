@@ -1,6 +1,11 @@
 {
-  "action" : "* Effect that cannot be negated\n* Adds from Deck to hand",
-  "archseries" : "Qli",
+  "action" : [
+    "Effect that cannot be negated",
+    "Adds from Deck to hand"
+  ],
+  "archseries" : [
+    "Qli"
+  ],
   "atk" : "1000",
   "attribute" : "EARTH",
   "database_id" : "11353",
@@ -31,9 +36,13 @@
   "ko_pendulum_effect" : "①: 자신은 \"클리포트\" 몬스터밖에 특수 소환할 수 없다. 이 효과는 무효화되지 않는다. ②: 1턴에 1번, 800 LP를 지불하고 발동할 수 있다. 덱에서 \"클리포트 툴\" 이외의 \"클리포트\" 카드 1장을 패에 넣는다.",
   "kr_sets" : "NECH-KR021; The New Challengers; Rare\n20AP-KR098; 20th Anniversary Pack 2nd Wave; Normal Parallel Rare\nLVP1-KR062; LINK VRAINS Pack; Common",
   "level" : "5",
-  "life_points" : "Pays Life Points for cost",
+  "life_points" : [
+    "Pays Life Points for cost"
+  ],
   "lore" : "Booting in Replica Mode...\nAn error has occurred while executing C:\\sophia\\zefra.exe\nUnknown publisher.\nAllow C:\\tierra\\qliphort.exe ? <Y/N>...[Y]\nBooting in Autonomy Mode...",
-  "misc" : "Limited activations",
+  "misc" : [
+    "Limited activations"
+  ],
   "password" : "65518099",
   "pendulum_effect" : "You cannot Special Summon monsters, except \"Qli\" monsters. This effect cannot be negated. Once per turn: You can pay 800 LP; add 1 \"Qli\" card from your Deck to your hand, except \"Qliphort Scout\".",
   "pendulum_effect_types" : "Continuous-like, Condition, Ignition-like",
@@ -44,8 +53,12 @@
   "pt_sets" : "NECH-PT021; The New Challengers; Ultra Rare\nMP15-PT144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-PT057; Pendulum Evolution; Super Rare",
   "romaji_name" : "Kurifōto Tsūru",
   "sp_sets" : "NECH-SP021; The New Challengers; Ultra Rare\nMP15-SP144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-SP057; Pendulum Evolution; Super Rare",
-  "summoning" : "Restricts the player's Special Summons to archetype specific monsters",
-  "supports_archetypes" : "Qli",
+  "summoning" : [
+    "Restricts the player's Special Summons to archetype specific monsters"
+  ],
+  "supports_archetypes" : [
+    "Qli"
+  ],
   "trans_lore" : "Preparing to boot system in Replica Mode...\nAn error has occurred while executing C:\\sophia\\sefiroth.exe\nAttempting to run the following program from an unknown publisher.\nAllow to run C:\\tierra\\qliphoth.exe ? <Y/N>...[Y]\nBooting system in Autonomy Mode.",
   "trans_name" : "Qliphort Tool",
   "types" : "Machine / Pendulum"

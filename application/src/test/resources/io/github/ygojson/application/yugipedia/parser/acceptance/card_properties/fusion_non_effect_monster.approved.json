@@ -1,6 +1,8 @@
 {
   "ae_sets" : "LOB-003; Legend of Blue Eyes White Dragon; Super Rare",
-  "archseries" : "Flame Swordsman (series)",
+  "archseries" : [
+    "Flame Swordsman (series)"
+  ],
   "atk" : "1800",
   "attribute" : "FIRE",
   "au_sets" : "LOB-A003; Legend of Blue Eyes White Dragon; Super Rare",
@@ -15,7 +17,9 @@
   "es_name" : "Espadachín de la Llama",
   "eu_sets" : "MRL-E111; Spell Ruler; Common\nRP01-EN002; Retro Pack; Common",
   "fc_sets" : "LDD-C003; Legend of Blue Eyes White Dragon; Super Rare",
-  "fm_for" : "Dark Flare Knight",
+  "fm_for" : [
+    "Dark Flare Knight"
+  ],
   "fr_lore" : "\"Manipulateur de Flammes\" + \"Masaki le Spadassin Légendaire\"",
   "fr_name" : "Spadassin des Flammes",
   "fr_sets" : "MDM-F111; Spell Ruler; Common\nDDJ-F024; Starter Deck: Joey; Common\nRP01-FR002; Retro Pack; Common\nLCJW-FR053; Legendary Collection 4: Joey's World Mega Pack; Common\nMIL1-FR038; Millennium Pack; Rare\nSS02-FRB20; Speed Duel Starter Decks: Duelists of Tomorrow; Common\nLOB-FR003; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nSBC1-FRB22; Speed Duel: Streets of Battle City; Common, Secret Rare",
@@ -35,19 +39,26 @@
   "lore" : "\"Flame Manipulator\" + \"Masaki the Legendary Swordsman\"",
   "materials" : "\"Flame Manipulator\" + \"Masaki the Legendary Swordsman\"",
   "mentions" : "* Flame Manipulator\n* Masaki the Legendary Swordsman",
-  "misc" : "Non-Effect Monster",
+  "misc" : [
+    "Non-Effect Monster"
+  ],
   "na_sets" : "LOB-003; Legend of Blue Eyes White Dragon; Super Rare\nSDJ-024; Starter Deck: Joey; Common\nDLG1-EN003; Dark Legends; Common",
   "password" : "45231177",
   "pt_lore" : "\"Manipulador de Chamas\" + \"Masaki, o Espadachim Lendário\"",
   "pt_name" : "Espadachim das Chamas",
   "pt_sets" : "LDB-P003; Legend of Blue Eyes White Dragon; Super Rare\nDIJ-P024; Starter Deck: Joey; Common\nLCJW-PT053; Legendary Collection 4: Joey's World Mega Pack; Common\nMIL1-PT038; Millennium Pack; Rare\nSS02-PTB20; Speed Duel Starter Decks: Duelists of Tomorrow; Common\nLOB-PT003; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nSBC1-PTB22; Speed Duel: Streets of Battle City; Common, Secret Rare",
-  "related_to_archseries" : "Dark Magician (archetype)",
+  "related_to_archseries" : [
+    "Dark Magician (archetype)"
+  ],
   "romaji_name" : "Honō no Kenshi",
   "sc_lore" : "\"炎之操纵者\"＋\"传说之剑豪 MASAKI\"",
   "sc_name" : "炎之剑士",
   "sc_sets" : "FRP1-SCA01; Fusion Ready Pack A; Super Parallel Rare",
   "sp_sets" : "LDD-S003; Legend of Blue Eyes White Dragon; Super Rare\nBIJ-S024; Starter Deck: Joey; Common\nDB1-SP100; Dark Beginning 1; Rare\nLCJW-SP053; Legendary Collection 4: Joey's World Mega Pack; Common\nMIL1-SP038; Millennium Pack; Rare\nSS02-SPB20; Speed Duel Starter Decks: Duelists of Tomorrow; Common\nLOB-SP003; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nSBC1-SPB22; Speed Duel: Streets of Battle City; Common, Secret Rare",
-  "summoning" : "* 2 Fusion Materials\n* Requires only specific Normal Monsters as Fusion Materials",
+  "summoning" : [
+    "2 Fusion Materials",
+    "Requires only specific Normal Monsters as Fusion Materials"
+  ],
   "tcg_speed_duel_status" : "Unlimited",
   "types" : "Warrior / Fusion"
 }

@@ -1,9 +1,20 @@
 {
-  "action" : "* Activates if destroyed by battle\n* Returns from your field to your hand\n* Adds from Deck to hand",
-  "archseries" : "* Endymion\n* Prophecy",
+  "action" : [
+    "Activates if destroyed by battle",
+    "Returns from your field to your hand",
+    "Adds from Deck to hand"
+  ],
+  "archseries" : [
+    "Endymion",
+    "Prophecy"
+  ],
   "atk" : "2800",
   "attribute" : "DARK",
-  "counter" : "* Spell Counter\n* Removes counters for cost\n* Places counters on itself",
+  "counter" : [
+    "Spell Counter",
+    "Removes counters for cost",
+    "Places counters on itself"
+  ],
   "database_id" : "14439",
   "de_lore" : "Einmal pro Spielzug, wenn eine Zauber-/Fallenkarte oder ein Zauber-/Falleneffekt aktiviert wird (Schnelleffekt): Du kannst 1 Karte mit einer Zauberzählmarke, die du kontrollierst, auf die Hand zurückgeben und falls du dies tust, annulliere die Aktivierung und falls du dies tust, zerstöre sie. Dann kannst du dieselbe Anzahl Zauberzählmarken, die auf der zurückgegebenen Karte lagen, auf diese Karte legen. Solange auf dieser Karte eine Zauberzählmarke liegt, kann dein Gegner sie nicht als Ziel für Karteneffekte wählen, zusätzlich kann sie nicht durch Karteneffekte deines Gegners zerstört werden. Wenn diese Karte mit einer Zauberzählmarke durch Kampf zerstört wird: Du kannst deiner Hand 1 Normalen Zauber von deinem Deck hinzufügen.",
   "de_name" : "Endymion, der mächtige Meister der Magie",
@@ -39,8 +50,20 @@
   "kr_sets" : "SR08-KR001; Structure Deck R: Lord of Magician; Ultra Rare",
   "level" : "7",
   "lore" : "Once per turn, when a Spell/Trap Card or effect is activated (Quick Effect): You can return 1 card you control with a Spell Counter to the hand, and if you do, negate the activation, and if you do that, destroy it. Then, you can place the same number of Spell Counters on this card that the returned card had. While this card has a Spell Counter, your opponent cannot target it with card effects, also it cannot be destroyed by your opponent's card effects. When this card with a Spell Counter is destroyed by battle: You can add 1 Normal Spell from your Deck to your hand.",
-  "m/s/t" : "* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards\n* Negates the activation of Spell Cards\n* Negates the activation of Trap Cards\n* Cannot be targeted by card effects\n* Cannot be destroyed by card effects",
-  "misc" : "* Only once per turn\n* Limited activations\n* Cover card",
+  "m/s/t" : [
+    "Destroys Monster Cards",
+    "Destroys Spell Cards",
+    "Destroys Trap Cards",
+    "Negates the activation of Spell Cards",
+    "Negates the activation of Trap Cards",
+    "Cannot be targeted by card effects",
+    "Cannot be destroyed by card effects"
+  ],
+  "misc" : [
+    "Only once per turn",
+    "Limited activations",
+    "Cover card"
+  ],
   "password" : "03611830",
   "pendulum_effect" : "You can remove 6 Spell Counters from your field; Special Summon this card from the Pendulum Zone, then count the number of cards you control that can have a Spell Counter, destroy up to that many cards on the field, and if you do, place Spell Counters on this card equal to the number of cards destroyed. You can only use this effect of \"Endymion, the Mighty Master of Magic\" once per turn.",
   "pendulum_effect_types" : "Ignition-like, Condition",
@@ -49,11 +72,17 @@
   "pt_name" : "Endymion, o Poderoso Mestre da Magia",
   "pt_pendulum_effect" : "Você pode remover 6 Marcadores de Magia do seu campo; Invoque este card por Invocação-Especial da Zona de Pêndulo e, depois, conte o número de cards que você controla que podem ter Marcadores de Magia, destrua até esse número de cards no campo e, se isso acontecer, coloque Marcadores de Magia neste card igual ao número de cards destruídos. Você só pode usar este efeito de \"Endymion, o Poderoso Mestre da Magia\" uma vez por turno.",
   "pt_sets" : "SR08-PT001; Structure Deck: Order of the Spellcasters; Ultra Rare",
-  "related_to_archseries" : "Magistus",
+  "related_to_archseries" : [
+    "Magistus"
+  ],
   "romaji_name" : "Sōsei Madōō Endimion",
   "sp_sets" : "SR08-SP001; Structure Deck: Order of the Spellcasters; Ultra Rare",
-  "summoning" : "Special Summons itself from your Pendulum Zone",
-  "supports" : "Normal Spell Card",
+  "summoning" : [
+    "Special Summons itself from your Pendulum Zone"
+  ],
+  "supports" : [
+    "Normal Spell Card"
+  ],
   "trans_name" : "Endymion, the Founding Holy Magical King",
   "types" : "Spellcaster / Pendulum / Effect"
 }

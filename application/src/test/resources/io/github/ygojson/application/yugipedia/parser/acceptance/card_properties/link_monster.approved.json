@@ -1,6 +1,14 @@
 {
-  "action" : "* Activates upon Link Summon\n* You discard for cost\n* You draw cards\n* Returns from field to Deck\n* Increases normal draw",
-  "archseries" : "Knightmare",
+  "action" : [
+    "Activates upon Link Summon",
+    "You discard for cost",
+    "You draw cards",
+    "Returns from field to Deck",
+    "Increases normal draw"
+  ],
+  "archseries" : [
+    "Knightmare"
+  ],
   "atk" : "2200",
   "attribute" : "DARK",
   "current_image" : "1",
@@ -37,19 +45,29 @@
   ],
   "lore" : "2+ monsters with different names\nIf this card is Link Summoned: You can discard 1 card, then target 1 card on the field; shuffle it into the Deck, then, if this card was co-linked when this effect was activated, you can draw 1 card. You can only use this effect of \"Knightmare Unicorn\" once per turn. While any co-linked \"Knightmare\" monsters are on the field, for your normal draw in your Draw Phase, draw 1 card for each different card name among those co-linked \"Knightmare\" monsters, instead of drawing just 1 card.",
   "material" : "2+ monsters with different names",
-  "misc" : "* Co-link\n* Only once per turn",
+  "misc" : [
+    "Co-link",
+    "Only once per turn"
+  ],
   "password" : "38342335",
   "pt_lore" : "2+ monstros com nomes diferentes\nSe este card for Invocado por Invocação-Link: você pode descartar 1 card e, depois, escolha 1 card no campo; embaralhe-o no Deck e, depois, se este card estava co-linkado quando este efeito foi ativado, você pode comprar 1 card. Você só pode usar este efeito de \"Cavaleiro do Pesadelo Unicórnio\" uma vez por turno. Enquanto qualquer monstro \"Cavaleiro(a) do Pesadelo\" co-linkado estiver no campo, em sua compra normal na sua Fase de Compra, em vez de comprar apenas 1 card, compre 1 card para cada nome de card diferente entre esses monstros \"Cavaleiro(a) do Pesadelo\" co-linkados.",
   "pt_name" : "Cavaleiro do Pesadelo Unicórnio",
   "pt_sets" : "FLOD-PT047; Flames of Destruction; Secret Rare\nMP19-PT028; 2019 Gold Sarcophagus Tin Mega Pack; Ultra Rare\nGEIM-PT050; Genesis Impact; Rare, Collector's Rare\nMGED-PT034; Maximum Gold: El Dorado; Premium Gold Rare\nRA01-PT043; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
-  "related_to_archseries" : "Mekk-Knight",
+  "related_to_archseries" : [
+    "Mekk-Knight"
+  ],
   "romaji_name" : "Toroimea Yunikōn",
   "sc_lore" : "卡名不同的怪兽２只以上\n此卡名的①效果１回合仅可使用１次。\n①：此卡连接召唤的情况下，舍弃１张手牌，以场上的１张卡为对象可以发动。将该卡放回牌组。此效果发动时此卡为相互连接状态的情况下，进而可自己抽１张。\n②：只要有相互连接状态的“梦魇曲”怪兽存在，自己抽牌阶段的通常抽牌的张数就变为该“梦魇曲”怪兽种类的数量。",
   "sc_name" : "梦魇曲・独角兽",
   "sc_sets" : "MGP2-SC029; Mega Pack 02; Ultra Rare, Secret Rare\n23RC-SC046; Rarity Collection Quarter Century Edition; Super Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare",
   "sp_sets" : "FLOD-SP047; Flames of Destruction; Secret Rare\nMP19-SP028; 2019 Gold Sarcophagus Tin Mega Pack; Ultra Rare\nGEIM-SP050; Genesis Impact; Rare, Collector's Rare\nMGED-SP034; Maximum Gold: El Dorado; Premium Gold Rare\nRA01-SP043; 25th Anniversary Rarity Collection; Super Rare, Ultra Rare, Secret Rare, Platinum Secret Rare, Quarter Century Secret Rare, Ultimate Rare, Collector's Rare",
-  "summoning" : "* 2+ Link Materials\n* Requires monsters with different names as Link Materials",
-  "supports_archetypes" : "Knightmare",
+  "summoning" : [
+    "2+ Link Materials",
+    "Requires monsters with different names as Link Materials"
+  ],
+  "supports_archetypes" : [
+    "Knightmare"
+  ],
   "trans_name" : "Troymare Unicorn",
   "types" : "Fiend / Link / Effect"
 }

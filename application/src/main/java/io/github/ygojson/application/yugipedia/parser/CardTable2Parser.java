@@ -34,6 +34,26 @@ class CardTable2Parser extends TemplateParser {
 		"effect_types"
 	);
 
+	private static final Set<String> BULLETED_LIST_PROPERTIES = Set.of(
+		"archseries",
+		"supports_archetypes",
+		"anti-supports_archetypes",
+		"related_to_archseries",
+		"supports",
+		"anti-supports",
+		"action",
+		"attack",
+		"banished",
+		"counter",
+		"fm_for",
+		"sm_for",
+		"life_points",
+		"m/s/t",
+		"stat_change",
+		"summoning",
+		"misc"
+	);
+
 	/**
 	 * Default constructor.
 	 *
@@ -57,6 +77,9 @@ class CardTable2Parser extends TemplateParser {
 	protected PropertyParser.Type getPropertyType(final String property) {
 		if (COMMA_LIST_PROPERTIES.contains(property)) {
 			return PropertyParser.Type.COMMA_LIST;
+		}
+		if (BULLETED_LIST_PROPERTIES.contains(property)) {
+			return PropertyParser.Type.BULLETED_LIST;
 		}
 		// TODO: handle some special properties
 		return PropertyParser.Type.TEXT;

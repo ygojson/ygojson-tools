@@ -1,8 +1,15 @@
 {
-  "action" : "* Activates upon Fusion Summon\n* Sends from your field to your Graveyard",
-  "archseries" : "Chimeratech",
+  "action" : [
+    "Activates upon Fusion Summon",
+    "Sends from your field to your Graveyard"
+  ],
+  "archseries" : [
+    "Chimeratech"
+  ],
   "atk" : "?",
-  "attack" : "Can make multiple attacks on monsters",
+  "attack" : [
+    "Can make multiple attacks on monsters"
+  ],
   "attribute" : "DARK",
   "database_id" : "6734",
   "de_lore" : "„Cyber Drache“ + 1+ Maschine-Monster\nMuss als Fusionsbeschwörung beschworen werden. Falls diese Karte als Fusionsbeschwörung beschworen wird: Lege alle anderen Karten, die du kontrollierst, auf den Friedhof. Die Grund-ATK/DEF dieser Karte werden jeweils gleich der Anzahl des für ihre Fusionsbeschwörung verwendeten Fusionsmaterials x 800. Diese Karte kann die Monster deines Gegners in jeder Battle Phase bis zu so viele Male angreifen wie die Anzahl des für ihre Fusionsbeschwörung verwendeten Fusionsmaterials.",
@@ -42,12 +49,27 @@
   "pt_lore" : "\"Dragão Cibernético\" + 1+ monstros Máquina\nDeve ser Invocado por Invocação-Fusão. Se este card for Invocado por Invocação-Fusão: envie todos os outros cards que você controla para o Cemitério. O ATK/DEF originais deste card se tornam iguais ao número de Matérias de Fusão usadas para sua Invocação-Fusão x 800. A cada Fase de Batalha, este card pode atacar os monstros do seu oponente um número de vezes até o número de Matérias de Fusão usadas para sua Invocação-Fusão.",
   "pt_name" : "Superdragão Quimeratech",
   "pt_sets" : "SP14-PT043; Star Pack 2014; Common, Starfoil Rare\nPGLD-PT056; Premium Gold; Gold Rare\nLEDD-PTB27; Legendary Dragon Decks; Common\nSDCS-PT042; Structure Deck: Cyber Strike; Common\nSGX1-PTG22; Speed Duel GX: Duel Academy Box; Common",
-  "related_to_archseries" : "* Cyber Dragon (archetype)\n* Signature move",
+  "related_to_archseries" : [
+    "Cyber Dragon (archetype)",
+    "Signature move"
+  ],
   "romaji_name" : "Kimeratekku Ōbā Doragon",
   "sp_sets" : "POTD-SP034; Power of the Duelist; Ultra Rare, Ultimate Rare\nDP04-SP013; Duelist Pack: Zane Truesdale; Rare\nGLD1-SP029; Gold Series; Gold Rare\nRYMP-SP061; Ra Yellow Mega Pack; Rare\nSP14-SP043; Star Pack 2014; Common, Starfoil Rare\nPGLD-SP056; Premium Gold; Gold Rare\nLEDD-SPB27; Legendary Dragon Decks; Common\nSDCS-SP042; Structure Deck: Cyber Strike; Common\nSGX1-SPG22; Speed Duel GX: Duel Academy Box; Common",
-  "stat_change" : "* Changes own ATK value\n* Changes own DEF value\n* Changes original ATK\n* Changes original DEF",
-  "summoning" : "* 2+ Fusion Materials\n* Requires specific Effect Monsters as Fusion Materials\n* Requires Type specific Fusion Materials\n* Nomi",
-  "supports" : "Machine",
+  "stat_change" : [
+    "Changes own ATK value",
+    "Changes own DEF value",
+    "Changes original ATK",
+    "Changes original DEF"
+  ],
+  "summoning" : [
+    "2+ Fusion Materials",
+    "Requires specific Effect Monsters as Fusion Materials",
+    "Requires Type specific Fusion Materials",
+    "Nomi"
+  ],
+  "supports" : [
+    "Machine"
+  ],
   "tcg_speed_duel_status" : "Unlimited",
   "types" : "Machine / Fusion / Effect"
 }

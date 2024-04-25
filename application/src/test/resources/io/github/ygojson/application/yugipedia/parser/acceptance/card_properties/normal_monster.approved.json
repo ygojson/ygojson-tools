@@ -1,6 +1,8 @@
 {
   "ae_sets" : "; Oversized Gift for 7000 People; Ultra Rare\nLOB-005; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-006; Starter Deck: Yugi; Ultra Rare\n2015-JPP02; Yu-Gi-Oh! World Championship 2015 attendance cards; Millennium Rare\nSDID-AE001; Structure Deck: Illusion of the Dark Magicians; Ultra Rare",
-  "archseries" : "Dark Magician (archetype)",
+  "archseries" : [
+    "Dark Magician (archetype)"
+  ],
   "atk" : "2500",
   "attribute" : "DARK",
   "au_sets" : "LOB-A005; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-A006; Starter Deck: Yugi; Ultra Rare",
@@ -15,7 +17,17 @@
   "es_name" : "Mago Oscuro",
   "eu_sets" : "LOB-E003; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-E005; Starter Deck: Yugi; Ultra Rare\nPCY-E004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nRP01-EN003; Retro Pack; Ultra Rare\nYUCB-EN001; Yugi & Kaiba Collector Box; Ultra Rare",
   "fc_sets" : "LDD-C005; Legend of Blue Eyes White Dragon; Ultra Rare\nDDY-C006; Starter Deck: Yugi; Ultra Rare\nDL1-C002; Duelist League Series 1 participation cards; Ultra Rare",
-  "fm_for" : "* Amulet Dragon\n* Dark Cavalry\n* Dark Flare Knight\n* Dark Magician the Dragon Knight\n* Dark Magician the Knight of Dragon Magic\n* The Dark Magicians\n* Dark Paladin\n* Master of Chaos\n* Red-Eyes Dark Dragoon",
+  "fm_for" : [
+    "Amulet Dragon",
+    "Dark Cavalry",
+    "Dark Flare Knight",
+    "Dark Magician the Dragon Knight",
+    "Dark Magician the Knight of Dragon Magic",
+    "The Dark Magicians",
+    "Dark Paladin",
+    "Master of Chaos",
+    "Red-Eyes Dark Dragoon"
+  ],
   "fr_lore" : "Mage suprême en termes d'attaque et de défense.",
   "fr_name" : "Magicien Sombre",
   "fr_sets" : "DDY-F005; Starter Deck: Yugi; Ultra Rare\nLDD-F003; Legend of Blue Eyes White Dragon; Ultra Rare\nPCY-F004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nSYE-FR001; Starter Deck: Yugi Evolution; Super Rare\nSD6-FR003; Structure Deck: Spellcaster's Judgment; Common\nRP01-FR003; Retro Pack; Ultra Rare\nDPYG-FR001; Duelist Pack: Yugi; Rare\nDL11-FR001; Duelist League 2 participation cards; Rare\nLCYW-FR001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nYSYR-FR001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-FRA03; Yugi's Legendary Decks; Common\nYGLD-FRC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-FR008; Duelist Pack: Battle City; Super Rare\nMVP1-FR054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-FR003; 2016 Mega-Tins; Ultra Rare\nLDK2-FRY10; Legendary Decks II; Common\nSDMY-FR010; Structure Deck: Yugi Muto; Common\nMVP1-FRGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-FRG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-FR100; Duelist Saga; Ultra Rare\nCT14-FR001; 2017 Mega-Tins; Secret Rare\nLEDD-FRA01; Legendary Dragon Decks; Common\nYUCB-FR001; Yugi & Kaiba Collector Box; Ultra Rare\nSS01-FRA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-FR101; Duel Power; Ultra Rare\nSTP1-FR001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-FRSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-FRS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-FRA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-FR002; Maximum Gold; Premium Gold Rare\nSBCB-FR001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-FR128; Ghosts From the Past (set); Ghost Rare\nMGED-FR002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-FR001; Battle of Chaos; Ultra Rare\nHAC1-FR002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-FR005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-FR005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-FRA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-FR001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
@@ -38,7 +50,21 @@
   "pt_lore" : "O mago definitivo em termos de ataque e defesa.",
   "pt_name" : "Mago Negro",
   "pt_sets" : "DIY-P006; Starter Deck: Yugi; Ultra Rare\nLDB-P005; Legend of Blue Eyes White Dragon; Ultra Rare\nSYE-PT001; Starter Deck: Yugi Evolution; Super Rare\nYSYR-PT001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-PTA03; Yugi's Legendary Decks; Common\nYGLD-PTC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-PT008; Duelist Pack: Battle City; Super Rare\nMVP1-PT054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-PT003; 2016 Mega-Tins; Ultra Rare\nLDK2-PTY10; Legendary Decks II; Common\nSDMY-PT010; Structure Deck: Yugi Muto; Common\nMVP1-PTGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-PTG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-PT100; Duelist Saga; Ultra Rare\nCT14-PT001; 2017 Mega-Tins; Secret Rare\nLEDD-PTA01; Legendary Dragon Decks; Common\nSS01-PTA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-PT101; Duel Power; Ultra Rare\nSTP1-PT001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-PTSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-PTS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-PTA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-PT002; Maximum Gold; Premium Gold Rare\nGFTP-PT128; Ghosts From the Past (set); Ghost Rare\nMGED-PT002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-PT001; Battle of Chaos; Ultra Rare\nHAC1-PT002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-PT005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-PT005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-PTA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-PT001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
-  "related_to_archseries" : "* Aged counterpart\n* Buster Blader (archetype)\n* Dark Magician Girl (archetype)\n* Flame Swordsman (series)\n* Legendary Dragon\n* Magician Girl\n* Palladium\n* Prophecy\n* Red-Eyes\n* Signature move\n* Skilled Magician\n* Toon\n* Ultimate Magical",
+  "related_to_archseries" : [
+    "Aged counterpart",
+    "Buster Blader (archetype)",
+    "Dark Magician Girl (archetype)",
+    "Flame Swordsman (series)",
+    "Legendary Dragon",
+    "Magician Girl",
+    "Palladium",
+    "Prophecy",
+    "Red-Eyes",
+    "Signature move",
+    "Skilled Magician",
+    "Toon",
+    "Ultimate Magical"
+  ],
   "romaji_name" : "Burakku Majishan",
   "sc_lore" : "作为魔法使，攻击力・守备力均为最高级别。",
   "sc_name" : "黑魔导",

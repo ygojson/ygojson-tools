@@ -1,6 +1,12 @@
 {
-  "action" : "* Activates if destroyed by battle\n* Activates if destroyed by card effect",
-  "archseries" : "* HERO\n* Destiny HERO",
+  "action" : [
+    "Activates if destroyed by battle",
+    "Activates if destroyed by card effect"
+  ],
+  "archseries" : [
+    "HERO",
+    "Destiny HERO"
+  ],
   "atk" : "2500",
   "attribute" : "DARK",
   "database_id" : "16524",
@@ -33,22 +39,44 @@
   "kr_sets" : "BODE-KR039; Burst of Destiny; Ultra Rare, Ultimate Rare, Secret Rare, Prismatic Secret Rare\nBODE-KR039; Burst of Destiny +1 Bonus Pack; Ultra Rare, Prismatic Secret Rare",
   "level" : "8",
   "lore" : "1 Level 6 or higher \"HERO\" monster + 1 \"Destiny HERO\" monster\nMonsters your opponent controls lose 200 ATK for each \"HERO\" card in your GY. You can only use each of the following effects of \"Destiny HERO - Destroyer Phoenix Enforcer\" once per turn. (Quick Effect): You can destroy both 1 card you control and 1 card on the field. If this card is destroyed by battle or card effect: You can activate this effect; Special Summon 1 \"Destiny HERO\" monster from your GY during the Standby Phase of the next turn.",
-  "m/s/t" : "* Destroys your Monster Cards\n* Destroys your Spell Cards\n* Destroys your Trap Cards\n* Destroys Monster Cards\n* Destroys Spell Cards\n* Destroys Trap Cards",
+  "m/s/t" : [
+    "Destroys your Monster Cards",
+    "Destroys your Spell Cards",
+    "Destroys your Trap Cards",
+    "Destroys Monster Cards",
+    "Destroys Spell Cards",
+    "Destroys Trap Cards"
+  ],
   "materials" : "1 Level 6 or higher \"HERO\" monster + 1 \"Destiny HERO\" monster",
-  "misc" : "* Only once per turn\n* Standby Phase Activation",
+  "misc" : [
+    "Only once per turn",
+    "Standby Phase Activation"
+  ],
   "password" : "60461804",
   "pt_lore" : "1 monstro \"HERÓI\" de Nível 6 ou mais + 1 monstro \"HERÓI do Destino\"\nMonstros que seu oponente controla perdem 200 de ATK para cada card \"HERÓI\" no seu Cemitério. Você só pode usar cada um dos seguintes efeitos de \"HERÓI do Destino - Fênix Executora Destruidora\" uma vez por turno. (Efeito Rápido): você pode destruir tanto 1 card que você controla quanto 1 card no campo. Se este card for destruído em batalha ou por um efeito de card: você pode ativar este efeito; Invoque por Invocação-Especial 1 monstro \"HERÓI do Destino\" do seu Cemitério durante a Fase de Apoio do próximo turno.",
   "pt_name" : "HERÓI do Destino - Fênix Executora Destruidora",
   "pt_sets" : "BODE-PT039; Burst of Destiny; Secret Rare\nPOTE-PT100; Power of the Elements; Starlight Rare\nMP22-PT209; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare",
-  "related_to_archseries" : "Elemental HERO",
+  "related_to_archseries" : [
+    "Elemental HERO"
+  ],
   "romaji_name" : "Desutenī Hīrō Desutoroi Fenikkusugai",
   "sc_lore" : "等级６以上的“－英雄”怪兽＋“命运－英雄”怪兽\n此卡名的②③效果１回合仅可各使用１次。①：对手场上怪兽的攻击力下降相当于自己墓地“－英雄”卡数量×２００的数值。②：在自己・对手回合可以发动。挑选自己场上的１张卡和场上的１张卡破坏。③：此卡因战斗・效果被破坏的情况下可以发动。在下个回合的准备阶段，从自己的墓地挑选１只“命运－英雄”怪兽特殊召唤。",
   "sc_name" : "命运－英雄 毁灭不死鸟魔侠",
   "sc_sets" : "MGP6-SC133; Mega Pack 06; Ultra Rare, Secret Rare, Prismatic Secret Rare",
   "sp_sets" : "BODE-SP039; Burst of Destiny; Secret Rare\nPOTE-SP100; Power of the Elements; Starlight Rare\nMP22-SP209; 2022 Tin of the Pharaoh's Gods; Prismatic Secret Rare",
-  "stat_change" : "Your opponent's monsters lose ATK",
-  "summoning" : "* 2 Fusion Materials\n* Requires Level specific Fusion Materials\n* Requires archetype specific Fusion Materials\n* Special Summons from your Graveyard",
-  "supports_archetypes" : "* HERO\n* Destiny HERO",
+  "stat_change" : [
+    "Your opponent's monsters lose ATK"
+  ],
+  "summoning" : [
+    "2 Fusion Materials",
+    "Requires Level specific Fusion Materials",
+    "Requires archetype specific Fusion Materials",
+    "Special Summons from your Graveyard"
+  ],
+  "supports_archetypes" : [
+    "HERO",
+    "Destiny HERO"
+  ],
   "trans_name" : "Destiny HERO Destroy Phoenixguy",
   "types" : "Warrior / Fusion / Effect"
 }
