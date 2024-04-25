@@ -1,5 +1,8 @@
 package io.github.ygojson.application.yugipedia.parser;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,6 +24,7 @@ abstract class TemplateParser {
 	private static final Pattern TEMPLATE_KEY_VALUE_SPLIT_PATTERN =
 		Pattern.compile(" += ");
 
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private final PropertyParser propertyParser;
 	private final Pattern templatePattern;
 	private final int contentGroup;
@@ -73,12 +77,31 @@ abstract class TemplateParser {
 		return TEMPLATE_FIELD_SPLIT_PATTERN
 			.splitAsStream(contentString)
 			.map(val -> TEMPLATE_KEY_VALUE_SPLIT_PATTERN.split(val, 2))
-			.filter(val -> val.length == 2 && !ignoreProperty(val[0])) // ignore lines not having a key-value pair and explicitly ignored
+			.filter(this::keepArg) // ignore lines not having a key-value pair and explicitly ignored
 			.collect(
 				Collectors.toMap(
 					val -> val[0],
 					val -> propertyParser.parse(getPropertyType(val[0]), val[1])
 				)
 			);
+	}
+
+	// check if the argument should be kept the template argument
+	private boolean keepArg(final String[] templateArg) {
+		// ignore empty lines
+		if (templateArg.length == 0 || templateArg[0].isBlank()) {
+			return false;
+		}
+		// TODO: maybe we should keep template flags!
+		if (templateArg.length == 1) {
+			log.debug("Ignored template argument without value: {}", templateArg[0]);
+			return false;
+		}
+		if (ignoreProperty(templateArg[0])) {
+			log.debug("Ignored template argument: {}", templateArg[0]);
+			return false;
+		}
+		// keep if not filtered
+		return true;
 	}
 }
