@@ -1,5 +1,7 @@
 package io.github.ygojson.application.yugipedia.parser;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -10,8 +12,6 @@ import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class PropertyParserUnitTest {
 
