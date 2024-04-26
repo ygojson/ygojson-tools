@@ -1,53 +1,1712 @@
 {
-  "ae_sets" : "LOB-052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-022; Starter Deck: Yugi; Common\nSDK-022; Starter Deck: Kaiba; Common",
+  "ae_sets" : [
+    {
+      "cardNumber" : "LOB-052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "archseries" : [
     "Hole"
   ],
-  "au_sets" : "LOB-A052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-A022; Starter Deck: Yugi; Common\nSDK-A022; Starter Deck: Kaiba; Common",
+  "au_sets" : [
+    {
+      "cardNumber" : "LOB-A052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-A022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-A022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "card_type" : "Spell",
   "database_id" : "4342",
   "de_lore" : "Zerstöre alle Monster auf dem Spielfeld.",
   "de_name" : "Schwarzes Loch",
-  "de_sets" : "LOB-G041; Legend of Blue Eyes White Dragon; Super Rare\nSDY-G020; Starter Deck: Yugi; Common\nSDK-G021; Starter Deck: Kaiba; Common\nSDJ-G026; Starter Deck: Joey; Common\nSDP-G026; Starter Deck: Pegasus; Common\nDB1-DE113; Dark Beginning 1; Super Rare\nSYE-DE026; Starter Deck: Yugi Evolution; Common\nTU04-DE017; Turbo Pack: Booster Four; Common\nTU05-DE001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-DE037; Gold Series: Haunted Mine; Gold Rare\nSDWA-DE023; Samurai Warlords Structure Deck; Common\nLCYW-DE053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-DE031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-DE283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-DE028; Starter Deck: Kaiba Reloaded; Common\nYSYR-DE025; Starter Deck: Yugi Reloaded; Common\nYS14-DEA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-DE024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-DE089; Premium Gold: Return of the Bling; Gold Rare\nYS15-DEY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDEM3-DE012; Demo Deck 2016; Common\nDESO-DE042; Destiny Soldiers; Super Rare\nYS17-DE023; Starter Deck: Link Strike; Common\nYS18-DE025; Starter Deck: Codebreaker; Common\nLEHD-DEB21; Legendary Hero Decks; Ultra Rare\nLEHD-DEC15; Legendary Hero Decks; Common\nOP12-DE022; OTS Tournament Pack 12; Common\nLOB-DE052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-DE086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-DE023; OTS Tournament Pack 23; Common\nSR14-DE030; Structure Deck: Fire Kings; Common",
+  "de_sets" : [
+    {
+      "cardNumber" : "LOB-G041",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-G020",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-G021",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-G026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-G026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-DE113",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-DE026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU04-DE017",
+      "setPageName" : "Turbo Pack: Booster Four",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU05-DE001",
+      "setPageName" : "Turbo Pack: Booster Five",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD5-DE037",
+      "setPageName" : "Gold Series: Haunted Mine",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDWA-DE023",
+      "setPageName" : "Samurai Warlords Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-DE053",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDRE-DE031",
+      "setPageName" : "Realm of the Sea Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-DE283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-DE028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-DE025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-DEA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-DE024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-DE089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-DEY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DEM3-DE012",
+      "setPageName" : "Demo Deck 2016",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-DE042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-DE023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-DE025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-DEB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-DEC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-DE022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-DE052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-DE086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-DE023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-DE030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "effect_types" : [
     "Effect"
   ],
-  "en_sets" : "SYE-026; Starter Deck: Yugi Evolution; Common\nDB1-EN113; Dark Beginning 1; Super Rare\nLOB-EN052; Legend of Blue Eyes White Dragon; Super Rare\nTU04-EN017; Turbo Pack: Booster Four; Common\nTU05-EN001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-EN037; Gold Series: Haunted Mine; Gold Rare\nSDWA-EN023; Samurai Warlords Structure Deck; Common\nLCYW-EN053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-EN031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-EN283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-EN028; Starter Deck: Kaiba Reloaded; Common\nYSYR-EN025; Starter Deck: Yugi Reloaded; Common\nYS14-ENA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-EN024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-EN089; Premium Gold: Return of the Bling; Gold Rare\nDESO-EN042; Destiny Soldiers; Super Rare\nYS17-EN023; Starter Deck: Link Strike; Common\nYS18-EN025; Starter Deck: Codebreaker; Common\nLEHD-ENB21; Legendary Hero Decks; Ultra Rare\nLEHD-ENC15; Legendary Hero Decks; Common\nOP12-EN022; OTS Tournament Pack 12; Common\nLOB-EN052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-EN086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-EN023; OTS Tournament Pack 23; Common\nSR14-EN030; Structure Deck: Fire Kings; Common",
+  "en_sets" : [
+    {
+      "cardNumber" : "SYE-026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-EN113",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU04-EN017",
+      "setPageName" : "Turbo Pack: Booster Four",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU05-EN001",
+      "setPageName" : "Turbo Pack: Booster Five",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD5-EN037",
+      "setPageName" : "Gold Series: Haunted Mine",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDWA-EN023",
+      "setPageName" : "Samurai Warlords Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-EN053",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDRE-EN031",
+      "setPageName" : "Realm of the Sea Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-EN283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-EN028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-EN025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-ENA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-EN024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-EN089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-EN042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-EN023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-EN025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-ENB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-ENC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-EN022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-EN086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-EN023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-EN030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "es_lore" : "Destruye todos los monstruos en el Campo.",
   "es_name" : "Agujero Oscuro",
-  "eu_sets" : "LOB-E041; Legend of Blue Eyes White Dragon; Super Rare\nSDY-E020; Starter Deck: Yugi; Common\nSDK-E021; Starter Deck: Kaiba; Common\nYS15-ENY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDEM3-EN012; Demo Deck 2016; Common",
-  "fc_sets" : "LDD-C052; Legend of Blue Eyes White Dragon; Super Rare\nDDY-C022; Starter Deck: Yugi; Common\nDDK-C022; Starter Deck: Kaiba; Common",
+  "eu_sets" : [
+    {
+      "cardNumber" : "LOB-E041",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-E020",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-E021",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DEM3-EN012",
+      "setPageName" : "Demo Deck 2016",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "fc_sets" : [
+    {
+      "cardNumber" : "LDD-C052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDY-C022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDK-C022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "fr_lore" : "Détruisez tous les monstres sur le Terrain.",
   "fr_name" : "Trou Noir",
-  "fr_sets" : "LDD-F041; Legend of Blue Eyes White Dragon; Super Rare\nDDY-F020; Starter Deck: Yugi; Common\nDDK-F021; Starter Deck: Kaiba; Common\nDDJ-F026; Starter Deck: Joey; Common\nDDP-F026; Starter Deck: Pegasus; Common\nSYE-FR026; Starter Deck: Yugi Evolution; Common\nTU04-FR017; Turbo Pack: Booster Four; Common\nTU05-FR001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-FR037; Gold Series: Haunted Mine; Gold Rare\nSDWA-FR023; Samurai Warlords Structure Deck; Common\nLCYW-FR053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-FR031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-FR283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-FR028; Starter Deck: Kaiba Reloaded; Common\nYSYR-FR025; Starter Deck: Yugi Reloaded; Common\nYS14-FRA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-FR024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-FR089; Premium Gold: Return of the Bling; Gold Rare\nYS15-FRY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDEM3-FR012; Demo Deck 2016; Common\nDESO-FR042; Destiny Soldiers; Super Rare\nYS17-FR023; Starter Deck: Link Strike; Common\nYS18-FR025; Starter Deck: Codebreaker; Common\nLEHD-FRB21; Legendary Hero Decks; Ultra Rare\nLEHD-FRC15; Legendary Hero Decks; Common\nOP12-FR022; OTS Tournament Pack 12; Common\nLOB-FR052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-FR086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-FR023; OTS Tournament Pack 23; Common\nSR14-FR030; Structure Deck: Fire Kings; Common",
+  "fr_sets" : [
+    {
+      "cardNumber" : "LDD-F041",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDY-F020",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDK-F021",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDJ-F026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDP-F026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-FR026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU04-FR017",
+      "setPageName" : "Turbo Pack: Booster Four",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU05-FR001",
+      "setPageName" : "Turbo Pack: Booster Five",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD5-FR037",
+      "setPageName" : "Gold Series: Haunted Mine",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDWA-FR023",
+      "setPageName" : "Samurai Warlords Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-FR053",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDRE-FR031",
+      "setPageName" : "Realm of the Sea Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-FR283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-FR028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-FR025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-FRA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-FR024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-FR089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-FRY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DEM3-FR012",
+      "setPageName" : "Demo Deck 2016",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-FR042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-FR023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-FR025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-FRB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-FRC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-FR022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-FR052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-FR086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-FR023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-FR030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "image" : "DarkHole-SR14-EN-C-1E.png",
   "it_lore" : "Distruggi tutti i mostri sul Terreno.",
   "it_name" : "Buco Nero",
-  "it_sets" : "LDD-I041; Legend of Blue Eyes White Dragon; Super Rare\nMIY-I020; Starter Deck: Yugi; Common\nMIK-I021; Starter Deck: Kaiba; Common\nMIJ-I026; Starter Deck: Joey; Common\nMIP-I026; Starter Deck: Pegasus; Common\nSYE-IT026; Starter Deck: Yugi Evolution; Common\nTU04-IT017; Turbo Pack: Booster Four; Common\nTU05-IT001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-IT037; Gold Series: Haunted Mine; Gold Rare\nSDWA-IT023; Samurai Warlords Structure Deck; Common\nLCYW-IT053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-IT031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-IT283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-IT028; Starter Deck: Kaiba Reloaded; Common\nYSYR-IT025; Starter Deck: Yugi Reloaded; Common\nYS14-ITA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-IT024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-IT089; Premium Gold: Return of the Bling; Gold Rare\nYS15-ITY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDEM3-IT012; Demo Deck 2016; Common\nDESO-IT042; Destiny Soldiers; Super Rare\nYS17-IT023; Starter Deck: Link Strike; Common\nYS18-IT025; Starter Deck: Codebreaker; Common\nLEHD-ITB21; Legendary Hero Decks; Ultra Rare\nLEHD-ITC15; Legendary Hero Decks; Common\nOP12-IT022; OTS Tournament Pack 12; Common\nLOB-IT052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-IT086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-IT023; OTS Tournament Pack 23; Common\nSR14-IT030; Structure Deck: Fire Kings; Common",
+  "it_sets" : [
+    {
+      "cardNumber" : "LDD-I041",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MIY-I020",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIK-I021",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIJ-I026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIP-I026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-IT026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU04-IT017",
+      "setPageName" : "Turbo Pack: Booster Four",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU05-IT001",
+      "setPageName" : "Turbo Pack: Booster Five",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD5-IT037",
+      "setPageName" : "Gold Series: Haunted Mine",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDWA-IT023",
+      "setPageName" : "Samurai Warlords Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-IT053",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDRE-IT031",
+      "setPageName" : "Realm of the Sea Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-IT283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-IT028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-IT025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-ITA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-IT024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-IT089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ITY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DEM3-IT012",
+      "setPageName" : "Demo Deck 2016",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-IT042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-IT023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-IT025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-ITB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-ITC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-IT022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-IT052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-IT086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-IT023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-IT030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "ja_lore" : "①：フィールドのモンスターを全て破壊する。",
   "ja_name" : "ブラック・ホール",
-  "jp_sets" : "; Vol.1; Super Rare\n; EX Starter Box; Common\nLB-51; Legend of Blue Eyes White Dragon (Japanese); Super Rare\nEX-22; EX-R Starter Box; Common\nYU-28; Structure Deck: Yugi; Common\nJY-27; Structure Deck: Joey; Common\nKA-29; Structure Deck: Kaiba; Common\nDL2-033; Duelist Legacy Volume.2; Super Rare\nBE1-JP113; Beginner's Edition 1; Super Rare\nGS03-JP012; Gold Series 2011; Common, Gold Rare\nBE01-JP098; Beginner's Edition 1 (2011); Ultra Rare\nSD23-JP030; Structure Deck: Roar of the Sea Emperor; Common\nGDB1-JP052; The Gold Box; Gold Rare\nST12-JPP02; Beginners' Class 2012 promotional cards; Normal Parallel Rare\nDS13-JPD30; Duelist Set: Version Dark Returner; Common\nST14-JPA06; Starter Deck 2014 Enhancement Pack; Common\nVS15-JPS14; Duelist Entry Deck VS; Normal Parallel Rare\nVS15-JPD15; Duelist Entry Deck VS; Normal Parallel Rare\nSPDS-JP042; Booster SP: Destiny Soldiers; Common, Normal Parallel Rare\nST17-JP023; Starter Deck 2017; Common\nST18-JP024; Starter Deck 2018; Normal Parallel Rare\nWP01-JP003; 20th Anniversary Legend Selection; Secret Rare\nSR14-JP030; Structure Deck R: Onslaught of the Fire Kings; Normal Parallel Rare",
+  "jp_sets" : [
+    {
+      "setPageName" : "Vol.1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "setPageName" : "EX Starter Box",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LB-51",
+      "setPageName" : "Legend of Blue Eyes White Dragon (Japanese)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "EX-22",
+      "setPageName" : "EX-R Starter Box",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YU-28",
+      "setPageName" : "Structure Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "JY-27",
+      "setPageName" : "Structure Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "KA-29",
+      "setPageName" : "Structure Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL2-033",
+      "setPageName" : "Duelist Legacy Volume.2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BE1-JP113",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GS03-JP012",
+      "setPageName" : "Gold Series 2011",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BE01-JP098",
+      "setPageName" : "Beginner's Edition 1 (2011)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD23-JP030",
+      "setPageName" : "Structure Deck: Roar of the Sea Emperor",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "GDB1-JP052",
+      "setPageName" : "The Gold Box",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ST12-JPP02",
+      "setPageName" : "Beginners' Class 2012 promotional cards",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DS13-JPD30",
+      "setPageName" : "Duelist Set: Version Dark Returner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST14-JPA06",
+      "setPageName" : "Starter Deck 2014 Enhancement Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-JPS14",
+      "setPageName" : "Duelist Entry Deck VS",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-JPD15",
+      "setPageName" : "Duelist Entry Deck VS",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SPDS-JP042",
+      "setPageName" : "Booster SP: Destiny Soldiers",
+      "rarities" : [
+        "Common",
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ST17-JP023",
+      "setPageName" : "Starter Deck 2017",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST18-JP024",
+      "setPageName" : "Starter Deck 2018",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "WP01-JP003",
+      "setPageName" : "20th Anniversary Legend Selection",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-JP030",
+      "setPageName" : "Structure Deck R: Onslaught of the Fire Kings",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
   "ko_lore" : "①: 필드의 몬스터를 전부 파괴한다.",
   "ko_name" : "블랙홀",
   "ko_rr_name" : "Beullaek-hol",
-  "kr_sets" : "LOB-K052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-K022; Starter Deck: Yugi; Common\nSDK-K022; Starter Deck: Kaiba; Common\nBP1-KR113; Beginner's Edition 1; Super Rare\nSDJ-KR026; Starter Deck: Joey; Common\nSDP-KR026; Starter Deck: Pegasus; Common\nSYE-KR026; Starter Deck: Yugi Evolution; Common\nGS03-KR012; Gold Series 2011; Common, Gold Rare\nSD23-KR030; Structure Deck: Roar of the Sea Emperor; Common\nDS13-KRD30; Duelist Set: Version Dark Returner; Common\nAE03-KR001; Advanced Event Pack 2014 Vol.1; Secret Rare\nST14-KRA06; Starter Deck 2014 Enhancement Pack; Common\nVS15-KRS14; Duelist Entry Deck VS: Saber Force; Normal Parallel Rare\nVS15-KRD15; Duelist Entry Deck VS: Dark Legion; Normal Parallel Rare\nSPDS-KR042; Booster SP: Destiny Soldiers; Common, Normal Parallel Rare\nST17-KR023; Starter Deck 2017; Common\nST18-KR024; Starter Deck 2018; Normal Parallel Rare",
+  "kr_sets" : [
+    {
+      "cardNumber" : "LOB-K052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-K022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-K022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BP1-KR113",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-KR026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-KR026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-KR026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "GS03-KR012",
+      "setPageName" : "Gold Series 2011",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD23-KR030",
+      "setPageName" : "Structure Deck: Roar of the Sea Emperor",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DS13-KRD30",
+      "setPageName" : "Duelist Set: Version Dark Returner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "AE03-KR001",
+      "setPageName" : "Advanced Event Pack 2014 Vol.1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ST14-KRA06",
+      "setPageName" : "Starter Deck 2014 Enhancement Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-KRS14",
+      "setPageName" : "Duelist Entry Deck VS: Saber Force",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-KRD15",
+      "setPageName" : "Duelist Entry Deck VS: Dark Legion",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SPDS-KR042",
+      "setPageName" : "Booster SP: Destiny Soldiers",
+      "rarities" : [
+        "Common",
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ST17-KR023",
+      "setPageName" : "Starter Deck 2017",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST18-KR024",
+      "setPageName" : "Starter Deck 2018",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
   "lore" : "Destroy all monsters on the field.",
   "m/s/t" : [
     "Destroys Monster Cards"
   ],
-  "na_sets" : "LOB-052; Legend of Blue Eyes White Dragon; Super Rare\nSDY-022; Starter Deck: Yugi; Common\nSDK-022; Starter Deck: Kaiba; Common\nSDJ-026; Starter Deck: Joey; Common\nSDP-026; Starter Deck: Pegasus; Common\nYS15-ENF13; Saber Force Starter Deck; Shatterfoil Rare\nYS15-ENL14; Dark Legion Starter Deck; Shatterfoil Rare",
+  "na_sets" : [
+    {
+      "cardNumber" : "LOB-052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENF13",
+      "setPageName" : "Saber Force Starter Deck",
+      "rarities" : [
+        "Shatterfoil Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENL14",
+      "setPageName" : "Dark Legion Starter Deck",
+      "rarities" : [
+        "Shatterfoil Rare"
+      ]
+    }
+  ],
   "password" : "53129443",
   "property" : "Normal",
   "pt_lore" : "Destrua todos os monstros no campo.",
   "pt_name" : "Buraco Negro",
-  "pt_sets" : "LDB-P052; Legend of Blue Eyes White Dragon; Super Rare\nDIY-P022; Starter Deck: Yugi; Common\nDIK-P022; Starter Deck: Kaiba; Common\nDIJ-P026; Starter Deck: Joey; Common\nDIP-P026; Starter Deck: Pegasus; Common\nSYE-PT026; Starter Deck: Yugi Evolution; Common\nLCJW-PT283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-PT028; Starter Deck: Kaiba Reloaded; Common\nYSYR-PT025; Starter Deck: Yugi Reloaded; Common\nYS14-PTA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-PT024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-PT089; Premium Gold: Return of the Bling; Gold Rare\nYS15-PTY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDESO-PT042; Destiny Soldiers; Super Rare\nYS17-PT023; Starter Deck: Link Strike; Common\nYS18-PT025; Starter Deck: Codebreaker; Common\nLEHD-PTB21; Legendary Hero Decks; Ultra Rare\nLEHD-PTC15; Legendary Hero Decks; Common\nOP12-PT022; OTS Tournament Pack 12; Common\nLOB-PT052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-PT086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-PT023; OTS Tournament Pack 23; Common\nSR14-PT030; Structure Deck: Fire Kings; Common",
+  "pt_sets" : [
+    {
+      "cardNumber" : "LDB-P052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DIY-P022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIK-P022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIJ-P026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIP-P026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-PT026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-PT283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-PT028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-PT025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-PTA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-PT024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-PT089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-PTY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-PT042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-PT023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-PT025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-PTB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-PTC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-PT022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-PT052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-PT086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-PT023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-PT030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "romaji_name" : "Burakku Hōru",
   "sc_lore" : "①：将场上的怪兽全部破坏。",
   "sc_name" : "黑洞",
-  "sc_sets" : "ST20-SC022; Starter Deck 2020; Common\n23RC-SC048; Rarity Collection Quarter Century Edition; Super Rare, Ultimate Rare, Collector's Rare, Secret Rare, Extra Secret Rare, Quarter Century Secret Rare",
-  "sp_sets" : "LDD-S052; Legend of Blue Eyes White Dragon; Super Rare\nBIY-S022; Starter Deck: Yugi; Common\nBIK-S022; Starter Deck: Kaiba; Common\nBIJ-S026; Starter Deck: Joey; Common\nBIP-S026; Starter Deck: Pegasus; Common\nDB1-SP113; Dark Beginning 1; Super Rare\nSYE-SP026; Starter Deck: Yugi Evolution; Common\nTU04-SP017; Turbo Pack: Booster Four; Common\nTU05-SP001; Turbo Pack: Booster Five; Ultra Rare\nGLD5-SP037; Gold Series: Haunted Mine; Gold Rare\nSDWA-SP023; Samurai Warlords Structure Deck; Common\nLCYW-SP053; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nSDRE-SP031; Realm of the Sea Emperor Structure Deck; Common\nLCJW-SP283; Legendary Collection 4: Joey's World Mega Pack; Secret Rare\nYSKR-SP028; Starter Deck: Kaiba Reloaded; Common\nYSYR-SP025; Starter Deck: Yugi Reloaded; Common\nYS14-SPA10; Space-Time Showdown Power-Up Pack; Ultra Rare\nNKRT-SP024; Noble Knights of the Round Table Box Set; Platinum Rare\nPGL2-SP089; Premium Gold: Return of the Bling; Gold Rare\nYS15-SPY12; 2-Player Starter Deck: Yuya & Declan; Super Rare\nDESO-SP042; Destiny Soldiers; Super Rare\nYS17-SP023; Starter Deck: Link Strike; Common\nYS18-SP025; Starter Deck: Codebreaker; Common\nLEHD-SPB21; Legendary Hero Decks; Ultra Rare\nLEHD-SPC15; Legendary Hero Decks; Common\nOP12-SP022; OTS Tournament Pack 12; Common\nLOB-SP052; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Super Rare\nBLMR-SP086; Battles of Legend: Monstrous Revenge; Secret Rare, Quarter Century Secret Rare\nOP23-SP023; OTS Tournament Pack 23; Common\nSR14-SP030; Structure Deck: Fire Kings; Common",
+  "sc_sets" : [
+    {
+      "cardNumber" : "ST20-SC022",
+      "setPageName" : "Starter Deck 2020",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "23RC-SC048",
+      "setPageName" : "Rarity Collection Quarter Century Edition",
+      "rarities" : [
+        "Super Rare",
+        "Ultimate Rare",
+        "Collector's Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "sp_sets" : [
+    {
+      "cardNumber" : "LDD-S052",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BIY-S022",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIK-S022",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIJ-S026",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIP-S026",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-SP113",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-SP026",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU04-SP017",
+      "setPageName" : "Turbo Pack: Booster Four",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "TU05-SP001",
+      "setPageName" : "Turbo Pack: Booster Five",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD5-SP037",
+      "setPageName" : "Gold Series: Haunted Mine",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDWA-SP023",
+      "setPageName" : "Samurai Warlords Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-SP053",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDRE-SP031",
+      "setPageName" : "Realm of the Sea Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-SP283",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-SP028",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-SP025",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-SPA10",
+      "setPageName" : "Space-Time Showdown Power-Up Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "NKRT-SP024",
+      "setPageName" : "Noble Knights of the Round Table Box Set",
+      "rarities" : [
+        "Platinum Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGL2-SP089",
+      "setPageName" : "Premium Gold: Return of the Bling",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-SPY12",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DESO-SP042",
+      "setPageName" : "Destiny Soldiers",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS17-SP023",
+      "setPageName" : "Starter Deck: Link Strike",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS18-SP025",
+      "setPageName" : "Starter Deck: Codebreaker",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-SPB21",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEHD-SPC15",
+      "setPageName" : "Legendary Hero Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "OP12-SP022",
+      "setPageName" : "OTS Tournament Pack 12",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-SP052",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-SP086",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "OP23-SP023",
+      "setPageName" : "OTS Tournament Pack 23",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SR14-SP030",
+      "setPageName" : "Structure Deck: Fire Kings",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "tc_lore" : "破坏场上的全部怪兽。",
   "tc_name" : "黑洞",
-  "tc_sets" : "SP02-TC037; Starter Pack Volume 2; Ultra Rare",
+  "tc_sets" : [
+    {
+      "cardNumber" : "SP02-TC037",
+      "setPageName" : "Starter Pack Volume 2",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "trans_name" : "Black Hole"
 }

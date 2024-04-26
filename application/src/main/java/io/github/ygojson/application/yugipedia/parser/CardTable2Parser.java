@@ -54,6 +54,8 @@ class CardTable2Parser extends TemplateParser {
 		"misc"
 	);
 
+	private static final Pattern LOCALIZED_SETS = Pattern.compile(".*_sets$");
+
 	/**
 	 * Default constructor.
 	 *
@@ -81,7 +83,9 @@ class CardTable2Parser extends TemplateParser {
 		if (BULLETED_LIST_PROPERTIES.contains(property)) {
 			return PropertyParser.Type.BULLETED_LIST;
 		}
-		// TODO: handle some special properties
+		if (LOCALIZED_SETS.matcher(property).matches()) {
+			return PropertyParser.Type.SET_ROWS;
+		}
 		return PropertyParser.Type.TEXT;
 	}
 }

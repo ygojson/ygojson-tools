@@ -1,22 +1,721 @@
 {
-  "ae_sets" : "; Oversized Gift for 7000 People; Ultra Rare\nLOB-005; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-006; Starter Deck: Yugi; Ultra Rare\n2015-JPP02; Yu-Gi-Oh! World Championship 2015 attendance cards; Millennium Rare\nSDID-AE001; Structure Deck: Illusion of the Dark Magicians; Ultra Rare",
+  "ae_sets" : [
+    {
+      "setPageName" : "Oversized Gift for 7000 People",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "2015-JPP02",
+      "setPageName" : "Yu-Gi-Oh! World Championship 2015 attendance cards",
+      "rarities" : [
+        "Millennium Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDID-AE001",
+      "setPageName" : "Structure Deck: Illusion of the Dark Magicians",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "archseries" : [
     "Dark Magician (archetype)"
   ],
   "atk" : "2500",
   "attribute" : "DARK",
-  "au_sets" : "LOB-A005; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-A006; Starter Deck: Yugi; Ultra Rare",
+  "au_sets" : [
+    {
+      "cardNumber" : "LOB-A005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-A006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "current_image" : "1",
   "database_id" : "4041",
   "de_lore" : "Der ultimative Hexer im Hinblick auf Angriff und Verteidigung.",
   "de_name" : "Dunkler Magier",
-  "de_sets" : "SDY-G005; Starter Deck: Yugi; Ultra Rare\nLOB-G003; Legend of Blue Eyes White Dragon; Ultra Rare\nPCY-G004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nSYE-DE001; Starter Deck: Yugi Evolution; Super Rare\nDB1-DE102; Dark Beginning 1; Ultra Rare\nSD6-DE003; Structure Deck: Spellcaster's Judgment; Common\nRP01-DE003; Retro Pack; Ultra Rare\nDPYG-DE001; Duelist Pack: Yugi; Rare\nLC01-DE005; Legendary Collection; Ultra Rare\nDL11-DE001; Duelist League 2 participation cards; Rare\nLCYW-DE001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nYSYR-DE001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-DEA03; Yugi's Legendary Decks; Common\nYGLD-DEC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-DE008; Duelist Pack: Battle City; Super Rare\nMVP1-DE054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-DE003; 2016 Mega-Tins; Ultra Rare\nLDK2-DEY10; Legendary Decks II; Common\nSDMY-DE010; Structure Deck: Yugi Muto; Common\nMVP1-DEGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-DEG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-DE100; Duelist Saga; Ultra Rare\nCT14-DE001; 2017 Mega-Tins; Secret Rare\nLEDD-DEA01; Legendary Dragon Decks; Common\nYUCB-DE001; Yugi & Kaiba Collector Box; Ultra Rare\nLC01-DE005; Legendary Collection: Gameboard Edition; Ultra Rare\nSS01-DEA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-DE101; Duel Power; Ultra Rare\nSTP1-DE001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-DESV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-DES54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-DEA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-DE002; Maximum Gold; Premium Gold Rare\nSBCB-DE001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-DE128; Ghosts From the Past (set); Ghost Rare\nMGED-DE002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-DE001; Battle of Chaos; Ultra Rare\nHAC1-DE002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-DE005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-DE005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-DEA01; Speed Duel: Streets of Battle City; Common, Secret\nTN23-DE001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "de_sets" : [
+    {
+      "cardNumber" : "SDY-G005",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-G003",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-G004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-DE001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-DE102",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-DE003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-DE003",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPYG-DE001",
+      "setPageName" : "Duelist Pack: Yugi",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-DE005",
+      "setPageName" : "Legendary Collection",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL11-DE001",
+      "setPageName" : "Duelist League 2 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-DE001",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-DE001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-DEA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-DEC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-DE008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-DE054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-DE003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-DEY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-DE010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-DEGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-DEG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-DE100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-DE001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-DEA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YUCB-DE001",
+      "setPageName" : "Yugi & Kaiba Collector Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-DE005",
+      "setPageName" : "Legendary Collection: Gameboard Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-DEA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-DE101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-DE001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-DESV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-DES54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-DEA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-DE002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBCB-DE001",
+      "setPageName" : "Speed Duel: Battle City Box",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-DE128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-DE002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-DE001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-DE002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-DE005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-DE005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-DEA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-DE001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "def" : "2100",
-  "en_sets" : "SYE-001; Starter Deck: Yugi Evolution; Super Rare\nDB1-EN102; Dark Beginning 1; Ultra Rare\nLOB-EN005; Legend of Blue Eyes White Dragon; Ultra Rare\nFL1-EN002; Forbidden Legacy; Secret Rare\nSD6-EN003; Structure Deck: Spellcaster's Judgment; Common\nDPYG-EN001; Duelist Pack: Yugi; Rare\nLC01-EN005; Legendary Collection; Ultra Rare\nDL11-EN001; Duelist League 2 participation cards; Rare\nLCYW-EN001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nLC01-EN005; Legendary Collection: Gameboard Edition; Ultra Rare\nYSYR-EN001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nDPBC-EN008; Duelist Pack: Battle City; Super Rare\nYGLD-ENA03; Yugi's Legendary Decks; Common\nYGLD-ENC09; Yugi's Legendary Decks; Ultra Rare\nMVP1-EN054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-EN003; 2016 Mega-Tins; Ultra Rare\nLDK2-ENY10; Legendary Decks II; Common\nSDMY-EN010; Structure Deck: Yugi Muto; Common\nMVP1-ENGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-ENG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-EN100; Duelist Saga; Ultra Rare\nCT14-EN001; 2017 Mega-Tins; Secret Rare\nLEDD-ENA01; Legendary Dragon Decks; Common\nSS01-ENA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-EN101; Duel Power; Ultra Rare\nSTP1-EN001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-ENSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-ENS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-ENA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-EN002; Maximum Gold; Premium Gold Rare\nSBCB-EN001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-EN128; Ghosts From the Past (set); Ghost Rare\n2021-EN001; KC Grand Tournament 2021 prize card; Extra Secret Rare\nMGED-EN002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-EN001; Battle of Chaos; Ultra Rare\nHAC1-EN002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nADC1-EN001; Adidas collaboration card; Secret Rare\nLC01-EN005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-EN005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-ENA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-EN001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "en_sets" : [
+    {
+      "cardNumber" : "SYE-001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-EN102",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "FL1-EN002",
+      "setPageName" : "Forbidden Legacy",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-EN003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DPYG-EN001",
+      "setPageName" : "Duelist Pack: Yugi",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-EN005",
+      "setPageName" : "Legendary Collection",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL11-EN001",
+      "setPageName" : "Duelist League 2 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-EN001",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-EN005",
+      "setPageName" : "Legendary Collection: Gameboard Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-EN001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-EN008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-ENA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-ENC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-EN054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-EN003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-ENY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-EN010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ENGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ENG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-EN100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-EN001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-ENA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-ENA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-EN101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-EN001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ENSV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ENS54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-ENA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-EN002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBCB-EN001",
+      "setPageName" : "Speed Duel: Battle City Box",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-EN128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "2021-EN001",
+      "setPageName" : "KC Grand Tournament 2021 prize card",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-EN002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-EN001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-EN002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ADC1-EN001",
+      "setPageName" : "Adidas collaboration card",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-EN005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-ENA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-EN001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "es_lore" : "El más grande de los magos en cuanto al ataque y la defensa.",
   "es_name" : "Mago Oscuro",
-  "eu_sets" : "LOB-E003; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-E005; Starter Deck: Yugi; Ultra Rare\nPCY-E004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nRP01-EN003; Retro Pack; Ultra Rare\nYUCB-EN001; Yugi & Kaiba Collector Box; Ultra Rare",
-  "fc_sets" : "LDD-C005; Legend of Blue Eyes White Dragon; Ultra Rare\nDDY-C006; Starter Deck: Yugi; Ultra Rare\nDL1-C002; Duelist League Series 1 participation cards; Ultra Rare",
+  "eu_sets" : [
+    {
+      "cardNumber" : "LOB-E003",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-E005",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-E004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-EN003",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YUCB-EN001",
+      "setPageName" : "Yugi & Kaiba Collector Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "fc_sets" : [
+    {
+      "cardNumber" : "LDD-C005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDY-C006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL1-C002",
+      "setPageName" : "Duelist League Series 1 participation cards",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "fm_for" : [
     "Amulet Dragon",
     "Dark Cavalry",
@@ -30,26 +729,1375 @@
   ],
   "fr_lore" : "Mage suprême en termes d'attaque et de défense.",
   "fr_name" : "Magicien Sombre",
-  "fr_sets" : "DDY-F005; Starter Deck: Yugi; Ultra Rare\nLDD-F003; Legend of Blue Eyes White Dragon; Ultra Rare\nPCY-F004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nSYE-FR001; Starter Deck: Yugi Evolution; Super Rare\nSD6-FR003; Structure Deck: Spellcaster's Judgment; Common\nRP01-FR003; Retro Pack; Ultra Rare\nDPYG-FR001; Duelist Pack: Yugi; Rare\nDL11-FR001; Duelist League 2 participation cards; Rare\nLCYW-FR001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nYSYR-FR001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-FRA03; Yugi's Legendary Decks; Common\nYGLD-FRC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-FR008; Duelist Pack: Battle City; Super Rare\nMVP1-FR054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-FR003; 2016 Mega-Tins; Ultra Rare\nLDK2-FRY10; Legendary Decks II; Common\nSDMY-FR010; Structure Deck: Yugi Muto; Common\nMVP1-FRGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-FRG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-FR100; Duelist Saga; Ultra Rare\nCT14-FR001; 2017 Mega-Tins; Secret Rare\nLEDD-FRA01; Legendary Dragon Decks; Common\nYUCB-FR001; Yugi & Kaiba Collector Box; Ultra Rare\nSS01-FRA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-FR101; Duel Power; Ultra Rare\nSTP1-FR001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-FRSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-FRS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-FRA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-FR002; Maximum Gold; Premium Gold Rare\nSBCB-FR001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-FR128; Ghosts From the Past (set); Ghost Rare\nMGED-FR002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-FR001; Battle of Chaos; Ultra Rare\nHAC1-FR002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-FR005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-FR005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-FRA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-FR001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "fr_sets" : [
+    {
+      "cardNumber" : "DDY-F005",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDD-F003",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-F004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-FR001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-FR003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-FR003",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPYG-FR001",
+      "setPageName" : "Duelist Pack: Yugi",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL11-FR001",
+      "setPageName" : "Duelist League 2 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-FR001",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-FR001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-FRA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-FRC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-FR008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-FR054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-FR003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-FRY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-FR010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-FRGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-FRG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-FR100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-FR001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-FRA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YUCB-FR001",
+      "setPageName" : "Yugi & Kaiba Collector Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-FRA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-FR101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-FR001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-FRSV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-FRS54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-FRA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-FR002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBCB-FR001",
+      "setPageName" : "Speed Duel: Battle City Box",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-FR128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-FR002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-FR001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-FR002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-FR005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-FR005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-FRA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-FR001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "image" : "1; DarkMagician-TN23-EN-QCScR-LE.png; DarkMagician-TF05-JP-VG-artwork.png\n2; DarkMagician-LOB-EN-UR-UE-25thAnniversaryEdition.png; DarkMagician-TF05-JP-VG-2-artwork.png\n3; DarkMagician-LC01-EN-UR-LE-25thAnniversaryEdition.png; DarkMagician-MADU-EN-VG-artwork.png\n4; DarkMagician-JMPS-EN-UR-LE.png; DarkMagician-TF05-JP-VG-5-artwork.png\n5; DarkMagician-YUCB-EN-UR-LE.png; DarkMagician-MADU-EN-VG-artwork-2.png\n6; DarkMagician-MVP1-EN-UR-LE.png; DarkMagician-OW-3.png\n7; DarkMagician-DUPO-EN-UR-LE.png; DarkMagician-OW-4.png\n8; DarkMagician-25TH-EN-UR-1E.png; DarkMagician-DULI-EN-VG-artwork-6.png\n9; DarkMagician-PPC1-JP-C.png\n10; DarkMagician-CCC1-JP-NPR.png\n11; DarkMagician-711C-JP-NPR.png",
   "it_lore" : "Il più potente tra i maghi per abilità offensive e difensive.",
   "it_name" : "Mago Nero",
-  "it_sets" : "MIY-I005; Starter Deck: Yugi; Ultra Rare\nLDD-I003; Legend of Blue Eyes White Dragon; Ultra Rare\nPCY-I004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nSYE-IT001; Starter Deck: Yugi Evolution; Super Rare\nSD6-IT003; Structure Deck: Spellcaster's Judgment; Common\nRP01-IT003; Retro Pack; Ultra Rare\nDPYG-IT001; Duelist Pack: Yugi; Rare\nLC01-IT005; Legendary Collection; Ultra Rare\nDL11-IT001; Duelist League 2 participation cards; Rare\nLCYW-IT001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nYSYR-IT001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-ITA03; Yugi's Legendary Decks; Common\nYGLD-ITC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-IT008; Duelist Pack: Battle City; Super Rare\nMVP1-IT054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-IT003; 2016 Mega-Tins; Ultra Rare\nLDK2-ITY10; Legendary Decks II; Common\nSDMY-IT010; Structure Deck: Yugi Muto; Common\nMVP1-ITGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-ITG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-IT100; Duelist Saga; Ultra Rare\nCT14-IT001; 2017 Mega-Tins; Secret Rare\nLEDD-ITA01; Legendary Dragon Decks; Common\nYUCB-IT001; Yugi & Kaiba Collector Box; Ultra Rare\nSS01-ITA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-IT101; Duel Power; Ultra Rare\nSTP1-IT001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-ITSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-ITS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-ITA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-IT002; Maximum Gold; Premium Gold Rare\nSBCB-IT001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-IT128; Ghosts From the Past (set); Ghost Rare\nMGED-IT002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-IT001; Battle of Chaos; Ultra Rare\nHAC1-IT002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-IT005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-IT005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-ITA01; Speed Duel: Streets of Battle City; Common, Secret\nTN23-IT001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "it_sets" : [
+    {
+      "cardNumber" : "MIY-I005",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDD-I003",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-I004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-IT001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-IT003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-IT003",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPYG-IT001",
+      "setPageName" : "Duelist Pack: Yugi",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-IT005",
+      "setPageName" : "Legendary Collection",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL11-IT001",
+      "setPageName" : "Duelist League 2 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-IT001",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-IT001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-ITA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-ITC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-IT008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-IT054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-IT003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-ITY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-IT010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ITGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ITG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-IT100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-IT001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-ITA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YUCB-IT001",
+      "setPageName" : "Yugi & Kaiba Collector Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-ITA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-IT101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-IT001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ITSV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ITS54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-ITA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-IT002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBCB-IT001",
+      "setPageName" : "Speed Duel: Battle City Box",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-IT128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-IT002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-IT001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-IT002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-IT005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-IT005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-ITA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-IT001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "it_trans_name" : "Black Magician",
   "ja_lore" : "<ruby>魔<rt>ま</rt></ruby><ruby>法<rt>ほう</rt></ruby><ruby>使<rt>つか</rt></ruby>いとしては、<ruby>攻<rt>こう</rt></ruby><ruby>撃<rt>げき</rt></ruby><ruby>力<rt>りょく</rt></ruby>・<ruby>守<rt>しゅ</rt></ruby><ruby>備<rt>び</rt></ruby><ruby>力<rt>りょく</rt></ruby>ともに<ruby>最<rt>さい</rt></ruby><ruby>高<rt>こう</rt></ruby>クラス。",
   "ja_name" : "ブラック・マジシャン",
-  "jp_sets" : "; Vol.1; Ultra Rare\n; EX Starter Box; Ultra Rare\nLB-05; Legend of Blue Eyes White Dragon (Japanese); Ultra Rare\nEX-06; EX-R Starter Box; Ultra Rare\nYU-15; Structure Deck: Yugi; Common\nLN-53; Labyrinth of Nightmare (Japanese); Ultimate Rare\nDL2-005; Duelist Legacy Volume.2; Ultra Rare, Ultra Parallel Rare\nSY2-002; Structure Deck: Yugi Volume 2; Common\nBE1-JP102; Beginner's Edition 1; Ultra Rare\nSD6-JP003; Structure Deck: Spellcaster's Judgment; Common\nDT01-JP002; Duel Terminal - Synchro Awakening!!; Duel Terminal Rare Parallel Rare\nWJMP-JP012; Weekly Shōnen Jump 2009, Issue 3 promotional card; Ultra Rare\nBE01-JP092; Beginner's Edition 1 (2011); Ultra Rare\n15AY-JPA03; Memories of the Duel King: Duelist Kingdom Arc; Ultra Rare\n15AY-JPC09; Memories of the Duel King: Ceremonial Battle Arc; Ultra Rare\nTRC1-JP001; The Rarity Collection; Extra Secret Rare\n15AX-JPY01; Duelist Road -Piece of Memory- Side: Yami Yugi; Secret Rare, Millennium Rare\nSJMP-JP002; Saikyō Jump March 2015 promotional card; Ultra Rare\nDP16-JP008; Duelist Pack: Battle City; Super Rare\nMB01-JP010; Millennium Box Gold Edition; Millennium Rare\nMVPI-JP001; Yu-Gi-Oh! The Dark Side of Dimensions CoCo Ichibanya promotional card 1; Kaiba Corporation Common\nSDMY-JP010; Structure Deck: Yugi Muto; Normal Parallel Rare\n20AP-JP101; 20th Anniversary Pack 2nd Wave; Holographic Parallel Rare\nLG01-JP001; Yu-Gi-Oh! Duel Links Legend Deck Guide: Yami Yugi VS Seto Kaiba promotional cards; Normal Parallel Rare\n2018-JPP02; Yu-Gi-Oh! World Championship 2018 attendance cards; 20th Secret Rare\nYCPC-JP004; Yu-Gi-Oh! Chips; Common, Millennium Rare\n; 20th Anniversary Duelist Box; Ultra Rare\n20TH-JPBS1; 20th Anniversary Duelist Box; 20th Secret Rare\n20TH-JPC57; 20th Anniversary Legend Collection; Ultra Parallel Rare, Secret Rare\n20CP-JPS01; 20th Secret Rare Special Pack; 20th Secret Rare\nLGB1-JPS01; Legendary Gold Box; Premium Gold Rare\nPSEC-JP002; Prismatic Secret Rare \"Dark Magician\" GET Campaign; Prismatic Secret Rare\nPGB1-JP011; Prismatic God Box; Millennium Ultra Rare, Ultimate Rare\nPAC1-JP004; Prismatic Art Collection; Normal Parallel Rare, Secret Rare, Prismatic Secret Rare\nDR01-JPA01; Duel Royale Deck Set EX; Common, Ultra Rare\nPPC1-JP001; Power Pros collaboration cards; Common, Normal Parallel Rare\n25TH-JP001; \"Dark Magician Ultra Rare Special Illustration Version\" GET Campaign; Ultra Rare\n; \"Dark Magician\" Special Card; Ultra Rare\nCCC1-JP001; Coco's x Yu-Gi-Oh! Card Game Anniversary Campaign 1; Normal Parallel Rare\n711C-JP001; Yu-Gi-Oh! Card Game x 7-Eleven Collaboration Campaign; Normal Parallel Rare",
+  "jp_sets" : [
+    {
+      "setPageName" : "Vol.1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "setPageName" : "EX Starter Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LB-05",
+      "setPageName" : "Legend of Blue Eyes White Dragon (Japanese)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "EX-06",
+      "setPageName" : "EX-R Starter Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YU-15",
+      "setPageName" : "Structure Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LN-53",
+      "setPageName" : "Labyrinth of Nightmare (Japanese)",
+      "rarities" : [
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL2-005",
+      "setPageName" : "Duelist Legacy Volume.2",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SY2-002",
+      "setPageName" : "Structure Deck: Yugi Volume 2",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BE1-JP102",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-JP003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DT01-JP002",
+      "setPageName" : "Duel Terminal - Synchro Awakening!!",
+      "rarities" : [
+        "Duel Terminal Rare Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "WJMP-JP012",
+      "setPageName" : "Weekly Shōnen Jump 2009, Issue 3 promotional card",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BE01-JP092",
+      "setPageName" : "Beginner's Edition 1 (2011)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AY-JPA03",
+      "setPageName" : "Memories of the Duel King: Duelist Kingdom Arc",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AY-JPC09",
+      "setPageName" : "Memories of the Duel King: Ceremonial Battle Arc",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TRC1-JP001",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AX-JPY01",
+      "setPageName" : "Duelist Road -Piece of Memory- Side: Yami Yugi",
+      "rarities" : [
+        "Secret Rare",
+        "Millennium Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SJMP-JP002",
+      "setPageName" : "Saikyō Jump March 2015 promotional card",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP16-JP008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MB01-JP010",
+      "setPageName" : "Millennium Box Gold Edition",
+      "rarities" : [
+        "Millennium Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVPI-JP001",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions CoCo Ichibanya promotional card 1",
+      "rarities" : [
+        "Kaiba Corporation Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-JP010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-JP101",
+      "setPageName" : "20th Anniversary Pack 2nd Wave",
+      "rarities" : [
+        "Holographic Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LG01-JP001",
+      "setPageName" : "Yu-Gi-Oh! Duel Links Legend Deck Guide: Yami Yugi VS Seto Kaiba promotional cards",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "2018-JPP02",
+      "setPageName" : "Yu-Gi-Oh! World Championship 2018 attendance cards",
+      "rarities" : [
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YCPC-JP004",
+      "setPageName" : "Yu-Gi-Oh! Chips",
+      "rarities" : [
+        "Common",
+        "Millennium Rare"
+      ]
+    },
+    {
+      "setPageName" : "20th Anniversary Duelist Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20TH-JPBS1",
+      "setPageName" : "20th Anniversary Duelist Box",
+      "rarities" : [
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20TH-JPC57",
+      "setPageName" : "20th Anniversary Legend Collection",
+      "rarities" : [
+        "Ultra Parallel Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20CP-JPS01",
+      "setPageName" : "20th Secret Rare Special Pack",
+      "rarities" : [
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LGB1-JPS01",
+      "setPageName" : "Legendary Gold Box",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PSEC-JP002",
+      "setPageName" : "Prismatic Secret Rare \"Dark Magician\" GET Campaign",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGB1-JP011",
+      "setPageName" : "Prismatic God Box",
+      "rarities" : [
+        "Millennium Ultra Rare",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-JP004",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Normal Parallel Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DR01-JPA01",
+      "setPageName" : "Duel Royale Deck Set EX",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PPC1-JP001",
+      "setPageName" : "Power Pros collaboration cards",
+      "rarities" : [
+        "Common",
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-JP001",
+      "setPageName" : "\"Dark Magician Ultra Rare Special Illustration Version\" GET Campaign",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "setPageName" : "\"Dark Magician\" Special Card",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CCC1-JP001",
+      "setPageName" : "Coco's x Yu-Gi-Oh! Card Game Anniversary Campaign 1",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "711C-JP001",
+      "setPageName" : "Yu-Gi-Oh! Card Game x 7-Eleven Collaboration Campaign",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
   "ko_lore" : "마법사 중에서 공격력 / 수비력이 동시에 가장 높은 계급.",
   "ko_name" : "블랙 매지션",
   "ko_rr_name" : "Beullaek Maejisyeon",
-  "kr_sets" : "LOB-K005; Legend of Blue Eyes White Dragon; Ultra Rare\nSDY-K006; Starter Deck: Yugi; Ultra Rare\nBP1-KR102; Beginner's Edition 1; Ultra Rare\nSYE-KR001; Starter Deck: Yugi Evolution; Super Rare\nSD6-KR003; Structure Deck: Spellcaster's Judgment; Common\nPP01-KR017; Premium Pack Vol.1; Ultra Rare\nDP00-KR001; Duelist Pack: Yugi (OCG); Super Rare\nMOV-KR005; Movie Pack Vol.2; Ultra Rare\nMB01-KR010; Millennium Deck; Millennium Rare\nMVPC-KR005; Yu-Gi-Oh! The Dark Side of Dimensions Theater distribution cards; Ultra Rare\nDP16-KR008; Duelist Pack: Battle City; Super Rare\nSDMY-KR010; Structure Deck: Yugi Muto; Normal Parallel Rare\n20AP-KR101; 20th Anniversary Pack 2nd Wave; Extra Secret Parallel Rare\n15AY-KRA03; Memories of the Duel King: Duelist Kingdom Arc; Ultra Rare\nTRC1-KR001; The Rarity Collection; Extra Secret Rare\n15AY-KRC09; Memories of the Duel King: Ceremonial Battle Arc; Ultra Rare\n15AY-KRA03; Yugi's Uncut Card Sheet promotion; Ultra Rare\nCHBI-KRBS1; Chronicle Binder; Extra Secret Rare\nLEC1-KR057; 20th Anniversary Legend Collection; Ultra Parallel Rare, Secret Rare\n15AX-KRY01; Duelist Road -Piece of Memory- Side: Yami Yugi; Secret Rare, Millennium Rare\nLGB1-KRS01; Legendary Gold Set; Premium Gold Rare\nLGB1-KRGE1; Legendary Gold Set; Premium Gold Rare\nPAC1-KR004; Prismatic Art Collection; Normal Parallel Rare, Secret Rare, Prismatic Secret Rare\n25TH-KR001; \"Dark Magician Ultra Rare Special Illustration Version\" GET Campaign; Ultra Rare\nGPC1-KR001; Gopizza x Yu-Gi-Oh! Official Card Game Collaboration Campaign; Normal Parallel Rare",
+  "kr_sets" : [
+    {
+      "cardNumber" : "LOB-K005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-K006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BP1-KR102",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-KR001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD6-KR003",
+      "setPageName" : "Structure Deck: Spellcaster's Judgment",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "PP01-KR017",
+      "setPageName" : "Premium Pack Vol.1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP00-KR001",
+      "setPageName" : "Duelist Pack: Yugi (OCG)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MOV-KR005",
+      "setPageName" : "Movie Pack Vol.2",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MB01-KR010",
+      "setPageName" : "Millennium Deck",
+      "rarities" : [
+        "Millennium Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVPC-KR005",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Theater distribution cards",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP16-KR008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-KR010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-KR101",
+      "setPageName" : "20th Anniversary Pack 2nd Wave",
+      "rarities" : [
+        "Extra Secret Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AY-KRA03",
+      "setPageName" : "Memories of the Duel King: Duelist Kingdom Arc",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TRC1-KR001",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AY-KRC09",
+      "setPageName" : "Memories of the Duel King: Ceremonial Battle Arc",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AY-KRA03",
+      "setPageName" : "Yugi's Uncut Card Sheet promotion",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CHBI-KRBS1",
+      "setPageName" : "Chronicle Binder",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEC1-KR057",
+      "setPageName" : "20th Anniversary Legend Collection",
+      "rarities" : [
+        "Ultra Parallel Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "15AX-KRY01",
+      "setPageName" : "Duelist Road -Piece of Memory- Side: Yami Yugi",
+      "rarities" : [
+        "Secret Rare",
+        "Millennium Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LGB1-KRS01",
+      "setPageName" : "Legendary Gold Set",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LGB1-KRGE1",
+      "setPageName" : "Legendary Gold Set",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-KR004",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Normal Parallel Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-KR001",
+      "setPageName" : "\"Dark Magician Ultra Rare Special Illustration Version\" GET Campaign",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GPC1-KR001",
+      "setPageName" : "Gopizza x Yu-Gi-Oh! Official Card Game Collaboration Campaign",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
   "level" : "7",
   "lore" : "The ultimate wizard in terms of attack and defense.",
-  "na_sets" : "LOB-005; Legend of Blue Eyes White Dragon; Ultra Rare\nDDS-002; Yu-Gi-Oh! Dark Duel Stories promotional cards; Prismatic Secret Rare\nSDY-006; Starter Deck: Yugi; Ultra Rare\nBPT-001; Booster Pack Collectors Tins 2002; Secret Rare\nBPT-007; Collectible Tins 2003; Secret Rare\nPCY-004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nJUMP-EN049; Shonen Jump Vol. 9, Issue 4 promotional card; Ultra Rare\nDTP1-EN002; Duel Terminal - Preview Wave 1; Duel Terminal Rare Parallel Rare\nDLG1-EN004; Dark Legends; Rare\nDTP1-EN002; Duel Terminal - Preview Wave 2; Duel Terminal Rare Parallel Rare\nDT01-EN002; Duel Terminal 1; Duel Terminal Rare Parallel Rare\nJMPS-EN003; WSJ Jump Pack Fall 2016 promotional card; Ultra Rare\nYUCB-EN001; Yugi's Collector Box; Ultra Rare\nMVP1-ENSE3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition; Ultra Rare",
+  "na_sets" : [
+    {
+      "cardNumber" : "LOB-005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDS-002",
+      "setPageName" : "Yu-Gi-Oh! Dark Duel Stories promotional cards",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BPT-001",
+      "setPageName" : "Booster Pack Collectors Tins 2002",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BPT-007",
+      "setPageName" : "Collectible Tins 2003",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "JUMP-EN049",
+      "setPageName" : "Shonen Jump Vol. 9, Issue 4 promotional card",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DTP1-EN002",
+      "setPageName" : "Duel Terminal - Preview Wave 1",
+      "rarities" : [
+        "Duel Terminal Rare Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DLG1-EN004",
+      "setPageName" : "Dark Legends",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DTP1-EN002",
+      "setPageName" : "Duel Terminal - Preview Wave 2",
+      "rarities" : [
+        "Duel Terminal Rare Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DT01-EN002",
+      "setPageName" : "Duel Terminal 1",
+      "rarities" : [
+        "Duel Terminal Rare Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "JMPS-EN003",
+      "setPageName" : "WSJ Jump Pack Fall 2016 promotional card",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YUCB-EN001",
+      "setPageName" : "Yugi's Collector Box",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-ENSE3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "password" : "46986414",
   "pt_lore" : "O mago definitivo em termos de ataque e defesa.",
   "pt_name" : "Mago Negro",
-  "pt_sets" : "DIY-P006; Starter Deck: Yugi; Ultra Rare\nLDB-P005; Legend of Blue Eyes White Dragon; Ultra Rare\nSYE-PT001; Starter Deck: Yugi Evolution; Super Rare\nYSYR-PT001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-PTA03; Yugi's Legendary Decks; Common\nYGLD-PTC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-PT008; Duelist Pack: Battle City; Super Rare\nMVP1-PT054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-PT003; 2016 Mega-Tins; Ultra Rare\nLDK2-PTY10; Legendary Decks II; Common\nSDMY-PT010; Structure Deck: Yugi Muto; Common\nMVP1-PTGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-PTG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-PT100; Duelist Saga; Ultra Rare\nCT14-PT001; 2017 Mega-Tins; Secret Rare\nLEDD-PTA01; Legendary Dragon Decks; Common\nSS01-PTA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-PT101; Duel Power; Ultra Rare\nSTP1-PT001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-PTSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-PTS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-PTA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-PT002; Maximum Gold; Premium Gold Rare\nGFTP-PT128; Ghosts From the Past (set); Ghost Rare\nMGED-PT002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-PT001; Battle of Chaos; Ultra Rare\nHAC1-PT002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-PT005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-PT005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-PTA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-PT001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "pt_sets" : [
+    {
+      "cardNumber" : "DIY-P006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDB-P005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-PT001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-PT001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-PTA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-PTC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-PT008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-PT054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-PT003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-PTY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-PT010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-PTGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-PTG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-PT100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-PT001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-PTA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-PTA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-PT101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-PT001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-PTSV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-PTS54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-PTA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-PT002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-PT128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-PT002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-PT001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-PT002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-PT005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-PT005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-PTA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-PT001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "related_to_archseries" : [
     "Aged counterpart",
     "Buster Blader (archetype)",
@@ -68,11 +2116,319 @@
   "romaji_name" : "Burakku Majishan",
   "sc_lore" : "作为魔法使，攻击力・守备力均为最高级别。",
   "sc_name" : "黑魔导",
-  "sc_sets" : "TRC1-SC001; The Rarity Collection; Extra Secret Rare\nCL01-SC001; Classic Pack 01; Ultra Rare, Secret Rare\nPSEC-SC002; Prismatic Secret Rare \"Dark Magician\" GET Campaign; Prismatic Secret Rare",
-  "sp_sets" : "BIY-S006; Starter Deck: Yugi; Ultra Rare\nLDD-S005; Legend of Blue Eyes White Dragon; Ultra Rare\nDL1-S002; Duelist League Series 1 participation cards; Super Rare\nDOR-S002; Yu-Gi-Oh! The Duelists of the Roses promotional cards; Prismatic Secret Rare\nPCY-S004; Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition; Prismatic Secret Rare\nSYE-SP001; Starter Deck: Yugi Evolution; Super Rare\nDB1-SP102; Dark Beginning 1; Ultra Rare\nDPYG-SP001; Duelist Pack: Yugi; Rare\nDL11-SP001; Duelist League 2 participation cards; Rare\nLCYW-SP001; Legendary Collection 3: Yugi's World Mega Pack; Secret Rare\nYSYR-SP001; Starter Deck: Yugi Reloaded; Common, Ultimate Rare\nYGLD-SPA03; Yugi's Legendary Decks; Common\nYGLD-SPC09; Yugi's Legendary Decks; Ultra Rare\nDPBC-SP008; Duelist Pack: Battle City; Super Rare\nMVP1-SP054; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack; Ultra Rare\nCT13-SP003; 2016 Mega-Tins; Ultra Rare\nLDK2-SPY10; Legendary Decks II; Common\nSDMY-SP010; Structure Deck: Yugi Muto; Common\nMVP1-SPGV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Secret Rare\nMVP1-SPG54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition; Gold Rare\nDUSA-SP100; Duelist Saga; Ultra Rare\nCT14-SP001; 2017 Mega-Tins; Secret Rare\nLEDD-SPA01; Legendary Dragon Decks; Common\nSS01-SPA01; Speed Duel Starter Decks: Destiny Masters; Common\nDUPO-SP101; Duel Power; Ultra Rare\nSTP1-SP001; Speed Duel Tournament Pack 1; Ultra Rare\nMVP1-SPSV3; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Ultra Rare\nMVP1-SPS54; Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition; Secret Rare\nSS04-SPA01; Speed Duel Starter Decks: Match of the Millennium; Common\nMAGO-SP002; Maximum Gold; Premium Gold Rare\nSBCB-SP001; Speed Duel: Battle City Box; Common, Secret Rare\nGFTP-SP128; Ghosts From the Past (set); Ghost Rare\nMGED-SP002; Maximum Gold: El Dorado; Premium Gold Rare\n25TH-SP001; Battle of Chaos; Ultra Rare\nHAC1-SP002; Hidden Arsenal: Chapter 1; Duel Terminal Ultra Parallel Rare\nLC01-SP005; Legendary Collection: 25th Anniversary Edition; Ultra Rare, Quarter Century Secret Rare\nLOB-SP005; Legend of Blue Eyes White Dragon (25th Anniversary Edition); Ultra Rare\nSBC1-SPA01; Speed Duel: Streets of Battle City; Common, Secret Rare\nTN23-SP001; 25th Anniversary Tin: Dueling Heroes; Quarter Century Secret Rare",
+  "sc_sets" : [
+    {
+      "cardNumber" : "TRC1-SC001",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CL01-SC001",
+      "setPageName" : "Classic Pack 01",
+      "rarities" : [
+        "Ultra Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PSEC-SC002",
+      "setPageName" : "Prismatic Secret Rare \"Dark Magician\" GET Campaign",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    }
+  ],
+  "sp_sets" : [
+    {
+      "cardNumber" : "BIY-S006",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDD-S005",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL1-S002",
+      "setPageName" : "Duelist League Series 1 participation cards",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DOR-S002",
+      "setPageName" : "Yu-Gi-Oh! The Duelists of the Roses promotional cards",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PCY-S004",
+      "setPageName" : "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny Limited Collector's Edition",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-SP001",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-SP102",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPYG-SP001",
+      "setPageName" : "Duelist Pack: Yugi",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DL11-SP001",
+      "setPageName" : "Duelist League 2 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-SP001",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-SP001",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common",
+        "Ultimate Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-SPA03",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YGLD-SPC09",
+      "setPageName" : "Yugi's Legendary Decks",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DPBC-SP008",
+      "setPageName" : "Duelist Pack: Battle City",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-SP054",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT13-SP003",
+      "setPageName" : "2016 Mega-Tins",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LDK2-SPY10",
+      "setPageName" : "Legendary Decks II",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDMY-SP010",
+      "setPageName" : "Structure Deck: Yugi Muto",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-SPGV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-SPG54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-SP100",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT14-SP001",
+      "setPageName" : "2017 Mega-Tins",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LEDD-SPA01",
+      "setPageName" : "Legendary Dragon Decks",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SS01-SPA01",
+      "setPageName" : "Speed Duel Starter Decks: Destiny Masters",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-SP101",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "STP1-SP001",
+      "setPageName" : "Speed Duel Tournament Pack 1",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-SPSV3",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MVP1-SPS54",
+      "setPageName" : "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SS04-SPA01",
+      "setPageName" : "Speed Duel Starter Decks: Match of the Millennium",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-SP002",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBCB-SP001",
+      "setPageName" : "Speed Duel: Battle City Box",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GFTP-SP128",
+      "setPageName" : "Ghosts From the Past (set)",
+      "rarities" : [
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MGED-SP002",
+      "setPageName" : "Maximum Gold: El Dorado",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "25TH-SP001",
+      "setPageName" : "Battle of Chaos",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HAC1-SP002",
+      "setPageName" : "Hidden Arsenal: Chapter 1",
+      "rarities" : [
+        "Duel Terminal Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC01-SP005",
+      "setPageName" : "Legendary Collection: 25th Anniversary Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-SP005",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SBC1-SPA01",
+      "setPageName" : "Speed Duel: Streets of Battle City",
+      "rarities" : [
+        "Common",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-SP001",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
   "tc_lore" : "魔法族中攻撃力、防守力都最彊",
   "tc_name" : "黒魔道士",
-  "tc_sets" : "; \"Dark Magician\" Giveaway for 1000 People!; Ultra Rare",
+  "tc_sets" : [
+    {
+      "setPageName" : "\"Dark Magician\" Giveaway for 1000 People!",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
   "tcg_speed_duel_status" : "Unlimited",
   "trans_lore" : "As a Magic User, Attack and Defense Power are both the highest class.",
   "trans_name" : "Black Magician",

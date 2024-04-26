@@ -12,29 +12,161 @@
   "de_lore" : "Replika-Modus wird gebootet...\nFehler beim Ausführen von C:\\sophia\\zefra.exe\nUnbekannter Entwickler.\nC:\\tierra\\qliphort.exe zulassen? <J/N>...[J]\nAutonomie-Modus wird gebootet...",
   "de_name" : "Qliphort-Kundschafter",
   "de_pendulum_effect" : "Du kannst keine als Spezialbeschwörung beschwören, außer „Qli“-Monstern. Dieser Effekt kann nicht annulliert werden. Einmal pro Spielzug: Du kannst 800 LP zahlen; füge einer Hand 1 „Qli“-Karte von deinem Deck hinzu, außer „Qliphort-Kundschafter“.",
-  "de_sets" : "NECH-DE021; The New Challengers; Ultra Rare\nMP15-DE144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-DE057; Pendulum Evolution; Super Rare",
+  "de_sets" : [
+    {
+      "cardNumber" : "NECH-DE021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-DE144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-DE057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "def" : "2800",
-  "en_sets" : "NECH-EN021; The New Challengers; Ultra Rare\nMP15-EN144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-EN057; Pendulum Evolution; Super Rare",
+  "en_sets" : [
+    {
+      "cardNumber" : "NECH-EN021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-EN144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-EN057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "es_lore" : "Iníciando en Modo Réplica...\nOcurrió un error mientras se ejecutaba C:\\sophia\\zefra.exe\nEditor desconocido.\n¿Permitir ejecutar C:\\tierra\\qlifuerte.exe? &lt;S/N>.. [S]\nIníciando en Modo Autónomo...",
   "es_name" : "Explorador Qlifuerte",
   "es_pendulum_effect" : "No puedes Invocar monstruos de Modo Especial, excepto monstruos \"Qli\". Este efecto no puede ser negado. Una vez por turno: puedes pagar 800 LP; añade a tu mano 1 carta \"Qli\" en tu Deck, excepto \"Explorador Qlifuerte\".",
   "fr_lore" : "Démarrage en Mode Réplique...\nUne erreur est survenue lors de l’exécution de C:\\sophia\\zefra.exe\nÉditeur inconnu.\nAutoriser C:\\tierra\\qliphort.exe ? <O/N>...[O]\nDémarrage en Mode Autonomie...",
   "fr_name" : "Sentinelle Qliphort",
   "fr_pendulum_effect" : "Vous ne pouvez pas Invoquer Spécialement de monstres (monstres \"Qli\" exclus). Cet effet ne peut pas être annulé. Une fois par tour : vous pouvez payer 800 LP ; ajoutez 1 carte \"Qli\" (\"Sentinelle Qliphort\" exclu) depuis votre Deck à votre main.",
-  "fr_sets" : "NECH-FR021; The New Challengers; Ultra Rare\nMP15-FR144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-FR057; Pendulum Evolution; Super Rare",
+  "fr_sets" : [
+    {
+      "cardNumber" : "NECH-FR021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-FR144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-FR057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "image" : "QliphortScout-PEVO-EN-SR-1E.png",
   "it_lore" : "Avvio in Modalità Replica...\nSi è verificato un errore durante l'esecuzione di C:\\sophia\\zefra.exe\nAutore sconosciuto.\nPermettere l'avvio di C:\\tierra\\qliphort.exe ? &lt;S/N>...[S]\nAvvio in Modalità Autonoma...",
   "it_name" : "Scout Qliphort",
   "it_pendulum_effect" : "Non puoi Evocare Specialmente mostri, eccetto mostri \"Qli\". Questo effetto non può essere annullato. Una volta per turno: puoi pagare 800 LP; aggiungi 1 carta \"Qli\" dal tuo Deck alla tua mano, eccetto \"Scout Qliphort\".",
-  "it_sets" : "NECH-IT021; The New Challengers; Ultra Rare\nMP15-IT144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-IT057; Pendulum Evolution; Super Rare",
+  "it_sets" : [
+    {
+      "cardNumber" : "NECH-IT021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-IT144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-IT057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "ja_lore" : "システムをレプリカモードで<ruby>起<rt>き</rt></ruby><ruby>動<rt>どう</rt></ruby>する<ruby>準<rt>じゅん</rt></ruby><ruby>備<rt>び</rt></ruby>をしています...\nC:¥sophia¥sefiroth.exe <ruby>実<rt>じっ</rt></ruby><ruby>行<rt>こう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>にエラーが<ruby>発<rt>はっ</rt></ruby><ruby>生<rt>せい</rt></ruby>しました。\n<ruby>次<rt>つぎ</rt></ruby>の<ruby>不<rt>ふ</rt></ruby><ruby>明<rt>めい</rt></ruby>な<ruby>発<rt>はっ</rt></ruby><ruby>行<rt>こう</rt></ruby><ruby>元<rt>もと</rt></ruby>からのファイルを<ruby>実<rt>じっ</rt></ruby><ruby>行<rt>こう</rt></ruby>しようとしています。\nC:¥tierra¥qliphoth.exe の<ruby>実<rt>じっ</rt></ruby><ruby>行<rt>こう</rt></ruby>を<ruby>許<rt>きょ</rt></ruby><ruby>可<rt>か</rt></ruby>しますか？ <Y/N>...[Y]\nシステムを<ruby>自<rt>じ</rt></ruby><ruby>立<rt>りつ</rt></ruby>モードで<ruby>起<rt>き</rt></ruby><ruby>動<rt>どう</rt></ruby>します。",
   "ja_name" : "クリフォート・ツール",
   "ja_pendulum_effect" : "①：<ruby>自<rt>じ</rt></ruby><ruby>分<rt>ぶん</rt></ruby>は「クリフォート」モンスターしか<ruby>特<rt>とく</rt></ruby><ruby>殊<rt>しゅう</rt></ruby><ruby>召<rt>しょう</rt></ruby><ruby>喚<rt>かん</rt></ruby>できない。この<ruby>効<rt>こう</rt></ruby><ruby>果<rt>か</rt></ruby>は<ruby>無<rt>む</rt></ruby><ruby>効<rt>こう</rt></ruby><ruby>化<rt>か</rt></ruby>されない。②：１ターンに１<ruby>度<rt>ど</rt></ruby>、８００<ruby>ＬＰ<rt>ライフポイント</rt></ruby>を<ruby>払<rt>は</rt></ruby>って<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>できる。デッキから「クリフォート・ツール」以外の「クリフォート」カード１枚を<ruby>手<rt>て</rt></ruby><ruby>札<rt>ふだ</rt></ruby>に<ruby>加<rt>くわ</rt></ruby>える。",
-  "jp_sets" : "NECH-JP021; The New Challengers; Rare\n20AP-JP098; 20th Anniversary Pack 2nd Wave; Normal Parallel Rare\nLVP1-JP062; LINK VRAINS Pack; Common",
+  "jp_sets" : [
+    {
+      "cardNumber" : "NECH-JP021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-JP098",
+      "setPageName" : "20th Anniversary Pack 2nd Wave",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LVP1-JP062",
+      "setPageName" : "LINK VRAINS Pack",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "ko_lore" : "시스템을 레플리카 모드로 기동할 준비를 하고 있습니다...\nC:₩sophia₩sefiroth.exe 실행중에 에러가 발생했습니다.\n다음의 알 수 없는 발행원으로부터의 프로그램을 실행하려고 합다.\nC:₩tierra₩qliphoth.exe의 실행을 허가하시겠습니까? <Y/N>...[Y]\n시스템을 자율 모드로 기동합니다.",
   "ko_name" : "클리포트 툴",
   "ko_pendulum_effect" : "①: 자신은 \"클리포트\" 몬스터밖에 특수 소환할 수 없다. 이 효과는 무효화되지 않는다. ②: 1턴에 1번, 800 LP를 지불하고 발동할 수 있다. 덱에서 \"클리포트 툴\" 이외의 \"클리포트\" 카드 1장을 패에 넣는다.",
-  "kr_sets" : "NECH-KR021; The New Challengers; Rare\n20AP-KR098; 20th Anniversary Pack 2nd Wave; Normal Parallel Rare\nLVP1-KR062; LINK VRAINS Pack; Common",
+  "kr_sets" : [
+    {
+      "cardNumber" : "NECH-KR021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-KR098",
+      "setPageName" : "20th Anniversary Pack 2nd Wave",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LVP1-KR062",
+      "setPageName" : "LINK VRAINS Pack",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
   "level" : "5",
   "life_points" : [
     "Pays Life Points for cost"
@@ -50,9 +182,53 @@
   "pt_lore" : "Reiniciando em Modo de Réplica...\nUm erro aconteceu ao executar C:\\sophia\\zefra.exe\nAutor desconhecido.\nPermitir C:\\tierra\\qliphort.exe ? &lt;S/N>...[S]\nReinciando em Modo Autônomo...",
   "pt_name" : "Batedor Qliphort",
   "pt_pendulum_effect" : "Você não pode Invocar monstros por Invcação-Especial, exceto monstros \"Qli\". Este efeito não pode ser negado. Uma vez por turno: você pode pagar 800 PV; adicione 1 card \"Qli\" do seu Deck à sua mão, exceto \"Batedor Qliphort\".",
-  "pt_sets" : "NECH-PT021; The New Challengers; Ultra Rare\nMP15-PT144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-PT057; Pendulum Evolution; Super Rare",
+  "pt_sets" : [
+    {
+      "cardNumber" : "NECH-PT021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-PT144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-PT057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "romaji_name" : "Kurifōto Tsūru",
-  "sp_sets" : "NECH-SP021; The New Challengers; Ultra Rare\nMP15-SP144; 2015 Mega-Tin Mega Pack; Ultra Rare\nPEVO-SP057; Pendulum Evolution; Super Rare",
+  "sp_sets" : [
+    {
+      "cardNumber" : "NECH-SP021",
+      "setPageName" : "The New Challengers",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP15-SP144",
+      "setPageName" : "2015 Mega-Tin Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PEVO-SP057",
+      "setPageName" : "Pendulum Evolution",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
   "summoning" : [
     "Restricts the player's Special Summons to archetype specific monsters"
   ],
