@@ -6,10 +6,10 @@ import java.text.MessageFormat;
 import retrofit2.Call;
 import retrofit2.Response;
 
+import io.github.ygojson.application.util.stream.PaginatorStreamFactory;
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 import io.github.ygojson.tools.dataprovider.DataProviderException;
-import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 
 /**
  * Abstract page handler for Yugipedia {@link QueryResponse}.

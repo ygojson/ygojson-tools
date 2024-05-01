@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.utils;
+package io.github.ygojson.application.util.stream;
 
 import java.util.*;
 import java.util.stream.Stream;

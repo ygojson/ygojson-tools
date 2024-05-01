@@ -2,11 +2,11 @@ package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination
 
 import java.util.stream.Stream;
 
+import io.github.ygojson.application.util.stream.PaginatorStreamFactory;
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.params.Limit;
 import io.github.ygojson.application.yugipedia.client.params.Template;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
-import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory;
 
 /**
  * Stream factory for {@link YugipediaClient} query methods.

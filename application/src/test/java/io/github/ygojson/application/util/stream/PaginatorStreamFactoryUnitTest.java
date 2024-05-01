@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.utils;
+package io.github.ygojson.application.util.stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -14,7 +14,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import io.github.ygojson.tools.dataprovider.utils.PaginatorStreamFactory.PageIterator;
+import io.github.ygojson.application.util.stream.PaginatorStreamFactory.PageIterator;
 
 class PaginatorStreamFactoryUnitTest {
 
