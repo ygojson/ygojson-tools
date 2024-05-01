@@ -5,6 +5,12 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Response for the Yugipedia Query API.
+ *
+ * @param batchcomplete
+ * @param continueInfo
+ * @param query
+ * @param warnings untyped warnings
+ * @param limits
  */
 public record QueryResponse(
 	boolean batchcomplete,
@@ -12,9 +18,6 @@ public record QueryResponse(
 	// should use jackson annotation as it is a reserved keyword
 	@JsonProperty("continue") Continue continueInfo,
 	Query query,
-	/**
-	 * Untyped warnings.
-	 */
 	JsonNode warnings,
 	JsonNode limits
 ) {

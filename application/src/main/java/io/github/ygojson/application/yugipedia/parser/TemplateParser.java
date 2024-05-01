@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
 /**
- * Abstract class to help parsig a template with properties.
+ * Abstract class to help parsing a template with properties.
  */
 abstract class TemplateParser {
 

@@ -24,7 +24,7 @@ class WikitextCleaner {
 	 * Internal link markup pattern used along the wikitext.
 	 */
 	private static final Pattern MARKUP_INTERNAL_LINK_REGEX = Pattern.compile(
-		"\\[\\[(?:[^|\\]]+\\|)?([^\\]]+)\\]\\]"
+		"\\[\\[(?:[^|\\]]+\\|)?([^]]+)]]"
 	);
 
 	/**

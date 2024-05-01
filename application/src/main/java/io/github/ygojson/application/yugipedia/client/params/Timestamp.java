@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
  */
 public class Timestamp {
 
-	private String stringValue;
+	private final String stringValue;
 
 	private Timestamp(String stringValue) {
 		this.stringValue = stringValue;

@@ -11,6 +11,6 @@ public final class CustomProperties {
 	public static final String PAGE_ID = "page_id";
 
 	private CustomProperties() {
-		// cannot be instantiated - constant classs
+		// cannot be instantiated - constant class
 	}
 }

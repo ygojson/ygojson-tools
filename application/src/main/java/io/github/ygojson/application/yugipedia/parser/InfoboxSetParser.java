@@ -23,7 +23,7 @@ class InfoboxSetParser extends TemplateParser {
 	private static final int INFOBOX_SET_CONTENT_GROUP = 1;
 
 	// ignoring width property (not sure for what it is used, but found once)
-	private static Set<String> IGNORED_PROPERTIES = Set.of("width");
+	private static final Set<String> IGNORED_PROPERTIES = Set.of("width");
 
 	private static final Set<String> BULLETED_LIST_PROPERTIES = Set.of("size");
 
