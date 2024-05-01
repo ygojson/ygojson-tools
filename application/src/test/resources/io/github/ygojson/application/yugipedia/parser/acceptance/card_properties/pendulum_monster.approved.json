@@ -112,6 +112,8 @@
     "Limited activations",
     "Cover card"
   ],
+  "name" : "Endymion, the Mighty Master of Magic",
+  "page_id" : 589315,
   "password" : "03611830",
   "pendulum_effect" : "You can remove 6 Spell Counters from your field; Special Summon this card from the Pendulum Zone, then count the number of cards you control that can have a Spell Counter, destroy up to that many cards on the field, and if you do, place Spell Counters on this card equal to the number of cards destroyed. You can only use this effect of \"Endymion, the Mighty Master of Magic\" once per turn.",
   "pendulum_effect_types" : "Ignition-like, Condition",

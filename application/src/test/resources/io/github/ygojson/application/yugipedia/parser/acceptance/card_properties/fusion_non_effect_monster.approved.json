@@ -421,6 +421,8 @@
       ]
     }
   ],
+  "name" : "Flame Swordsman",
+  "page_id" : 142,
   "password" : "45231177",
   "pt_lore" : "\"Manipulador de Chamas\" + \"Masaki, o Espadachim Lendário\"",
   "pt_name" : "Espadachim das Chamas",

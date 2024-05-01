@@ -2,12 +2,15 @@ package io.github.ygojson.application.yugipedia.parser;
 
 import java.util.Map;
 
+import io.github.ygojson.application.yugipedia.parser.model.CustomProperties;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
 /**
  * Parser for the set properties.
  */
 class SetParser implements YugipediaParser {
+
+	private static final String NAME = "en_name";
 
 	private final InfoboxSetParser infoboxSetParser;
 
@@ -23,7 +26,14 @@ class SetParser implements YugipediaParser {
 	) {
 		final Map<String, YugipediaProperty> initialTemplateProperties =
 			infoboxSetParser.parse(wikitext);
-		// TODO: handle other properties (tile=name, pageid, etc)
+		initialTemplateProperties.put(
+			CustomProperties.PAGE_ID,
+			YugipediaProperty.number(pageid)
+		);
+		initialTemplateProperties.computeIfAbsent(
+			NAME,
+			key -> YugipediaProperty.text(title)
+		);
 		return initialTemplateProperties;
 	}
 }
