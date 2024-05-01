@@ -5,10 +5,10 @@ import java.util.stream.Stream;
 
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.params.Limit;
+import io.github.ygojson.application.yugipedia.processor.YugipediaStreamFactory;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.tools.dataprovider.DataProvider;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.SetProcessor;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination.YugipediaStreamFactory;
 
 /**
  * {@link DataProvider} implementation for Yugipedia.

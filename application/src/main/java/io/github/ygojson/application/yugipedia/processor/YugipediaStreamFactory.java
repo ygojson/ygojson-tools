@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination;
+package io.github.ygojson.application.yugipedia.processor;
 
 import java.util.stream.Stream;
 
@@ -28,7 +28,11 @@ public class YugipediaStreamFactory {
 	 */
 	public Stream<QueryResponse> ofSets(final Limit limit) {
 		return PaginatorStreamFactory.create(
-			new TemplatePageHandler(yugipediaClient, Template.SETS, limit)
+			new QueryPagesWithTemplatePaginationHandler(
+				yugipediaClient,
+				Template.SETS,
+				limit
+			)
 		);
 	}
 }

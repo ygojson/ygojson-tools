@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination;
+package io.github.ygojson.application.yugipedia.processor;
 
 import retrofit2.Call;
 
@@ -11,12 +11,13 @@ import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 /**
  * Handles consequent queries to the {@link YugipediaClient#queryPagesWithTemplate(Template, Limit, String)}.
  */
-class TemplatePageHandler extends AbstractYugipediaQueryPageHandler<String> {
+class QueryPagesWithTemplatePaginationHandler
+	extends AbstractYugipediaPaginationHandler<String> {
 
 	private final Template template;
 	private final Limit limit;
 
-	TemplatePageHandler(
+	QueryPagesWithTemplatePaginationHandler(
 		final YugipediaClient api,
 		final Template template,
 		final Limit limit

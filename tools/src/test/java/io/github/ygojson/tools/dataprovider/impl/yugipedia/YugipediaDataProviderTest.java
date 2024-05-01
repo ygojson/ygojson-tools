@@ -14,9 +14,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.params.Limit;
 import io.github.ygojson.model.data.Set;
-import io.github.ygojson.tools.dataprovider.DataProviderException;
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaApiMother;
 import io.github.ygojson.tools.dataprovider.test.dataprovider.yugipedia.YugipediaMockServer;
 
@@ -54,12 +54,12 @@ class YugipediaDataProviderTest {
 	}
 
 	@Test
-	void given_mockDataProviderFetchSets_when_cannotFetchMoreData_then_throwDataProviderException() {
+	void given_mockDataProviderFetchSets_when_cannotFetchMoreData_then_throwYugipediaException() {
 		// given
 		final Stream<Set> fetchingStream = MOCK_DATA_PROVIDER.fetchSets();
 		// when
 		final ThrowableAssert.ThrowingCallable callable = fetchingStream::toList;
 		// then
-		assertThatThrownBy(callable).isInstanceOf(DataProviderException.class);
+		assertThatThrownBy(callable).isInstanceOf(YugipediaException.class);
 	}
 }

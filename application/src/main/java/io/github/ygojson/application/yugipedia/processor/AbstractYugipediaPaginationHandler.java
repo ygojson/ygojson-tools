@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.pagination;
+package io.github.ygojson.application.yugipedia.processor;
 
 import java.io.IOException;
 import java.text.MessageFormat;
@@ -7,21 +7,21 @@ import retrofit2.Call;
 import retrofit2.Response;
 
 import io.github.ygojson.application.util.stream.PaginatorStreamFactory;
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
-import io.github.ygojson.tools.dataprovider.DataProviderException;
 
 /**
  * Abstract page handler for Yugipedia {@link QueryResponse}.
  *
  * @param <T> type of the token to continue iteration
  */
-abstract class AbstractYugipediaQueryPageHandler<T>
+abstract class AbstractYugipediaPaginationHandler<T>
 	implements PaginatorStreamFactory.PageHandler<QueryResponse> {
 
 	private final YugipediaClient api;
 
-	AbstractYugipediaQueryPageHandler(final YugipediaClient api) {
+	AbstractYugipediaPaginationHandler(final YugipediaClient api) {
 		this.api = api;
 	}
 
@@ -60,7 +60,7 @@ abstract class AbstractYugipediaQueryPageHandler<T>
 			final Response<QueryResponse> response = callApi(api, continueToken)
 				.execute();
 			if (!response.isSuccessful()) {
-				throw new DataProviderException(
+				throw new YugipediaException(
 					MessageFormat.format(
 						"Yugipedia error {0}: {1}",
 						response.code(),
@@ -70,7 +70,7 @@ abstract class AbstractYugipediaQueryPageHandler<T>
 			}
 			return response.body();
 		} catch (final IOException e) {
-			throw new DataProviderException(
+			throw new YugipediaException(
 				"Unexpected error on Yugipedia API query",
 				e
 			);
@@ -80,9 +80,9 @@ abstract class AbstractYugipediaQueryPageHandler<T>
 	@Override
 	public final void handleError(Throwable e) {
 		PaginatorStreamFactory.PageHandler.super.handleError(e);
-		if (e instanceof DataProviderException) {
-			throw (DataProviderException) e;
+		if (e instanceof YugipediaException) {
+			throw (YugipediaException) e;
 		}
-		throw new DataProviderException("Unexpected error", e);
+		throw new YugipediaException("Unexpected error", e);
 	}
 }
