@@ -36,7 +36,7 @@ class CardParser implements YugipediaParser {
 		// add always the page ID to the properties
 		initialTemplateProperties.put(
 			CustomProperties.PAGE_ID,
-			YugipediaProperty.number(pageid)
+			YugipediaProperty.text(Long.toString(pageid))
 		);
 		// add the title to the properties if name is not present
 		initialTemplateProperties.computeIfAbsent(

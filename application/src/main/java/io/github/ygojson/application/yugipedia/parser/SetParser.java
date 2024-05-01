@@ -35,7 +35,7 @@ class SetParser implements YugipediaParser {
 			infoboxSetParser.parse(wikitext);
 		initialTemplateProperties.put(
 			CustomProperties.PAGE_ID,
-			YugipediaProperty.number(pageid)
+			YugipediaProperty.text(Long.toString(pageid))
 		);
 		initialTemplateProperties.computeIfAbsent(
 			NAME_PROPERTY,

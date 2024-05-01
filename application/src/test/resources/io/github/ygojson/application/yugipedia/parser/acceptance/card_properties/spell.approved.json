@@ -1293,7 +1293,7 @@
     }
   ],
   "name" : "Dark Hole",
-  "page_id" : 160,
+  "page_id" : "160",
   "password" : "53129443",
   "property" : "Normal",
   "pt_lore" : "Destrua todos os monstros no campo.",

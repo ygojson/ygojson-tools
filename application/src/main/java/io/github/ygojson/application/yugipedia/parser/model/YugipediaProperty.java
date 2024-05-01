@@ -12,8 +12,7 @@ public sealed interface YugipediaProperty
 	permits
 		YugipediaProperty.TextProp,
 		YugipediaProperty.ListProp,
-		YugipediaProperty.SetsProp,
-		YugipediaProperty.NumberProp {
+		YugipediaProperty.SetsProp {
 	@JsonValue
 	Object jsonValue();
 
@@ -26,17 +25,6 @@ public sealed interface YugipediaProperty
 	 */
 	static YugipediaProperty text(String value) {
 		return new TextProp(value);
-	}
-
-	/**
-	 * Create a number property.
-	 *
-	 * @param value value from the property.
-	 *
-	 * @return the property.
-	 */
-	static YugipediaProperty number(Number value) {
-		return new NumberProp(value);
 	}
 
 	/**
@@ -67,18 +55,6 @@ public sealed interface YugipediaProperty
 	 * @param value
 	 */
 	record TextProp(@JsonIgnore String value) implements YugipediaProperty {
-		@Override
-		public Object jsonValue() {
-			return value;
-		}
-	}
-
-	/**
-	 * Number property.
-	 *
-	 * @param value
-	 */
-	record NumberProp(@JsonIgnore Number value) implements YugipediaProperty {
 		@Override
 		public Object jsonValue() {
 			return value;

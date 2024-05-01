@@ -1163,7 +1163,7 @@
     }
   ],
   "name" : "Trap Hole",
-  "page_id" : 222,
+  "page_id" : "222",
   "password" : "04206964",
   "property" : "Normal",
   "pt_lore" : "Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo.",
