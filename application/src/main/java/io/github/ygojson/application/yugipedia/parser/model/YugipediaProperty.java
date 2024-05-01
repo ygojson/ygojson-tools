@@ -18,6 +18,50 @@ public sealed interface YugipediaProperty
 	Object jsonValue();
 
 	/**
+	 * Create a text property.
+	 *
+	 * @param value value from the property.
+	 *
+	 * @return the property.
+	 */
+	static YugipediaProperty text(String value) {
+		return new TextProp(value);
+	}
+
+	/**
+	 * Create a number property.
+	 *
+	 * @param value value from the property.
+	 *
+	 * @return the property.
+	 */
+	static YugipediaProperty number(Number value) {
+		return new NumberProp(value);
+	}
+
+	/**
+	 * Create a list property.
+	 *
+	 * @param value value from the property.
+	 *
+	 * @return the property.
+	 */
+	static YugipediaProperty list(List<String> value) {
+		return new ListProp(value);
+	}
+
+	/**
+	 * Create a set property.
+	 *
+	 * @param value value from the property.
+	 *
+	 * @return the property.s
+	 */
+	static YugipediaProperty sets(List<SetRow> value) {
+		return new SetsProp(value);
+	}
+
+	/**
 	 * Text property.
 	 *
 	 * @param value

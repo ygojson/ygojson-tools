@@ -49,7 +49,7 @@ class PropertyParser {
 	}
 
 	private YugipediaProperty parseTextProperty(final String value) {
-		return new YugipediaProperty.TextProp(parseString(value));
+		return YugipediaProperty.text(parseString(value));
 	}
 
 	// helper method to be used to cleanup and trim all String values used in properties
@@ -66,7 +66,7 @@ class PropertyParser {
 			.map(this::parseString)
 			.filter(s -> !s.isBlank()) // remove empty
 			.toList();
-		return new YugipediaProperty.ListProp(stringList);
+		return YugipediaProperty.list(stringList);
 	}
 
 	private YugipediaProperty parseSetRowsProperty(String value) {
@@ -76,7 +76,7 @@ class PropertyParser {
 			.map(this::parseSingleSetRow)
 			.filter(Objects::nonNull)
 			.toList();
-		return new YugipediaProperty.SetsProp(setRows);
+		return YugipediaProperty.sets(setRows);
 	}
 
 	private SetRow parseSingleSetRow(String line) {
@@ -92,6 +92,7 @@ class PropertyParser {
 				parseNullableText(split[1]),
 				List.of()
 			);
+			// if >3, we ignore all that is afterward
 			default -> new SetRow(
 				parseNullableText(split[0]),
 				parseNullableText(split[1]),
