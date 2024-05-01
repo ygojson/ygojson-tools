@@ -6,6 +6,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
 
@@ -13,7 +14,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
  * Maps a wikitext String to a {@link InfoboxSet} model,
  * using also {@link MarkupString}
  * or derived models for some fields.
+ *
+ * @deprecated use {@link YugipediaParser#createSetParser()} instead
  */
+@Deprecated
 @Mapper(uses = { MarkupStringMapper.class })
 public abstract class InfoboxSetMapper {
 

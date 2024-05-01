@@ -6,6 +6,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.IntegerOrUndefinedMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;
@@ -14,7 +15,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
  * Maps a wikitext String to a {@link CardTable2} model,
  * using also {@link MarkupString}
  * or derived models for some fields.
+ *
+ * @deprecated use {@link YugipediaParser#createCardParser()} instead
  */
+@Deprecated
 @Mapper(uses = { MarkupStringMapper.class, IntegerOrUndefinedMapper.class })
 public abstract class CardTable2Mapper {
 

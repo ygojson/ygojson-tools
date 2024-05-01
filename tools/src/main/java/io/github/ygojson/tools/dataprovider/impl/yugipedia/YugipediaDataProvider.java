@@ -12,7 +12,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.processor.SetProcesso
 
 /**
  * {@link DataProvider} implementation for Yugipedia.
+ *
+ * @deprecated use {@link io.github.ygojson.application.yugipedia.YugipediaProvider} instead (combined with business-logic mappers)
  */
+@Deprecated
 public class YugipediaDataProvider implements DataProvider {
 
 	private final YugipediaStreamFactory factory;
