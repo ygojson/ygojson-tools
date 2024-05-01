@@ -13,10 +13,10 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.test.CardTable2Mother;
 import io.github.ygojson.tools.test.PrintMother;

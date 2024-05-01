@@ -1,13 +1,12 @@
 package io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.test.CardTable2Mother;
 

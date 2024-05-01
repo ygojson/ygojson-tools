@@ -6,10 +6,10 @@ import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.response.Page;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 import io.github.ygojson.application.yugipedia.client.response.Revision;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 
 /**
  * Abstract class to help constructing Yugipedia responses.

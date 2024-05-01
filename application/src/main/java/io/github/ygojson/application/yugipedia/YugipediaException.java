@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia;
+package io.github.ygojson.application.yugipedia;
 
 /**
  * Exception thrown by Yugipedia parsing/processing logic.

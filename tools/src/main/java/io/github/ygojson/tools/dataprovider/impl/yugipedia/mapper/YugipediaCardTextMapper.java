@@ -10,12 +10,12 @@ import org.mapstruct.MappingTarget;
 import org.mapstruct.Named;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardText;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.utils.CardUtils;
 import io.github.ygojson.model.utils.LocalizationUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.MarkupString;

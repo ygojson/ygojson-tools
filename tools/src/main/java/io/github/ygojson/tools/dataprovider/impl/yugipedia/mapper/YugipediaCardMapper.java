@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 import org.mapstruct.*;
 
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardType;
 import io.github.ygojson.model.data.definition.LinkArrow;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaException;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 /**
