@@ -44,7 +44,7 @@ public class YugipediaClientMother {
 
 		@Override
 		public String name() {
-			return super.name() + ".mocked";
+			return super.name() + ".mocked@" + baseUrl;
 		}
 
 		@Override

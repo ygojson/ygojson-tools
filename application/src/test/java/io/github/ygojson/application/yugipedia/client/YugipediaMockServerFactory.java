@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 
 import io.github.ygojson.application.testutil.server.MockedServer;
 
-class YugipediaMockServerFactory {
+public class YugipediaMockServerFactory {
 
 	private YugipediaMockServerFactory() {
 		// cannot be instantiated
