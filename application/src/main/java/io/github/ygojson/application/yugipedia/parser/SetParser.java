@@ -10,12 +10,19 @@ import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
  */
 class SetParser implements YugipediaParser {
 
-	private static final String NAME = "en_name";
+	private static final String NAME = "set";
+
+	private static final String NAME_PROPERTY = "en_name";
 
 	private final InfoboxSetParser infoboxSetParser;
 
 	public SetParser(final PropertyParser parser) {
 		infoboxSetParser = new InfoboxSetParser(parser);
+	}
+
+	@Override
+	public String getName() {
+		return NAME;
 	}
 
 	@Override
@@ -31,7 +38,7 @@ class SetParser implements YugipediaParser {
 			YugipediaProperty.number(pageid)
 		);
 		initialTemplateProperties.computeIfAbsent(
-			NAME,
+			NAME_PROPERTY,
 			key -> YugipediaProperty.text(title)
 		);
 		return initialTemplateProperties;

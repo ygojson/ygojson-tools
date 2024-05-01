@@ -19,7 +19,9 @@ import io.github.ygojson.application.yugipedia.client.response.Revision;
  *
  *
  * @param <T> the type of the result to be returned.
+ * @deprecated should use the {@link io.github.ygojson.application.yugipedia.processor.YugipediaProcessor} instead.
  */
+@Deprecated
 abstract class QueryResponseWikitextProcessor<T> {
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());

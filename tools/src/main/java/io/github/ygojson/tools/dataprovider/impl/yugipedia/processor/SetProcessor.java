@@ -11,7 +11,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Infobo
 
 /**
  * Processor for the {@link Set} model.
+ *
+ * @deprecated should use the {@link io.github.ygojson.application.yugipedia.processor.YugipediaParserProcessor} instead.
  */
+@Deprecated
 public class SetProcessor extends QueryResponseWikitextProcessor<Set> {
 
 	private final InfoboxSetMapper infoboxSetMapper = Mappers.getMapper(

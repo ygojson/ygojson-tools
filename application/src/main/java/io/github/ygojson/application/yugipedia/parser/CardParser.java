@@ -10,12 +10,19 @@ import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
  */
 class CardParser implements YugipediaParser {
 
-	private static final String NAME = "name";
+	private static final String NAME = "card";
+
+	private static final String NAME_PROPERTY = "name";
 
 	private final CardTable2Parser cardTable2Parser;
 
 	public CardParser(final PropertyParser parser) {
 		cardTable2Parser = new CardTable2Parser(parser);
+	}
+
+	@Override
+	public String getName() {
+		return NAME;
 	}
 
 	@Override
@@ -33,7 +40,7 @@ class CardParser implements YugipediaParser {
 		);
 		// add the title to the properties if name is not present
 		initialTemplateProperties.computeIfAbsent(
-			NAME,
+			NAME_PROPERTY,
 			key -> YugipediaProperty.text(title)
 		);
 		return initialTemplateProperties;

@@ -29,6 +29,13 @@ public interface YugipediaParser {
 	}
 
 	/**
+	 * Gets the name of the parser (for logging purposes).
+	 *
+	 * @return the name of the parser
+	 */
+	public String getName();
+
+	/**
 	 * Parse the page wikitext.
 	 *
 	 * @param title title of the page.
