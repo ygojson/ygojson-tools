@@ -5,7 +5,10 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
  * Identifies an integer that can be undefined by matching '?'.
+ *
+ * @deprecated no replacement
  */
+@Deprecated
 @JsonSerialize(using = ToStringSerializer.class)
 public class IntegerOrUndefined {
 
