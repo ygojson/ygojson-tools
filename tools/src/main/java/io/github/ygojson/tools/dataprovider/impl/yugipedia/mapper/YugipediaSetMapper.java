@@ -8,12 +8,16 @@ import io.github.ygojson.model.data.Set;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 
+/**
+ * @deprecated should use the {@link io.github.ygojson.application.yugipedia.mapper.YugipediaSetMapper} instead.
+ */
 @Mapper(
 	uses = {
 		GeneralMapper.class, MarkupStringMapper.class, YugipediaSetInfoMapper.class,
 	},
 	unmappedTargetPolicy = ReportingPolicy.ERROR
 )
+@Deprecated
 public abstract class YugipediaSetMapper {
 
 	/**

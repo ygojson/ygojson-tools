@@ -1,51 +1,56 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
+package io.github.ygojson.application.yugipedia.mapper.acceptance;
+
+import java.util.List;
+import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
+import io.github.ygojson.application.yugipedia.mapper.YugipediaSetMapper;
+import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
+import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaSetMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.InfoboxSetMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 
-@Disabled("deprecated and test-cases moved")
 class YugipediaSetMapperTest {
 
 	private static ObjectWriter OBJECT_WRITER;
 	private static YugipediaSetMapper MAPPER;
-	private static InfoboxSetMapper INFOBOXSET_MAPPER;
+	private static YugipediaParser PARSER;
 
 	@BeforeAll
 	static void beforeAll() {
 		OBJECT_WRITER =
 			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
+		PARSER = YugipediaParser.createSetParser();
 		MAPPER = Mappers.getMapper(YugipediaSetMapper.class);
-		INFOBOXSET_MAPPER = Mappers.getMapper(InfoboxSetMapper.class);
+	}
+
+	static List<YugipediaTestDataRegistry.WikitextPageTestCase> testCases() {
+		return YugipediaTestDataRegistry
+			.getInstance()
+			.getInfoboxSetWikitextTestCase();
 	}
 
 	@ParameterizedTest
-	@MethodSource(
-		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getInfoboxSetParseWikitextTestData"
-	)
-	void testMapToSet(
-		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
+	@MethodSource("testCases")
+	void testPropertiesToSet(
+		final YugipediaTestDataRegistry.WikitextPageTestCase wikitextTestData
 	) throws JsonProcessingException {
 		// given
-		final String wikitext = wikitextTestData.wikitext();
-		final String pageTitle = wikitextTestData.pageTitle();
-		final InfoboxSet infoboxSet = INFOBOXSET_MAPPER.mapWikitextToInfoboxSet(
-			wikitext
+		final Map<String, YugipediaProperty> properties = PARSER.parse(
+			wikitextTestData.pageTitle(),
+			wikitextTestData.pageId(),
+			wikitextTestData.wikitext()
 		);
 		// when
-		final Set set = MAPPER.mapToSet(infoboxSet, pageTitle);
+		final Set set = MAPPER.toSet(properties);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(set);
 		// then
 		Approvals.verify(

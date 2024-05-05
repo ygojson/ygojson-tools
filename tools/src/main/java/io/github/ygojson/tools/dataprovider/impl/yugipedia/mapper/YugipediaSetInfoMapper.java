@@ -21,6 +21,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.Marku
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 
+/**
+ * @deprecated now should be part of {@link io.github.ygojson.application.yugipedia.mapper.YugipediaSetMapper}
+ */
+@Deprecated
 @Mapper
 public abstract class YugipediaSetInfoMapper {
 
