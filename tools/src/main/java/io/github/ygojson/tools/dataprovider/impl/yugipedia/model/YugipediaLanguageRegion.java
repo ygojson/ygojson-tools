@@ -13,7 +13,10 @@ import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.Markup
 
 /**
  * Enum to simplify the Yugipedia language->region mapping.
+ *
+ * @deprecated use {@link io.github.ygojson.application.yugipedia.mapper.YugipediaLanguageProps} instead.
  */
+@Deprecated
 public enum YugipediaLanguageRegion {
 	EN(
 		CardTable2::en_sets,

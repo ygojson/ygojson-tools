@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.test;
+package io.github.ygojson.application.testutil.model;
 
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.definition.localization.Language;
