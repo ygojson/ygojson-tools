@@ -11,13 +11,13 @@ import org.mapstruct.MappingTarget;
 import org.mapstruct.Named;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.data.definition.localization.Language;
 import io.github.ygojson.model.utils.LocalizationUtils;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.MarkupStringMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.InfoboxSet;
 

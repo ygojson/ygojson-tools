@@ -6,11 +6,15 @@ import java.util.regex.Pattern;
 import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 
+/**
+ * @deprecated use {@link io.github.ygojson.application.logic.mapper.CardNumberParser} instead.
+ */
 @Mapper
+@Deprecated
 public abstract class CardNumberMapper {
 
 	/**

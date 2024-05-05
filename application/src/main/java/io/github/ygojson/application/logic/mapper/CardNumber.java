@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.model;
+package io.github.ygojson.application.logic.mapper;
 
 import io.github.ygojson.model.data.definition.localization.Region;
 
@@ -33,37 +33,4 @@ public record CardNumber(
 		null,
 		null
 	);
-
-	/**
-	 * Checks if this object represents a full print-number.
-	 * @return {@code true} if this object represents a full print-number, {@code false} otherwise
-	 */
-	public boolean hasPrintCode() {
-		return printNumber != null;
-	}
-
-	/**
-	 * Gets the full print code.
-	 *
-	 * @return the print code.
-	 * @throws IllegalStateException if the object does not represent a full print-code.
-	 */
-	public String getPrintCode() {
-		if (!hasPrintCode()) {
-			throw new IllegalStateException("Not a full card number");
-		}
-		return stringValue;
-	}
-
-	/**
-	 * Gets the set prefix of this CardNumber.
-	 *
-	 * @return set prefix of this CardNumber.
-	 */
-	public String getSetPrefix() {
-		if (!hasPrintCode()) {
-			return stringValue;
-		}
-		return setCode + (regionCode == null ? "" : "-" + regionCode);
-	}
 }

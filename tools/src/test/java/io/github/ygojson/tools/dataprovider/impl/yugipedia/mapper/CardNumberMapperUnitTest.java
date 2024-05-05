@@ -10,8 +10,8 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.YugipediaLanguageRegion;
 import io.github.ygojson.tools.dataprovider.test.CardNumberMother;
 

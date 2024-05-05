@@ -1,7 +1,7 @@
 package io.github.ygojson.tools.dataprovider.test;
 
+import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.model.data.definition.localization.Region;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.CardNumber;
 
 /**
  * Mother for {@link CardNumber} test data.
