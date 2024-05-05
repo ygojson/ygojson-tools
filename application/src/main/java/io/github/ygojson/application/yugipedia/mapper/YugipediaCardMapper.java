@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.mapstruct.*;
 
+import io.github.ygojson.application.logic.mapper.BaseCardMapper;
 import io.github.ygojson.application.yugipedia.parser.model.CustomProperties;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Card;
@@ -14,8 +15,11 @@ import io.github.ygojson.model.data.definition.LinkArrow;
  * Mapper for the YGOJSON {@link Card} from {@link YugipediaProperty} map.
  */
 // TODO: use CDI for injection as we will use it with quarkus
-@Mapper
-public abstract class YugipediaCardMapper extends YugipediaPropertyBaseMapper {
+@Mapper(uses = YugipediaPropertyBaseMapper.class)
+public abstract class YugipediaCardMapper extends BaseCardMapper {
+
+	protected static final String TO_MAYBE_UNDEFINED_INTEGER =
+		"toMaybeUndefinedInteger";
 
 	@Mapping(target = "id", ignore = true) // IDs are not added here
 	@Mapping(target = "name")
@@ -30,8 +34,14 @@ public abstract class YugipediaCardMapper extends YugipediaPropertyBaseMapper {
 	@Mapping(target = "identifiers.konamiId", source = "database_id")
 	@Mapping(target = "identifiers.password", source = "password")
 	@Mapping(target = "cardType", source = "card_type", defaultValue = "MONSTER")
-	@Mapping(target = "attribute", qualifiedByName = "toLowerCase")
-	@Mapping(target = "property", qualifiedByName = "toLowerCase")
+	@Mapping(
+		target = "attribute",
+		qualifiedByName = YugipediaPropertyBaseMapper.TO_LOWER_CASE
+	)
+	@Mapping(
+		target = "property",
+		qualifiedByName = YugipediaPropertyBaseMapper.TO_LOWER_CASE
+	)
 	@Mapping(
 		target = "monsterTypes",
 		source = "types",
@@ -40,13 +50,13 @@ public abstract class YugipediaCardMapper extends YugipediaPropertyBaseMapper {
 	@Mapping(
 		target = "atk",
 		source = "atk",
-		qualifiedByName = "maybeUndefinedIntegerProperty"
+		qualifiedByName = TO_MAYBE_UNDEFINED_INTEGER
 	)
 	@Mapping(target = "atkUndefined", ignore = true) // computed with after-mapping
 	@Mapping(
 		target = "def",
 		source = "def",
-		qualifiedByName = "maybeUndefinedIntegerProperty"
+		qualifiedByName = TO_MAYBE_UNDEFINED_INTEGER
 	)
 	@Mapping(target = "defUndefined", ignore = true) // computed with after-mapping
 	@Mapping(target = "linkArrows", source = "link_arrows")
@@ -126,8 +136,8 @@ public abstract class YugipediaCardMapper extends YugipediaPropertyBaseMapper {
 	)
 	protected abstract LinkArrow toLinkArrow(final String likArrow);
 
-	@Named("toLowerCase")
-	protected String toLowerCase(final String value) {
-		return value.toLowerCase();
+	@Named(TO_MAYBE_UNDEFINED_INTEGER)
+	protected Integer toMaybeUndefinedInteger(final String prop) {
+		return toMaybeUndefinedLong(prop).intValue();
 	}
 }

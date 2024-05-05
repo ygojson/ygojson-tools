@@ -4,15 +4,19 @@ import java.util.List;
 
 import org.mapstruct.Named;
 
-import io.github.ygojson.application.logic.mapper.BaseCardMapper;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
-class YugipediaPropertyBaseMapper extends BaseCardMapper {
+class YugipediaPropertyBaseMapper {
 
-	@Named("maybeUndefinedIntegerProperty")
-	protected Integer toUndefinedInteger(final YugipediaProperty prop) {
-		return toMaybeUndefinedLong(toString(prop)).intValue();
+	protected static final String TO_LOWER_CASE = "toLowerCase";
+
+	@Named(TO_LOWER_CASE)
+	protected String toLowerCase(final String value) {
+		if (value == null) {
+			return null;
+		}
+		return value.toLowerCase();
 	}
 
 	/**
