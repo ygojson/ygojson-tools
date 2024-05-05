@@ -84,7 +84,7 @@ public class BaseCardMapper {
 	 * Convert the card-type string to the CardType enum.
 	 * <br>
 	 * This method is not {@link Named}, but a {@link org.mapstruct.Mapper} annotated
-	 * class would use it to conver any {@link String} to the {@link CardType}.
+	 * class would use it to convert any {@link String} to the {@link CardType}.
 	 *
 	 * @param cardType string for card-type, in any case
 	 *
@@ -214,7 +214,7 @@ public class BaseCardMapper {
 		if (card.getLocalizedData() != null) {
 			LocalizationUtils
 				.getNonMainLanguages()
-				.forEach(language -> updateLancuageCardText(language, card));
+				.forEach(language -> updateLanguageCardText(language, card));
 		}
 	}
 
@@ -225,7 +225,7 @@ public class BaseCardMapper {
 		String flavor
 	) {}
 
-	private void updateLancuageCardText(
+	private void updateLanguageCardText(
 		final Language language,
 		final Card card
 	) {

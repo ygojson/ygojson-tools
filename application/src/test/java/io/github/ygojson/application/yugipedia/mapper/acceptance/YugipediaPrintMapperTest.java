@@ -40,7 +40,7 @@ class YugipediaPrintMapperTest {
 
 	@ParameterizedTest
 	@MethodSource("testCases")
-	void testPropertiesToCard(
+	void testPropertiesToPrint(
 		final YugipediaTestDataRegistry.WikitextPageTestCase wikitextTestData
 	) throws JsonProcessingException {
 		// given
