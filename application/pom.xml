@@ -16,6 +16,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.github.ygojson</groupId>
             <artifactId>ygojson-model</artifactId>
             <version>${project.version}</version>

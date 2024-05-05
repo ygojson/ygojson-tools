@@ -1,4 +1,7 @@
-package io.github.ygojson.tools.dataprovider.impl.yugipedia.acceptance;
+package io.github.ygojson.application.yugipedia.mapper.acceptance;
+
+import java.util.List;
+import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -8,43 +11,46 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mapstruct.factory.Mappers;
 
+import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
+import io.github.ygojson.application.yugipedia.mapper.YugipediaCardMapper;
+import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
+import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.YugipediaCardMapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.mapper.wikitext.CardTable2Mapper;
-import io.github.ygojson.tools.dataprovider.impl.yugipedia.model.wikitext.CardTable2;
 
 class YugipediaCardMapperTest {
 
 	private static ObjectWriter OBJECT_WRITER;
 	private static YugipediaCardMapper MAPPER;
-	private static CardTable2Mapper CARDTABLE2_MAPPER;
+	private static YugipediaParser PARSER;
 
 	@BeforeAll
 	static void beforeAll() {
 		OBJECT_WRITER =
 			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
+		PARSER = YugipediaParser.createCardParser();
 		MAPPER = Mappers.getMapper(YugipediaCardMapper.class);
-		CARDTABLE2_MAPPER = Mappers.getMapper(CardTable2Mapper.class);
+	}
+
+	static List<YugipediaTestDataRegistry.WikitextPageTestCase> testCases() {
+		return YugipediaTestDataRegistry
+			.getInstance()
+			.getCardTable2WikitextTestCase();
 	}
 
 	@ParameterizedTest
-	@MethodSource(
-		"io.github.ygojson.tools.dataprovider.impl.yugipedia.YugipediaTestData#getCardTable2ParseWikitextTestData"
-	)
-	void testMapToCardWithPageTitleAndId(
-		final YugipediaTestData.ParseWikitextPageTestData wikitextTestData
+	@MethodSource("testCases")
+	void testPropertiesToCard(
+		final YugipediaTestDataRegistry.WikitextPageTestCase wikitextTestData
 	) throws JsonProcessingException {
 		// given
-		final String wikitext = wikitextTestData.wikitext();
-		final String pageTitle = wikitextTestData.pageTitle();
-		final Long pageId = wikitextTestData.pageId();
-		final CardTable2 cardTable2 = CARDTABLE2_MAPPER.mapWikitextToCardTable2(
-			wikitext
+		final Map<String, YugipediaProperty> properties = PARSER.parse(
+			wikitextTestData.pageTitle(),
+			wikitextTestData.pageId(),
+			wikitextTestData.wikitext()
 		);
 		// when
-		final Card card = MAPPER.mapToCard(cardTable2, pageTitle, pageId);
+		final Card card = MAPPER.toCard(properties);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(card);
 		// then
 		Approvals.verify(

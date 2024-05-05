@@ -64,12 +64,12 @@ public sealed interface YugipediaProperty
 	/**
 	 * List property.
 	 *
-	 * @param list
+	 * @param value
 	 */
-	record ListProp(@JsonIgnore List<String> list) implements YugipediaProperty {
+	record ListProp(@JsonIgnore List<String> value) implements YugipediaProperty {
 		@Override
 		public Object jsonValue() {
-			return list;
+			return value;
 		}
 	}
 
