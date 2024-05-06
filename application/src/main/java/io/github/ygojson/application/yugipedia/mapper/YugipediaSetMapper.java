@@ -12,7 +12,7 @@ import org.mapstruct.MappingTarget;
 
 import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.application.logic.mapper.CardNumberParser;
-import io.github.ygojson.application.yugipedia.YugipediaException;
+import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
@@ -166,7 +166,7 @@ public abstract class YugipediaSetMapper {
 				info.setSetCodeAlt(prefixes.get(1));
 				break;
 			default:
-				throw new YugipediaException(
+				throw new MappingException(
 					String.format(
 						"More than 2 set codes for set %s in language %s",
 						set,

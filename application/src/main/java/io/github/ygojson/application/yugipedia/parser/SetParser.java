@@ -31,8 +31,14 @@ class SetParser implements YugipediaParser {
 		final long pageid,
 		final String wikitext
 	) {
+		if (wikitext == null) {
+			return null;
+		}
 		final Map<String, YugipediaProperty> initialTemplateProperties =
 			infoboxSetParser.parse(wikitext);
+		if (initialTemplateProperties == null) {
+			return null;
+		}
 		initialTemplateProperties.put(
 			CustomProperties.PAGE_ID,
 			YugipediaProperty.text(Long.toString(pageid))

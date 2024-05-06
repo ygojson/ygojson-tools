@@ -29,6 +29,16 @@ class YugipediaPrintMapperUnitTest {
 		MAPPER = Mappers.getMapper(YugipediaPrintMapper.class);
 	}
 
+	@Test
+	void given_nullProperties_when_toPrints_then_nullPrints() {
+		// given
+		final Map<String, YugipediaProperty> properties = null;
+		// when
+		final var prints = MAPPER.toPrints(properties);
+		// then
+		assertThat(prints).isNull();
+	}
+
 	// includes edge-cases for future development when the printCode is split (see #55)
 	static Stream<Arguments> printsToTest() {
 		return Stream.of(

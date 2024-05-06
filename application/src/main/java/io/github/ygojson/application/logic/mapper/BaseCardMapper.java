@@ -94,7 +94,7 @@ public class BaseCardMapper {
 		try {
 			return CardType.fromValue(cardType.toLowerCase());
 		} catch (final IllegalArgumentException e) {
-			throw new IllegalArgumentException("Unknown card type: " + cardType);
+			throw new MappingException("Unknown card type: " + cardType);
 		}
 	}
 
@@ -278,24 +278,22 @@ public class BaseCardMapper {
 
 	private SplitCardText splitExtraDeckMonster(final String fullCardText) {
 		final String[] materialAndEffect = fullCardText.split("\n", 2);
-		switch (materialAndEffect.length) {
-			case 2 -> { // material and effect present
-				return new SplitCardText(
-					materialAndEffect[1],
-					materialAndEffect[0],
-					null
-				);
-			}
-			case 1 -> { // only materials are present (normal extra deck monster)
-				return new SplitCardText(null, materialAndEffect[0], null);
-			}
-			case 0 -> {
-				return new SplitCardText(null, null, null);
-			} // do nothing if the actual string is null/empty
+		return switch (materialAndEffect.length) {
+			// material and effect present
+			case 2 -> new SplitCardText(
+				materialAndEffect[1],
+				materialAndEffect[0],
+				null
+			);
+			// only materials are present (normal extra deck monster)
+			case 1 -> new SplitCardText(null, materialAndEffect[0], null);
+			// do nothing if the actual string is null/empty
+			case 0 -> new SplitCardText(null, null, null);
+			// this should not happen at all, so crash in case that it does!
 			default -> throw new IllegalStateException(
 				"should not happen: split-with-limit should return 0-2 items"
 			);
-		}
+		};
 	}
 
 	private boolean isFlavorText(String effect, Card card) {

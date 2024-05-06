@@ -1,7 +1,7 @@
 package io.github.ygojson.application.yugipedia;
 
 /**
- * Exception thrown by Yugipedia parsing/processing logic.
+ * Exception thrown by Yugipedia processing/provider logic.
  */
 public class YugipediaException extends RuntimeException {
 

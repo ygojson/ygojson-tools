@@ -31,8 +31,14 @@ class CardParser implements YugipediaParser {
 		final long pageid,
 		final String wikitext
 	) {
+		if (wikitext == null) {
+			return null;
+		}
 		final Map<String, YugipediaProperty> initialTemplateProperties =
 			cardTable2Parser.parse(wikitext);
+		if (initialTemplateProperties == null) {
+			return null;
+		}
 		// add always the page ID to the properties
 		initialTemplateProperties.put(
 			CustomProperties.PAGE_ID,

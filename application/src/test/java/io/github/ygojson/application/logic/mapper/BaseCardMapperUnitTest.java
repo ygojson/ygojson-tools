@@ -80,8 +80,7 @@ class BaseCardMapperUnitTest {
 		final ThrowableAssert.ThrowingCallable throwingCallable = () ->
 			MAPPER.toCardTypeEnum(value);
 		// then
-		assertThatThrownBy(throwingCallable)
-			.isInstanceOf(IllegalArgumentException.class);
+		assertThatThrownBy(throwingCallable).isInstanceOf(MappingException.class);
 	}
 
 	@Test

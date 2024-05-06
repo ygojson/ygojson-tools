@@ -66,6 +66,9 @@ public abstract class YugipediaPrintMapper {
 	}
 
 	public List<Print> toPrints(final Map<String, YugipediaProperty> properties) {
+		if (properties == null) {
+			return null;
+		}
 		return Arrays
 			.stream(LangSpec.values())
 			.flatMap(langProps -> toPrints(langProps, properties))

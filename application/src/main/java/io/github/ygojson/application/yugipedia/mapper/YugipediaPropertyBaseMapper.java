@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.mapstruct.Named;
 
+import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
@@ -31,8 +32,8 @@ class YugipediaPropertyBaseMapper {
 		return switch (prop) {
 			case YugipediaProperty.TextProp text -> text.value();
 			case YugipediaProperty.ListProp list -> String.join(", ", list.value());
-			default -> throw new YugipediaException(
-				"Unsupported property type: " + prop.getClass()
+			default -> throw new MappingException(
+				"Unsupported property type to String: " + prop.getClass()
 			);
 		};
 	}
@@ -48,8 +49,8 @@ class YugipediaPropertyBaseMapper {
 		return switch (prop) {
 			case YugipediaProperty.TextProp text -> List.of(text.value());
 			case YugipediaProperty.ListProp list -> list.value();
-			default -> throw new YugipediaException(
-				"Unsupported property type: " + prop.getClass()
+			default -> throw new MappingException(
+				"Unsupported property type to list: " + prop.getClass()
 			);
 		};
 	}
