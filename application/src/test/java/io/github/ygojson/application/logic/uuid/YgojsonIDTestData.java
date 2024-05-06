@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.test;
+package io.github.ygojson.application.logic.uuid;
 
 import java.util.UUID;
 
@@ -7,7 +7,7 @@ import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.Identifiers;
 
-public class YgojsonIDTestData {
+class YgojsonIDTestData {
 
 	/**
 	 * Expected ID for a card with the {@link #updateCardWithTestData(Card)}

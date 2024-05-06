@@ -1,6 +1,6 @@
-package io.github.ygojson.tools.dataprovider.domain.uuid;
+package io.github.ygojson.application.logic.uuid;
 
-import static io.github.ygojson.tools.dataprovider.test.YgojsonIDTestData.*;
+import static io.github.ygojson.application.logic.uuid.YgojsonIDTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -14,7 +14,7 @@ import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.Set;
 
-class YgojsonIDGeneratorTest {
+class YgojsonIDGeneratorUnitTest {
 
 	private final YgojsonIDGenerator idGenerator = new YgojsonIDGenerator();
 

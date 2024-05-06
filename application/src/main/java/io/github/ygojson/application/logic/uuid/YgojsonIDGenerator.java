@@ -1,4 +1,4 @@
-package io.github.ygojson.tools.dataprovider.domain.uuid;
+package io.github.ygojson.application.logic.uuid;
 
 import java.util.List;
 import java.util.Objects;
