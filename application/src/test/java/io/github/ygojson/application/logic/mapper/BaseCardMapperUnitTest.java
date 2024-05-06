@@ -35,7 +35,7 @@ class BaseCardMapperUnitTest {
 	}
 
 	@ParameterizedTest
-	@ValueSource(strings = { "null", "something", "???" })
+	@ValueSource(strings = { "null", "something", "???", "NaN" })
 	void given_nonParsableValue_when_toMaybeUndefinedLong_then_returnNull(
 		final String nullableValue
 	) {
@@ -44,6 +44,18 @@ class BaseCardMapperUnitTest {
 		final Long result = MAPPER.toMaybeUndefinedLong(nullableValue);
 		// then
 		assertThat(result).isNull();
+	}
+
+	@ParameterizedTest
+	@ValueSource(strings = { "1", "2", "100" })
+	void given_parsableValue_when_toMaybeUndefinedLong_then_returnValue(
+		final String nullableValue
+	) {
+		// given - value
+		// when
+		final Long result = MAPPER.toMaybeUndefinedLong(nullableValue);
+		// then
+		assertThat(result).isNotNull();
 	}
 
 	@ParameterizedTest
