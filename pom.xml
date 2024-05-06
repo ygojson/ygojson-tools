@@ -42,7 +42,6 @@
     <modules>
         <module>model</module>
         <module>application</module>
-        <module>tools</module>
     </modules>
 
     <!-- common dependencies for all projects -->
