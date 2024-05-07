@@ -41,7 +41,7 @@
 
     <modules>
         <module>model</module>
-        <module>tools</module>
+        <module>application</module>
     </modules>
 
     <!-- common dependencies for all projects -->
@@ -208,6 +208,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.1.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.2.5</version>
                 </plugin>
                 <plugin>
                     <groupId>org.jacoco</groupId>

@@ -1,0 +1,1461 @@
+{
+  "ae_sets" : [
+    {
+      "cardNumber" : "LOB-058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SSD2-AE017",
+      "setPageName" : "Speed Start Deck Synchro Edition",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "archseries" : [
+    "Trap Hole (archetype)"
+  ],
+  "au_sets" : [
+    {
+      "cardNumber" : "LOB-A058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-A027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-A033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "card_type" : "Trap",
+  "database_id" : "4836",
+  "de_lore" : "Wenn dein Gegner ein Monster mit 1000 oder mehr ATK als Normal- oder Flippbeschwörung beschwört: Wähle jenes Monster; zerstöre jenes gewählte Ziel.",
+  "de_name" : "Fallgrube",
+  "de_sets" : [
+    {
+      "cardNumber" : "LOB-G046",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-G025",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-G030",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-G043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-G041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-DE041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-DE042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-DE118",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSDJ-DE034",
+      "setPageName" : "Starter Deck: Jaden Yuki",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDS-DE032",
+      "setPageName" : "Starter Deck: Syrus Truesdale",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-DE007",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "5DS1-DE036",
+      "setPageName" : "Starter Deck: Yu-Gi-Oh! 5D's",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL09-DE017",
+      "setPageName" : "Duelist League 2010 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "5DS3-DE030",
+      "setPageName" : "Starter Deck: Duelist Toolbox",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS11-DE034",
+      "setPageName" : "Starter Deck: Dawn of the Xyz",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS12-DE032",
+      "setPageName" : "Starter Deck: Xyz Symphony",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-DE177",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-DE073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-DE038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-DE042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-DE031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-DEY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-DE028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-DE058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "effect_types" : [
+    "Effect"
+  ],
+  "en_sets" : [
+    {
+      "cardNumber" : "SYE-041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-EN118",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HL03-EN003",
+      "setPageName" : "Hobby League 3 participation card C",
+      "rarities" : [
+        "Ultra Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSDJ-EN034",
+      "setPageName" : "Starter Deck: Jaden Yuki",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDS-EN032",
+      "setPageName" : "Starter Deck: Syrus Truesdale",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "5DS1-EN036",
+      "setPageName" : "Starter Deck: Yu-Gi-Oh! 5D's",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL09-EN017",
+      "setPageName" : "Duelist League 2010 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "5DS3-EN030",
+      "setPageName" : "Starter Deck: Duelist Toolbox",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS11-EN034",
+      "setPageName" : "Starter Deck: Dawn of the Xyz",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS12-EN032",
+      "setPageName" : "Starter Deck: Xyz Symphony",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-EN177",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-EN073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-EN038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-EN042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-EN031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-EN028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-EN058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "es_lore" : "Cuando tu adversario Invoca de Modo Normal o por Volteo un monstruo con 1000 ATK o más: selecciona ese monstruo; destruye ese objetivo.",
+  "es_name" : "Agujero Trampa",
+  "eu_sets" : [
+    {
+      "cardNumber" : "LOB-E046",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-E025",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-E030",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-EN007",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "fc_sets" : [
+    {
+      "cardNumber" : "LDD-C058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDY-C027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDK-C033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "fr_lore" : "Lorsque votre adversaire Invoque Normalement ou par Flip un monstre avec min. 1000 ATK : ciblez le monstre ; détruisez la cible.",
+  "fr_name" : "Trappe",
+  "fr_sets" : [
+    {
+      "cardNumber" : "LDD-F046",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DDY-F025",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDK-F030",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDJ-F043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DDP-F041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-FR041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-FR042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDJ-FR034",
+      "setPageName" : "Starter Deck: Jaden Yuki",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDS-FR032",
+      "setPageName" : "Starter Deck: Syrus Truesdale",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-FR007",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "5DS1-FR036",
+      "setPageName" : "Starter Deck: Yu-Gi-Oh! 5D's",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL09-FR017",
+      "setPageName" : "Duelist League 2010 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "5DS3-FR030",
+      "setPageName" : "Starter Deck: Duelist Toolbox",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS11-FR034",
+      "setPageName" : "Starter Deck: Dawn of the Xyz",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS12-FR032",
+      "setPageName" : "Starter Deck: Xyz Symphony",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-FR177",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-FR073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-FR038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-FR042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-FR031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-FRY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-FR028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-FR058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "image" : "TrapHole-LOB-EN-SR-UE-25thAnniversaryEdition.png",
+  "it_lore" : "Quando il tuo avversario Evoca Normalmente o per Scoperta un mostro con ATK 1000 o superiore: scegli come bersaglio quel mostro; distruggi quel bersaglio.",
+  "it_name" : "Buco Trappola",
+  "it_sets" : [
+    {
+      "cardNumber" : "LDD-I046",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MIY-I025",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIK-I030",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIJ-I043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MIP-I041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-IT041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-IT042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDJ-IT034",
+      "setPageName" : "Starter Deck: Jaden Yuki",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDS-IT032",
+      "setPageName" : "Starter Deck: Syrus Truesdale",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RP01-IT007",
+      "setPageName" : "Retro Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "5DS1-IT036",
+      "setPageName" : "Starter Deck: Yu-Gi-Oh! 5D's",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL09-IT017",
+      "setPageName" : "Duelist League 2010 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "5DS3-IT030",
+      "setPageName" : "Starter Deck: Duelist Toolbox",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS11-IT034",
+      "setPageName" : "Starter Deck: Dawn of the Xyz",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS12-IT032",
+      "setPageName" : "Starter Deck: Xyz Symphony",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-IT177",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-IT073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-IT038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-IT042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-IT031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ITY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-IT028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-IT058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "ja_lore" : "①：相手が攻撃力１０００以上のモンスターの召喚・反転召喚に成功した時、そのモンスター１体を対象として発動できる。その攻撃力１０００以上のモンスターを破壊する。",
+  "ja_name" : "<ruby>落<rt>お</rt></ruby>とし<ruby>穴<rt>あな</rt></ruby>",
+  "jp_sets" : [
+    {
+      "setPageName" : "Vol.1",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "setPageName" : "EX Starter Box",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LB-57",
+      "setPageName" : "Legend of Blue Eyes White Dragon (Japanese)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "EX-27",
+      "setPageName" : "EX-R Starter Box",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "JY-30",
+      "setPageName" : "Structure Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL2-039",
+      "setPageName" : "Duelist Legacy Volume.2",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SY2-052",
+      "setPageName" : "Structure Deck: Yugi Volume 2",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "PC2-007",
+      "setPageName" : "World Ranking Promos: Series 2",
+      "rarities" : [
+        "Common",
+        "Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BE1-JP118",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSD2-JP034",
+      "setPageName" : "Starter Deck 2007",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSD3-JP036",
+      "setPageName" : "Starter Deck 2008",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DT04-JP050",
+      "setPageName" : "Duel Terminal - Demon Roar God Revival!!",
+      "rarities" : [
+        "Duel Terminal Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSD5-JP033",
+      "setPageName" : "Starter Deck 2010",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "GS03-JP018",
+      "setPageName" : "Gold Series 2011",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSD6-JP034",
+      "setPageName" : "Starter Deck 2011",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BE01-JP101",
+      "setPageName" : "Beginner's Edition 1 (2011)",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ST12-JP032",
+      "setPageName" : "Starter Deck 2012",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "GDB1-JP058",
+      "setPageName" : "The Gold Box",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "HD13-JPL17",
+      "setPageName" : "Half-Deck: LIGHT",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HD13-JPD17",
+      "setPageName" : "Half-Deck: DARK",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST14-JP031",
+      "setPageName" : "Starter Deck 2014",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-JPS23",
+      "setPageName" : "Duelist Entry Deck VS",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-JPD24",
+      "setPageName" : "Duelist Entry Deck VS",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HD18-JPL17",
+      "setPageName" : "Half Deck 2018: LIGHT",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HD18-JPD17",
+      "setPageName" : "Half Deck 2018: DARK",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SSD2-JP017",
+      "setPageName" : "Speed Start Deck Synchro Edition",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SD45-JP028",
+      "setPageName" : "Structure Deck: Forest of the Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "ko_lore" : "①: 상대가 공격력 1000 이상의 몬스터의 일반 소환 / 반전 소환에 성공했을 때, 그 몬스터 1장을 대상으로 하고 발동할 수 있다. 그 공격력 1000 이상의 몬스터를 파괴한다.",
+  "ko_name" : "함정 속으로",
+  "ko_rr_name" : "Hamjeong Sok-euro",
+  "kr_sets" : [
+    {
+      "cardNumber" : "LOB-K058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-K027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-K033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-KR043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-KR041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-KR041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-KR042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BP1-KR118",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "ESP1-KR005",
+      "setPageName" : "Expansion Pack Vol.1",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSD3-KR036",
+      "setPageName" : "Starter Deck 2008",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSD5-KR033",
+      "setPageName" : "Starter Deck 2010",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "GS03-KR018",
+      "setPageName" : "Gold Series 2011",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSD6-KR034",
+      "setPageName" : "Starter Deck 2011",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST12-KR032",
+      "setPageName" : "Starter Deck 2012",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "ST14-KR031",
+      "setPageName" : "Starter Deck 2014",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-KRS23",
+      "setPageName" : "Duelist Entry Deck VS: Saber Force",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "VS15-KRD24",
+      "setPageName" : "Duelist Entry Deck VS: Dark Legion",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SSD2-KR017",
+      "setPageName" : "Speed Start Deck Synchro Edition",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SD45-KR028",
+      "setPageName" : "Structure Deck: Forest of the Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "lore" : "When your opponent Normal or Flip Summons a monster with 1000 or more ATK: Target that monster; destroy that target.",
+  "m/s/t" : [
+    "Destroys your opponent's Monster Cards",
+    "Destroys Normal Summoned Monsters"
+  ],
+  "na_sets" : [
+    {
+      "cardNumber" : "LOB-058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDY-027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDK-033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDJ-043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDP-041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DLG1-EN008",
+      "setPageName" : "Dark Legends",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DT02-EN100",
+      "setPageName" : "Duel Terminal 2",
+      "rarities" : [
+        "Duel Terminal Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENF24",
+      "setPageName" : "Saber Force Starter Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-ENL24",
+      "setPageName" : "Dark Legion Starter Deck",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "name" : "Trap Hole",
+  "page_id" : "222",
+  "password" : "04206964",
+  "property" : "Normal",
+  "pt_lore" : "Quando seu oponente Invocar por Invocação-Normal ou Virar um monstro com 1000 ou mais de ATK: escolha o monstro; destrua o alvo.",
+  "pt_name" : "Buraco Armadilha",
+  "pt_sets" : [
+    {
+      "cardNumber" : "LDB-P058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DIY-P027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIK-P033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIJ-P043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DIP-P041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-PT041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-PT042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-PT073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-PT038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-PT042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-PT031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-PTY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-PT028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-PT058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "romaji_name" : "Otoshiana",
+  "sp_sets" : [
+    {
+      "cardNumber" : "LDD-S058",
+      "setPageName" : "Legend of Blue Eyes White Dragon",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BIY-S027",
+      "setPageName" : "Starter Deck: Yugi",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIK-S033",
+      "setPageName" : "Starter Deck: Kaiba",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIJ-S043",
+      "setPageName" : "Starter Deck: Joey",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BIP-S041",
+      "setPageName" : "Starter Deck: Pegasus",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SYE-SP041",
+      "setPageName" : "Starter Deck: Yugi Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SKE-SP042",
+      "setPageName" : "Starter Deck: Kaiba Evolution",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-SP118",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "YSDJ-SP034",
+      "setPageName" : "Starter Deck: Jaden Yuki",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSDS-SP032",
+      "setPageName" : "Starter Deck: Syrus Truesdale",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "5DS1-SP036",
+      "setPageName" : "Starter Deck: Yu-Gi-Oh! 5D's",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL09-SP017",
+      "setPageName" : "Duelist League 2010 participation cards",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "5DS3-SP030",
+      "setPageName" : "Starter Deck: Duelist Toolbox",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS11-SP034",
+      "setPageName" : "Starter Deck: Dawn of the Xyz",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS12-SP032",
+      "setPageName" : "Starter Deck: Xyz Symphony",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LCYW-SP177",
+      "setPageName" : "Legendary Collection 3: Yugi's World Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCJW-SP073",
+      "setPageName" : "Legendary Collection 4: Joey's World Mega Pack",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSYR-SP038",
+      "setPageName" : "Starter Deck: Yugi Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YSKR-SP042",
+      "setPageName" : "Starter Deck: Kaiba Reloaded",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS14-SP031",
+      "setPageName" : "Super Starter: Space-Time Showdown",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "YS15-SPY17",
+      "setPageName" : "2-Player Starter Deck: Yuya & Declan",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-SP028",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LOB-SP058",
+      "setPageName" : "Legend of Blue Eyes White Dragon (25th Anniversary Edition)",
+      "rarities" : [
+        "Super Rare"
+      ]
+    }
+  ],
+  "tc_lore" : "對手攻擊力1000或以上的怪獸召喚／反轉召喚成功時，可選擇1隻該怪獸發動。破壞該攻擊力1000或以上的怪獸。",
+  "tc_name" : "陷坑",
+  "tc_sets" : [
+    {
+      "cardNumber" : "ST14-TC033",
+      "setPageName" : "Duel Starter Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HD13-TCL17",
+      "setPageName" : "Half-Deck: LIGHT",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HD13-TCD17",
+      "setPageName" : "Half-Deck: DARK",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "trans_name" : "Pitfall"
+}

@@ -1,7 +1,0 @@
-logging:
-  pattern:
-    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
-  level:
-    root: WARN
-    "io.github.ygojson.tools.Application": DEBUG
-    "io.github.ygojson.tools": DEBUG

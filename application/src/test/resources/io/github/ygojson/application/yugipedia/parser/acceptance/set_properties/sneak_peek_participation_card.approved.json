@@ -1,0 +1,25 @@
+{
+  "de_database_id" : "2121208004",
+  "de_name" : "Ancient Prophecy Sneak Peek",
+  "en_database_id" : "1121208007",
+  "en_name" : "Ancient Prophecy Sneak Peek Participation Card",
+  "en_release_date" : "August 15, 2009",
+  "es_database_id" : "5121207002",
+  "es_name" : "Profecía Antigua Presentación",
+  "fr/de/it/sp_release_date" : "",
+  "fr_database_id" : "3121207003",
+  "fr_name" : "Ancienne Prophétie Avant-première",
+  "image" : "Yu-Gi-Oh! TCG new logo.jpg",
+  "it_database_id" : "4121207003",
+  "it_name" : "Antica Profezia Sneak Peek",
+  "next" : "Stardust Overdrive Sneak Peek Participation Card",
+  "page_id" : "280261",
+  "postfix" : "SP",
+  "prefix" : "ANPR",
+  "prev" : "Raging Battle Sneak Peek Participation Card",
+  "series" : "Sneak Peek Participation Cards",
+  "size" : [
+    "1"
+  ],
+  "type" : "Participation card"
+}

@@ -1,0 +1,756 @@
+{
+  "action" : [
+    "Activates from your hand",
+    "Discards itself for cost"
+  ],
+  "archseries" : [
+    "Yo-kai Girl"
+  ],
+  "atk" : "0",
+  "attribute" : "FIRE",
+  "current_image" : "1",
+  "database_id" : "12950",
+  "de_lore" : "Wenn eine Karte oder ein Effekt aktiviert wird, die oder der einen dieser Effekte enthält (Schnelleffekt): Du kannst diese Karte abwerfen; annulliere jenen Effekt.\n● Eine Karte vom Deck der Hand hinzufügen.\n● Spezialbeschwörung vom Deck durchführen.\n● Eine Karte vom Deck auf den Friedhof legen.\nDu kannst diesen Effekt von „Aschenblüte & Freudiger Frühling“ nur einmal pro Spielzug verwenden.",
+  "de_name" : "Aschenblüte & Freudiger Frühling",
+  "de_sets" : [
+    {
+      "cardNumber" : "MACR-DE036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-DE080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-DE047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-DE019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-DE077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-DE003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-DE011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-DE257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-DE014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-DE014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-DE008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "def" : "1800",
+  "effect_types" : [
+    "Quick",
+    "Condition"
+  ],
+  "en_sets" : [
+    {
+      "cardNumber" : "MACR-EN036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-EN080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-EN047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-EN019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-EN077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-EN003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-EN011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-EN257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-EN014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-EN014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-EN008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "es_lore" : "Cuando es activada una carta o efecto que incluya cualquiera de estos efectos (Efecto Rápido): puedes descartar esta carta; niega ese efecto.\n● Añadir a la mano una carta en el Deck.\n● Invocar de Modo Especial desde el Deck.\n● Mandar al Cementerio una carta en el Deck.\nSólo puedes usar este efecto de \"Flor de Ceniza & Primavera Feliz\" una vez por turno.",
+  "es_name" : "Flor de Ceniza & Primavera Feliz",
+  "fr_lore" : "Lorsqu'une carte ou un effet qui inclut n'importe lequel de ces effets est activé (Effet Rapide) : vous pouvez défausser cette carte ; annulez l'effet.\n● Ajouter une carte depuis le Deck à la main.\n● Invoquer Spécialement depuis le Deck.\n● Envoyer une carte depuis le Deck au Cimetière.\nVous ne pouvez utiliser cet effet de \"Floraison de Cendres et Joyeux Printemps\" qu'une fois par tour.",
+  "fr_name" : "Floraison de Cendres et Joyeux Printemps",
+  "fr_sets" : [
+    {
+      "cardNumber" : "MACR-FR036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-FR080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-FR047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-FR019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-FR077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-FR003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-FR011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-FR257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-FR014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-FR014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-FR008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "image" : "1; AshBlossomJoyousSpring-RA01-EN-SR-1E.png;     AshBlossomJoyousSpring-MADU-EN-VG-artwork.png\n2; AshBlossomJoyousSpring-MAGO-EN-PGR-1E-AA.png; AshBlossomJoyousSpring-OW-2.png",
+  "it_lore" : "Quando viene attivata una carta o un effetto che include uno qualsiasi di questi effetti (Effetto Rapido): puoi scartare questa carta; annulla quell'effetto.\n● Aggiungere una carta dal Deck alla mano.\n● Evocare Specialmente dal Deck.\n● Mandare una carta dal Deck al Cimitero.\nPuoi utilizzare questo effetto di \"Fioritura di Cenere & Gioiosa Primavera\" una sola volta per turno.",
+  "it_name" : "Fioritura di Cenere & Gioiosa Primavera",
+  "it_sets" : [
+    {
+      "cardNumber" : "MACR-IT036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-IT080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-IT047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-IT019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-IT077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-IT003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-IT011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-IT257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-IT014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-IT014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-IT008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "ja_lore" : "このカード名の効果は１ターンに１度しか使用できない。①：以下のいずれかの効果を含む魔法・罠・モンスターの効果が発動した時、このカードを手札から捨てて発動できる。その効果を無効にする。\n●デッキからカードを手札に加える効果\n●デッキからモンスターを特殊召喚する効果\n●デッキからカードを墓地へ送る効果",
+  "ja_name" : "<ruby>灰<rt>は</rt></ruby><ruby>流<rt>る</rt></ruby>うらら",
+  "jp_sets" : [
+    {
+      "cardNumber" : "MACR-JP036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Super Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RC02-JP009",
+      "setPageName" : "Rarity Collection 20th Anniversary Edition",
+      "rarities" : [
+        "Ultimate Rare",
+        "Secret Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD35-JP019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "20TH-JPC85",
+      "setPageName" : "20th Anniversary Legend Collection",
+      "rarities" : [
+        "Secret Rare",
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RC03-JP010",
+      "setPageName" : "Rarity Collection Premium Gold Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Secret Rare",
+        "Collector's Rare",
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-JP016",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Super Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD44-JP014",
+      "setPageName" : "Structure Deck: Legend of the Crystals",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RC04-JP009",
+      "setPageName" : "Rarity Collection Quarter Century Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Collector's Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Quarter Century Secret Rare",
+        "Holographic Rare"
+      ]
+    }
+  ],
+  "ko_lore" : "이 카드명의 효과는 1턴에 1번밖에 사용할 수 없다. ①: 이하의 어느 효과를 포함하는 마법 / 함정 / 몬스터의 효과가 발동했을 때, 이 카드를 패에서 버리고 발동할 수 있다. 그 효과를 무효로 한다.\n●덱에서 카드를 패에 넣는 효과\n●덱에서 몬스터를 특수 소환하는 효과\n●덱에서 카드를 묘지로 보내는 효과",
+  "ko_name" : "하루 우라라",
+  "ko_rr_name" : "Haru Urara",
+  "kr_sets" : [
+    {
+      "cardNumber" : "MACR-KR036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Super Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RC02-KR009",
+      "setPageName" : "Rarity Collection 20th Anniversary Edition",
+      "rarities" : [
+        "Ultimate Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD35-KR019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "LEC1-KR085",
+      "setPageName" : "20th Anniversary Legend Collection",
+      "rarities" : [
+        "Extra Secret Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RC03-KR010",
+      "setPageName" : "Rarity Collection Premium Gold Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-KR016",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Super Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD44-KR014",
+      "setPageName" : "Structure Deck: Legend of the Crystals",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RC04-KR009",
+      "setPageName" : "Rarity Collection Quarter Century Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Collector's Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Quarter Century Secret Rare",
+        "HGR"
+      ]
+    }
+  ],
+  "level" : "3",
+  "lore" : "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\n● Add a card from the Deck to the hand.\n● Special Summon from the Deck.\n● Send a card from the Deck to the GY.\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+  "m/s/t" : [
+    "Negates the effects of Effect Monsters",
+    "Negates the effects of Spell Cards",
+    "Negates the effects of Trap Cards"
+  ],
+  "misc" : [
+    "Only once per turn"
+  ],
+  "name" : "Ash Blossom & Joyous Spring",
+  "page_id" : "480286",
+  "password" : "14558127",
+  "pt_lore" : "Quando um card ou efeito for ativado que inclua qualquer um desses efeitos (Efeito Rápido): você pode descartar este card; negue o efeito.\n● Adicionar um card do Deck à mão.\n● Invocar por Invocação-Especial do Deck.\n● Enviar um card do Deck para o Cemitério.\nVocê só pode usar este efeito de \"Florescer de Cinzas & Primavera Feliz\" uma vez por turno.",
+  "pt_name" : "Florescer de Cinzas & Primavera Feliz",
+  "pt_sets" : [
+    {
+      "cardNumber" : "MACR-PT036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-PT080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-PT047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-PT019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-PT077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-PT003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-PT011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-PT257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-PT014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-PT014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-PT008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "romaji_name" : "Haru Urara",
+  "sc_lore" : "此卡名的效果１回合仅可使用１次。\n①：包含以下其中任意效果的魔法・陷阱・怪兽的效果发动时，从手牌将此卡舍弃可以发动。将该效果无效。\n●从牌组将卡加入手牌的效果\n●从牌组将怪兽特殊召唤的效果\n●从牌组将卡送至墓地的效果",
+  "sc_name" : "灰流丽",
+  "sc_pinyin_name" : "Huīliúlì",
+  "sc_sets" : [
+    {
+      "cardNumber" : "SD35-SC019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RC03-SC010",
+      "setPageName" : "Rarity Collection Premium Gold Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "22RC-SC009",
+      "setPageName" : "Rarity Collection 20th Anniversary Edition",
+      "rarities" : [
+        "Ultimate Rare",
+        "Secret Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TM02-SC097",
+      "setPageName" : "Theme Pack: Undead Rondo",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "23RC-SC013",
+      "setPageName" : "Rarity Collection Quarter Century Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Collector's Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Quarter Century Secret Rare",
+        "Holographic Rare"
+      ]
+    }
+  ],
+  "sp_sets" : [
+    {
+      "cardNumber" : "MACR-SP036",
+      "setPageName" : "Maximum Crisis",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCKC-SP080",
+      "setPageName" : "Legendary Collection Kaiba Mega Pack",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHVA-SP047",
+      "setPageName" : "Shadows in Valhalla",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDSB-SP019",
+      "setPageName" : "Structure Deck: Soulburner",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-SP077",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUDE-SP003",
+      "setPageName" : "Duel Devastator",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MAGO-SP011",
+      "setPageName" : "Maximum Gold",
+      "rarities" : [
+        "Premium Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MP22-SP257",
+      "setPageName" : "2022 Tin of the Pharaoh's Gods",
+      "rarities" : [
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SDCB-SP014",
+      "setPageName" : "Structure Deck: Legend of the Crystal Beasts",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDBT-SP014",
+      "setPageName" : "Structure Deck: Beware of Traptrix",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RA01-SP008",
+      "setPageName" : "25th Anniversary Rarity Collection",
+      "rarities" : [
+        "Super Rare",
+        "Ultra Rare",
+        "Secret Rare",
+        "Platinum Secret Rare",
+        "Quarter Century Secret Rare",
+        "Ultimate Rare",
+        "Collector's Rare"
+      ]
+    }
+  ],
+  "trans_lore" : "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\n● Add a card from the Deck to the hand.\n● Special Summon 'a monster' from the Deck.\n● Send a card from the Deck to the GY.\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+  "types" : "Zombie / Tuner / Effect"
+}

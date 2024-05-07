@@ -1,0 +1,227 @@
+{
+  "ae_sets" : [
+    {
+      "cardNumber" : "MRD-035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    }
+  ],
+  "archseries" : [
+    "Jinzo (archetype)"
+  ],
+  "atk" : "500",
+  "attack" : [
+    "Direct attacker"
+  ],
+  "attribute" : "DARK",
+  "database_id" : "4428",
+  "de_lore" : "Diese Karte kann die Life Points deines Gegners direkt angreifen.",
+  "de_name" : "Jinzo #7",
+  "de_sets" : [
+    {
+      "cardNumber" : "MRD-G035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-DE162",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-DE035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "def" : "400",
+  "effect_types" : [
+    "Continuous"
+  ],
+  "en_sets" : [
+    {
+      "cardNumber" : "DB1-EN162",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-EN035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-EN035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "es_lore" : "Esta carta puede atacar los Life Points de tu adversario directamente.",
+  "es_name" : "Jinzo #7",
+  "eu_sets" : [
+    {
+      "cardNumber" : "MRD-E035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    }
+  ],
+  "fr_lore" : "Ce monstre peut attaquer directement les Life Points de votre adversaire.",
+  "fr_name" : "Jinzo N°7",
+  "fr_sets" : [
+    {
+      "cardNumber" : "MRD-F035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-FR035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "image" : "Jinzo7-MRD-EN-C-UE-25thAnniversaryEdition.png",
+  "it_lore" : "Questo mostro può attaccare direttamente i Life Points del tuo avversario.",
+  "it_name" : "Jinzo #7",
+  "it_sets" : [
+    {
+      "cardNumber" : "PMT-I035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-IT035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "ja_lore" : "このカードは相手プレイヤーを直接攻撃する事ができる。",
+  "ja_name" : "<ruby>人<rt>じん</rt></ruby><ruby>造<rt>ぞう</rt></ruby><ruby>人<rt>にん</rt></ruby><ruby>間<rt>げん</rt></ruby>７<ruby>号<rt>ごう</rt></ruby>",
+  "jp_sets" : [
+    {
+      "setPageName" : "Vol.5",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RB-35",
+      "setPageName" : "Revival of Black Demons Dragon",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "DL2-122",
+      "setPageName" : "Duelist Legacy Volume.2",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "BE1-JP162",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "ko_lore" : "이 카드는 상대를 직접 공격할 수 있다.",
+  "ko_name" : "인조인간7호",
+  "kr_sets" : [
+    {
+      "cardNumber" : "MRD-K035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "BP1-KR162",
+      "setPageName" : "Beginner's Edition 1",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "level" : "2",
+  "lore" : "This monster can attack your opponent's Life Points directly.",
+  "na_sets" : [
+    {
+      "cardNumber" : "MRD-035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    }
+  ],
+  "name" : "Jinzo #7",
+  "page_id" : "3497",
+  "password" : "32809211",
+  "pt_lore" : "Esta carta pode atacar seu oponente diretamente.",
+  "pt_name" : "Jinzo Nº 7",
+  "pt_sets" : [
+    {
+      "cardNumber" : "PMT-P035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-PT035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "romaji_name" : "Jinzōningen Nana-gō",
+  "sp_sets" : [
+    {
+      "cardNumber" : "PMT-S035",
+      "setPageName" : "Metal Raiders",
+      "rarities" : [
+        "Short Print"
+      ]
+    },
+    {
+      "cardNumber" : "DB1-SP162",
+      "setPageName" : "Dark Beginning 1",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "MRD-SP035",
+      "setPageName" : "Metal Raiders (25th Anniversary Edition)",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "trans_name" : "Android #7",
+  "types" : "Machine / Effect"
+}

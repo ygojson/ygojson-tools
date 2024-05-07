@@ -1,0 +1,386 @@
+{
+  "ae_sets" : [
+    {
+      "cardNumber" : "EOJ-AE047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "banished" : [
+    "Banishes negated Summons",
+    "Banishes cards that would be sent to the Graveyard"
+  ],
+  "card_type" : "Spell",
+  "database_id" : "6707",
+  "de_lore" : "Jedes Monster, das auf den Friedhof gelegt wird, wird stattdessen verbannt.",
+  "de_name" : "Dimensionsriss",
+  "de_sets" : [
+    {
+      "cardNumber" : "EOJ-DE047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDDE-DE028",
+      "setPageName" : "The Dark Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "CP08-DE004",
+      "setPageName" : "Champion Pack: Game Eight",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCGX-DE215",
+      "setPageName" : "Legendary Collection 2: The Duel Academy Years Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RYMP-DE081",
+      "setPageName" : "Ra Yellow Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-DE060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-DE088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "effect_types" : [
+    "Continuous-like"
+  ],
+  "en_sets" : [
+    {
+      "cardNumber" : "EOJ-EN047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDDE-EN028",
+      "setPageName" : "The Dark Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "CP08-EN004",
+      "setPageName" : "Champion Pack: Game Eight",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCGX-EN215",
+      "setPageName" : "Legendary Collection 2: The Duel Academy Years Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RYMP-EN081",
+      "setPageName" : "Ra Yellow Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-EN060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-EN088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "es_lore" : "Cualquier monstruo mandado al Cementerio es desterrado en su lugar.",
+  "es_name" : "Fisura Dimensional",
+  "fr_lore" : "Les monstres envoyés au Cimetière sont bannis à la place.",
+  "fr_name" : "Fissure Dimensionnelle",
+  "fr_sets" : [
+    {
+      "cardNumber" : "EOJ-FR047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDDE-FR028",
+      "setPageName" : "The Dark Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "CP08-FR004",
+      "setPageName" : "Champion Pack: Game Eight",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RYMP-FR081",
+      "setPageName" : "Ra Yellow Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-FR060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-FR088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "image" : "DimensionalFissure-BLMR-EN-UR-1E.png",
+  "it_lore" : "Qualsiasi mostro mandato al Cimitero viene invece bandito.",
+  "it_name" : "Spaccatura Dimensionale",
+  "it_sets" : [
+    {
+      "cardNumber" : "EOJ-IT047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDDE-IT028",
+      "setPageName" : "The Dark Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "CP08-IT004",
+      "setPageName" : "Champion Pack: Game Eight",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LCGX-IT215",
+      "setPageName" : "Legendary Collection 2: The Duel Academy Years Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "RYMP-IT081",
+      "setPageName" : "Ra Yellow Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-IT060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-IT088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "ja_lore" : "①：このカードが魔法＆罠ゾーンに存在する限り、お互いの墓地へ送られるモンスターは墓地へは行かず除外される。",
+  "ja_name" : "<ruby>次<rt>じ</rt></ruby><ruby>元<rt>げん</rt></ruby>の<ruby>裂<rt>さ</rt></ruby>け<ruby>目<rt>め</rt></ruby>",
+  "jp_sets" : [
+    {
+      "cardNumber" : "EOJ-JP047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "EE04-JP227",
+      "setPageName" : "Expert Edition Volume 4",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD14-JP028",
+      "setPageName" : "Structure Deck: Advent of the Emperor",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-JP035",
+      "setPageName" : "20th Anniversary Pack 1st Wave",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
+  "ko_lore" : "①: 이 카드가 마법 & 함정 존에 존재하는 한, 서로의 묘지로 보내지는 몬스터는 묘지로는 가지 않고 제외된다.",
+  "ko_name" : "차원의 틈",
+  "kr_sets" : [
+    {
+      "cardNumber" : "EOJ-KR047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SD14-KR028",
+      "setPageName" : "Structure Deck: Advent of the Emperor",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "HGP4-KR227",
+      "setPageName" : "Expert Edition Volume 4",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20AP-KR035",
+      "setPageName" : "20th Anniversary Pack 1st Wave",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
+  "lore" : "Any monster sent to the GY is banished instead.",
+  "na_sets" : [
+    {
+      "cardNumber" : "DR04-EN227",
+      "setPageName" : "Dark Revelation Volume 4",
+      "rarities" : [
+        "Rare"
+      ]
+    }
+  ],
+  "name" : "Dimensional Fissure",
+  "page_id" : "15582",
+  "password" : "81674782",
+  "property" : "Continuous",
+  "pt_lore" : "Qualquer monstro enviado para o Cemitério, em vez disso, é banido.",
+  "pt_name" : "Fissura Dimensional",
+  "pt_sets" : [
+    {
+      "cardNumber" : "DUSA-PT060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-PT088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ],
+  "related_to_archseries" : [
+    "D.D."
+  ],
+  "romaji_name" : "Jigen no Sakeme",
+  "sc_lore" : "①：只要此卡存在于魔法与陷阱区域，被送至双方墓地的怪兽不去墓地而直接被除外。",
+  "sc_name" : "次元的裂缝",
+  "sc_sets" : [
+    {
+      "cardNumber" : "ST21-SCP15",
+      "setPageName" : "Starter Deck 2021 Special Pack",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "23RC-SC053",
+      "setPageName" : "Rarity Collection Quarter Century Edition",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Collector's Rare",
+        "Secret Rare",
+        "Extra Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "sp_sets" : [
+    {
+      "cardNumber" : "EOJ-SP047",
+      "setPageName" : "Enemy of Justice",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "SDDE-SP028",
+      "setPageName" : "The Dark Emperor Structure Deck",
+      "rarities" : [
+        "Common"
+      ]
+    },
+    {
+      "cardNumber" : "RYMP-SP081",
+      "setPageName" : "Ra Yellow Mega Pack",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUSA-SP060",
+      "setPageName" : "Duelist Saga",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "BLMR-SP088",
+      "setPageName" : "Battles of Legend: Monstrous Revenge",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    }
+  ]
+}

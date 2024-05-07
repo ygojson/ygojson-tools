@@ -1,0 +1,29 @@
+{
+  "de_database_id" : "28809003",
+  "de_name" : "Legendary Decks II",
+  "en_database_id" : "18810002",
+  "en_name" : "Legendary Decks II",
+  "es_database_id" : "58809003",
+  "es_name" : "Barajas Legendarias II",
+  "eu_release_date" : "October 6, 2016",
+  "fr/de/it/sp_release_date" : "October 6, 2016",
+  "fr_database_id" : "38809003",
+  "fr_name" : "Decks Legendaires II",
+  "image" : "LDK2-DeckEN.png",
+  "it_database_id" : "48809003",
+  "it_name" : "I Deck Leggendari II",
+  "na_release_date" : "October 7, 2016",
+  "next" : "Legendary Dragon Decks",
+  "oc_release_date" : "October 6, 2016",
+  "page_id" : "442814",
+  "prefix" : "LDK2",
+  "prev" : "Yugi's Legendary Decks",
+  "pt_database_id" : "18810002",
+  "pt_name" : "Decks Lendários II",
+  "pt_release_date" : "October 7, 2016",
+  "size" : [
+    "135"
+  ],
+  "sp-lat_release_date" : "October 7, 2016",
+  "type" : "Collector's Set"
+}

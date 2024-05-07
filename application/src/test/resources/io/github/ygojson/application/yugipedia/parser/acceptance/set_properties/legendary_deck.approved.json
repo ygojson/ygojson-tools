@@ -1,0 +1,28 @@
+{
+  "de_database_id" : "28808001",
+  "de_name" : "Yugi's Legendary Decks",
+  "en_database_id" : "18809001",
+  "en_name" : "Yugi's Legendary Decks",
+  "es_database_id" : "58808001",
+  "es_name" : "Barajas Legendarias de Yugi",
+  "eu_release_date" : "November 12, 2015",
+  "fr/de/it/sp_release_date" : "November 12, 2015",
+  "fr_database_id" : "38808001",
+  "fr_name" : "Decks Légendaires de Yugi",
+  "image" : "Cover YGLD-DeckEN.png",
+  "it_database_id" : "48808001",
+  "it_name" : "I Deck Leggendari di Yugi",
+  "na_release_date" : "November 13, 2015",
+  "next" : "Legendary Decks II",
+  "oc_release_date" : "November 12, 2015",
+  "page_id" : "417231",
+  "prefix" : "YGLD",
+  "pt_database_id" : "18809001",
+  "pt_name" : "Decks Lendários do Yugi",
+  "pt_release_date" : "November 13, 2015",
+  "size" : [
+    "133"
+  ],
+  "sp-lat_release_date" : "November 13, 2015",
+  "type" : "Collector's Set"
+}

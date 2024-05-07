@@ -1,0 +1,825 @@
+{
+  "action" : [
+    "Tributes itself for cost"
+  ],
+  "ae_sets" : [
+    {
+      "cardNumber" : "CR01-AE012",
+      "setPageName" : "Creation Pack 01",
+      "rarities" : [
+        "Ultra Rare",
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CR01-AES03",
+      "setPageName" : "Creation Pack 01 +1 Bonus Pack",
+      "rarities" : [
+        "Ultra Rare",
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "archseries" : [
+    "Signer Dragon",
+    "Stardust (archetype)"
+  ],
+  "atk" : "2500",
+  "attribute" : "WIND",
+  "current_image" : "1",
+  "database_id" : "7734",
+  "de_lore" : "1 Empfänger + 1+ Nicht-Empfänger-Monster\nWenn eine Karte oder ein Effekt aktiviert wird, die oder der eine oder mehr Karten auf dem Spielfeld zerstören würde (Schnelleffekt): Du kannst diese Karte als Tribut anbieten; annulliere die Aktivierung und falls du dies tust, zerstöre sie. Während der End Phase, falls dieser Effekt in diesem Spielzug aktiviert (und nicht annulliert) wurde: Du kannst diese Karte als Spezialbeschwörung von deinem Friedhof beschwören.",
+  "de_name" : "Sternenstaubdrache",
+  "de_sets" : [
+    {
+      "cardNumber" : "CT05-DE001",
+      "setPageName" : "Collectible Tins 2008 Wave 1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TDGS-DE040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-DE014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD3-DE037",
+      "setPageName" : "Gold Series 3",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT07-DE021",
+      "setPageName" : "Collectible Tins 2010 Wave 2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU06-DE007",
+      "setPageName" : "Turbo Pack: Booster Six",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "AC11-DE024",
+      "setPageName" : "Yu-Gi-Oh! Advent Calendar",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHSP-DESE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-DE076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-DE031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-DE103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-DE050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-DE100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-DE016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "def" : "2000",
+  "effect_types" : [
+    "Quick",
+    "Trigger"
+  ],
+  "en_sets" : [
+    {
+      "cardNumber" : "CT05-EN001",
+      "setPageName" : "Collectible Tins 2008 Wave 1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TDGS-EN040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-EN014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD3-EN037",
+      "setPageName" : "Gold Series 3",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT07-EN021",
+      "setPageName" : "Collectible Tins 2010 Wave 2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU06-EN007",
+      "setPageName" : "Turbo Pack: Booster Six",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHSP-ENSE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-EN076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-EN031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-EN103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-EN050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-EN100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-EN016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "es_lore" : "1 Cantante + 1+ monstruos que no sean Cantantes\nCuando es activada una carta o efecto que fuera a destruir una o más cartas en el Campo (Efecto Rápido): puedes Sacrificar esta carta; niega la activación y, si lo haces, destruye la carta. Durante la End Phase, si este turno este efecto fue activado (y no fue negado): puedes Invocar esta carta de Modo Especial desde tu Cementerio.",
+  "es_name" : "Dragón de Polvo de Estrellas",
+  "fr_lore" : "1 Syntoniseur + 1+ monstre non-Syntoniseur\nLorsqu'une carte ou un effet qui va détruire une ou plusieurs cartes sur le Terrain est activé (Effet Rapide) : vous pouvez Sacrifier cette carte ; annulez l'activation, et si vous le faites, détruisez-la. Durant la End Phase, si cet effet a été activé ce tour (et n'a pas été annulé) : vous pouvez Invoquer Spécialement cette carte depuis votre Cimetière.",
+  "fr_name" : "Dragon Poussière d'Étoile",
+  "fr_sets" : [
+    {
+      "cardNumber" : "CT05-FR001",
+      "setPageName" : "Collectible Tins 2008 Wave 1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TDGS-FR040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-FR014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD3-FR037",
+      "setPageName" : "Gold Series 3",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT07-FR021",
+      "setPageName" : "Collectible Tins 2010 Wave 2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU06-FR007",
+      "setPageName" : "Turbo Pack: Booster Six",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHSP-FRSE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-FR076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-FR031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-FR103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-FR050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-FR100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-FR016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "image" : "1; StardustDragon-TN23-EN-QCScR-LE.png; StardustDragon-MADU-EN-VG-artwork.png\n2; StardustDragon-DUPO-EN-UR-LE.png;    StardustDragon-OW-2.png\n3; StardustDragon-CCC1-JP-NPR.png",
+  "it_lore" : "1 Tuner + 1+ mostri non-Tuner\nQuando viene attivata una carta o un effetto che sta per distruggere una o più carte sul Terreno (Effetto Rapido): puoi offrire come Tributo questa carta; annulla l'attivazione e, se lo fai, distruggila. Durante la End Phase, se questo effetto è stato attivato in questo turno (e non è stato annullato): puoi Evocare Specialmente questa carta dal tuo Cimitero.",
+  "it_name" : "Drago Polvere di Stelle",
+  "it_sets" : [
+    {
+      "cardNumber" : "CT05-IT001",
+      "setPageName" : "Collectible Tins 2008 Wave 1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TDGS-IT040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-IT014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD3-IT037",
+      "setPageName" : "Gold Series 3",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT07-IT021",
+      "setPageName" : "Collectible Tins 2010 Wave 2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU06-IT007",
+      "setPageName" : "Turbo Pack: Booster Six",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHSP-ITSE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-IT076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-IT031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-IT103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-IT050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-IT100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-IT016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "ja_lore" : "チューナー＋チューナー<ruby>以<rt>い</rt></ruby><ruby>外<rt>がい</rt></ruby>のモンスター１<ruby>体<rt>たい</rt></ruby><ruby>以<rt>い</rt></ruby><ruby>上<rt>じょう</rt></ruby>\n①：フィールドのカードを<ruby>破<rt>は</rt></ruby><ruby>壊<rt>かい</rt></ruby>する<ruby>魔<rt>ま</rt></ruby><ruby>法<rt>ほう</rt></ruby>・<ruby>罠<rt>トラップ</rt></ruby>・モンスターの<ruby>効<rt>こう</rt></ruby><ruby>果<rt>か</rt></ruby>が<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>した<ruby>時<rt>とき</rt></ruby>、このカードをリリースして<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>できる。その<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>を<ruby>無<rt>む</rt></ruby><ruby>効<rt>こう</rt></ruby>にし<ruby>破<rt>は</rt></ruby><ruby>壊<rt>かい</rt></ruby>する。②：このカードの①の<ruby>効<rt>こう</rt></ruby><ruby>果<rt>か</rt></ruby>を<ruby>適<rt>てき</rt></ruby><ruby>用<rt>よう</rt></ruby>したターンのエンドフェイズに<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>できる。その<ruby>効<rt>こう</rt></ruby><ruby>果<rt>か</rt></ruby>を<ruby>発<rt>はつ</rt></ruby><ruby>動<rt>どう</rt></ruby>するためにリリースしたこのカードを<ruby>墓<rt>ぼ</rt></ruby><ruby>地<rt>ち</rt></ruby>から<ruby>特<rt>とく</rt></ruby><ruby>殊<rt>しゅ</rt></ruby><ruby>召<rt>しょう</rt></ruby><ruby>喚<rt>かん</rt></ruby>する。",
+  "ja_name" : "スターダスト・ドラゴン",
+  "jp_sets" : [
+    {
+      "cardNumber" : "TDGS-JP040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Holographic Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-JP014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "MFC1-JP001",
+      "setPageName" : "Monster Figure Collection promotional cards",
+      "rarities" : [
+        "Duel Terminal Normal Parallel Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GS04-JP009",
+      "setPageName" : "Gold Series 2012",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DE03-JP015",
+      "setPageName" : "Duelist Edition Volume 3",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GDB1-JP069",
+      "setPageName" : "The Gold Box",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TRC1-JP005",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GP16-JP009",
+      "setPageName" : "Gold Pack 2016",
+      "rarities" : [
+        "Gold Rare",
+        "Gold Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20TH-JPBS3",
+      "setPageName" : "20th Anniversary Duelist Box",
+      "rarities" : [
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "20CP-JPT06",
+      "setPageName" : "Surpassing 10000 Cards Commemoration Special Pack",
+      "rarities" : [
+        "Secret Rare",
+        "20th Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-JP006",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Normal Parallel Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CCC1-JP003",
+      "setPageName" : "Coco's x Yu-Gi-Oh! Card Game Anniversary Campaign 1",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
+  "ko_lore" : "튜너 ＋ 튜너 이외의 몬스터 1장 이상\n①: 필드의 카드를 파괴하는 마법 / 함정 / 몬스터의 효과가 발동했을 때, 이 카드를 릴리스하고 발동할 수 있다. 그 발동을 무효로 하고 파괴한다. ②: 이 카드의 ①의 효과를 적용한 턴의 엔드 페이즈에 발동할 수 있다. 그 효과를 발동하기 위해 릴리스한 이 카드를 묘지에서 특수 소환한다.",
+  "ko_name" : "스타더스트 드래곤",
+  "ko_rr_name" : "Seutadeoseuteu Deuraegon",
+  "kr_sets" : [
+    {
+      "cardNumber" : "TDGS-KR040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Holographic Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-KR014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP00-KRSE1",
+      "setPageName" : "Duelist Pack: Yugi Special Edition",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GS04-KR009",
+      "setPageName" : "Gold Series 2012",
+      "rarities" : [
+        "Common",
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TRC1-KR005",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CHBI-KRBS3",
+      "setPageName" : "Chronicle Binder",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SP19-KR026",
+      "setPageName" : "Special Pack Vol.3",
+      "rarities" : [
+        "Secret Rare",
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PAC1-KR006",
+      "setPageName" : "Prismatic Art Collection",
+      "rarities" : [
+        "Normal Parallel Rare",
+        "Secret Rare",
+        "Prismatic Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SYP1-KR106",
+      "setPageName" : "Synergy Pack 01: Syncro Acceleration",
+      "rarities" : [
+        "Common",
+        "Secret Rare",
+        "Quarter Century Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GPC1-KR004",
+      "setPageName" : "Gopizza x Yu-Gi-Oh! Official Card Game Collaboration Campaign",
+      "rarities" : [
+        "Normal Parallel Rare"
+      ]
+    }
+  ],
+  "level" : "8",
+  "lore" : "1 Tuner + 1+ non-Tuner monsters\nWhen a card or effect is activated that would destroy a card(s) on the field (Quick Effect): You can Tribute this card; negate the activation, and if you do, destroy it. During the End Phase, if this effect was activated this turn (and was not negated): You can Special Summon this card from your GY.",
+  "m/s/t" : [
+    "Negates the activation of Effect Monster's effect",
+    "Negates the activation of Spell Cards",
+    "Negates the activation of Trap Cards",
+    "Destroys Monster Cards",
+    "Destroys Spell Cards",
+    "Destroys Trap Cards"
+  ],
+  "materials" : "1 Tuner + 1 or more non-Tuner monsters",
+  "misc" : [
+    "Cover card"
+  ],
+  "name" : "Stardust Dragon",
+  "page_id" : "86825",
+  "password" : "44508094",
+  "pt_lore" : "1 Regulador + 1+ monstros não-Reguladores\nQuando um card ou efeito que destruiria um ou mais cards no campo for ativado (Efeito Rápido): você pode oferecer este card como Tributo; negue a ativação e, se isso acontecer, destrua-o. Durante a Fase Final, se este efeito foi ativado neste turno (e não foi negado): você pode Invocar este card por Invocação-Especial do seu Cemitério.",
+  "pt_name" : "Dragão da Poeira Estelar",
+  "pt_sets" : [
+    {
+      "cardNumber" : "SHSP-PTSE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-PT076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-PT031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-PT103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-PT050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-PT100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-PT016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "related_to_archseries" : [
+    "/Assault Mode",
+    "Cosmic Synchro Monster",
+    "Duel Dragon",
+    "Majestic",
+    "Malefic",
+    "Signature move",
+    "Synchro (archetype)"
+  ],
+  "romaji_name" : "Sutādasuto Doragon",
+  "sc_lore" : "协调＋1只以上协调以外的怪兽\n①：破坏场上的卡之魔法・陷阱・怪兽的效果发动时，解放此卡可以发动。将该发动无效并破坏。②：适用此卡的①效果的回合的结束阶段可以发动。将为发动该效果解放的此卡从墓地特殊召唤。",
+  "sc_name" : "星尘龙",
+  "sc_sets" : [
+    {
+      "cardNumber" : "TRC1-SC005",
+      "setPageName" : "The Rarity Collection",
+      "rarities" : [
+        "Extra Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SD28-SC044",
+      "setPageName" : "Structure Deck: Synchron Extreme",
+      "rarities" : [
+        "Common"
+      ]
+    }
+  ],
+  "sm_for" : [
+    "Majestic Star Dragon",
+    "Shooting Star Dragon"
+  ],
+  "sp_sets" : [
+    {
+      "cardNumber" : "CT05-SP001",
+      "setPageName" : "Collectible Tins 2008 Wave 1",
+      "rarities" : [
+        "Secret Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TDGS-SP040",
+      "setPageName" : "The Duelist Genesis",
+      "rarities" : [
+        "Ultra Rare",
+        "Ultimate Rare",
+        "Ghost Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DP08-SP014",
+      "setPageName" : "Duelist Pack: Yusei",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "GLD3-SP037",
+      "setPageName" : "Gold Series 3",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "CT07-SP021",
+      "setPageName" : "Collectible Tins 2010 Wave 2",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TU06-SP007",
+      "setPageName" : "Turbo Pack: Booster Six",
+      "rarities" : [
+        "Rare"
+      ]
+    },
+    {
+      "cardNumber" : "SHSP-SPSE1",
+      "setPageName" : "Shadow Specters: Special Edition",
+      "rarities" : [
+        "Super Rare"
+      ]
+    },
+    {
+      "cardNumber" : "PGLD-SP076",
+      "setPageName" : "Premium Gold",
+      "rarities" : [
+        "Gold Rare"
+      ]
+    },
+    {
+      "cardNumber" : "LC5D-SP031",
+      "setPageName" : "Legendary Collection 5D's Mega Pack",
+      "rarities" : [
+        "Common",
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DUPO-SP103",
+      "setPageName" : "Duel Power",
+      "rarities" : [
+        "Ultra Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TOCH-SP050",
+      "setPageName" : "Toon Chaos",
+      "rarities" : [
+        "Rare",
+        "Collector's Rare"
+      ]
+    },
+    {
+      "cardNumber" : "DAMA-SP100",
+      "setPageName" : "Dawn of Majesty",
+      "rarities" : [
+        "Starlight Rare"
+      ]
+    },
+    {
+      "cardNumber" : "TN23-SP016",
+      "setPageName" : "25th Anniversary Tin: Dueling Heroes",
+      "rarities" : [
+        "Quarter Century Secret Rare"
+      ]
+    }
+  ],
+  "summoning" : [
+    "1 or more non-Tuner Synchro Materials",
+    "Does not require specific Synchro Materials",
+    "Special Summons itself from your Graveyard"
+  ],
+  "types" : "Dragon / Synchro / Effect"
+}
