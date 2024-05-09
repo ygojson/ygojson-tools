@@ -1,13 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.ygojson</groupId>
-    <artifactId>ygojson-parent</artifactId>
+    <artifactId>ygojson-tools</artifactId>
     <version>0.2.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <name>YGOJSON Parent</name>
 
     <properties>
         <java.version>21</java.version>
@@ -15,51 +12,145 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
         <!-- skip variable-->
         <skipLint>false</skipLint>
-        <!-- VERSIONS -->
-        <!-- dependencies -->
-        <jackson.bom.version>2.16.1</jackson.bom.version>
-        <jakarta-jakartaee.bom.version>10.0.0</jakarta-jakartaee.bom.version>
-        <jsonschema-generator.bom.version>4.33.1</jsonschema-generator.bom.version>
+        <skipITs>true</skipITs>
+        <!-- test tags used to override in contract test -->
+        <includedTestTags></includedTestTags>
+        <excludedTestTags>contract-test</excludedTestTags>
+
+        <!-- quarkus dependencies -->
+        <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
+        <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
+        <quarkus.platform.version>3.10.0</quarkus.platform.version>
+        <!-- other dependencies -->
         <okhttp.bom.version>4.12.0</okhttp.bom.version>
         <resilience4j.bom.version>2.2.0</resilience4j.bom.version>
-        <retrofit.version>2.9.0</retrofit.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <!-- infrastructure dependencies -->
         <uuid-creator.version>5.3.7</uuid-creator.version>
-        <spring-boot-dependencies.bom.version>3.2.2</spring-boot-dependencies.bom.version>
-        <picocli.version>4.7.5</picocli.version>
-        <nitrite.bom.version>4.2.1</nitrite.bom.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <retrofit.version>2.9.0</retrofit.version>
         <!-- test dependencies -->
+        <assertj.bom.version>3.24.2</assertj.bom.version>
         <approvaltests.version>22.3.3</approvaltests.version>
-        <instancio-junit.version>4.3.1</instancio-junit.version>
+        <instancio.junit.version>4.3.1</instancio.junit.version>
+        <!-- TODO: not sure if we will require it for testing? -->
         <jimfs.version>1.3.0</jimfs.version>
-        <!-- reporting dependencies-->
-        <jacoco.version>0.8.11</jacoco.version>
+
+        <!-- plugin version-->
+        <spotless-plugin.version>2.40.0</spotless-plugin.version>
+        <enforcer-plugin.version>3.2.1</enforcer-plugin.version>
+        <jsonschema2pojo-plugin.version>1.2.1</jsonschema2pojo-plugin.version>
+        <build-helper-plugin.version>3.4.0</build-helper-plugin.version>
+        <compiler-plugin.version>3.12.1</compiler-plugin.version>
+        <surefire-plugin.version>3.2.5</surefire-plugin.version>
+        <failsafe-plugin.version>3.2.5</failsafe-plugin.version>
+        <jacoco-plugin.version>0.8.11</jacoco-plugin.version>
     </properties>
 
-    <modules>
-        <module>model</module>
-        <module>application</module>
-    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <!-- quarkus -->
+            <dependency>
+                <groupId>${quarkus.platform.group-id}</groupId>
+                <artifactId>${quarkus.platform.artifact-id}</artifactId>
+                <version>${quarkus.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- other-->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp-bom</artifactId>
+                <version>${okhttp.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-bom</artifactId>
+                <version>${resilience4j.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <!-- testing -->
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-bom</artifactId>
+                <version>${assertj.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-    <!-- common dependencies for all projects -->
     <dependencies>
-        <!-- logging interface should be the same -->
+        <!-- TODO: dependencies to remove -->
+        <!-- TODO: slf4j should be replaced by other logger -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
         </dependency>
-        <!-- also provide test dependencies to all modules to have a consistent infrastructure -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <scope>test</scope>
+            <groupId>org.jboss.slf4j</groupId>
+            <artifactId>slf4j-jboss-logmanager</artifactId>
+        </dependency>
+        <!-- TODO: end of removal -->
+        <!-- runtime dependencies -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-picocli</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-config-yaml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jackson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-arc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.f4b6a3</groupId>
+            <artifactId>uuid-creator</artifactId>
+            <version>${uuid-creator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-jackson</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-scalars</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-ratelimiter</artifactId>
+        </dependency>
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-junit5</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -70,13 +161,21 @@
         <dependency>
             <groupId>com.approvaltests</groupId>
             <artifactId>approvaltests</artifactId>
+            <version>${approvaltests.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.instancio</groupId>
             <artifactId>instancio-junit</artifactId>
+            <version>${instancio.junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>mockwebserver</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- TODO: not sure if required -->
         <dependency>
             <groupId>com.google.jimfs</groupId>
             <artifactId>jimfs</artifactId>
@@ -90,6 +189,7 @@
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
+                <version>${spotless-plugin.version}</version>
                 <configuration>
                     <skip>${skipLint}</skip>
                     <java>
@@ -118,12 +218,15 @@
                         <goals>
                             <goal>check</goal>
                         </goals>
+                        <!-- attach to the compile phase, as otherwise tests run and it is a waste of time-->
+                        <phase>compile</phase>
                     </execution>
                 </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${enforcer-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>enforce</id>
@@ -141,10 +244,149 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- jacoco should also run on all tests to provide a coverage report -->
+            <!-- configure model generation -->
+            <plugin>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                <version>${jsonschema2pojo-plugin.version}</version>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
+                    <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
+                    <targetPackage>io.github.ygojson.model</targetPackage>
+                    <sourceType>jsonschema</sourceType>
+                    <annotationStyle>jackson2</annotationStyle>
+                    <includeAdditionalProperties>false</includeAdditionalProperties>
+                    <!-- TODO: requires something at the jsonschema2pojo level to have he jakarta annotation -->
+                    <includeGeneratedAnnotation>false</includeGeneratedAnnotation>
+                    <useJakartaValidation>true</useJakartaValidation>
+                    <includeJsr303Annotations>true</includeJsr303Annotations>
+                    <includeHashcodeAndEquals>true</includeHashcodeAndEquals>
+                    <includeToString>true</includeToString>
+                    <inclusionLevel>NON_EMPTY</inclusionLevel>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-models</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>${build-helper-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>add-contract-test-source</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>src/contract-test/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>${quarkus.platform.group-id}</groupId>
+                <artifactId>quarkus-maven-plugin</artifactId>
+                <version>${quarkus.platform.version}</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>generate-code</goal>
+                            <goal>generate-code-tests</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- configure mapstruct and compiler args -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler-plugin.version}</version>
+                <configuration>
+                    <!-- this is added by quarkus -->
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>default-compile</id>
+                        <configuration>
+                            <source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>
+                            <annotationProcessorPaths>
+                                <path>
+                                    <groupId>org.mapstruct</groupId>
+                                    <artifactId>mapstruct-processor</artifactId>
+                                    <version>${mapstruct.version}</version>
+                                </path>
+                            </annotationProcessorPaths>
+                            <showWarnings>true</showWarnings>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire-plugin.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                        <maven.home>${maven.home}</maven.home>
+                    </systemPropertyVariables>
+                    <excludedGroups>${excludedTestTags}</excludedGroups>
+                    <groups>${includedTestTags}</groups>
+                </configuration>
+            </plugin>
+            <!-- TODO: what to do with thirdparty tests then? -->
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${surefire-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <systemPropertyVariables>
+                        <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                        <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                        <maven.home>${maven.home}</maven.home>
+                    </systemPropertyVariables>
+                    <excludedGroups>${excludedTestTags}</excludedGroups>
+                    <groups>${includedTestTags}</groups>
+                </configuration>
+            </plugin>
+            <!-- TODO: jacoco quarkus integration should be used if we have quarkus tests -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -161,166 +403,32 @@
                 </executions>
             </plugin>
         </plugins>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.11.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.3.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.3.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.4.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.jsonschema2pojo</groupId>
-                    <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                    <version>1.2.1</version>
-                </plugin>
-                <plugin>
-                    <groupId>com.diffplug.spotless</groupId>
-                    <artifactId>spotless-maven-plugin</artifactId>
-                    <version>2.40.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.2.1</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>3.1.2</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.1.2</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>3.2.5</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.jacoco</groupId>
-                    <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>${jacoco.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- bom dependencies -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot-dependencies.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>jakarta.platform</groupId>
-                <artifactId>jakarta.jakartaee-bom</artifactId>
-                <version>${jakarta-jakartaee.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <version>${jackson.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp-bom</artifactId>
-                <version>${okhttp.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>com.github.victools</groupId>
-                <artifactId>jsonschema-generator-bom</artifactId>
-                <version>${jsonschema-generator.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>io.github.resilience4j</groupId>
-                <artifactId>resilience4j-bom</artifactId>
-                <version>${resilience4j.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.dizitart</groupId>
-                <artifactId>nitrite-bom</artifactId>
-                <version>${nitrite.bom.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <!-- singular dependencies -->
-            <dependency>
-                <groupId>com.squareup.retrofit2</groupId>
-                <artifactId>retrofit</artifactId>
-                <version>${retrofit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.retrofit2</groupId>
-                <artifactId>converter-jackson</artifactId>
-                <version>${retrofit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.retrofit2</groupId>
-                <artifactId>converter-scalars</artifactId>
-                <version>${retrofit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct</artifactId>
-                <version>${mapstruct.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>info.picocli</groupId>
-                <artifactId>picocli-spring-boot-starter</artifactId>
-                <version>${picocli.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.f4b6a3</groupId>
-                <artifactId>uuid-creator</artifactId>
-                <version>${uuid-creator.version}</version>
-            </dependency>
-            <!--TEST DEPENDENCIES-->
-            <!-- singular dependencies -->
-            <dependency>
-                <groupId>com.approvaltests</groupId>
-                <artifactId>approvaltests</artifactId>
-                <version>${approvaltests.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.instancio</groupId>
-                <artifactId>instancio-junit</artifactId>
-                <version>${instancio-junit.version}</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+    <profiles>
+        <profile>
+            <id>native</id>
+            <activation>
+                <property>
+                    <name>native</name>
+                </property>
+            </activation>
+            <properties>
+                <skipITs>false</skipITs>
+                <quarkus.native.enabled>true</quarkus.native.enabled>
+            </properties>
+        </profile>
+        <profile>
+            <id>contract-test</id>
+            <activation>
+                <property>
+                    <name>contract-test</name>
+                </property>
+            </activation>
+            <properties>
+                <includedTestTags>contract-test</includedTestTags>
+                <excludedTestTags></excludedTestTags>
+            </properties>
+        </profile>
+    </profiles>
 </project>
