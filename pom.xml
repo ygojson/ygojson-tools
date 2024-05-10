@@ -251,12 +251,14 @@
                 <version>${jsonschema2pojo-plugin.version}</version>
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-                    <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
                     <targetPackage>io.github.ygojson.model</targetPackage>
                     <sourceType>jsonschema</sourceType>
                     <annotationStyle>jackson2</annotationStyle>
                     <includeAdditionalProperties>false</includeAdditionalProperties>
-                    <!-- TODO: requires something at the jsonschema2pojo level to have he jakarta annotation -->
+                    <!--
+                    TODO: requires something at the jsonschema2pojo level to have he jakarta annotation
+                    TODO: see https://github.com/joelittlejohn/jsonschema2pojo/issues/1461
+                    -->
                     <includeGeneratedAnnotation>false</includeGeneratedAnnotation>
                     <useJakartaValidation>true</useJakartaValidation>
                     <includeJsr303Annotations>true</includeJsr303Annotations>
@@ -278,18 +280,6 @@
                 <artifactId>build-helper-maven-plugin</artifactId>
                 <version>${build-helper-plugin.version}</version>
                 <executions>
-                    <execution>
-                        <id>add-source</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>${project.build.directory}/generated-sources</source>
-                            </sources>
-                        </configuration>
-                    </execution>
                     <execution>
                         <id>add-contract-test-source</id>
                         <phase>generate-test-sources</phase>
