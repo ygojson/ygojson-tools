@@ -35,7 +35,10 @@
         <assertj.bom.version>3.24.2</assertj.bom.version>
         <approvaltests.version>22.3.3</approvaltests.version>
         <instancio.junit.version>4.3.1</instancio.junit.version>
-        <!-- TODO: not sure if we will require it for testing? -->
+        <!--
+        TODO: not sure if we will require it for testing?
+        TODO: see https://github.com/ygojson/ygojson-tools/issues/126
+        -->
         <jimfs.version>1.3.0</jimfs.version>
 
         <!-- plugin version-->
@@ -86,8 +89,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- TODO: dependencies to remove -->
-        <!-- TODO: slf4j should be replaced by other logger -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -96,7 +97,6 @@
             <groupId>org.jboss.slf4j</groupId>
             <artifactId>slf4j-jboss-logmanager</artifactId>
         </dependency>
-        <!-- TODO: end of removal -->
         <!-- runtime dependencies -->
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -175,7 +175,10 @@
             <artifactId>mockwebserver</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- TODO: not sure if required -->
+        <!--
+        TODO: not sure if we will require it for testing?
+        TODO: see https://github.com/ygojson/ygojson-tools/issues/126
+        -->
         <dependency>
             <groupId>com.google.jimfs</groupId>
             <artifactId>jimfs</artifactId>
@@ -224,7 +227,6 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>${enforcer-plugin.version}</version>
                 <executions>
@@ -256,8 +258,8 @@
                     <annotationStyle>jackson2</annotationStyle>
                     <includeAdditionalProperties>false</includeAdditionalProperties>
                     <!--
-                    TODO: requires something at the jsonschema2pojo level to have he jakarta annotation
-                    TODO: see https://github.com/joelittlejohn/jsonschema2pojo/issues/1461
+                    TODO: requires a change in jsonschema2pojo to use the jakarta annotation instead
+                    TODO: see https://github.com/ygojson/ygojson-tools/issues/77
                     -->
                     <includeGeneratedAnnotation>false</includeGeneratedAnnotation>
                     <useJakartaValidation>true</useJakartaValidation>
@@ -350,7 +352,6 @@
                     <groups>${includedTestTags}</groups>
                 </configuration>
             </plugin>
-            <!-- TODO: what to do with thirdparty tests then? -->
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${surefire-plugin.version}</version>
@@ -372,7 +373,10 @@
                     <groups>${includedTestTags}</groups>
                 </configuration>
             </plugin>
-            <!-- TODO: jacoco quarkus integration should be used if we have quarkus tests -->
+            <!--
+            TODO: when https://github.com/ygojson/ygojson-tools/issues/128 is implemented
+            TODO: jacoco-quarkus should be used to include QuarkusTests in the report
+            -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
