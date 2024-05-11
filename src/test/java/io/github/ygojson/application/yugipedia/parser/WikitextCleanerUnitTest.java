@@ -139,4 +139,14 @@ class WikitextCleanerUnitTest {
 				"<ruby>kanji1<rt>furigana1</rt></ruby>\n<ruby>kanji2<rt>furigana2</rt></ruby>"
 			);
 	}
+
+	@Test
+	void given_commentWithEndOfLines_when_cleaned_then_noCommentsPresent() {
+		// given
+		final String value = "March 2003<!-- \nfirst\nsecond\nthird\n-->";
+		// when
+		final String cleaned = CLEANER.cleanupWikitext(value);
+		// then
+		assertThat(cleaned).isEqualTo("March 2003");
+	}
 }
