@@ -19,8 +19,12 @@ import io.github.ygojson.model.data.definition.localization.Region;
 /**
  * Mapper for the YGOJSON {@link Print} from {@link YugipediaProperty} map.
  */
-// TODO: use CDI for injection as we will use it with quarkus
-@Mapper(uses = YugipediaPropertyBaseMapper.class)
+@Mapper(
+	uses = YugipediaPropertyBaseMapper.class,
+	injectionStrategy = InjectionStrategy.CONSTRUCTOR,
+	unmappedTargetPolicy = ReportingPolicy.ERROR,
+	componentModel = MappingConstants.ComponentModel.JAKARTA_CDI
+)
 public abstract class YugipediaPrintMapper {
 
 	protected static final String TO_QUESTION_MARK_AS_NULL =

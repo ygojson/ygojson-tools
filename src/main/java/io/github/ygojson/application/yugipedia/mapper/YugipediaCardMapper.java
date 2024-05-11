@@ -14,8 +14,12 @@ import io.github.ygojson.model.data.definition.LinkArrow;
 /**
  * Mapper for the YGOJSON {@link Card} from {@link YugipediaProperty} map.
  */
-// TODO: use CDI for injection as we will use it with quarkus
-@Mapper(uses = YugipediaPropertyBaseMapper.class)
+@Mapper(
+	uses = YugipediaPropertyBaseMapper.class,
+	injectionStrategy = InjectionStrategy.CONSTRUCTOR,
+	unmappedTargetPolicy = ReportingPolicy.ERROR,
+	componentModel = MappingConstants.ComponentModel.JAKARTA_CDI
+)
 public abstract class YugipediaCardMapper extends BaseCardMapper {
 
 	protected static final String TO_MAYBE_UNDEFINED_INTEGER =
