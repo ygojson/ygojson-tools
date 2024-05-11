@@ -7,7 +7,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-import com.github.f4b6a3.uuid.alt.GUID;
+import com.fasterxml.uuid.Generators;
+import com.fasterxml.uuid.impl.NameBasedGenerator;
+import com.fasterxml.uuid.impl.UUIDUtil;
 
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.Print;
@@ -19,21 +21,23 @@ import io.github.ygojson.model.data.definition.Identifiers;
  */
 public class YgojsonIDGenerator {
 
-	public static final UUID NIL_UUID = GUID.NIL.toUUID();
+	private static final NameBasedGenerator NAMESPACE_GENERATOR =
+		Generators.nameBasedGenerator(NameBasedGenerator.NAMESPACE_OID);
 
 	private enum Namespace {
 		CARD("ygojon/card"),
 		SET("ygojson/set"),
 		PRINT("ygojson/print");
 
-		private final GUID namespaceGuid;
+		private final NameBasedGenerator generator;
 
 		Namespace(final String name) {
-			this.namespaceGuid = GUID.v5(GUID.NAMESPACE_OID, name);
+			this.generator =
+				Generators.nameBasedGenerator(NAMESPACE_GENERATOR.generate(name));
 		}
 
 		private UUID generateV5(final String value) {
-			return GUID.v5(this.namespaceGuid, value).toUUID();
+			return generator.generate(value);
 		}
 	}
 
@@ -122,7 +126,7 @@ public class YgojsonIDGenerator {
 			.toList();
 		// random UUID on the namespace if there is no information at all
 		if (nullFields.get() == fieldsAsString.size()) {
-			return NIL_UUID;
+			return UUIDUtil.nilUUID();
 		}
 		return namespace.generateV5(String.join("/", fieldsAsString));
 	}
