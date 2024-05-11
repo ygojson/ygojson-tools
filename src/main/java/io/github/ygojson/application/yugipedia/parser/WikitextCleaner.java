@@ -70,7 +70,8 @@ class WikitextCleaner {
 		"<ruby>{0}<rt>{1}</rt></ruby>";
 
 	private static final Pattern MARKUP_HTML_COMMENT_REGEX = Pattern.compile(
-		"<!--.*?-->"
+		"<!--.*?-->",
+		Pattern.DOTALL
 	);
 
 	/**
