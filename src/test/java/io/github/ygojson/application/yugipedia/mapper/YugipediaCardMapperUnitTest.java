@@ -8,7 +8,6 @@ import java.util.Map;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
@@ -19,7 +18,8 @@ class YugipediaCardMapperUnitTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		MAPPER = Mappers.getMapper(YugipediaCardMapper.class);
+		// do not use CDI here as this is just unit-testing
+		MAPPER = new YugipediaCardMapperImpl(new YugipediaPropertyBaseMapper());
 	}
 
 	@Test

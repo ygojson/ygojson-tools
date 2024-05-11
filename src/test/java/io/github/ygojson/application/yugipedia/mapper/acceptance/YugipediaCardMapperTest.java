@@ -5,11 +5,12 @@ import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import io.quarkus.test.junit.QuarkusTest;
+import jakarta.inject.Inject;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
 import io.github.ygojson.application.yugipedia.mapper.YugipediaCardMapper;
@@ -18,18 +19,20 @@ import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
+@QuarkusTest
 class YugipediaCardMapperTest {
 
 	private static ObjectWriter OBJECT_WRITER;
-	private static YugipediaCardMapper MAPPER;
 	private static YugipediaParser PARSER;
+
+	@Inject
+	private YugipediaCardMapper mapper;
 
 	@BeforeAll
 	static void beforeAll() {
 		OBJECT_WRITER =
 			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
 		PARSER = YugipediaParser.createCardParser();
-		MAPPER = Mappers.getMapper(YugipediaCardMapper.class);
 	}
 
 	static List<YugipediaTestDataRegistry.WikitextPageTestCase> testCases() {
@@ -50,7 +53,7 @@ class YugipediaCardMapperTest {
 			wikitextTestData.wikitext()
 		);
 		// when
-		final Card card = MAPPER.toCard(properties);
+		final Card card = mapper.toCard(properties);
 		final String asJsonString = OBJECT_WRITER.writeValueAsString(card);
 		// then
 		Approvals.verify(
