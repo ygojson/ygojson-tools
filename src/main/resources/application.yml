@@ -1,0 +1,10 @@
+quarkus:
+  log:
+    level: "WARN"
+    console:
+      format: "[%-5p - %d{yyyy-MM-dd HH:mm:ss}] - %s%n"
+    category:
+      "io.github.ygojson.application":
+        level: "INFO"
+  banner:
+    path: banner.txt
