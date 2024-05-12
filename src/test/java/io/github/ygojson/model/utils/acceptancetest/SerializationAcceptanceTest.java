@@ -1,7 +1,6 @@
 package io.github.ygojson.model.utils.acceptancetest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.instancio.Instancio;
 import org.instancio.settings.BeanValidationTarget;
 import org.instancio.settings.Keys;
@@ -15,13 +14,13 @@ import io.github.ygojson.model.utils.serialization.JsonUtils;
 
 public class SerializationAcceptanceTest {
 
-	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
-	private static ObjectMapper OBJECT_MAPPER;
+	private static JsonAcceptance ACCEPTANCE;
 	private static Settings INSTANCIO_SETTINGS;
 
 	@BeforeAll
 	static void beforeAll() {
-		OBJECT_MAPPER = JsonUtils.getObjectMapper();
+		// use the JSONUtils mapper to ensure that it is properly configured
+		ACCEPTANCE = new JsonAcceptance(JsonUtils.getObjectMapper());
 		INSTANCIO_SETTINGS =
 			Settings
 				.defaults()
@@ -45,14 +44,10 @@ public class SerializationAcceptanceTest {
 		throws JsonProcessingException {
 		// given
 		final Object dataModel = randomInstance(clazz, 1);
-		// when
-		final String serialized = OBJECT_MAPPER
-			.writerWithDefaultPrettyPrinter()
-			.writeValueAsString(dataModel);
-		// then
+		// when/then
 		final String testCase =
 			"SerializationAcceptanceTest.testDataModelSerialization." +
 			clazz.getSimpleName();
-		ACCEPTANCE.verify(testCase, serialized);
+		ACCEPTANCE.verify(testCase, dataModel);
 	}
 }
