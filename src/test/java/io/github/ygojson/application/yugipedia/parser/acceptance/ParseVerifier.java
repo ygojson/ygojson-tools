@@ -6,10 +6,12 @@ import com.fasterxml.jackson.core.util.DefaultIndenter;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import org.approvaltests.Approvals;
+
+import io.github.ygojson.acceptancetest.JsonAcceptance;
 
 class ParseVerifier {
 
+	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
 	private static ParseVerifier INSTANCE;
 
 	private final ObjectMapper objectMapper;
@@ -35,14 +37,6 @@ class ParseVerifier {
 	) throws JsonProcessingException {
 		final String asJsonString = objectMapper.writeValueAsString(properties);
 		// then
-		Approvals.verify(
-			asJsonString,
-			Approvals.NAMES
-				.withParameters()
-				.forFile()
-				.withBaseName(baseName)
-				.forFile()
-				.withExtension(".json")
-		);
+		ACCEPTANCE.verify(baseName, asJsonString);
 	}
 }

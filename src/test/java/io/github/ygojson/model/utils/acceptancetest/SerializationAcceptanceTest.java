@@ -2,7 +2,6 @@ package io.github.ygojson.model.utils.acceptancetest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.approvaltests.Approvals;
 import org.instancio.Instancio;
 import org.instancio.settings.BeanValidationTarget;
 import org.instancio.settings.Keys;
@@ -11,10 +10,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import io.github.ygojson.acceptancetest.JsonAcceptance;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
 public class SerializationAcceptanceTest {
 
+	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
 	private static ObjectMapper OBJECT_MAPPER;
 	private static Settings INSTANCIO_SETTINGS;
 
@@ -49,12 +50,9 @@ public class SerializationAcceptanceTest {
 			.writerWithDefaultPrettyPrinter()
 			.writeValueAsString(dataModel);
 		// then
-		Approvals.verify(
-			serialized,
-			Approvals.NAMES
-				.withParameters(clazz.getSimpleName())
-				.forFile()
-				.withExtension(".json")
-		);
+		final String testCase =
+			"SerializationAcceptanceTest.testDataModelSerialization." +
+			clazz.getSimpleName();
+		ACCEPTANCE.verify(testCase, serialized);
 	}
 }
