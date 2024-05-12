@@ -5,10 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import org.mapstruct.AfterMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
+import org.mapstruct.*;
 
 import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.application.logic.mapper.CardNumberParser;
@@ -23,8 +20,12 @@ import io.github.ygojson.model.utils.LocalizationUtils;
 /**
  * Mapper for the YGOJSON {@link Set} from {@link YugipediaProperty} map.
  */
-// TODO: use CDI for injection as we will use it with quarkus
-@Mapper(uses = YugipediaPropertyBaseMapper.class)
+@Mapper(
+	uses = YugipediaPropertyBaseMapper.class,
+	injectionStrategy = InjectionStrategy.CONSTRUCTOR,
+	unmappedTargetPolicy = ReportingPolicy.ERROR,
+	componentModel = MappingConstants.ComponentModel.JAKARTA_CDI
+)
 public abstract class YugipediaSetMapper {
 
 	private static final SetInfo EMPTY = new SetInfo();

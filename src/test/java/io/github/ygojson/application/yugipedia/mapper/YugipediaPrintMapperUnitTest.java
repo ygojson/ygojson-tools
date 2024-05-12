@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.application.testutil.model.PrintMother;
 import io.github.ygojson.application.yugipedia.parser.model.SetRow;
@@ -26,7 +25,8 @@ class YugipediaPrintMapperUnitTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		MAPPER = Mappers.getMapper(YugipediaPrintMapper.class);
+		// do not use CDI here as this is just unit-testing
+		MAPPER = new YugipediaPrintMapperImpl(new YugipediaPropertyBaseMapper());
 	}
 
 	@Test

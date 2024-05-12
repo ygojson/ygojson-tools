@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mapstruct.factory.Mappers;
 
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
@@ -16,7 +15,8 @@ class YugipediaSetMapperUnitTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		MAPPER = Mappers.getMapper(YugipediaSetMapper.class);
+		// do not use CDI here as this is just unit-testing
+		MAPPER = new YugipediaSetMapperImpl(new YugipediaPropertyBaseMapper());
 	}
 
 	@Test

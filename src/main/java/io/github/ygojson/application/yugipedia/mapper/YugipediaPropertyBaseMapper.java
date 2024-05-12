@@ -2,12 +2,14 @@ package io.github.ygojson.application.yugipedia.mapper;
 
 import java.util.List;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import org.mapstruct.Named;
 
 import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
+@ApplicationScoped
 class YugipediaPropertyBaseMapper {
 
 	protected static final String TO_LOWER_CASE = "toLowerCase";
