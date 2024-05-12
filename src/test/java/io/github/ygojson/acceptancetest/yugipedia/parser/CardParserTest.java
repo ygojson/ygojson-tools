@@ -1,4 +1,4 @@
-package io.github.ygojson.application.yugipedia.parser.acceptance;
+package io.github.ygojson.acceptancetest.yugipedia.parser;
 
 import java.util.List;
 import java.util.Map;
@@ -13,7 +13,7 @@ import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
 import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
-class SetParserTest {
+class CardParserTest {
 
 	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
 	private static YugipediaParser PARSER;
@@ -21,12 +21,12 @@ class SetParserTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		PARSER = YugipediaParser.createSetParser();
+		PARSER = YugipediaParser.createCardParser();
 		TEST_DATA_REGISTRY = YugipediaTestDataRegistry.getInstance();
 	}
 
 	static List<YugipediaTestDataRegistry.WikitextPageTestCase> testCases() {
-		return TEST_DATA_REGISTRY.getInfoboxSetWikitextTestCase();
+		return TEST_DATA_REGISTRY.getCardTable2WikitextTestCase();
 	}
 
 	@ParameterizedTest
@@ -41,6 +41,6 @@ class SetParserTest {
 			testCase.wikitext()
 		);
 		// then
-		ACCEPTANCE.verify("set_properties/" + testCase.testName(), cardProperties);
+		ACCEPTANCE.verify("card" + testCase.testName(), cardProperties);
 	}
 }

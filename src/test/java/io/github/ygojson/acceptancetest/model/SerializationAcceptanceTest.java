@@ -1,4 +1,4 @@
-package io.github.ygojson.model.utils.acceptancetest;
+package io.github.ygojson.acceptancetest.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.instancio.Instancio;
@@ -46,7 +46,7 @@ public class SerializationAcceptanceTest {
 		final Object dataModel = randomInstance(clazz, 1);
 		// when/then
 		final String testCase =
-			"SerializationAcceptanceTest.testDataModelSerialization." +
+			"serialization/" +
 			clazz.getSimpleName();
 		ACCEPTANCE.verify(testCase, dataModel);
 	}

@@ -1,9 +1,10 @@
-package io.github.ygojson.application.yugipedia.mapper.acceptance;
+package io.github.ygojson.acceptancetest.yugipedia.mapper;
 
 import java.util.List;
 import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,36 +13,37 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.acceptancetest.JsonAcceptance;
 import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
-import io.github.ygojson.application.yugipedia.mapper.YugipediaPrintMapper;
+import io.github.ygojson.application.yugipedia.mapper.YugipediaSetMapper;
 import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
-import io.github.ygojson.model.data.Print;
+import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
 @QuarkusTest
-class YugipediaPrintMapperTest {
+class YugipediaSetMapperTest {
 
 	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
+	private static ObjectWriter OBJECT_WRITER;
 	private static YugipediaParser PARSER;
 
 	@Inject
-	private YugipediaPrintMapper mapper;
+	private YugipediaSetMapper mapper;
 
 	@BeforeAll
 	static void beforeAll() {
 		ACCEPTANCE = new JsonAcceptance(JsonUtils.getObjectMapper());
-		PARSER = YugipediaParser.createCardParser();
+		PARSER = YugipediaParser.createSetParser();
 	}
 
 	static List<YugipediaTestDataRegistry.WikitextPageTestCase> testCases() {
 		return YugipediaTestDataRegistry
 			.getInstance()
-			.getCardTable2WikitextTestCase();
+			.getInfoboxSetWikitextTestCase();
 	}
 
 	@ParameterizedTest
 	@MethodSource("testCases")
-	void testPropertiesToPrint(
+	void testPropertiesToSet(
 		final YugipediaTestDataRegistry.WikitextPageTestCase wikitextTestData
 	) throws JsonProcessingException {
 		// given
@@ -51,10 +53,9 @@ class YugipediaPrintMapperTest {
 			wikitextTestData.wikitext()
 		);
 		// when
-		final List<Print> prints = mapper.toPrints(properties);
+		final Set set = mapper.toSet(properties);
 		// then
-		final String testCase =
-			"YugipediaPrintMapper/" + wikitextTestData.testName();
-		ACCEPTANCE.verify(testCase, prints);
+		final String testCase = "set/" + wikitextTestData.testName();
+		ACCEPTANCE.verify(testCase, set);
 	}
 }

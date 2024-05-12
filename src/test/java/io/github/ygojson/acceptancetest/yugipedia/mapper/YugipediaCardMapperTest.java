@@ -1,4 +1,4 @@
-package io.github.ygojson.application.yugipedia.mapper.acceptance;
+package io.github.ygojson.acceptancetest.yugipedia.mapper;
 
 import java.util.List;
 import java.util.Map;
@@ -53,8 +53,7 @@ class YugipediaCardMapperTest {
 		// when
 		final Card card = mapper.toCard(properties);
 		// then
-		final String testCase =
-			"YugipediaCardMapper/" + wikitextTestData.testName();
+		final String testCase = "card/" + wikitextTestData.testName();
 		ACCEPTANCE.verify(testCase, card);
 	}
 }
