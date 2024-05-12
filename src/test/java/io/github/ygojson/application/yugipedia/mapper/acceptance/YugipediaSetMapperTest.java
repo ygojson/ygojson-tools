@@ -31,8 +31,7 @@ class YugipediaSetMapperTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		OBJECT_WRITER =
-			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
+		ACCEPTANCE = new JsonAcceptance(JsonUtils.getObjectMapper());
 		PARSER = YugipediaParser.createSetParser();
 	}
 
@@ -55,9 +54,8 @@ class YugipediaSetMapperTest {
 		);
 		// when
 		final Set set = mapper.toSet(properties);
-		final String asJsonString = OBJECT_WRITER.writeValueAsString(set);
 		// then
 		final String testCase = "YugipediaSetMapper/" + wikitextTestData.testName();
-		ACCEPTANCE.verify(testCase, asJsonString);
+		ACCEPTANCE.verify(testCase, set);
 	}
 }

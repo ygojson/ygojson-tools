@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeAll;
@@ -22,8 +21,7 @@ import io.github.ygojson.model.utils.serialization.JsonUtils;
 @QuarkusTest
 class YugipediaCardMapperTest {
 
-	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();
-	private static ObjectWriter OBJECT_WRITER;
+	private static JsonAcceptance ACCEPTANCE;
 	private static YugipediaParser PARSER;
 
 	@Inject
@@ -31,8 +29,7 @@ class YugipediaCardMapperTest {
 
 	@BeforeAll
 	static void beforeAll() {
-		OBJECT_WRITER =
-			JsonUtils.getObjectMapper().writerWithDefaultPrettyPrinter();
+		ACCEPTANCE = new JsonAcceptance(JsonUtils.getObjectMapper());
 		PARSER = YugipediaParser.createCardParser();
 	}
 
@@ -55,10 +52,9 @@ class YugipediaCardMapperTest {
 		);
 		// when
 		final Card card = mapper.toCard(properties);
-		final String asJsonString = OBJECT_WRITER.writeValueAsString(card);
 		// then
 		final String testCase =
 			"YugipediaCardMapper/" + wikitextTestData.testName();
-		ACCEPTANCE.verify(testCase, asJsonString);
+		ACCEPTANCE.verify(testCase, card);
 	}
 }
