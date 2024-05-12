@@ -1,26 +1,28 @@
-package io.github.ygojson.model.utils.acceptancetest;
+package io.github.ygojson.acceptancetest.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.approvaltests.Approvals;
 import org.instancio.Instancio;
 import org.instancio.settings.BeanValidationTarget;
 import org.instancio.settings.Keys;
 import org.instancio.settings.Settings;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import io.github.ygojson.acceptancetest.JsonAcceptance;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
+@Tag("acceptance-test")
 public class SerializationAcceptanceTest {
 
-	private static ObjectMapper OBJECT_MAPPER;
+	private static JsonAcceptance ACCEPTANCE;
 	private static Settings INSTANCIO_SETTINGS;
 
 	@BeforeAll
 	static void beforeAll() {
-		OBJECT_MAPPER = JsonUtils.getObjectMapper();
+		// use the JSONUtils mapper to ensure that it is properly configured
+		ACCEPTANCE = new JsonAcceptance(JsonUtils.getObjectMapper());
 		INSTANCIO_SETTINGS =
 			Settings
 				.defaults()
@@ -44,17 +46,8 @@ public class SerializationAcceptanceTest {
 		throws JsonProcessingException {
 		// given
 		final Object dataModel = randomInstance(clazz, 1);
-		// when
-		final String serialized = OBJECT_MAPPER
-			.writerWithDefaultPrettyPrinter()
-			.writeValueAsString(dataModel);
-		// then
-		Approvals.verify(
-			serialized,
-			Approvals.NAMES
-				.withParameters(clazz.getSimpleName())
-				.forFile()
-				.withExtension(".json")
-		);
+		// when/then
+		final String testCase = "serialization/" + clazz.getSimpleName();
+		ACCEPTANCE.verify(testCase, dataModel);
 	}
 }

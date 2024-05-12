@@ -1,4 +1,4 @@
-package io.github.ygojson.application.yugipedia.mapper.acceptance;
+package io.github.ygojson.acceptancetest;
 
 /**
  * Settings for the approval tests configuration.

@@ -1,4 +1,7 @@
 quarkus:
+  test:
+    exclude-tags:
+      - "acceptance-test"
   log:
     level: "INFO"
     console:
