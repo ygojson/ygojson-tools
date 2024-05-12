@@ -7,6 +7,7 @@ import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.approvaltests.Approvals;
+import org.approvaltests.reporters.AutoApproveWhenEmptyReporter;
 import org.opentest4j.AssertionFailedError;
 
 public class JsonAcceptance {
@@ -44,6 +45,7 @@ public class JsonAcceptance {
 				.withBaseName(testCase)
 				.forFile()
 				.withExtension(".json")
+				.withReporter(new AutoApproveWhenEmptyReporter())
 		);
 	}
 
