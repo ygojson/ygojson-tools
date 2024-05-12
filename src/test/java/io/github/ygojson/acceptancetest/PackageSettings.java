@@ -6,6 +6,4 @@ package io.github.ygojson.acceptancetest;
 public class PackageSettings {
 
 	public static String ApprovalBaseDirectory = "../resources";
-
 }
-

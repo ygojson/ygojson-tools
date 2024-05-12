@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -20,6 +21,7 @@ import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
 @QuarkusTest
+@Tag("acceptance-test")
 class YugipediaSetMapperTest {
 
 	private static JsonAcceptance ACCEPTANCE = new JsonAcceptance();

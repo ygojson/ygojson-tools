@@ -6,12 +6,14 @@ import org.instancio.settings.BeanValidationTarget;
 import org.instancio.settings.Keys;
 import org.instancio.settings.Settings;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.acceptancetest.JsonAcceptance;
 import io.github.ygojson.model.utils.serialization.JsonUtils;
 
+@Tag("acceptance-test")
 public class SerializationAcceptanceTest {
 
 	private static JsonAcceptance ACCEPTANCE;
@@ -45,9 +47,7 @@ public class SerializationAcceptanceTest {
 		// given
 		final Object dataModel = randomInstance(clazz, 1);
 		// when/then
-		final String testCase =
-			"serialization/" +
-			clazz.getSimpleName();
+		final String testCase = "serialization/" + clazz.getSimpleName();
 		ACCEPTANCE.verify(testCase, dataModel);
 	}
 }
