@@ -378,10 +378,6 @@
                     <groups>${includedTestTags}</groups>
                 </configuration>
             </plugin>
-            <!--
-            TODO: when https://github.com/ygojson/ygojson-tools/issues/128 is implemented
-            TODO: jacoco-quarkus should be used to include QuarkusTests in the report
-            -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>

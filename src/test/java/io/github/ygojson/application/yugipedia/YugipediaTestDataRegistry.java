@@ -42,7 +42,7 @@ public class YugipediaTestDataRegistry {
 	 * @param pageTitle the title of the page on yugipedia that corresponds to this data
 	 * @param wikitext the wikitext of the page.
 	 */
-	// TODO: requires to implement serializable just because of https://github.com/quarkusio/quarkus/issues/15892
+	// TODO: remove serializable implmentation with https://github.com/ygojson/ygojson-tools/issues/133
 	public record WikitextPageTestCase(
 		String testName,
 		Long pageId,
