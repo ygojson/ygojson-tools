@@ -1,4 +1,4 @@
-package io.github.ygojson.application.yugipedia.mapper.acceptance;
+package io.github.ygojson.acceptancetest;
 
 /**
  * Settings for the approval tests configuration.
@@ -6,4 +6,6 @@ package io.github.ygojson.application.yugipedia.mapper.acceptance;
 public class PackageSettings {
 
 	public static String ApprovalBaseDirectory = "../resources";
+
 }
+

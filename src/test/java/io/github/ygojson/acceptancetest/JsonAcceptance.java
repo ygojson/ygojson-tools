@@ -35,8 +35,7 @@ public class JsonAcceptance {
 		verify(testCase, convert(object));
 	}
 
-	// TODO: change for the serialization to be done within the method
-	public void verify(final String testCase, final String asJsonString) {
+	private void verify(final String testCase, final String asJsonString) {
 		Approvals.verify(
 			asJsonString,
 			Approvals.NAMES
