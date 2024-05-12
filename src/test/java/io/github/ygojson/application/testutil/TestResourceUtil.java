@@ -17,6 +17,18 @@ public class TestResourceUtil {
 	}
 
 	/**
+	 * Gets the resource on the package resource folder.
+	 *
+	 * @param clazz the test class to find the resource for.
+	 *
+	 * @return a path on the resources folder for the package.
+	 */
+	public static Path getPackageResourceFolder(final Class<?> clazz) {
+		final String folderName = clazz.getPackageName().replace('.', '/');
+		return getPathOnClassPath(clazz.getClassLoader(), folderName);
+	}
+
+	/**
 	 * Gets the resource on the testdata directory.
 	 *
 	 * @param name name of the resource (can include subfolders).
@@ -26,13 +38,21 @@ public class TestResourceUtil {
 	 * @throws RuntimeException if the resource cannot be found.
 	 */
 	public static Path getTestDataResourcePathByName(final String name) {
+		return getPathOnClassPath(
+			TestResourceUtil.class.getClassLoader(),
+			TEST_DATA_FOLDER + name
+		);
+	}
+
+	private static Path getPathOnClassPath(
+		final ClassLoader loader,
+		final String name
+	) {
 		try {
-			final String folder = TEST_DATA_FOLDER + name;
-			final URL url =
-				TestResourceUtil.class.getClassLoader().getResource(folder);
+			final URL url = loader.getResource(name);
 			if (url == null) {
 				throw new IllegalStateException(
-					"Exception retrieving test-resource: " + folder
+					"Exception retrieving test-resource: " + name
 				);
 			}
 			return Paths.get(url.toURI());
