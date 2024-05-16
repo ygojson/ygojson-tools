@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 
+import okhttp3.Request;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -18,9 +19,14 @@ public abstract class AbstractYugipediaClientTest {
 
 	protected abstract YugipediaClient getClient();
 
+	protected void logRequest(Request request) {
+		// NO-OP
+	}
+
 	protected abstract void logResponse(final Response<?> response);
 
 	private <T> Response<T> callWithLog(final Call<T> call) throws IOException {
+		logRequest(call.request());
 		final Response<T> response = call.execute();
 		logResponse(response);
 		return response;
@@ -55,7 +61,7 @@ public abstract class AbstractYugipediaClientTest {
 		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
 	}
 
-	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
+	public Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		final Timestamp startAt,
 		final Timestamp endAt,
 		final String grccontinue
@@ -66,7 +72,7 @@ public abstract class AbstractYugipediaClientTest {
 		);
 	}
 
-	private Response<QueryResponse> doExecuteQueryPagesByTitle(
+	public Response<QueryResponse> doExecuteQueryPagesByTitle(
 		final PipeSeparated titles
 	) throws IOException {
 		return callWithLog(getClient().queryPagesByTitle(titles));

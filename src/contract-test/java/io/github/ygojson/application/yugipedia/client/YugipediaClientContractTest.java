@@ -1,5 +1,6 @@
 package io.github.ygojson.application.yugipedia.client;
 
+import okhttp3.Request;
 import org.junit.jupiter.api.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,5 +21,10 @@ class YugipediaClientContractTest extends AbstractYugipediaClientTest {
 		LOG.info("URL\t:{}", response.raw().request().url());
 		LOG.info("Code\t:{}", response.code());
 		LOG.info("Body\t:\t{}", response.body());
+	}
+
+	@Override
+	protected void logRequest(final Request request) {
+		LOG.info("Request: {}", request);
 	}
 }
