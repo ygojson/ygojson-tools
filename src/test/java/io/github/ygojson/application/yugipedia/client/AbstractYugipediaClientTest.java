@@ -72,7 +72,7 @@ public abstract class AbstractYugipediaClientTest {
 		);
 	}
 
-	public Response<QueryResponse> doExecuteQueryPagesByTitle(
+	private Response<QueryResponse> doExecuteQueryPagesByTitle(
 		final PipeSeparated titles
 	) throws IOException {
 		return callWithLog(getClient().queryPagesByTitle(titles));
