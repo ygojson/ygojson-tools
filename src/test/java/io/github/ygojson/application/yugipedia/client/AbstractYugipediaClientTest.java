@@ -61,7 +61,7 @@ public abstract class AbstractYugipediaClientTest {
 		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
 	}
 
-	public Response<QueryResponse> doExecuteTestQueryRecentChanges(
+	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
 		final Timestamp startAt,
 		final Timestamp endAt,
 		final String grccontinue
