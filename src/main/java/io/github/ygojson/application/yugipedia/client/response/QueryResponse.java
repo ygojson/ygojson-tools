@@ -18,6 +18,7 @@ public record QueryResponse(
 	// should use jackson annotation as it is a reserved keyword
 	@JsonProperty("continue") Continue continueInfo,
 	Query query,
+	JsonNode error,
 	JsonNode warnings,
 	JsonNode limits
 ) {
