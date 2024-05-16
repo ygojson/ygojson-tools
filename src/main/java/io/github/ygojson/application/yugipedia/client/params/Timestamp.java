@@ -34,7 +34,7 @@ public class Timestamp {
 	 * @return timestamp
 	 */
 	public static Timestamp of(final ZonedDateTime zonedDateTime) {
-		final String timestamp = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(
+		final String timestamp = DateTimeFormatter.ISO_INSTANT.format(
 			zonedDateTime
 		);
 		return new Timestamp(timestamp);
