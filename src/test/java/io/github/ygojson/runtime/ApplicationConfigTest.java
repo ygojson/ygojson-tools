@@ -17,7 +17,7 @@ class ApplicationConfigTest {
 	@Test
 	void testApplicationInfo() {
 		assertSoftly(softly -> {
-			softly.assertThat(info.name()).describedAs("url").isNotBlank();
+			softly.assertThat(info.name()).describedAs("name").isNotBlank();
 			softly.assertThat(info.version()).describedAs("version").isNotBlank();
 			softly.assertThat(info.url()).describedAs("url").isNotBlank();
 		});
