@@ -1,8 +1,9 @@
 package io.github.ygojson.runtime;
 
+import static org.assertj.core.api.SoftAssertions.assertSoftly;
+
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
-import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.application.ApplicationInfo;
@@ -15,7 +16,7 @@ class ApplicationConfigTest {
 
 	@Test
 	void testApplicationInfo() {
-		SoftAssertions.assertSoftly(softly -> {
+		assertSoftly(softly -> {
 			softly.assertThat(info.name()).describedAs("url").isNotBlank();
 			softly.assertThat(info.version()).describedAs("version").isNotBlank();
 			softly.assertThat(info.url()).describedAs("url").isNotBlank();

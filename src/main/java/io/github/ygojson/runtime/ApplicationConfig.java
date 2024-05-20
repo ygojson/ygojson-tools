@@ -33,10 +33,6 @@ public class ApplicationConfig {
 	@Produces
 	@Dependent
 	public ApplicationInfo applicationInfo() {
-		return new ApplicationInfo(
-			applicationName,
-			applicationVersion,
-			ygojsonUrl
-		);
+		return new ApplicationInfo(applicationName, applicationVersion, ygojsonUrl);
 	}
 }
