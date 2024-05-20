@@ -4,6 +4,14 @@ ygojson:
 
 # quarkus config
 quarkus:
+  hibernate-orm:
+    database:
+      generation: "drop-and-create"
+  datasource:
+    db-kind: "sqlite"
+    jdbc:
+      # TODO: expose a parameter to decide if we want an in-memory DB or a file with an output folder
+      url: "jdbc:sqlite::memory:"
   log:
     level: "WARN"
     console:
