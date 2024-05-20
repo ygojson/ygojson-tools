@@ -18,8 +18,10 @@
         <skipLint>false</skipLint>
         <skipITs>true</skipITs>
         <!-- test tags used to override in contract test -->
+        <testTags.contractTest>contract-test</testTags.contractTest>
+        <testTags.acceptanceTest>acceptance-test</testTags.acceptanceTest>
         <includedTestTags></includedTestTags>
-        <excludedTestTags>contract-test</excludedTestTags>
+        <excludedTestTags>${testTags.contractTest}</excludedTestTags>
 
         <!-- quarkus dependencies -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
@@ -352,6 +354,8 @@
                     <systemPropertyVariables>
                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         <maven.home>${maven.home}</maven.home>
+                        <quarkus.log.console.stderr>true</quarkus.log.console.stderr>
+                        <quarkus.test.exclude-tags>${testTags.acceptanceTest}</quarkus.test.exclude-tags>
                     </systemPropertyVariables>
                     <excludedGroups>${excludedTestTags}</excludedGroups>
                     <groups>${includedTestTags}</groups>
@@ -373,6 +377,8 @@
                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         <maven.home>${maven.home}</maven.home>
+                        <quarkus.log.console.stderr>true</quarkus.log.console.stderr>
+                        <quarkus.test.exclude-tags>${testTags.acceptanceTest}</quarkus.test.exclude-tags>
                     </systemPropertyVariables>
                     <excludedGroups>${excludedTestTags}</excludedGroups>
                     <groups>${includedTestTags}</groups>
@@ -420,7 +426,7 @@
                 </property>
             </activation>
             <properties>
-                <includedTestTags>contract-test</includedTestTags>
+                <includedTestTags>${testTags.contractTest}</includedTestTags>
                 <excludedTestTags></excludedTestTags>
             </properties>
         </profile>
