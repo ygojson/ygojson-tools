@@ -23,7 +23,7 @@ public class ApplicationConfig {
 	String applicationVersion;
 
 	@ConfigProperty(name = "ygojson.url")
-	String userAgentUrl = null;
+	String ygojsonUrl = null;
 
 	/**
 	 * Produces the application info configured with the properties.
@@ -36,7 +36,7 @@ public class ApplicationConfig {
 		return new ApplicationInfo(
 			applicationName,
 			applicationVersion,
-			userAgentUrl
+			ygojsonUrl
 		);
 	}
 }
