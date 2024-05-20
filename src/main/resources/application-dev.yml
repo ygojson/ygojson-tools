@@ -2,7 +2,8 @@ quarkus:
   log:
     level: "INFO"
     console:
+      stderr: true
       format: "%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c{3.}] (%t) %s%e%n"
     category:
-      "io.github.ygojson.application":
+      "io.github.ygojson":
         level: "DEBUG"
