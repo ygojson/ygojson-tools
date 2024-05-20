@@ -55,9 +55,9 @@ class Config implements ClientConfig<YugipediaClient> {
 	}
 
 	private static String getClientNameVersion(ApplicationInfo info) {
-		if (info.title() != null) {
+		if (info.name() != null) {
 			return (
-				info.title() +
+				info.name() +
 				"/" +
 				(info.version() != null ? info.version() : "unknown")
 			);
