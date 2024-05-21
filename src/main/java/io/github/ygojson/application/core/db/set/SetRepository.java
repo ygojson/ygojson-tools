@@ -8,14 +8,14 @@ import jakarta.transaction.Transactional;
 public class SetRepository implements PanacheRepository<SetEntity> {
 
 	/**
-	 * Save on a transaction the given entity.
+	 * Transactional method to save the entity.
 	 *
 	 * @param setEntity entity to save.
 	 *
 	 * @return the saved entity ID
 	 */
 	@Transactional
-	Long save(final SetEntity setEntity) {
+	public Long save(final SetEntity setEntity) {
 		persist(setEntity);
 		return setEntity.getId();
 	}

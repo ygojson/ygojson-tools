@@ -25,7 +25,7 @@ class SetMapperTest {
 		// given
 		final Set model = Instancio
 			.of(Set.class)
-			// TODO: this demonstrates that the nameAlt should not be part of the localizedData by now
+			// TODO: remove with https://github.com/ygojson/ygojson-tools/issues/148
 			.ignore(Select.field(SetInfo.class, "nameAlt"))
 			.create();
 		// when
