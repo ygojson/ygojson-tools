@@ -10,7 +10,7 @@ import jakarta.persistence.*;
 /**
  * Set-entity.
  * <br>
- * Note that the {@link #id} is internal for the database
+ * Note that the {@link #id} is internal for the database,
  * and it is not related with the YGOJSON model.
  */
 @Entity

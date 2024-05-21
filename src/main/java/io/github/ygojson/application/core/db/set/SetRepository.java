@@ -4,6 +4,9 @@ import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 
+/**
+ * Repository for {@link SetEntity}.
+ */
 @ApplicationScoped
 public class SetRepository implements PanacheRepository<SetEntity> {
 
