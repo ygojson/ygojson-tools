@@ -7,14 +7,15 @@ import java.util.function.BiConsumer;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.*;
 
+/**
+ * Set-entity.
+ * <br>
+ * Note that the {@link #id} is internal for the database
+ * and it is not related with the YGOJSON model.
+ */
 @Entity
 @Table(name = "SET_TABLE")
 public class SetEntity extends PanacheEntity {
-
-	// runtime DB ID
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	public Long id;
 
 	// YGOJSON-ID
 	public UUID ygojsonId;
