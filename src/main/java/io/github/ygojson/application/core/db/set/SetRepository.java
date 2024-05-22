@@ -13,13 +13,13 @@ public class SetRepository implements PanacheRepository<SetEntity> {
 	/**
 	 * Transactional method to save the entity.
 	 *
-	 * @param setEntity entity to save.
+	 * @param entity entity to save.
 	 *
 	 * @return the saved entity ID
 	 */
 	@Transactional
-	public Long save(final SetEntity setEntity) {
-		persist(setEntity);
-		return setEntity.getId();
+	public Long save(final SetEntity entity) {
+		persist(entity);
+		return entity.id;
 	}
 }

@@ -61,16 +61,6 @@ public abstract class SetMapper {
 
 	@InheritInverseConfiguration
 	@Mapping(target = "id", ignore = true)
-	@Mapping(target = "enSetCodes", ignore = true)
-	@Mapping(target = "deSetCodes", ignore = true)
-	@Mapping(target = "esSetCodes", ignore = true)
-	@Mapping(target = "frSetCodes", ignore = true)
-	@Mapping(target = "itSetCodes", ignore = true)
-	@Mapping(target = "jaSetCodes", ignore = true)
-	@Mapping(target = "koSetCodes", ignore = true)
-	@Mapping(target = "ptSetCodes", ignore = true)
-	@Mapping(target = "zhHansSetCodes", ignore = true)
-	@Mapping(target = "zhHantSetCodes", ignore = true)
 	public abstract SetEntity toEntity(Set model);
 
 	/**
