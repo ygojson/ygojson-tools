@@ -4,6 +4,13 @@ ygojson:
 
 # quarkus config
 quarkus:
+  hibernate-orm:
+    database:
+      generation: "drop-and-create"
+  datasource:
+    db-kind: "sqlite"
+    jdbc:
+      url: "jdbc:sqlite::memory:"
   log:
     level: "WARN"
     console:
