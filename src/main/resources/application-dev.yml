@@ -5,5 +5,7 @@ quarkus:
     console:
       stderr: true
     category:
+      "org.hibernate.SQL":
+        level: "DEBUG"
       "io.github.ygojson":
         level: "DEBUG"
