@@ -20,4 +20,5 @@ quarkus:
       "io.github.ygojson":
         level: "INFO"
   banner:
+    enabled: false
     path: banner.txt
