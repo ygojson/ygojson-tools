@@ -1,10 +1,11 @@
 package io.github.ygojson.application.core.db.set;
 
-import java.util.UUID;
-
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+
+import io.github.ygojson.application.core.db.RuntimeBaseEntity;
 
 /**
  * Set-entity.
@@ -13,11 +14,13 @@ import jakarta.persistence.Table;
  * and it is not related with the YGOJSON model.
  */
 @Entity
-@Table(name = "SET_TABLE")
-public class SetEntity extends PanacheEntity {
+@Table(name = "tbl_set")
+@AttributeOverride(
+	name = RuntimeBaseEntity.ID_COLUMN,
+	column = @Column(name = "set_id")
+)
+public class SetEntity extends RuntimeBaseEntity {
 
-	// YGOJSON-ID
-	public UUID ygojsonId;
 	// common independently of the localization
 	public String printNumberPrefix;
 	public String type;
