@@ -1,0 +1,10 @@
+# overriden TEST quarkus config
+quarkus:
+  log:
+    console:
+      stderr: true
+    category:
+      "org.hibernate.SQL":
+        level: "DEBUG"
+      "io.github.ygojson":
+        level: "DEBUG"
