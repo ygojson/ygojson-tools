@@ -1,5 +1,8 @@
 # overriden TEST quarkus config
 quarkus:
+  datasource:
+    jdbc:
+      url: "jdbc:sqlite:file:.tmp/test.db?mode=rwc"
   log:
     console:
       stderr: true
