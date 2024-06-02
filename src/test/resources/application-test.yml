@@ -1,7 +1,6 @@
-# overriden DEV quarkus config
+# overriden TEST quarkus config
 quarkus:
   log:
-    level: "INFO"
     console:
       stderr: true
     category:
