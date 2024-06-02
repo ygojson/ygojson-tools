@@ -41,3 +41,7 @@ nb-configuration.xml
 
 # Plugin directory
 /.quarkus/cli/plugins/
+
+# Custom
+## TEMP directory used for development/test
+.tmp
