@@ -79,4 +79,25 @@ class SetRepositoryUnitTest {
 		// assert without specific exception so far
 		assertThatThrownBy(callable).isNotNull();
 	}
+
+	@Test
+	void given_entityWithSameYgojsonId_when_save_then_fails() {
+		// given
+		final SetEntity entity1 = Instancio
+			.of(SetEntity.class)
+			.ignore(field(RuntimeBaseEntity.class, "id"))
+			.create();
+		final UUID savedId = repository.save(entity1);
+		final SetEntity entity2 = Instancio
+			.of(SetEntity.class)
+			.ignore(field(RuntimeBaseEntity.class, "id"))
+			.set(field(RuntimeBaseEntity.class, "ygojsonId"), entity1.ygojsonId)
+			.create();
+		// when
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			repository.save(entity2);
+		// then
+		// assert without specific exception so far
+		assertThatThrownBy(callable).isNotNull();
+	}
 }
