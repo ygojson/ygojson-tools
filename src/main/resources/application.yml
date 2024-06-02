@@ -15,7 +15,6 @@ quarkus:
     level: "WARN"
     console:
       stderr: true
-      format: "[%-5p - %d{yyyy-MM-dd HH:mm:ss}] - %s%n"
     category:
       "io.github.ygojson":
         level: "INFO"
