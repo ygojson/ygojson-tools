@@ -87,7 +87,7 @@ class SetRepositoryUnitTest {
 			.of(SetEntity.class)
 			.ignore(field(RuntimeBaseEntity.class, "id"))
 			.create();
-		final UUID savedId = repository.save(entity1);
+		repository.save(entity1);
 		final SetEntity entity2 = Instancio
 			.of(SetEntity.class)
 			.ignore(field(RuntimeBaseEntity.class, "id"))
