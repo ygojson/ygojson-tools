@@ -36,7 +36,7 @@ CREATE TABLE
         "zhhant_name" VARCHAR(255),
         "zhhant_setcode" VARCHAR(255),
         "zhhant_setcode_alt" VARCHAR(255),
-        primary key ("set_id")
+        PRIMARY KEY ("set_id")
     );
 
 CREATE UNIQUE INDEX "index.tbl_set.id" ON "tbl_set" ("set_id");
