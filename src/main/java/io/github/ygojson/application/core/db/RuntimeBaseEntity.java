@@ -33,11 +33,7 @@ public abstract class RuntimeBaseEntity extends PanacheEntityBase {
 	public UUID id;
 
 	// YGOJSON-ID
-	@Column(
-		name = "ygojson_id",
-		columnDefinition = "VARCHAR(36)",
-		unique = true
-	)
+	@Column(name = "ygojson_id", columnDefinition = "VARCHAR(36)", unique = true)
 	@JdbcType(VarcharJdbcType.class)
 	public UUID ygojsonId;
 
