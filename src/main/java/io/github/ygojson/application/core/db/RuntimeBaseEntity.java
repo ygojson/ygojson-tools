@@ -18,14 +18,9 @@ import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
 public abstract class RuntimeBaseEntity extends PanacheEntityBase {
 
 	/**
-	 * ID-column name to be used on indexes.
+	 * ID-column name (can be overriden by subclasses to include the entity name).
 	 */
 	public static final String ID_COLUMN = "id";
-
-	/**
-	 * YGOJSON_ID-column name to be used on indexes.
-	 */
-	public static final String YGOJSON_ID = "ygojson_id";
 
 	@Id
 	@Column(
@@ -39,7 +34,7 @@ public abstract class RuntimeBaseEntity extends PanacheEntityBase {
 
 	// YGOJSON-ID
 	@Column(
-		name = RuntimeBaseEntity.YGOJSON_ID,
+		name = "ygojson_id",
 		columnDefinition = "VARCHAR(36)",
 		unique = true
 	)

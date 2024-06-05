@@ -10,8 +10,10 @@ import jakarta.transaction.Transactional;
 /**
  * Base repository for YGOJSON runtime DB.
  * <br>
- * Provides the logic to create
- * @param <E>
+ * Provides the logic to create the entity ID on save (if not set already).
+ * The generated IDs are UUID v7, to be more DB-friendly.
+ *
+ * @param <E> the base entity (with a UUID ID field)
  */
 public abstract class RuntimeRepository<E extends RuntimeBaseEntity>
 	implements PanacheRepositoryBase<E, UUID> {
