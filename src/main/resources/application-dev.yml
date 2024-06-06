@@ -1,5 +1,8 @@
 # overriden DEV quarkus config
 quarkus:
+  datasource:
+    jdbc:
+      url: "jdbc:sqlite:file:.tmp/dev.db?mode=rwc"
   log:
     level: "INFO"
     console:

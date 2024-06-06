@@ -39,11 +39,9 @@ class SetMapperTest {
 	void given_sameSetCodeOn2Languages_when_mapToSet_then_setInfoSetCodeNotPresentInNonEnglish() {
 		// given
 		final String setCode = "My Set";
-		final SetEntity entity = Instancio
-			.of(SetEntity.class)
-			.set(field(SetEntity.class, "enSetCode"), setCode)
-			.set(field(SetEntity.class, "deSetCode"), setCode)
-			.create();
+		final SetEntity entity = Instancio.of(SetEntity.class).create();
+		entity.en.setCode = setCode;
+		entity.de.setCode = setCode;
 		// when
 		final Set result = MAPPER.toModel(entity);
 		// then
@@ -56,12 +54,10 @@ class SetMapperTest {
 	@Test
 	void given_noLocalizedDataForLanguage_when_mapToSet_then_localizedDataIsNull() {
 		// given
-		final SetEntity entity = Instancio
-			.of(SetEntity.class)
-			.ignore(field(SetEntity.class, "deName"))
-			.ignore(field(SetEntity.class, "deSetCode"))
-			.ignore(field(SetEntity.class, "deSetCodeAlt"))
-			.create();
+		final SetEntity entity = Instancio.of(SetEntity.class).create();
+		entity.de.name = null;
+		entity.de.setCode = null;
+		entity.de.setCodeAlt = null;
 		// when
 		final Set result = MAPPER.toModel(entity);
 		// then
