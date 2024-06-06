@@ -87,7 +87,6 @@ class CardRepositoryUnitTest {
 		assertThatThrownBy(callable).isNotNull();
 	}
 
-	//"ygojson_id" VARCHAR(36) UNIQUE,
 	@Test
 	void given_entityWithSameYgojsonId_when_save_then_fails() {
 		// given
