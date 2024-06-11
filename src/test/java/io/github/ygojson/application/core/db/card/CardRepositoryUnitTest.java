@@ -108,10 +108,8 @@ class CardRepositoryUnitTest {
 	void given_entityWithSameKonamiId_when_save_then_fails() {
 		// given
 		final CardEntity entity1 = Instancio.create(CardEntity.class);
-		final CardEntity entity2 = Instancio
-			.of(CardEntity.class)
-			.set(field(CardEntity.class, "konamiId"), entity1.konamiId)
-			.create();
+		final CardEntity entity2 = Instancio.of(CardEntity.class).create();
+		entity2.identifiers.konamiId = entity1.identifiers.konamiId;
 		// when
 		repository.save(entity1);
 		final ThrowableAssert.ThrowingCallable callable = () ->
@@ -125,10 +123,8 @@ class CardRepositoryUnitTest {
 	void given_entityWithSamePassword_when_save_then_fails() {
 		// given
 		final CardEntity entity1 = Instancio.create(CardEntity.class);
-		final CardEntity entity2 = Instancio
-			.of(CardEntity.class)
-			.set(field(CardEntity.class, "password"), entity1.password)
-			.create();
+		final CardEntity entity2 = Instancio.of(CardEntity.class).create();
+		entity2.identifiers.password = entity1.identifiers.password;
 		// when
 		repository.save(entity1);
 		final ThrowableAssert.ThrowingCallable callable = () ->
@@ -142,10 +138,8 @@ class CardRepositoryUnitTest {
 	void given_entityWithSamePasswordAlt_when_save_then_fails() {
 		// given
 		final CardEntity entity1 = Instancio.create(CardEntity.class);
-		final CardEntity entity2 = Instancio
-			.of(CardEntity.class)
-			.set(field(CardEntity.class, "passwordAlt"), entity1.passwordAlt)
-			.create();
+		final CardEntity entity2 = Instancio.of(CardEntity.class).create();
+		entity2.identifiers.passwordAlt = entity1.identifiers.passwordAlt;
 		// when
 		repository.save(entity1);
 		final ThrowableAssert.ThrowingCallable callable = () ->
@@ -159,10 +153,8 @@ class CardRepositoryUnitTest {
 	void given_entityWithSameYugipediaPageId_when_save_then_fails() {
 		// given
 		final CardEntity entity1 = Instancio.create(CardEntity.class);
-		final CardEntity entity2 = Instancio
-			.of(CardEntity.class)
-			.set(field(CardEntity.class, "yugipediaPageId"), entity1.yugipediaPageId)
-			.create();
+		final CardEntity entity2 = Instancio.of(CardEntity.class).create();
+		entity2.identifiers.yugipediaPageId = entity1.identifiers.yugipediaPageId;
 		// when
 		repository.save(entity1);
 		final ThrowableAssert.ThrowingCallable callable = () ->
