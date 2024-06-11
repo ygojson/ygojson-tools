@@ -48,7 +48,7 @@
 
         <!-- plugin version-->
         <spotless-plugin.version>2.43.0</spotless-plugin.version>
-        <enforcer-plugin.version>3.4.1</enforcer-plugin.version>
+        <enforcer-plugin.version>3.5.0</enforcer-plugin.version>
         <jsonschema2pojo-plugin.version>1.2.1</jsonschema2pojo-plugin.version>
         <build-helper-plugin.version>3.6.0</build-helper-plugin.version>
         <compiler-plugin.version>3.13.0</compiler-plugin.version>
