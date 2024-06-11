@@ -7,6 +7,7 @@ import jakarta.inject.Singleton;
 import picocli.CommandLine;
 
 import io.github.ygojson.application.ApplicationInfo;
+import io.github.ygojson.cli.hidden.YugipediaCommand;
 
 /**
  * Top command for YGOJSON-tools.
@@ -20,7 +21,7 @@ import io.github.ygojson.application.ApplicationInfo;
 	versionProvider = YgoJsonTopCommand.VersionProvider.class,
 	modelTransformer = YgoJsonTopCommand.ModelTransformer.class,
 	mixinStandardHelpOptions = true,
-	subcommands = { CommandLine.HelpCommand.class }
+	subcommands = { CommandLine.HelpCommand.class, YugipediaCommand.class }
 )
 public class YgoJsonTopCommand {
 
