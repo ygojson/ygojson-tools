@@ -21,16 +21,8 @@ import io.github.ygojson.application.core.db.converter.JsonStringListAttributeCo
 )
 public class CardEntity extends RuntimeBaseEntity {
 
-	@Column(name = "konami_id")
-	public Long konamiId;
-
-	public Long password;
-
-	@Column(name = "password_alt")
-	public Long passwordAlt;
-
-	@Column(name = "yugipedia_pageid")
-	public Long yugipediaPageId;
+	@Embedded
+	public IdentifierValues identifiers;
 
 	// common independently of the localization
 	@Column(name = "card_type")
