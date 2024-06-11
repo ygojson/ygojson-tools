@@ -27,7 +27,7 @@
         <!-- quarkus dependencies -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.10.2</quarkus.platform.version>
+        <quarkus.platform.version>3.11.1</quarkus.platform.version>
         <!-- quarkus extensions -->
         <quarkus-jdbc-sqlite.version>3.0.7</quarkus-jdbc-sqlite.version>
         <!-- other dependencies -->
@@ -35,11 +35,11 @@
         <resilience4j.bom.version>2.2.0</resilience4j.bom.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <retrofit.bom.version>2.11.0</retrofit.bom.version>
-        <jug.version>5.0.0</jug.version>
+        <jug.version>5.1.0</jug.version>
         <!-- test dependencies -->
         <assertj.bom.version>3.26.0</assertj.bom.version>
         <approvaltests.version>24.2.0</approvaltests.version>
-        <instancio.junit.version>4.6.0</instancio.junit.version>
+        <instancio.junit.version>4.7.0</instancio.junit.version>
         <!--
         TODO: not sure if we will require it for testing?
         TODO: see https://github.com/ygojson/ygojson-tools/issues/126
