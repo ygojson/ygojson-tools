@@ -3,6 +3,8 @@ package io.github.ygojson.application.yugipedia;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import jakarta.enterprise.context.Dependent;
+
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.params.Limit;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
@@ -12,6 +14,7 @@ import io.github.ygojson.application.yugipedia.processor.YugipediaStreamFactory;
 /**
  * Yugipedia provider to fetch the Yugipedia model.
  */
+@Dependent
 public class YugipediaProvider {
 
 	private final YugipediaStreamFactory factory;
