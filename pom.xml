@@ -49,6 +49,7 @@
         <!-- plugin version-->
         <spotless-plugin.version>2.43.0</spotless-plugin.version>
         <enforcer-plugin.version>3.5.0</enforcer-plugin.version>
+        <clean-plugin.version>3.2.0</clean-plugin.version>
         <jsonschema2pojo-plugin.version>1.2.1</jsonschema2pojo-plugin.version>
         <build-helper-plugin.version>3.6.0</build-helper-plugin.version>
         <compiler-plugin.version>3.13.0</compiler-plugin.version>
@@ -216,6 +217,20 @@
 
     <build>
         <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>.tmp</directory>
+                            <excludes>
+                                <exclude>.gitignore</exclude>
+                            </excludes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
