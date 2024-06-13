@@ -19,6 +19,8 @@ import io.github.ygojson.model.utils.LocalizationUtils;
 
 /**
  * Mapper for the YGOJSON {@link Set} from {@link YugipediaProperty} map.
+ *
+ * @deprecated use {@link YugipediaSetEntityMapper} instead in combination with {@link io.github.ygojson.application.logic.mapper.SetMapper}.
  */
 @Mapper(
 	uses = YugipediaPropertyBaseMapper.class,
@@ -26,6 +28,7 @@ import io.github.ygojson.model.utils.LocalizationUtils;
 	unmappedTargetPolicy = ReportingPolicy.ERROR,
 	componentModel = MappingConstants.ComponentModel.JAKARTA_CDI
 )
+@Deprecated
 public abstract class YugipediaSetMapper {
 
 	private static final SetInfo EMPTY = new SetInfo();
