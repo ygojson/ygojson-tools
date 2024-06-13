@@ -1,0 +1,29 @@
+{
+  "type" : "booster pack",
+  "series" : "core booster",
+  "en" : {
+    "name" : "Ancient Prophecy",
+    "setCode" : "ANPR"
+  },
+  "de" : {
+    "name" : "Ancient Prophecy"
+  },
+  "es" : {
+    "name" : "Profecía Antigua"
+  },
+  "fr" : {
+    "name" : "Ancienne Prophétie"
+  },
+  "it" : {
+    "name" : "Antica Profezia"
+  },
+  "ja" : {
+    "name" : "エンシェント・プロフェシー"
+  },
+  "ko" : {
+    "name" : "태고의 예언"
+  },
+  "pt" : { },
+  "zhHans" : { },
+  "zhHant" : { }
+}

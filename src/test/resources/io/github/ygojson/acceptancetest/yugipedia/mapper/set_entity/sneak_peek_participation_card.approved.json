@@ -1,0 +1,26 @@
+{
+  "printNumberPrefix" : "SP",
+  "type" : "participation card",
+  "series" : "sneak peek participation cards",
+  "en" : {
+    "name" : "Ancient Prophecy Sneak Peek Participation Card",
+    "setCode" : "ANPR"
+  },
+  "de" : {
+    "name" : "Ancient Prophecy Sneak Peek"
+  },
+  "es" : {
+    "name" : "Profecía Antigua Presentación"
+  },
+  "fr" : {
+    "name" : "Ancienne Prophétie Avant-première"
+  },
+  "it" : {
+    "name" : "Antica Profezia Sneak Peek"
+  },
+  "ja" : { },
+  "ko" : { },
+  "pt" : { },
+  "zhHans" : { },
+  "zhHant" : { }
+}

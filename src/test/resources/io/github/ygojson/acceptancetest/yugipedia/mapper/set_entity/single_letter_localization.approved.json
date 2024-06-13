@@ -1,0 +1,34 @@
+{
+  "type" : "starter deck",
+  "en" : {
+    "name" : "Starter Deck: Pegasus",
+    "setCode" : "SDP"
+  },
+  "de" : {
+    "name" : "Starter Deck: Maximillion Pegasus",
+    "setCode" : "SDP"
+  },
+  "es" : {
+    "name" : "Baraja de Inicio: Pegasus",
+    "setCode" : "BIP"
+  },
+  "fr" : {
+    "name" : "Deck de Démarrage: Pegasus",
+    "setCode" : "DDP"
+  },
+  "it" : {
+    "name" : "Mazzo Introduttivo: Pegasus",
+    "setCode" : "MIP"
+  },
+  "ja" : { },
+  "ko" : {
+    "name" : "<ruby>ＳＴＡＲＴＥＲ ＤＥＣＫ<rt>조이 덱</rt></ruby> —페가수스 편—",
+    "setCode" : "SDP"
+  },
+  "pt" : {
+    "name" : "Deck Inicial do Pegasus",
+    "setCode" : "DIP"
+  },
+  "zhHans" : { },
+  "zhHant" : { }
+}

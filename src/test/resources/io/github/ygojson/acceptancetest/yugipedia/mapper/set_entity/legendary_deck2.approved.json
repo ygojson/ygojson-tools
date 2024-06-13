@@ -1,0 +1,26 @@
+{
+  "type" : "collector's set",
+  "en" : {
+    "name" : "Legendary Decks II",
+    "setCode" : "LDK2"
+  },
+  "de" : {
+    "name" : "Legendary Decks II"
+  },
+  "es" : {
+    "name" : "Barajas Legendarias II"
+  },
+  "fr" : {
+    "name" : "Decks Legendaires II"
+  },
+  "it" : {
+    "name" : "I Deck Leggendari II"
+  },
+  "ja" : { },
+  "ko" : { },
+  "pt" : {
+    "name" : "Decks Lendários II"
+  },
+  "zhHans" : { },
+  "zhHant" : { }
+}

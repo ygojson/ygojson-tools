@@ -1,0 +1,19 @@
+{
+  "type" : "booster pack",
+  "series" : "core booster",
+  "en" : {
+    "name" : "The New Ruler"
+  },
+  "de" : { },
+  "es" : { },
+  "fr" : { },
+  "it" : { },
+  "ja" : {
+    "name" : "<ruby>新<rt>あら</rt></ruby>たなる<ruby>支<rt>し</rt></ruby><ruby>配<rt>はい</rt></ruby><ruby>者<rt>しゃ</rt></ruby>",
+    "setCode" : "301"
+  },
+  "ko" : { },
+  "pt" : { },
+  "zhHans" : { },
+  "zhHant" : { }
+}
