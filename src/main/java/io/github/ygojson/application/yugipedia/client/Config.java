@@ -11,6 +11,12 @@ import io.github.ygojson.application.util.http.ClientConfig;
 
 class Config implements ClientConfig<YugipediaClient> {
 
+	private final String url;
+
+	public Config(final String url) {
+		this.url = url;
+	}
+
 	@Override
 	public String name() {
 		return "yugipedia";
@@ -23,7 +29,7 @@ class Config implements ClientConfig<YugipediaClient> {
 
 	@Override
 	public String baseUrl() {
-		return "https://yugipedia.com";
+		return url;
 	}
 
 	@Override

@@ -20,7 +20,7 @@ class YugipediaConfigTest {
 	@Test
 	void given_configuration_when_rateLimit_then_isLargerThan1PerSecond() {
 		// given
-		final Config config = new Config();
+		final Config config = new Config("fake");
 		// when
 		final ClientConfig.RateLimit limit = config.rateLimit();
 		// then
@@ -64,7 +64,7 @@ class YugipediaConfigTest {
 		final String expectedAgent
 	) {
 		// given
-		final Function<String, String> userAgentMapper = new Config()
+		final Function<String, String> userAgentMapper = new Config("fake")
 			.userAgentMapper(info);
 		// when
 		final String userAgent = userAgentMapper.apply(originalAgent);

@@ -4,6 +4,8 @@ import java.time.Duration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import jakarta.enterprise.inject.Alternative;
+import jakarta.inject.Singleton;
 
 import io.github.ygojson.application.ApplicationInfo;
 import io.github.ygojson.application.testutil.server.MockedServer;
@@ -27,29 +29,24 @@ public class YugipediaClientMother {
 	);
 
 	public static YugipediaClient production() {
-		return FACTORY.getClient(YugipediaClient.getConfig());
+		return FACTORY.getClient(YugipediaClient.getConfig(YugipediaClient.YUGIPEDIA_URL));
 	}
 
 	public static YugipediaClient mocked(final MockedServer mockServer) {
 		return FACTORY.getClient(new MockedConfig(mockServer.getUrl()));
 	}
 
-	private static final class MockedConfig extends Config {
-
-		private final String baseUrl;
+	@Singleton
+	@Alternative
+	public static final class MockedConfig extends Config {
 
 		public MockedConfig(final String baseUrl) {
-			this.baseUrl = baseUrl;
+			super(baseUrl);
 		}
 
 		@Override
 		public String name() {
-			return super.name() + ".mocked@" + baseUrl;
-		}
-
-		@Override
-		public String baseUrl() {
-			return baseUrl;
+			return super.name() + ".mocked@" + baseUrl();
 		}
 
 		@Override

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterConfig;
 import io.github.resilience4j.ratelimiter.RateLimiterRegistry;
+import jakarta.enterprise.context.Dependent;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
@@ -18,6 +19,7 @@ import io.github.ygojson.application.ApplicationInfo;
  * <br>
  * The factory contains a single client for a specific configuration.
  */
+@Dependent
 public class ClientFactory {
 
 	private final ConcurrentHashMap<String, Retrofit> retrofitClients =

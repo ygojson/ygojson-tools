@@ -12,13 +12,16 @@ import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
  * Yugipedia Client with methods specific to YGOJSON.
  */
 public interface YugipediaClient {
+
+	public static final String YUGIPEDIA_URL = "https://yugipedia.com";
+
 	/**
 	 * Gets the configuration for the Yugipedia client.
 	 *
 	 * @return the configuration for the Yugipedia client.
 	 */
-	static ClientConfig<YugipediaClient> getConfig() {
-		return new Config();
+	static ClientConfig<YugipediaClient> getConfig(final String url) {
+		return new Config(url);
 	}
 
 	/**
