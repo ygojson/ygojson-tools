@@ -37,9 +37,6 @@ class CardRepositoryUnitTest {
 	}
 
 	@Test
-	void given_emptyEntity_when_save_then_repositoryContainsEntity() {}
-
-	@Test
 	void given_entityInstanceWithoutId_when_save_then_repositoryContainsEntity() {
 		// given
 		final CardEntity entity = Instancio
