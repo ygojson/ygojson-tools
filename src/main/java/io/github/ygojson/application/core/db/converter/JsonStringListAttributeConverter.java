@@ -19,9 +19,7 @@ public class JsonStringListAttributeConverter
 		try {
 			return mapper.writeValueAsString(attribute);
 		} catch (JsonProcessingException e) {
-			LoggerFactory
-				.getLogger(this.getClass())
-				.warn("Cannot convert list to json", e);
+			logConversionException("Cannot save DB json field: " + attribute, e);
 			return null;
 		}
 	}
@@ -30,11 +28,17 @@ public class JsonStringListAttributeConverter
 	public List<String> convertToEntityAttribute(final String dbData) {
 		try {
 			return mapper.readValue(dbData, ref);
-		} catch (JsonProcessingException e) {
-			LoggerFactory
-				.getLogger(this.getClass())
-				.warn("Cannot convert json to List<String>", e);
+		} catch (final JsonProcessingException e) {
+			logConversionException("Cannot convert DB json field", e);
 			return null;
 		}
+	}
+
+	private void logConversionException(
+		final String msg,
+		final JsonProcessingException e
+	) {
+		LoggerFactory.getLogger(this.getClass()).warn(msg);
+		LoggerFactory.getLogger(this.getClass()).debug("Stacktrace", e);
 	}
 }
