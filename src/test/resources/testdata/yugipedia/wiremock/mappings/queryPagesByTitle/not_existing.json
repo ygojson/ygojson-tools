@@ -1,0 +1,38 @@
+{
+  "name": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=Does not exists",
+  "request": {
+    "method": "GET",
+    "urlPath": "/api.php",
+    "queryParameters": {
+      "action": {
+        "equalTo": "query"
+      },
+      "format": {
+        "equalTo": "json"
+      },
+      "formatversion": {
+        "equalTo": "2"
+      },
+      "redirects": {
+        "equalTo": "true"
+      },
+      "prop": {
+        "equalTo": "revisions"
+      },
+      "rvprop": {
+        "equalTo": "content|timestamp"
+      },
+      "titles": {
+        "equalTo": "Does not exists"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "queryPagesByTitle/not_existing.json",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Tue Apr 16 2024 00:00:00 GMT"
+    }
+  }
+}

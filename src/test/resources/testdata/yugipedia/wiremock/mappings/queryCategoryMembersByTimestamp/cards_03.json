@@ -1,0 +1,53 @@
+{
+  "name": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&generator=categorymembers&gcmsort=timestamp&gcmtitle=Category:Duel_Monsters_cards&gcmlimit=10&gcmdir=newer&gcmcontinue=2017-11-02 17:53:08|161591",
+  "request": {
+    "method": "GET",
+    "urlPath": "/api.php",
+    "queryParameters": {
+      "action": {
+        "equalTo": "query"
+      },
+      "format": {
+        "equalTo": "json"
+      },
+      "formatversion": {
+        "equalTo": "2"
+      },
+      "redirects": {
+        "equalTo": "true"
+      },
+      "prop": {
+        "equalTo": "revisions"
+      },
+      "rvprop": {
+        "equalTo": "content|timestamp"
+      },
+      "generator": {
+        "equalTo": "categorymembers"
+      },
+      "gcmsort": {
+        "equalTo": "timestamp"
+      },
+      "gcmtitle": {
+        "equalTo": "Category:Duel_Monsters_cards"
+      },
+      "gcmlimit": {
+        "equalTo": "10"
+      },
+      "gcmdir": {
+        "equalTo": "newer"
+      },
+      "gcmcontinue": {
+        "equalTo": "2017-11-02 17:53:08|161591"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "queryCategoryMembersByTimestamp/cards_03.json",
+    "headers": {
+      "Content-Type": "application/json",
+      "Date": "Tue Apr 16 2024 00:00:00 GMT"
+    }
+  }
+}
