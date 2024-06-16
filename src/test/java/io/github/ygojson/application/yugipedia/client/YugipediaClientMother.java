@@ -4,9 +4,9 @@ import java.time.Duration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.github.tomakehurst.wiremock.WireMockServer;
 
 import io.github.ygojson.application.ApplicationInfo;
-import io.github.ygojson.application.testutil.server.MockedServer;
 import io.github.ygojson.application.util.http.ClientFactory;
 
 /**
@@ -30,8 +30,8 @@ public class YugipediaClientMother {
 		return FACTORY.getClient(YugipediaClient.getConfig());
 	}
 
-	public static YugipediaClient mocked(final MockedServer mockServer) {
-		return FACTORY.getClient(new MockedConfig(mockServer.getUrl()));
+	public static YugipediaClient mocked(final WireMockServer mockServer) {
+		return FACTORY.getClient(new MockedConfig(mockServer.url("/")));
 	}
 
 	private static final class MockedConfig extends Config {
