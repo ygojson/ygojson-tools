@@ -1,5 +1,7 @@
 {
-  "name": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=LOB|ETCO",
+  "metadata": {
+    "actual_request": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&titles=LOB|ETCO"
+  },
   "request": {
     "method": "GET",
     "urlPath": "/api.php",

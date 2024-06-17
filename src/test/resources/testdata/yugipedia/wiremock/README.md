@@ -5,8 +5,9 @@ The files are grouped by method on the API, both in the `__files` and the `mappi
 
 For the mappings, the following is required:
 
-- Include a metadata tag with the `actual_request`, so it can be reproduced by copy-past on a browser or tool (such Postman)
-- Include the `absent_fields` tag to explain why each field marked with `"absent": true` is required
+- Include the `metadata` field witht the following tags:
+  - `actual_request` to define the `/api.php` query, so it can be reproduced by copy-past on a browser or tool (such Postman)
+  - `absent_fields` with an object mapping the `fields` marked with `"absent": true` and the explanation of why it is required for the mock
 - Include the following headers:
   - `Content-Type` as it might be required by the API implementation
   - `Date` to document when the requested files were downloaded (so we can update if our expectations change)
