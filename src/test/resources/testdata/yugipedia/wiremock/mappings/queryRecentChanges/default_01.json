@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "actual_request": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions|categories&rvprop=content|timestamp&generator=recentchanges&grctype=new|edit|categorize&grctoponly=true&cllimit=max&grclimit=10",
+    "absent_fields": {
+        "grccontinue": "Ignored to do not interact with other queryRecentChanges requests"
+    }
+  },
+  "request": {
+    "method": "GET",
+    "urlPath": "/api.php",
+    "queryParameters": {
+      "action": {
+        "equalTo": "query"
+      },
+      "format": {
+        "equalTo": "json"
+      },
+      "formatversion": {
+        "equalTo": "2"
+      },
+      "redirects": {
+        "equalTo": "true"
+      },
+      "prop": {
+        "equalTo": "revisions|categories"
+      },
+      "rvprop": {
+        "equalTo": "content|timestamp"
+      },
+      "generator": {
+        "equalTo": "recentchanges"
+      },
+      "grctype": {
+        "equalTo": "new|edit|categorize"
+      },
+      "grctoponly": {
+        "equalTo": "true"
+      },
+      "cllimit": {
+        "equalTo": "max"
+      },
+      "grclimit": {
+        "equalTo": "10"
+      },
+      "grccontinue": {
+        "absent": true
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "queryRecentChanges/default_01.json",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Tue Apr 16 2024 00:00:00 GMT"
+    }
+  }
+}

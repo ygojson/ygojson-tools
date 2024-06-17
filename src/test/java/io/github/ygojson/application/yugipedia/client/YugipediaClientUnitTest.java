@@ -1,35 +1,29 @@
 package io.github.ygojson.application.yugipedia.client;
 
-import java.io.IOException;
-
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import com.github.tomakehurst.wiremock.WireMockServer;
+import io.quarkus.test.junit.QuarkusTest;
+import io.quarkus.test.junit.TestProfile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import retrofit2.Response;
 
-import io.github.ygojson.application.testutil.server.MockedServer;
+import io.github.ygojson.application.testutil.server.InjectWireMock;
+import io.github.ygojson.application.yugipedia.testutil.YugipediaMockProfile;
 
+@QuarkusTest
+@TestProfile(YugipediaMockProfile.class)
 class YugipediaClientUnitTest extends AbstractYugipediaClientTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(
 		YugipediaClientUnitTest.class
 	);
-	private static MockedServer MOCK_SERVER;
 
-	@BeforeAll
-	static void beforeEach() {
-		MOCK_SERVER = YugipediaMockServerFactory.create(LOG);
-	}
-
-	@AfterAll
-	static void afterEach() throws IOException {
-		MOCK_SERVER.close();
-	}
+	@InjectWireMock
+	WireMockServer mockServer;
 
 	@Override
 	protected YugipediaClient getClient() {
-		return YugipediaClientMother.mocked(MOCK_SERVER);
+		return YugipediaClientMother.mocked(mockServer);
 	}
 
 	@Override

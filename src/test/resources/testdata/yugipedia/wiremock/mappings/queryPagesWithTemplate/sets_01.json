@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "actual_request": "/api.php?action=query&format=json&formatversion=2&redirects=true&prop=revisions&rvprop=content|timestamp&generator=embeddedin&geititle=Template:Infobox_set&geilimit=10",
+    "absent_fields": {
+      "geicontinue": "Ignored to do not interact with other queryPagesWithTemplate requests"
+    }
+  },
+  "request": {
+    "method": "GET",
+    "urlPath": "/api.php",
+    "queryParameters": {
+      "action": {
+        "equalTo": "query"
+      },
+      "format": {
+        "equalTo": "json"
+      },
+      "formatversion": {
+        "equalTo": "2"
+      },
+      "redirects": {
+        "equalTo": "true"
+      },
+      "prop": {
+        "equalTo": "revisions"
+      },
+      "rvprop": {
+        "equalTo": "content|timestamp"
+      },
+      "generator": {
+        "equalTo": "embeddedin"
+      },
+      "geititle": {
+        "equalTo": "Template:Infobox_set"
+      },
+      "geilimit": {
+        "equalTo": "10"
+      },
+      "geicontinue": {
+        "absent": true
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "queryPagesWithTemplate/sets_01.json",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Tue Apr 16 2024 00:00:00 GMT"
+    }
+  }
+}
