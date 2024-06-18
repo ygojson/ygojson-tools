@@ -48,7 +48,7 @@ public abstract class AbstractRateLimiterRequestFilter
 			rateLimiter = RateLimiter.of(this.getClass().getName(), rateLimitConfig);
 			LoggerFactory
 				.getLogger(this.getClass())
-				.debug("Using rate-limiter: {}", rateLimiter);
+				.debug("Using rate-limiter: {}", rateLimit);
 		}
 		return rateLimiter;
 	}
