@@ -1,7 +1,6 @@
 package io.github.ygojson.application.util.http;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
-import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
 import java.io.IOException;
 import java.net.URI;
@@ -10,7 +9,6 @@ import java.time.Instant;
 import java.util.stream.IntStream;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
-import com.github.tomakehurst.wiremock.client.WireMock;
 import io.quarkus.rest.client.reactive.QuarkusRestClientBuilder;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.ws.rs.core.Response;
@@ -37,10 +35,10 @@ class AbstractRateLimiterRequestFilterUnitTest {
 		MOCK_SERVER.addMockServiceRequestListener((request, response) -> {
 			LOG.debug("Request time: {}", Instant.now());
 		});
-		new WireMock(MOCK_SERVER)
-			.stubFor(
-				get("/").willReturn(aResponse().withBody("Success").withStatus(200))
-			);
+		configureFor(MOCK_SERVER.port());
+		stubFor(
+			get("/").willReturn(aResponse().withBody("Success").withStatus(200))
+		);
 	}
 
 	@AfterAll

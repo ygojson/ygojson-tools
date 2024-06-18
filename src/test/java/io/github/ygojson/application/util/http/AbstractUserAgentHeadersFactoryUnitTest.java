@@ -1,7 +1,6 @@
 package io.github.ygojson.application.util.http;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
-import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
 import java.io.IOException;
@@ -9,7 +8,6 @@ import java.net.URI;
 import java.util.function.Function;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
-import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer;
 import io.quarkus.rest.client.reactive.QuarkusRestClientBuilder;
 import io.quarkus.test.junit.QuarkusTest;
@@ -36,16 +34,16 @@ class AbstractUserAgentHeadersFactoryUnitTest {
 		MOCK_SERVER.addMockServiceRequestListener((request, response) -> {
 			LOG.debug("Request header(s): {}", request.getHeaders());
 		});
-		new WireMock(MOCK_SERVER)
-			.stubFor(
-				get("/")
-					.willReturn(
-						aResponse()
-							.withBody("{{request.headers.User-Agent}}")
-							.withTransformers(ResponseTemplateTransformer.NAME)
-							.withStatus(200)
-					)
-			);
+		configureFor(MOCK_SERVER.port());
+		stubFor(
+			get("/")
+				.willReturn(
+					aResponse()
+						.withBody("{{request.headers.User-Agent}}")
+						.withTransformers(ResponseTemplateTransformer.NAME)
+						.withStatus(200)
+				)
+		);
 	}
 
 	@AfterAll
