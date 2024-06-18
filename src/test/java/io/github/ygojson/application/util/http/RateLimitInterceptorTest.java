@@ -23,6 +23,10 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @deprecated {@link RateLimitInterceptor} will be removed when okhttp/retrofit is not used.
+ */
+@Deprecated
 class RateLimitInterceptorTest {
 
 	private static final Logger log = LoggerFactory.getLogger(

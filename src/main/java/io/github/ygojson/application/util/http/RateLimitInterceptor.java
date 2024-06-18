@@ -9,6 +9,11 @@ import okhttp3.MediaType;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
+/**
+ * @deprecated okhttp/retrofit should not be used anymore
+ *             (substituted on the MP-client by {@link AbstractRateLimiterRequestFilter})
+ */
+@Deprecated
 class RateLimitInterceptor implements Interceptor {
 
 	private final RateLimiter rateLimiter;
