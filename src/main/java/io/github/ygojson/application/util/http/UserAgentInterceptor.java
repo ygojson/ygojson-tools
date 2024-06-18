@@ -7,6 +7,11 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
+/**
+ * @deprecated okhttp/retrofit should not be used anymore
+ *             (substituted on the MP-client by {@link AbstractUserAgentHeadersFactory})
+ */
+@Deprecated
 class UserAgentInterceptor implements Interceptor {
 
 	private static final String USER_AGENT_HEADER_NAME = "User-Agent";
