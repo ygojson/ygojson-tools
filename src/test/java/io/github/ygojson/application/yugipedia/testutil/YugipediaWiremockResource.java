@@ -1,6 +1,7 @@
 package io.github.ygojson.application.yugipedia.testutil;
 
 import io.github.ygojson.application.testutil.server.WiremockResource;
+import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 
 /**
  * The Yugipedia {@link WiremockResource}.
@@ -13,6 +14,6 @@ public class YugipediaWiremockResource extends WiremockResource {
 
 	@Override
 	public String getName() {
-		return "yugipedia";
+		return YugipediaClient.NAME;
 	}
 }

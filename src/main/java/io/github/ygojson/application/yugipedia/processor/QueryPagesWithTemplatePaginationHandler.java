@@ -1,7 +1,5 @@
 package io.github.ygojson.application.yugipedia.processor;
 
-import retrofit2.Call;
-
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
 import io.github.ygojson.application.yugipedia.client.params.Limit;
 import io.github.ygojson.application.yugipedia.client.params.Template;
@@ -37,10 +35,7 @@ class QueryPagesWithTemplatePaginationHandler
 	}
 
 	@Override
-	protected Call<QueryResponse> callApi(
-		YugipediaClient api,
-		String continueToken
-	) {
+	protected QueryResponse doQuery(YugipediaClient api, String continueToken) {
 		return api.queryPagesWithTemplate(template, limit, continueToken);
 	}
 }

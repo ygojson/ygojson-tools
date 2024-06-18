@@ -2,16 +2,12 @@ package io.github.ygojson.application.yugipedia.client;
 
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
-import java.io.IOException;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 
-import okhttp3.Request;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import retrofit2.Call;
-import retrofit2.Response;
 
 import io.github.ygojson.application.yugipedia.client.params.*;
 import io.github.ygojson.application.yugipedia.client.response.Continue;
@@ -21,63 +17,40 @@ public abstract class AbstractYugipediaClientTest {
 
 	protected abstract YugipediaClient getClient();
 
-	protected void logRequest(Request request) {
-		// NO-OP
-	}
-
-	protected abstract void logResponse(final Response<?> response);
-
-	private <T> Response<T> callWithLog(final Call<T> call) throws IOException {
-		logRequest(call.request());
-		final Response<T> response = call.execute();
-		logResponse(response);
-		return response;
-	}
-
-	private Response<QueryResponse> doExecuteTestQueryCategoryMembersByTimestamp(
+	private QueryResponse doExecuteTestQueryCategoryMembersByTimestamp(
 		final String grccontinue
-	) throws IOException {
-		return callWithLog(
-			getClient()
-				.queryCategoryMembersByTimestamp(
-					Category.CARDS,
-					Limit.getDefault(),
-					SortDirection.NEWER,
-					grccontinue
-				)
-		);
+	) {
+		return getClient()
+			.queryCategoryMembersByTimestamp(
+				Category.CARDS,
+				Limit.getDefault(),
+				SortDirection.NEWER,
+				grccontinue
+			);
 	}
 
-	private Response<QueryResponse> doExecuteTestQueryPagesWithTemplate(
+	private QueryResponse doExecuteTestQueryPagesWithTemplate(
 		final String geicontinue
-	) throws IOException {
-		return callWithLog(
-			getClient()
-				.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue)
-		);
+	) {
+		return getClient()
+			.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue);
 	}
 
-	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
-		String grccontinue
-	) throws IOException {
+	private QueryResponse doExecuteTestQueryRecentChanges(String grccontinue) {
 		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
 	}
 
-	private Response<QueryResponse> doExecuteTestQueryRecentChanges(
+	private QueryResponse doExecuteTestQueryRecentChanges(
 		final Timestamp startAt,
 		final Timestamp endAt,
 		final String grccontinue
-	) throws IOException {
-		return callWithLog(
-			getClient()
-				.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
-		);
+	) {
+		return getClient()
+			.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue);
 	}
 
-	private Response<QueryResponse> doExecuteQueryPagesByTitle(
-		final PipeSeparated titles
-	) throws IOException {
-		return callWithLog(getClient().queryPagesByTitle(titles));
+	private QueryResponse doExecuteQueryPagesByTitle(final PipeSeparated titles) {
+		return getClient().queryPagesByTitle(titles);
 	}
 
 	@Nested
@@ -85,19 +58,18 @@ public abstract class AbstractYugipediaClientTest {
 	class QueryCategoryMembersByTimestampTest {
 
 		@Test
-		void given_firstCall_when_queryCategoryMembersByTimestamp_then_responseOk()
-			throws IOException {
+		void given_firstCall_when_queryCategoryMembersByTimestamp_then_responseOk() {
 			// given
 			final String gmcontinue = null;
 			// when
-			final Response<QueryResponse> cards =
-				doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
+			final QueryResponse cards = doExecuteTestQueryCategoryMembersByTimestamp(
+				gmcontinue
+			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(cards.code()).isEqualTo(200);
-				softly.assertThat(cards.body()).isNotNull();
+				softly.assertThat(cards).isNotNull();
 				softly
-					.assertThat(cards.body().getContinue())
+					.assertThat(cards.getContinue())
 					.isNotNull()
 					.extracting(Continue::gcmcontinue)
 					.isNotNull();
@@ -105,25 +77,22 @@ public abstract class AbstractYugipediaClientTest {
 		}
 
 		@Test
-		void given_consecutive3calls_when_queryCategoryMembersByTimestamp_then_responseOk()
-			throws IOException {
+		void given_consecutive3calls_when_queryCategoryMembersByTimestamp_then_responseOk() {
 			// given/when
-			final Response<QueryResponse> firstResponse =
+			final QueryResponse firstResponse =
 				doExecuteTestQueryCategoryMembersByTimestamp(null);
-			String gmcontinue = firstResponse.body().getContinue().gcmcontinue();
-			final Response<QueryResponse> secondCall =
+			String gmcontinue = firstResponse.getContinue().gcmcontinue();
+			final QueryResponse secondCall =
 				doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
-			gmcontinue = secondCall.body().getContinue().gcmcontinue();
-			final Response<QueryResponse> thirdCall =
+			gmcontinue = secondCall.getContinue().gcmcontinue();
+			final QueryResponse thirdCall =
 				doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(secondCall.code()).isEqualTo(200);
-				softly.assertThat(secondCall.body()).isNotNull();
-				softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
-				softly.assertThat(thirdCall.code()).isEqualTo(200);
-				softly.assertThat(thirdCall.body()).isNotNull();
-				softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
+				softly.assertThat(thirdCall).isNotNull();
+				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
 			});
 		}
 	}
@@ -133,20 +102,18 @@ public abstract class AbstractYugipediaClientTest {
 	class QueryPagesWithTemplateTest {
 
 		@Test
-		void given_firstCall_when_queryPagesWithTemplate_then_responseOk()
-			throws IOException {
+		void given_firstCall_when_queryPagesWithTemplate_then_responseOk() {
 			// given
 			final String geicontinue = null;
 			// when
-			final Response<QueryResponse> sets = doExecuteTestQueryPagesWithTemplate(
+			final QueryResponse sets = doExecuteTestQueryPagesWithTemplate(
 				geicontinue
 			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets.code()).isEqualTo(200);
-				softly.assertThat(sets.body()).isNotNull();
+				softly.assertThat(sets).isNotNull();
 				softly
-					.assertThat(sets.body().getContinue())
+					.assertThat(sets.getContinue())
 					.isNotNull()
 					.extracting(Continue::geicontinue)
 					.isNotNull();
@@ -154,25 +121,25 @@ public abstract class AbstractYugipediaClientTest {
 		}
 
 		@Test
-		void given_consecutive3calls_when_queryPagesWithTemplate_then_responseOk()
-			throws IOException {
+		void given_consecutive3calls_when_queryPagesWithTemplate_then_responseOk() {
 			// given/when
-			final Response<QueryResponse> firstResponse =
-				doExecuteTestQueryPagesWithTemplate(null);
-			String geicontinue = firstResponse.body().getContinue().geicontinue();
-			final Response<QueryResponse> secondCall =
-				doExecuteTestQueryPagesWithTemplate(geicontinue);
-			geicontinue = secondCall.body().getContinue().geicontinue();
-			final Response<QueryResponse> thirdCall =
-				doExecuteTestQueryPagesWithTemplate(geicontinue);
+			final QueryResponse firstResponse = doExecuteTestQueryPagesWithTemplate(
+				null
+			);
+			String geicontinue = firstResponse.getContinue().geicontinue();
+			final QueryResponse secondCall = doExecuteTestQueryPagesWithTemplate(
+				geicontinue
+			);
+			geicontinue = secondCall.getContinue().geicontinue();
+			final QueryResponse thirdCall = doExecuteTestQueryPagesWithTemplate(
+				geicontinue
+			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(secondCall.code()).isEqualTo(200);
-				softly.assertThat(secondCall.body()).isNotNull();
-				softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
-				softly.assertThat(thirdCall.code()).isEqualTo(200);
-				softly.assertThat(thirdCall.body()).isNotNull();
-				softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
+				softly.assertThat(thirdCall).isNotNull();
+				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
 			});
 		}
 	}
@@ -182,49 +149,46 @@ public abstract class AbstractYugipediaClientTest {
 	class QueryRecentChangesTest {
 
 		@Test
-		void given_firstCall_when_queryRecentChanges_then_responseOk()
-			throws IOException {
+		void given_firstCall_when_queryRecentChanges_then_responseOk() {
 			// given
 			final String grccontinue = null;
 			// when
-			final Response<QueryResponse> recentChanges =
-				doExecuteTestQueryRecentChanges(grccontinue);
-			// then
-			assertSoftly(softly -> {
-				softly.assertThat(recentChanges.code()).isEqualTo(200);
-				softly.assertThat(recentChanges.body()).isNotNull();
-			});
-		}
-
-		@Test
-		void given_consecutive3calls_when_queryRecentChanges_then_responseOk()
-			throws IOException {
-			// given
-			String grccontinue = null;
-			// when
-			final Response<QueryResponse> firstResponse =
-				doExecuteTestQueryRecentChanges(grccontinue);
-			grccontinue = firstResponse.body().getContinue().grccontinue();
-			final Response<QueryResponse> secondCall =
-				doExecuteTestQueryRecentChanges(grccontinue);
-			grccontinue = secondCall.body().getContinue().grccontinue();
-			final Response<QueryResponse> thirdCall = doExecuteTestQueryRecentChanges(
+			final QueryResponse recentChanges = doExecuteTestQueryRecentChanges(
 				grccontinue
 			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(secondCall.code()).isEqualTo(200);
-				softly.assertThat(secondCall.body()).isNotNull();
-				softly.assertThat(secondCall).isNotEqualTo(firstResponse.body());
-				softly.assertThat(thirdCall.code()).isEqualTo(200);
-				softly.assertThat(thirdCall.body()).isNotNull();
-				softly.assertThat(thirdCall).isNotEqualTo(secondCall.body());
+				softly.assertThat(recentChanges).isNotNull();
 			});
 		}
 
 		@Test
-		void given_callWithStartAtDateTime_when_queryRecentChanges_then_responseOk()
-			throws IOException {
+		void given_consecutive3calls_when_queryRecentChanges_then_responseOk() {
+			// given
+			String grccontinue = null;
+			// when
+			final QueryResponse firstResponse = doExecuteTestQueryRecentChanges(
+				grccontinue
+			);
+			grccontinue = firstResponse.getContinue().grccontinue();
+			final QueryResponse secondCall = doExecuteTestQueryRecentChanges(
+				grccontinue
+			);
+			grccontinue = secondCall.getContinue().grccontinue();
+			final QueryResponse thirdCall = doExecuteTestQueryRecentChanges(
+				grccontinue
+			);
+			// then
+			assertSoftly(softly -> {
+				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
+				softly.assertThat(thirdCall).isNotNull();
+				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
+			});
+		}
+
+		@Test
+		void given_callWithStartAtDateTime_when_queryRecentChanges_then_responseOk() {
 			// given
 			final ZonedDateTime startAt = ZonedDateTime.of(
 				2024,
@@ -238,16 +202,14 @@ public abstract class AbstractYugipediaClientTest {
 			);
 			final String grccontinue = null;
 			// when
-			final Response<QueryResponse> recentChanges =
-				doExecuteTestQueryRecentChanges(
-					Timestamp.of(startAt),
-					null,
-					grccontinue
-				);
+			final QueryResponse recentChanges = doExecuteTestQueryRecentChanges(
+				Timestamp.of(startAt),
+				null,
+				grccontinue
+			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(recentChanges.code()).isEqualTo(200);
-				softly.assertThat(recentChanges.body()).isNotNull();
+				softly.assertThat(recentChanges).isNotNull();
 			});
 		}
 	}
@@ -257,45 +219,39 @@ public abstract class AbstractYugipediaClientTest {
 	class QueryPageByTitleTest {
 
 		@Test
-		void given_callWithTitles_when_queryPagesByTitle_then_responseOk()
-			throws IOException {
+		void given_callWithTitles_when_queryPagesByTitle_then_responseOk() {
 			// given
 			final PipeSeparated titles = PipeSeparated.of("LOB", "ETCO");
 			// when
-			final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets.code()).isEqualTo(200);
-				softly.assertThat(sets.body()).isNotNull();
+				softly.assertThat(sets).isNotNull();
 			});
 		}
 
 		@Test
-		void given_callWithNotExistentTitle_when_queryPagesByTitle_then_responseOk()
-			throws IOException {
+		void given_callWithNotExistentTitle_when_queryPagesByTitle_then_responseOk() {
 			// given
 			final PipeSeparated titles = PipeSeparated.of("Does not exists");
 			// when
-			final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets.code()).isEqualTo(200);
-				softly.assertThat(sets.body()).isNotNull();
+				softly.assertThat(sets).isNotNull();
 			});
 		}
 
 		@Test
-		void given_callWithoutTitles_when_queryPagesByTitle_then_responseOk()
-			throws IOException {
+		void given_callWithoutTitles_when_queryPagesByTitle_then_responseOk() {
 			// given
 			final PipeSeparated titles = null;
 			// when
-			final Response<QueryResponse> sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets.code()).isEqualTo(200);
-				softly.assertThat(sets.body()).isNotNull();
-				softly.assertThat(sets.body().batchcomplete()).isTrue();
+				softly.assertThat(sets).isNotNull();
+				softly.assertThat(sets.batchcomplete()).isTrue();
 			});
 		}
 	}

@@ -1,30 +1,26 @@
 package io.github.ygojson.application.yugipedia.client;
 
-import okhttp3.Request;
+import io.quarkus.test.junit.QuarkusTest;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.junit.jupiter.api.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import retrofit2.Response;
 
+@QuarkusTest
 @Tag("contract-test")
 class YugipediaClientContractTest extends AbstractYugipediaClientTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(YugipediaClientContractTest.class);
 
+	@RestClient
+	YugipediaClient yugipediaClient;
+
 	@Override
 	protected YugipediaClient getClient() {
-		return YugipediaClientMother.production();
+		if (yugipediaClient == null) {
+			throw new IllegalStateException("client not injected");
+		}
+		return yugipediaClient;
 	}
 
-	@Override
-	protected void logResponse(Response<?> response) {
-		LOG.info("URL\t:{}", response.raw().request().url());
-		LOG.info("Code\t:{}", response.code());
-		LOG.info("Body\t:\t{}", response.body());
-	}
-
-	@Override
-	protected void logRequest(final Request request) {
-		LOG.info("Request: {}", request);
-	}
 }
