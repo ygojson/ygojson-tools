@@ -13,7 +13,6 @@ import org.eclipse.microprofile.rest.client.annotation.RegisterClientHeaders;
 import org.eclipse.microprofile.rest.client.annotation.RegisterProvider;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-import io.github.ygojson.application.util.http.ClientConfig;
 import io.github.ygojson.application.util.http.YgoJsonAppUserAgentHeaderFactory;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.params.*;
@@ -37,17 +36,6 @@ public interface YugipediaClient {
 	 * The name of the client (and config-key).
 	 */
 	String NAME = "yugipedia";
-
-	/**
-	 * Gets the configuration for the Yugipedia client.
-	 *
-	 * @return the configuration for the Yugipedia client.
-	 * @deprecated constructing with the {@link io.github.ygojson.application.util.http.ClientFactory} not any longer supported.
-	 */
-	@Deprecated
-	static ClientConfig<YugipediaClient> getConfig() {
-		return new Config();
-	}
 
 	/**
 	 * Query all the pages on a given category sorted by timestamp.
