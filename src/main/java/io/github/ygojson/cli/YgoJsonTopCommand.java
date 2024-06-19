@@ -28,8 +28,12 @@ public class YgoJsonTopCommand {
 	@Singleton
 	static final class ModelTransformer implements CommandLine.IModelTransformer {
 
+		private final ApplicationInfo applicationInfo;
+
 		@Inject
-		ApplicationInfo applicationInfo;
+		public ModelTransformer(final ApplicationInfo info) {
+			this.applicationInfo = info;
+		}
 
 		@Override
 		public CommandLine.Model.CommandSpec transform(
@@ -43,8 +47,12 @@ public class YgoJsonTopCommand {
 	@Singleton
 	static final class VersionProvider implements CommandLine.IVersionProvider {
 
+		private final ApplicationInfo applicationInfo;
+
 		@Inject
-		ApplicationInfo applicationInfo;
+		public VersionProvider(final ApplicationInfo info) {
+			this.applicationInfo = info;
+		}
 
 		@Override
 		public String[] getVersion() {

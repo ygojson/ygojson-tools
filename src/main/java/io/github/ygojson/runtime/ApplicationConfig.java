@@ -1,8 +1,8 @@
 package io.github.ygojson.runtime;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Singleton;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import io.github.ygojson.application.ApplicationInfo;
@@ -31,7 +31,7 @@ public class ApplicationConfig {
 	 * @return the application info instance.
 	 */
 	@Produces
-	@Dependent
+	@Singleton
 	public ApplicationInfo applicationInfo() {
 		return new ApplicationInfo(applicationName, applicationVersion, ygojsonUrl);
 	}
