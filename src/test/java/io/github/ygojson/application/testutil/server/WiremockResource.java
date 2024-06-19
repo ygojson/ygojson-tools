@@ -53,7 +53,7 @@ public abstract class WiremockResource
 			);
 		});
 		mockServer.start();
-		// mat the RestClient url property
+		// map the RestClient url property
 		return Map.of(getRestClientUrlProperty(), mockServer.baseUrl());
 	}
 

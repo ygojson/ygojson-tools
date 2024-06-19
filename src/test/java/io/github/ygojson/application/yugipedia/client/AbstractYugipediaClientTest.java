@@ -62,14 +62,14 @@ public abstract class AbstractYugipediaClientTest {
 			// given
 			final String gmcontinue = null;
 			// when
-			final QueryResponse cards = doExecuteTestQueryCategoryMembersByTimestamp(
-				gmcontinue
-			);
+			final QueryResponse cardsResponse =
+				doExecuteTestQueryCategoryMembersByTimestamp(gmcontinue);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(cards).isNotNull();
+				softly.assertThat(cardsResponse).isNotNull();
+				softly.assertThat(cardsResponse.query().pages()).isNotEmpty();
 				softly
-					.assertThat(cards.getContinue())
+					.assertThat(cardsResponse.getContinue())
 					.isNotNull()
 					.extracting(Continue::gcmcontinue)
 					.isNotNull();
@@ -90,9 +90,11 @@ public abstract class AbstractYugipediaClientTest {
 			// then
 			assertSoftly(softly -> {
 				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall.query().pages()).isNotEmpty();
 				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
 				softly.assertThat(thirdCall).isNotNull();
 				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
+				softly.assertThat(thirdCall.query().pages()).isNotEmpty();
 			});
 		}
 	}
@@ -106,14 +108,15 @@ public abstract class AbstractYugipediaClientTest {
 			// given
 			final String geicontinue = null;
 			// when
-			final QueryResponse sets = doExecuteTestQueryPagesWithTemplate(
+			final QueryResponse setsResponse = doExecuteTestQueryPagesWithTemplate(
 				geicontinue
 			);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets).isNotNull();
+				softly.assertThat(setsResponse).isNotNull();
+				softly.assertThat(setsResponse.query().pages()).isNotEmpty();
 				softly
-					.assertThat(sets.getContinue())
+					.assertThat(setsResponse.getContinue())
 					.isNotNull()
 					.extracting(Continue::geicontinue)
 					.isNotNull();
@@ -137,8 +140,10 @@ public abstract class AbstractYugipediaClientTest {
 			// then
 			assertSoftly(softly -> {
 				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall.query().pages()).isNotEmpty();
 				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
 				softly.assertThat(thirdCall).isNotNull();
+				softly.assertThat(thirdCall.query().pages()).isNotEmpty();
 				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
 			});
 		}
@@ -159,6 +164,7 @@ public abstract class AbstractYugipediaClientTest {
 			// then
 			assertSoftly(softly -> {
 				softly.assertThat(recentChanges).isNotNull();
+				softly.assertThat(recentChanges.query().pages()).isNotEmpty();
 			});
 		}
 
@@ -181,8 +187,10 @@ public abstract class AbstractYugipediaClientTest {
 			// then
 			assertSoftly(softly -> {
 				softly.assertThat(secondCall).isNotNull();
+				softly.assertThat(secondCall.query().pages()).isNotEmpty();
 				softly.assertThat(secondCall).isNotEqualTo(firstResponse);
 				softly.assertThat(thirdCall).isNotNull();
+				softly.assertThat(thirdCall.query().pages()).isNotEmpty();
 				softly.assertThat(thirdCall).isNotEqualTo(secondCall);
 			});
 		}
@@ -210,6 +218,7 @@ public abstract class AbstractYugipediaClientTest {
 			// then
 			assertSoftly(softly -> {
 				softly.assertThat(recentChanges).isNotNull();
+				softly.assertThat(recentChanges.query().pages()).isNotEmpty();
 			});
 		}
 	}
@@ -223,10 +232,11 @@ public abstract class AbstractYugipediaClientTest {
 			// given
 			final PipeSeparated titles = PipeSeparated.of("LOB", "ETCO");
 			// when
-			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse responseTitles = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets).isNotNull();
+				softly.assertThat(responseTitles).isNotNull();
+				softly.assertThat(responseTitles.query().pages()).isNotEmpty();
 			});
 		}
 
@@ -235,10 +245,11 @@ public abstract class AbstractYugipediaClientTest {
 			// given
 			final PipeSeparated titles = PipeSeparated.of("Does not exists");
 			// when
-			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse responseTitles = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets).isNotNull();
+				softly.assertThat(responseTitles).isNotNull();
+				softly.assertThat(responseTitles.query().pages()).isNotEmpty();
 			});
 		}
 
@@ -247,11 +258,12 @@ public abstract class AbstractYugipediaClientTest {
 			// given
 			final PipeSeparated titles = null;
 			// when
-			final QueryResponse sets = doExecuteQueryPagesByTitle(titles);
+			final QueryResponse responseTitles = doExecuteQueryPagesByTitle(titles);
 			// then
 			assertSoftly(softly -> {
-				softly.assertThat(sets).isNotNull();
-				softly.assertThat(sets.batchcomplete()).isTrue();
+				softly.assertThat(responseTitles).isNotNull();
+				softly.assertThat(responseTitles.query()).isNull();
+				softly.assertThat(responseTitles.batchcomplete()).isTrue();
 			});
 		}
 	}

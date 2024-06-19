@@ -85,7 +85,7 @@ class AbstractRateLimiterRequestFilterUnitTest {
 			.forEach(any -> {
 				try (final Response response = client.getResponse()) {
 					// do nothing with the response (just try to deserialize)
-					String body = response.readEntity(String.class);
+					LOG.debug("warm-up round: {} (status={})", any, response.getStatus());
 				} catch (Exception e) {
 					LOG.error("warm-up request error");
 				}
