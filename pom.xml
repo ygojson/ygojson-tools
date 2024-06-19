@@ -27,7 +27,7 @@
         <!-- quarkus dependencies -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.11.1</quarkus.platform.version>
+        <quarkus.platform.version>3.11.3</quarkus.platform.version>
         <!-- quarkus extensions -->
         <quarkus-jdbc-sqlite.version>3.0.7</quarkus-jdbc-sqlite.version>
         <!-- other dependencies -->
@@ -37,7 +37,7 @@
         <!-- test dependencies -->
         <assertj.bom.version>3.26.0</assertj.bom.version>
         <approvaltests.version>24.2.0</approvaltests.version>
-        <instancio.junit.version>4.7.0</instancio.junit.version>
+        <instancio.junit.version>4.8.0</instancio.junit.version>
         <wiremock.version>3.6.0</wiremock.version>
         <!--
         TODO: not sure if we will require it for testing?
