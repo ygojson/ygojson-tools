@@ -1,25 +1,41 @@
 package io.github.ygojson.application.yugipedia.client;
 
-import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.Query;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import io.quarkus.rest.client.reactive.ClientExceptionMapper;
+import io.quarkus.rest.client.reactive.ClientQueryParam;
+import io.quarkus.rest.client.reactive.jackson.ClientObjectMapper;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.rest.client.annotation.RegisterClientHeaders;
+import org.eclipse.microprofile.rest.client.annotation.RegisterProvider;
+import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-import io.github.ygojson.application.util.http.ClientConfig;
+import io.github.ygojson.application.util.http.YgoJsonAppUserAgentHeaderFactory;
+import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.params.*;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 
 /**
  * Yugipedia Client with methods specific to YGOJSON.
  */
+@RegisterRestClient(
+	baseUri = "https://yugipedia.com",
+	configKey = YugipediaClient.NAME
+)
+@Path("/api.php")
+@ClientQueryParam(name = "format", value = "json")
+@ClientQueryParam(name = "formatversion", value = "2")
+@ClientQueryParam(name = "redirects", value = "true")
+@RegisterClientHeaders(YgoJsonAppUserAgentHeaderFactory.class)
+@RegisterProvider(YugipediaRateLimitRequestFilter.class)
 public interface YugipediaClient {
 	/**
-	 * Gets the configuration for the Yugipedia client.
-	 *
-	 * @return the configuration for the Yugipedia client.
+	 * The name of the client (and config-key).
 	 */
-	static ClientConfig<YugipediaClient> getConfig() {
-		return new Config();
-	}
+	String NAME = "yugipedia";
 
 	/**
 	 * Query all the pages on a given category sorted by timestamp.
@@ -30,20 +46,17 @@ public interface YugipediaClient {
 	 * @param gcmcontinue     continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
 	 */
-	@GET(
-		"api.php?action=query" +
-		"&format=json&formatversion=2" +
-		"&redirects=true" +
-		"&prop=revisions" +
-		"&rvprop=content|timestamp" +
-		"&generator=categorymembers" +
-		"&gcmsort=timestamp"
-	)
-	public Call<QueryResponse> queryCategoryMembersByTimestamp(
-		@Query("gcmtitle") Category category,
-		@Query("gcmlimit") Limit resultsPerQuery,
-		@Query("gcmdir") SortDirection sortDir,
-		@Query("gcmcontinue") String gcmcontinue
+	@GET
+	@ClientQueryParam(name = "action", value = "query")
+	@ClientQueryParam(name = "prop", value = "revisions")
+	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
+	@ClientQueryParam(name = "generator", value = "categorymembers")
+	@ClientQueryParam(name = "gcmsort", value = "timestamp")
+	public QueryResponse queryCategoryMembersByTimestamp(
+		@QueryParam("gcmtitle") Category category,
+		@QueryParam("gcmlimit") Limit resultsPerQuery,
+		@QueryParam("gcmdir") SortDirection sortDir,
+		@QueryParam("gcmcontinue") String gcmcontinue
 	);
 
 	/**
@@ -54,18 +67,15 @@ public interface YugipediaClient {
 	 * @param geicontinue continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
 	 */
-	@GET(
-		"api.php?action=query" +
-		"&format=json&formatversion=2" +
-		"&redirects=true" +
-		"&prop=revisions" +
-		"&rvprop=content|timestamp" +
-		"&generator=embeddedin"
-	)
-	public Call<QueryResponse> queryPagesWithTemplate(
-		@Query("geititle") Template template,
-		@Query("geilimit") Limit resultsPerQuery,
-		@Query("geicontinue") String geicontinue
+	@GET
+	@ClientQueryParam(name = "action", value = "query")
+	@ClientQueryParam(name = "prop", value = "revisions")
+	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
+	@ClientQueryParam(name = "generator", value = "embeddedin")
+	public QueryResponse queryPagesWithTemplate(
+		@QueryParam("geititle") Template template,
+		@QueryParam("geilimit") Limit resultsPerQuery,
+		@QueryParam("geicontinue") String geicontinue
 	);
 
 	/**
@@ -77,22 +87,19 @@ public interface YugipediaClient {
 	 * @param grccontinue     continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
 	 */
-	@GET(
-		"api.php?action=query" +
-		"&format=json&formatversion=2" +
-		"&redirects=true" +
-		"&prop=revisions|categories" +
-		"&rvprop=content|timestamp" +
-		"&generator=recentchanges" +
-		"&grctype=new|edit|categorize" +
-		"&grctoponly=true" +
-		"&cllimit=max"
-	)
-	public Call<QueryResponse> queryRecentChanges(
-		@Query("grclimit") Limit resultsPerQuery,
-		@Query("grcstart") Timestamp startAt,
-		@Query("grcend") Timestamp endAt,
-		@Query("grccontinue") String grccontinue
+	@GET
+	@ClientQueryParam(name = "action", value = "query")
+	@ClientQueryParam(name = "prop", value = "revisions|categories")
+	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
+	@ClientQueryParam(name = "generator", value = "recentchanges")
+	@ClientQueryParam(name = "grctype", value = "new|edit|categorize")
+	@ClientQueryParam(name = "grctoponly", value = "true")
+	@ClientQueryParam(name = "cllimit", value = "max")
+	public QueryResponse queryRecentChanges(
+		@QueryParam("grclimit") Limit resultsPerQuery,
+		@QueryParam("grcstart") Timestamp startAt,
+		@QueryParam("grcend") Timestamp endAt,
+		@QueryParam("grccontinue") String grccontinue
 	);
 
 	/**
@@ -101,14 +108,42 @@ public interface YugipediaClient {
 	 * @param titles the titles to search for.
 	 * @return the typed JSON response.
 	 */
-	@GET(
-		"api.php?action=query" +
-		"&format=json&formatversion=2" +
-		"&redirects=true" +
-		"&prop=revisions" +
-		"&rvprop=content|timestamp"
-	)
-	public Call<QueryResponse> queryPagesByTitle(
-		@Query("titles") PipeSeparated titles
+	@GET
+	@ClientQueryParam(name = "action", value = "query")
+	@ClientQueryParam(name = "prop", value = "revisions")
+	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
+	public QueryResponse queryPagesByTitle(
+		@QueryParam("titles") PipeSeparated titles
 	);
+
+	/**
+	 * Object mapper to be used.
+	 *
+	 * @param defaultObjectMapper default object-mapper.
+	 *
+	 * @return the default object mapper.
+	 */
+	@ClientObjectMapper
+	static ObjectMapper objectMapper(ObjectMapper defaultObjectMapper) {
+		return defaultObjectMapper.copy().registerModule(new JavaTimeModule());
+	}
+
+	/**
+	 * Maps the client exceptions to {@link YugipediaException}.
+	 * <br>
+	 * Note that server/other exceptions are mapped to plain {@link RuntimeException}.
+	 *
+	 * @param response the response to map.
+	 *
+	 * @return the exception to throw.
+	 */
+	@ClientExceptionMapper
+	static RuntimeException toException(Response response) {
+		final Response.StatusType type = response.getStatusInfo();
+		return switch (type.getFamily()) {
+			case CLIENT_ERROR -> new YugipediaException(type.getReasonPhrase());
+			case SERVER_ERROR, OTHER -> new RuntimeException(type.getReasonPhrase());
+			default -> null;
+		};
+	}
 }

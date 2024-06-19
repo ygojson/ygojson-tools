@@ -1,11 +1,5 @@
 package io.github.ygojson.application.yugipedia.processor;
 
-import java.io.IOException;
-import java.text.MessageFormat;
-
-import retrofit2.Call;
-import retrofit2.Response;
-
 import io.github.ygojson.application.util.stream.PaginatorStreamFactory;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.YugipediaClient;
@@ -41,7 +35,7 @@ abstract class AbstractYugipediaPaginationHandler<T>
 	 *
 	 * @return the query response call object
 	 */
-	protected abstract Call<QueryResponse> callApi(
+	protected abstract QueryResponse doQuery(
 		final YugipediaClient api,
 		final T continueToken
 	);
@@ -49,32 +43,11 @@ abstract class AbstractYugipediaPaginationHandler<T>
 	@Override
 	public final QueryResponse getNext(final QueryResponse previous) {
 		if (previous == null) {
-			return doQuery(null);
+			// errors are handled on the client-side and the handleError
+			return doQuery(api, null);
 		}
 		final T continueToken = getContinueToken(previous);
-		return continueToken == null ? null : doQuery(continueToken);
-	}
-
-	private QueryResponse doQuery(final T continueToken) {
-		try {
-			final Response<QueryResponse> response = callApi(api, continueToken)
-				.execute();
-			if (!response.isSuccessful()) {
-				throw new YugipediaException(
-					MessageFormat.format(
-						"Yugipedia error {0}: {1}",
-						response.code(),
-						response.errorBody()
-					)
-				);
-			}
-			return response.body();
-		} catch (final IOException e) {
-			throw new YugipediaException(
-				"Unexpected error on Yugipedia API query",
-				e
-			);
-		}
+		return continueToken == null ? null : doQuery(api, continueToken);
 	}
 
 	@Override

@@ -3,10 +3,16 @@ quarkus:
   datasource:
     jdbc:
       url: "jdbc:sqlite:file:.tmp/test.db?mode=rwc"
+  rest-client:
+    logging:
+      scope: "request-response"
+      body-limit: 1000
   log:
     console:
       stderr: true
     category:
+      "org.jboss.resteasy.reactive.client.logging":
+        level: "DEBUG"
       "org.hibernate.SQL":
         level: "DEBUG"
       "io.github.ygojson":

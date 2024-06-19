@@ -37,7 +37,7 @@ public abstract class WiremockResource
 
 	@Override
 	public final Map<String, String> start() {
-		LOG.info("Starting wiremock test-resource for " + getName());
+		LOG.debug("Starting wiremock test-resource for " + getName());
 		mockServer =
 			new WireMockServer(
 				WireMockConfiguration
@@ -53,9 +53,12 @@ public abstract class WiremockResource
 			);
 		});
 		mockServer.start();
-		// TODO: for https://github.com/ygojson/ygojson-tools/issues/141 a property would be required
-		// TODO: to setup the quarkus.rest-client.{name}.url so it will be substittued
-		return Map.of();
+		// map the RestClient url property
+		return Map.of(getRestClientUrlProperty(), mockServer.baseUrl());
+	}
+
+	private String getRestClientUrlProperty() {
+		return "quarkus.rest-client." + getName() + ".url";
 	}
 
 	private String getWiremockBasePath() {
