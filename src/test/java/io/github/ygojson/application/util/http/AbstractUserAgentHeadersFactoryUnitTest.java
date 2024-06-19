@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 class AbstractUserAgentHeadersFactoryUnitTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(
-		RateLimitInterceptorTest.class
+		AbstractUserAgentHeadersFactoryUnitTest.class
 	);
 
 	private static WireMockServer MOCK_SERVER;
