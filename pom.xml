@@ -8,7 +8,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <maven.version>3.9.7</maven.version>
+        <maven.version>3.9.8</maven.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
@@ -48,12 +48,12 @@
         <!-- plugin version-->
         <spotless-plugin.version>2.43.0</spotless-plugin.version>
         <enforcer-plugin.version>3.5.0</enforcer-plugin.version>
-        <clean-plugin.version>3.2.0</clean-plugin.version>
+        <clean-plugin.version>3.4.0</clean-plugin.version>
         <jsonschema2pojo-plugin.version>1.2.1</jsonschema2pojo-plugin.version>
         <build-helper-plugin.version>3.6.0</build-helper-plugin.version>
         <compiler-plugin.version>3.13.0</compiler-plugin.version>
-        <surefire-plugin.version>3.2.5</surefire-plugin.version>
-        <failsafe-plugin.version>3.2.5</failsafe-plugin.version>
+        <surefire-plugin.version>3.3.0</surefire-plugin.version>
+        <failsafe-plugin.version>3.3.0</failsafe-plugin.version>
         <jacoco-plugin.version>0.8.12</jacoco-plugin.version>
     </properties>
 
