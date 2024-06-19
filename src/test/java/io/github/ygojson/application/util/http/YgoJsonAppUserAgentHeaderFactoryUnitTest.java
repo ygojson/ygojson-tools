@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.stream.Stream;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -12,13 +11,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 import io.github.ygojson.application.ApplicationInfo;
 
 class YgoJsonAppUserAgentHeaderFactoryUnitTest {
-
-	private YgoJsonAppUserAgentHeaderFactory factory;
-
-	@BeforeEach
-	void beforeEach() {
-		factory = new YgoJsonAppUserAgentHeaderFactory();
-	}
 
 	public static Stream<Arguments> userAgentArguments() {
 		return Stream.of(
@@ -54,7 +46,8 @@ class YgoJsonAppUserAgentHeaderFactoryUnitTest {
 		final String expectedAgent
 	) {
 		// given
-		factory.info = info;
+		YgoJsonAppUserAgentHeaderFactory factory =
+			new YgoJsonAppUserAgentHeaderFactory(info);
 		// when
 		final String userAgent = factory.getHeaderString(originalAgent);
 		// then

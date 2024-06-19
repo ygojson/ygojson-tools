@@ -16,8 +16,12 @@ import io.github.ygojson.application.ApplicationInfo;
 public class YgoJsonAppUserAgentHeaderFactory
 	extends AbstractUserAgentHeadersFactory {
 
+	private final ApplicationInfo info;
+
 	@Inject
-	ApplicationInfo info;
+	public YgoJsonAppUserAgentHeaderFactory(final ApplicationInfo info) {
+		this.info = info;
+	}
 
 	@Override
 	protected String getHeaderString(String originalHeader) {
