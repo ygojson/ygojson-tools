@@ -1,0 +1,33 @@
+{
+  "type" : "booster pack",
+  "series" : "core booster",
+  "en" : {
+    "name" : "Duelist Nexus",
+    "setCode" : "DUNE"
+  },
+  "de" : {
+    "name" : "Duelist Nexus"
+  },
+  "es" : {
+    "name" : "Nexus Duelista"
+  },
+  "fr" : {
+    "name" : "Nexus du Duelliste"
+  },
+  "it" : {
+    "name" : "Nexus dei Duellanti"
+  },
+  "ja" : {
+    "name" : "デュエリスト・ネクサス"
+  },
+  "ko" : {
+    "name" : "듀얼리스트 넥서스"
+  },
+  "pt" : {
+    "name" : "Nexus Duelista"
+  },
+  "zhHans" : {
+    "name" : "决斗者之绊"
+  },
+  "zhHant" : { }
+}
