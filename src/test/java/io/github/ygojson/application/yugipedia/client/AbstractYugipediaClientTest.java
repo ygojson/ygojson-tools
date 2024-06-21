@@ -100,11 +100,7 @@ public abstract class AbstractYugipediaClientTest {
 			final String geicontinue
 		) {
 			return getClient()
-				.queryPagesWithTemplate(
-					Template.SETS,
-					Limit.getDefault(),
-					geicontinue
-				)
+				.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue)
 				.await()
 				.indefinitely();
 		}

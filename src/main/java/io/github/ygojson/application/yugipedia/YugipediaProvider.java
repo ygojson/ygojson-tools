@@ -21,7 +21,9 @@ import io.github.ygojson.application.yugipedia.processor.YugipediaProcessor;
  */
 public class YugipediaProvider {
 
-	private static final Logger LOG = LoggerFactory.getLogger(YugipediaProvider.class);
+	private static final Logger LOG = LoggerFactory.getLogger(
+		YugipediaProvider.class
+	);
 
 	private final YugipediaClient client;
 	private final Limit limit;
@@ -47,17 +49,17 @@ public class YugipediaProvider {
 			.uni( //
 				() -> state, // starting supplier
 				nextState ->
-					client.queryPagesWithTemplate(
-						Template.SETS,
-						limit,
-						nextState.get()
-					)
+					client.queryPagesWithTemplate(Template.SETS, limit, nextState.get())
 			)
 			.whilst(page -> computeAndHasNext(page, state, Continue::geicontinue))
 			.flatMap(processor::processQuery);
 	}
 
-	private boolean computeAndHasNext(final QueryResponse response, final AtomicReference<String> state, final Function<Continue, String> tokenExtractor) {
+	private boolean computeAndHasNext(
+		final QueryResponse response,
+		final AtomicReference<String> state,
+		final Function<Continue, String> tokenExtractor
+	) {
 		final Continue nextContinue = response.getContinue();
 		if (nextContinue != null) {
 			final String token = tokenExtractor.apply(nextContinue);
@@ -65,9 +67,11 @@ public class YugipediaProvider {
 				state.set(token);
 				return true;
 			}
-			LOG.warn("Expected continue-token not present (stopping iteration): {}", nextContinue);
+			LOG.warn(
+				"Expected continue-token not present (stopping iteration): {}",
+				nextContinue
+			);
 		}
 		return false;
 	}
-
 }
