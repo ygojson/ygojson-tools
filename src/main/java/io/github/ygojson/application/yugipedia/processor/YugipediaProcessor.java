@@ -1,7 +1,6 @@
 package io.github.ygojson.application.yugipedia.processor;
 
 import java.util.Map;
-import java.util.stream.Stream;
 
 import io.smallrye.mutiny.Multi;
 
@@ -29,20 +28,12 @@ public interface YugipediaProcessor {
 	}
 
 	/**
+	 * Process the query in asyncronious way.
 	 *
-	 * @param queryResponse
-	 * @return
-	 *
-	 * @deprecated use the reactrive processor instead ({@link #processQueryReactive(QueryResponse)}).
+	 * @param queryResponse parse the query in async way.
+	 * @return the result as a multi.
 	 */
-	@Deprecated
-	Stream<Map<String, YugipediaProperty>> processQuery(
+	Multi<Map<String, YugipediaProperty>> processQuery(
 		QueryResponse queryResponse
 	);
-
-	default Multi<Map<String, YugipediaProperty>> processQueryReactive(
-		QueryResponse queryResponse
-	) {
-		return Multi.createFrom().items(processQuery(queryResponse));
-	}
 }
