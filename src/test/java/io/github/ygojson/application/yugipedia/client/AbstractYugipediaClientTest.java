@@ -17,38 +17,23 @@ public abstract class AbstractYugipediaClientTest {
 
 	protected abstract YugipediaClient getClient();
 
-	private QueryResponse doExecuteTestQueryCategoryMembersByTimestamp(
-		final String grccontinue
-	) {
-		return getClient()
-			.queryCategoryMembersByTimestamp(
-				Category.CARDS,
-				Limit.getDefault(),
-				SortDirection.NEWER,
-				grccontinue
-			);
-	}
-
-	private QueryResponse doExecuteTestQueryRecentChanges(String grccontinue) {
-		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
-	}
-
-	private QueryResponse doExecuteTestQueryRecentChanges(
-		final Timestamp startAt,
-		final Timestamp endAt,
-		final String grccontinue
-	) {
-		return getClient()
-			.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue);
-	}
-
-	private QueryResponse doExecuteQueryPagesByTitle(final PipeSeparated titles) {
-		return getClient().queryPagesByTitle(titles);
-	}
-
 	@Nested
 	@DisplayName("queryCategoryMembersByTimestamp")
 	class QueryCategoryMembersByTimestampTest {
+
+		private QueryResponse doExecuteTestQueryCategoryMembersByTimestamp(
+			final String grccontinue
+		) {
+			return getClient()
+				.queryCategoryMembersByTimestamp(
+					Category.CARDS,
+					Limit.getDefault(),
+					SortDirection.NEWER,
+					grccontinue
+				)
+				.await()
+				.indefinitely();
+		}
 
 		@Test
 		void given_firstCall_when_queryCategoryMembersByTimestamp_then_responseOk() {
@@ -154,6 +139,21 @@ public abstract class AbstractYugipediaClientTest {
 	@Nested
 	@DisplayName("queryRecentChanges")
 	class QueryRecentChangesTest {
+
+		private QueryResponse doExecuteTestQueryRecentChanges(String grccontinue) {
+			return doExecuteTestQueryRecentChanges(null, null, grccontinue);
+		}
+
+		private QueryResponse doExecuteTestQueryRecentChanges(
+			final Timestamp startAt,
+			final Timestamp endAt,
+			final String grccontinue
+		) {
+			return getClient()
+				.queryRecentChanges(Limit.getDefault(), startAt, endAt, grccontinue)
+				.await()
+				.indefinitely();
+		}
 
 		@Test
 		void given_firstCall_when_queryRecentChanges_then_responseOk() {
@@ -267,6 +267,12 @@ public abstract class AbstractYugipediaClientTest {
 				softly.assertThat(responseTitles.query()).isNull();
 				softly.assertThat(responseTitles.batchcomplete()).isTrue();
 			});
+		}
+
+		private QueryResponse doExecuteQueryPagesByTitle(
+			final PipeSeparated titles
+		) {
+			return getClient().queryPagesByTitle(titles).await().indefinitely();
 		}
 	}
 }
