@@ -33,23 +33,30 @@ class YugipediaProviderMockTest {
 
 	@ParameterizedTest
 	@ValueSource(ints = { 10, 15, 20 })
-	void given_mockDataProviderFetchSets_when_streamCollectedWithLimitLessThanMockedData_then_noFailureAnd10Sets(
+	void given_mockDataProviderFetchSets_when_reactiveCollectedWithLimitLessThanMockedData_then_noFailureAnd10Sets(
 		final int limit
 	) {
 		// given
 		final var fetchingStream = createOrGetProvider().fetchSets();
 		// when
-		final var collectedSets = fetchingStream.limit(limit).toList();
+		final var collectedSets = fetchingStream
+			.select()
+			.first(limit)
+			.collect()
+			.asList()
+			.await()
+			.indefinitely();
 		// then
 		assertThat(collectedSets).hasSize(limit);
 	}
 
 	@Test
-	void given_mockDataProviderFetchSets_when_cannotFetchMoreData_then_throwYugipediaException() {
+	void given_mockDataProviderFetchSets_when_reactiveCannotFetchMoreData_then_throwYugipediaException() {
 		// given
 		final var fetchingStream = createOrGetProvider().fetchSets();
 		// when
-		final ThrowableAssert.ThrowingCallable callable = fetchingStream::toList;
+		final ThrowableAssert.ThrowingCallable callable = () ->
+			fetchingStream.subscribe().asStream().toList();
 		// then
 		assertThatThrownBy(callable).isInstanceOf(YugipediaException.class);
 	}

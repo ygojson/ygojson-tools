@@ -29,13 +29,6 @@ public abstract class AbstractYugipediaClientTest {
 			);
 	}
 
-	private QueryResponse doExecuteTestQueryPagesWithTemplate(
-		final String geicontinue
-	) {
-		return getClient()
-			.queryPagesWithTemplate(Template.SETS, Limit.getDefault(), geicontinue);
-	}
-
 	private QueryResponse doExecuteTestQueryRecentChanges(String grccontinue) {
 		return doExecuteTestQueryRecentChanges(null, null, grccontinue);
 	}
@@ -102,6 +95,19 @@ public abstract class AbstractYugipediaClientTest {
 	@Nested
 	@DisplayName("queryPagesWithTemplate")
 	class QueryPagesWithTemplateTest {
+
+		private QueryResponse doExecuteTestQueryPagesWithTemplate(
+			final String geicontinue
+		) {
+			return getClient()
+				.queryPagesWithTemplateReactive(
+					Template.SETS,
+					Limit.getDefault(),
+					geicontinue
+				)
+				.await()
+				.indefinitely();
+		}
 
 		@Test
 		void given_firstCall_when_queryPagesWithTemplate_then_responseOk() {
