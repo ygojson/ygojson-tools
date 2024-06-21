@@ -67,28 +67,6 @@ public interface YugipediaClient {
 	 * @param resultsPerQuery the number of results per-query.
 	 * @param geicontinue continue token (if {@code null} initial request.
 	 * @return the typed JSON response.
-	 *
-	 * @deprecated use the {@link #queryPagesWithTemplateReactive(Template, Limit, String)} client
-	 */
-	@GET
-	@ClientQueryParam(name = "action", value = "query")
-	@ClientQueryParam(name = "prop", value = "revisions")
-	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
-	@ClientQueryParam(name = "generator", value = "embeddedin")
-	@Deprecated
-	public QueryResponse queryPagesWithTemplate(
-		@QueryParam("geititle") Template template,
-		@QueryParam("geilimit") Limit resultsPerQuery,
-		@QueryParam("geicontinue") String geicontinue
-	);
-
-	/**
-	 * Query all the pages on containing a given template.
-	 *
-	 * @param template template to request.
-	 * @param resultsPerQuery the number of results per-query.
-	 * @param geicontinue continue token (if {@code null} initial request.
-	 * @return the typed JSON response.
 	 */
 	@GET
 	@ClientQueryParam(name = "action", value = "query")
