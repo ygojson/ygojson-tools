@@ -47,7 +47,7 @@ public class YugipediaProvider {
 			.uni( //
 				() -> state, // starting supplier
 				nextState ->
-					client.queryPagesWithTemplateReactive(
+					client.queryPagesWithTemplate(
 						Template.SETS,
 						limit,
 						nextState.get()

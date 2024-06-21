@@ -73,7 +73,7 @@ public interface YugipediaClient {
 	@ClientQueryParam(name = "prop", value = "revisions")
 	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
 	@ClientQueryParam(name = "generator", value = "embeddedin")
-	public Uni<QueryResponse> queryPagesWithTemplateReactive(
+	public Uni<QueryResponse> queryPagesWithTemplate(
 		@QueryParam("geititle") Template template,
 		@QueryParam("geilimit") Limit resultsPerQuery,
 		@QueryParam("geicontinue") String geicontinue
