@@ -1,7 +1,8 @@
 package io.github.ygojson.application.yugipedia.processor;
 
 import java.util.Map;
-import java.util.stream.Stream;
+
+import io.smallrye.mutiny.Multi;
 
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
 import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
@@ -26,7 +27,13 @@ public interface YugipediaProcessor {
 		return new YugipediaParserProcessor(YugipediaParser.createSetParser());
 	}
 
-	Stream<Map<String, YugipediaProperty>> processQuery(
+	/**
+	 * Process the query in asyncronious way.
+	 *
+	 * @param queryResponse parse the query in async way.
+	 * @return the result as a multi.
+	 */
+	Multi<Map<String, YugipediaProperty>> processQuery(
 		QueryResponse queryResponse
 	);
 }

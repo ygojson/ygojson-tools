@@ -2,9 +2,8 @@ package io.github.ygojson.application.yugipedia.processor;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Stream;
 
+import io.smallrye.mutiny.Multi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +41,7 @@ class YugipediaParserProcessor implements YugipediaProcessor {
 	 * @throws YugipediaException if there is an unexpected error
 	 */
 	@Override
-	public final Stream<Map<String, YugipediaProperty>> processQuery(
+	public final Multi<Map<String, YugipediaProperty>> processQuery(
 		QueryResponse queryResponse
 	) {
 		if (
@@ -56,9 +55,14 @@ class YugipediaParserProcessor implements YugipediaProcessor {
 		final List<Page> pages = queryResponse.query().pages();
 		if (pages == null || pages.isEmpty()) {
 			log.warn("No pages found on query-response: {}", queryResponse);
-			return Stream.empty();
+			return Multi.createFrom().empty();
 		}
-		return pages.stream().map(this::processPage).filter(Objects::nonNull);
+
+		return Multi
+			.createFrom()
+			.items(pages.stream())
+			.map(this::processPage)
+			.filter(props -> !props.isEmpty());
 	}
 
 	private Map<String, YugipediaProperty> processPage(final Page page) {
@@ -101,7 +105,7 @@ class YugipediaParserProcessor implements YugipediaProcessor {
 			parser.getName(),
 			msg
 		);
-		return null;
+		return Map.of();
 	}
 
 	private boolean isWikitext(final Revision revision) {

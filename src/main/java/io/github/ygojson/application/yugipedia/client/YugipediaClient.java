@@ -5,6 +5,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import io.quarkus.rest.client.reactive.ClientExceptionMapper;
 import io.quarkus.rest.client.reactive.ClientQueryParam;
 import io.quarkus.rest.client.reactive.jackson.ClientObjectMapper;
+import io.smallrye.mutiny.Uni;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.QueryParam;
@@ -52,7 +53,7 @@ public interface YugipediaClient {
 	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
 	@ClientQueryParam(name = "generator", value = "categorymembers")
 	@ClientQueryParam(name = "gcmsort", value = "timestamp")
-	public QueryResponse queryCategoryMembersByTimestamp(
+	Uni<QueryResponse> queryCategoryMembersByTimestamp(
 		@QueryParam("gcmtitle") Category category,
 		@QueryParam("gcmlimit") Limit resultsPerQuery,
 		@QueryParam("gcmdir") SortDirection sortDir,
@@ -72,7 +73,7 @@ public interface YugipediaClient {
 	@ClientQueryParam(name = "prop", value = "revisions")
 	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
 	@ClientQueryParam(name = "generator", value = "embeddedin")
-	public QueryResponse queryPagesWithTemplate(
+	Uni<QueryResponse> queryPagesWithTemplate(
 		@QueryParam("geititle") Template template,
 		@QueryParam("geilimit") Limit resultsPerQuery,
 		@QueryParam("geicontinue") String geicontinue
@@ -95,7 +96,7 @@ public interface YugipediaClient {
 	@ClientQueryParam(name = "grctype", value = "new|edit|categorize")
 	@ClientQueryParam(name = "grctoponly", value = "true")
 	@ClientQueryParam(name = "cllimit", value = "max")
-	public QueryResponse queryRecentChanges(
+	Uni<QueryResponse> queryRecentChanges(
 		@QueryParam("grclimit") Limit resultsPerQuery,
 		@QueryParam("grcstart") Timestamp startAt,
 		@QueryParam("grcend") Timestamp endAt,
@@ -112,7 +113,7 @@ public interface YugipediaClient {
 	@ClientQueryParam(name = "action", value = "query")
 	@ClientQueryParam(name = "prop", value = "revisions")
 	@ClientQueryParam(name = "rvprop", value = "content|timestamp")
-	public QueryResponse queryPagesByTitle(
+	Uni<QueryResponse> queryPagesByTitle(
 		@QueryParam("titles") PipeSeparated titles
 	);
 

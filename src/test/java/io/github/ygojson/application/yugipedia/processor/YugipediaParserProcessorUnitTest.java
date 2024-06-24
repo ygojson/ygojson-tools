@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
+import io.github.ygojson.application.testutil.MutinyTestUtil;
 import io.github.ygojson.application.yugipedia.YugipediaException;
 import io.github.ygojson.application.yugipedia.client.response.Page;
 import io.github.ygojson.application.yugipedia.client.response.QueryResponse;
@@ -67,7 +68,8 @@ class YugipediaParserProcessorUnitTest {
 		// given
 		final QueryResponse queryResponse = queryResponse((List<Page>) null);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -77,7 +79,8 @@ class YugipediaParserProcessorUnitTest {
 		// given
 		final QueryResponse queryResponse = queryResponse(List.of());
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -87,7 +90,8 @@ class YugipediaParserProcessorUnitTest {
 		// given
 		final QueryResponse queryResponse = queryResponse(missingPage());
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -97,7 +101,8 @@ class YugipediaParserProcessorUnitTest {
 		// given
 		final QueryResponse queryResponse = queryResponse(randomPage());
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -109,7 +114,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision((List<Revision>) null)
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -121,7 +127,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision(List.of())
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -133,7 +140,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision(List.of())
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -145,7 +153,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision(randomRevision())
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -156,9 +165,10 @@ class YugipediaParserProcessorUnitTest {
 		final YugipediaParserProcessor throwingProcessor =
 			new YugipediaParserProcessor(new TestThrowingExceptionParser());
 		// when
-		var result = throwingProcessor.processQuery(
+		var asyncProcess = throwingProcessor.processQuery(
 			queryResponse(pageWithRevision(wikitextRevision("Correct")))
 		);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result).isEmpty();
 	}
@@ -170,7 +180,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision(wikitextRevision(null))
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result)
 			.describedAs("result-stream")
@@ -186,7 +197,8 @@ class YugipediaParserProcessorUnitTest {
 			pageWithRevision(wikitextRevision("my revision content"))
 		);
 		// when
-		var result = createTestProcessor().processQuery(queryResponse);
+		var asyncProcess = createTestProcessor().processQuery(queryResponse);
+		var result = MutinyTestUtil.collectAll(asyncProcess);
 		// then
 		assertThat(result)
 			.describedAs("result-stream")
