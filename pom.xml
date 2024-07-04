@@ -37,8 +37,8 @@
         <!-- test dependencies -->
         <assertj.bom.version>3.26.0</assertj.bom.version>
         <approvaltests.version>24.2.0</approvaltests.version>
-        <instancio.junit.version>4.8.0</instancio.junit.version>
-        <wiremock.version>3.6.0</wiremock.version>
+        <instancio.junit.version>4.8.1</instancio.junit.version>
+        <wiremock.version>3.8.0</wiremock.version>
         <!--
         TODO: not sure if we will require it for testing?
         TODO: see https://github.com/ygojson/ygojson-tools/issues/126
