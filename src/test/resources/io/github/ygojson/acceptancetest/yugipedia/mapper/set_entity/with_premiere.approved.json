@@ -1,0 +1,31 @@
+{
+  "type" : "booster pack",
+  "series" : "core booster",
+  "en" : {
+    "name" : "Eternity Code",
+    "setCode" : "ETCO"
+  },
+  "de" : {
+    "name" : "Eternity Code"
+  },
+  "es" : {
+    "name" : "Código de Eternidad"
+  },
+  "fr" : {
+    "name" : "Le Code de l'Éternité"
+  },
+  "it" : {
+    "name" : "Codice Eternità"
+  },
+  "ja" : {
+    "name" : "エターニティ・コード"
+  },
+  "ko" : {
+    "name" : "이터니티 코드"
+  },
+  "pt" : {
+    "name" : "Código da Eternidade"
+  },
+  "zhHans" : { },
+  "zhHant" : { }
+}
