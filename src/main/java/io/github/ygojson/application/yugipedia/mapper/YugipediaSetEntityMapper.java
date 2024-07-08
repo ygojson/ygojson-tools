@@ -48,7 +48,7 @@ public abstract class YugipediaSetEntityMapper {
 	@Mapping(target = "pt.name", source = "pt_name")
 	@Mapping(target = "zhHans.name", source = "sc_name")
 	@Mapping(target = "zhHant.name", source = "tc_name")
-	// localized setCode / setCodesAlt are set with the LangSpec on after-mapping
+	// localized setCode / setCodesAlt are set with the YugipediaLocalizedDataMapper on after-mapping
 	public abstract SetEntity toEntity(
 		final Map<String, YugipediaProperty> property
 	);
