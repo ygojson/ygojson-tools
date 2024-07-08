@@ -46,7 +46,14 @@ class PrintRepositoryUnitTest {
 	}
 
 	@Test
-	void given_emptyEntity_when_save_then_repositoryContainsEntity() {}
+	void given_emptyEntity_when_save_then_repositoryContainsEntity() {
+		// given
+		final PrintEntity entity = new PrintEntity();
+		// when
+		final UUID result = repository.save(entity);
+		// then
+		assertThat(result).isNotNull();
+	}
 
 	@Test
 	void given_entityInstanceWithoutId_when_save_then_repositoryContainsEntity() {
