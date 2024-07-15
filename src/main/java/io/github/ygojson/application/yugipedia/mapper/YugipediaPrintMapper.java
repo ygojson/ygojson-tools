@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 
 import org.mapstruct.*;
 
-import io.github.ygojson.application.logic.mapper.CardNumber;
-import io.github.ygojson.application.logic.mapper.CardNumberParser;
+import io.github.ygojson.application.logic.cardnumber.CardNumber;
+import io.github.ygojson.application.logic.cardnumber.CardNumberParser;
 import io.github.ygojson.application.yugipedia.parser.model.SetRow;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.Print;

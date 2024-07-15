@@ -1,4 +1,4 @@
-package io.github.ygojson.application.logic.mapper;
+package io.github.ygojson.application.logic.cardnumber;
 
 import java.util.List;
 import java.util.regex.Matcher;

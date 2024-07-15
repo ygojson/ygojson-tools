@@ -6,8 +6,8 @@ import java.util.Objects;
 import java.util.stream.Stream;
 
 import io.github.ygojson.application.core.db.set.SetEntity;
-import io.github.ygojson.application.logic.mapper.CardNumber;
-import io.github.ygojson.application.logic.mapper.CardNumberParser;
+import io.github.ygojson.application.logic.cardnumber.CardNumber;
+import io.github.ygojson.application.logic.cardnumber.CardNumberParser;
 import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.definition.localization.Region;

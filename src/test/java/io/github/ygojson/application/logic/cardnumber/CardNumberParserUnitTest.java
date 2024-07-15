@@ -1,4 +1,4 @@
-package io.github.ygojson.application.logic.mapper;
+package io.github.ygojson.application.logic.cardnumber;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

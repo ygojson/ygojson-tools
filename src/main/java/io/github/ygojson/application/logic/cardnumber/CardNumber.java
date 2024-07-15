@@ -1,4 +1,4 @@
-package io.github.ygojson.application.logic.mapper;
+package io.github.ygojson.application.logic.cardnumber;
 
 import io.github.ygojson.model.data.definition.localization.Region;
 
