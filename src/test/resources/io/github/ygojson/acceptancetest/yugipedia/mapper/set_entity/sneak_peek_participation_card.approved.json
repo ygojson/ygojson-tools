@@ -1,22 +1,28 @@
 {
+  "yugipediaPageId" : 280261,
   "printNumberPrefix" : "SP",
   "type" : "participation card",
   "series" : "sneak peek participation cards",
   "en" : {
     "name" : "Ancient Prophecy Sneak Peek Participation Card",
+    "konamiId" : 1121208007,
     "setCode" : "ANPR"
   },
   "de" : {
-    "name" : "Ancient Prophecy Sneak Peek"
+    "name" : "Ancient Prophecy Sneak Peek",
+    "konamiId" : 2121208004
   },
   "es" : {
-    "name" : "Profecía Antigua Presentación"
+    "name" : "Profecía Antigua Presentación",
+    "konamiId" : 5121207002
   },
   "fr" : {
-    "name" : "Ancienne Prophétie Avant-première"
+    "name" : "Ancienne Prophétie Avant-première",
+    "konamiId" : 3121207003
   },
   "it" : {
-    "name" : "Antica Profezia Sneak Peek"
+    "name" : "Antica Profezia Sneak Peek",
+    "konamiId" : 4121207003
   },
   "ja" : { },
   "ko" : { },

@@ -1,4 +1,5 @@
 {
+  "yugipediaPageId" : 663218,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
@@ -18,10 +19,12 @@
     "name" : "Codice Eternità"
   },
   "ja" : {
-    "name" : "エターニティ・コード"
+    "name" : "エターニティ・コード",
+    "konamiId" : 1122003
   },
   "ko" : {
-    "name" : "이터니티 코드"
+    "name" : "이터니티 코드",
+    "konamiId" : 71118001
   },
   "pt" : {
     "name" : "Código da Eternidade"

@@ -1,25 +1,32 @@
 {
+  "yugipediaPageId" : 417231,
   "type" : "collector's set",
   "en" : {
     "name" : "Yugi's Legendary Decks",
+    "konamiId" : 18809001,
     "setCode" : "YGLD"
   },
   "de" : {
-    "name" : "Yugi's Legendary Decks"
+    "name" : "Yugi's Legendary Decks",
+    "konamiId" : 28808001
   },
   "es" : {
-    "name" : "Barajas Legendarias de Yugi"
+    "name" : "Barajas Legendarias de Yugi",
+    "konamiId" : 58808001
   },
   "fr" : {
-    "name" : "Decks Légendaires de Yugi"
+    "name" : "Decks Légendaires de Yugi",
+    "konamiId" : 38808001
   },
   "it" : {
-    "name" : "I Deck Leggendari di Yugi"
+    "name" : "I Deck Leggendari di Yugi",
+    "konamiId" : 48808001
   },
   "ja" : { },
   "ko" : { },
   "pt" : {
-    "name" : "Decks Lendários do Yugi"
+    "name" : "Decks Lendários do Yugi",
+    "konamiId" : 18809001
   },
   "zhHans" : { },
   "zhHant" : { }

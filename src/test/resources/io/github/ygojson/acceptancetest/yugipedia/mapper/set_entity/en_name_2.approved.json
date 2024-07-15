@@ -1,31 +1,38 @@
 {
+  "yugipediaPageId" : 117,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
     "name" : "Spell Ruler",
+    "konamiId" : 11101002,
     "setCode" : "SRL",
     "setCodeAlt" : "MRL"
   },
   "enNameAlt" : "Magic Ruler",
   "de" : {
     "name" : "Spell Ruler",
+    "konamiId" : 21101002,
     "setCode" : "SRL"
   },
   "es" : {
     "name" : "Señor de Hechizos",
+    "konamiId" : 51101002,
     "setCode" : "SDH"
   },
   "fr" : {
     "name" : "Le Maître des Magies",
+    "konamiId" : 31101002,
     "setCode" : "MDM"
   },
   "it" : {
     "name" : "Sovrano della Magia",
+    "konamiId" : 41101002,
     "setCode" : "SDM"
   },
   "ja" : { },
   "ko" : {
     "name" : "마법의 지배자",
+    "konamiId" : 71102001,
     "setCode" : "SRL"
   },
   "pt" : { },

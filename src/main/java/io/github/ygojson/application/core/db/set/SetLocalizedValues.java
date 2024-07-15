@@ -11,6 +11,10 @@ public class SetLocalizedValues {
 
 	public String name;
 
+	// the product-ID on the Konami-DB is localized
+	@Column(name = "konami_id")
+	public Long konamiId;
+
 	@Column(name = "setcode")
 	public String setCode;
 

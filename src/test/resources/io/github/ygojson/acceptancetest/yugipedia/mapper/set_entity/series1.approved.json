@@ -1,4 +1,5 @@
 {
+  "yugipediaPageId" : 4902,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
@@ -9,7 +10,8 @@
   "fr" : { },
   "it" : { },
   "ja" : {
-    "name" : "<ruby>Ｖｏｌ．<rt>ボリューム</rt></ruby>１"
+    "name" : "<ruby>Ｖｏｌ．<rt>ボリューム</rt></ruby>１",
+    "konamiId" : 1101000
   },
   "ko" : { },
   "pt" : { },

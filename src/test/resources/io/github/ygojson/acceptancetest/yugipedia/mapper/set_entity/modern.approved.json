@@ -1,4 +1,5 @@
 {
+  "yugipediaPageId" : 711332,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
@@ -18,16 +19,19 @@
     "name" : "Nexus dei Duellanti"
   },
   "ja" : {
-    "name" : "デュエリスト・ネクサス"
+    "name" : "デュエリスト・ネクサス",
+    "konamiId" : 1000009000000
   },
   "ko" : {
-    "name" : "듀얼리스트 넥서스"
+    "name" : "듀얼리스트 넥서스",
+    "konamiId" : 1010001272000
   },
   "pt" : {
     "name" : "Nexus Duelista"
   },
   "zhHans" : {
-    "name" : "决斗者之绊"
+    "name" : "决斗者之绊",
+    "konamiId" : 3000001272000
   },
   "zhHant" : { }
 }

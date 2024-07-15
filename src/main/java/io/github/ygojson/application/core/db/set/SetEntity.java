@@ -18,6 +18,9 @@ import io.github.ygojson.application.core.db.RuntimeBaseEntity;
 )
 public class SetEntity extends RuntimeBaseEntity {
 
+	@Column(name = "yugipedia_pageid")
+	public Long yugipediaPageId;
+
 	// common independently of the localization
 	@Column(name = "print_number_prefix")
 	public String printNumberPrefix;
@@ -35,6 +38,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "de_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "de_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -51,6 +58,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "es_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "es_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -67,6 +78,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "fr_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "fr_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -83,6 +98,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "it_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "it_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -99,6 +118,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "ja_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "ja_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -115,6 +138,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "ko_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "ko_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -131,6 +158,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "pt_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "pt_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -147,6 +178,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "zhhans_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "zhhans_name")),
 			@AttributeOverride(
 				name = "setCode",
@@ -163,6 +198,10 @@ public class SetEntity extends RuntimeBaseEntity {
 	@Embedded
 	@AttributeOverrides(
 		{
+			@AttributeOverride(
+				name = "konamiId",
+				column = @Column(name = "zhhant_konami_id")
+			),
 			@AttributeOverride(name = "name", column = @Column(name = "zhhant_name")),
 			@AttributeOverride(
 				name = "setCode",

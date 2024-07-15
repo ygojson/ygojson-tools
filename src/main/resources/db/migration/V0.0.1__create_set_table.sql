@@ -2,6 +2,17 @@ CREATE TABLE
     IF NOT EXISTS "tbl_set" (
         "set_id" VARCHAR(36) UNIQUE NOT NULL,
         "ygojson_id" VARCHAR(36) UNIQUE,
+        "yugipedia_pageid" BIGINT UNIQUE,
+        "konami_id" BIGINT UNIQUE,
+        "de_konami_id" BIGINT UNIQUE,
+        "es_konami_id" BIGINT UNIQUE,
+        "fr_konami_id" BIGINT UNIQUE,
+        "it_konami_id" BIGINT UNIQUE,
+        "ja_konami_id" BIGINT UNIQUE,
+        "ko_konami_id" BIGINT UNIQUE,
+        "pt_konami_id" BIGINT UNIQUE,
+        "zhhans_konami_id" BIGINT UNIQUE,
+        "zhhant_konami_id" BIGINT UNIQUE,
         "print_number_prefix" TEXT,
         "series" TEXT,
         "type" TEXT,
@@ -42,5 +53,9 @@ CREATE TABLE
 CREATE UNIQUE INDEX "index.tbl_set.id" ON "tbl_set" ("set_id");
 
 CREATE UNIQUE INDEX "index.tbl_set.ygojson_id" ON "tbl_set" ("ygojson_id");
+
+CREATE UNIQUE INDEX "index.tbl_set.konami_id" ON "tbl_set" ("konami_id");
+
+CREATE UNIQUE INDEX "index.tbl_set.yugipedia_pageid" ON "tbl_set" ("yugipedia_pageid");
 
 CREATE INDEX "index.tbl_set.setcode" ON "tbl_set" ("setcode");

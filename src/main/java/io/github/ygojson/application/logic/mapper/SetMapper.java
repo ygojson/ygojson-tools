@@ -61,6 +61,17 @@ public abstract class SetMapper {
 
 	@InheritInverseConfiguration
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "yugipediaPageId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "en.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "de.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "es.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "fr.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "it.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "ja.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "ko.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "pt.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "zhHans.konamiId", ignore = true) // TODO: should be added when we rework the models
+	@Mapping(target = "zhHant.konamiId", ignore = true) // TODO: should be added when we rework the models
 	public abstract SetEntity toEntity(Set model);
 
 	/**

@@ -1,28 +1,35 @@
 {
+  "yugipediaPageId" : 427,
   "type" : "starter deck",
   "en" : {
     "name" : "Starter Deck: Pegasus",
+    "konamiId" : 13302001,
     "setCode" : "SDP"
   },
   "de" : {
     "name" : "Starter Deck: Maximillion Pegasus",
+    "konamiId" : 23302001,
     "setCode" : "SDP"
   },
   "es" : {
     "name" : "Baraja de Inicio: Pegasus",
+    "konamiId" : 53302001,
     "setCode" : "BIP"
   },
   "fr" : {
     "name" : "Deck de Démarrage: Pegasus",
+    "konamiId" : 33302001,
     "setCode" : "DDP"
   },
   "it" : {
     "name" : "Mazzo Introduttivo: Pegasus",
+    "konamiId" : 43302001,
     "setCode" : "MIP"
   },
   "ja" : { },
   "ko" : {
     "name" : "<ruby>ＳＴＡＲＴＥＲ ＤＥＣＫ<rt>조이 덱</rt></ruby> —페가수스 편—",
+    "konamiId" : 72202001,
     "setCode" : "SDP"
   },
   "pt" : {

@@ -1,33 +1,42 @@
 {
+  "yugipediaPageId" : 978,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
     "name" : "The Lost Millennium",
+    "konamiId" : 11104002,
     "setCode" : "TLM"
   },
   "de" : {
-    "name" : "The Lost Millennium"
+    "name" : "The Lost Millennium",
+    "konamiId" : 21104002
   },
   "es" : {
     "name" : "El Milenio Perdido",
+    "konamiId" : 51103002,
     "setCode" : "TLM"
   },
   "fr" : {
     "name" : "Le Millenaire Perdu",
+    "konamiId" : 31104002,
     "setCode" : "TLM"
   },
   "it" : {
     "name" : "Il Millennio Perduto",
+    "konamiId" : 41104002,
     "setCode" : "TLM"
   },
   "ja" : {
-    "name" : "ザ・ロスト・ミレニアム"
+    "name" : "ザ・ロスト・ミレニアム",
+    "konamiId" : 1107003
   },
   "ko" : {
-    "name" : "잃어버린 천년"
+    "name" : "잃어버린 천년",
+    "konamiId" : 71104003
   },
   "pt" : {
     "name" : "O Milênio Perdido",
+    "konamiId" : 11104002,
     "setCode" : "TLM"
   },
   "zhHans" : { },

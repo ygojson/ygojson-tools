@@ -1,27 +1,35 @@
 {
+  "yugipediaPageId" : 62271,
   "type" : "booster pack",
   "series" : "core booster",
   "en" : {
     "name" : "Ancient Prophecy",
+    "konamiId" : 11108003,
     "setCode" : "ANPR"
   },
   "de" : {
-    "name" : "Ancient Prophecy"
+    "name" : "Ancient Prophecy",
+    "konamiId" : 21108003
   },
   "es" : {
-    "name" : "Profecía Antigua"
+    "name" : "Profecía Antigua",
+    "konamiId" : 51107003
   },
   "fr" : {
-    "name" : "Ancienne Prophétie"
+    "name" : "Ancienne Prophétie",
+    "konamiId" : 31108003
   },
   "it" : {
-    "name" : "Antica Profezia"
+    "name" : "Antica Profezia",
+    "konamiId" : 41108003
   },
   "ja" : {
-    "name" : "エンシェント・プロフェシー"
+    "name" : "エンシェント・プロフェシー",
+    "konamiId" : 1112000
   },
   "ko" : {
-    "name" : "태고의 예언"
+    "name" : "태고의 예언",
+    "konamiId" : 71107003
   },
   "pt" : { },
   "zhHans" : { },
