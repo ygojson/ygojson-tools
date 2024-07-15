@@ -11,6 +11,7 @@ public class CardLocalizedValues {
 
 	public String name;
 
+	// TODO: keep also the full-text so it can be further split with the updater
 	@Column(name = "effect_text")
 	public String effectText;
 

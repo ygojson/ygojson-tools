@@ -20,7 +20,10 @@ import io.github.ygojson.model.utils.LocalizationUtils;
 
 /**
  * Base mapper containing methods for base card parsing.
+ *
+ * @deprecated should be substituted by parsers.
  */
+@Deprecated
 public class BaseCardMapper {
 
 	private static final Logger LOG = LoggerFactory.getLogger(

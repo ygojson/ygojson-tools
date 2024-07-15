@@ -6,7 +6,10 @@ import io.github.ygojson.model.data.Card;
 
 /**
  * General utilities for {@link Card}.
+ *
+ * @deprecated this should be part of the application logic
  */
+@Deprecated
 public final class CardUtils {
 
 	private static final String NORMAL_MONSTER = "normal";

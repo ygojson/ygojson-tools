@@ -2,6 +2,7 @@ package io.github.ygojson.application.yugipedia.mapper.language;
 
 import java.util.Map;
 
+import io.github.ygojson.application.core.db.card.CardEntity;
 import io.github.ygojson.application.core.db.set.SetEntity;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
@@ -16,4 +17,6 @@ public interface LanguageHandler {
 		final SetEntity entity,
 		final Map<String, YugipediaProperty> properties
 	);
+
+	void splitLocalizeCardEntityEffectText(final CardEntity entity);
 }

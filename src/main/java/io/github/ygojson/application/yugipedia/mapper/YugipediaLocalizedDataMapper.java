@@ -7,6 +7,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import org.mapstruct.AfterMapping;
 import org.mapstruct.MappingTarget;
 
+import io.github.ygojson.application.core.db.card.CardEntity;
 import io.github.ygojson.application.core.db.set.SetEntity;
 import io.github.ygojson.application.yugipedia.mapper.language.*;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
@@ -27,6 +28,12 @@ public class YugipediaLocalizedDataMapper {
 	) {
 		handlers.forEach(mapper ->
 			mapper.addLanguagePropertiesToSetEntity(entity, properties)
+		);
+	}
+
+	@AfterMapping
+	protected void addLocalizedData(@MappingTarget final CardEntity entity) {
+		handlers.forEach(mapper -> mapper.splitLocalizeCardEntityEffectText(entity)
 		);
 	}
 }

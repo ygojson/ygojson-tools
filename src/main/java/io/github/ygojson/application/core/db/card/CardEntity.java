@@ -31,16 +31,20 @@ public class CardEntity extends RuntimeBaseEntity {
 	@Column(name = "property")
 	public String property;
 
+	// TODO: keep the original moster-type line?
 	@Column(name = "monster_types")
 	@Convert(converter = JsonStringListAttributeConverter.class)
 	public List<String> monsterTypes;
 
 	public String attribute;
+
+	// TODO: use String and have properly mapped with updater
 	public Integer atk;
 
 	@Column(name = "atk_undef")
 	public Boolean atkUndefined;
 
+	// TODO: use String and have properly mapped with updater
 	public Integer def;
 
 	@Column(name = "def_undef")
@@ -54,6 +58,7 @@ public class CardEntity extends RuntimeBaseEntity {
 	@Column(name = "link_rating")
 	public Integer linkRating;
 
+	// TODO: we should have an enum to ensure that mappers are always in line with expectations
 	@Column(name = "link_arrows")
 	@Convert(converter = JsonStringListAttributeConverter.class)
 	public List<String> linkArrows;

@@ -9,31 +9,36 @@ import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import io.github.ygojson.application.core.db.card.CardEntity;
 import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
-class YugipediaCardMapperUnitTest {
+class YugipediaCardEntityMapperUnitTest {
 
-	private static YugipediaCardMapper MAPPER;
+	private static YugipediaCardEntityMapper MAPPER;
 
 	@BeforeAll
 	static void beforeAll() {
 		// do not use CDI here as this is just unit-testing
-		MAPPER = new YugipediaCardMapperImpl(new YugipediaPropertyBaseMapper());
+		MAPPER =
+			new YugipediaCardEntityMapperImpl(
+				new YugipediaPropertyBaseMapper(),
+				new YugipediaLocalizedDataMapper()
+			);
 	}
 
 	@Test
-	void given_nullProperties_when_toCard_then_nullPrints() {
+	void given_nullProperties_when_toEntity_then_nullEntity() {
 		// given
 		final Map<String, YugipediaProperty> properties = null;
 		// when
-		final var card = MAPPER.toCard(properties);
+		final CardEntity cardEntity = MAPPER.toEntity(properties);
 		// then
-		assertThat(card).isNull();
+		assertThat(cardEntity).isNull();
 	}
 
 	@Test
-	void given_cardTypePropertyUnknown_when_toCard_then_throwsMappingException() {
+	void given_cardTypePropertyUnknown_when_toEntity_then_throwsMappingException() {
 		// given - i.e., https://yugipedia.com/wiki/Command_Duel-Use_Card
 		final Map<String, YugipediaProperty> properties = Map.of(
 			"card_type",
@@ -41,7 +46,7 @@ class YugipediaCardMapperUnitTest {
 		);
 		// when
 		final ThrowableAssert.ThrowingCallable callable = () -> {
-			MAPPER.toCard(properties);
+			MAPPER.toEntity(properties);
 		};
 		// then
 		assertThatThrownBy(callable).isInstanceOf(MappingException.class);

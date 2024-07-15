@@ -5,10 +5,14 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Stream;
 
+import io.github.ygojson.application.core.db.card.CardEntity;
+import io.github.ygojson.application.core.db.card.CardLocalizedValues;
 import io.github.ygojson.application.core.db.set.SetEntity;
 import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.application.logic.mapper.CardNumberParser;
 import io.github.ygojson.application.logic.mapper.MappingException;
+import io.github.ygojson.application.logic.SplitCardText;
+import io.github.ygojson.application.logic.parser.SplitCardTextParser;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 import io.github.ygojson.model.data.definition.localization.Region;
 
@@ -16,6 +20,9 @@ import io.github.ygojson.model.data.definition.localization.Region;
  * Helper class to do the language mapping.
  */
 abstract class AbstractLanguageHandler implements LanguageHandler {
+
+	private static final CardLocalizedValues EMPTY_LOCALIZED_VALUES =
+		new CardLocalizedValues();
 
 	private final List<String> prefixProperties;
 	private final List<Region> possibleRegions;
@@ -68,6 +75,38 @@ abstract class AbstractLanguageHandler implements LanguageHandler {
 		final SetEntity entity,
 		final String value
 	);
+
+	/**
+	 * Gets the reference to the localized values to update.s
+	 *
+	 * @param entity the entity to update.
+	 *
+	 * @return localized values for this language.
+	 */
+	protected abstract CardLocalizedValues getLocalizedValuesToUpdate(
+		final CardEntity entity
+	);
+
+	public final void splitLocalizeCardEntityEffectText(final CardEntity entity) {
+		final CardLocalizedValues localizedValues = getLocalizedValuesToUpdate(
+			entity
+		);
+		if (
+			localizedValues == null || EMPTY_LOCALIZED_VALUES.equals(localizedValues)
+		) {
+			return;
+		}
+		if (localizedValues.effectText != null) {
+			final SplitCardText splitCardText = SplitCardTextParser.parse(
+				localizedValues.effectText,
+				entity.monsterTypes
+			);
+			// update the fields
+			localizedValues.materialsText = splitCardText.materials();
+			localizedValues.effectText = splitCardText.effect();
+			localizedValues.flavorText = splitCardText.flavor();
+		}
+	}
 
 	/**
 	 * {@inheritDoc}

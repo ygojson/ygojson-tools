@@ -25,6 +25,7 @@ class BaseCardMapperUnitTest {
 	}
 
 	@Test
+	@Deprecated
 	void given_questionMarkValue_when_toMaybeUndefinedLong_then_returnUndefined() {
 		// given
 		final String value = "?";
@@ -36,6 +37,7 @@ class BaseCardMapperUnitTest {
 
 	@ParameterizedTest
 	@ValueSource(strings = { "null", "something", "???", "NaN" })
+	@Deprecated
 	void given_nonParsableValue_when_toMaybeUndefinedLong_then_returnNull(
 		final String nullableValue
 	) {
@@ -48,6 +50,7 @@ class BaseCardMapperUnitTest {
 
 	@ParameterizedTest
 	@ValueSource(strings = { "1", "2", "100" })
+	@Deprecated
 	void given_parsableValue_when_toMaybeUndefinedLong_then_returnValue(
 		final String nullableValue
 	) {
@@ -58,6 +61,7 @@ class BaseCardMapperUnitTest {
 		assertThat(result).isNotNull();
 	}
 
+	@Deprecated
 	@ParameterizedTest
 	@ValueSource(
 		strings = {
@@ -82,6 +86,7 @@ class BaseCardMapperUnitTest {
 		assertThat(result).isNotNull();
 	}
 
+	@Deprecated
 	@ParameterizedTest
 	@ValueSource(strings = { "counter", "token", "skill", "Command" })
 	void given_invalidCardType_when_toCardTypeEnum_then_throwIllegalArgumentException(
@@ -95,6 +100,7 @@ class BaseCardMapperUnitTest {
 		assertThatThrownBy(throwingCallable).isInstanceOf(MappingException.class);
 	}
 
+	@Deprecated
 	@Test
 	void given_properlyFormedValue_when_toMonsterTypes_then_validReturn() {
 		// given
@@ -105,6 +111,7 @@ class BaseCardMapperUnitTest {
 		assertThat(result).containsExactly("zombie", "tuner", "effect");
 	}
 
+	@Deprecated
 	@Test
 	void given_invalidSeparator_when_toMonsterTypes_then_resultIsWrong() {
 		// given

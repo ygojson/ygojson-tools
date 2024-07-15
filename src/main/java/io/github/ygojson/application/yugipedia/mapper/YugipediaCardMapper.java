@@ -13,6 +13,8 @@ import io.github.ygojson.model.data.definition.LinkArrow;
 
 /**
  * Mapper for the YGOJSON {@link Card} from {@link YugipediaProperty} map.
+ *
+ * @deprecated should be substituted by a {@code YugipediaCardEntityMapper}
  */
 @Mapper(
 	uses = YugipediaPropertyBaseMapper.class,
@@ -20,6 +22,7 @@ import io.github.ygojson.model.data.definition.LinkArrow;
 	unmappedTargetPolicy = ReportingPolicy.ERROR,
 	componentModel = MappingConstants.ComponentModel.JAKARTA_CDI
 )
+@Deprecated
 public abstract class YugipediaCardMapper extends BaseCardMapper {
 
 	protected static final String TO_MAYBE_UNDEFINED_INTEGER =
