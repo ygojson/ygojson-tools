@@ -27,7 +27,7 @@
         <!-- quarkus dependencies -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.12.1</quarkus.platform.version>
+        <quarkus.platform.version>3.14.2</quarkus.platform.version>
         <!-- quarkus extensions -->
         <quarkus-jdbc-sqlite.version>3.0.7</quarkus-jdbc-sqlite.version>
         <!-- other dependencies -->
