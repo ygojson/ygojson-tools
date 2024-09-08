@@ -2,7 +2,6 @@ package io.github.ygojson.application.yugipedia;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
@@ -48,8 +47,7 @@ public class YugipediaTestDataRegistry {
 		Long pageId,
 		String pageTitle,
 		String wikitext
-	)
-		implements Serializable {}
+	) {}
 
 	private YugipediaTestDataRegistry() {
 		// to register a new parse_wikitext_page file, it should be grabbed from the yugipedia api

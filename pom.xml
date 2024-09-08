@@ -8,7 +8,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <maven.version>3.9.8</maven.version>
+        <maven.version>3.9.9</maven.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
@@ -27,18 +27,18 @@
         <!-- quarkus dependencies -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.12.1</quarkus.platform.version>
+        <quarkus.platform.version>3.14.2</quarkus.platform.version>
         <!-- quarkus extensions -->
         <quarkus-jdbc-sqlite.version>3.0.7</quarkus-jdbc-sqlite.version>
         <!-- other dependencies -->
         <resilience4j.bom.version>2.2.0</resilience4j.bom.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct.version>1.6.0</mapstruct.version>
         <jug.version>5.1.0</jug.version>
         <!-- test dependencies -->
-        <assertj.bom.version>3.26.0</assertj.bom.version>
-        <approvaltests.version>24.2.0</approvaltests.version>
-        <instancio.junit.version>4.8.1</instancio.junit.version>
-        <wiremock.version>3.8.0</wiremock.version>
+        <assertj.bom.version>3.26.3</assertj.bom.version>
+        <approvaltests.version>24.4.0</approvaltests.version>
+        <instancio.junit.version>5.0.1</instancio.junit.version>
+        <wiremock.version>3.9.1</wiremock.version>
         <!--
         TODO: not sure if we will require it for testing?
         TODO: see https://github.com/ygojson/ygojson-tools/issues/126
@@ -52,8 +52,8 @@
         <jsonschema2pojo-plugin.version>1.2.1</jsonschema2pojo-plugin.version>
         <build-helper-plugin.version>3.6.0</build-helper-plugin.version>
         <compiler-plugin.version>3.13.0</compiler-plugin.version>
-        <surefire-plugin.version>3.3.0</surefire-plugin.version>
-        <failsafe-plugin.version>3.3.0</failsafe-plugin.version>
+        <surefire-plugin.version>3.5.0</surefire-plugin.version>
+        <failsafe-plugin.version>3.5.0</failsafe-plugin.version>
         <jacoco-plugin.version>0.8.12</jacoco-plugin.version>
     </properties>
 
