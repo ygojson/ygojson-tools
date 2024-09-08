@@ -35,10 +35,10 @@
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <jug.version>5.1.0</jug.version>
         <!-- test dependencies -->
-        <assertj.bom.version>3.26.0</assertj.bom.version>
-        <approvaltests.version>24.2.0</approvaltests.version>
-        <instancio.junit.version>4.8.1</instancio.junit.version>
-        <wiremock.version>3.8.0</wiremock.version>
+        <assertj.bom.version>3.26.3</assertj.bom.version>
+        <approvaltests.version>24.4.0</approvaltests.version>
+        <instancio.junit.version>5.0.1</instancio.junit.version>
+        <wiremock.version>3.9.1</wiremock.version>
         <!--
         TODO: not sure if we will require it for testing?
         TODO: see https://github.com/ygojson/ygojson-tools/issues/126
