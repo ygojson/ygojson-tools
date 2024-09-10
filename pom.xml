@@ -29,7 +29,7 @@
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
         <quarkus.platform.version>3.14.2</quarkus.platform.version>
         <!-- quarkus extensions -->
-        <quarkus-jdbc-sqlite.version>3.0.7</quarkus-jdbc-sqlite.version>
+        <quarkus-jdbc-sqlite.version>3.0.10</quarkus-jdbc-sqlite.version>
         <!-- other dependencies -->
         <resilience4j.bom.version>2.2.0</resilience4j.bom.version>
         <mapstruct.version>1.6.0</mapstruct.version>
