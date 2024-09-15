@@ -2,7 +2,7 @@ package io.github.ygojson.application.yugipedia.mapper.language;
 
 import java.util.Map;
 
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
 public interface LanguageHandler {
@@ -13,7 +13,7 @@ public interface LanguageHandler {
 	 * @param properties the properties to use.
 	 */
 	void addLanguagePropertiesToSetEntity(
-		final SetEntity entity,
+		final RawSet entity,
 		final Map<String, YugipediaProperty> properties
 	);
 }

@@ -7,6 +7,10 @@ import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.Identifiers;
 
+/**
+ * @deprecated class to be tested will be substituted
+ */
+@Deprecated
 class YgojsonIDTestData {
 
 	/**

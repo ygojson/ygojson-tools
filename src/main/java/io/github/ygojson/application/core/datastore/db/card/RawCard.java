@@ -1,11 +1,11 @@
-package io.github.ygojson.application.core.db.card;
+package io.github.ygojson.application.core.datastore.db.card;
 
 import java.util.List;
 
 import jakarta.persistence.*;
 
-import io.github.ygojson.application.core.db.RuntimeBaseEntity;
-import io.github.ygojson.application.core.db.converter.JsonStringListAttributeConverter;
+import io.github.ygojson.application.core.datastore.db.RawBaseEntity;
+import io.github.ygojson.application.core.datastore.db.converter.JsonStringListAttributeConverter;
 
 /**
  * Card-entity.
@@ -16,13 +16,13 @@ import io.github.ygojson.application.core.db.converter.JsonStringListAttributeCo
 @Entity
 @Table(name = "tbl_card")
 @AttributeOverride(
-	name = RuntimeBaseEntity.ID_COLUMN,
+	name = RawBaseEntity.ID_COLUMN,
 	column = @Column(name = "card_id")
 )
-public class CardEntity extends RuntimeBaseEntity {
+public class RawCard extends RawBaseEntity {
 
 	@Embedded
-	public IdentifierValues identifiers;
+	public RawCardIdentifiers identifiers;
 
 	// common independently of the localization
 	@Column(name = "card_type")
@@ -63,7 +63,7 @@ public class CardEntity extends RuntimeBaseEntity {
 
 	// MAIN PROPERTIES (ENGLISH) WILL NOT BE RENAMED IN DB
 	@Embedded
-	public CardLocalizedValues en;
+	public RawCardLanguageData en;
 
 	@AttributeOverrides(
 		{
@@ -86,7 +86,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues de;
+	public RawCardLanguageData de;
 
 	@AttributeOverrides(
 		{
@@ -109,7 +109,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues es;
+	public RawCardLanguageData es;
 
 	@AttributeOverrides(
 		{
@@ -132,7 +132,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues fr;
+	public RawCardLanguageData fr;
 
 	@AttributeOverrides(
 		{
@@ -155,7 +155,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues it;
+	public RawCardLanguageData it;
 
 	@AttributeOverrides(
 		{
@@ -178,7 +178,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues ja;
+	public RawCardLanguageData ja;
 
 	@AttributeOverrides(
 		{
@@ -201,7 +201,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues ko;
+	public RawCardLanguageData ko;
 
 	@AttributeOverrides(
 		{
@@ -224,7 +224,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues pt;
+	public RawCardLanguageData pt;
 
 	@AttributeOverrides(
 		{
@@ -247,7 +247,7 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues zhHans;
+	public RawCardLanguageData zhHans;
 
 	@AttributeOverrides(
 		{
@@ -270,5 +270,5 @@ public class CardEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public CardLocalizedValues zhHant;
+	public RawCardLanguageData zhHant;
 }

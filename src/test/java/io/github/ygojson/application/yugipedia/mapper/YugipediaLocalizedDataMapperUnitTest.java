@@ -15,7 +15,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.application.logic.mapper.MappingException;
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
@@ -31,7 +31,7 @@ class YugipediaLocalizedDataMapperUnitTest {
 	@Test
 	void given_moreThanThreeEnSetCodes_when_addLocalizedData_then_throwsMappingException() {
 		// given
-		final SetEntity entity = new SetEntity();
+		final RawSet entity = new RawSet();
 		final Map<String, YugipediaProperty> properties = Map.of(
 			"prefix",
 			YugipediaProperty.text("SRL"),
@@ -50,7 +50,7 @@ class YugipediaLocalizedDataMapperUnitTest {
 	@Test
 	void given_threeRepeatedEnSetCodesWithSamePrefix_when_addLocalizedData_then_throwsMappingException() {
 		// given
-		final SetEntity entity = new SetEntity();
+		final RawSet entity = new RawSet();
 		final Map<String, YugipediaProperty> properties = Map.of(
 			"prefix",
 			YugipediaProperty.text("SRL"),
@@ -91,7 +91,7 @@ class YugipediaLocalizedDataMapperUnitTest {
 		final String expectedSecond
 	) {
 		// given
-		final SetEntity entity = new SetEntity();
+		final RawSet entity = new RawSet();
 		final Map<String, YugipediaProperty> properties = Map.of(
 			"prefix",
 			YugipediaProperty.text(threePrefixes.get(0)),

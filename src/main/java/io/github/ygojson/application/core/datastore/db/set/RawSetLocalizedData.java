@@ -1,13 +1,13 @@
-package io.github.ygojson.application.core.db.set;
+package io.github.ygojson.application.core.datastore.db.set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 /**
- * Embeddable localized values for the {@link SetEntity}.
+ * Embeddable localized values for the {@link RawSet}.
  */
 @Embeddable
-public class SetLocalizedValues {
+public class RawSetLocalizedData {
 
 	public String name;
 

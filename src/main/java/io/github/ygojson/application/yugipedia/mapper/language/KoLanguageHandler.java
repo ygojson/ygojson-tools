@@ -2,7 +2,7 @@ package io.github.ygojson.application.yugipedia.mapper.language;
 
 import java.util.List;
 
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.model.data.definition.localization.Region;
 
 class KoLanguageHandler extends AbstractLanguageHandler {
@@ -17,12 +17,12 @@ class KoLanguageHandler extends AbstractLanguageHandler {
 	}
 
 	@Override
-	protected void setSetCode(SetEntity entity, String value) {
+	protected void setSetCode(RawSet entity, String value) {
 		entity.ko.setCode = value;
 	}
 
 	@Override
-	protected void setSetCodeAlt(SetEntity entity, String value) {
+	protected void setSetCodeAlt(RawSet entity, String value) {
 		entity.ko.setCodeAlt = value;
 	}
 }

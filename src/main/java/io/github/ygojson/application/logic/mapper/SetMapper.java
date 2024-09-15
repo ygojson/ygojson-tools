@@ -2,13 +2,13 @@ package io.github.ygojson.application.logic.mapper;
 
 import org.mapstruct.*;
 
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.model.data.Set;
 import io.github.ygojson.model.data.definition.SetInfo;
 import io.github.ygojson.model.utils.LocalizationUtils;
 
 /**
- * Mapper between the {@link Set} model and the {@link SetEntity}.
+ * Mapper between the {@link Set} model and the {@link RawSet}.
  */
 @Mapper(
 	injectionStrategy = InjectionStrategy.CONSTRUCTOR,
@@ -57,11 +57,11 @@ public abstract class SetMapper {
 		target = "localizedData.zhHant.setCodeAlt",
 		source = "zhHant.setCodeAlt"
 	)
-	public abstract Set toModel(SetEntity entity);
+	public abstract Set toModel(RawSet entity);
 
 	@InheritInverseConfiguration
 	@Mapping(target = "id", ignore = true)
-	public abstract SetEntity toEntity(Set model);
+	public abstract RawSet toEntity(Set model);
 
 	/**
 	 * Updates the model by deleting the empty or duplciated localized data.

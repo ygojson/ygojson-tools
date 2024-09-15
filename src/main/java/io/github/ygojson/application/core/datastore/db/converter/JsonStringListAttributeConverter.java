@@ -1,4 +1,4 @@
-package io.github.ygojson.application.core.db.converter;
+package io.github.ygojson.application.core.datastore.db.converter;
 
 import java.util.List;
 

@@ -1,13 +1,13 @@
-package io.github.ygojson.application.core.db.card;
+package io.github.ygojson.application.core.datastore.db.card;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 /**
- * Embeddable identifierss for the {@link CardEntity}.
+ * Embeddable identifierss for the {@link RawCard}.
  */
 @Embeddable
-public class IdentifierValues {
+public class RawCardIdentifiers {
 
 	@Column(name = "konami_id")
 	public Long konamiId;

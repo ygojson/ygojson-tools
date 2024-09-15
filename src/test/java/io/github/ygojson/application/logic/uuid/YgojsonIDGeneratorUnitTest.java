@@ -14,6 +14,10 @@ import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.Print;
 import io.github.ygojson.model.data.Set;
 
+/**
+ * @deprecated class to be tested will be substituted
+ */
+@Deprecated
 class YgojsonIDGeneratorUnitTest {
 
 	private final YgojsonIDGenerator idGenerator = new YgojsonIDGenerator();

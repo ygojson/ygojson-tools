@@ -1,13 +1,13 @@
-package io.github.ygojson.application.core.db.card;
+package io.github.ygojson.application.core.datastore.db.card;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 /**
- * Embeddable localized values for the {@link CardEntity}.
+ * Embeddable localized values for the {@link RawCard}.
  */
 @Embeddable
-public class CardLocalizedValues {
+public class RawCardLanguageData {
 
 	public String name;
 
