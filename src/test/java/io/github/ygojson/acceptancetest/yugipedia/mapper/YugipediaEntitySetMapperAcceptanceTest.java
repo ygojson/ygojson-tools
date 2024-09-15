@@ -11,7 +11,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import io.github.ygojson.acceptancetest.JsonAcceptance;
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.application.yugipedia.YugipediaTestDataRegistry;
 import io.github.ygojson.application.yugipedia.mapper.YugipediaSetEntityMapper;
 import io.github.ygojson.application.yugipedia.parser.YugipediaParser;
@@ -51,7 +51,7 @@ class YugipediaEntitySetMapperAcceptanceTest {
 			wikitextTestData.wikitext()
 		);
 		// when
-		final SetEntity entity = entityMapper.toEntity(properties);
+		final RawSet entity = entityMapper.toEntity(properties);
 		// then
 		final String testCase = "set_entity/" + wikitextTestData.testName();
 		ACCEPTANCE.verify(testCase, entity);

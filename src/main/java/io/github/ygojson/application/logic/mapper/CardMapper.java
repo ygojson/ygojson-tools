@@ -2,8 +2,8 @@ package io.github.ygojson.application.logic.mapper;
 
 import org.mapstruct.*;
 
-import io.github.ygojson.application.core.db.card.CardEntity;
-import io.github.ygojson.application.core.db.card.CardLocalizedValues;
+import io.github.ygojson.application.core.datastore.db.card.RawCard;
+import io.github.ygojson.application.core.datastore.db.card.RawCardLanguageData;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardText;
 import io.github.ygojson.model.data.definition.CardType;
@@ -11,7 +11,7 @@ import io.github.ygojson.model.data.definition.LinkArrow;
 import io.github.ygojson.model.utils.LocalizationUtils;
 
 /**
- * Mapper between the {@link Card} model and the {@link CardEntity}.
+ * Mapper between the {@link Card} model and the {@link RawCard}.
  */
 @Mapper(
 	injectionStrategy = InjectionStrategy.CONSTRUCTOR,
@@ -38,18 +38,18 @@ public abstract class CardMapper {
 	@Mapping(target = "localizedData.pt", source = "pt")
 	@Mapping(target = "localizedData.zhHans", source = "zhHans")
 	@Mapping(target = "localizedData.zhHant", source = "zhHant")
-	public abstract Card toModel(CardEntity entity);
+	public abstract Card toModel(RawCard entity);
 
 	@Mapping(target = "materials", source = "materialsText")
 	@Mapping(target = "pendulumEffect", source = "pendulumEffectText")
-	protected abstract CardText toCardText(CardLocalizedValues values);
+	protected abstract CardText toCardText(RawCardLanguageData values);
 
 	@InheritInverseConfiguration
 	@Mapping(target = "id", ignore = true)
-	public abstract CardEntity toEntity(Card model);
+	public abstract RawCard toEntity(Card model);
 
 	@InheritInverseConfiguration
-	protected abstract CardLocalizedValues toCardLocalizedValues(
+	protected abstract RawCardLanguageData toCardLocalizedValues(
 		CardText cardText
 	);
 

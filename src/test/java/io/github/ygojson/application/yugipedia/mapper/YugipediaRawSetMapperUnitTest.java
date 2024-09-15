@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import io.github.ygojson.application.yugipedia.parser.model.YugipediaProperty;
 
-class YugipediaSetEntityMapperUnitTest {
+class YugipediaRawSetMapperUnitTest {
 
 	private static YugipediaSetEntityMapper MAPPER;
 

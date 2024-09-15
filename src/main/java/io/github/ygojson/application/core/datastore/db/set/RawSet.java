@@ -1,8 +1,8 @@
-package io.github.ygojson.application.core.db.set;
+package io.github.ygojson.application.core.datastore.db.set;
 
 import jakarta.persistence.*;
 
-import io.github.ygojson.application.core.db.RuntimeBaseEntity;
+import io.github.ygojson.application.core.datastore.db.RawBaseEntity;
 
 /**
  * Set-entity.
@@ -13,10 +13,10 @@ import io.github.ygojson.application.core.db.RuntimeBaseEntity;
 @Entity
 @Table(name = "tbl_set")
 @AttributeOverride(
-	name = RuntimeBaseEntity.ID_COLUMN,
+	name = RawBaseEntity.ID_COLUMN,
 	column = @Column(name = "set_id")
 )
-public class SetEntity extends RuntimeBaseEntity {
+public class RawSet extends RawBaseEntity {
 
 	// common independently of the localization
 	@Column(name = "print_number_prefix")
@@ -26,7 +26,7 @@ public class SetEntity extends RuntimeBaseEntity {
 	public String series;
 
 	// MAIN NAME (ENGLISH) WILL NOT BE RENAMED IN DB
-	public SetLocalizedValues en = new SetLocalizedValues();
+	public RawSetLocalizedData en = new RawSetLocalizedData();
 
 	// alternative name (only in English - prefixed to keep consistency)
 	@Column(name = "name_alt")
@@ -46,7 +46,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues de = new SetLocalizedValues();
+	public RawSetLocalizedData de = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -62,7 +62,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues es = new SetLocalizedValues();
+	public RawSetLocalizedData es = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -78,7 +78,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues fr = new SetLocalizedValues();
+	public RawSetLocalizedData fr = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -94,7 +94,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues it = new SetLocalizedValues();
+	public RawSetLocalizedData it = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -110,7 +110,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues ja = new SetLocalizedValues();
+	public RawSetLocalizedData ja = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -126,7 +126,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues ko = new SetLocalizedValues();
+	public RawSetLocalizedData ko = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -142,7 +142,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues pt = new SetLocalizedValues();
+	public RawSetLocalizedData pt = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -158,7 +158,7 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues zhHans = new SetLocalizedValues();
+	public RawSetLocalizedData zhHans = new RawSetLocalizedData();
 
 	@Embedded
 	@AttributeOverrides(
@@ -174,5 +174,5 @@ public class SetEntity extends RuntimeBaseEntity {
 			),
 		}
 	)
-	public SetLocalizedValues zhHant = new SetLocalizedValues();
+	public RawSetLocalizedData zhHant = new RawSetLocalizedData();
 }

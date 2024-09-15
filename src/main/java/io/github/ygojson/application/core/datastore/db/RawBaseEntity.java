@@ -1,4 +1,4 @@
-package io.github.ygojson.application.core.db;
+package io.github.ygojson.application.core.datastore.db;
 
 import java.util.UUID;
 
@@ -10,12 +10,12 @@ import org.hibernate.annotations.JdbcType;
 import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
 
 /**
- * Base entity for YGOJSON runtime DB.
+ * Base entity for Raw Data-Store Database.
  * <br>
  * This base entity contains the {@link #id} and {@link #ygojsonId} IDs pre-configured.
  */
 @MappedSuperclass
-public abstract class RuntimeBaseEntity extends PanacheEntityBase {
+public abstract class RawBaseEntity extends PanacheEntityBase {
 
 	/**
 	 * ID-column name (can be overriden by subclasses to include the entity name).
@@ -24,7 +24,7 @@ public abstract class RuntimeBaseEntity extends PanacheEntityBase {
 
 	@Id
 	@Column(
-		name = RuntimeBaseEntity.ID_COLUMN,
+		name = RawBaseEntity.ID_COLUMN,
 		columnDefinition = "VARCHAR(36)",
 		nullable = false,
 		unique = true

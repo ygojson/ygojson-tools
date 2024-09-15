@@ -1,4 +1,4 @@
-package io.github.ygojson.application.core.db;
+package io.github.ygojson.application.core.datastore.db;
 
 import java.util.UUID;
 
@@ -8,14 +8,14 @@ import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 import jakarta.transaction.Transactional;
 
 /**
- * Base repository for YGOJSON runtime DB.
+ * Base repository for Raw Data-Store Database.
  * <br>
  * Provides the logic to create the entity ID on save (if not set already).
  * The generated IDs are UUID v7, to be more DB-friendly.
  *
  * @param <E> the base entity (with a UUID ID field)
  */
-public abstract class RuntimeRepository<E extends RuntimeBaseEntity>
+public abstract class RawBaseRepository<E extends RawBaseEntity>
 	implements PanacheRepositoryBase<E, UUID> {
 
 	// generator for UUIDs

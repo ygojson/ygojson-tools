@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import io.github.ygojson.application.core.db.card.CardEntity;
+import io.github.ygojson.application.core.datastore.db.card.RawCard;
 import io.github.ygojson.model.data.Card;
 import io.github.ygojson.model.data.definition.CardType;
 import io.github.ygojson.model.data.definition.LinkArrow;
@@ -32,7 +32,7 @@ class CardMapperUnitTest {
 		// given
 		final Card model = Instancio.of(Card.class).create();
 		// when
-		final CardEntity entity = MAPPER.toEntity(model);
+		final RawCard entity = MAPPER.toEntity(model);
 		final Card result = MAPPER.toModel(entity);
 		// then
 		assertThat(result).isEqualTo(model);
@@ -41,11 +41,11 @@ class CardMapperUnitTest {
 	@Test
 	void given_noLocalizedDataForLanguage_when_mapToModel_then_localizedDataIsNull() {
 		// given
-		final CardEntity entity = Instancio
-			.of(CardEntity.class)
-			.set(field(CardEntity.class, "cardType"), CardType.SPELL.value())
+		final RawCard entity = Instancio
+			.of(RawCard.class)
+			.set(field(RawCard.class, "cardType"), CardType.SPELL.value())
 			.set(
-				field(CardEntity.class, "linkArrows"),
+				field(RawCard.class, "linkArrows"),
 				List.of(LinkArrow.BOTTOM_CENTER.value(), LinkArrow.BOTTOM_RIGHT.value())
 			)
 			.create();
@@ -66,7 +66,7 @@ class CardMapperUnitTest {
 		final String unknownValue
 	) {
 		// given
-		final CardEntity entity = new CardEntity();
+		final RawCard entity = new RawCard();
 		entity.cardType = unknownValue;
 		// when
 		final ThrowableAssert.ThrowingCallable callable = () ->
@@ -81,7 +81,7 @@ class CardMapperUnitTest {
 		final String unknownValue
 	) {
 		// given
-		final CardEntity entity = new CardEntity();
+		final RawCard entity = new RawCard();
 		entity.linkArrows = List.of(unknownValue);
 		// when
 		final ThrowableAssert.ThrowingCallable callable = () ->

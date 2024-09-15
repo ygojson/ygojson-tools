@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import io.github.ygojson.application.core.db.set.SetEntity;
+import io.github.ygojson.application.core.datastore.db.set.RawSet;
 import io.github.ygojson.application.logic.mapper.CardNumber;
 import io.github.ygojson.application.logic.mapper.CardNumberParser;
 import io.github.ygojson.application.logic.mapper.MappingException;
@@ -53,10 +53,7 @@ abstract class AbstractLanguageHandler implements LanguageHandler {
 	 * @param entity the entity to modify.
 	 * @param value the value to set.
 	 */
-	protected abstract void setSetCode(
-		final SetEntity entity,
-		final String value
-	);
+	protected abstract void setSetCode(final RawSet entity, final String value);
 
 	/**
 	 * Assigns the setcode_alt value to the entity.
@@ -65,7 +62,7 @@ abstract class AbstractLanguageHandler implements LanguageHandler {
 	 * @param value the value to set.
 	 */
 	protected abstract void setSetCodeAlt(
-		final SetEntity entity,
+		final RawSet entity,
 		final String value
 	);
 
@@ -73,7 +70,7 @@ abstract class AbstractLanguageHandler implements LanguageHandler {
 	 * {@inheritDoc}
 	 */
 	public final void addLanguagePropertiesToSetEntity(
-		final SetEntity entity,
+		final RawSet entity,
 		final Map<String, YugipediaProperty> properties
 	) {
 		final List<String> setCodes = toSetCodes(properties);

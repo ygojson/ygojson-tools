@@ -1,4 +1,4 @@
-package io.github.ygojson.application.core.db.set;
+package io.github.ygojson.application.core.datastore.db.set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -15,13 +15,13 @@ import org.instancio.Instancio;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import io.github.ygojson.application.core.db.RuntimeBaseEntity;
+import io.github.ygojson.application.core.datastore.db.RawBaseEntity;
 
 @QuarkusTest
 class SetRepositoryUnitTest {
 
 	@Inject
-	SetRepository repository;
+	RawSetRepository repository;
 
 	@BeforeEach
 	@Transactional
@@ -32,9 +32,9 @@ class SetRepositoryUnitTest {
 	@Test
 	void given_entityInstanceWithoutId_when_save_then_repositoryContainsEntity() {
 		// given
-		final SetEntity entity = Instancio
-			.of(SetEntity.class)
-			.ignore(field(RuntimeBaseEntity.class, "id"))
+		final RawSet entity = Instancio
+			.of(RawSet.class)
+			.ignore(field(RawBaseEntity.class, "id"))
 			.create();
 		// when
 		final UUID result = repository.save(entity);
@@ -52,7 +52,7 @@ class SetRepositoryUnitTest {
 	@Test
 	void given_entityInstanceWithId_when_save_then_isSaved() {
 		// given - entity with ID (cached value for assert)
-		final SetEntity entity = Instancio.of(SetEntity.class).create();
+		final RawSet entity = Instancio.of(RawSet.class).create();
 		final String id = entity.id.toString();
 		// when
 		final UUID result = repository.save(entity);
@@ -63,14 +63,14 @@ class SetRepositoryUnitTest {
 	@Test
 	void given_entityAlreadySaved_when_save_then_fails() {
 		// given
-		final SetEntity entity = Instancio
-			.of(SetEntity.class)
-			.ignore(field(RuntimeBaseEntity.class, "id"))
+		final RawSet entity = Instancio
+			.of(RawSet.class)
+			.ignore(field(RawBaseEntity.class, "id"))
 			.create();
 		final UUID savedId = repository.save(entity);
-		final SetEntity duplicated = Instancio
-			.of(SetEntity.class)
-			.set(field(RuntimeBaseEntity.class, "id"), savedId)
+		final RawSet duplicated = Instancio
+			.of(RawSet.class)
+			.set(field(RawBaseEntity.class, "id"), savedId)
 			.create();
 		// when
 		final ThrowableAssert.ThrowingCallable callable = () ->
@@ -83,15 +83,15 @@ class SetRepositoryUnitTest {
 	@Test
 	void given_entityWithSameYgojsonId_when_save_then_fails() {
 		// given
-		final SetEntity entity1 = Instancio
-			.of(SetEntity.class)
-			.ignore(field(RuntimeBaseEntity.class, "id"))
+		final RawSet entity1 = Instancio
+			.of(RawSet.class)
+			.ignore(field(RawBaseEntity.class, "id"))
 			.create();
 		repository.save(entity1);
-		final SetEntity entity2 = Instancio
-			.of(SetEntity.class)
-			.ignore(field(RuntimeBaseEntity.class, "id"))
-			.set(field(RuntimeBaseEntity.class, "ygojsonId"), entity1.ygojsonId)
+		final RawSet entity2 = Instancio
+			.of(RawSet.class)
+			.ignore(field(RawBaseEntity.class, "id"))
+			.set(field(RawBaseEntity.class, "ygojsonId"), entity1.ygojsonId)
 			.create();
 		// when
 		final ThrowableAssert.ThrowingCallable callable = () ->
